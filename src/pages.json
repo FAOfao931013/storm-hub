@@ -1,16 +1,64 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "风暴枢纽"
+				"navigationBarTitleText": "英雄列表",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/favorites/favorites",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/about/about",
+			"style": {
+				"navigationBarTitleText": "关于",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "英雄详情",
+				"enablePullDownRefresh": false
 			}
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "风暴枢纽",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#1976d2",
+		"backgroundColor": "#f5f5f5"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#1976d2",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "英雄",
+				"iconPath": "static/tab-hero.png",
+				"selectedIconPath": "static/tab-hero-active.png"
+			},
+			{
+				"pagePath": "pages/favorites/favorites",
+				"text": "收藏",
+				"iconPath": "static/tab-favorite.png",
+				"selectedIconPath": "static/tab-favorite-active.png"
+			},
+			{
+				"pagePath": "pages/about/about",
+				"text": "关于",
+				"iconPath": "static/tab-about.png",
+				"selectedIconPath": "static/tab-about-active.png"
+			}
+		]
 	}
 }
