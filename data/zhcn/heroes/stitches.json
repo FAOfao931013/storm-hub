@@ -1,0 +1,306 @@
+{
+  "shortName": "stitches",
+  "heroName": "Stitches",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "StitchesShamblingHorror",
+      "buttonId": "StitchesShamblingHorror",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stitches_acidcloud.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "蹒跚恐魔",
+      "short": "攻击附加恶臭胆汁，激活获得减速抗性",
+      "full": "激活后每秒在一个大范围区域内扩散恶臭胆汁，而且你的移动速度无法被降至110%以下，持续4秒。\n\n恶臭胆汁\n使用普通攻击或猛击内侧区域命中敌人时，可以对目标施加恶臭胆汁，在4秒内额外造成36(+4%每级)点伤害。对小兵、雇佣兵、怪物额外造成150%伤害。"
+    },
+    {
+      "nameId": "StitchesHook",
+      "buttonId": "StitchesHook",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_stitches_hook.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "屠钩",
+      "short": "将第一个被击中的目标拉向缝合怪",
+      "full": "将击中的第一个敌人拉向缝合怪，对其造成91(+4%每级)点伤害。\n\n等级达到13级之后，屠钩的使用范围扩大40%。"
+    },
+    {
+      "nameId": "StitchesSlam",
+      "buttonId": "StitchesSlam",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_stitches_slam.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "猛击",
+      "short": "对范围内敌人造成伤害和减速",
+      "full": "对目标范围内的敌人造成104(+4%每级)点伤害。内侧区域的敌人受到50%的额外伤害并减速45%，持续2秒。"
+    },
+    {
+      "nameId": "StitchesDevour",
+      "buttonId": "StitchesDevour",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_stitches_devour.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "吞噬",
+      "short": "对一名敌人造成伤害并恢复生命值",
+      "full": "对非英雄单位造成319(+4%每级)点伤害，或对英雄造成114(+4%每级)点伤害。为缝合怪恢复20%的最大生命值。"
+    },
+    {
+      "nameId": "StitchesPutridBile",
+      "buttonId": "StitchesPutridBile",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stitches_putridbile.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "腐烂胆汁",
+      "short": "沿途排放可以减速的胆汁",
+      "full": "喷出胆汁，每秒对范围内的敌人造成37(+4%每级)点伤害，并使其移动速度降低35%，持续1.5秒。喷射胆汁时，缝合怪的移动速度提高20%，持续8秒。"
+    },
+    {
+      "nameId": "StitchesGorge",
+      "buttonId": "StitchesGorge",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stitches_cannibalize.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "暴食",
+      "short": "完全吞噬一名敌方英雄",
+      "full": "吞噬一个敌对英雄使其无法移动，持续4秒。当暴食结束后，敌对英雄受到274(+4%每级)点伤害。被困的英雄无法移动或受到其他伤害。"
+    },
+    {
+      "nameId": "StitchesHookHelpingHand",
+      "buttonId": "StitchesHelpingHand",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_stitches_hook_var1.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "援手屠钩",
+      "short": "将第一个被击中的目标拉向缝合怪",
+      "full": "激活以使用可以命中友方英雄的屠钩。屠钩以此种方式命中友方英雄可以使屠钩的冷却时间缩短8秒。\n\n等级达到13级后，援手屠钩的使用范围扩大40%。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "StitchesPatchworkCreation",
+      "buttonId": "StitchesPatchworkCreation",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_stitches_patchwork.png",
+      "sort": 1,
+      "name": "缝合生物",
+      "short": "恶臭胆汁提供护甲，所有治疗效果提高",
+      "full": "每有一个单位受到恶臭胆汁影响，获得3点护甲加成，最多可叠加8次。蹒跚恐魔激活时，该护甲加成翻倍。\n\n被动：受到的所有恢复和治疗效果提高15%。"
+    },
+    {
+      "nameId": "StitchesSavortheFlavorDevour",
+      "buttonId": "StitchesDevourSavorTheFlavorTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_stitches_devour.png",
+      "sort": 2,
+      "name": "气香味美",
+      "short": "任务：吞噬英雄获得每秒生命恢复效果，提高恶臭胆汁伤害",
+      "full": "任务：对敌方英雄使用吞噬可以使缝合怪的生命恢复提高1.5点，并使恶臭胆汁的伤害提高2%，最多可叠加100次。"
+    },
+    {
+      "nameId": "StitchesHungryforMore",
+      "buttonId": "StitchesHungryforMore",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_stitches_hungry.png",
+      "sort": 3,
+      "name": "饿了还要",
+      "short": "任务：收集恢复之球提高最大生命值和移动速度",
+      "full": "获得5%移动速度加成。\n\n任务：收集恢复之球使缝合怪的最大生命值提高25点。\n\n奖励：每收集20个恢复之球可以使缝合怪的移动速度永久提高5%。"
+    },
+    {
+      "nameId": "StitchesPlaytime",
+      "buttonId": "StitchesPlaytime",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_stitches_slam.png",
+      "sort": 1,
+      "name": "陪我玩！",
+      "short": "普通攻击缩短猛击冷却时间",
+      "full": "普通攻击使猛击的冷却时间缩短0.75秒并返还5点法力值。使用猛击内侧范围命中英雄可以使其冷却时间缩短1.5秒。"
+    },
+    {
+      "nameId": "StitchesVileCleaver",
+      "buttonId": "StitchesVileCleaver",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stitches_acidcloud.png",
+      "sort": 2,
+      "name": "胆汁横扫",
+      "short": "普通攻击和猛击可以扩散恶臭胆汁",
+      "full": "普通攻击命中受到恶臭胆汁影响的敌人可造成35%的额外伤害，并将恶臭胆汁扩散到附近的敌人身上。\n\n被动：猛击会对所有命中的目标施加恶臭胆汁。"
+    },
+    {
+      "nameId": "StitchesTenderizer",
+      "buttonId": "StitchesVileGasTenderizerTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_slow.png",
+      "sort": 3,
+      "name": "嫩化剂",
+      "short": "普通攻击使敌方英雄减速，恢复生命值",
+      "full": "对敌方英雄发动的普通攻击使其减速20%，持续1.5秒，并为缝合怪恢复最大生命值的1.75%。"
+    },
+    {
+      "nameId": "StitchesSerratedEdge",
+      "buttonId": "StitchesSerratedEdge",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_stitches_hook.png",
+      "sort": 1,
+      "name": "锯齿钩",
+      "short": "屠钩造成额外伤害，减少冷却时间",
+      "full": "使用屠钩击中敌方英雄可造成相当于其最大生命值5%的额外伤害，并使屠钩的冷却时间降低4秒，返还35点法力值。"
+    },
+    {
+      "nameId": "StitchesSecondHelping",
+      "buttonId": "StitchesSecondHelping",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_stitches_devour.png",
+      "sort": 2,
+      "name": "加餐",
+      "short": "孤注一掷：吞噬额外获得一层使用次数，获得护甲",
+      "full": "吞噬获得1次额外使用次数。两次使用之间存在6秒冷却。\n\n孤注一掷：如果缝合怪在使用吞噬后未损失生命值，他将获得一层相当于最大生命值15%的护盾，持续10秒。每次死亡都会使该护盾减少3%。"
+    },
+    {
+      "nameId": "StitchesPutrefaction",
+      "buttonId": "StitchesPutrefaction",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stitches_acidcloud.png",
+      "sort": 3,
+      "name": "腐败溃烂",
+      "short": "恶臭胆汁提供治疗，蹒跚恐魔期间强化",
+      "full": "蹒跚恐魔激活时，恶臭胆汁可以使敌人受到的治疗效果降低40%。\n\n被动：恶臭胆汁可以为缝合怪恢复相当于造成伤害量75%的生命值。"
+    },
+    {
+      "nameId": "StitchesHeroicAbilityPutridBile",
+      "buttonId": "StitchesPutridBile",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stitches_putridbile.png",
+      "sort": 1,
+      "name": "腐烂胆汁",
+      "short": "沿途排放可以减速的胆汁",
+      "full": "喷出胆汁，每秒对范围内的敌人造成37(+4%每级)点伤害，并使其移动速度降低35%，持续1.5秒。喷射胆汁时，缝合怪的移动速度提高20%，持续8秒。"
+    },
+    {
+      "nameId": "StitchesHeroicAbilityGorge",
+      "buttonId": "StitchesGorge",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stitches_cannibalize.png",
+      "sort": 2,
+      "name": "暴食",
+      "short": "完全吞噬一名敌方英雄",
+      "full": "吞噬一个敌对英雄使其无法移动，持续4秒。当暴食结束后，敌对英雄受到274(+4%每级)点伤害。被困的英雄无法移动或受到其他伤害。"
+    },
+    {
+      "nameId": "StitchesMeatHook",
+      "buttonId": "StitchesMeatHook",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_stitches_hook.png",
+      "sort": 1,
+      "name": "肉钩",
+      "short": "钩中敌方英雄获得持续治疗",
+      "full": "钩中敌方英雄可以使缝合怪在5秒内获得相当于最大生命值20%的治疗。激活时，对被钩的敌方英雄使用普通攻击可刷新该治疗效果的持续时间。"
+    },
+    {
+      "nameId": "StitchesUnderPressure",
+      "buttonId": "StitchesUnderPressure",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_stitches_underpressure.png",
+      "sort": 2,
+      "name": "重压之下",
+      "short": "任务：恶臭胆汁提高猛击伤害",
+      "full": "猛击的伤害提高25点。\n\n任务：当使用恶臭胆汁命中英雄6次后，永久使猛击的伤害提高1点，最多可提高75点。"
+    },
+    {
+      "nameId": "StitchesChopChop",
+      "buttonId": "StitchesChopChop",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stitches_chopchop.png",
+      "sort": 3,
+      "name": "狂切猛砍",
+      "short": "屠钩、蹒跚恐魔提高攻击速度",
+      "full": "使用屠钩命中一名敌方英雄或激活蹒跚恐魔可以获得40%攻击速度加成，持续4秒。普通攻击会刷新该效果的持续时间。"
+    },
+    {
+      "nameId": "StitchesPulverizeSlam",
+      "buttonId": "StitchesSlamPulverizeTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_stitches_slam.png",
+      "sort": 1,
+      "name": "粉碎",
+      "short": "猛击减速所有目标，降低护甲",
+      "full": "被猛击命中的敌人会被减速70%，持续0.75秒。而且被击中的英雄护甲值降低10点，持续3秒。"
+    },
+    {
+      "nameId": "StitchesDigestiveJuices",
+      "buttonId": "StitchesDigestiveJuices",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_stitches_devour.png",
+      "sort": 2,
+      "name": "腐蚀胃液",
+      "short": "提高吞噬伤害，吞噬降低敌人造成的伤害",
+      "full": "吞噬在5秒内额外造成140(+4%每级)点伤害。用吞噬击中一名英雄可以使该技能的冷却时间减少4秒，并使该英雄造成的伤害降低50%，持续4秒。"
+    },
+    {
+      "nameId": "StitchesFlareUp",
+      "buttonId": "StitchesFlareUp",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_talent_burningrage.png",
+      "sort": 3,
+      "name": "骤燃",
+      "short": "对附近敌人造成伤害",
+      "full": "对附近的敌人每秒造成15(+4%每级)点伤害。使用屠钩命中一名敌方英雄，或激活蹒跚恐魔会使该伤害提高150%，持续4秒。"
+    },
+    {
+      "nameId": "StitchesGiftFromTheEmbalmer",
+      "buttonId": "StitchesGiftFromTheEmbalmer",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stitches_putridbile.png",
+      "sort": 1,
+      "name": "藏尸者的礼物",
+      "short": "任务：提高腐烂胆汁伤害，缩短复活倒计时",
+      "full": "腐烂胆汁对英雄额外造成100%伤害。\n\n任务：每次腐烂胆汁对一名敌方英雄造成伤害，缝合怪的下一次复活倒计时缩短2%，最多可缩短80%。死亡时失去全部层数。"
+    },
+    {
+      "nameId": "StitchesHungryHungryStitchesGorge",
+      "buttonId": "StitchesGorgeHungryHungryStitchesTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stitches_cannibalize.png",
+      "sort": 2,
+      "name": "饥饿缝合怪",
+      "short": "暴食可以吞下多个英雄，可以传送",
+      "full": "使用暴食后的4秒内，缝合怪可以传送一小段距离到其他目标身边并吞食他们。在暴食结束后，敌人会被减速75%，持续1秒。"
+    },
+    {
+      "nameId": "StitchesHookMasterHooker",
+      "buttonId": "StitchesHookMasterHooker",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_stitches_hook.png",
+      "sort": 3,
+      "name": "铁钩大师",
+      "short": "强化屠钩",
+      "full": "屠钩的冷却时间缩短4秒。被屠钩命中的敌方英雄受到的治疗效果降低75%，持续2秒。被援手屠钩命中的盟友获得无法击杀，持续2秒。"
+    },
+    {
+      "nameId": "StitchesGasBag",
+      "buttonId": "StitchesGasBag",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stitches_acidcloud.png",
+      "sort": 4,
+      "name": "气囊",
+      "short": "蹒跚恐魔获得不可阻挡，缩短冷却时间",
+      "full": "激活蹒跚恐魔获得不可阻挡，持续3秒。\n\n被动 ：蹒跚恐魔的冷却时间缩短20秒。"
+    }
+  ]
+}

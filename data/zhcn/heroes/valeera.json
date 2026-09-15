@@ -1,0 +1,315 @@
+{
+  "shortName": "valeera",
+  "heroName": "Valeera",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "ValeeraStealth",
+      "buttonId": "ValeeraStealth",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_valeera_vanish.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "消失",
+      "short": "潜行并获得新技能",
+      "full": "从视野中消失进入潜行状态，移动速度提高20%并获得新技能。在消失的前一秒内，瓦莉拉无法被暴露，并且可以穿过其它单位。潜行状态下保持静止至少1.5秒后进入隐形。\n\n保持潜行状态3秒后，伏击、偷袭和锁喉的范围提高100%，并可在使用时将瓦莉拉传送到目标身后。"
+    },
+    {
+      "nameId": "ValeeraSinisterStrike",
+      "buttonId": "ValeeraSinisterStrike",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_valeera_sinisterstrike.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "影袭",
+      "short": "向前冲刺，对一条直线上的敌人造成伤害",
+      "full": "向前冲出，对一条直线上的所有敌人造成110(+4%每级)点伤害。如果影袭击中英雄，瓦莉拉立即停止冲刺，并且冷却时间缩短至1秒。\n\n奖励1点连击点数。\n\n潜行：伏击\n对一名敌人造成大量伤害，并削减其护甲值。"
+    },
+    {
+      "nameId": "ValeeraBladeFlurry",
+      "buttonId": "ValeeraBladeFlurry",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_valeera_bladeflurry.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "剑刃乱舞",
+      "short": "对附近敌人造成伤害",
+      "full": "在瓦莉拉周围造成130(+4%每级)点伤害。\n\n每击中一个敌方英雄奖励1点连击点数。\n\n潜行：偷袭\n对一名敌人造成伤害并使其陷入昏迷和致盲。"
+    },
+    {
+      "nameId": "ValeeraEviscerate",
+      "buttonId": "ValeeraEviscerate",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_valeera_eviscerate.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "刺骨",
+      "short": "高伤害的终结技",
+      "full": "对一名敌人使用刺骨，根据连击点数造成伤害。\n\n1点：85(+4%每级)\n2点：170(+4%每级)\n3点：255(+4%每级)\n\n潜行：锁喉\n沉默一名敌人，并持续造成伤害。"
+    },
+    {
+      "nameId": "ValeeraCloakOfShadows",
+      "buttonId": "ValeeraCloakOfShadows",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_valeera_cloakofshadows.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "暗影斗篷",
+      "short": "变为不可阻挡，获得法术护甲",
+      "full": "瓦莉拉被暗影斗篷包围，立即移除身上的所有持续伤害效果。在1.5秒内，她变为不可阻挡，并获得75点法术护甲，使受到的技能伤害降低75%。\n\n使用该技能不会打破潜行。"
+    },
+    {
+      "nameId": "ValeeraSmokeBomb",
+      "buttonId": "ValeeraSmokeBomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_valeera_smokebomb.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "烟雾弹",
+      "short": "制造出一团遮蔽烟雾",
+      "full": "制造一团烟雾。瓦莉拉在烟雾中无法被暴露，可以穿过其它单位并获得60点护甲，使受到的伤害降低60%。瓦莉拉可以在未被暴露的状态下继续攻击或使用技能，持续5秒。\n\n使用该技能不会打破潜行。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "HearthstoneNoMana",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ValeeraVigor",
+      "buttonId": "ValeeraVigor",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_conjurerspursuit.png",
+      "sort": 1,
+      "name": "精力",
+      "short": "任务：恢复之球提高能量上限",
+      "full": "瓦莉拉每秒恢复额外3点能量。\n\n奖励：收集20个恢复之球后，瓦莉拉的能量上限提高至120点。"
+    },
+    {
+      "nameId": "ValeeraVanishSubtlety",
+      "buttonId": "ValeeraSubtlety",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_valeera_vanish.png",
+      "sort": 2,
+      "name": "敏锐",
+      "short": "潜行技能提高能量恢复",
+      "full": "在使用伏击、偷袭或锁喉进行传送后，每秒恢复10点能量，持续5秒。"
+    },
+    {
+      "nameId": "ValeeraCombatReadiness",
+      "buttonId": "ValeeraCombatReadiness",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_block.png",
+      "sort": 3,
+      "name": "备战就绪",
+      "short": "消耗连击点数提供格挡",
+      "full": "每消耗一点连击点数都会提供75点物理护甲，抵御下一次敌方英雄的普通攻击，使其伤害降低75%。最多储存3层。"
+    },
+    {
+      "nameId": "ValeeraCripplingPoison",
+      "buttonId": "ValeeraCripplingPoison",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_valeera_cripplingpoison.png",
+      "sort": 4,
+      "name": "减速药膏",
+      "short": "法术伤害使敌人减速",
+      "full": "激活后使瓦莉拉的下一个伤害技能和接下来4秒内的技能令目标减速20%，持续4秒。\n\n激活减速药膏不会打破潜行。"
+    },
+    {
+      "nameId": "ValeeraSinisterStrikeRelentlessStrikes",
+      "buttonId": "ValeeraRelentlessStrikes",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_valeera_sinisterstrike.png",
+      "sort": 1,
+      "name": "无情打击",
+      "short": "降低影袭的能量消耗",
+      "full": "影袭的能量消耗降低10点。"
+    },
+    {
+      "nameId": "ValeeraGarroteHemorrhage",
+      "buttonId": "ValeeraHemorrhage",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_valeera_garrote.png",
+      "sort": 2,
+      "name": "出血",
+      "short": "锁喉提高普通攻击伤害",
+      "full": "瓦莉拉的普通攻击对受到锁喉影响的敌人造成40%的额外伤害。"
+    },
+    {
+      "nameId": "ValeeraVanishInitiative",
+      "buttonId": "ValeeraInitiative",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_valeera_vanish.png",
+      "sort": 3,
+      "name": "先发制人",
+      "short": "潜行技能提高移动速度，奖励连击点数",
+      "full": "伏击、偷袭和锁喉给予15%的移动速度，持续3秒，并奖励2点连击点数。"
+    },
+    {
+      "nameId": "ValeeraWoundPoison",
+      "buttonId": "ValeeraWoundPoison",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_valeera_woundpoison.png",
+      "sort": 4,
+      "name": "致伤药膏",
+      "short": "法术伤害降低敌人受到的治疗效果",
+      "full": "激活后使瓦莉拉的下一个伤害技能和接下来4秒内的技能令目标所受的治疗效果降低50%，持续4秒。\n\n激活致伤药膏不会打破潜行。"
+    },
+    {
+      "nameId": "ValeeraSinisterStrikeMutilate",
+      "buttonId": "ValeeraMutilate",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_valeera_sinisterstrike.png",
+      "sort": 1,
+      "name": "毁伤",
+      "short": "提高影袭的伤害，但降低距离",
+      "full": "影袭现在用两把匕首攻击敌人，造成125%的额外伤害，但距离降低1码。"
+    },
+    {
+      "nameId": "ValeeraBladeFlurryFatalFinesse",
+      "buttonId": "ValeeraFatalFinesse",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_valeera_bladeflurry.png",
+      "sort": 2,
+      "name": "致命灵巧",
+      "short": "任务：用剑刃乱舞攻击英雄",
+      "full": "任务：剑刃乱舞每次对敌方英雄造成伤害，其伤害就会提高6点，最多提高90点。\n\n奖励：用剑刃乱舞对15个英雄造成伤害后，使其能量消耗永久降低20点。"
+    },
+    {
+      "nameId": "ValeeraEviscerateSliceAndDice",
+      "buttonId": "ValeeraSliceAndDice",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_valeera_eviscerate.png",
+      "sort": 3,
+      "name": "切割",
+      "short": "刺骨提高攻击速度",
+      "full": "消耗3点连击点数的刺骨提高150%的攻击速度，持续3秒或3次普通攻击。\n\n被动：普通攻击恢复2点能量。"
+    },
+    {
+      "nameId": "ValeeraSmokeBomb",
+      "buttonId": "ValeeraSmokeBomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_valeera_smokebomb.png",
+      "sort": 1,
+      "name": "烟雾弹",
+      "short": "制造出一团遮蔽烟雾",
+      "full": "制造一团烟雾。瓦莉拉在烟雾中无法被暴露，可以穿过其它单位并获得60点护甲，使受到的伤害降低60%。瓦莉拉可以在未被暴露的状态下继续攻击或使用技能，持续5秒。\n\n使用该技能不会打破潜行。"
+    },
+    {
+      "nameId": "ValeeraCloakOfShadows",
+      "buttonId": "ValeeraCloakOfShadows",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_valeera_cloakofshadows.png",
+      "sort": 2,
+      "name": "暗影斗篷",
+      "short": "变为不可阻挡，获得法术护甲",
+      "full": "瓦莉拉被暗影斗篷包围，立即移除身上的所有持续伤害效果。在1.5秒内，她变为不可阻挡，并获得75点法术护甲，使受到的技能伤害降低75%。\n\n使用该技能不会打破潜行。"
+    },
+    {
+      "nameId": "ValeeraAmbushDeathFromAbove",
+      "buttonId": "ValeeraDeathFromAbove",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_valeera_ambush.png",
+      "sort": 1,
+      "name": "天降杀机",
+      "short": "伏击可缩短消失的冷却时间",
+      "full": "使用伏击传送可以使消失的冷却时间缩短4秒。"
+    },
+    {
+      "nameId": "ValeeraCheapShotBlind",
+      "buttonId": "ValeeraBlind",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_valeera_cheapshot.png",
+      "sort": 2,
+      "name": "致盲",
+      "short": "增加偷袭的致盲持续时间",
+      "full": "偷袭的致盲效果延长2.5秒。"
+    },
+    {
+      "nameId": "ValeeraGarroteStrangle",
+      "buttonId": "ValeeraStrangle",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_valeera_garrote.png",
+      "sort": 3,
+      "name": "扼杀",
+      "short": "锁喉降低法术强度",
+      "full": "对英雄使用锁喉使其法术强度降低40%，持续6秒。"
+    },
+    {
+      "nameId": "ValeeraSinisterStrikeSealFate",
+      "buttonId": "ValeeraSealFate",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_valeera_sinisterstrike.png",
+      "sort": 1,
+      "name": "封印命运",
+      "short": "强化影袭的伤害和连击点数",
+      "full": "对被沉默、定身或昏迷的敌方英雄使用时，影袭造成的伤害提高50%，额外产生1点连击点数。"
+    },
+    {
+      "nameId": "ValeeraAmbushAssassinate",
+      "buttonId": "ValeeraAssassinate",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_valeera_ambush.png",
+      "sort": 2,
+      "name": "刺杀",
+      "short": "伏击对落单英雄造成额外伤害",
+      "full": "如果目标附近4码范围内没有其他敌方英雄，伏击造成50%额外伤害并额外降低目标10点护甲。"
+    },
+    {
+      "nameId": "ValeeraThistleTea",
+      "buttonId": "ValeeraThistleTea",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_valeera_thistletea.png",
+      "sort": 3,
+      "name": "菊花茶",
+      "short": "激活后立即恢复能量",
+      "full": "激活后立即恢复100点能量。\n\n激活菊花茶不会打破潜行。"
+    },
+    {
+      "nameId": "ValeeraSmokeBombAdrenalineRush",
+      "buttonId": "ValeeraAdrenalineRush",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_valeera_smokebomb.png",
+      "sort": 1,
+      "name": "冲动",
+      "short": "烟雾弹提高能量恢复",
+      "full": "在烟雾弹中，瓦莉拉每秒恢复额外40点能量。"
+    },
+    {
+      "nameId": "ValeeraCloakOfShadowsEnvelopingShadows",
+      "buttonId": "ValeeraEnvelopingShadows",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_valeera_cloakofshadows.png",
+      "sort": 2,
+      "name": "暗影笼罩",
+      "short": "消失提供暗影斗篷",
+      "full": "瓦莉拉每次使用消失都能获得暗影斗篷效果。"
+    },
+    {
+      "nameId": "ValeeraGarroteRupture",
+      "buttonId": "ValeeraRupture",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_valeera_garrote.png",
+      "sort": 3,
+      "name": "割裂",
+      "short": "提高锁喉持续伤害",
+      "full": "锁喉的持续伤害提高100%。瓦莉拉的普通攻击可刷新锁喉持续时间。"
+    },
+    {
+      "nameId": "ValeeraVanishElusiveness",
+      "buttonId": "ValeeraElusiveness",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_valeera_vanish.png",
+      "sort": 4,
+      "name": "飘忽不定",
+      "short": "提高消失的移动速度加成",
+      "full": "消失时，瓦莉拉的移动速度额外提高20%。"
+    }
+  ]
+}

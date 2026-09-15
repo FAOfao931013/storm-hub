@@ -1,0 +1,295 @@
+{
+  "shortName": "ana",
+  "heroName": "Ana",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "AnaAimDownSightsActivate",
+      "buttonId": "AnaAimDownSightsActivate",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_ana_aim_down_sights.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "伯劳鸟",
+      "short": "普通攻击造成持续伤害",
+      "full": "普通攻击对敌人施加一层药剂，在5秒内造成40(+4%每级)点持续伤害，外加等同于目标当前所叠加层数的额外伤害，最多叠加5层。安娜每0.5秒受到一次治疗，数值相当于伯劳鸟造成伤害的60%。\n\n观瞄视界\n\n激活伯劳鸟会使你的移动速度降低25%，但治疗镖和麻醉镖的射程提高25%，并且允许它们穿透一名英雄。持续直到取消为止。"
+    },
+    {
+      "nameId": "AnaHealingDart",
+      "buttonId": "AnaHealingDart",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ana_healing_dart.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "治疗镖",
+      "short": "发射一枚可以治疗盟友的镖",
+      "full": "发射一枚镖，使击中的第一个友方英雄恢复195(+4%每级)点生命值。不影响生命值全满的英雄。"
+    },
+    {
+      "nameId": "AnaBioticGrenade",
+      "buttonId": "AnaBioticGrenade",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_ana_biotic_grenade.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "生物手雷",
+      "short": "投掷手雷，治疗盟友并阻止敌人接受治疗",
+      "full": "向目标地区投掷一枚手雷。被击中的友方英雄恢复152(+4%每级)点生命值，并且获得来自安娜的治疗提高25%，持续4秒。被击中的敌人受到60(+4%每级)点伤害，并且获得的治疗降低100%，持续1.75秒。\n\n如果生物手雷未命中任何敌人，则该技能的冷却时间缩短3秒。如果只命中安娜，则该技能的冷却时间额外缩短2秒。"
+    },
+    {
+      "nameId": "AnaSleepDart",
+      "buttonId": "AnaSleepDart",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_ana_sleep_dart.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "麻醉镖",
+      "short": "发射镖，使敌人睡眠",
+      "full": "发射一枚镖，使击中的第一个敌方英雄睡眠，使其无法行动，持续3秒，目标如果在一开始的0.5秒后受到任何伤害，睡眠效果就会结束。\n\n不能对载具使用。"
+    },
+    {
+      "nameId": "AnaNanoBoost",
+      "buttonId": "AnaNanoBoost",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ana_nano_bost.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "纳米激素",
+      "short": "使盟友法术强度提高，冷却时间缩短",
+      "full": "立即强化一名友方英雄，恢复200点法力值。在接下来的8秒内，使其法术强度提高30%，基本技能冷却速度加快150%。\n\n不能对安娜使用。"
+    },
+    {
+      "nameId": "AnaEyeOfHorusActivate",
+      "buttonId": "AnaEyeOfHorusActivate",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ana_overwatch.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "荷鲁斯之眼",
+      "short": "发射没有距离限制的治疗和伤害子弹",
+      "full": "安娜采取狙击姿势，可以无限距离发射最多6枚特殊子弹。子弹可穿透友方和敌方英雄，但会被路径上的敌方建筑阻挡。友方获得225(+4%每级)点治疗，敌方英雄受到135(+4%每级)点伤害。对建筑伤害降低50%。\n\n荷鲁斯之眼激活期间，安娜无法移动。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "AnaBioticGrenadeContactHealing",
+      "buttonId": "AnaBioticGrenadeContactHealing",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_ana_biotic_grenade.png",
+      "sort": 1,
+      "name": "接触治疗",
+      "short": "生物手雷击中多个英雄时效果增强",
+      "full": "生物手雷每击中一名英雄，其伤害和治疗量就会提高30%。"
+    },
+    {
+      "nameId": "AnaSleepingDartSlumberShells",
+      "buttonId": "AnaSleepingDartSlumberShells",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_ana_sleep_dart.png",
+      "sort": 2,
+      "name": "阻滞弹",
+      "short": "缩短麻醉镖冷却时间，并可减速",
+      "full": "麻醉镖的冷却时间缩短2秒。醒来的敌方英雄还会减速25%，持续3秒。"
+    },
+    {
+      "nameId": "AnaShrikeVampiricRounds",
+      "buttonId": "AnaShrikeVampiricRounds",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_ana_shrike.png",
+      "sort": 3,
+      "name": "吸血弹",
+      "short": "任务：提高伯劳鸟的治疗",
+      "full": "伯劳鸟的治疗效果提高15%。\n\n可重复任务：叠加5层药剂使伯劳鸟的治疗效果提高1%。\n\n可重复任务：对身上拥有5层药剂的英雄进行普通攻击使伯劳鸟的治疗效果提高0.25%。"
+    },
+    {
+      "nameId": "AnaBioticGrenadeBioticEnhancements",
+      "buttonId": "AnaBioticGrenadeBioticEnhancements",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_ana_biotic_grenade.png",
+      "sort": 1,
+      "name": "生物强化",
+      "short": "强化生物手雷",
+      "full": "使生物手雷的治疗加成的持续时间延长50%，并使其冷却时间缩短3秒。"
+    },
+    {
+      "nameId": "AnaOverdose",
+      "buttonId": "AnaOverdose",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_ana_sleep_dart.png",
+      "sort": 2,
+      "name": "药剂过量",
+      "short": "麻醉镖施加药剂并能穿透目标",
+      "full": "麻醉镖可施加4层药剂。当观瞄视界激活时，麻醉镖可以穿透所有敌方英雄。"
+    },
+    {
+      "nameId": "AnaDebilitatingDart",
+      "buttonId": "AnaDebilitatingDart",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_ana_debilitatingdart.png",
+      "sort": 3,
+      "name": "衰弱镖",
+      "short": "发射一枚减速镖，可降低敌人的伤害能力",
+      "full": "发射一枚衰弱镖，使命中的第一个敌人的移动速度和造成的伤害降低50%，持续4秒。如果未命中任何英雄，则该技能的冷却时间缩短8秒。"
+    },
+    {
+      "nameId": "AnaBioticGrenadeAntiHealer",
+      "buttonId": "AnaBioticGrenadeAntiHealer",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_ana_biotic_grenade.png",
+      "sort": 1,
+      "name": "反治疗",
+      "short": "强化生物手雷",
+      "full": "生物手雷的范围扩大25%，并且禁疗效果的持续时间延长0.75秒。"
+    },
+    {
+      "nameId": "AnaSleepDartNightTerrors",
+      "buttonId": "AnaSleepDartNightTerrors",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_ana_sleep_dart.png",
+      "sort": 2,
+      "name": "噩梦效应",
+      "short": "强化麻醉镖",
+      "full": "麻醉镖击中英雄时获得25%的移动速度，每击中一名英雄，持续2秒。醒来时，敌方英雄受到相当于其最大生命值8%的伤害。"
+    },
+    {
+      "nameId": "AnaMindNumbingAgent",
+      "buttonId": "AnaMindNumbingAgent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_ana_shrike.png",
+      "sort": 3,
+      "name": "降智药剂",
+      "short": "药剂降低法术强度",
+      "full": "英雄身上每有一层药剂，法术强度就降低10%。"
+    },
+    {
+      "nameId": "AnaHeroicAbilityNanaBoost",
+      "buttonId": "AnaNanoBoost",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ana_nano_bost.png",
+      "sort": 1,
+      "name": "纳米激素",
+      "short": "使盟友法术强度提高，冷却时间缩短",
+      "full": "立即强化一名友方英雄，恢复200点法力值。在接下来的8秒内，使其法术强度提高30%，基本技能冷却速度加快150%。\n\n不能对安娜使用。"
+    },
+    {
+      "nameId": "AnaHeroicAbilityEyeOfHorus",
+      "buttonId": "AnaEyeOfHorusActivate",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ana_overwatch.png",
+      "sort": 2,
+      "name": "荷鲁斯之眼",
+      "short": "发射没有距离限制的治疗和伤害子弹",
+      "full": "安娜采取狙击姿势，可以无限距离发射最多6枚特殊子弹。子弹可穿透友方和敌方英雄，但会被路径上的敌方建筑阻挡。友方获得225(+4%每级)点治疗，敌方英雄受到135(+4%每级)点伤害。对建筑伤害降低50%。\n\n荷鲁斯之眼激活期间，安娜无法移动。"
+    },
+    {
+      "nameId": "AnaHealingDartSpeedSerum",
+      "buttonId": "AnaHealingDartSpeedSerum",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ana_healing_dart.png",
+      "sort": 1,
+      "name": "加速血清",
+      "short": "治疗镖使移动速度提高",
+      "full": "治疗镖使受影响的英雄移动速度提高25%，持续2秒。"
+    },
+    {
+      "nameId": "AnaHealingDartPurifyingDarts",
+      "buttonId": "AnaHealingDartPurifyingDarts",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ana_healing_dart_a.png",
+      "sort": 2,
+      "name": "净化镖",
+      "short": "治疗镖可解除定身、减速",
+      "full": "治疗镖可解除目标的定身和减速效果，并且成功解除时治疗量提高20%。"
+    },
+    {
+      "nameId": "AnaHealingDartSmellingSalts",
+      "buttonId": "AnaHealingDartSmellingSalts",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ana_healing_dart_b.png",
+      "sort": 3,
+      "name": "嗅盐",
+      "short": "治疗镖可移除昏迷效果",
+      "full": "治疗镖可解除目标的昏迷效果，并且成功解除时使其获得50点护甲，持续2秒。"
+    },
+    {
+      "nameId": "AnaHealingDartSharpshooter",
+      "buttonId": "AnaHealingDartSharpshooter",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ana_healing_dart.png",
+      "sort": 1,
+      "name": "神枪手",
+      "short": "强化连续命中的治疗镖",
+      "full": "如果治疗镖治疗一次英雄，其治疗量提高5%，最多提高50%。达到最大加成时，使其治疗量额外提高35%。如果治疗镖未击中英雄，则加成效果重置。"
+    },
+    {
+      "nameId": "AnaHealingDartConcentratedDoses",
+      "buttonId": "AnaHealingDartConcentratedDoses",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ana_healing_dart_a.png",
+      "sort": 2,
+      "name": "浓缩剂量",
+      "short": "药剂可以强化治疗镖",
+      "full": "敌方英雄身上每有一个激活的药剂效果，治疗镖的治疗量就提高12%。"
+    },
+    {
+      "nameId": "AnaDetachableBoxMagazine",
+      "buttonId": "AnaDetachableBoxMagazineActive",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_ana_healing_dart_b.png",
+      "sort": 3,
+      "name": "主动装填",
+      "short": "获得额外的治疗镖使用次数",
+      "full": "激活后立即获得3层治疗镖。"
+    },
+    {
+      "nameId": "AnaNanoInfusion",
+      "buttonId": "AnaNanoInfusion",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ana_nano_bost.png",
+      "sort": 1,
+      "name": "纳米注入",
+      "short": "纳米激素按造成的伤害给予治疗",
+      "full": "受纳米激素影响的盟友会以造成法术伤害的50%治疗自己。"
+    },
+    {
+      "nameId": "AnaEyeOfHorusDeadeye",
+      "buttonId": "AnaEyeOfHorusDeadeye",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ana_overwatch.png",
+      "sort": 2,
+      "name": "致命狙击",
+      "short": "荷鲁斯之眼子弹持续充能",
+      "full": "荷鲁斯之眼的冷却时间缩短至6秒，但只能每10秒获得子弹。剩余冷却时间转化为子弹。\n\n荷鲁斯之眼每击中一名英雄，就能使该技能的治疗和伤害提高5%。离开荷鲁斯之眼状态或4秒后，该加成会被重置。"
+    },
+    {
+      "nameId": "AnaShrikeArmoredStance",
+      "buttonId": "AnaShrikeArmoredStance",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_ana_aim_down_sights.png",
+      "sort": 3,
+      "name": "掩蔽姿态",
+      "short": "强化伯劳鸟",
+      "full": "使伯劳鸟的伤害提高50%。当观瞄视界激活时，获得25点护甲。"
+    },
+    {
+      "nameId": "AnaDynamicOptics",
+      "buttonId": "AnaDynamicOptics",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_ana_aim_down_sights_a.png",
+      "sort": 4,
+      "name": "动态光学组件",
+      "short": "强化普通攻击",
+      "full": "普通攻击可以使攻击速度提高10%，持续3秒，最多可达100%。当观瞄视界激活时，使你的普通攻击射程提高4码。"
+    }
+  ]
+}

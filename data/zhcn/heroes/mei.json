@@ -1,0 +1,295 @@
+{
+  "shortName": "mei",
+  "heroName": "MeiOW",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "MeiOWCryoFreeze",
+      "buttonId": "MeiOWCryoFreeze",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_mei_trait.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "急冻",
+      "short": "激活以获得护盾并恢复生命",
+      "full": "将自己包裹在冰中3秒，获得一层迅速衰减的护盾，吸收至多1104(+4%每级)点伤害。激活时，该护盾提供不可阻挡效果并为美恢复至多35%的最大生命值。"
+    },
+    {
+      "nameId": "MeiOWSnowBlind",
+      "buttonId": "MeiOWSnowBlind",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_mei_q_snowblind.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "雪盲",
+      "short": "投掷一枚能够减速并致盲的雪球",
+      "full": "投掷一个雪球，击中区域内所有敌人。被击中的敌人受到70(+4%每级)点伤害，同时会被减速35%并且被致盲，持续1.75秒。"
+    },
+    {
+      "nameId": "MeiOWBlizzard",
+      "buttonId": "MeiOWBlizzard",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_mei_w_blizzard.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "暴雪",
+      "short": "冻结一片区域的敌人",
+      "full": "命令雪球在目标区域制造一场暴雪，持续2秒。暴雪中的敌人每0.25秒受到13(+4%每级)点伤害，并被减速7%，至多叠加至35%。当暴雪结束时，区域内的敌人额外受到75(+4%每级)点伤害并昏迷1.25秒。"
+    },
+    {
+      "nameId": "MeiOWIcing",
+      "buttonId": "MeiOWIcing",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_mei_e1_slide.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "滑冰",
+      "short": "滑向一个方向并击退敌人",
+      "full": "快速滑向目标方向。效果结束时，美附近的敌人将被击退，受到52(+4%每级)点伤害并被减速80%，该效果在1.5秒内迅速衰减。\n\n可以在滑行过程中取消。"
+    },
+    {
+      "nameId": "MeiOWAvalanche",
+      "buttonId": "MeiOWAvalanche",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_mei_r1_avalanche.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "雪崩",
+      "short": "将英雄吞进一个巨型雪球中",
+      "full": "在0.5秒后，滚出一个巨型雪球，吞噬路径上所有敌方英雄。当滚到尽头时，雪球会崩塌，释放出吞噬的所有英雄，对每名英雄造成220(+4%每级)点伤害并使其昏迷0.5秒。"
+    },
+    {
+      "nameId": "MeiOWIceWall",
+      "buttonId": "MeiOWIceWall",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_mei_r2_icewall.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "冰墙",
+      "short": "使用阻挡路径的墙体来困住敌人",
+      "full": "选择方向\n在0.75秒延迟后，制造一堵无法穿越的墙体，使命中的敌方英雄被困住，持续2.5秒。当墙体消失时，被困住的英雄会被减速75%，效果在3秒内衰减。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "MeiOWHeavyPack",
+      "buttonId": "MeiOWHeavyPack",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_mei_q_snowblind.png",
+      "sort": 1,
+      "name": "沉重背包",
+      "short": "提高雪盲的减速效果，缩短冷却时间",
+      "full": "雪盲的减速效果持续时间延长1.5秒。每当暴雪对一名敌方英雄造成伤害时，雪盲的冷却时间缩短0.5秒，并获得3法力值。"
+    },
+    {
+      "nameId": "MeiOWIceStorm",
+      "buttonId": "MeiOWBlizzardIceStorm",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_mei_w_blizzard.png",
+      "sort": 2,
+      "name": "冰雪风暴",
+      "short": "暴雪能够造成额外伤害",
+      "full": "暴雪每命中3次敌方英雄，就会额外造成42(+4%每级)点伤害。暴雪对所有敌人的最终昏迷伤害提高150%。"
+    },
+    {
+      "nameId": "MeiOWHeatTransfer",
+      "buttonId": "MeiOWHeatTransfer",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "热能传导",
+      "short": "瘫痪英雄获得加成",
+      "full": "对陷入昏迷、定身或减速的英雄发动普通攻击会造成33%的额外伤害。每当美使敌方英雄昏迷或减速时，都会恢复16(+4%每级)点生命。"
+    },
+    {
+      "nameId": "MeiOWSlushball",
+      "buttonId": "MeiOWSlushball",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_mei_q_snowblind.png",
+      "sort": 1,
+      "name": "雪泥之球",
+      "short": "提高雪盲的伤害，瘫痪建筑",
+      "full": "雪盲造成的伤害提高75%，被击中的建筑将瘫痪，持续3秒。"
+    },
+    {
+      "nameId": "MeiOWColdFront",
+      "buttonId": "MeiOWColdFront",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_mei_e1_slide.png",
+      "sort": 2,
+      "name": "冷锋",
+      "short": "暴雪会缩短滑冰的冷却时间",
+      "full": "滑冰的冷却时间缩短3秒。如果美在滑冰激活时进入自己的暴雪区域，则滑冰的冷却时间缩短5秒，她同时获得80点法力值。"
+    },
+    {
+      "nameId": "MeiOWCrystallize",
+      "buttonId": "MeiOWCrystallize",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_mei_trait.png",
+      "sort": 3,
+      "name": "冰晶护体",
+      "short": "急冻提供法术护甲",
+      "full": "急冻的冷却时间缩短10秒。在急冻激活时以及在之后的1秒内，美获得40点法术护甲。"
+    },
+    {
+      "nameId": "MeiOWInduceHibernation",
+      "buttonId": "MeiOWInduceHibernation",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_mei_w_blizzard.png",
+      "sort": 1,
+      "name": "引发休眠",
+      "short": "暴雪降低敌人造成的伤害",
+      "full": "暴雪区域内的敌方英雄造成的伤害降低40%。\n\n当暴雪结束时，区域内的敌方英雄身上的该效果还会持续4秒。"
+    },
+    {
+      "nameId": "MeiOWSkatingAway",
+      "buttonId": "MeiOWSkatingAway",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_mei_e1_slide.png",
+      "sort": 2,
+      "name": "冰地滑行",
+      "short": "滑冰使盟友获得移动速度，物理护甲",
+      "full": "当滑冰结束时，美和所有附近的友方英雄获得20%移动速度和50点物理护甲，持续3秒。"
+    },
+    {
+      "nameId": "MeiOWBackupBattery",
+      "buttonId": "MeiOWBackupBattery",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_mei_battery.png",
+      "sort": 3,
+      "name": "备用电池",
+      "short": "激活来移除定身和减速效果，并获得治疗",
+      "full": "激活来移除定身和减速效果，并在2秒内恢复最大生命值的20%。每当美拾取一个恢复之球，该技能的冷却时间就会缩短10秒。"
+    },
+    {
+      "nameId": "MeiOWAvalanche",
+      "buttonId": "MeiOWAvalanche",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_mei_r1_avalanche.png",
+      "sort": 1,
+      "name": "雪崩",
+      "short": "将英雄吞进一个巨型雪球中",
+      "full": "在0.5秒后，滚出一个巨型雪球，吞噬路径上所有敌方英雄。当滚到尽头时，雪球会崩塌，释放出吞噬的所有英雄，对每名英雄造成220(+4%每级)点伤害并使其昏迷0.5秒。"
+    },
+    {
+      "nameId": "MeiOWIceWall",
+      "buttonId": "MeiOWIceWall",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_mei_r2_icewall.png",
+      "sort": 2,
+      "name": "冰墙",
+      "short": "使用阻挡路径的墙体来困住敌人",
+      "full": "选择方向\n在0.75秒延迟后，制造一堵无法穿越的墙体，使命中的敌方英雄被困住，持续2.5秒。当墙体消失时，被困住的英雄会被减速75%，效果在3秒内衰减。"
+    },
+    {
+      "nameId": "MeiOWFlurry",
+      "buttonId": "MeiOWFlurry",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_mei_w_blizzard.png",
+      "sort": 1,
+      "name": "雪球弹幕",
+      "short": "站在暴雪中能够缩短冷却时间",
+      "full": "当处于自己的暴雪中时，美获得50%攻击速度并且暴雪的冷却速度加快125%。如果暴雪结束时美正身处其中，可额外获得3秒的效果加成。"
+    },
+    {
+      "nameId": "MeiOWCryoFreezeCoolingServos",
+      "buttonId": "MeiOWCryoFreezeCoolingServos",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_mei_trait.png",
+      "sort": 2,
+      "name": "冷却伺服系统",
+      "short": "强化急冻，普通攻击",
+      "full": "当急冻激活时，美的基本技能冷却速度加快200%。\n\n被动：普通攻击会减速20%，持续1.5秒。"
+    },
+    {
+      "nameId": "MeiOWPolarVortex",
+      "buttonId": "MeiOWPolarVortex",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_arthas_frosentempest.png",
+      "sort": 3,
+      "name": "极地涡旋",
+      "short": "造成范围伤害并在施放技能后造成减速",
+      "full": "使用技能时，会使美对附近敌人每秒造成24(+4%每级)点伤害，持续4秒。受到此效果伤害的敌方英雄，移动速度和攻击速度降低20%。"
+    },
+    {
+      "nameId": "MeiOWFreshPowder",
+      "buttonId": "MeiOWFreshPowder",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_mei_q_snowblind.png",
+      "sort": 1,
+      "name": "天然粉雪",
+      "short": "雪盲获得额外一层使用次数，提高射程",
+      "full": "雪盲获得额外一次使用次数，射程提高33%。"
+    },
+    {
+      "nameId": "MeiOWBlackIce",
+      "buttonId": "MeiOWBlackIce",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_mei_e1_slide.png",
+      "sort": 2,
+      "name": "黑冰",
+      "short": "提高滑冰的减速效果和造成的伤害",
+      "full": "滑冰的减速效果不再随时间衰退。滑冰会对离美极近的敌人造成300%额外伤害。"
+    },
+    {
+      "nameId": "MeiOWAcclimation",
+      "buttonId": "MeiOWAcclimation",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_jaina_frostarmor.png",
+      "sort": 3,
+      "name": "适应",
+      "short": "使敌人瘫痪会强化美",
+      "full": "每当美昏迷或减速一名敌方英雄时，她造成的伤害和受到的治疗提高1%，至多可叠加20次。当叠加到最高层数时，美还会获得10点护甲。持续8秒。"
+    },
+    {
+      "nameId": "MeiOWCascade",
+      "buttonId": "MeiOWCascade",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_mei_r1_avalanche.png",
+      "sort": 1,
+      "name": "涌流",
+      "short": "雪崩会在路径上发射雪盲",
+      "full": "雪崩的雪球滚动时，持续向其前方发射无天赋加成的雪盲雪球。\n\n被动：雪崩的冷却时间缩短30秒。"
+    },
+    {
+      "nameId": "MeiOWShatter",
+      "buttonId": "MeiOWShatter",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_mei_r2_icewall.png",
+      "sort": 2,
+      "name": "崩裂",
+      "short": "冰墙造成伤害并降低护甲",
+      "full": "当冰墙消失时，被命中并受困的敌方英雄将受到210(+4%每级)点伤害，并且护甲降低25点，持续5秒。"
+    },
+    {
+      "nameId": "MeiOWTheBigOne",
+      "buttonId": "MeiOWTheBigOne",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_mei_q_snowblind.png",
+      "sort": 3,
+      "name": "大块头",
+      "short": "雪盲会周期性获得强化",
+      "full": "每隔15秒，你施放的下一个雪盲的范围扩大67%，伤害提高200%。"
+    },
+    {
+      "nameId": "MeiOWFlashFreeze",
+      "buttonId": "MeiOWFlashFreeze",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_mei_trait.png",
+      "sort": 4,
+      "name": "冰霜速冻",
+      "short": "受到致命伤害时激活急冻",
+      "full": "当美受到致命伤害时，会立即获得急冻。该效果有180秒冷却时间。"
+    }
+  ]
+}

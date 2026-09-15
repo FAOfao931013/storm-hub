@@ -1,0 +1,305 @@
+{
+  "shortName": "raynor",
+  "heroName": "Raynor",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "RaynorGiveEmSomePepper",
+      "buttonId": "RaynorGiveEmSomePepper",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_raynor_acquireweakspot.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "教他做人",
+      "short": "周期性强化普通攻击",
+      "full": "每第4次普通攻击造成小范围溅射伤害，对主要目标造成额外125%伤害。"
+    },
+    {
+      "nameId": "RaynorPenetratingRound",
+      "buttonId": "RaynorPenetratingRound",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_raynor_penetratinground.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "穿透弹",
+      "short": "射出一枚子弹，对敌人造成伤害，将其击退并减速",
+      "full": "造成205(+4%每级)点伤害，击退敌人，并使一条直线上的敌人减速20%，持续2秒。距离雷诺太近的敌人将被击退得更远。"
+    },
+    {
+      "nameId": "RaynorInspire",
+      "buttonId": "RaynorInspire",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_raynor_inspire.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "激励",
+      "short": "重置并强化普通攻击",
+      "full": "雷诺及其周围所有友方小兵、雇佣兵获得30%攻击速度与10%移动速度加成，持续4秒。\n\n施放激励重置雷诺的普通攻击的冷却时间。"
+    },
+    {
+      "nameId": "RaynorAdrenalineRush",
+      "buttonId": "RaynorAdrenalineRushActivatable",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_raynor_adrenalinrush.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "强心激素",
+      "short": "激活后治疗雷诺",
+      "full": "在1秒内治疗雷诺25%最大生命值。雷诺的普通攻击可以使该技能的冷却时间缩短0.5秒，攻击英雄所获得的效果翻倍。"
+    },
+    {
+      "nameId": "RaynorHyperion",
+      "buttonId": "RaynorHyperion",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_raynor_hyperion.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "休伯利安号",
+      "short": "召唤一艘火力强大的战列巡航舰",
+      "full": "命令休伯利安号持续轰炸12秒，击中最多4名敌人，每秒造成66(+4%每级)点伤害。每隔4秒，它还会向建筑发射大和炮，造成794(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "RaynorRaynorsRaidersDummy",
+      "buttonId": "RaynorRaynorsRaiderDummy",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_raynor_raynorsraiders.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "雷诺的游骑兵",
+      "short": "呼叫一架女妖战机护卫",
+      "full": "呼叫一架女妖战机支援雷诺。女妖战机每秒造成84(+4%每级)点伤害，并且如果在4秒内未受到伤害，每秒还会恢复75(+4%每级)点生命值。可以重新激活来重新选定目标或移动女妖战机。\n\n女妖战机将在45秒后自动重生。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "RaynorGiveEmSomePepperExterminator",
+      "buttonId": "RaynorExterminator",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_raynor_inspire.png",
+      "sort": 1,
+      "name": "怪物猎手",
+      "short": "提高对非英雄单位的伤害",
+      "full": "普通攻击对小兵、雇佣兵、怪物造成50%额外伤害。当激励激活时，该效果提高至125%。\n\n被动：友方小兵和雇佣兵获得的激励效果不会消失。"
+    },
+    {
+      "nameId": "RaynorVeteranMarksman",
+      "buttonId": "RaynorVeteranMarksman",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_raynor_acquireweakspot.png",
+      "sort": 2,
+      "name": "枪法精湛",
+      "short": "孤注一掷：强化教他做人伤害\n任务：强化教他做人伤害",
+      "full": "任务：每当“教他做人”的主要目标为一名英雄时，其伤害加成永久提高0.75%。\n\n孤注一掷：获得60%“教他做人”伤害加成。每次死亡时该加成失去15%。"
+    },
+    {
+      "nameId": "RaynorAceInTheHole",
+      "buttonId": "RaynorAceInTheHole",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_raynor_acardtoplay.png",
+      "sort": 3,
+      "name": "底牌有王",
+      "short": "对瘫痪的英雄造成更多伤害",
+      "full": "对被击晕或被减速的英雄造成额外12%伤害。\n\n“教他做人”击中的敌方英雄被减速10%，持续2.5秒。"
+    },
+    {
+      "nameId": "RaynorMasteryFightorFlightAdrenalineRush",
+      "buttonId": "RaynorAdrenalineRushFightOrFlightTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_raynor_adrenalinrush.png",
+      "sort": 1,
+      "name": "可战可散",
+      "short": "强心激素的冷却时间缩短，提供护甲",
+      "full": "强心激素的冷却时间缩短10秒。施放强心激素给予25点护甲加成，持续3秒。"
+    },
+    {
+      "nameId": "RaynorBasicAttackSustainingRounds",
+      "buttonId": "RaynorBasicAttackSustainingRounds",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_raynor_acquireweakspot.png",
+      "sort": 2,
+      "name": "汲血弹",
+      "short": "教他做人的攻击可治疗",
+      "full": "教他做人治疗雷诺3%最大生命值。如果他的主要目标是英雄，该效果提高至6%。"
+    },
+    {
+      "nameId": "RaynorBehemothArmor",
+      "buttonId": "RaynorBehemothArmor",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_raynor_hulkarmor.png",
+      "sort": 3,
+      "name": "巨兽装甲",
+      "short": "任务：获得最大生命值加成",
+      "full": "获得200点最大生命值加成。\n\n 任务：每当教他做人的主要目标是英雄，获得一次8点最大生命值加成。"
+    },
+    {
+      "nameId": "RaynorPenetratingRoundHeavySlugs",
+      "buttonId": "RaynorPenetratingRoundHeavySlugs",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_raynor_penetratinground.png",
+      "sort": 1,
+      "name": "重型独头弹",
+      "short": "强化穿透弹减速",
+      "full": "穿透弹的减速效果提高15%，其持续时间延长2秒。"
+    },
+    {
+      "nameId": "RaynorInspireFuelTheRush",
+      "buttonId": "RaynorInspireFuelTheRush",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_raynor_split_debilitatingrounds.png",
+      "sort": 2,
+      "name": "激发冲动",
+      "short": "提高强心激素的冷却时间缩减",
+      "full": "使强心激素的法力消耗从75点降低至45点。当激励激活时，从普通攻击中获得的强心激素冷却时间缩减效果提高300%。"
+    },
+    {
+      "nameId": "RaynorGiveEmSomePepperUnstableCompound",
+      "buttonId": "RaynorGiveEmSomePepperUnstableCompound",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_raynor_acquireweakspot.png",
+      "sort": 3,
+      "name": "不稳复合弹",
+      "short": "教他做人的溅射范围扩大，缩短冷却时间",
+      "full": "“教他做人”的溅射范围扩大15%。每一名被“教他做人”击中的敌方英雄给予雷诺10点法力值，并使穿透弹的冷却时间缩短1.5秒。"
+    },
+    {
+      "nameId": "RaynorHeroicAbilityHyperion",
+      "buttonId": "RaynorHyperion",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_raynor_hyperion.png",
+      "sort": 1,
+      "name": "休伯利安号",
+      "short": "召唤一艘火力强大的战列巡航舰",
+      "full": "命令休伯利安号持续轰炸12秒，击中最多4名敌人，每秒造成66(+4%每级)点伤害。每隔4秒，它还会向建筑发射大和炮，造成794(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "RaynorHeroicAbilityRaynorsRaiders",
+      "buttonId": "RaynorRaynorsRaider",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_raynor_raynorsraiders.png",
+      "sort": 2,
+      "name": "雷诺的游骑兵",
+      "short": "呼叫一架女妖战机护卫",
+      "full": "呼叫一架女妖战机支援雷诺。女妖战机每秒造成84(+4%每级)点伤害，并且如果在4秒内未受到伤害，每秒还会恢复75(+4%每级)点生命值。可以重新激活来重新选定目标或移动女妖战机。\n\n女妖战机将在45秒后自动重生。"
+    },
+    {
+      "nameId": "RaynorPenetratingRoundLine'EmUp",
+      "buttonId": "RaynorPenetratingRoundLine'EmUp",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_raynor_penetratinground.png",
+      "sort": 1,
+      "name": "穿膛葫芦",
+      "short": "缩短穿透弹冷却时间",
+      "full": "穿透弹的冷却时间缩短3秒。穿透弹命中两名或以上敌方英雄时，额外使冷却时间缩短3秒。"
+    },
+    {
+      "nameId": "RaynorInspireGiddyUp",
+      "buttonId": "RaynorInspireGiddyUp",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_raynor_inspire.png",
+      "sort": 2,
+      "name": "得儿驾",
+      "short": "获得移动速度，激励期间提高移动速度",
+      "full": "获得10%骑乘和非骑乘移动速度。激励给予10%移动速度加成。"
+    },
+    {
+      "nameId": "RaynorMasteryGiveMeMoreAdrenalineRush",
+      "buttonId": "RaynorAdrenalineRushGiveMeMoreTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_raynor_split_debilitatingrounds.png",
+      "sort": 3,
+      "name": "激素爆发",
+      "short": "强化强心激素和激励",
+      "full": "强心激素的治疗效果提高50%。激励激活时，获得1码普通攻击射程加成。"
+    },
+    {
+      "nameId": "RaynorPenetratingRoundPaintThemRed",
+      "buttonId": "RaynorPenetratingRoundPaintThemRed",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_raynor_penetratinground.png",
+      "sort": 1,
+      "name": "枪枪见血",
+      "short": "穿透弹造成更多的伤害并且可以治疗",
+      "full": "穿透弹的伤害提高50%，并恢复相当于穿透弹对英雄造成伤害90%的生命值。"
+    },
+    {
+      "nameId": "RaynorInspireRallyingCry",
+      "buttonId": "RaynorInspireRallyingCry",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_raynor_inspire.png",
+      "sort": 2,
+      "name": "集结呐喊",
+      "short": "提高激励的攻击速度，免费施放",
+      "full": "激励的攻击速度加成提高20%。\n\n被动：每发动12次普通攻击后，可以免费施放激励。"
+    },
+    {
+      "nameId": "RaynorBountyHunter",
+      "buttonId": "RaynorBountyHunter",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_raynor_acquireweakspot.png",
+      "sort": 3,
+      "name": "赏金猎人",
+      "short": "强化教他做人，给予护甲",
+      "full": "如果教他做人的目标是英雄，它将造成目标英雄最大生命值3%的伤害，并给予雷诺10点护甲，持续3秒。\n\n激活教他做人可以使其在雷诺的下一次普通攻击中生效。"
+    },
+    {
+      "nameId": "RaynorHyperionCavalrysArrived",
+      "buttonId": "RaynorCavalrysArrived",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_raynor_hyperion.png",
+      "sort": 1,
+      "name": "救兵到了",
+      "short": "为休伯利安号标记目标",
+      "full": "如果“教他做人”的主要目标是一名英雄，则使休伯利安号的冷却时间缩短5秒。这些英雄被休伯利安号命中时会受到100%的额外伤害，持续6秒。"
+    },
+    {
+      "nameId": "RaynorDuskWing",
+      "buttonId": "RaynorRaynorsRaidersDuskWingsTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_raynor_raynorsraiders.png",
+      "sort": 2,
+      "name": "黄昏之翼",
+      "short": "升级雷诺的游骑兵",
+      "full": "使雷诺的游骑兵的生命值、控制范围提高100%。其普通攻击使敌方英雄的护甲降低3点，持续1秒，最多可叠加至30点。"
+    },
+    {
+      "nameId": "RaynorAdrenalineRushRaidersRoll",
+      "buttonId": "RaynorAdrenalineRushRaidersRoll",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_raynor_adrenalinrush.png",
+      "sort": 3,
+      "name": "游骑兵出动",
+      "short": "强心激素获得不可阻挡",
+      "full": "强心激素获得不可阻挡，并且生命值恢复效果持续时间延长2秒。当生命值百分比达到70%时，额外获得的持续时间结束。"
+    },
+    {
+      "nameId": "RaynorGive'EmSomePepperSergeantPepper",
+      "buttonId": "RaynorGive'EmSomePepperSergeantPepper",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_raynor_acquireweakspot.png",
+      "sort": 4,
+      "name": "“教做人”中士",
+      "short": "每第三次攻击“教他做人”",
+      "full": "现在每第3次普通攻击触发“教他做人”。"
+    },
+    {
+      "nameId": "RaynorHyperionExecuteOrders",
+      "buttonId": "RaynorHyperionExecuteOrders",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_raynor_advancedoptics.png",
+      "sort": 5,
+      "name": "复仇炮击",
+      "short": "死亡后报复敌人",
+      "full": "雷诺被消灭时，对最近的敌方英雄施放休伯利安号。它会持续12秒，击中最多4名范围内生命值最低的敌方英雄，每秒造成66(+4%每级)点伤害。每隔4秒，它还会向生命值最低的敌方英雄发射大和炮，造成395(+4%每级)点伤害。\n\n被动：雷诺的复活时间缩短35秒。"
+    }
+  ]
+}

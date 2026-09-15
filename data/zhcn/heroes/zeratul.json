@@ -1,0 +1,306 @@
+{
+  "shortName": "zeratul",
+  "heroName": "Zeratul",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "ZeratulPermanentCloak",
+      "buttonId": "ZeratulPermanentCloak",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zeratul_cloak.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "永久隐形",
+      "short": "当你不攻击、不使用技能且没有受到伤害的时候潜行",
+      "full": "脱离战斗3秒后潜行。受到伤害、进行攻击、使用技能或引导法术会结束潜行效果。潜行状态下保持静止至少1.5秒后进入隐形。"
+    },
+    {
+      "nameId": "ZeratulCleave",
+      "buttonId": "ZeratulCleave",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zeratul_cleave.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "顺劈斩",
+      "short": "对附近敌人造成伤害",
+      "full": "对附近敌人造成200(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "ZeratulSingularitySpike",
+      "buttonId": "ZeratulSingularitySpike",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zeratul_singularityspike.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "奇点钉刺",
+      "short": "对击中的第一个敌人造成伤害并使其减速",
+      "full": "向目标投掷一枚奇点钉刺，吸附在第一个接触到的敌人身上，1秒后造成240(+4%每级)点伤害，并使敌人减速40%，持续3秒。"
+    },
+    {
+      "nameId": "ZeratulBlinkStorm",
+      "buttonId": "ZeratulBlink",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zeratul_blink.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "闪现",
+      "short": "传送一小段距离。使用该技能不会解除隐形效果",
+      "full": "传送到目标位置。\n\n使用该技能不会现形。"
+    },
+    {
+      "nameId": "ZeratulMightOfTheNerazimDummy",
+      "buttonId": "ZeratulMightOfTheNerazimPassive",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zeratul_mightofnerazim.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "奈拉齐姆之力",
+      "short": "再次使用基本技能",
+      "full": "激活后再次施放泽拉图上一次使用的基本技能，该技能不受天赋加成且造成的伤害降低50%。\n\n被动: 使用一项技能后，泽拉图在6秒内的下一次普通攻击造成30%的额外伤害。"
+    },
+    {
+      "nameId": "ZeratulVoidPrison",
+      "buttonId": "ZeratulVoidPrison",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zeratul_voidprison.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "虚空禁锢",
+      "short": "使范围内的目标时间停止",
+      "full": "使区域内的时间几乎静止，让盟友和敌人时间停止，持续5秒。泽拉图不受影响。"
+    },
+    {
+      "nameId": "VorpalBladeBlink",
+      "buttonId": "ZeratulVorpalBladeHotbar",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_zeratul_vorpalblade.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "穿刺剑刃",
+      "short": "传送到上次攻击的目标身旁",
+      "full": "激活后传送到泽拉图前3秒内普通攻击的上一个非建筑目标身旁。在3秒内，目标将暴露。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ZeratulMasteryGreaterCleaveCleave",
+      "buttonId": "ZeratulCleaveGreaterCleaveTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zeratul_cleave.png",
+      "sort": 1,
+      "name": "强化顺劈斩",
+      "short": "扩大顺劈斩的范围",
+      "full": "顺劈斩的范围扩大33%。"
+    },
+    {
+      "nameId": "ZeratulShadowHunter",
+      "buttonId": "ZeratulShadowHunter",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zeratul_blink.png",
+      "sort": 2,
+      "name": "暗影猎手",
+      "short": "任务：收集恢复之球强化闪现",
+      "full": "任务：收集恢复之球使闪现的法力消耗降低3点，最多45点。\n\n奖励：收集15个恢复之球后，普通攻击使闪现的冷却时间缩短1.5秒。"
+    },
+    {
+      "nameId": "ZeratulMoveUnseen",
+      "buttonId": "ZeratulMoveUnseen",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zeratul_cloak.png",
+      "sort": 3,
+      "name": "来去无踪",
+      "short": "更快获得潜行，潜行时获得移动速度",
+      "full": "使永久隐形的冷却时间缩短1秒。潜行时获得30%的移动速度加成。"
+    },
+    {
+      "nameId": "ZeratulRendingCleave",
+      "buttonId": "ZeratulCleaveRendingCleaveTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zeratul_cleave.png",
+      "sort": 1,
+      "name": "撕裂斩",
+      "short": "顺劈斩造成额外持续伤害",
+      "full": "顺劈斩在3秒内造成40%的额外伤害。"
+    },
+    {
+      "nameId": "ZeratulPsionicStrength",
+      "buttonId": "ZeratulPsionicStrength",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_abilitytalent_damage.png",
+      "sort": 2,
+      "name": "灵能力量",
+      "short": "普通攻击和技能提供伤害加成",
+      "full": "对敌方英雄造成伤害可获得6%的伤害加成，持续3秒。该效果最高可叠加至30%。"
+    },
+    {
+      "nameId": "ZeratulDarknessDescends",
+      "buttonId": "ZeratulDarknessDescends",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_zeratul_shadowassault.png",
+      "sort": 3,
+      "name": "黑暗迫袭",
+      "short": "激活后获得攻击速度",
+      "full": "激活后获得 40% 攻击速度加成，持续5 秒。\n\n被动：获得20%攻击速度加成。"
+    },
+    {
+      "nameId": "ZeratulWormhole",
+      "buttonId": "ZeratulWormholeTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zeratul_blink.png",
+      "sort": 1,
+      "name": "虫洞",
+      "short": "可以返回到使用闪现的位置",
+      "full": "在1.25秒后，重新激活闪现以回到最初施法的位置，限时4秒。"
+    },
+    {
+      "nameId": "ZeratulSeekerInTheDark",
+      "buttonId": "ZeratulSeekerInTheDark",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zeratul_singularityspike.png",
+      "sort": 2,
+      "name": "黑暗猎手",
+      "short": "传送至奇点钉刺目标位置",
+      "full": "奇点钉刺爆炸的时间延长50%。可以重新激活来传送到目标位置，使你的移动速度提高30%，持续3秒。"
+    },
+    {
+      "nameId": "ZeratulWarpSkirmisherTalent",
+      "buttonId": "ZeratulWarpSkirmisher",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_zeratul_vorpalblade.png",
+      "sort": 3,
+      "name": "折跃奇兵",
+      "short": "获得1次穿刺剑刃使用次数",
+      "full": "穿刺剑刃有2次使用次数。使用穿刺剑刃传送到敌人身边或进入永久隐形可以使泽拉图的下一次普通攻击造成50%的额外伤害。"
+    },
+    {
+      "nameId": "ZeratulMightOfTheNerazim",
+      "buttonId": "ZeratulMightOfTheNerazimPassive",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zeratul_mightofnerazim.png",
+      "sort": 1,
+      "name": "奈拉齐姆之力",
+      "short": "再次使用基本技能",
+      "full": "激活后再次施放泽拉图上一次使用的基本技能，该技能不受天赋加成且造成的伤害降低50%。\n\n被动: 使用一项技能后，泽拉图在6秒内的下一次普通攻击造成30%的额外伤害。"
+    },
+    {
+      "nameId": "ZeratulHeroicAbilityVoidPrison",
+      "buttonId": "ZeratulVoidPrison",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zeratul_voidprison.png",
+      "sort": 2,
+      "name": "虚空禁锢",
+      "short": "使范围内的目标时间停止",
+      "full": "使区域内的时间几乎静止，让盟友和敌人时间停止，持续5秒。泽拉图不受影响。"
+    },
+    {
+      "nameId": "ZeratulShroudofAdun",
+      "buttonId": "ZeratulShroudofAdun",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zeratul_cloak.png",
+      "sort": 1,
+      "name": "亚顿之影",
+      "short": "永久隐形后获得一层护盾",
+      "full": "潜行时，泽拉图在3秒内获得一个相当于其最大生命值20%的护盾。"
+    },
+    {
+      "nameId": "ZeratulMendingStrikes",
+      "buttonId": "ZeratulMendingStrikes",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_heal.png",
+      "sort": 2,
+      "name": "恢复打击",
+      "short": "普通攻击产生治疗",
+      "full": "普通攻击伤害的35%转化为你的生命值。"
+    },
+    {
+      "nameId": "GenericTalentSpellShield",
+      "buttonId": "GenericSpellShieldTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_spellshield.png",
+      "sort": 3,
+      "name": "法术护盾",
+      "short": "周期性获得临时法术护甲",
+      "full": "每隔30秒，获得50点法术护甲，抵御下一次敌人的技能和后续技能，使受到的伤害降低50%，持续3秒。\n\n可以开启或关闭该天赋是否自动触发。"
+    },
+    {
+      "nameId": "ZeratulMasterWarpBlade",
+      "buttonId": "ZeratulMasterWarpBlade",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 1,
+      "name": "大师级折跃灵刃",
+      "short": "每第三次普通攻击造成额外伤害",
+      "full": "对同一个目标的连续第三次普通攻击造成125%的额外伤害。"
+    },
+    {
+      "nameId": "ZeratulVoidSlash",
+      "buttonId": "ZeratulVoidSlashTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zeratul_cleave.png",
+      "sort": 2,
+      "name": "虚空挥砍",
+      "short": "击中多个英雄时强化顺劈斩",
+      "full": "如果顺劈斩击中的敌方英雄数量超过一个，则伤害提高40%，并且其冷却时间缩短3秒。"
+    },
+    {
+      "nameId": "ZeratulSentencedtoDeath",
+      "buttonId": "ZeratulSentencedtoDeath",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zeratul_singularityspike.png",
+      "sort": 3,
+      "name": "处决",
+      "short": "对被标记的目标造成额外伤害",
+      "full": "敌人被奇点钉刺标记或减速时，对其造成的伤害提高25%。"
+    },
+    {
+      "nameId": "ZeratulTwilightFalls",
+      "buttonId": "ZeratulTwilightFalls",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zeratul_mightofnerazim.png",
+      "sort": 1,
+      "name": "暮光降临",
+      "short": "奈拉齐姆之力重置冷却时间",
+      "full": "奈拉齐姆之力重置所有基本技能的冷却时间。"
+    },
+    {
+      "nameId": "ZeratulUnwaveringPressure",
+      "buttonId": "ZeratulUnwaveringPressure",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zeratul_singularityspike.png",
+      "sort": 2,
+      "name": "无畏压迫",
+      "short": "普通攻击减少奇点钉刺冷却时间",
+      "full": "奇点钉刺不再消耗法力值。对敌人发动普通攻击可以使奇点钉刺的冷却时间缩短1.25秒，对英雄发动攻击时缩短的冷却时间翻倍。"
+    },
+    {
+      "nameId": "ZeratulShadowStrideTalent",
+      "buttonId": "ZeratulShadowStrideTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_zeratul_vorpalblade.png",
+      "sort": 3,
+      "name": "暗影步",
+      "short": "减少穿刺剑刃冷却时间，获得护盾",
+      "full": "使穿刺剑刃的冷却时间缩短10秒。施放穿刺剑刃会使泽拉图获得一个护盾，可以吸收最多260(+4%每级)点伤害，持续3秒。"
+    },
+    {
+      "nameId": "ZeratulShadowMending",
+      "buttonId": "ZeratulShadowMending",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_abilitytalent_heal.png",
+      "sort": 4,
+      "name": "暗影治疗",
+      "short": "对英雄造成的法术伤害可以治疗",
+      "full": "治疗泽拉图，数值相当于对英雄造成60%的法术伤害。"
+    }
+  ]
+}

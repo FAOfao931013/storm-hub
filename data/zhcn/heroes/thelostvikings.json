@@ -1,0 +1,390 @@
+{
+  "shortName": "thelostvikings",
+  "heroName": "LostVikings",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "LostVikingsVikingHoardTalent",
+      "buttonId": "LostVikingsVikingHoardTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lostvikings_vikinghoard.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "维京宝藏",
+      "short": "收集恢复之球可提高生命恢复速度",
+      "full": "维京人收集恢复之球后，所有维京人的每秒生命恢复永久提高0.5点。\n\n当前加成：每秒恢复0点"
+    },
+    {
+      "nameId": "LostVikingsSpinToWin",
+      "buttonId": "LostVikingsSpinToWin",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lostvikings_spintowin.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "转向胜利",
+      "short": "对每个维京人附近的敌人造成伤害",
+      "full": "激活后每个维京人对附近敌人造成85(+4%每级)点伤害。命中敌方英雄时造成的伤害提高100%。"
+    },
+    {
+      "nameId": "LostVikingsNorseForce",
+      "buttonId": "LostVikingsNorseForce",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lostvikings_norseforce.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "北境力量",
+      "short": "所有维京人获得一层护盾",
+      "full": "所有的维京人获得一层140(+4%每级)到308(+4%每级)点的护盾，存活维京人的数量越多护盾越强，持续4秒。"
+    },
+    {
+      "nameId": "LostVikingsPressA",
+      "buttonId": "LostVikingsJump",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lostvikings_jump.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "维京跳跃",
+      "short": "暂时无敌",
+      "full": "使所有维京人无敌且可以穿越敌人，持续1.5秒。"
+    },
+    {
+      "nameId": "LostVikingsNordicAttackSquad",
+      "buttonId": "LostVikingsNordicAttackSquad",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_talent_autoattack_searing.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "北境特攻队",
+      "short": "维京人在一起行动时造成额外伤害",
+      "full": "当奥拉夫，巴尔洛戈和埃瑞克位于彼此附近时，他们的普通攻击额外造成相当于最大生命值1.25%的伤害。"
+    },
+    {
+      "nameId": "LostVikingsVikingBribery",
+      "buttonId": "LostVikingsVikingBribery",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_talent_bribe.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "维京贿赂",
+      "short": "消灭小兵来贿赂雇佣兵",
+      "full": "在失落的维京人附近被击杀的敌方小兵或雇佣兵可以提供贿赂层数。消耗40层可以贿赂目标雇佣兵，立即击败他们。对精英雇佣兵无效。最大层数：200。"
+    },
+    {
+      "nameId": "LostVikingsLongboatRaidNewer",
+      "buttonId": "LostVikingsLongboatRaid",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lostvikings_longboatraid.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "战船掠夺",
+      "short": "登上战船攻击敌人",
+      "full": "跳上一艘不可阻挡的战船朝附近敌人开火，每秒造成128(+4%每级)点伤害，并且能够发射迫击炮对范围内的敌人造成228(+4%每级)点伤害。船上的每一个维京人都会提高战船的生命值。如果战船被敌人摧毁，所有维京人将昏迷1秒。战船持续15秒。\n\n需要所有存活的维京人在附近。"
+    },
+    {
+      "nameId": "LostVikingsPlayAgain",
+      "buttonId": "LostVikingsPlayAgain",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lostvikings_playagain.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "复活再战",
+      "short": "复活并召唤维京人",
+      "full": "2秒后在目标位置召唤、恢复所有生命值并复活所有失落的维京人。\n\n一次只能由一名维京人进行召唤。"
+    },
+    {
+      "nameId": "LostVikingSelectOlaf",
+      "buttonId": "LostVikingSelectOlaf",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_lostvikings_selectolaf.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "选择奥拉夫",
+      "short": "奥拉夫拥有大量生命值，可以快速恢复生命值并冲向敌人使其减速",
+      "full": "奥拉夫可以右键点击冲向敌人，使其移动速度降低30%，持续3秒。8秒冷却。\n\n脱离战斗后，奥拉夫拥有更快的生命恢复，持续4秒。"
+    },
+    {
+      "nameId": "LostVikingSelectBaleog",
+      "buttonId": "LostVikingSelectBaleog",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_lostvikings_selectbaleog.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "选择巴尔洛戈",
+      "short": "巴尔洛戈对目标身后的敌人造成溅射伤害",
+      "full": "巴尔洛戈的普通攻击对攻击目标后方的敌人造成50%的溅射伤害。"
+    },
+    {
+      "nameId": "LostVikingSelectErik",
+      "buttonId": "LostVikingSelectErik",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_lostvikings_selecterik.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "选择埃瑞克",
+      "short": "埃瑞克比其他维京人移动速度更快且攻击距离更远",
+      "full": "埃瑞克的移动速度比其他维京人更快，并且普通攻击距离更远。"
+    },
+    {
+      "nameId": "LostVikingSelectAll",
+      "buttonId": "LostVikingSelectAll",
+      "abilityType": "Active",
+      "icon": "storm_ui_ingame_heroselect_btn_lostvikings.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "选中所有维京人",
+      "full": "失落的维京人可以单个控制，也可以一起控制。每个维京人有不同的强项。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "LostVikingsMasteryOlafTheStout",
+      "buttonId": "LostVikingsOlafTheStoutTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_lostvikings_selectolaf.png",
+      "sort": 1,
+      "name": "强壮的奥拉夫",
+      "short": "奥拉夫获得生命值和物理护甲",
+      "full": "被动：奥拉夫获得20%的最大生命值加成。\n\n每隔5秒，奥拉夫获得75点物理护甲，抵御下一次敌方英雄的普通攻击，使受到的伤害降低75%。\n\n最多储存2层。"
+    },
+    {
+      "nameId": "LostVikingsMasterySpyGames",
+      "buttonId": "LostVikingsSpyGamesTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_lostvikings_selecterik.png",
+      "sort": 2,
+      "name": "间谍游戏",
+      "short": "站立不动时埃瑞克潜行并扩大视野范围",
+      "full": "站立不动3秒后，埃瑞克潜行且视野范围扩大75%。潜行效果在移动后保持3秒，效果移除时埃瑞克获得75%的普通攻击伤害加成，持续6秒。"
+    },
+    {
+      "nameId": "LostVikingsMasteryExplosiveAttacks",
+      "buttonId": "LostVikingsExplosiveAttacksTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_lostvikings_selectbaleog.png",
+      "sort": 3,
+      "name": "爆炸攻击",
+      "short": "提高巴尔洛戈对非英雄单位的溅射伤害",
+      "full": "巴尔洛戈对非英雄敌人的溅射伤害提高至100%。"
+    },
+    {
+      "nameId": "LostVikingsMasteryVikingBribery",
+      "buttonId": "LostVikingsVikingBribery",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_bribe.png",
+      "sort": 4,
+      "name": "维京贿赂",
+      "short": "消灭小兵来贿赂雇佣兵",
+      "full": "在失落的维京人附近被击杀的敌方小兵或雇佣兵可以提供贿赂层数。消耗40层可以贿赂目标雇佣兵，立即击败他们。对精英雇佣兵无效。最大层数：200。"
+    },
+    {
+      "nameId": "LostVikingsMasteryPainDontHurt",
+      "buttonId": "LostVikingsPainDontHurtTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_lostvikings_selectbaleog.png",
+      "sort": 1,
+      "name": "这点伤小儿科",
+      "short": "巴尔洛戈的攻击可以治疗自己",
+      "full": "巴尔洛戈的普通攻击和溅射伤害可以为其恢复生命值，数值相当于伤害的20%。对英雄造成攻击而获得的治疗效果翻倍。"
+    },
+    {
+      "nameId": "LostVikingsMasteryErikTheSwift",
+      "buttonId": "LostVikingsErikTheSwiftTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_lostvikings_selecterik.png",
+      "sort": 2,
+      "name": "迅捷的埃瑞克",
+      "short": "提高埃瑞克的移动速度，并且保持移动就会恢复生命值",
+      "full": "埃瑞克的基础移动速度永久提高10%，而且只要埃瑞克保持移动，就会每秒恢复34(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "LostVikingsMasteryItsASabotage",
+      "buttonId": "LostVikingsItsASabotageTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_lostvikings_selecterik_var1.png",
+      "sort": 3,
+      "name": "恶意破坏",
+      "short": "埃瑞克对建筑的攻击更强",
+      "full": "埃瑞克对建筑物的普通攻击会点燃建筑，持续3秒，造成225(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "GenericTalentMercenaryLord",
+      "buttonId": "GenericMercenaryLordTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_mercenarylord.png",
+      "sort": 4,
+      "name": "佣兵统领",
+      "short": "强化附近的雇佣兵",
+      "full": "你附近的非首领友方雇佣兵的伤害提高50%。获得50点对小兵和雇佣兵的护甲，使受到的伤害降低50%。"
+    },
+    {
+      "nameId": "LostVikingsMasteryBaleogTheFierce",
+      "buttonId": "LostVikingsBaleogTheFierceTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_lostvikings_selectbaleog.png",
+      "sort": 1,
+      "name": "猛男巴尔洛戈",
+      "short": "巴尔洛戈获得攻击速度和射程",
+      "full": "巴尔洛戈的攻击射程提高2.5码。当位于奥拉夫和埃瑞克附近时会受到团队合作的鼓舞，他的攻击速度提高50%。"
+    },
+    {
+      "nameId": "LostVikingsMasterySpinToWin",
+      "buttonId": "LostVikingsSpinToWin",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_lostvikings_spintowin.png",
+      "sort": 2,
+      "name": "转向胜利",
+      "short": "对每个维京人附近的敌人造成伤害",
+      "full": "激活后每个维京人对附近敌人造成85(+4%每级)点伤害。命中敌方英雄时造成的伤害提高100%。"
+    },
+    {
+      "nameId": "LostVikingsMasteryNorseForce",
+      "buttonId": "LostVikingsNorseForce",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_lostvikings_norseforce.png",
+      "sort": 3,
+      "name": "北境力量",
+      "short": "所有维京人获得一层护盾",
+      "full": "所有的维京人获得一层140(+4%每级)到308(+4%每级)点的护盾，存活维京人的数量越多护盾越强，持续4秒。"
+    },
+    {
+      "nameId": "LostVikingsHeroicAbilityLongboatRaid",
+      "buttonId": "LostVikingsLongboatRaid",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lostvikings_longboatraid.png",
+      "sort": 1,
+      "name": "战船掠夺",
+      "short": "登上战船攻击敌人",
+      "full": "跳上一艘不可阻挡的战船朝附近敌人开火，每秒造成128(+4%每级)点伤害，并且能够发射迫击炮对范围内的敌人造成228(+4%每级)点伤害。船上的每一个维京人都会提高战船的生命值。如果战船被敌人摧毁，所有维京人将昏迷1秒。战船持续15秒。\n\n需要所有存活的维京人在附近。"
+    },
+    {
+      "nameId": "LostVikingsHeroicAbilityPlayAgain",
+      "buttonId": "LostVikingsPlayAgain",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lostvikings_playagain.png",
+      "sort": 2,
+      "name": "复活再战",
+      "short": "复活并召唤维京人",
+      "full": "2秒后在目标位置召唤、恢复所有生命值并复活所有失落的维京人。\n\n一次只能由一名维京人进行召唤。"
+    },
+    {
+      "nameId": "LostVikingsMasteryHunkaBurningOlaf",
+      "buttonId": "LostVikingsHunkaBurningOlafTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_lostvikings_selectolaf.png",
+      "sort": 1,
+      "name": "炽热燃烧的奥拉夫",
+      "short": "奥拉夫对附近敌人造成伤害",
+      "full": "奥拉夫每秒对附近敌人造成34(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "LostVikingsMasteryJump",
+      "buttonId": "LostVikingsJump",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_lostvikings_jump.png",
+      "sort": 2,
+      "name": "维京跳跃",
+      "short": "暂时无敌",
+      "full": "使所有维京人无敌且可以穿越敌人，持续1.5秒。"
+    },
+    {
+      "nameId": "LostVikingsMasteryNordicAttackSquad",
+      "buttonId": "LostVikingsNordicAttackSquad",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_searing.png",
+      "sort": 3,
+      "name": "北境特攻队",
+      "short": "维京人在一起行动时造成额外伤害",
+      "full": "当奥拉夫，巴尔洛戈和埃瑞克位于彼此附近时，他们的普通攻击额外造成相当于最大生命值1.25%的伤害。"
+    },
+    {
+      "nameId": "LostVikingsMasteryLargeAndInCharge",
+      "buttonId": "LostVikingsLargeAndInChargeTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_lostvikings_selectolaf.png",
+      "sort": 1,
+      "name": "巨人冲撞",
+      "short": "冲锋可以击晕敌人",
+      "full": "奥拉夫冲锋敌人会使其昏迷，持续1秒。"
+    },
+    {
+      "nameId": "LostVikingsMasteryImpatienceIsAVirtue",
+      "buttonId": "LostVikingsImpatienceIsAVirtueTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+      "sort": 2,
+      "name": "急性子是一种美德",
+      "short": "维京人的攻击可以缩短所有技能的冷却时间",
+      "full": "维京人的普通攻击对敌人造成伤害后会使维京人所有技能的冷却时间缩短0.31秒。"
+    },
+    {
+      "nameId": "LostVikingsGoGoGo64KBMarathon",
+      "buttonId": "LostVikingsGoGoGo64KBMarathonTalent",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_lostvikings_64kbmarathon.png",
+      "sort": 3,
+      "name": "64KB马拉松",
+      "short": "移动速度更快且解除减速和定身效果",
+      "full": "使用冲冲冲后移动速度额外提高40%，并且维京人还会摆脱定身和减速效果。"
+    },
+    {
+      "nameId": "HeroGenericExecutionerPassive",
+      "buttonId": "GenericExecutionerTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 4,
+      "name": "终结者",
+      "short": "攻击被控制的英雄造成额外伤害",
+      "full": "攻击被减速、定身或昏迷的英雄使你的普通攻击伤害提高30%，持续3秒。"
+    },
+    {
+      "nameId": "LostVikingsMasteryWereOnABoat",
+      "buttonId": "LostVikingsWereOnABoatTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lostvikings_longboatraid.png",
+      "sort": 1,
+      "name": "毁天灭地",
+      "short": "提高战斗效能",
+      "full": "战船现在可以同时攻击两个目标且迫击炮范围扩大100%。使战船掠夺的冷却时间缩短30秒。"
+    },
+    {
+      "nameId": "LostVikingsMasteryCheckpointReached",
+      "buttonId": "LostVikingsCheckpointReachedTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lostvikings_playagain.png",
+      "sort": 2,
+      "name": "成功存档",
+      "short": "额外的复活机会和治疗",
+      "full": "使用复活再战的10秒后，所有阵亡的维京人都将复活并被再次召唤，并且所有维京人将恢复全部生命值。"
+    },
+    {
+      "nameId": "LostVikingsMasteryTheSequel",
+      "buttonId": "LostVikingsTheSequelTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lostvikings_fastrestart.png",
+      "sort": 3,
+      "name": "续作来临",
+      "short": "降低所有维京人的复活时间",
+      "full": "失落的维京人的复活时间缩短50%。"
+    },
+    {
+      "nameId": "LostVikingsTalentFuryoftheStorm",
+      "buttonId": "LostVikingsFuryoftheStormTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 4,
+      "name": "风暴之怒",
+      "short": "普通攻击可以对非英雄单位造成连锁伤害",
+      "full": "每隔5秒，下一次普通攻击对目标造成41(+4%每级)点额外伤害，并对附近所有小兵、雇佣兵和怪物造成105(+4%每级)点伤害。每名维京人拥有自己的冷却时间。"
+    }
+  ]
+}

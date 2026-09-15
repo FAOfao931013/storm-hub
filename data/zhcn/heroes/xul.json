@@ -1,0 +1,306 @@
+{
+  "shortName": "xul",
+  "heroName": "Necromancer",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "NecromancerRaiseSkeletonDisplayAbility",
+      "buttonId": "NecromancerRaiseSkeleton",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "骸骨复生",
+      "short": "从小兵的尸体上复活骷髅战士",
+      "full": "附近有敌方小兵死亡时，它将变成一名拥有240(+4%每级)点生命值的骷髅战士，其攻击造成21(+4%每级)点伤害，最多持续12秒。死亡时，骷髅战士对附近的敌人造成40(+4%每级)点伤害。通过这种方式生成的骷髅战士同一时间最多只能有3名。"
+    },
+    {
+      "nameId": "NecromancerSpectralScythe",
+      "buttonId": "NecromancerSpectralScythe",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_necromancer_reap.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "幽魂镰刀",
+      "short": "投掷一把镰刀，返回时对敌人造成伤害",
+      "full": "召唤一把在1秒后飞向祖尔的镰刀，对敌人造成190(+4%每级)点伤害，并且在击中敌方英雄时生成一名骷髅战士。这些骷髅战士不计入���尔的骸骨复生最大数。"
+    },
+    {
+      "nameId": "NecromancerCursedStrikes",
+      "buttonId": "NecromancerCursedStrikes",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "邪灵打击",
+      "short": "普通攻击造成范围伤害，降低攻击速度",
+      "full": "祖尔的普通攻击在大范围内造成伤害，并使英雄和召唤物的攻击速度降低40%，持续2秒。触发后持续4秒。"
+    },
+    {
+      "nameId": "NecromancerBonePrison",
+      "buttonId": "NecromancerBonePrison",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_necromancer_boneprison.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "骨牢",
+      "short": "将一名敌人定身在原地",
+      "full": "2秒后，造成80(+4%每级)点伤害，并使目标敌方英雄定身1.75秒。附近所有骷髅战士都会在自己的持续时间内锁定此目标。"
+    },
+    {
+      "nameId": "NecromancerSkeletalMages",
+      "buttonId": "NecromancerSkeletalMages",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_necromancer_skeletalmages.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "骷髅法师",
+      "short": "召唤冰霜法师，造成伤害并减速敌人",
+      "full": "选择方向\n在一条直线上召唤4个冰霜法师，每秒对附近敌人造成47(+4%每级)点伤害，并使其减速30%，持续2秒。冰霜法师最多持续15秒。"
+    },
+    {
+      "nameId": "NecromancerPoisonNovaInstant",
+      "buttonId": "NecromancerPoisonNova",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_necromancer_poisonnova.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "剧毒新星",
+      "short": "使大范围内的敌人中毒",
+      "full": "0.5秒后，释放剧毒飞弹，在10秒内对击中的所有敌人造成630(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "NecromancerBoneArmor",
+      "buttonId": "NecromancerBoneArmor",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_necromancer_bonearmor.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "白骨护甲",
+      "short": "激活后获得一个护盾",
+      "full": "激活后获得一个相当于祖尔25%最大生命值的护盾，持续3秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "NecromancerTalentBoneArmorBacklash",
+      "buttonId": "NecromancerBoneArmorBacklash",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_necromancer_bonearmor_b.png",
+      "sort": 1,
+      "name": "白骨反冲",
+      "short": "白骨护甲造成爆炸伤害",
+      "full": "当白骨护甲持续时间结束后，对附近的敌方英雄造成伤害，数值相当于其最大生命值的12%。"
+    },
+    {
+      "nameId": "NecromancerTalentBoneArmorShackler",
+      "buttonId": "NecromancerBoneArmorShackler",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_necromancer_bonearmor_c.png",
+      "sort": 2,
+      "name": "白骨镣铐",
+      "short": "白骨护甲会使敌人减速，可以降低冷却时间",
+      "full": "白骨护甲激活时，附近的敌人减速35%，持续1秒。用普通攻击击中被减速、定身或昏迷的英雄可以使白骨护甲的冷却时间降低2秒。"
+    },
+    {
+      "nameId": "NecromancerTalentBoneArmorShade",
+      "buttonId": "NecromancerBoneArmorShade",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_necromancer_bonearmor.png",
+      "sort": 3,
+      "name": "白骨之影",
+      "short": "白骨护甲可以闪避普通攻击",
+      "full": "白骨护甲激活时，祖尔闪避所有普通攻击，但白骨护甲的冷却时间延长10秒。"
+    },
+    {
+      "nameId": "NecromancerTalentReapersToll",
+      "buttonId": "NecromancerReapersTollTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_necromancer_reap.png",
+      "sort": 1,
+      "name": "死神的丧钟",
+      "short": "降低幽魂镰刀的冷却时间与法力消耗",
+      "full": "幽魂镰刀的冷却时间缩短2秒，法力值消耗降低15点。"
+    },
+    {
+      "nameId": "NecromancerTalentGrimScythe",
+      "buttonId": "NecromancerCursedStrikesGrimScythe",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
+      "sort": 2,
+      "name": "酷刑镰刀",
+      "short": "缩短邪灵打击的冷却时间",
+      "full": "祖尔的普通攻击伤害提高15%。邪灵打击每击中一名敌人可使其冷却时间缩短1秒，最多缩短12秒。"
+    },
+    {
+      "nameId": "NecromancerTalentJailors",
+      "buttonId": "NecromancerJailors",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
+      "sort": 3,
+      "name": "狱卒",
+      "short": "任务：骨牢召唤骷髅战士",
+      "full": "骨牢召唤2个骷髅战士，不计入祖尔的骸骨复生数量上限。\n\n任务：召唤80个骷髅战士。\n\n奖励：锁定敌人时，骷髅战士获得25%的攻击和移动速度。"
+    },
+    {
+      "nameId": "NecromancerTalentHarvestVitality",
+      "buttonId": "NecromancerHarvestVitality",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
+      "sort": 1,
+      "name": "吸收活力",
+      "short": "对英雄使用邪灵打击治疗祖尔",
+      "full": "邪灵打击治疗祖尔，数值相当于对英雄造成伤害的70%。"
+    },
+    {
+      "nameId": "NecromancerTalentTragOulsEssence",
+      "buttonId": "NecromancerTragOulsEssence",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
+      "sort": 2,
+      "name": "塔格奥的精华",
+      "short": "骷髅战士的攻击恢复生命值和法力值",
+      "full": "骷髅战士每次攻击敌人，为祖尔恢复其最大生命值0.5%的生命，和其最大法力值0.2%的法力。"
+    },
+    {
+      "nameId": "NecromancerBoneArmorWallOfBonesTalent",
+      "buttonId": "NecromancerWallOfBonesBoneArmorTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_necromancer_bonearmor.png",
+      "sort": 3,
+      "name": "骨墙",
+      "short": "提高白骨护甲的护盾量",
+      "full": "白骨护甲的护盾量提高至祖尔最大生命值的35%，并且在其持续时间内祖尔获得20点法术护甲。"
+    },
+    {
+      "nameId": "NecromancerHeroicAbilityPoisonNova",
+      "buttonId": "NecromancerPoisonNovaTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_necromancer_poisonnova.png",
+      "sort": 1,
+      "name": "剧毒新星",
+      "short": "使附近的敌人中毒",
+      "full": "0.5秒后，释放剧毒飞弹，在10秒内对击中的所有敌人造成630(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "NecromancerHeroicAbilitySkeletalMages",
+      "buttonId": "NecromancerSkeletalMages",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_necromancer_skeletalmages.png",
+      "sort": 2,
+      "name": "骷髅法师",
+      "short": "召唤冰霜法师，造成伤害并减速敌人",
+      "full": "选择方向\n在一条直线上召唤4个冰霜法师，每秒对附近敌人造成47(+4%每级)点伤害，并使其减速30%，持续2秒。冰霜法师最多持续15秒。"
+    },
+    {
+      "nameId": "NecromancerTalentEchoesOfDeath",
+      "buttonId": "NecromancerEchoesOfDeathTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_necromancer_reap.png",
+      "sort": 1,
+      "name": "死亡回音",
+      "short": "幽魂镰刀可召唤额外的镰刀",
+      "full": "幽魂镰刀会在1.5秒后靠近第一把镰刀的位置出现额外2把幽魂镰刀，造成40%伤害。"
+    },
+    {
+      "nameId": "NecromancerTalentRapidHarvest",
+      "buttonId": "NecromancerCursedStrikesRapidHarvest",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
+      "sort": 2,
+      "name": "快速收割",
+      "short": "邪灵打击提高攻击速度",
+      "full": "邪灵打击每击中一次敌人，祖尔获得5%攻击速度，持续3秒，最高可提高至75%。"
+    },
+    {
+      "nameId": "NecromancerTalentAmplifyDamage",
+      "buttonId": "NecromancerAmplifyDamage",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_necromancer_boneprison.png",
+      "sort": 3,
+      "name": "伤害增效",
+      "short": "骨牢降低护甲",
+      "full": "骨牢的定身持续时间延长0.25秒。被骨牢定身的敌人失去25点护甲，持续2秒。"
+    },
+    {
+      "nameId": "NecromancerTalentDecrepify",
+      "buttonId": "NecromancerDecrepifyTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_necromancer_reap.png",
+      "sort": 1,
+      "name": "衰老",
+      "short": "幽魂镰刀与骷髅战士可以减速敌人",
+      "full": "幽魂镰刀或骷髅战士对敌方英雄造成伤害可使其减速30%，持续 2.5秒。"
+    },
+    {
+      "nameId": "NecromancerTalentWeaken",
+      "buttonId": "NecromancerWeaken",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
+      "sort": 2,
+      "name": "削弱",
+      "short": "邪灵打击与骷髅战士减少敌方英雄造成的伤害",
+      "full": "邪灵打击或骷髅战士对敌方英雄造成伤害，可使其造成的伤害降低35%，持续3秒。"
+    },
+    {
+      "nameId": "NecromancerTalentBoneSpear",
+      "buttonId": "NecromancerBoneSpear",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_necromancer_bonespear.png",
+      "sort": 3,
+      "name": "骨矛",
+      "short": "对一条直线上的敌人造成伤害",
+      "full": "对一条直线上的敌人造成230(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "NecromancerTalentAndarielsVisage",
+      "buttonId": "NecromancerAndarielsVisage",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_necromancer_poisonnova.png",
+      "sort": 1,
+      "name": "安达莉尔的仪容",
+      "short": "增加剧毒新星的持续时间，并且会治疗祖尔",
+      "full": "剧毒新星造成伤害的50%会为祖尔治疗，并且其持续时间延长50%。"
+    },
+    {
+      "nameId": "NecromancerTalentColdHandOfDeath",
+      "buttonId": "NecromancerColdHandOfDeath",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_necromancer_skeletalmages.png",
+      "sort": 2,
+      "name": "死神的冰冷之手",
+      "short": "幽魂镰刀可以产生骷髅法师",
+      "full": "冰霜法师的减速效果提高20%。\n\n幽魂镰刀每击中敌方英雄的第5击会在目标位置生成一个冰霜法师而不再是骷髅战士。"
+    },
+    {
+      "nameId": "NecromancerTalentMortalWound",
+      "buttonId": "NecromancerMortalWound",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_necromancer_reap.png",
+      "sort": 3,
+      "name": "重伤",
+      "short": "幽魂镰刀可以降低目标受到的治疗量",
+      "full": "被幽魂镰刀击中的敌方英雄受到的治疗量降低75%，持续4秒。"
+    },
+    {
+      "nameId": "NecromancerTalentKalansEdict",
+      "buttonId": "NecromancerTalentKalansEdict",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
+      "sort": 4,
+      "name": "卡兰的法令",
+      "short": "骷髅战士缩短终极技能的冷却时间",
+      "full": "骷髅战士每造成一次伤害，白骨护甲和祖尔的终极技能的冷却时间便缩短1.5%。"
+    }
+  ]
+}

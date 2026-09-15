@@ -1,0 +1,295 @@
+{
+  "shortName": "kelthuzad",
+  "heroName": "KelThuzad",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "KelThuzadMasterOfTheColdDark",
+      "buttonId": "KelThuzadMasterOfTheColdDark",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_kel'thuzad_powerofthecolddark.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "冰冷黑魔法大师",
+      "short": "克尔苏加德不断干扰敌人会让他变得愈发强大",
+      "full": "任务：每当一名英雄被冰霜新星定身、或被巫妖锁链击中，获得1点枯萎。\n\n奖励：获得15点枯萎后，获得冰川尖刺技能。\n\n奖励：获得30点枯萎后，法术强度提高75%。\n\n枯萎： 0/30"
+    },
+    {
+      "nameId": "KelThuzadDeathAndDecay",
+      "buttonId": "KelThuzadDeathAndDecay",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_kel'thuzad_deathanddecay.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "死亡凋零",
+      "short": "伤害敌人并制造一个伤害性的黑池",
+      "full": "0.5秒后，发射一颗宝珠，击中敌人后爆炸，对范围内的敌人造成150(+3%每级)点伤害。爆炸会留下一滩凋零之池，持续2秒，每0.5秒对敌人造成82(+3%每级)点伤害。"
+    },
+    {
+      "nameId": "KelThuzadFrostNova",
+      "buttonId": "KelThuzadFrostNova",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_kel'thuzad_frostnova.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "冰霜新星",
+      "short": "伤害并瘫痪敌人",
+      "full": "制造一道新星，在1秒后爆炸，对内部的敌人造成180(+3%每级)点伤害，并使其减速35%，持续2.5秒。中心的敌人将被定身，持续1秒。"
+    },
+    {
+      "nameId": "KelThuzadChains",
+      "buttonId": "KelThuzadChains",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_kel'thuzad_chains.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "巫妖锁链",
+      "short": "将敌方英雄拉在一起",
+      "full": "射出锁链，对击中的第一个敌方英雄造成97(+3%每级)点伤害。击中敌人后3秒内，可以再次激活锁链，射向另一名敌人，将两名敌人拉到一起，并使其昏迷，持续0.5秒。"
+    },
+    {
+      "nameId": "KelThuzadFrozenTomb",
+      "buttonId": "KelThuzadFrozenTomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kel'thuzad_frozentomb.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "冰星爆",
+      "short": "定身并伤害目标及其周围的敌人",
+      "full": "向一名敌方英雄发射一颗冰霜流星。击中后，流星对目标造成115(+3%每级)点伤害，并对范围内的敌人造成275(+3%每级)点伤害。被冰星爆击中的敌人都将被定身，持续2秒。"
+    },
+    {
+      "nameId": "KelThuzadShadowFissure",
+      "buttonId": "KelThuzadShadowFissure",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kel'thuzad_shadowfissure.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "暗影裂隙",
+      "short": "在范围内造成大量伤害",
+      "full": "在地图任意地点制造一个裂隙，1.5秒后爆炸，对范围内的敌方英雄造成320(+3%每级)点伤害。如果击中一名敌方英雄，则将该技能的冷却时间设为1.5秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "KelThuzadThePlaguelands",
+      "buttonId": "KelThuzadThePlaguelands",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_kel'thuzad_deathanddecay.png",
+      "sort": 1,
+      "name": "瘟疫之地",
+      "short": "延长死亡凋零的持续时间并扩大范围",
+      "full": "死亡凋零的持续时间延长1秒。获得30点枯萎后，死亡凋零的池子范围扩大30%。"
+    },
+    {
+      "nameId": "KelThuzadBlightedFrost",
+      "buttonId": "KelThuzadBlightedFrost",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_kel'thuzad_frostnova.png",
+      "sort": 2,
+      "name": "枯萎冰霜",
+      "short": "提高冰霜新星的中心伤害并延长持续时间",
+      "full": "冰霜新星对中心的敌人额外造成75%伤害。获得30点枯萎后，冰霜新星的定身效果的持续时间延长0.5秒。"
+    },
+    {
+      "nameId": "KelThuzadBarbedChains",
+      "buttonId": "KelThuzadBarbedChains",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_kel'thuzad_chains.png",
+      "sort": 3,
+      "name": "棘冰锁链",
+      "short": "锁链造成更高的伤害并且降低敌人的护甲",
+      "full": "巫妖锁链的伤害提高125%。获得30点枯萎后，巫妖锁链使被拉扯的英雄护甲降低10点，持续4秒。"
+    },
+    {
+      "nameId": "KelThuzadStripShields",
+      "buttonId": "KelThuzadStripShields",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_kel'thuzad_chains.png",
+      "sort": 1,
+      "name": "剥离护盾",
+      "short": "锁链提供护盾，对敌人的护盾造成伤害",
+      "full": "用巫妖锁链拉扯一名英雄后，克尔苏加德获得128(+4%每级)点永久护盾，最多叠加2次。\n\n此外，巫妖锁链对英雄的护盾造成最多270(+3%每级)点额外伤害。"
+    },
+    {
+      "nameId": "KelThuzadPhylactery",
+      "buttonId": "KelThuzadPhylactery",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_kel'thuzad_phylactery.png",
+      "sort": 2,
+      "name": "克尔苏加德的护命匣",
+      "short": "任务：收集恢复之球可立即复活",
+      "full": "任务：收集12个恢复之球，为克尔苏加德的护命匣充能。\n\n奖励：死亡时，可以激活克尔苏加德的护命匣，立即在风暴大厅复活，但再次使用前必须重新充能。\n\n被动效果：护命匣充能后，每当克尔苏加德造成法术伤害时，治疗相当于其伤害值10%的生命。"
+    },
+    {
+      "nameId": "KelThuzadArchlichArmor",
+      "buttonId": "KelThuzadArchlichArmor",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_kel'thuzad_armorofthearchlich.png",
+      "sort": 3,
+      "name": "大巫妖护甲",
+      "short": "激活后获得物理护甲，减速敌人",
+      "full": "激活后，获得50点物理护甲，持续4秒。激活后，附近的敌人承受45(+4%每级)点伤害，并被减速35%，持续4秒。"
+    },
+    {
+      "nameId": "KelThuzadAcceleratedDecay",
+      "buttonId": "KelThuzadAcceleratedDecay",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_kel'thuzad_deathanddecay.png",
+      "sort": 1,
+      "name": "加速凋零",
+      "short": "死亡凋零的伤害提高",
+      "full": "每当英雄被死亡凋零的池子击中，从死亡凋零承受的持续伤害都会提高25%，持续4秒，最多叠加4次。"
+    },
+    {
+      "nameId": "KelThuzadChillingTouch",
+      "buttonId": "KelThuzadChillingTouch",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_kel'thuzad_chillingtouch.png",
+      "sort": 2,
+      "name": "寒冷之触",
+      "short": "普通攻击周期性造成范围性法术伤害",
+      "full": "每8秒，克尔苏加德的下一次普通攻击可击中该区域内的所有敌人，造成80% 额外伤害，造成的是法术伤害而非物理伤害，并使敌人减速30%，持续2秒。"
+    },
+    {
+      "nameId": "KelThuzadIceCold",
+      "buttonId": "KelThuzadIceCold",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_kel'thuzad_glacialspike.png",
+      "sort": 3,
+      "name": "极冰之寒",
+      "short": "缩短冰川尖刺的冷却时间",
+      "full": "使冰川尖刺的冷却时间减少10秒，伤害提高400%。"
+    },
+    {
+      "nameId": "KelThuzadFrozenTomb",
+      "buttonId": "KelThuzadFrozenTomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kel'thuzad_frozentomb.png",
+      "sort": 1,
+      "name": "冰星爆",
+      "short": "定身并伤害目标及其周围的敌人",
+      "full": "向一名敌方英雄发射一颗冰霜流星。击中后，流星对目标造成115(+3%每级)点伤害，并对范围内的敌人造成275(+3%每级)点伤害。被冰星爆击中的敌人都将被定身，持续2秒。"
+    },
+    {
+      "nameId": "KelThuzadShadowFissure",
+      "buttonId": "KelThuzadShadowFissure",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kel'thuzad_shadowfissure.png",
+      "sort": 2,
+      "name": "暗影裂隙",
+      "short": "在范围内造成大量伤害",
+      "full": "在地图任意地点制造一个裂隙，1.5秒后爆炸，对范围内的敌方英雄造成320(+3%每级)点伤害。如果击中一名敌方英雄，则将该技能的冷却时间设为1.5秒。"
+    },
+    {
+      "nameId": "KelThuzadIcyGrasp",
+      "buttonId": "KelThuzadIcyGrasp",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_kel'thuzad_frostnova.png",
+      "sort": 1,
+      "name": "寒冰之握",
+      "short": "提高冰霜新星的减速效果，降低冷却时间",
+      "full": "冰霜新星的减速效果提高20%。只要克尔苏加德对受到冰霜新星减速的敌人造成伤害，冰霜新星的冷却时间就减少0.75秒。"
+    },
+    {
+      "nameId": "KelThuzadChainsOfIce",
+      "buttonId": "KelThuzadChainsOfIce",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_kel'thuzad_chains.png",
+      "sort": 2,
+      "name": "寒冰锁链",
+      "short": "拉扯后锁链减速敌人",
+      "full": "巫妖锁链的昏迷效果结束后，敌人还会被减速60%，持续1秒。"
+    },
+    {
+      "nameId": "KelThuzadChainLink",
+      "buttonId": "KelThuzadChainLink",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_kel'thuzad_chains_a.png",
+      "sort": 3,
+      "name": "链锁效应",
+      "short": "拖动英雄可减少锁链的冷却时间",
+      "full": "使用巫妖锁链拖动英雄可使其冷却时间缩短5秒，并返还法力消耗。"
+    },
+    {
+      "nameId": "KelThuzadArcaneEchoes",
+      "buttonId": "KelThuzadArcaneEchoes",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_kel'thuzad_deathanddecay.png",
+      "sort": 1,
+      "name": "奥能回响",
+      "short": "减少死亡凋零的冷却时间",
+      "full": "每当克尔苏加德用死亡凋零击中英雄后，其冷却时间缩短1.5秒。"
+    },
+    {
+      "nameId": "KelThuzadHungeringCold",
+      "buttonId": "KelThuzadHungeringCold",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_abilitytalent_damage.png",
+      "sort": 2,
+      "name": "饥饿之寒",
+      "short": "对被定身的敌人造成额外伤害",
+      "full": "被定身的敌人每当受到克尔苏加德的伤害，都会额外受到55(+3%每级)点伤害。"
+    },
+    {
+      "nameId": "KelThuzadPowerOfIcecrown",
+      "buttonId": "KelThuzadPowerOfIcecrown",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_kel'thuzad_poweroficecrown.png",
+      "sort": 3,
+      "name": "冰冠之力",
+      "short": "使敌人瘫痪可提供法术强度",
+      "full": "使一名英雄昏迷、定身或减速后，法术强度提高6%，持续10秒，最多叠加5次。"
+    },
+    {
+      "nameId": "KelThuzadDeathchill",
+      "buttonId": "KelThuzadDeathchill",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kel'thuzad_frozentomb.png",
+      "sort": 1,
+      "name": "死亡之寒",
+      "short": "冰星爆减速敌人，击杀敌人释放爆炸",
+      "full": "冰星爆的定身效果结束后，敌人将被减速40%，持续3秒。在敌人受冰霜冲击效果影响时击杀敌人，可立即再触发一次冰霜冲击的爆炸。"
+    },
+    {
+      "nameId": "KelThuzadMightOfTheScourge",
+      "buttonId": "KelThuzadMightOfTheScourge",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kel'thuzad_shadowfissure.png",
+      "sort": 2,
+      "name": "天灾之威",
+      "short": "击中英雄可再次施放暗影裂隙",
+      "full": "如果暗影裂隙击中英雄，则会在1秒后在其脚下再次施放一次暗影裂隙。第二次施放不会再触发此效果。"
+    },
+    {
+      "nameId": "KelThuzadShiftingMalice",
+      "buttonId": "KelThuzadShiftingMalice",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_kel'thuzad_shiftingmalice.png",
+      "sort": 3,
+      "name": "恶意转移",
+      "short": "激活后疾冲并造成伤害",
+      "full": "激活后向前疾冲，对路径上的敌人造成150(+3%每级)点伤害。击杀英雄可重置恶意转移的冷却时间。"
+    },
+    {
+      "nameId": "KelThuzadTheDamnedReturn",
+      "buttonId": "KelThuzadTheDamnedReturn",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_kel'thuzad_cultofthedamned.png",
+      "sort": 4,
+      "name": "被诅咒者的回归",
+      "short": "制造阴影体来模仿施放死亡凋零",
+      "full": "激活后，制造一个纳克萨玛斯之影，持续15秒，并模仿克尔苏加德施放死亡凋零。"
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "shortName": "zuljin",
+  "heroName": "Zuljin",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "ZuljinBerserker",
+      "buttonId": "ZuljinBerserker",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zuljin_berzerker.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "狂暴",
+      "short": "攻击速度随生命值降低而提高",
+      "full": "激活后使普通攻击伤害提高25%，但每次攻击会消耗2%的最大生命值。\n\n被动：祖尔金每损失1%的最大生命值，攻击速度就会提高1%。\n\n你想吃一斧头？\n\n任务：祖尔金攻击英雄时，每进行5次普通攻击，其普通攻击伤害永久提高1点，最多50点。\n\n奖励：攻击英雄75次后，普通攻击距离扩大1.1码。\n\n奖励：攻击英雄150次后，他的双斧投掷会旋转两次。"
+    },
+    {
+      "nameId": "ZuljinGrievousThrow",
+      "buttonId": "ZuljinGrievousThrow",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zuljin_grievousthrow.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "重伤投掷",
+      "short": "扔出一把战斧，造成伤害并标记目标，提高祖尔金的普通攻击伤害。",
+      "full": "祖尔金向前扔出一把飞斧，对前2名被击中的敌人造成125(+4%每级)点伤害并标记他们，持续6秒。祖尔金对被标记的目标进行的下3次普通攻击造成50%的额外伤害。"
+    },
+    {
+      "nameId": "ZuljinTwinCleave",
+      "buttonId": "ZuljinTwinCleave",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zuljin_twincleave.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "双斧投掷",
+      "short": "扔出旋转的斧头使敌人减速",
+      "full": "以大圆弧的轨迹扔出2把斧头，每把斧头造成112(+4%每级)点伤害，并使被影响的敌人减速15%，持续2秒。"
+    },
+    {
+      "nameId": "ZuljinRegeneration",
+      "buttonId": "ZuljinRegeneration",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zuljin_regeneration.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "再生",
+      "short": "祖尔金通过引导来持续恢复生命值",
+      "full": "祖尔金引导4秒来恢复30%的最大生命值。引导时移动或受到伤害会打断该效果。"
+    },
+    {
+      "nameId": "ZuljinTazdingo",
+      "buttonId": "ZuljinTazdingo",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zuljin_tazdingo.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "塔兹丁苟！",
+      "short": "无法击杀",
+      "full": "在接下来的4秒内，祖尔金不会被杀死，并且生命值不会降低至1点以下。塔兹丁苟！"
+    },
+    {
+      "nameId": "ZuljinGuillotine",
+      "buttonId": "ZuljinGuillotine",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zuljin_guillotine.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "断头斧",
+      "short": "造成大量范围伤害",
+      "full": "祖尔金向空中投出一把巨斧落在目标区域，造成330(+4%每级)点伤害。他的生命值越低，额外伤害就越高。"
+    },
+    {
+      "nameId": "ZuljinAmaniRage",
+      "buttonId": "ZuljinAmaniRageTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_zuljin_davoodooshuffle.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "阿曼尼之怒",
+      "short": "激活后失去生命值，随后缓慢恢复",
+      "full": "激活后，祖尔金立刻损失当前生命值的50%并在随后的10秒内恢复损失的生命值。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ZuljinBoneslicer",
+      "buttonId": "ZuljinBoneslicer",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zuljin_grievousthrow.png",
+      "sort": 1,
+      "name": "剔骨者",
+      "short": "强化重伤投掷",
+      "full": "重伤投掷现在穿透所有敌人，而且每击中一名英雄返还15点法力值。此外，重伤投掷的印记不再被普通攻击移除。"
+    },
+    {
+      "nameId": "ZuljinRecklessness",
+      "buttonId": "ZuljinRecklessness",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zuljin_berzerker.png",
+      "sort": 2,
+      "name": "鲁莽",
+      "short": "生命值较低时提高伤害",
+      "full": "祖尔金生命值低于75%时，他获得10%法术强度加成。生命值低于50%时，他的普通攻击伤害提高10%，并且对英雄发动的普通攻击获得额外一层你想吃一斧头？"
+    },
+    {
+      "nameId": "ZuljinHeadhunter",
+      "buttonId": "ZuljinHeadhunter",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_zuljin_headhunter.png",
+      "sort": 3,
+      "name": "猎头者",
+      "short": "任务：击杀英雄会提高伤害",
+      "full": "任务：祖尔金首次击杀某一名敌方英雄后，他造成的伤害会永久提高2%。\n\n奖励：每名敌方英雄都被他击杀后，普通攻击的范围扩大1.1码。"
+    },
+    {
+      "nameId": "ZuljinTrollsBlood",
+      "buttonId": "ZuljinTrollsBlood",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zuljin_regeneration.png",
+      "sort": 1,
+      "name": "巨魔之血",
+      "short": "提高再生治疗量",
+      "full": "再生的治疗量提高25%如果再生引导完成，祖尔金还会回复10%的最大法力值。"
+    },
+    {
+      "nameId": "ZuljinVoodooShuffle",
+      "buttonId": "ZuljinVoodooShuffle",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_zuljin_regeneration_a.png",
+      "sort": 2,
+      "name": "巫毒步",
+      "short": "激活后移除定身和减速效果",
+      "full": "激活后移除定身和减速效果。\n\n被动：使再生的冷却时间和法力消耗降低40%。"
+    },
+    {
+      "nameId": "Zul'jinAmaniRageAmaniHide",
+      "buttonId": "Zul'jinAmaniRageAmaniHide",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_zuljin_davoodooshuffle.png",
+      "sort": 3,
+      "name": "阿曼尼之皮",
+      "short": "给予护甲并减少冷却时间",
+      "full": "使阿曼尼之怒的冷却时间缩短10秒，并在该效果恢复生命值期间获得15点护甲。"
+    },
+    {
+      "nameId": "ZuljinViciousAssault",
+      "buttonId": "ZuljinViciousAssault",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zuljin_grievousthrow.png",
+      "sort": 1,
+      "name": "恶意突袭",
+      "short": "增加重伤投掷的持续时间和伤害",
+      "full": "重伤投掷的持续时间延长3秒，伤害加成提高45%。"
+    },
+    {
+      "nameId": "ZuljinArcaniteAxes",
+      "buttonId": "ZuljinArcaniteAxes",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zuljin_twincleave.png",
+      "sort": 2,
+      "name": "奥金飞斧",
+      "short": "任务：提高双斧投掷的伤害",
+      "full": "任务：每用双斧投掷击中一名英雄，此技能伤害就永久提高0.75点。"
+    },
+    {
+      "nameId": "ZuljinFerocity",
+      "buttonId": "ZuljinFerocity",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zuljin_berzerker.png",
+      "sort": 3,
+      "name": "凶残",
+      "short": "提高狂暴的攻击速度加成",
+      "full": "狂暴的攻击速度加成提高40%。"
+    },
+    {
+      "nameId": "ZuljinTazdingo",
+      "buttonId": "ZuljinTazdingo",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zuljin_tazdingo.png",
+      "sort": 1,
+      "name": "塔兹丁苟！",
+      "short": "无法击杀",
+      "full": "在接下来的4秒内，祖尔金不会被杀死，并且生命值不会降低至1点以下。塔兹丁苟！"
+    },
+    {
+      "nameId": "ZuljinGuillotine",
+      "buttonId": "ZuljinGuillotine",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zuljin_guillotine.png",
+      "sort": 2,
+      "name": "断头斧",
+      "short": "造成大量范围伤害",
+      "full": "祖尔金向空中投出一把巨斧落在目标区域，造成330(+4%每级)点伤害。他的生命值越低，额外伤害就越高。"
+    },
+    {
+      "nameId": "ZuljinLacerate",
+      "buttonId": "ZuljinLacerate",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zuljin_twincleave.png",
+      "sort": 1,
+      "name": "裂痕",
+      "short": "提高双斧投掷的减速效果",
+      "full": "双斧投掷每把斧头的的减速效果提高10%，减速效果持续时间提高0.5秒。"
+    },
+    {
+      "nameId": "ZuljinEyeOfZuljin",
+      "buttonId": "ZuljinEyeOfZuljin",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_base.png",
+      "sort": 2,
+      "name": "祖尔金之眼",
+      "short": "普通攻击可提高移动速度",
+      "full": "对敌方英雄进行普通攻击使祖尔金获得6%的移动速度，持续2秒，最高可达30%。"
+    },
+    {
+      "nameId": "ZuljinEnsnare",
+      "buttonId": "ZuljinEnsnare",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_zuljin_trollnet.png",
+      "sort": 3,
+      "name": "诱捕",
+      "short": "扔出一个诱捕网使敌人定身",
+      "full": "向前扔出一张诱捕网，使第一个被击中的敌方英雄定身1.5秒。如果没有击中英雄，诱捕的冷却时间缩短至10秒。"
+    },
+    {
+      "nameId": "ZuljinNoMercyTalent",
+      "buttonId": "ZuljinNoMercyTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zuljin_grievousthrow.png",
+      "sort": 1,
+      "name": "决不留情！",
+      "short": "普通攻击无视护甲，造成更多伤害",
+      "full": "祖尔金对被重伤投掷标记的敌方英雄进行的普通攻击无视护甲，并额外造成相当于最大生命值2%的伤害。"
+    },
+    {
+      "nameId": "ZuljinWrongPlaceWrongTime",
+      "buttonId": "ZuljinWrongPlaceWrongTime",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zuljin_twincleave.png",
+      "sort": 2,
+      "name": "阴差阳错",
+      "short": "双斧投掷在顶点处造成额外伤害",
+      "full": "如果敌人被双斧投掷的两把斧头同时击中，则受到100(+4%每级)点额外伤害。而且会算做“你想吃一斧头？”命中了 5名英雄。"
+    },
+    {
+      "nameId": "ZuljinLetTheKillingBegin",
+      "buttonId": "ZuljinLetTheKillingBegin",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_speed.png",
+      "sort": 3,
+      "name": "杀戮开始",
+      "short": "击杀敌人提高攻击速度",
+      "full": "祖尔金杀死一个敌人后，他的攻击速度提高5%，最多提高40%，持续12秒。普通攻击刷新持续时间。\n\n杀死英雄立即提供40%的攻击速度加成。"
+    },
+    {
+      "nameId": "ZuljinAmaniResilience",
+      "buttonId": "ZuljinAmaniResilience",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zuljin_tazdingo.png",
+      "sort": 1,
+      "name": "阿曼尼抗性",
+      "short": "塔兹丁苟持续时间延长，并恢复生命值",
+      "full": "塔兹丁苟的持续时间延长1秒。效果消失时，祖尔金把在塔兹丁苟期间造成伤害的50%转化为对自己的治疗。"
+    },
+    {
+      "nameId": "ZuljinBuzzsaw",
+      "buttonId": "ZuljinBuzzsaw",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zuljin_guillotine.png",
+      "sort": 2,
+      "name": "断头锯",
+      "short": "断头斧不断向前移动",
+      "full": "落地后断头斧继续前进，对击中的敌人造成75%的伤害。如果有一名英雄被断头斧击杀，祖尔金会立即回满生命值。"
+    },
+    {
+      "nameId": "ZuljinForestMedicine",
+      "buttonId": "ZuljinForestMedicine",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zuljin_regeneration.png",
+      "sort": 3,
+      "name": "森林药剂",
+      "short": "再生无法被打断",
+      "full": "再生不再需要引导，也不会被打断。"
+    },
+    {
+      "nameId": "ZuljinPassiveASurpriseForYa",
+      "buttonId": "Zul'jinPassiveASurpriseForYa",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_aoe.png",
+      "sort": 4,
+      "name": "意外惊喜",
+      "short": "普通攻击可以弹跳至附近的一个敌人",
+      "full": "普通攻击可以弹跳至附近的一个敌人，造成50%伤害，优先以敌方英雄为目标。"
+    }
+  ]
+}

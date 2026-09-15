@@ -1,0 +1,295 @@
+{
+  "shortName": "sylvanas",
+  "heroName": "Sylvanas",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "SylvanasBlackArrowsActive",
+      "buttonId": "SylvanasBlackArrows",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_sylvanas_blackarrows.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "黑蚀箭",
+      "short": "普通攻击施加女妖诅咒，激活后瘫痪敌人",
+      "full": "激活后，在接下来的10秒内，所有普通攻击和基本技能都可以使小兵、非精英雇佣兵和建筑物昏迷3秒。\n\n女妖诅咒\n\n普通攻击对敌人施加女妖诅咒，持续3秒，最多叠加3次。对积累3层女妖诅咒的敌人造成25%的额外伤害。"
+    },
+    {
+      "nameId": "SylvanasWitheringFire",
+      "buttonId": "SylvanasWitheringFire",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_sylvanas_witheringfire.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "凋零射击",
+      "short": "向最近的敌人射出箭矢。当敌人被击杀后重置冷却时间",
+      "full": "在1.5秒内朝敌人最多开火5次，造成39(+4%每级)点伤害，优先攻击英雄。击杀时重置该技能的冷却时间。"
+    },
+    {
+      "nameId": "SylvanasShadowDagger",
+      "buttonId": "SylvanasShadowDagger",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "暗影匕首",
+      "short": "对敌人造成持续伤害，击中后扩散",
+      "full": "朝目标敌人投掷匕首，造成30(+4%每级)点伤害并在接下来的2.5秒内造成150(+4%每级)点额外伤害。当希尔瓦娜斯对暗影匕首的初始目标造成伤害时，该效果会传染到附近所有未受影响的敌人身上。"
+    },
+    {
+      "nameId": "SylvanasHauntingWave",
+      "buttonId": "SylvanasHauntingWave",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_sylvanas_hauntingwave.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "索命妖魂",
+      "short": "造成伤害并可以传送",
+      "full": "释放一波女妖，对所有目标造成114(+4%每级)点伤害。再次激活可传送到女妖的位置。"
+    },
+    {
+      "nameId": "SylvanasWailingArrow",
+      "buttonId": "SylvanasWailingArrow",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sylvanas_wailingarrow.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "哀恸箭",
+      "short": "射出箭矢，伤害并沉默敌人",
+      "full": "射出一支箭矢，重新激活技能可以造成228(+4%每级)点伤害，沉默范围内的敌人，持续2.5秒。箭矢达到最大距离会自动爆炸。"
+    },
+    {
+      "nameId": "SylvanasMindControlMissile",
+      "buttonId": "SylvanasMindControlMissile",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sylvanas_mindcontrol.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "精神控制",
+      "short": "强迫一名敌方英雄朝希尔瓦娜斯移动",
+      "full": "在0.25秒的施法后，发射一枚飞箭，对击中的第一个英雄施加精神控制，该英雄会受到沉默和30%的减速，获得3层女妖诅咒并强制朝希尔瓦娜斯移动，持续1.75秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "SylvanasTalentMightOfTheBansheeQueen",
+      "buttonId": "SylvanasMightOfTheBansheeQueenWitheringFireTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_sylvanas_witheringfire.png",
+      "sort": 1,
+      "name": "女妖之王的力量",
+      "short": "凋零射击给予攻击速度和法术强度",
+      "full": "凋零射击命中英雄可以使希尔瓦娜斯的攻击速度和法术强度提高5%，持续6秒，最多叠加5次。"
+    },
+    {
+      "nameId": "SylvanasUnfurlingShadowsShadowDagger",
+      "buttonId": "SylvanasShadowDaggerUnfurlingShadows",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
+      "sort": 2,
+      "name": "暗影侵袭",
+      "short": "任务：提高暗影匕首伤害",
+      "full": "任务： 每当暗影匕首对累积了3层女妖诅咒的敌方英雄造成伤害时，该技能的伤害就会永久提高0.5%。"
+    },
+    {
+      "nameId": "SylvanasTalentOverwhelmingAffliction",
+      "buttonId": "SylvanasBlackArrowsOverwhelmingAfflictionTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_sylvanas_blackarrows.png",
+      "sort": 3,
+      "name": "剧痛难忍",
+      "short": "女妖诅咒减速，对英雄造成额外伤害",
+      "full": "积累3层女妖诅咒的敌方英雄会被减速15%。希尔瓦娜斯的普通攻击对被减速的敌方英雄造成相当于其最大生命值1%的伤害。"
+    },
+    {
+      "nameId": "SylvanasTalentUnstablePoison",
+      "buttonId": "SylvanasBlackArrowsUnstablePoisonTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
+      "sort": 1,
+      "name": "爆裂毒药",
+      "short": "敌方小兵死亡后爆炸",
+      "full": "受到暗影匕首或希尔瓦娜斯特质影响的小兵会在死亡时发生爆炸，对附近的小兵、雇佣兵和召唤物造成130(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "SylvanasTalentMercenaryQueen",
+      "buttonId": "SylvanasMercenaryQueenTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_sylvanas_blackarrows.png",
+      "sort": 2,
+      "name": "雇佣兵女王",
+      "short": "强化附近的雇佣兵",
+      "full": "希尔瓦娜斯周围的友方非精英雇佣兵造成的伤害提高60%。希尔瓦娜斯的攻击可以击晕累积了3层女妖诅咒的雇佣兵，并对其造成30%的额外伤害。"
+    },
+    {
+      "nameId": "SylvanasHeroicAbilityPossession",
+      "buttonId": "SylvanasPossession",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_sylvanas_possession.png",
+      "sort": 3,
+      "name": "占据",
+      "short": "激活以转化敌方小兵",
+      "full": "迫使一个敌方小兵为希尔瓦娜斯的队伍战斗。投石车消耗3次使用次数。最多储存3次使用次数。"
+    },
+    {
+      "nameId": "SylvanasTalentWitheringFireBarbedShot",
+      "buttonId": "SylvanasWitheringFireBarbedShotTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_sylvanas_witheringfire.png",
+      "sort": 1,
+      "name": "倒刺射击",
+      "short": "凋零射击造成额外伤害",
+      "full": "如果凋零射击攻击同一个敌人5 次，则第5箭会造成350%的额外伤害。"
+    },
+    {
+      "nameId": "SylvanasTalentLostSoul",
+      "buttonId": "SylvanasShadowDaggerLostSoulTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
+      "sort": 2,
+      "name": "迷失之魂",
+      "short": "普通攻击缩短暗影匕首的冷却时间",
+      "full": "使暗影匕首的伤害提高10%。对积累了3层女妖诅咒的敌方英雄进行普通攻击时，暗影匕首的冷却时间缩短1.75秒。"
+    },
+    {
+      "nameId": "SylvanasTalentFesteringWounds",
+      "buttonId": "SylvanasBlackArrowsFesteringWounds",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_sylvanas_hauntingwave.png",
+      "sort": 3,
+      "name": "溃烂之伤",
+      "short": "索命妖魂施加女妖诅咒",
+      "full": "索命妖魂的伤害提高15%，并施加3层女妖诅咒。"
+    },
+    {
+      "nameId": "SylvanasHeroicAbilityWailingArrow",
+      "buttonId": "SylvanasWailingArrow",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sylvanas_wailingarrow.png",
+      "sort": 1,
+      "name": "哀恸箭",
+      "short": "射出箭矢，伤害并沉默敌人",
+      "full": "射出一支箭矢，重新激活技能可以造成228(+4%每级)点伤害，沉默范围内的敌人，持续2.5秒。箭矢达到最大距离会自动爆炸。"
+    },
+    {
+      "nameId": "SylvanasMindControl",
+      "buttonId": "SylvanasMindControlMissile",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sylvanas_mindcontrol.png",
+      "sort": 2,
+      "name": "精神控制",
+      "short": "强迫一名敌方英雄朝希尔瓦娜斯移动",
+      "full": "在0.25秒的施法后，发射一枚飞箭，对击中的第一个英雄施加精神控制，该英雄会受到沉默和30%的减速，获得3层女妖诅咒并强制朝希尔瓦娜斯移动，持续1.75秒。"
+    },
+    {
+      "nameId": "SylvanasTalentColdEmbrace",
+      "buttonId": "SylvanasShadowDaggerColdEmbraceTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
+      "sort": 1,
+      "name": "死寒之拥",
+      "short": "暗影匕首降低护甲",
+      "full": "暗影匕首使初始目标的护甲降低25点，并使其扩散到的敌人护甲降低10点，持续2.5秒。"
+    },
+    {
+      "nameId": "SylvanasTalentWindrunnerHauntingWave",
+      "buttonId": "SylvanasHauntingWaveWindrunnerTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_sylvanas_hauntingwave.png",
+      "sort": 2,
+      "name": "风行者",
+      "short": "索命妖魂可施放两次，重置凋零射击",
+      "full": "传送后的5秒内可以免费再次施放索命妖魂，使用索命妖魂进行传送重置凋零射击的冷却时间。"
+    },
+    {
+      "nameId": "SylvanasTalentRemorseless",
+      "buttonId": "SylvanasRemorselessTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_sylvanas_blackarrows.png",
+      "sort": 3,
+      "name": "冰冷无情",
+      "short": "普通攻击施放凋零射击",
+      "full": "希尔瓦娜斯的普通攻击射程提高1码，对积累3层女妖诅咒的敌方英雄使用普通攻击时，还会发射一次无天赋加成的凋零射击，也可以施加女妖诅咒。"
+    },
+    {
+      "nameId": "SylvanasTalentWitheringFireEvasiveFire",
+      "buttonId": "SylvanasWitheringFireEvasiveFireTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_sylvanas_witheringfire.png",
+      "sort": 1,
+      "name": "闪避射击",
+      "short": "凋零射击给予移动速度",
+      "full": "凋零射击击中敌人时获得6%的移动速度加成，持续2秒，最高可达30%。普通攻击刷新此效果持续时间。"
+    },
+    {
+      "nameId": "SylvanasTalentLifeDrain",
+      "buttonId": "SylvanasBlackArrowsLifeDrainTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_sylvanas_blackarrows.png",
+      "sort": 2,
+      "name": "生命吸取",
+      "short": "希尔瓦娜斯造成的伤害转化为治疗",
+      "full": "希尔瓦娜斯对积累了3层女妖诅咒的敌人造成伤害时，所造成伤害的15%转化为生命值。对英雄治疗效果翻倍。"
+    },
+    {
+      "nameId": "SylvanasTalentWillOfTheForsaken",
+      "buttonId": "SylvanasWillOfTheForsaken",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_sylvanas_willoftheforsaken.png",
+      "sort": 3,
+      "name": "被遗忘者的意志",
+      "short": "激活后变得不可阻挡，并提高移动速度",
+      "full": "激活后变得不可阻挡，并提高40%的移动速度。持续3秒。"
+    },
+    {
+      "nameId": "SylvanasWailingArrowDeafeningBlast",
+      "buttonId": "SylvanasWailingArrowDeafeningBlastTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sylvanas_wailingarrow.png",
+      "sort": 1,
+      "name": "震耳欲聋",
+      "short": "提高哀恸箭对中心目标的影响。",
+      "full": "哀恸箭爆炸中心的敌人受到的伤害提高50%，沉默效果持续时间翻倍。"
+    },
+    {
+      "nameId": "SylvanasDarkLadysCall",
+      "buttonId": "SylvanasDarkLadysCallMindControlTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sylvanas_mindcontrol.png",
+      "sort": 2,
+      "name": "黑暗女王的召唤",
+      "short": "精神控制降低敌人视野",
+      "full": "被精神控制的英雄视野会大大降低，持续5秒。精神控制的冷却时间缩短25秒。"
+    },
+    {
+      "nameId": "SylvanasTalentWitheringBarrage",
+      "buttonId": "SylvanasWitheringFireWitheringBarrage",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_sylvanas_witheringfire.png",
+      "sort": 3,
+      "name": "凋零箭幕",
+      "short": "凋零射击施加女妖诅咒",
+      "full": "凋零射击施加女妖诅咒，凋零射击命中英雄可以使该技能冷却时间减少0.75秒。"
+    },
+    {
+      "nameId": "GenericTalentFlashoftheStorms",
+      "buttonId": "GenericBoltoftheStormTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_boltofthestorm.png",
+      "sort": 4,
+      "name": "风暴转移",
+      "short": "激活后传送一小段距离",
+      "full": "激活后传送到附近区域。"
+    }
+  ]
+}

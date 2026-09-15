@@ -1,0 +1,305 @@
+{
+  "shortName": "fenix",
+  "heroName": "Fenix",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "FenixShieldCapacitor",
+      "buttonId": "FenixShieldCapacitor",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_fenix_shield_1.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "护盾储能器",
+      "short": "脱离战斗后会回复的永久护盾",
+      "full": "菲尼克斯拥有永久性的760(+4%每级)点护盾，在5秒内未受到���害时将以每秒10%的速度回复护盾。"
+    },
+    {
+      "nameId": "FenixPlasmaCutter",
+      "buttonId": "FenixPlasmaCutter",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_fenix_q.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "等离子光线刀",
+      "short": "召唤一束激光环绕菲尼克斯，伤害并减速敌人",
+      "full": "在目标点生成一束激光，并且环绕菲尼克斯两圈，对被击中的敌人造成135(+4%每级)点伤害并使其减速25%，持续4秒。"
+    },
+    {
+      "nameId": "FenixPhaseBomb",
+      "buttonId": "FenixPhaseBomb",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_fenix_w_2.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "武器模式：光继炮",
+      "short": "提高普通攻击速度",
+      "full": "普通攻击速度提高150%。\n\n激活后切换成武器模式：相位炸弹，提高普通攻击射程和伤害，使普通攻击可以溅射。"
+    },
+    {
+      "nameId": "FenixWarp",
+      "buttonId": "FenixWarp",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_fenix_teleport.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "折跃",
+      "short": "折跃至目标位置",
+      "full": "折跃至目标位置，0.5秒后开始相位转移，随即在0.75秒后抵达。"
+    },
+    {
+      "nameId": "FenixPlanetCracker",
+      "buttonId": "FenixPlanetCracker",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_fenix_r_planet_cracker.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "行星碎裂炮",
+      "short": "发射一束威力巨大的激光，横穿战场",
+      "full": "0.5秒后，引导一股威力强大的光束横越战场，持续4秒，对被击中的非建筑敌人每0.25秒造成112(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "FenixPurificationSalvo",
+      "buttonId": "FenixPurificationSalvo",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_fenix_r_scan.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "净化齐射",
+      "short": "发射一轮追踪飞弹",
+      "full": "引导1.5秒，激光扫描并锁定菲尼克斯前方的敌方英雄。引导结束后，对每一名被锁定的目标发射5枚飞弹。每一枚飞弹造成79(+4%每级)点伤害。对被减速的目标造成50%的额外伤害。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "FenixAdvancedTargeting",
+      "buttonId": "FenixAdvancedTargeting",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_fenix_q.png",
+      "sort": 1,
+      "name": "高级瞄准",
+      "short": "任务：等离子光线刀额外转一圈",
+      "full": "任务：使用等离子光线刀击中敌方英雄会使菲尼克斯的普通攻击伤害永久提高0.5点，最高60点。\n\n奖励：击中30名英雄后，等离子光线刀额外转一圈。"
+    },
+    {
+      "nameId": "FenixArsenalSynergy",
+      "buttonId": "FenixArsenalSynergy",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_fenix_w_1.png",
+      "sort": 2,
+      "name": "火力协同",
+      "short": "光继炮可强化相位炸弹",
+      "full": "在光继炮激活状态下使用普通攻击命中敌方英雄3次后，你的下一次相位炸弹普通攻击造成的伤害提高150%，溅射范围扩大50%。"
+    },
+    {
+      "nameId": "FenixMobileOffense",
+      "buttonId": "FenixMobileOffense",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_fenix_w_2.png",
+      "sort": 3,
+      "name": "机动攻势",
+      "short": "移动强化普通攻击",
+      "full": "移动后，菲尼克斯的下一次普通攻击对英雄造成35%额外伤害。"
+    },
+    {
+      "nameId": "FenixTargetAcquired",
+      "buttonId": "FenixTargetAcquired",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_fenix_w_2.png",
+      "sort": 1,
+      "name": "目标获取",
+      "short": "光继炮可给予移动速度",
+      "full": "使用光继炮对被减速的英雄进行普通攻击可给予10%移动速度，持续4秒，最高可叠加至40%。"
+    },
+    {
+      "nameId": "FenixInhibitingEnergy",
+      "buttonId": "FenixInhibitingEnergy",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_fenix_w_1.png",
+      "sort": 2,
+      "name": "拘束能量",
+      "short": "相位炸弹可以减速被命中的敌人",
+      "full": "相位炸弹激活时，每过10秒，菲尼克斯的下一次普通攻击会使所有命中的敌人减速60%，其效果会在1.5秒内衰退。"
+    },
+    {
+      "nameId": "FenixEmergencyProtocol",
+      "buttonId": "FenixEmergencyProtocol",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_fenix_shield_1.png",
+      "sort": 3,
+      "name": "应急程序",
+      "short": "获得移动速度，护盾耗尽时效果更强",
+      "full": "当菲尼克斯拥有来自护盾储能器提供的护盾时，他获得10%移动速度提升。当菲尼克斯失去护盾储能器提供的所有护盾时，该加成效果提高至15%。"
+    },
+    {
+      "nameId": "FenixCombatAdvantage",
+      "buttonId": "FenixCombatAdvantage",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_fenix_q.png",
+      "sort": 1,
+      "name": "战斗优势",
+      "short": "等离子光线刀对被减速的目标造成更高伤害",
+      "full": "等离子光线刀对被减速的目标造成35%额外伤害。"
+    },
+    {
+      "nameId": "FenixWarpWarfare",
+      "buttonId": "FenixWarpWarfare",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_fenix_teleport.png",
+      "sort": 2,
+      "name": "折跃势能",
+      "short": "折跃后给予攻击速度加成",
+      "full": "折跃抵达后，在光继炮模式下获得175%攻击速度，持续4秒。击杀英雄重置折跃的冷却时间。"
+    },
+    {
+      "nameId": "FenixDivertPowerWeaponsTalent",
+      "buttonId": "FenixDivertPowerWeapons",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_fenix_w_2.png",
+      "sort": 3,
+      "name": "能量转向：武器",
+      "short": "激活后损失护盾，提高伤害",
+      "full": "激活后普通攻击的伤害提高40%，持续5秒。对英雄进行普通攻击可刷新此效果的持续时间。当能量转向：武器的持续时间结束时，损失所有护盾储能器的护盾。"
+    },
+    {
+      "nameId": "FenixHeroicAbilityPurificationSalvo",
+      "buttonId": "FenixPurificationSalvo",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_fenix_r_scan.png",
+      "sort": 1,
+      "name": "净化齐射",
+      "short": "发射一轮追踪飞弹",
+      "full": "引导1.5秒，激光扫描并锁定菲尼克斯前方的敌方英雄。引导结束后，对每一名被锁定的目标发射5枚飞弹。每一枚飞弹造成79(+4%每级)点伤害。对被减速的目标造成50%的额外伤害。"
+    },
+    {
+      "nameId": "FenixHeroicAbilityPlanetCracker",
+      "buttonId": "FenixPlanetCracker",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_fenix_r_planet_cracker.png",
+      "sort": 2,
+      "name": "行星碎裂炮",
+      "short": "发射一束威力巨大的激光，横穿战场",
+      "full": "0.5秒后，引导一股威力强大的光束横越战场，持续4秒，对被击中的非建筑敌人每0.25秒造成112(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "FenixAdaniumShell",
+      "buttonId": "FenixAdaniumShell",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_fenix_teleport.png",
+      "sort": 1,
+      "name": "艾德曼合金外壳",
+      "short": "折跃给予护甲",
+      "full": "折跃抵达后，获得50点护甲，持续4秒。"
+    },
+    {
+      "nameId": "FenixDampeningField",
+      "buttonId": "FenixDampeningField",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_fenix_shield_1.png",
+      "sort": 2,
+      "name": "衰减场",
+      "short": "护盾储能器给予法术护甲",
+      "full": "菲尼克斯拥有来自护盾储能器的护盾时，会获得30点法术护甲。"
+    },
+    {
+      "nameId": "FenixRapidRecharge",
+      "buttonId": "FenixRapidRecharge",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_fenix_shield_3.png",
+      "sort": 3,
+      "name": "快速充能",
+      "short": "受到治疗可回复护盾储能器",
+      "full": "护盾储能器从承受伤害后到开始恢复所需要的时间缩短2秒。菲尼克斯受到治疗时，护盾储能器的护盾回复60%受到的治疗量。"
+    },
+    {
+      "nameId": "FenixAuxiliaryShields",
+      "buttonId": "FenixAuxiliaryShields",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_fenix_shield_2.png",
+      "sort": 4,
+      "name": "辅助护盾",
+      "short": "护盾提高，但生命值降低",
+      "full": "使菲尼克斯的最大生命值永久减少30%，但是护盾储能器的护盾提高40%。普通攻击恢复护盾值，数值相当于造成伤害的10%。"
+    },
+    {
+      "nameId": "FenixOffensiveCadence",
+      "buttonId": "FenixOffensiveCadence",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_fenix_w_2.png",
+      "sort": 1,
+      "name": "进攻节奏",
+      "short": "光继炮模式下的每第三次普通攻击可被强化",
+      "full": "在光继炮激活状态下，对英雄的每第3次普通攻击造成相当于目标最大生命值6%的额外伤害。"
+    },
+    {
+      "nameId": "FenixPhotonicWeaponry",
+      "buttonId": "FenixPhotonicWeaponry",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_fenix_shield_1.png",
+      "sort": 2,
+      "name": "光子武器",
+      "short": "护盾储能器提高造成的伤害",
+      "full": "菲尼克斯拥有来自护盾储能器的护盾时，造成的伤害提高20%。"
+    },
+    {
+      "nameId": "FenixArsenalOvercharge",
+      "buttonId": "FenixArsenalOvercharge",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+      "sort": 3,
+      "name": "武库超载",
+      "short": "普通攻击缩短技能冷却时间",
+      "full": "使用光继炮进行普通攻击将使技能的冷却时间缩短0.5秒。相位炸弹激活时，每使用普通攻击命中一次英雄，都会使技能的冷却时间缩短0.5秒。"
+    },
+    {
+      "nameId": "FenixArmageddonBeam",
+      "buttonId": "FenixArmageddonBeam",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_fenix_r_planet_cracker.png",
+      "sort": 1,
+      "name": "末日射线",
+      "short": "行星碎裂炮的宽度提升，冷却时间缩短",
+      "full": "行星碎裂炮的宽度在1.5秒内提升100%。\n\n被动：行星碎裂炮的冷却时间缩短40秒。"
+    },
+    {
+      "nameId": "FenixSecondaryFire",
+      "buttonId": "FenixSecondaryFire",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_fenix_q.png",
+      "sort": 2,
+      "name": "附加火力",
+      "short": "等离子光线刀可以发射净化齐射飞弹",
+      "full": "使用等离子光线刀击中敌方英雄，将在0.5秒后对其发射一轮净化齐射飞弹，造成79(+4%每级)点伤害。对被减速的目标造成的伤害提高50%。"
+    },
+    {
+      "nameId": "FenixSingularityCharge",
+      "buttonId": "FenixSingularityCharge",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_fenix_w_2.png",
+      "sort": 3,
+      "name": "奇点充能",
+      "short": "提高武器模式的各项加成",
+      "full": "光继炮给予100%额外攻击速度，相位炸弹给予1.25码额外射程。"
+    },
+    {
+      "nameId": "FenixUnconqueredSpirit",
+      "buttonId": "FenixUnconqueredSpirit",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_fenix_shield_1.png",
+      "sort": 4,
+      "name": "不屈战魂",
+      "short": "致命伤害可充能护盾储能器",
+      "full": "受到致命伤害时，护盾储能器重新获得800(+4%每级)点护盾。该效果有120秒冷却时间"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+NOTE: TabBar icons needed
+
+Please add the following icon files to this directory:
+- tab-hero.png (81x81px, gray)
+- tab-hero-active.png (81x81px, blue #1976d2)
+- tab-favorite.png (81x81px, gray - star icon)
+- tab-favorite-active.png (81x81px, blue #1976d2 - filled star)
+- tab-about.png (81x81px, gray - info icon)
+- tab-about-active.png (81x81px, blue #1976d2 - info icon)
+- hero-placeholder.png (200x200px - generic hero silhouette)
+
+For now, you can use simple solid color squares or download icons from:
+- https://www.iconfont.cn/ (Alibaba icon library)
+- Generate simple icons using any image editor
+
+Temporary workaround: The app will work without these icons showing blank squares.

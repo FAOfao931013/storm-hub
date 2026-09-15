@@ -1,0 +1,295 @@
+{
+  "shortName": "dehaka",
+  "heroName": "Dehaka",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "DehakaEssenceCollection",
+      "buttonId": "DehakaEssenceCollection",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_dehaka_essencecollection.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "采集精华",
+      "short": "收集并消耗敌人的精华用来治疗自己",
+      "full": "储存的每个精华可以在5秒内为德哈卡恢复29(+4%每级)点生命值。可以在拖拽和潜地时使用。\n\n被动：击杀英雄获得10个精华，附近有敌方小兵被消灭时获得2个精华。最多储存50个精华。"
+    },
+    {
+      "nameId": "DehakaDrag",
+      "buttonId": "DehakaDrag",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_dehaka_drag.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "拖拽",
+      "short": "造成少量伤害并拖拽敌人",
+      "full": "德哈卡甩出舌头，对第一个击中的敌人造成160(+4%每级)点伤害，使其昏迷并拖拽，持续1.75秒。\n\n如果德哈卡在使用拖拽时被击晕或沉默，效果就会结束。"
+    },
+    {
+      "nameId": "DehakaDarkSwarm",
+      "buttonId": "DehakaDarkSwarm",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_dehaka_trample.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "黑暗虫群",
+      "short": "对附近敌人造成伤害",
+      "full": "每0.5秒对附近的敌人造成48(+4%每级)点伤害，持续3.5秒。激活时，你可以穿越单位。可以在拖拽和潜地时施放。"
+    },
+    {
+      "nameId": "DehakaBurrow",
+      "buttonId": "DehakaBurrow",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_dehaka_burrow.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "潜地",
+      "short": "潜入地下获得静止状态",
+      "full": "潜入地下，变为静止且获得无敌，持续2秒。潜地时，德哈卡能够以50%的移动速度移动。"
+    },
+    {
+      "nameId": "DehakaIsolation",
+      "buttonId": "DehakaIsolation",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_dehaka_isolation.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "隔离",
+      "short": "沉默，减速并缩小一名敌人的视野",
+      "full": "发射生物质对击中的第一个英雄造成200(+4%每级)点伤害，并使其暴露、沉默和减速30%，持续3秒。目标的视野范围缩小，持续6秒。"
+    },
+    {
+      "nameId": "DehakaAdaptation",
+      "buttonId": "DehakaAdaptation",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_dehaka_adaptation.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "适者生存",
+      "short": "将受到的伤害转化为生命值",
+      "full": "4秒后，这段时间受到伤害的100%转化为生命值。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "DehakaDarkSwarmTalentEnduringSwarm",
+      "buttonId": "DehakaDarkSwarmTalentEnduringSwarm",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_dehaka_trample.png",
+      "sort": 1,
+      "name": "坚韧虫群",
+      "short": "提高黑暗虫群的持续时间，并提供法术护甲",
+      "full": "激活时，黑暗虫群的持续时间延长0.5秒，并提供50点法术护甲。"
+    },
+    {
+      "nameId": "DehakaEssenceCollectionTalentTissueRegeneration",
+      "buttonId": "DehakaEssenceCollectionTalentTissueRegeneration",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_dehaka_essencecollection.png",
+      "sort": 2,
+      "name": "组织再生",
+      "short": "任务：精华提高生命回复值和最大精华值",
+      "full": "恢复之球给予10点精华。\n\n可重复任务：每收集50点精华，生命恢复速度永久提高4点，最高可达40点，最大精华值增加1点，最多可达10点。"
+    },
+    {
+      "nameId": "DehakaEssenceCollectionTalentEnhancedAgility",
+      "buttonId": "DehakaEssenceCollectionTalentEnhancedAgility",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_dehaka_brushstalker.png",
+      "sort": 3,
+      "name": "增强敏捷",
+      "short": "任务：精华提高隐蔽猎手移动速度",
+      "full": "离开草丛后，隐蔽猎手的移动速度加成现在持续5秒。\n\n可重复任务：每收集50点精华，隐蔽猎手的移动速度加成永久提高2%，最高可达20%。"
+    },
+    {
+      "nameId": "DehakaBurrowTalentLurkerStrain",
+      "buttonId": "DehakaBurrowTalentLurkerStrain",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_dehaka_burrow.png",
+      "sort": 1,
+      "name": "潜伏者变种",
+      "short": "潜地会潜行，并击退敌人",
+      "full": "钻出地面后德哈卡获得潜行，持续3秒，击退附近敌人，造成125(+4%每级)点伤害并使其减速30%，持续3秒。\n\n被动：潜地的冷却时间缩短2秒。"
+    },
+    {
+      "nameId": "DehakaEssenceCollectionOneWhoCollectsTalent",
+      "buttonId": "DehakaEssenceCollectionOneWhoCollectsTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_dehaka_essencecollection.png",
+      "sort": 2,
+      "name": "我为精华而生",
+      "short": "提高消灭小兵获得的精华，提高黑暗虫群对雇佣兵造成的伤害",
+      "full": "消灭小兵获得的精华提高50%。黑暗虫群对雇佣兵额外造成40%的伤害。"
+    },
+    {
+      "nameId": "DehakaEssenceCollectionTalentHeroStalker",
+      "buttonId": "DehakaEssenceCollectionTalentHeroStalker",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_dehaka_essencecollection_var1.png",
+      "sort": 3,
+      "name": "英雄猎手",
+      "short": "击杀英雄给予更多精华",
+      "full": "击杀英雄获得的精华提高100%，黑暗虫群每击中一个敌方英雄给予1点精华，每次最多3点。"
+    },
+    {
+      "nameId": "DehakaDragTalentFeedingFrenzy",
+      "buttonId": "DehakaDragTalentFeedingFrenzy",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_dehaka_drag.png",
+      "sort": 1,
+      "name": "吞食狂热",
+      "short": "孤注一掷：普通攻击缩短拖拽冷却时间",
+      "full": "拖拽的持续时间延长0.5秒。\n\n孤注一掷：普通攻击使拖拽的冷却时间缩短1.5秒。每次死亡使该冷却时间缩短效果降低0.25秒，最多3次。"
+    },
+    {
+      "nameId": "DehakaDragTalentParalyzingEnzymes",
+      "buttonId": "DehakaDragTalentParalyzingEnzymes",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_dehaka_drag_var1.png",
+      "sort": 2,
+      "name": "麻痹酵素",
+      "short": "拖拽减速，降低治疗",
+      "full": "拖拽激活时和结束后的2秒内，使目标减速40%，使其受到的治疗降低40%。"
+    },
+    {
+      "nameId": "DehakaDarkSwarmTalentSymbiosis",
+      "buttonId": "DehakaDarkSwarmTalentSymbiosis",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_dehaka_trample.png",
+      "sort": 3,
+      "name": "共生虫群",
+      "short": "击中英雄缩短黑暗虫群的冷却时间",
+      "full": "每当黑暗虫群击中敌方英雄时，冷却时间缩短0.4秒。"
+    },
+    {
+      "nameId": "DehakaHeroicAbilityIsolation",
+      "buttonId": "DehakaIsolation",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_dehaka_isolation.png",
+      "sort": 1,
+      "name": "隔离",
+      "short": "沉默，减速并缩小一名敌人的视野",
+      "full": "发射生物质对击中的第一个英雄造成200(+4%每级)点伤害，并使其暴露、沉默和减速30%，持续3秒。目标的视野范围缩小，持续6秒。"
+    },
+    {
+      "nameId": "DehakaHeroicAbilityAdaptation",
+      "buttonId": "DehakaAdaptation",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_dehaka_adaptation.png",
+      "sort": 2,
+      "name": "适者生存",
+      "short": "将受到的伤害转化为生命值",
+      "full": "4秒后，这段时间受到伤害的100%转化为生命值。"
+    },
+    {
+      "nameId": "DehakaBrushstalkerFerociousStalker",
+      "buttonId": "DehakaBrushstalkerFerociousStalkerTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_dehaka_trample.png",
+      "sort": 1,
+      "name": "凶狠猎手",
+      "short": "隐蔽猎手可减速，并提高黑暗虫群的伤害",
+      "full": "在有隐蔽猎手移动速度加成时，黑暗虫群可以额外造成50%的伤害，并使敌方英雄减速15%，持续0.75秒。"
+    },
+    {
+      "nameId": "DehakaPrimalSwarm",
+      "buttonId": "DehakaPrimalSwarm",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_dehaka_trample_a.png",
+      "sort": 2,
+      "name": "原始虫群",
+      "short": "黑暗虫群降低敌人的护甲",
+      "full": "黑暗虫群使被击中的敌人的护甲降低10点，使其受到的伤害提高10%，持续0.75秒。"
+    },
+    {
+      "nameId": "DehakaPrimalRage",
+      "buttonId": "DehakaPrimalRage",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_dehaka_essencecollection.png",
+      "sort": 3,
+      "name": "原始暴怒",
+      "short": "精华提高攻击伤害",
+      "full": "每储存一点精华，攻击伤害额外提高1.25%。"
+    },
+    {
+      "nameId": "DehakaDragTalentElongatedTongue",
+      "buttonId": "DehakaDragTalentElongatedTongue",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_dehaka_drag.png",
+      "sort": 1,
+      "name": "长舌",
+      "short": "提高拖拽射程",
+      "full": "拖拽的射程提高20%。"
+    },
+    {
+      "nameId": "DehakaTunnelingClaws",
+      "buttonId": "DehakaTunnelingClaws",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_dehaka_burrow.png",
+      "sort": 2,
+      "name": "掘地之爪",
+      "short": "提高潜地的移动速度",
+      "full": "潜地时的移动速度提高至120%。"
+    },
+    {
+      "nameId": "DehakaPackLeaderBrushstalkerTalent",
+      "buttonId": "DehakaPackLeaderBrushstalker",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_dehaka_brushstalker.png",
+      "sort": 3,
+      "name": "族群领袖",
+      "short": "在草丛附近时获得护甲与攻击速度加成",
+      "full": "德哈卡在草丛中时获得40点护甲和15%攻击速度加成，该效果在离开草丛后持续5秒。"
+    },
+    {
+      "nameId": "DehakaIsolationTalentContagion",
+      "buttonId": "DehakaIsolationTalentContagion",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_dehaka_isolation.png",
+      "sort": 1,
+      "name": "传染",
+      "short": "隔离会传染到附近的英雄身上",
+      "full": "隔离会使第一个目标附近的所有英雄受到影响，但对所有目标造成的伤害降低60%。"
+    },
+    {
+      "nameId": "DehakaAdaptationChangeIsSurvivalTalent",
+      "buttonId": "DehakaAdaptationChangeIsSurvivalTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_dehaka_adaptation.png",
+      "sort": 2,
+      "name": "改变才能生存",
+      "short": "提高适者生存的治疗量，并缩短冷却时间",
+      "full": "适者生存的治疗量提高至所受伤害的200%，并且冷却时间缩短40秒。"
+    },
+    {
+      "nameId": "DehakaEssenceClaws",
+      "buttonId": "DehakaEssenceClaws",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_dehaka_essencecollection.png",
+      "sort": 3,
+      "name": "精华之爪",
+      "short": "普通攻击造成减速，并提供精华",
+      "full": "德哈卡的普通攻击使目标减速20%，持续1秒。如果目标是英雄，德哈卡获得5个精华。"
+    },
+    {
+      "nameId": "DehakaBrushstalkerApexPredator",
+      "buttonId": "DehakaBrushstalkerApexPredatorTalent",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_dehaka_brushstalker.png",
+      "sort": 4,
+      "name": "顶级捕食者",
+      "short": "缩短隐蔽猎手的冷却时间和施法时间",
+      "full": "隐蔽猎手的冷却时间缩短50秒，施法时间缩短0.5秒。"
+    }
+  ]
+}

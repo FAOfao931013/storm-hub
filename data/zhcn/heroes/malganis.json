@@ -1,0 +1,295 @@
+{
+  "shortName": "malganis",
+  "heroName": "MalGanis",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "MalGanisVampiricTouch",
+      "buttonId": "MalGanisVampiricTouch",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_malganis_trait.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "吸血之触",
+      "short": "玛尔加尼斯从造成的伤害中获得治疗",
+      "full": "对敌方英雄造成的45%伤害治疗玛尔加尼斯，对非英雄单位造成的10%伤害治疗玛尔加尼斯。"
+    },
+    {
+      "nameId": "MalGanisFelClawsFirst",
+      "buttonId": "MalGanisFelClawsFirst",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malganis_fel_1.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "邪能之爪",
+      "short": "向前横扫多次，造成伤害",
+      "full": "朝指定方向猛烈挥砍，对敌人造成66(+4%每级)点伤害。\n\n重新激活后可以最多挥砍2次。第三次挥砍可击晕敌人0.75秒。"
+    },
+    {
+      "nameId": "MalGanisNecroticEmbrace",
+      "buttonId": "MalGanisNecroticEmbrace",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malganis_necrotic.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "冥魂之拥",
+      "short": "对玛尔加尼斯周围造成伤害并获得护甲",
+      "full": "亵渎空气，对附近的敌人造成110(+4%每级)点伤害并获得25点护甲，持续3秒。"
+    },
+    {
+      "nameId": "MalGanisNightRush",
+      "buttonId": "MalGanisNightRush",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malganis_nightrush.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "夜幕骤临",
+      "short": "获得移动速度加成并且使敌人沉睡",
+      "full": "0.75秒后，获得50%移动速度，持续2秒。激活时，玛尔加尼斯可以穿过敌方英雄，并使他们沉睡2.5秒。"
+    },
+    {
+      "nameId": "MalGanisDarkConversion",
+      "buttonId": "MalGanisDarkConversion",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malganis_ult_conversion.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "黑暗转换",
+      "short": "引导后与一名敌方英雄交换生命值",
+      "full": "对一名敌方英雄引导0.75秒，随后在3秒内与目标交换生命值百分比。"
+    },
+    {
+      "nameId": "MalGanisCarrionSwarm",
+      "buttonId": "MalGanisCarrionSwarm",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malganis_ult_swarm.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "腐臭蝠群",
+      "short": "分散身躯并对一个区域造成伤害",
+      "full": "在1秒后，身躯分散成一群无敌的蝠群，持续3秒，每秒对附近的敌人造成120(+4%每级)点伤害。\n\n吸血之触可治疗，数值相当于腐臭蝠群对英雄造成伤害的75%。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "MalGanisNecroticEmbraceWingedGuard",
+      "buttonId": "MalGanisNecroticEmbraceWingedGuard",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malganis_necrotic.png",
+      "sort": 1,
+      "name": "飞翼卫士",
+      "short": "冥魂之拥给予额外的物理护甲",
+      "full": "冥魂之拥每次击中一名敌方英雄，获得75点物理护甲，抵御下一次敌方英雄的普通攻击。\n\n如果飞翼卫士没有充能层数，玛尔加尼斯会在6秒后获得1次充能。"
+    },
+    {
+      "nameId": "MalGanisVampiricTouchVampiricAura",
+      "buttonId": "MalGanisVampiricTouchVampiricAura",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_malganis_trait.png",
+      "sort": 2,
+      "name": "吸血光环",
+      "short": "提高吸血之触的效果，并与盟友共享",
+      "full": "玛尔加尼斯获得治疗，数值相当于造成物理伤害的30%，同时附近的友方英雄获得治疗，数值相当于造成物理伤害的15%。"
+    },
+    {
+      "nameId": "MalGanisVampiricTouchTimeToFeed",
+      "buttonId": "MalGanisVampiricTouchTimeToFeed",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_malganis_trait_b.png",
+      "sort": 3,
+      "name": "进食时间",
+      "short": "对敌方英雄造成初始伤害时获得治疗",
+      "full": "玛尔加尼斯对附近一名敌方英雄造成伤害时，恢复70(+4%每级)点生命值。该效果每6秒只能对每个敌方英雄生效一次，但当敌人受到夜幕骤临影响陷入沉睡时，该效果冷却时间刷新。"
+    },
+    {
+      "nameId": "MalGanisNecroticEmbraceFueledByTorment",
+      "buttonId": "MalGanisNecroticEmbraceFueledByTorment",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malganis_necrotic.png",
+      "sort": 1,
+      "name": "痛感治愈",
+      "short": "冥魂之拥可在受到伤害时进行治疗",
+      "full": "冥魂之拥激活时，玛尔加尼斯受到伤害便会获得12(+4%每级)点治疗，并且吸血之触会将20%的额外英雄伤害转换成治疗。"
+    },
+    {
+      "nameId": "MalGanisNecroticEmbraceMightOfSargeras",
+      "buttonId": "MalGanisNecroticEmbraceMightOfSargeras",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malganis_necrotic_b.png",
+      "sort": 2,
+      "name": "萨格拉斯之力",
+      "short": "提高冥魂之拥的护甲",
+      "full": "冥魂之拥的护甲提高至50点。"
+    },
+    {
+      "nameId": "MalGanisNecroticEmbraceEchoOfDoom",
+      "buttonId": "MalGanisNecroticEmbraceEchoOfDoom",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malganis_necrotic_c.png",
+      "sort": 3,
+      "name": "末日回响",
+      "short": "冥魂之拥效果结束时爆炸",
+      "full": "冥魂之拥结束时将再次爆炸，造成68(+4%每级)点伤害。每击中一名敌方英雄，就会获得5点法力值并使冥魂之拥的冷却时间缩短0.75秒。\n\n不会唤醒沉睡的目标。"
+    },
+    {
+      "nameId": "MalGanisFelClawsBlackClaws",
+      "buttonId": "MalGanisFelClawsBlackClaws",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malganis_fel_1.png",
+      "sort": 1,
+      "name": "漆黑之爪",
+      "short": "邪能之爪提高普通攻击伤害，降低护甲",
+      "full": "玛尔加尼斯使用邪能之爪击中敌方英雄后，他的下一次普通攻击造成60%的额外伤害并使该敌方英雄的护甲降低15点，持续2秒。"
+    },
+    {
+      "nameId": "MalGanisFelClawsWillOfTichondrius",
+      "buttonId": "MalGanisFelClawsWillOfTichondrius",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malganis_fel_1_b.png",
+      "sort": 2,
+      "name": "提克迪奥斯的意志",
+      "short": "强化邪能之爪的最后一击",
+      "full": "邪能之爪的前2次挥砍每命中一名敌方英雄，最后一次挥砍就能偷取敌方英雄1%的最大生命值，至多达到4%。\n\n如果邪能之爪的前2次挥砍命中至少4名敌方英雄，则最后一次挥砍会额外使敌人昏迷0.5秒。"
+    },
+    {
+      "nameId": "MalGanisNightRushSpreadingPlague",
+      "buttonId": "MalGanisNightRushSpreadingPlague",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malganis_nightrush.png",
+      "sort": 3,
+      "name": "传播瘟疫",
+      "short": "施放夜幕骤临后周期性造成伤害",
+      "full": "夜幕骤临施法完成后，每秒对附近的敌人造成33(+4%每级)点伤害，效果持续5秒，且对英雄进行普通攻击会刷新该效果持续时间。\n\n不会唤醒沉睡目标。"
+    },
+    {
+      "nameId": "MalGanisCarrionSwarm",
+      "buttonId": "MalGanisCarrionSwarm",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malganis_ult_swarm.png",
+      "sort": 1,
+      "name": "腐臭蝠群",
+      "short": "分散身躯并对一个区域造成伤害",
+      "full": "在1秒后，身躯分散成一群无敌的蝠群，持续3秒，每秒对附近的敌人造成120(+4%每级)点伤害。\n\n吸血之触可治疗，数值相当于腐臭蝠群对英雄造成伤害的75%。"
+    },
+    {
+      "nameId": "MalGanisDarkConversion",
+      "buttonId": "MalGanisDarkConversion",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malganis_ult_conversion.png",
+      "sort": 2,
+      "name": "黑暗转换",
+      "short": "引导后与一名敌方英雄交换生命值",
+      "full": "对一名敌方英雄引导0.75秒，随后在3秒内与目标交换生命值百分比。"
+    },
+    {
+      "nameId": "MalGanisNightRushDeepSleep",
+      "buttonId": "MalGanisNightRushDeepSleep",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malganis_nightrush.png",
+      "sort": 1,
+      "name": "深度沉睡",
+      "short": "提高夜幕骤临的沉睡时间，提高移动速度",
+      "full": "夜幕骤临的沉睡持续时间延长0.75秒，其移动速度加成提高10%。"
+    },
+    {
+      "nameId": "MalGanisNightRushTheNightBeckons",
+      "buttonId": "MalGanisNightRushTheNightBeckons",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malganis_nightrush_b.png",
+      "sort": 2,
+      "name": "黑夜召唤",
+      "short": "夜幕骤临可以减速敌人",
+      "full": "普通攻击对沉睡的敌人额外造成200%伤害。夜幕骤临的沉睡效果结束后，受影响的目标会被减速30%，持续3秒。"
+    },
+    {
+      "nameId": "MalGanisVampiricTouchBloodRush",
+      "buttonId": "MalGanisVampiricTouchBloodRush",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_malganis_trait.png",
+      "sort": 3,
+      "name": "热血奔行",
+      "short": "受到治疗可获得移动速度加成",
+      "full": "当玛尔加尼斯受到英雄的治疗时，他获��1%移动速度，持续6秒，最高可达15%。"
+    },
+    {
+      "nameId": "MalGanisNecroticEmbracePlagueBats",
+      "buttonId": "MalGanisNecroticEmbracePlagueBats",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malganis_necrotic.png",
+      "sort": 1,
+      "name": "瘟疫蝙蝠",
+      "short": "冥魂之拥释放一波蝙蝠",
+      "full": "冥魂之拥朝玛尔加尼斯前方释放一波蝙蝠，造成81(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "MalGanisVampiricTouchFrenziedAssault",
+      "buttonId": "MalGanisVampiricTouchFrenziedAssault",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_malganis_trait.png",
+      "sort": 2,
+      "name": "狂乱攻击",
+      "short": "根据目标生命值百分比获得攻击效果加成",
+      "full": "对生命值百分比更高的英雄进行普通攻击，可获得额外治疗，数值相当于造成伤害的50%。\n\n对生命值百分比更低的英雄进行普通攻击，可获得35%攻击速度，持续3秒。"
+    },
+    {
+      "nameId": "MalGanisFelClawsBlindAsABat",
+      "buttonId": "MalGanisFelClawsBlindAsABat",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_malganis_blindbat.png",
+      "sort": 3,
+      "name": "蝙蝠抓瞎",
+      "short": "移除邪能之爪的冷却时间，但会失去所有视野",
+      "full": "激活后爆发盲目的愤怒，移除邪能之爪的冷却时间和法力消耗，但会完全失去视野，持续6秒。\n\n邪能之爪的最后一次挥砍命中敌方英雄会使该技能的冷却时间缩短4秒。"
+    },
+    {
+      "nameId": "MalGanisCarrionSwarmSeekerSwarm",
+      "buttonId": "MalGanisCarrionSwarmSeekerSwarm",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malganis_ult_swarm.png",
+      "sort": 1,
+      "name": "寻踪蝠群",
+      "short": "腐臭蝠群在效果结束后使英雄沉睡",
+      "full": "效果结束时，腐臭蝠群的蝙蝠会寻觅附近的敌方英雄，对他们造成132(+4%每级)点伤害，并使其沉睡2.5秒。"
+    },
+    {
+      "nameId": "MalGanisDarkConversionWrathOfNathreza",
+      "buttonId": "MalGanisDarkConversionWrathOfNathreza",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malganis_ult_conversion.png",
+      "sort": 2,
+      "name": "纳斯雷萨之怒",
+      "short": "黑暗转换对目标附近的英雄造成伤害",
+      "full": "目标附近的敌方英雄在3秒内，承受相当于交换生命值75%的伤害。\n\n无法从吸血之触中获益。"
+    },
+    {
+      "nameId": "MalGanisFelClawsVanquishTheWeak",
+      "buttonId": "MalGanisFelClawsVanquishTheWeak",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malganis_fel_1.png",
+      "sort": 3,
+      "name": "剔除弱者",
+      "short": "邪能之爪和普通攻击可减速敌人",
+      "full": "邪能之爪和普通攻击可以使敌人减速25%，持续1.5秒，并且对被减速英雄造成伤害时，吸血之触转换成治疗的比率提高10%。"
+    },
+    {
+      "nameId": "MalGanisNightRushAloneInTheDark",
+      "buttonId": "MalGanisNightRushAloneInTheDark",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malganis_nightrush.png",
+      "sort": 4,
+      "name": "黑暗孤独",
+      "short": "夜幕骤临减少视野范围",
+      "full": "夜幕骤临的冷却时间缩短4秒。被夜幕骤临沉睡的敌方英雄，其视野在沉睡期间和醒来后的2秒内大幅降低。"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "shortName": "leoric",
+  "heroName": "Leoric",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "LeoricUndyingTrait",
+      "buttonId": "LeoricUndyingTrait",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_leoric_trait.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "亡魂不灭",
+      "short": "死亡后李奥瑞克变为鬼魂纠缠敌人",
+      "full": "李奥瑞克死后变成鬼魂，并在恢复全部生命值后复活。李奥瑞克死后不会造成伤害。\n\n骨王之怒\n\n李奥瑞克的前两次普通攻击可顺劈造成100%伤害，他的第三次普通攻击对单个目标造成225%伤害。"
+    },
+    {
+      "nameId": "LeoricSkeletalSwingTargetedReady",
+      "buttonId": "LeoricSkeletalSwing",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_leoric_skeletalswing.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "骸骨重击",
+      "short": "对敌人造成伤害并使其减速",
+      "full": "李奥瑞克挥舞战锤，造成150(+4%每级)点伤害并使敌人减速40%，持续2.5秒。如果击中敌方英雄，则返还50%冷却时间和法力消耗。对小兵额外造成75%伤害。这些刁民！"
+    },
+    {
+      "nameId": "LeoricDrainHope",
+      "buttonId": "LeoricDrainHope",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_leoric_drainhope.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "绝望吸魂",
+      "short": "靠近敌对英雄时吸取他们的生命值",
+      "full": "抓住一名敌方英雄的灵魂，在4秒内，只要李奥瑞克在附近就会对其造成最多相当于其最大生命值20%的伤害，并为李奥瑞克恢复最多相当于其最大生命值20%的生命。 该技能激活时李奥瑞克的移动速度降低20%。"
+    },
+    {
+      "nameId": "LeoricWraithWalk",
+      "buttonId": "LeoricWraithWalk",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_leoric_wraithwalk.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "幽灵步",
+      "short": "李奥瑞克的鬼魂离开身体，不受阻碍地移动",
+      "full": "李奥瑞克从他的躯体中抽离，变得不可阻挡，并且移动速度在2.5秒内最多提高至50%。幽灵步结束或取消时，他的躯体会传送至幽灵位置。"
+    },
+    {
+      "nameId": "LeoricEntomb",
+      "buttonId": "LeoricEntomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_leoric_entomb.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "乱葬坟墓",
+      "short": "包围一片区域",
+      "full": "召唤一座无法通过的坟墓，持续4秒。"
+    },
+    {
+      "nameId": "LeoricMarchoftheBlackKing",
+      "buttonId": "LeoricMarchoftheBlackKing",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_leoric_r2.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "黑王进军",
+      "short": "向前冲锋，治疗李奥瑞克，并对敌人造成伤害",
+      "full": "李奥瑞克变得不可阻挡并挥舞战锤3次。敌人每一击受到250(+4%每级)点伤害，每击中一个敌方英雄治疗李奥瑞克其最大生命值12%的生命。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "LeoricMasteryConsumeVitalitySkeletalSwing",
+      "buttonId": "LeoricConsumeVitalityTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_leoric_skeletalswing.png",
+      "sort": 1,
+      "name": "活力吸收",
+      "short": "骸骨重击可以治疗你自己",
+      "full": "骸骨重击的冷却时间缩短2秒。击中敌方英雄可治疗李奥瑞克最大生命值4%的生命。"
+    },
+    {
+      "nameId": "LeoricMasteryFealtyUntoDeathUndying",
+      "buttonId": "LeoricFealtyUntoDeathTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_leoric_trait.png",
+      "sort": 2,
+      "name": "至死效忠",
+      "short": "小兵死亡时恢复生命值和法力值",
+      "full": "当附近有友方或敌方小兵死亡时，李奥瑞克恢复32(+4%每级)点生命值和6点法力值。"
+    },
+    {
+      "nameId": "LeoricMasteryOsseinRenewal",
+      "buttonId": "LeoricOsseinRenewal",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_amplifiedhealing.png",
+      "sort": 3,
+      "name": "骸骨再塑",
+      "short": "激活后可治疗",
+      "full": "激活后在5秒内治疗李奥瑞克最大生命值30%的生命。恢复之球使此技能的冷却时间缩短20秒。"
+    },
+    {
+      "nameId": "LeoricMasteryGhastlyReachSkeletalSwing",
+      "buttonId": "LeoricGhastlyReachTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_leoric_skeletalswing.png",
+      "sort": 1,
+      "name": "苍白之触",
+      "short": "扩大骸骨重击的范围",
+      "full": "骸骨重击的范围扩大25%。"
+    },
+    {
+      "nameId": "LeoricMasteryParalyzingRageSkeletalSwing",
+      "buttonId": "LeoricParalyzingRageTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_leoric_skeletalswing_var1.png",
+      "sort": 2,
+      "name": "瘫痪之怒",
+      "short": "提高骸骨重击的减速效果",
+      "full": "骸骨重击的减速效果提高20%。"
+    },
+    {
+      "nameId": "LeoricSkeletalSwingKneelPeasantsTalent",
+      "buttonId": "LeoricKneelPeasantsTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_leoric_skeletalswing_var2.png",
+      "sort": 3,
+      "name": "跪下，大胆刁民！",
+      "short": "提高骸骨重击对非英雄的伤害",
+      "full": "骸骨重击对雇佣兵和怪物额外造成75%伤害，而且对雇佣兵和怪物造成伤害时可以返还骸骨重击的消耗和冷却时间。"
+    },
+    {
+      "nameId": "LeoricMasteryWillingVesselDrainHope",
+      "buttonId": "LeoricWillingVesselTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_leoric_drainhope.png",
+      "sort": 1,
+      "name": "意志躯���",
+      "short": "提高绝望吸魂的治疗量",
+      "full": "绝望吸魂的治疗效果提高至最大生命值的25%。如果绝望吸魂完整持续到结束，则立即额外治疗李奥瑞克最大生命值5%的生命。"
+    },
+    {
+      "nameId": "LeoricMasteryDrainMomentumDrainHope",
+      "buttonId": "LeoricDrainMomentumTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_leoric_drainhope_var1.png",
+      "sort": 2,
+      "name": "吸魂动能",
+      "short": "绝望吸魂可以提高移动速度",
+      "full": "绝望吸魂不再降低李奥瑞克的移动速度。如果绝望吸魂完整引导，则移动速度提高30%，持续4秒。"
+    },
+    {
+      "nameId": "LeoricMasteryHopelessnessDrainHope",
+      "buttonId": "LeoricHopelessnessTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_leoric_drainhope_var2.png",
+      "sort": 3,
+      "name": "求生无望",
+      "short": "扩大绝望吸魂的范围",
+      "full": "绝望吸魂的范围扩大25%。"
+    },
+    {
+      "nameId": "LeoricHeroicAbilityEntomb",
+      "buttonId": "LeoricEntomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_leoric_entomb.png",
+      "sort": 1,
+      "name": "乱葬坟墓",
+      "short": "包围一片区域",
+      "full": "召唤一座无法通过的坟墓，持续4秒。"
+    },
+    {
+      "nameId": "LeoricHeroicAbilityMarchoftheBlackKing",
+      "buttonId": "LeoricMarchoftheBlackKing",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_leoric_r2.png",
+      "sort": 2,
+      "name": "黑王进军",
+      "short": "向前冲锋，治疗李奥瑞克，并对敌人造成伤害",
+      "full": "李奥瑞克变得不可阻挡并挥舞战锤3次。敌人每一击受到250(+4%每级)点伤害，每击中一个敌方英雄治疗李奥瑞克其最大生命值12%的生命。"
+    },
+    {
+      "nameId": "LeoricMasteryUnyieldingDespairDrainHope",
+      "buttonId": "LeoricUnyieldingDespairTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_leoric_drainhope.png",
+      "sort": 1,
+      "name": "不灭绝望",
+      "short": "缩短绝望吸魂的冷却时间",
+      "full": "绝望吸魂每激活1秒，冷却时间就缩短0.75秒。如果绝望吸魂完整引导，则冷却时间额外缩短2秒。"
+    },
+    {
+      "nameId": "LeoricWraithWalkOminousWraithTalent",
+      "buttonId": "LeoricOminousWraithTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_leoric_wraithwalk.png",
+      "sort": 2,
+      "name": "不祥幽灵",
+      "short": "强化幽灵步",
+      "full": "幽灵步的持续时间延长100%。被幽灵步接触过的敌方英雄造成的伤害降低50%，持续4秒。"
+    },
+    {
+      "nameId": "LeoricMasterySpectralLeech",
+      "buttonId": "LeoricSpectralLeechTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_heal.png",
+      "sort": 3,
+      "name": "幽魂汲取",
+      "short": "普通攻击造成额外伤害和治疗",
+      "full": "对敌方英雄的普通攻击造成相当于其最大生命值2.5%的额外伤害，并为李奥瑞克恢复两倍于此伤害的生命值。"
+    },
+    {
+      "nameId": "LeoricDrainHopeCrushingHopeTalent",
+      "buttonId": "LeoricCrushingHopeTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_leoric_drainhope.png",
+      "sort": 1,
+      "name": "粉碎希望",
+      "short": "完整引导绝望吸魂造成额外伤害",
+      "full": "如果绝望吸魂完整引导，则立即额外造成相当于目标最大生命值15%的伤害。该伤害不会治疗李奥瑞克。"
+    },
+    {
+      "nameId": "LeoricMasteryRoyalFocusWraithWalk",
+      "buttonId": "LeoricRoyalFocusTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_leoric_wraithwalk.png",
+      "sort": 2,
+      "name": "皇室专注",
+      "short": "强化骸骨重击和幽灵步。",
+      "full": "幽灵步还会使你在接下来5秒内的下一次骸骨重击的伤害提高50%。用骸骨重击击中敌方英雄可使幽灵步的冷却时间缩短7秒。"
+    },
+    {
+      "nameId": "LeoricMithrilMaceTalent",
+      "buttonId": "LeoricMithrilMaceTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_speed.png",
+      "sort": 3,
+      "name": "秘银之锤",
+      "short": "任务：强化骨王之怒",
+      "full": "李奥瑞克的攻击速度提高20%。\n\n可重复任务：附近每死一个敌方小兵给予0.3%的永久攻击速度，每击杀一次英雄给予3%的永久攻击速度，最高到30%。"
+    },
+    {
+      "nameId": "LeoricMasteryBuriedAliveEntomb",
+      "buttonId": "LeoricBuriedAliveTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_leoric_entomb.png",
+      "sort": 1,
+      "name": "活埋",
+      "short": "乱葬坟墓造成伤害并沉默",
+      "full": "乱葬坟墓的持续时间缩短1秒，但敌人将会被困住并沉默，并且每1秒受到50(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "LeoricMasteryDeathMarchMarchoftheBlackKing",
+      "buttonId": "LeoricDeathMarchTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_leoric_r2.png",
+      "sort": 2,
+      "name": "死亡进军",
+      "short": "黑王进军还会施放绝望吸魂",
+      "full": "黑王进军的最后一击还会对附近的敌方英雄施放绝望吸魂。"
+    },
+    {
+      "nameId": "LeoricBurningDespairTalent",
+      "buttonId": "LeoricBurningDespair",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_leoric_drainhope.png",
+      "sort": 3,
+      "name": "燃烧绝望",
+      "short": "对附近敌人造成伤害，获得护甲",
+      "full": "每秒对附近的敌人造成40(+4%每级)点伤害。\n\n绝望吸魂激活时获得40点护甲值，伤害和范围提高100%。"
+    },
+    {
+      "nameId": "LeoricShroudoftheDeadKingTalent",
+      "buttonId": "LeoricShroudoftheDeadKingTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_hardenedshield.png",
+      "sort": 4,
+      "name": "不死君王的裹尸布",
+      "short": "激活后进入受保护状态",
+      "full": "激活后进入受保护状态，持续3秒，阻挡所有伤害。"
+    }
+  ]
+}

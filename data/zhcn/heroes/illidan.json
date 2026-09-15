@@ -1,0 +1,295 @@
+{
+  "shortName": "illidan",
+  "heroName": "Illidan",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "IllidanBetrayersThirst",
+      "buttonId": "IllidanBetrayersThirst",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_illidan_betrayersthirst.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "背叛者的饥渴",
+      "short": "普通攻击伤害的一部分转化为生命值，并缩短技能的冷却时间",
+      "full": "普通攻击伤害的30%转化为生命值，并使技能的冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "IllidanDive",
+      "buttonId": "IllidanDive",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_illidan_dive.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "俯冲",
+      "short": "俯冲一个敌人并越过一个敌人",
+      "full": "向目标俯冲，造成66(+4%每级)点伤害并翻越至目标另一侧。"
+    },
+    {
+      "nameId": "IllidanSweepingStrike",
+      "buttonId": "IllidanSweepingStrike",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_illidan_sweepingstrike.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "扫荡打击",
+      "short": "冲刺并对敌人造成伤害，同时获得普通攻击伤害加成",
+      "full": "冲向目标地点，对沿途的敌人造成119(+4%每级)点伤害。击中敌人使伊利丹的普通攻击伤害提高35%，持续3秒。"
+    },
+    {
+      "nameId": "IllidanEvasion",
+      "buttonId": "IllidanEvasion",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_illidan_evasion.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "闪避",
+      "short": "闪避敌人的普通攻击",
+      "full": "闪避敌人的普通攻击，持续2.5秒。"
+    },
+    {
+      "nameId": "IllidanTheHunt",
+      "buttonId": "IllidanTheHunt",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_illidan_thehunt.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "恶魔追击",
+      "short": "从非常远的距离冲锋一个目标",
+      "full": "冲向目标，碰撞后造成251(+4%每级)点伤害并使其昏迷，持续1秒。"
+    },
+    {
+      "nameId": "IllidanMetamorphosisTargeted",
+      "buttonId": "IllidanMetamorphosis",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_illidan_metamorphosis.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "恶魔变形",
+      "short": "造成范围伤害并提高最大生命值",
+      "full": "在目标地点变为恶魔形态，对范围内的敌人造成46(+4%每级)点伤害。每击中一个英雄都能使伊利丹的最大生命值暂时提高220(+4%每级)点，持续18秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "HearthstoneNoMana",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "IllidanMasteryImmolationSweepingStrike",
+      "buttonId": "IllidanSweepingStrikeImmolationTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_illidan_sweepingstrike.png",
+      "sort": 1,
+      "name": "献祭",
+      "short": "扫荡打击造成范围伤害",
+      "full": "扫荡打击可以点燃附近的敌人，每秒对他们造成22(+4%每级)点伤害，持续4秒。"
+    },
+    {
+      "nameId": "IllidanMasteryBatteredAssaultSweepingStrike",
+      "buttonId": "IllidanSweepingStrikeBatteredAssaultTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_illidan_sweepingstrike_a.png",
+      "sort": 2,
+      "name": "猛烈连击",
+      "short": "提高扫荡打击的伤害加成",
+      "full": "扫荡打击的普通攻击伤害加成的持续时间从3秒延长至5秒。如果扫荡打击击中2个英雄，伤害加成从35%提高至125%。"
+    },
+    {
+      "nameId": "IllidanUnendingHatredPassive",
+      "buttonId": "IllidanUnendingHatredTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_seasonedmarksman.png",
+      "sort": 3,
+      "name": "无尽仇恨",
+      "short": "任务：消灭敌人提高普通攻击伤害",
+      "full": "任务：每击杀一个小兵使普通攻击伤害提高0.2点。每击杀一个英雄使普通攻击伤害提高1点。\n\n奖励：获得20点普通攻击伤害加成后，额外获得20点普通攻击伤害加成。"
+    },
+    {
+      "nameId": "IllidanReflexiveBlock",
+      "buttonId": "IllidanEvasionReflexiveBlockTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_illidan_dive.png",
+      "sort": 1,
+      "name": "本能格挡",
+      "short": "俯冲提供物理护甲",
+      "full": "使用俯冲提供75点物理护甲，抵御下3次英雄的普通攻击，使受到的伤害降低75%，持续4秒。"
+    },
+    {
+      "nameId": "IllidanSweepingStrikesThirstingBlade",
+      "buttonId": "IllidanBetrayersThirstThirstingBladeTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_illidan_betrayersthirst.png",
+      "sort": 2,
+      "name": "嗜血之刃",
+      "short": "扫荡打击提高治疗量",
+      "full": "扫荡打击的伤���加成效果激活时，背叛者的饥渴的治疗效果从30%提高至50%。"
+    },
+    {
+      "nameId": "IllidanCombatStyleHuntersOnslaught",
+      "buttonId": "IllidanBetrayersThirstHuntersOnslaughtTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_illidan_betrayersthirst_a.png",
+      "sort": 3,
+      "name": "猎手猛击",
+      "short": "基本技能伤害恢复生命值",
+      "full": "基本技能伤害的35%转化为生命值。对英雄的效果翻倍。"
+    },
+    {
+      "nameId": "IllidanMasteryRapidChaseDive",
+      "buttonId": "IllidanDiveRapidChaseTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_illidan_dive.png",
+      "sort": 1,
+      "name": "夺命追猎",
+      "short": "俯冲会提高移动速度，缩短冷却时间",
+      "full": "施放俯冲后，移动速度提高20%，持续3秒。如果目标是一名敌方英雄，则冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "IllidanMasteryFriendOrFoeDive",
+      "buttonId": "IllidanDiveFriendOrFoeTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_illidan_dive_a.png",
+      "sort": 2,
+      "name": "敌我不分",
+      "short": "俯冲可对友军使用，提高施法范围",
+      "full": "俯冲的施法范围扩大20%，并且可以对友方英雄使用。"
+    },
+    {
+      "nameId": "IllidanMasteryUnboundSweepingStrike",
+      "buttonId": "IllidanSweepingStrikeUnboundTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_illidan_sweepingstrike.png",
+      "sort": 3,
+      "name": "无拘无束",
+      "short": "任务：扫荡打击可以翻越地形",
+      "full": "扫荡打击可以翻越墙和地形。\n\n奖励：扫荡打击击中15个英雄后，获得额外一次使用次数。"
+    },
+    {
+      "nameId": "IllidanHeroicAbilityMetamorphosis",
+      "buttonId": "IllidanMetamorphosis",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_illidan_metamorphosis.png",
+      "sort": 1,
+      "name": "恶魔变形",
+      "short": "造成范围伤害并提高最大生命值",
+      "full": "在目标地点变为恶魔形态，对范围内的敌人造成46(+4%每级)点伤害。每击中一个英雄都能使伊利丹的最大生命值暂时提高220(+4%每级)点，持续18秒。"
+    },
+    {
+      "nameId": "IllidanHeroicAbilityTheHunt",
+      "buttonId": "IllidanTheHunt",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_illidan_thehunt.png",
+      "sort": 2,
+      "name": "恶魔追击",
+      "short": "从非常远的距离冲锋一个目标",
+      "full": "冲向目标，碰撞后造成251(+4%每级)点伤害并使其昏迷，持续1秒。"
+    },
+    {
+      "nameId": "IllidanNimbleDefender",
+      "buttonId": "IllidanNimbleDefender",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_illidan_sweepingstrike.png",
+      "sort": 1,
+      "name": "迅捷防御",
+      "short": "扫荡打击提供护甲",
+      "full": "扫荡打击击中敌方英雄时获得25点护甲，使受到的伤害降低25%，持续2秒。"
+    },
+    {
+      "nameId": "IllidanElusiveStrike",
+      "buttonId": "IllidanElusiveStrike",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_illidan_evasion.png",
+      "sort": 2,
+      "name": "闪避打击",
+      "short": "扫荡打击缩短闪避的冷却时间",
+      "full": "扫荡打击每次击中敌方英雄时，闪避的冷却时间缩短3秒。"
+    },
+    {
+      "nameId": "IllidanMasterySixthSenseEvasion",
+      "buttonId": "IllidanEvasionSixthSenseTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_illidan_evasion_a.png",
+      "sort": 3,
+      "name": "第六感",
+      "short": "闪避提供法术护甲",
+      "full": "激活时，闪避为伊利丹提供75点法术护甲，抵御下2次法术伤害，使其伤害降低75%。"
+    },
+    {
+      "nameId": "IllidanMasteryMarkedforDeathDive",
+      "buttonId": "IllidanDiveMarkedForDeathTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_illidan_dive.png",
+      "sort": 1,
+      "name": "死亡标记",
+      "short": "重复使用俯冲可以造成额外伤害",
+      "full": "如果俯冲在10秒内连续对同一个目标施放，则造成180(+4%每级)点额外伤害。"
+    },
+    {
+      "nameId": "IllidanFieryBrand",
+      "buttonId": "IllidanFieryBrand",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_searing.png",
+      "sort": 2,
+      "name": "烈火烙印",
+      "short": "连续攻击同一英雄可造成更大伤害",
+      "full": "对同一英雄进行的每第3次攻击会对其造成相当于其最大生命值7%的额外伤害。"
+    },
+    {
+      "nameId": "IllidanBladesOfAzzinoth",
+      "buttonId": "IllidanBladesOfAzzinoth",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_illidan_sweepingstrike_c.png",
+      "sort": 3,
+      "name": "埃辛诺斯之刃",
+      "short": "激活后提高普通攻击伤害",
+      "full": "用扫荡打击击中5次英雄可以激活埃辛诺斯之刃效果，使普通攻击的伤害提高75%，持续8秒。"
+    },
+    {
+      "nameId": "IllidanMasteryDemonicFormMetamorphosis",
+      "buttonId": "IllidanMetamorphosisDemonicFormTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_illidan_metamorphosis.png",
+      "sort": 1,
+      "name": "恶魔形态",
+      "short": "恶魔形态可永久维持，并提高攻击速度",
+      "full": "永久维持恶魔形态。恶魔变形也使攻击速度提高20%，受到的昏迷、定身和减速效果的持续时间缩短50%。伊利丹现在可以在恶魔形态下使用坐骑。"
+    },
+    {
+      "nameId": "IllidanMasteryNowhereToHideTheHunt",
+      "buttonId": "IllidanTheHuntNowhereToHideTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_illidan_thehunt.png",
+      "sort": 2,
+      "name": "杀机四伏",
+      "short": "提高恶魔追击施法范围，并且暴露低血量英雄的位置",
+      "full": "恶魔追击获得无限射程。伊利丹使战场上所有生命值在25%以下的敌方英雄暴露。"
+    },
+    {
+      "nameId": "GenericTalentNexusBlades",
+      "buttonId": "NexusBladesTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_slow.png",
+      "sort": 3,
+      "name": "时空利刃",
+      "short": "普通攻击造成更高伤害并带有减速效果",
+      "full": "普通攻击造成的伤害提高20%，并使目标减速20%，持续1秒。"
+    },
+    {
+      "nameId": "GenericTalentFlashoftheStorms",
+      "buttonId": "GenericBoltoftheStormTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_boltofthestorm.png",
+      "sort": 4,
+      "name": "风暴转移",
+      "short": "激活后传送一小段距离",
+      "full": "激活后传送到附近区域。"
+    }
+  ]
+}

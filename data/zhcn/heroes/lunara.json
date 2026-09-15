@@ -1,0 +1,325 @@
+{
+  "shortName": "lunara",
+  "heroName": "Dryad",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "DryadNaturesToxin",
+      "buttonId": "DryadNaturesToxin",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lunara_stiflingblossom.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "自然毒素",
+      "short": "普通攻击和伤害性技能会造成持续伤害",
+      "full": "露娜拉的普通攻击和伤害技能会使目标中毒，每秒造成33(+4%每级)点伤害，持续3秒。后续每次效果都会使持续时间延长3秒，最多持续9秒。"
+    },
+    {
+      "nameId": "DryadNoxiousBlossom",
+      "buttonId": "DryadNoxiousBlossom",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lunara_pollencloud.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "剧毒之花",
+      "short": "造成范围伤害",
+      "full": "0.5秒后，使目标地点发生一次花粉爆炸，造成160(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "DryadCripplingSpores",
+      "buttonId": "DryadCripplingSpores",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lunara_fullbloom.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "致残孢子",
+      "short": "受到自然毒素影响的敌人移动速度降低，效果持续时间延长",
+      "full": "使当前受到自然毒素影响的敌人的效果持续时间延长3秒，并且移动速度降低40%，该效果在3秒内递减。"
+    },
+    {
+      "nameId": "DryadWisp",
+      "buttonId": "DryadWisp",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lunara_wisp.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "小精灵",
+      "short": "召唤小精灵进行侦查",
+      "full": "生成一个小精灵去侦查一片区域。使用后可以重新进行导向。当小精灵在草丛中超过2秒后，其视野范围扩大75%，持续45秒。"
+    },
+    {
+      "nameId": "DryadThornwoodVine",
+      "buttonId": "DryadThornwoodVine",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lunara_wildspear.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "棘刺藤条",
+      "short": "直线伤害",
+      "full": "放出一株藤条，对直线上的所有敌人造成184(+4%每级)点伤害。\n\n最多储存3次使用次数。"
+    },
+    {
+      "nameId": "DryadLeapingStrike",
+      "buttonId": "DryadLeapingStrike",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lunara_boundlessstride.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "跳跃攻击",
+      "short": "跃过敌人头顶，对其造成伤害并减速",
+      "full": "跃过一名敌人，使其移动速度降低80%，持续0.35秒，并对其造成271(+4%每级)点伤害。\n\n最多储存2次使用次数。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "DryadSentinelWisp",
+      "buttonId": "DryadSentinelWispTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lunara_wisp.png",
+      "sort": 1,
+      "name": "放哨精灵",
+      "short": "提高小精灵的视野范围加成",
+      "full": "小精灵在草丛中超过5秒后，其视野范围扩大200%，并且暴露周围区域。"
+    },
+    {
+      "nameId": "DryadNaturalPerspective",
+      "buttonId": "DryadNaturalPerspectiveTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lunara_stiflingblossom.png",
+      "sort": 2,
+      "name": "自然视界",
+      "short": "自然毒素可以暴露目标",
+      "full": "自然毒素在持续时间内使敌人暴露。"
+    },
+    {
+      "nameId": "DryadHippityHop",
+      "buttonId": "DryadHippityHop",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_lunara_boundlessstride_a.png",
+      "sort": 3,
+      "name": "蹦蹦跳跳",
+      "short": "提高树妖迅捷的加成效果",
+      "full": "如果露娜拉在2秒内未受到伤害或对敌人进行普通攻击，树妖迅捷的移动速度加成效果提高10%。"
+    },
+    {
+      "nameId": "DryadBlossomSwell",
+      "buttonId": "DryadBlossomSwellTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lunara_pollencloud.png",
+      "sort": 1,
+      "name": "花朵膨胀",
+      "short": "提高剧毒之花的使用范围和效果半径",
+      "full": "剧毒之花的使用范围扩大25%，效果半径扩大20%。花朵膨胀命中时会对敌人施加2层自然毒素。"
+    },
+    {
+      "nameId": "DryadNaturesCulling",
+      "buttonId": "DryadNaturesCullingTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lunara_stiflingblossom.png",
+      "sort": 2,
+      "name": "自然抉择",
+      "short": "提高自然毒素对非英雄单位的伤害",
+      "full": "自然毒素将对非英雄单位造成的伤害提高125%。"
+    },
+    {
+      "nameId": "DryadSiphoningToxin",
+      "buttonId": "DryadSiphoningToxinTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lunara_stiflingblossom_var1.png",
+      "sort": 3,
+      "name": "虹吸毒素",
+      "short": "自然毒素治疗露娜拉",
+      "full": "当至少有一名敌人受到自然毒素影响时，每秒恢复露娜拉9(+4%每级)点生命。当敌方英雄受到3层自然毒素影响时，每秒恢复的生命值增加19(+4%每级)点。"
+    },
+    {
+      "nameId": "DryadSplinteredSpear",
+      "buttonId": "DryadSplinteredSpearTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lunara_pollencloud.png",
+      "sort": 1,
+      "name": "分裂之矛",
+      "short": "剧毒之花可以使普通攻击散射",
+      "full": "施放剧毒之花使露娜拉获得3层分裂之矛。当露娜拉使用普通攻击时，每层分裂之矛会额外击中一个敌人，每个目标消耗1层。最多储存3层。\n\n分裂之矛造成90(+4%每级)点伤害，并施加自然毒素。"
+    },
+    {
+      "nameId": "DryadChokingPollen",
+      "buttonId": "DryadChokingPollenTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lunara_pollencloud_b.png",
+      "sort": 2,
+      "name": "窒息花粉",
+      "short": "自然毒素提高剧毒之花的伤害",
+      "full": "剧毒之花对受到自然毒素影响的敌人造成的伤害提高100%，对身上有3层自然毒素的敌人造成的伤害提高至175%。"
+    },
+    {
+      "nameId": "DryadWildVigor",
+      "buttonId": "DryadWildVigorTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lunara_fullbloom.png",
+      "sort": 3,
+      "name": "荒野活力",
+      "short": "致残孢子提高普通攻击伤害",
+      "full": "使用致残孢子使露娜拉的下4次普通攻击的伤害提高70%。"
+    },
+    {
+      "nameId": "DryadHeroicAbilityThornwoodVine",
+      "buttonId": "DryadThornwoodVine",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lunara_wildspear.png",
+      "sort": 1,
+      "name": "棘刺藤条",
+      "short": "直线伤害",
+      "full": "放出一株藤条，对直线上的所有敌人造成184(+4%每级)点伤害。\n\n最多储存3次使用次数。"
+    },
+    {
+      "nameId": "DryadHeroicAbilityLeapingStrike",
+      "buttonId": "DryadLeapingStrike",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lunara_boundlessstride.png",
+      "sort": 2,
+      "name": "跳跃攻击",
+      "short": "跃过敌人头顶，对其造成伤害并减速",
+      "full": "跃过一名敌人，使其移动速度降低80%，持续0.35秒，并对其造成271(+4%每级)点伤害。\n\n最多储存2次使用次数。"
+    },
+    {
+      "nameId": "DryadEndlessSpores",
+      "buttonId": "DryadEndlessSpores",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lunara_fullbloom.png",
+      "sort": 1,
+      "name": "无尽孢子",
+      "short": "自然毒素可以缩短致残孢子的冷却时间",
+      "full": "施放致残孢子时，如果有至少2名英雄受到自然毒素影响，致残孢子的冷却时间减少4秒，并且返还50点法力值。"
+    },
+    {
+      "nameId": "DryadLetThemWither",
+      "buttonId": "DryadLetThemWitherTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lunara_fullbloom_a.png",
+      "sort": 2,
+      "name": "枯萎毒素",
+      "short": "提高致残孢子的减速效果",
+      "full": "致残孢子的减速效果延长1秒，且效果不再递减。"
+    },
+    {
+      "nameId": "DryadGreaterSpellShield",
+      "buttonId": "DryadGreaterSpellShieldTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_lunara_greaterspellshield.png",
+      "sort": 3,
+      "name": "大型法术护盾",
+      "short": "周期性获得临时法术护甲",
+      "full": "每隔30秒，获得75点法术护甲，抵御下一次敌人的技能和后续技能，使受到的伤害降低75%，持续3秒。\n\n可以开启或关闭该天赋是否自动触发。"
+    },
+    {
+      "nameId": "DryadAbolishMagic",
+      "buttonId": "DryadAbolishMagicHotbar",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_lunara_abolishmagic.png",
+      "sort": 4,
+      "name": "废除魔法",
+      "short": "为露娜拉和目标移除群体控制效果",
+      "full": "使用后移除露娜拉和一名盟友身上所有的控制效果和持续伤害效果。在随后的2秒内，控制效果的持续时间缩短50%。"
+    },
+    {
+      "nameId": "DryadAcceleratedContamination",
+      "buttonId": "DryadAcceleratedContamination",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lunara_pollencloud.png",
+      "sort": 1,
+      "name": "加速污染",
+      "short": "剧毒之花冷却速度加快",
+      "full": "剧毒之花的法力消耗从60点降低至40点。当有至少1名敌方英雄受到自然毒素影响时，剧毒之花的冷却速度加快75%。"
+    },
+    {
+      "nameId": "DryadStarWoodSpear",
+      "buttonId": "DryadStarWoodSpearTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lunara_fullbloom.png",
+      "sort": 2,
+      "name": "星木之矛",
+      "short": "致残孢子提高普通攻击射程",
+      "full": "使露娜拉的普通攻击射程提高0.5码。使用致残孢子使露娜拉的普通攻击射程额外提高2.25码，持续6秒。"
+    },
+    {
+      "nameId": "DryadInvigoratingSpores",
+      "buttonId": "DryadInvigoratingSporesTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lunara_fullbloom_a.png",
+      "sort": 3,
+      "name": "活力孢子",
+      "short": "致残孢子强化普通攻击",
+      "full": "致残孢子给予30%攻击速度，持续6秒。对受到3层自然毒素影响的敌人进行普通攻击，可造成相当于其最大生命值1.5%的伤害。"
+    },
+    {
+      "nameId": "DryadUnfairAdvantage",
+      "buttonId": "DryadUnfairAdvantageTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lunara_stiflingblossom.png",
+      "sort": 4,
+      "name": "天生优势",
+      "short": "提高自然毒素对被瘫痪的英雄造成的伤害",
+      "full": "自然毒素将对被减速、定身、昏迷的英雄造成60%的额外伤害。"
+    },
+    {
+      "nameId": "DryadForTheWildlands",
+      "buttonId": "DryadForTheWildlandsTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lunara_wildspear.png",
+      "sort": 1,
+      "name": "为了大自然",
+      "short": "棘刺藤条在弧形范围内发射",
+      "full": "棘刺藤条在弧形范围内发射4根额外的藤条。"
+    },
+    {
+      "nameId": "DryadBoundlessStrideTalent",
+      "buttonId": "DryadBoundlessStrideTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lunara_boundlessstride.png",
+      "sort": 2,
+      "name": "跳跃无羁",
+      "short": "跳跃攻击可以对盟友使用",
+      "full": "每15秒，所有跳跃攻击的使用次数将一次冷却完毕，跳跃攻击可以对盟友使用。"
+    },
+    {
+      "nameId": "DryadForestsWrath",
+      "buttonId": "DryadForestsWrathTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lunara_forests_wrath.png",
+      "sort": 3,
+      "name": "森林之怒",
+      "short": "终极技能施加更多自然毒素，提高射程",
+      "full": "露娜拉的终极技能现在施加2层自然毒素，射程提高30%。\n\n被动：露娜拉的视野范围扩大35%。"
+    },
+    {
+      "nameId": "DryadIntensifyingToxin",
+      "buttonId": "DryadIntensifyingToxin",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lunara_stiflingblossom.png",
+      "sort": 4,
+      "name": "毒素增强",
+      "short": "提高自然毒素的伤害",
+      "full": "自然毒素在目标身上有3层效果时，其造成的伤害提高40%。"
+    },
+    {
+      "nameId": "DryadGallopingGait",
+      "buttonId": "DryadGallopingGaitTalent",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_lunara_boundlessstride_a.png",
+      "sort": 5,
+      "name": "轻盈疾步",
+      "short": "激活后提高移动速度",
+      "full": "激活后使树妖迅捷的移动速度加成提高至80%，持续6秒。"
+    }
+  ]
+}

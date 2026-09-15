@@ -1,0 +1,294 @@
+{
+  "shortName": "tracer",
+  "heroName": "Tracer",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "TracerReload",
+      "buttonId": "TracerReload",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tracer_reload.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "装填",
+      "short": "“猎空”可以在移动时使用普通攻击，普通攻击会消耗弹药",
+      "full": "“猎空”可以在移动时进行普通攻击，在攻击10次后需要在0.75秒内进行装填。“猎空”也可以手动提前装填。\n\n普通攻击会为猎空恢复相当于伤害量10%的生命值。"
+    },
+    {
+      "nameId": "TracerBlink",
+      "buttonId": "TracerBlink",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tracer_blink_empty.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "闪现",
+      "short": "冲向目标位置",
+      "full": "冲向目标位置。\n\n最多储存3次使用次数。"
+    },
+    {
+      "nameId": "TracerMelee",
+      "buttonId": "TracerMelee",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tracer_melee.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "近战",
+      "short": "攻击附近的一个敌人",
+      "full": "对一名附近的敌人造成220(+4%每级)点伤害，优先选择英雄。近战造成伤害时获得5%的脉冲炸弹充能，对英雄造成伤害则获得10%的充能。"
+    },
+    {
+      "nameId": "TracerRecall",
+      "buttonId": "TracerRecall",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tracer_recall.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "闪回",
+      "short": "回到几秒前的位置并移除负面效果",
+      "full": "在1.25秒后，使“猎空”回到开始施法2秒之前的位置，为其装填弹药并移除所有负面状态效果。"
+    },
+    {
+      "nameId": "TracerPulseBomb",
+      "buttonId": "TracerPulseBomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tracer_pulsebomb.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "脉冲炸弹",
+      "short": "将炸弹附着在敌人身上并造成大量伤害",
+      "full": "扔出一枚短距离炸弹，如果击中敌人则会附着在其身上。炸弹在2秒后爆炸，对其造成298(+6%每级)点伤害，并对附近其他敌人造成149(+6%每级)点伤害。\n\n该技能通过用普通攻击和近战对敌人造成伤害来缓慢充能。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "HearthstoneNoMana",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "TracerOneTwoPunch",
+      "buttonId": "TracerOneTwoPunch",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tracer_melee.png",
+      "sort": 1,
+      "name": "左右开攻",
+      "short": "近战获得额外使用次数、冷却时间缩短",
+      "full": "使近战的冷却时间缩短1秒，并且获得一次额外使用次数。"
+    },
+    {
+      "nameId": "TracerPartingGift",
+      "buttonId": "TracerPartingGift",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tracer_combo_e_r.png",
+      "sort": 2,
+      "name": "临别赠礼",
+      "short": "使用闪回会扔下炸弹",
+      "full": "闪回可以在身后留下6枚炸弹，每一枚炸弹可以对不同目标造成240(+4%每级)点伤害。被炸弹命中的英雄会被减速50%，持续0.75秒并为脉冲炸弹提供7%充能。"
+    },
+    {
+      "nameId": "TracerTracerRounds",
+      "buttonId": "TracerTracerRounds",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tracer_reload.png",
+      "sort": 3,
+      "name": "曳光弹",
+      "short": "普通攻击可以暴露目标、提高射程",
+      "full": "使普通攻击射程提高10%。对英雄发动的普通攻击会暴露其周围的一小块区域，持续3秒。"
+    },
+    {
+      "nameId": "TracerLeechingRounds",
+      "buttonId": "TracerLeechingRounds",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tracer_reload.png",
+      "sort": 1,
+      "name": "吸血弹",
+      "short": "提高普通攻击的治疗效果",
+      "full": "根据猎空损失的生命值，普通攻击获得的治疗最多提高至200%。"
+    },
+    {
+      "nameId": "TracerPulseGenerator",
+      "buttonId": "TracerPulseGenerator",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tracer_combo_q_r.png",
+      "sort": 2,
+      "name": "脉冲发生器",
+      "short": "脉冲炸弹为猎空提供治疗、刷新闪现使用次数",
+      "full": "成功将一枚脉冲炸弹粘到敌方英雄身上，会在1.5秒内为猎空恢复她最大生命值的12%，并返还一次闪现使用次数。"
+    },
+    {
+      "nameId": "TracerIsThataHealthPack",
+      "buttonId": "TracerIsthataHealthPack",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_tracer_medpack.png",
+      "sort": 3,
+      "name": "那是急救包吗？",
+      "short": "强化治疗之泉与恢复之球",
+      "full": "收集一枚恢复之球将立即为猎空恢复其最大生命值的15%并使治疗之泉的冷却时间缩短15秒。\n\n喝下治疗之泉将立即为猎空恢复其最大生命值的20%。"
+    },
+    {
+      "nameId": "TracerSleightofHand",
+      "buttonId": "TracerSleightofHand",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tracer_reload.png",
+      "sort": 1,
+      "name": "手法娴熟",
+      "short": "装填速度加倍",
+      "full": "装填时间缩短50%，相当于每秒伤害提高了20%。"
+    },
+    {
+      "nameId": "TracerFocusFire",
+      "buttonId": "TracerFocusFire",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tracer_reload_b.png",
+      "sort": 2,
+      "name": "集中火力",
+      "short": "如果弹夹内所有子弹都击中同一个敌人则造成额外伤害",
+      "full": "如果整个弹夹中的所有子弹均击中同一个敌人，那么最后一枚子弹将造成80(+4%每级)点额外伤害。相当于弹夹总伤害的35%。"
+    },
+    {
+      "nameId": "TracerLockedandLoaded",
+      "buttonId": "TracerLockedandLoaded",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tracer_reload_c.png",
+      "sort": 3,
+      "name": "荷枪实弹",
+      "short": "掐准重新装填时机可以获得额外普通攻击伤害",
+      "full": "在装填时间的最后50%时间以内再次装填使“猎空”在该弹夹内的子弹的普通攻击伤害提高40%。"
+    },
+    {
+      "nameId": "TracerStickyBomb",
+      "buttonId": "TracerStickyBomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tracer_pulsebomb.png",
+      "sort": 1,
+      "name": "黏性炸弹",
+      "short": "扩大脉冲炸弹范围并使敌人减速",
+      "full": "脉冲炸弹的爆炸范围扩大50%，并使被击中的敌人减速70%，持续3秒。"
+    },
+    {
+      "nameId": "TracerQuantumSpike",
+      "buttonId": "TracerQuantumSpike",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tracer_pulsebomb_b.png",
+      "sort": 2,
+      "name": "量子巅峰",
+      "short": "脉冲炸弹造成百分比伤害",
+      "full": "脉冲炸弹对英雄造成相当于最大生命值6%的额外伤害。"
+    },
+    {
+      "nameId": "TracerPulseRounds",
+      "buttonId": "TracerPulseRounds",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tracer_pulsebomb_c.png",
+      "sort": 3,
+      "name": "脉冲弹",
+      "short": "扩大脉冲炸弹范围和充能速度",
+      "full": "脉冲炸弹的射程和对英雄的普通攻击的充能速度提高100%。"
+    },
+    {
+      "nameId": "TracerUntouchable",
+      "buttonId": "TracerUntouchable",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tracer_combo_q_trait.png",
+      "sort": 1,
+      "name": "触不可及",
+      "short": "任务：击杀英雄提高攻击伤害",
+      "full": "被动：使用闪现之后，移动速度提高20%，持续1.25秒。\n\n任务：击杀英雄使猎空的普通攻击伤害提高5%，最多提高25%。这些加成在死亡时失去。"
+    },
+    {
+      "nameId": "TracerJumper",
+      "buttonId": "TracerJumper",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tracer_blink.png",
+      "sort": 2,
+      "name": "跳跃器",
+      "short": "闪现获得护盾、冷却时间缩短",
+      "full": "被动：当闪现没有剩余使用次数时，冷却速度加快100%。\n\n施放闪现可以使猎空获得一个相当于她最大生命值6%的护盾，持续3秒。此护盾最多可叠加3次。"
+    },
+    {
+      "nameId": "TracerTelefrag",
+      "buttonId": "TracerTelefrag",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tracer_recall.png",
+      "sort": 3,
+      "name": "爆破传送",
+      "short": "闪回到达时造成伤害并击退",
+      "full": "被动：对敌方英雄进行普通攻击可以使闪回的冷却时间缩短0.1875秒。\n\n当猎空抵达闪回的位置时，她在1秒内变得无法击杀，同时附近的敌人将被击退并承受175(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "TracerBulletSprayMelee",
+      "buttonId": "TracerBulletSprayMelee",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tracer_melee.png",
+      "sort": 1,
+      "name": "散射",
+      "short": "近战会攻击范围内的所有敌人",
+      "full": "近战的攻击范围扩大30%，并对范围内所有敌人造成伤害。"
+    },
+    {
+      "nameId": "TracerHeavyHanded",
+      "buttonId": "TracerHeavyHanded",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tracer_melee_b.png",
+      "sort": 2,
+      "name": "势大力沉",
+      "short": "近战降低护甲",
+      "full": "近战命中英雄时可以使其护甲降低15点，持续4秒。"
+    },
+    {
+      "nameId": "TracerRicochetHeroWeapon",
+      "buttonId": "TracerRicochetHeroWeapon",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tracer_reload.png",
+      "sort": 3,
+      "name": "弹跳弹",
+      "short": "普通攻击可以弹跳至附近的一个敌人",
+      "full": "“猎空”的普通攻击有60几率击中附近的另一个敌人，优先锁定英雄。"
+    },
+    {
+      "nameId": "TracerChronoTriggers",
+      "buttonId": "TracerChronoTriggers",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tracer_combo_q_trait.png",
+      "sort": 1,
+      "name": "时空扳机",
+      "short": "闪现强化弹药",
+      "full": "施放闪现可以使普通攻击不消耗弹药，持续1秒。"
+    },
+    {
+      "nameId": "TracerGetStuffedMelee",
+      "buttonId": "TracerGetStuffedMelee",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tracer_melee.png",
+      "sort": 2,
+      "name": "吃我一拳！",
+      "short": "强化近战",
+      "full": "使用近战攻击英雄时，脉冲炸弹的充能效果从10%提高至20%。用近战攻击被脉冲炸弹命中的敌人会立即引爆炸弹，并击退目标。"
+    },
+    {
+      "nameId": "TracerTotalRecallRecall",
+      "buttonId": "TracerTotalRecallRecall",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tracer_recall.png",
+      "sort": 3,
+      "name": "全面闪回",
+      "short": "闪回可以恢复生命值",
+      "full": "闪回会为“猎空”恢复在时间段内失去的生命值。"
+    },
+    {
+      "nameId": "TracerCompositionBPulseBomb",
+      "buttonId": "TracerCompositionBPulseBomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tracer_pulsebomb.png",
+      "sort": 4,
+      "name": "复合炸药",
+      "short": "脉冲炸弹击中英雄后留下第二枚脉冲炸弹",
+      "full": "脉冲炸弹成功粘住敌方英雄还会在他们脚下扔出另一枚炸弹，造成50%的伤害并提前引爆。"
+    }
+  ]
+}

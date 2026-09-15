@@ -1,0 +1,295 @@
+{
+  "shortName": "kerrigan",
+  "heroName": "Kerrigan",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "KerriganAssimilation",
+      "buttonId": "KerriganAssimilation",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_kerrigan_assimilation.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "同化效应",
+      "short": "攻击敌人可获得一层临时护盾",
+      "full": "普通攻击和技能造成的伤害的10%转化为护盾，持续6秒。由英雄获得的护盾翻倍。\n\n当前最大值：1004(+4%每级)"
+    },
+    {
+      "nameId": "KerriganRavage",
+      "buttonId": "KerriganRavage",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_kerrigan_ravage.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "毁灭跳击",
+      "short": "跃至目标并造成伤害",
+      "full": "跃向目标，造成130(+4%每级)点伤害。如果敌人在1.5秒内死亡，则恢复1层使用次数并返还20点法力值。"
+    },
+    {
+      "nameId": "KerriganImpalingBlades",
+      "buttonId": "KerriganImpalingBlades",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_kerrigan_impalingblades.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "穿刺之刃",
+      "short": "对范围内的敌人造成伤害并使其昏迷",
+      "full": "1.25秒后，对目标区域的敌人造成165(+4%每级)点伤害，使他们昏迷1秒。"
+    },
+    {
+      "nameId": "KerriganPrimalGrasp",
+      "buttonId": "KerriganPrimalGrasp",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_kerrigan_primalgrasp.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "女王之爪",
+      "short": "拉扯并对范围内敌人造成伤害",
+      "full": "将目标区域内的敌人拉向凯瑞甘，造成25(+4%每级)点伤害。在2.5秒后，会以凯瑞甘为中心产生一次爆炸，对周围的敌人造成195(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "KerriganSummonUltralisk",
+      "buttonId": "KerriganSummonUltralisk",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kerrigan_ultralisk.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "召唤雷兽",
+      "short": "召唤一只可控制的雷兽",
+      "full": "在0.5秒后，召唤出一头向前冲锋的雷兽，对击中的第一名英雄造成250(+4%每级)点伤害并使其昏迷0.5秒。\n\n雷兽的普通攻击可对其目标周围造成50% 的范围伤害。再次使用该技能以重新指定雷兽的目标。"
+    },
+    {
+      "nameId": "KerriganMaelstrom",
+      "buttonId": "KerriganMaelstrom",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kerrigan_maelstrom.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "灵能漩涡",
+      "short": "不断对附近敌人造成伤害",
+      "full": "对附近敌人每秒造成74(+4%每级)点伤害，持续7秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "KerriganRavageSiphoningImpact",
+      "buttonId": "KerriganRavageSiphoningImpact",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_kerrigan_ravage.png",
+      "sort": 1,
+      "name": "虹吸冲击",
+      "short": "毁灭跳击给予同化效应护盾",
+      "full": "使用毁灭跳击命中敌方英雄可获得100(+4%每级)点同化效应护盾。"
+    },
+    {
+      "nameId": "KerriganAssimilationMastery",
+      "buttonId": "KerriganAssimilationMasteryTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_kerrigan_assimilation.png",
+      "sort": 2,
+      "name": "同化专精",
+      "short": "恢复之球给予护盾，同化效应提高生命和法力恢复速度",
+      "full": "当有恢复之球的治疗效果激活时，每秒获得50(+4%每级)点同化效应护盾。同化效应激活时，凯瑞甘的生命和法力恢复提高150%。"
+    },
+    {
+      "nameId": "KerriganFuryOfTheSwarm",
+      "buttonId": "KerriganAssimilationFuryOfTheSwarmTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_aoe.png",
+      "sort": 3,
+      "name": "虫群之怒",
+      "short": "普通攻击获得更多护盾并溅射",
+      "full": "从普通攻击中获得10%的额外同化效应护盾。在施展毁灭跳击后的3秒内，凯瑞甘的下一次普通攻击可对目标周围造成100%的溅射伤害。"
+    },
+    {
+      "nameId": "KerriganRavageSharpenedBlades",
+      "buttonId": "KerriganRavageSharpenedBlades",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_kerrigan_ravage.png",
+      "sort": 1,
+      "name": "锋利之刃",
+      "short": "任务：毁灭跳击击杀后提高伤害",
+      "full": "任务：在毁灭跳击命中小兵和英雄的1.5秒内将其击杀可以使该技能的伤害提高，最多75点。\n\n每名小兵给予1点伤害加成，英雄给予5点伤害加成。\n\n奖励：在伤害加成达到75点后，毁灭跳击额外获得50点伤害加成。"
+    },
+    {
+      "nameId": "KerriganImpalingBladesKineticFulmination",
+      "buttonId": "KerriganImpalingBladesKineticFulmination",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_kerrigan_impalingblades.png",
+      "sort": 2,
+      "name": "动能爆发",
+      "short": "造成伤害提高穿刺之刃的伤害",
+      "full": "对敌人造成伤害后的10秒内，凯瑞甘的下一次穿刺之刃的伤害提高10%，最多提高100%。"
+    },
+    {
+      "nameId": "KerriganPrimalGraspPsionicPulse",
+      "buttonId": "KerriganPrimalGraspPsionicPulse",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_kerrigan_primalgrasp.png",
+      "sort": 3,
+      "name": "灵能脉冲",
+      "short": "女王之爪爆炸两次",
+      "full": "女王之爪会在第一次爆炸的2秒后再爆炸一次。"
+    },
+    {
+      "nameId": "KerriganRavageQueenOfBlades",
+      "buttonId": "KerriganRavageQueenOfBlades",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_kerrigan_ravage.png",
+      "sort": 1,
+      "name": "刀锋女王",
+      "short": "毁灭跳击对小兵和雇佣兵造成额外伤害",
+      "full": "毁灭跳击的冷却时间缩短3秒，并对小兵和雇佣兵造成100%的额外伤害。"
+    },
+    {
+      "nameId": "KerriganRavageBoundlessFury",
+      "buttonId": "KerriganRavageBoundlessFury",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_kerrigan_ravage_b.png",
+      "sort": 2,
+      "name": "无尽狂怒",
+      "short": "毁灭跳击可获得额外使用次数",
+      "full": "使用毁灭跳击命中英雄可获得一层毁灭跳击。对每名英雄每10秒只能生效一次。"
+    },
+    {
+      "nameId": "KerriganBladedMomentum",
+      "buttonId": "KerriganBladedMomentum",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+      "sort": 3,
+      "name": "刀锋动能",
+      "short": "对英雄的普通攻击可缩短技能冷却时间",
+      "full": "对英雄的普通攻击可以使凯瑞甘基本技能的冷却时间缩短0.6秒。"
+    },
+    {
+      "nameId": "KerriganHeroicAbilityMaelstrom",
+      "buttonId": "KerriganMaelstrom",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kerrigan_maelstrom.png",
+      "sort": 1,
+      "name": "灵能漩涡",
+      "short": "不断对附近敌人造成伤害",
+      "full": "对附近敌人每秒造成74(+4%每级)点伤害，持续7秒。"
+    },
+    {
+      "nameId": "KerriganHeroicAbilitySummonUltralisk",
+      "buttonId": "KerriganSummonUltralisk",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kerrigan_ultralisk.png",
+      "sort": 2,
+      "name": "召唤雷兽",
+      "short": "召唤一只可控制的雷兽",
+      "full": "在0.5秒后，召唤出一头向前冲锋的雷兽，对击中的第一名英雄造成250(+4%每级)点伤害并使其昏迷0.5秒。\n\n雷兽的普通攻击可对其目标周围造成50% 的范围伤害。再次使用该技能以重新指定雷兽的目标。"
+    },
+    {
+      "nameId": "KerriganPrimalGraspPsionicBarrier",
+      "buttonId": "KerriganPrimalGraspPsionicBarrier",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_kerrigan_primalgrasp.png",
+      "sort": 1,
+      "name": "灵能屏障",
+      "short": "女王之爪提供法术护甲并提高移动速度",
+      "full": "女王之爪击中的每一名敌方英雄都可以提供20点法术护甲和4%移动速度加成，持续4秒，最多可叠加至20%移动速度加成。"
+    },
+    {
+      "nameId": "KerriganAssimilationVolatilePower",
+      "buttonId": "KerriganAssimilationVolatilePower",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_kerrigan_assimilation.png",
+      "sort": 2,
+      "name": "动荡能量",
+      "short": "同化效应的护盾提高，但持续时间缩短",
+      "full": "同化效应从伤害中获得的护盾值提高10%，但会使同化效应的持续时间缩短3秒。"
+    },
+    {
+      "nameId": "KerriganChrysalis",
+      "buttonId": "KerriganChrysalis",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_kerrigan_chrysalis.png",
+      "sort": 3,
+      "name": "虫茧",
+      "short": "激活后进入静止状态并获得治疗",
+      "full": "激活后，一个拥有750(+4%每级)点生命值的虫茧会包裹住凯瑞甘，持续5秒。在虫茧内，凯瑞甘每秒可恢复相当于自身最大生命值5%的生命值。\n\n敌人可以通过摧毁虫茧提前结束该效果。"
+    },
+    {
+      "nameId": "KerriganRavageMountingPotency",
+      "buttonId": "KerriganRavageMountingPotency",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_kerrigan_ravage.png",
+      "sort": 1,
+      "name": "效能跃升",
+      "short": "毁灭跳击给予法术强度",
+      "full": "毁灭跳击给予5%的法术强度，持续5秒，最多获得40%的法术强度。"
+    },
+    {
+      "nameId": "KerriganImpalingBladesPainfulSpikes",
+      "buttonId": "KerriganImpalingBladesPainfulSpikes",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_kerrigan_impalingblades.png",
+      "sort": 2,
+      "name": "痛苦穿刺",
+      "short": "穿刺之刃提供额外伤害",
+      "full": "在敌人被穿刺之刃击中后的5秒内，凯瑞甘对其造成的下6次伤害都能额外造成70(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "KerriganUnbridledEnergy",
+      "buttonId": "KerriganUnbridledEnergy",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_talent_abilitytalent_damage.png",
+      "sort": 3,
+      "name": "能量狂飙",
+      "short": "终极技能给予法术强度",
+      "full": "使用终极技能对敌方英雄造成伤害可提供35%的法术强度，持续4秒。"
+    },
+    {
+      "nameId": "KerriganOmegastormMaelstrom",
+      "buttonId": "KerriganMaelstromOmegastormTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kerrigan_maelstrom.png",
+      "sort": 1,
+      "name": "欧米茄风暴",
+      "short": "对敌人造成伤害可延长灵能漩涡持续时间",
+      "full": "每次灵能漩涡对英雄造成伤害，就能使其持续时间延长0.25秒。"
+    },
+    {
+      "nameId": "KerriganTorrasqueSummonUltralisk",
+      "buttonId": "KerriganSummonUltraliskTorrasqueTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_kerrigan_ultralisk.png",
+      "sort": 2,
+      "name": "暴龙兽",
+      "short": "雷兽在死亡时可以孵化一只新的雷兽",
+      "full": "使雷兽的生命值和普通攻击伤害提高20%。雷兽在死亡时会变形为一颗蛋。如果蛋在4秒内没有被消灭，一只新的雷兽会孵化。"
+    },
+    {
+      "nameId": "KerriganAssimilationAssimilationBlades",
+      "buttonId": "KerriganAssimilationBlades",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "同化之刃",
+      "short": "对敌人造成伤害可提高普通攻击伤害",
+      "full": "对敌人造成伤害可以使凯瑞甘的普通攻击伤害提高2%，持续5秒，最多提高40%。"
+    },
+    {
+      "nameId": "KerriganPsionicShift",
+      "buttonId": "KerriganPsionicShift",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_boltofthestorm.png",
+      "sort": 4,
+      "name": "灵能位移",
+      "short": "激活后传送一小段距离并造成伤害",
+      "full": "激活后传送到附近位置，对周围的敌人造成50(+4%每级)点伤害。从造成伤害中生成的同化效应护盾提高300%。"
+    }
+  ]
+}

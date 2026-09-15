@@ -1,0 +1,295 @@
+{
+  "shortName": "arthas",
+  "heroName": "Arthas",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "ArthasFrostmourneHungers",
+      "buttonId": "ArthasFrostmourneHungers",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_arthas_frostmournehungers_off.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "霜之哀伤的饥渴",
+      "short": "激活后强化下一次攻击，并在击中后获得法力值",
+      "full": "激活后阿尔萨斯立即进行下一次普通攻击，造成99(+4%每级)点额外伤害。造成伤害时恢复30点法力值。"
+    },
+    {
+      "nameId": "ArthasDeathCoil",
+      "buttonId": "ArthasDeathCoil",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_arthas_deathcoil.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "死亡缠绕",
+      "short": "对目标造成伤害或治疗阿尔萨斯",
+      "full": "对目标敌人造成164(+4%每级)点伤害。\n\n可以对自己使用恢复290(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "ArthasHowlingBlast",
+      "buttonId": "ArthasHowlingBlast",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_arthas_howlingblast.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "凛风冲击",
+      "short": "使范围内敌人定身并对其造成伤害",
+      "full": "使目标范围内的敌人定身，持续1.25秒，并造成68(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "ArthasFrozenTempest",
+      "buttonId": "ArthasFrozenTempest",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_arthas_frosentempest.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "寒冰风暴",
+      "short": "对附近敌人造成伤害并使其减速。激活后持续消耗法力值",
+      "full": "每秒对附近的敌人造成40(+4%每级)点伤害，并使其移动速度降低10%，最多降低40%。击中英雄还会使其攻击速度每秒降低10%，最多降低40%。寒冰风暴的效果持续1.5秒。"
+    },
+    {
+      "nameId": "ArthasArmyOfTheDead",
+      "buttonId": "ArthasArmyOfTheDead",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_arthas_armyofthedead.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "亡者大军",
+      "short": "复活食尸鬼攻击敌人，并治疗阿尔萨斯",
+      "full": "召唤持续15秒的食尸鬼并攻击造成20(+4%每级)点伤害。牺牲食尸鬼可以恢复267(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "ArthasSummonSindragosa",
+      "buttonId": "ArthasSummonSindragosa",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_arthas_summonsindragosa.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "召唤辛达苟萨",
+      "short": "使敌人和建筑无法动弹",
+      "full": "造成230(+4%每级)点伤害，并使敌人的速度降低60%，持续4秒。还会使小兵、雇佣兵、怪物和建筑失效，持续20秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ArthasMasteryFrostPresenceHowlingBlast",
+      "buttonId": "ArthasFrostPresenceHowlingBlastTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_arthas_howlingblast.png",
+      "sort": 1,
+      "name": "冰霜灵气",
+      "short": "任务：定身英雄来强化凛风冲击",
+      "full": "任务：使用凛风冲击定身敌方英雄。\n\n奖励：定身5个英雄后，凛风冲击的冷却时间缩短2秒。\n\n奖励：定身10个英雄后，凛风冲击的施法范围扩大20%。\n\n奖励：定身20个英雄后，凛风冲击还会定身沿途的敌人。"
+    },
+    {
+      "nameId": "ArthasMasteryEternalHungerFrostmourneHungers",
+      "buttonId": "ArthasEternalHungerFrostmourneHungersTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_arthas_frostmournehungers_off.png",
+      "sort": 2,
+      "name": "无尽饥渴",
+      "short": "任务：强化霜之哀伤的饥渴",
+      "full": "任务：对敌方英雄使用霜之哀伤的饥渴。\n\n奖励：霜之哀伤的饥渴恢复的法力值提高4点，最多提高40点，并且伤害提高4点。"
+    },
+    {
+      "nameId": "ArthasRime",
+      "buttonId": "ArthasRime",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_block.png",
+      "sort": 3,
+      "name": "白霜",
+      "short": "周期性获得物理护甲",
+      "full": "每隔5秒，获得75点物理护甲，抵御下一次敌方英雄的普通攻击，使受到的伤害降低75%。最多储存3层。"
+    },
+    {
+      "nameId": "ArthasDeathlord",
+      "buttonId": "ArthasDeathlord",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_arthas_deathcoil.png",
+      "sort": 1,
+      "name": "死亡领主",
+      "short": "缩短死亡缠绕的冷却时间，返还法力消耗",
+      "full": "死亡缠绕的使用范围扩大30%，其冷却时间缩短3秒，如果对敌方英雄使用，则返还法力消耗。"
+    },
+    {
+      "nameId": "ArthasMasteryFrozenWastesFrozenTempest",
+      "buttonId": "ArthasFrozenWastesFrozenTempestTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_arthas_frosentempest.png",
+      "sort": 2,
+      "name": "冰冻废土",
+      "short": "任务：寒冰风暴的减速效果持续更长",
+      "full": "寒冰风暴的每秒法力消耗降低2点。\n\n任务：用寒冰风暴对敌方英雄造成伤害。\n\n奖励：用寒冰风暴对敌方英雄造成150次伤害后，寒冰风暴的移动速度和攻击速度降低效果额外持续1.5秒。"
+    },
+    {
+      "nameId": "ArthasIcyTalons",
+      "buttonId": "ArthasIcyTalons",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_arthas_frosentempest_a.png",
+      "sort": 3,
+      "name": "冰冷之爪",
+      "short": "寒冰风暴提高攻击速度",
+      "full": "每次英雄受到寒冰风暴的伤害使阿尔萨斯的攻击速度提高3%，持续1.5秒，最多提高60%。"
+    },
+    {
+      "nameId": "ArthasMasteryImmortalCoilDeathCoil",
+      "buttonId": "ArthasImmortalCoilDeathCoilTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_arthas_deathcoil.png",
+      "sort": 1,
+      "name": "不朽缠绕",
+      "short": "死亡缠绕总是治疗",
+      "full": "对敌人使用死亡缠绕也可以治疗自己。对阿尔萨斯使用死亡缠绕时，治疗量提高50%。"
+    },
+    {
+      "nameId": "ArthasRuneTap",
+      "buttonId": "ArthasRuneTapTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_arthas_runetap.png",
+      "sort": 2,
+      "name": "符文分流",
+      "short": "连续的普通攻击产生治疗",
+      "full": "每第3次普通攻击为阿尔萨斯恢复5%的最大生命值。"
+    },
+    {
+      "nameId": "ArthasIceboundFortitude",
+      "buttonId": "ArthasIceboundFortitudeTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_icebound_fortitude.png",
+      "sort": 3,
+      "name": "冰封之韧",
+      "short": "激活后获得护甲，并降低控制效果",
+      "full": "激活后获得25点护甲，使受到的伤害降低25%，并使阿尔萨斯受到的昏迷、减速和定身效果的持续时间缩短75%，持续3秒。"
+    },
+    {
+      "nameId": "ArthasHeroicAbilityArmyoftheDead",
+      "buttonId": "ArthasArmyOfTheDead",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_arthas_armyofthedead.png",
+      "sort": 1,
+      "name": "亡者大军",
+      "short": "复活食尸鬼攻击敌人，并治疗阿尔萨斯",
+      "full": "召唤持续15秒的食尸鬼并攻击造成20(+4%每级)点伤害。牺牲食尸鬼可以恢复267(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "ArthasHeroicAbilitySummonSindragosa",
+      "buttonId": "ArthasSummonSindragosa",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_arthas_summonsindragosa.png",
+      "sort": 2,
+      "name": "召唤辛达苟萨",
+      "short": "使敌人和建筑无法动弹",
+      "full": "造成230(+4%每级)点伤害，并使敌人的速度降低60%，持续4秒。还会使小兵、雇佣兵、怪物和建筑失效，持续20秒。"
+    },
+    {
+      "nameId": "ArthasShatteredArmor",
+      "buttonId": "ArthasShatteredArmor",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_arthas_howlingblast.png",
+      "sort": 1,
+      "name": "粉碎护甲",
+      "short": "凛风冲击降低护甲",
+      "full": "被凛风冲击击中的敌方英雄的护甲降低15点，持续4秒。"
+    },
+    {
+      "nameId": "ArthasMasteryBitingColdFrozenTempest",
+      "buttonId": "ArthasBitingColdFrozenTempestTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_arthas_frosentempest.png",
+      "sort": 2,
+      "name": "刺骨之寒",
+      "short": "寒冰风暴的伤害提高",
+      "full": "敌人每受到一秒寒冰风暴的伤害就能使该技能的伤害提高12.5%，最多提高50%。"
+    },
+    {
+      "nameId": "ArthasMasteryFrostStrikeFrostmourneHungers",
+      "buttonId": "ArthasFrostStrikeFrostmourneHungersTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_arthas_frostmournehungers_off.png",
+      "sort": 3,
+      "name": "冰霜打击",
+      "short": "霜之哀伤的饥渴造成减速，死亡缠绕能够沉默",
+      "full": "霜之哀伤的饥渴还会使目标减速50%，持续1.5秒。死亡缠绕击中被减速的敌人时还会使其沉默1秒。"
+    },
+    {
+      "nameId": "ArthasMasteryEmbraceDeathDeathCoil",
+      "buttonId": "ArthasEmbraceDeathDeathCoilTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_arthas_deathcoil.png",
+      "sort": 1,
+      "name": "死神之拥",
+      "short": "生命值降低后死亡缠绕伤害提高",
+      "full": "阿尔萨斯的当前生命值越低，死亡缠绕的伤害和治疗量就越高，最多提高100%。"
+    },
+    {
+      "nameId": "ArthasMasteryRemorselessWinterFrozenTempest",
+      "buttonId": "ArthasRemorselessWinterFrozenTempestTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_arthas_frosentempest.png",
+      "sort": 2,
+      "name": "冷酷严冬",
+      "short": "寒冰风暴可以使敌方英雄定身",
+      "full": "停留在寒冰风暴范围内3秒后，敌方英雄将被定身1.25秒。该效果每10秒只能触发一次。"
+    },
+    {
+      "nameId": "ArthasMasteryFrostmourneFeedsFrostmourneHungers",
+      "buttonId": "ArthasFrostmourneFeedsFrostmourneHungersTalents",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_arthas_frostmournehungers_off.png",
+      "sort": 3,
+      "name": "霜之哀伤的盛宴",
+      "short": "霜之哀伤的饥渴对英雄击中两次",
+      "full": "霜之哀伤的饥渴击中敌方英雄时可以免费额外激活一次，效果在4秒后结束。该效果无法从霜之哀伤的盛宴中获益。"
+    },
+    {
+      "nameId": "ArthasMasteryLegionOfNorthrendArmyoftheDead",
+      "buttonId": "ArthasLegionOfNorthrendArmyOfTheDeadTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_arthas_armyofthedead.png",
+      "sort": 1,
+      "name": "诺森德大军",
+      "short": "召唤更多食尸鬼且持续时间更久",
+      "full": "额外召唤3只食尸鬼。食尸鬼造成50%额外伤害，提供的治疗量提高50%，并且持续时间延长5秒。"
+    },
+    {
+      "nameId": "ArthasMasteryAbsoluteZeroSummonSindragosa",
+      "buttonId": "ArthasAbsoluteZeroSummonSindragosaTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_arthas_summonsindragosa.png",
+      "sort": 2,
+      "name": "绝对零度",
+      "short": "提高辛达苟萨的射程和负面效果持续时间",
+      "full": "辛达苟萨飞行距离翻倍。敌方英雄将被定身2.5秒，并且随后被减速60%，持续 4秒。"
+    },
+    {
+      "nameId": "ArthasDeathsAdvance",
+      "buttonId": "ArthasDeathsAdvanceTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_arthas_frosentempest.png",
+      "sort": 3,
+      "name": "死亡脚步",
+      "short": "提高移动速度，强化寒冰风暴减速",
+      "full": "使移动速度提高10%。寒冰风暴的最大移动速度降低效果和攻击速度降低效果从40%提高至60%。"
+    },
+    {
+      "nameId": "ArthasAntiMagicShell",
+      "buttonId": "ArthasAntiMagicShellTalent",
+      "abilityType": "Active",
+      "icon": "storm_temp_war3_btnantimagicshell.png",
+      "sort": 4,
+      "name": "反魔法护罩",
+      "short": "激活后免疫法术伤害",
+      "full": "激活后使阿尔萨斯免疫法术伤害，持续4秒，并为阿尔萨斯恢复相当于所阻挡伤害的25%的生命值。"
+    }
+  ]
+}

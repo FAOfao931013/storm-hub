@@ -1,0 +1,295 @@
+{
+  "shortName": "brightwing",
+  "heroName": "FaerieDragon",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "BrightwingCalmingMist",
+      "buttonId": "BrightwingSoothingMistCalmingMist",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_brightwing_soothingmist.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "抚慰之雾",
+      "short": "移除盟友身上的限制效果",
+      "full": "激活以移除周围盟友受到的所有昏迷、定身、减速和沉默效果。\n\n被动：光明之翼每4秒为附近友方英雄治疗110(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "FaerieDragonArcaneFlare",
+      "buttonId": "BrightwingArcaneFlare",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_brightwing_arcaneflare.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "奥术闪耀",
+      "short": "发射一道伤害性的火花",
+      "full": "发射一道火花，对击中的敌人造成75(+4%每级)点伤害，并对内圈的敌人造成105(+4%每级)点额外伤害。如果内圈命中一名英雄，则立刻激活抚慰之雾的被动治疗。"
+    },
+    {
+      "nameId": "FaerieDragonPolymorph",
+      "buttonId": "BrightwingPolymorph",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_brightwing_polymorph.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "变形术",
+      "short": "使敌人无法行动",
+      "full": "令目标变形，持续1.5秒，使其移动速度降低30%，并且被沉默。目标在被变形期间无法攻击。"
+    },
+    {
+      "nameId": "FaerieDragonPixieDust",
+      "buttonId": "BrightwingPixieDust",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_brightwing_pixiedust.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "妖精之尘",
+      "short": "提高一名英雄的移动速度，并提供法术护甲",
+      "full": "使目标英雄的移动速度提高20%，并提供30点法术护甲，持续3秒，使受到的法术伤害降低30%。"
+    },
+    {
+      "nameId": "FaerieDragonBlinkHealDash",
+      "buttonId": "BrightwingBlinkHealAllyDash",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_brightwing_blinkheal.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "闪烁治疗",
+      "short": "传送至盟友身边并对其进行治疗",
+      "full": "传��至附近的盟友身边，如果目标是英雄则为其恢复200(+4%每级)点生命值。\n\n最多储存2次使用次数。"
+    },
+    {
+      "nameId": "FaerieDragonEmeraldWind",
+      "buttonId": "BrightwingEmeraldWind",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_brightwing_emeraldwind.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "翡翠之风",
+      "short": "伤害范围内的敌人并将其击退",
+      "full": "0.5秒后，制造一股不断扩张的狂风新星，对敌人造成225(+4%每级)点伤害，并将其推开。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "BrightwingGreaterPolymorphPolymorph",
+      "buttonId": "BrightwingGreaterPolymorphTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_brightwing_polymorph.png",
+      "sort": 1,
+      "name": "强效变形术",
+      "short": "提高变形术的射程，缩短冷却时间",
+      "full": "被动：变形术的射程提高30%。 \n\n如果光明之翼用奥术闪耀的中心在变形后的2秒内击中被变形的英雄，则变形术的冷却时间减少7秒，并获得50点法力值。"
+    },
+    {
+      "nameId": "BrightwingPhaseShiftHyperShift",
+      "buttonId": "BrightwingPhaseShiftHyperShift",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_brightwing_hypershift.png",
+      "sort": 2,
+      "name": "超级变换",
+      "short": "相位变换的治疗提高",
+      "full": "相位变换可提供相当于目标最大生命值4%的额外治疗。附近每有一名敌方小兵死亡，就能使相位变换的冷却时间缩短0.5秒。"
+    },
+    {
+      "nameId": "BrightwingPixieCharm",
+      "buttonId": "FaerieDragonPixieCharmTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_bribe.png",
+      "sort": 3,
+      "name": "妖精魔力",
+      "short": "激活后直接击败一名雇佣兵",
+      "full": "激活后消耗20层贿赂来立即击败一名中立的非精英雇佣兵。\n\n被动：当附近有敌方小兵死亡时获得1层贿赂，当使用奥术闪耀的内圈命中英雄时获得5层贿赂。最多储存80层。"
+    },
+    {
+      "nameId": "BrightwingDreamShotArcaneFlare",
+      "buttonId": "BrightwingDreamShotTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_brightwing_arcaneflare.png",
+      "sort": 1,
+      "name": "梦境射击",
+      "short": "奥术闪耀命中内圈可缩短冷却时间",
+      "full": "奥术闪耀的射程提高50%。如果一名敌方英雄被内圈击中，其冷却时间降低至2秒。"
+    },
+    {
+      "nameId": "BrightwingUnstableAnomalyPolymorph",
+      "buttonId": "BrightwingUnstableAnomalyTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_brightwing_polymorph.png",
+      "sort": 2,
+      "name": "不稳异能",
+      "short": "强化变形术的减速，并使目标爆炸",
+      "full": "使变形术的减速效果提高15%。效果结束时，变形术还会对周围的敌方英雄造成伤害，相当于其最大生命值的2%。"
+    },
+    {
+      "nameId": "BrightwingMagicSpit",
+      "buttonId": "BrightwingMagicSpit",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+      "sort": 3,
+      "name": "魔法唾沫",
+      "short": "普通攻击缩短抚慰之雾的冷却时间",
+      "full": "普通攻击的射程提高1.1码。对英雄的普通攻击可以使抚慰之雾的冷却���间缩短4秒。"
+    },
+    {
+      "nameId": "BrightwingArcaneFlareStickyFlare",
+      "buttonId": "BrightwingArcaneFlareStickyFlareTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_brightwing_arcaneflare.png",
+      "sort": 1,
+      "name": "粘性闪耀",
+      "short": "奥术闪耀使敌人减速",
+      "full": "被奥术闪耀击中的敌方英雄移动速度降低20%，持续3秒。如果敌人被内圈击中，则减速效果提升至40%。"
+    },
+    {
+      "nameId": "BrightwingPhaseShiftPeekaboo",
+      "buttonId": "BrightwingPhaseShiftPeekaboo",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_brightwing_hypershift.png",
+      "sort": 2,
+      "name": "躲猫猫",
+      "short": "相位变换给予护盾，并暴露一个区域",
+      "full": "对盟友使用相位变换可给予光明之翼和她的目标一个335(+4%每级)点生命的护盾，持续4秒。暴露周围的大面积区域，持续5秒。"
+    },
+    {
+      "nameId": "BrightwingCriticalMistCalmingMist",
+      "buttonId": "BrightwingCalmingMistCriticalMist",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_brightwing_soothingmist.png",
+      "sort": 3,
+      "name": "救急之雾",
+      "short": "激活抚慰之雾的治疗",
+      "full": "抚慰之雾恢复友方英雄165(+4%每级)点生命值。如果抚慰之雾从该盟友身上移除了一个限制效果，则治疗效果提高140%。"
+    },
+    {
+      "nameId": "FaerieDragonHeroicAbilityBlinkHeal",
+      "buttonId": "BrightwingBlinkHealAllyDash",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_brightwing_blinkheal.png",
+      "sort": 1,
+      "name": "闪烁治疗",
+      "short": "传送至盟友身边并对其进行治疗",
+      "full": "传送至附近的盟友身边，如果目标是英雄则为其恢复200(+4%每级)点生命值。\n\n最多储存2次使用次数。"
+    },
+    {
+      "nameId": "FaerieDragonHeroicAbilityEmeraldWind",
+      "buttonId": "BrightwingEmeraldWind",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_brightwing_emeraldwind.png",
+      "sort": 2,
+      "name": "翡翠之风",
+      "short": "伤害范围内的敌人并将其击退",
+      "full": "0.5秒后，制造一股不断扩张的狂风新星，对敌人造成225(+4%每级)点伤害，并将其推开。"
+    },
+    {
+      "nameId": "BrightwingPixieBoostPixieDust",
+      "buttonId": "BrightwingPixieBoostTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_brightwing_pixiedust.png",
+      "sort": 1,
+      "name": "妖精加速",
+      "short": "妖精之尘给予额外的速度",
+      "full": "妖精之尘提供50%的移动速度加成，在3秒内衰减至20%。"
+    },
+    {
+      "nameId": "BrightwingPixieDustSafetyDust",
+      "buttonId": "BrightwingPixieDustSafetyDust",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_brightwing_pixiedust_a.png",
+      "sort": 2,
+      "name": "防护之尘",
+      "short": "妖精之尘可提高治疗效果",
+      "full": "妖精之尘的持续时间提高1秒。抚慰之雾与闪烁治疗对拥有妖精之尘的盟友的治疗效果提高75%。"
+    },
+    {
+      "nameId": "BrightwingPixieDustPixiePower",
+      "buttonId": "BrightwingPixieDustPixiePower",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_brightwing_pixiedust_b.png",
+      "sort": 3,
+      "name": "妖精能量",
+      "short": "缩短妖精之尘的冷却时间，提高法术护甲",
+      "full": "妖精之尘的冷却时间缩短3秒，并使获得的法术护甲提高25。"
+    },
+    {
+      "nameId": "BrightwingArcaneFlareHush!",
+      "buttonId": "BrightwingArcaneFlareHush!",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_brightwing_arcaneflare.png",
+      "sort": 1,
+      "name": "嘘！",
+      "short": "奥术闪耀内圈的敌人被沉默，伤害降低",
+      "full": "被奥术闪耀的内圈击中的敌方英雄会被沉默1秒，并且造成的伤害降低25%，持续3秒。"
+    },
+    {
+      "nameId": "FaerieDragonMasteryCritterize",
+      "buttonId": "BrightwingPolymorphCritterizeTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_brightwing_polymorph.png",
+      "sort": 2,
+      "name": "渺小变形",
+      "short": "变形术降低敌人的护甲",
+      "full": "被变形时，目标的护甲降低25点，使其受到的伤害提高25%。"
+    },
+    {
+      "nameId": "BrightwingPhaseOut",
+      "buttonId": "BrightwingPhaseOut",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_brightwing_stasis.png",
+      "sort": 3,
+      "name": "相位脱离",
+      "short": "激活后获得静止",
+      "full": "激活后使光明之翼进入静止状态，持续0.75秒。"
+    },
+    {
+      "nameId": "BrightwingInvisibleFriends",
+      "buttonId": "BrightwingInvisibleFriends",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_brightwing_blinkheal.png",
+      "sort": 1,
+      "name": "看不见的朋友",
+      "short": "闪烁治疗赋予潜行",
+      "full": "闪烁治疗使光明之翼和她的英雄目标获得潜行，持续9秒，并在头0.5秒内无法被暴露。当受到看不见的朋友效果影响获得潜行时，英雄会每秒恢复25(+4%每级)点生命值。\n\n在潜行状态下保持静止状态至少1.5秒后进入隐形。"
+    },
+    {
+      "nameId": "BrightwingIntensiveWinds",
+      "buttonId": "BrightwingEmeraldWindIntensiveWinds",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_brightwing_emeraldwind.png",
+      "sort": 2,
+      "name": "狂风频频",
+      "short": "大幅度缩短翡翠之风的冷却时间",
+      "full": "使翡翠之风的冷却时间永久缩短至5秒。"
+    },
+    {
+      "nameId": "BrightwingSpeedyDragon",
+      "buttonId": "BrightwingSpeedyDragon",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_brightwing_hypershift.png",
+      "sort": 3,
+      "name": "快快龙",
+      "short": "永久获得移动速度",
+      "full": "永久获得20%的移动速度。使相位变换的施法时间缩短1秒。"
+    },
+    {
+      "nameId": "BrightwingFaerieProtector",
+      "buttonId": "BrightwingFaerieProtector",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_brightwing_pixiedust.png",
+      "sort": 4,
+      "name": "守护小魔龙",
+      "short": "周围的盟友获得妖精之尘",
+      "full": "激活后对周围所有英雄施放妖精之尘。\n\n被动：妖精之尘永远会反弹回来并作用于光明之翼。"
+    }
+  ]
+}

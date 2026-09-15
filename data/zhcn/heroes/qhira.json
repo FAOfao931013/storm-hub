@@ -1,0 +1,295 @@
+{
+  "shortName": "qhira",
+  "heroName": "NexusHunter",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "NexusHunterGrapplingHook",
+      "buttonId": "NexusHunterGrapplingHook",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_nexushunter_d.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "抓钩",
+      "short": "把自己拉向地形或英雄",
+      "full": "琪拉发射一个抓钩，把自己拉向它接触到的地形。如果抓钩命中敌方英雄，则会对其造成35(+4%每级)点伤害，并把她拉到目标身边，再次造成108(+4%每级)点踢击伤害。\n\n可以在回旋扫荡激活期间使用。"
+    },
+    {
+      "nameId": "NexusHunterCarnage",
+      "buttonId": "NexusHunterCarnage",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_nexushunter_q.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "灭杀延形",
+      "short": "解放你的剑，杀伤前方的区域",
+      "full": "朝目标方向延展剑刃，对路径上的敌人造成30(+4%每级)点持续伤害。"
+    },
+    {
+      "nameId": "NexusHunterBloodRage",
+      "buttonId": "NexusHunterBloodRage",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_nexushunter_w.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "血怒",
+      "short": "���通攻击和技能使敌人受到持续伤害",
+      "full": "被动：普通攻击和技能伤害使敌人流血，在4秒内造成44(+4%每级)点伤害。可叠加5次。\n\n琪拉对受影响的英雄造成32(+4%每级)点伤害，每一名受影响的敌方英雄可以使琪拉恢复90(+4%每级)点生命值。 每多叠加一层血怒，该技能造成的伤害和治疗就提高50%。"
+    },
+    {
+      "nameId": "NexusHunterRevolvingSweep",
+      "buttonId": "NexusHunterRevolvingSweep",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_nexushunter_e.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "回旋扫荡",
+      "short": "联结一名敌方英雄，绕其旋转并将其击晕",
+      "full": "用剑缠住击中的第一个敌方英雄，造成96(+4%每级)点伤害并使其昏迷0.25秒。一旦联结成功，琪拉会开始绕目标旋转，持续2.75秒，期间免疫所有效果，并对你和目标之间的敌人造成105(+4%每级)点伤害。\n\n重新激活该技能可以把你拉向目标的位置，将其击退，对其造成108(+4%每级)点伤害并使其昏迷0.75秒。"
+    },
+    {
+      "nameId": "NexusHunterUnrelentingStrikes",
+      "buttonId": "NexusHunterUnrelentingStrikes",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_nexushunter_r1.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "剑舞送葬",
+      "short": "造成伤害并使附近的敌人昏迷",
+      "full": "舞动剑刃并逐渐向外扩展攻击，每0.5秒对周围的敌人造成44(+4%每级)点伤害，持续2.5秒。技能结束时，对周围的敌方英雄造成160(+4%每级)点伤害并使其昏迷1.5秒。"
+    },
+    {
+      "nameId": "NexusHunterFinalStrikeActivate",
+      "buttonId": "NexusHunterFinalStrike",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_nexushunter_r2.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "最终斩击",
+      "short": "延展剑刃，发出致命斩击",
+      "full": "在1秒后，对一条直线上的敌人造成410(+4%每级)点伤害。对生命值低于50%的敌方英雄造成25%的额外伤害。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "NexusHunterCarnageMaximumEffort",
+      "buttonId": "NexusHunterCarnageMaximumEffort",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_nexushunter_q.png",
+      "sort": 1,
+      "name": "最大效能",
+      "short": "灭杀延形造成额外伤害和减速",
+      "full": "如果灭杀延形对同一名敌方英雄造成3次伤害，该技能还会造成108(+4%每级)点额外伤害，并使其减速25%，持续2.5秒。"
+    },
+    {
+      "nameId": "NexusHunterFatalWounds",
+      "buttonId": "NexusHunterFatalWounds",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_nexushunter_w.png",
+      "sort": 2,
+      "name": "致命创伤",
+      "short": "任务：提高血怒的伤害和持续时间",
+      "full": "当层数叠满时，血怒对生命值低于50%的敌方英雄造成的流血伤害提高30%。\n\n任务：对敌方英雄造成流血伤害。\n\n奖励：在血怒的流血效果对英雄造成150次伤害后，血怒的持续时间增加2秒。"
+    },
+    {
+      "nameId": "NexusHunterFinishingTouch",
+      "buttonId": "NexusHunterFinishingTouch",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_nexushunter_passive.png",
+      "sort": 3,
+      "name": "猛攻要害",
+      "short": "普通攻击对低生命值英雄造成更多伤害",
+      "full": "普通攻击伤害提高20%。琪拉对生命值低于50%的敌方英雄进行普通攻击时，造成的伤害提高20%，并且获得35%的攻击速度加成，持续3秒。"
+    },
+    {
+      "nameId": "NexusHunterUpstage",
+      "buttonId": "NexusHunterUpstage",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_nexushunter_w.png",
+      "sort": 1,
+      "name": "杂技身法",
+      "short": "血怒给予闪避",
+      "full": "如果使用血怒对至少2名英雄造成伤害，琪拉就可以闪避接下来的4次英雄普通攻击，持续12秒。"
+    },
+    {
+      "nameId": "NexusHunterEnsnaringSwing",
+      "buttonId": "NexusHunterEnsnaringSwing",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_nexushunter_e.png",
+      "sort": 2,
+      "name": "束缚索",
+      "short": "回旋扫荡使敌人减速",
+      "full": "在琪拉绕目标旋转期间，回旋扫荡的主目标减速60%，被扫中的次要目标减速40%，持续3秒。"
+    },
+    {
+      "nameId": "NexusHunterBloodRageYourPainMyGain",
+      "buttonId": "NexusHunterBloodRageYourPainMyGain",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_nexushunter_passive.png",
+      "sort": 3,
+      "name": "以攻为守",
+      "short": "对英雄普通攻击获得护甲",
+      "full": "对敌方英雄普通攻击可以使琪拉获得10点护甲，持续3秒。可叠加3次。"
+    },
+    {
+      "nameId": "NexusHunterTheThirst",
+      "buttonId": "NexusHunterTheThirst",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_nexushunter_q.png",
+      "sort": 1,
+      "name": "嗜血如渴",
+      "short": "灭杀延形提高普通攻击伤害并治疗",
+      "full": "灭杀延形可以恢复相当于对敌方英雄造成伤害量50%的生命值。只要灭杀延形对敌方英雄造成伤害，琪拉在4秒内对英雄的下一次普通攻击就能造成15%的额外伤害。该效果最多可以叠加10次。"
+    },
+    {
+      "nameId": "NexusHunterBloodRageHealmonger",
+      "buttonId": "NexusHunterBloodRageHealmonger",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_nexushunter_w.png",
+      "sort": 2,
+      "name": "投机治疗",
+      "short": "目标低生命值时，血怒的治疗提高",
+      "full": "如果血怒对生命值低于50%的敌方英雄造成伤害，该技能可以额外恢复210(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "NexusHunterSiphoningLink",
+      "buttonId": "NexusHunterSiphoningLink",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_nexushunter_e.png",
+      "sort": 3,
+      "name": "虹吸之链",
+      "short": "回旋扫荡持续治疗",
+      "full": "回旋扫荡的第一段攻击和旋转击中一名敌方英雄可以使琪拉在4秒内恢复96(+4%每级)点生命值。最多叠加4次。\n\n被动：普通攻击可以恢复相当于伤害量20%的生命值。"
+    },
+    {
+      "nameId": "NexusHunterUnrelentingStrikes",
+      "buttonId": "NexusHunterUnrelentingStrikes",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_nexushunter_r1.png",
+      "sort": 1,
+      "name": "剑舞送葬",
+      "short": "造成伤害并使附近的敌人昏迷",
+      "full": "舞动剑刃并逐渐向外扩展攻击，每0.5秒对周围的敌人造成44(+4%每级)点伤害，持续2.5秒。技能结束时，对周围的敌方英雄造成160(+4%每级)点伤害并使其昏迷1.5秒。"
+    },
+    {
+      "nameId": "NexusHunterFinalStrike",
+      "buttonId": "NexusHunterFinalStrike",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_nexushunter_r2.png",
+      "sort": 2,
+      "name": "最终斩击",
+      "short": "延展剑刃，发出致命斩击",
+      "full": "在1秒后，对一条直线上的敌人造成410(+4%每级)点伤害。对生命值低于50%的敌方英雄造成25%的额外伤害。"
+    },
+    {
+      "nameId": "NexusHunterChainsaw",
+      "buttonId": "NexusHunterChainsaw",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_nexushunter_q.png",
+      "sort": 1,
+      "name": "链锯模组",
+      "short": "血怒缩短灭杀延形的冷却时间",
+      "full": "当敌方英雄身上叠满血怒层数时，灭杀延形的冷却速度提高100%。"
+    },
+    {
+      "nameId": "NexusHunterPulsingPain",
+      "buttonId": "NexusHunterPulsingPain",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_nexushunter_e.png",
+      "sort": 2,
+      "name": "阵痛",
+      "short": "提高回旋扫荡对主目标的伤害",
+      "full": "回旋扫荡每多击中一名敌方英雄，主目标就会受到135(+4%每级)点额外伤害。"
+    },
+    {
+      "nameId": "NexusHunterTheHunted",
+      "buttonId": "NexusHunterTheHunted",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_nexushunter_passive.png",
+      "sort": 3,
+      "name": "捕猎游戏",
+      "short": "连续的普通攻击造成额外伤害",
+      "full": "对一名敌方英雄进行普通攻击可以使你对该英雄的普通攻击伤害提高25%。最多叠加4次，持续4秒。如果攻击其他英雄，该加成会被重置。"
+    },
+    {
+      "nameId": "NexusHunterRevolvingSweepBoomingKick",
+      "buttonId": "NexusHunterRevolvingSweepBoomingKick",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_nexushunter_e.png",
+      "sort": 1,
+      "name": "爆炸踢",
+      "short": "再次激活回旋扫荡可造成范围打击",
+      "full": "使再次激活回旋扫荡造成的昏迷持续时间延长0.25秒，并能够打击主目标周围的敌方英雄。"
+    },
+    {
+      "nameId": "NexusHunterRevolvingSweepLingeringAilment",
+      "buttonId": "NexusHunterRevolvingSweepLingeringAilment",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_nexushunter_e_alt_1.png",
+      "sort": 2,
+      "name": "持久创痕",
+      "short": "降低敌方英雄护甲",
+      "full": "被回旋扫荡或抓钩击中的敌方英雄的护甲值降低35点，持续4秒。"
+    },
+    {
+      "nameId": "NexusHunterRevolvingSweepSwingLifeAway",
+      "buttonId": "NexusHunterRevolvingSweepSwingLifeAway",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_nexushunter_e_alt_2.png",
+      "sort": 3,
+      "name": "就像龙卷风",
+      "short": "回旋扫荡的冷却速度加快",
+      "full": "在琪拉绕目标旋转期间，回旋扫荡的冷却速度提高250%。再次激活该技能造成冲击后，她还会获得60点法术护甲，持续5秒。"
+    },
+    {
+      "nameId": "NexusHunterUnrelentingStrikesSilentKiller",
+      "buttonId": "NexusHunterUnrelentingStrikesSilentKiller",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_nexushunter_r1.png",
+      "sort": 1,
+      "name": "沉默杀手",
+      "short": "剑舞送葬可造成沉默",
+      "full": "使用剑舞送葬击中敌方英雄会使其沉默0.5秒，并使该技能的冷却时间减少3秒。"
+    },
+    {
+      "nameId": "NexusHunterFinalStrikeUnleashedPotential",
+      "buttonId": "NexusHunterFinalStrikeUnleashedPotential",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_nexushunter_r2.png",
+      "sort": 2,
+      "name": "潜能释放",
+      "short": "最终斩击可恢复技能冷却",
+      "full": "使对生命值低于50%的敌方英雄造成的伤害从25%提高至50%。\n\n如果敌方英雄在被最终斩击命中的1.5秒内死亡，则重置最终斩击和琪拉所有基本技能的冷却时间。"
+    },
+    {
+      "nameId": "NexusHunterGrapplingHookUtilityBelt",
+      "buttonId": "NexusHunterGrapplingHookUtilityBelt",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_nexushunter_d.png",
+      "sort": 3,
+      "name": "万能腰带",
+      "short": "抓钩的冷却速度加快",
+      "full": "如果回旋扫荡的第一段攻击命中敌方英雄，则重置抓钩的冷却时间。如果琪拉在2秒内没有受到伤害，抓钩的冷却速度提高900%。"
+    },
+    {
+      "nameId": "NexusHunterHuntersVengeanceNoSanctuary",
+      "buttonId": "NexusHunterHuntersVengeanceNoSanctuary",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_nexushunter_passive_alt_1.png",
+      "sort": 4,
+      "name": "地狱无门",
+      "short": "猎杀低血量的敌人",
+      "full": "暴露附近生命值低于50%的敌方英雄，当此效果激活时，你的移动速度提高20%。\n\n此外，你对这些被暴露的敌人可造成20%的额外伤害。"
+    }
+  ]
+}

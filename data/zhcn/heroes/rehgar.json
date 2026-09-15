@@ -1,0 +1,295 @@
+{
+  "shortName": "rehgar",
+  "heroName": "Rehgar",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "RehgarPurge",
+      "buttonId": "RehgarPurge",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_rehgar_purge.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "净化术",
+      "short": "使目标盟友获得不可阻挡，减速敌方英雄",
+      "full": "当对一名友方英雄使用时，使其获得不可阻挡效果，持��0.5秒。当对一名敌方英雄使用时，使其减速80%，减速效果会在接下来的2秒内衰减。\n\n无法对自身施放。"
+    },
+    {
+      "nameId": "RehgarChainHeal",
+      "buttonId": "RehgarChainHeal",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_rehgar_chainheal.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "治疗链",
+      "short": "制造一道治疗波在盟友间跳跃",
+      "full": "用治疗波为一个盟友恢复260(+4%每级)点生命值。治疗波随后会弹向附近7码范围内的2个盟友，为其恢复260(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "RehgarLightningShield",
+      "buttonId": "RehgarLightningShield",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_rehgar_lightningshield.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "闪电之盾",
+      "short": "向目标盟友灌注闪电能量，使其对周围的敌人造成伤害",
+      "full": "让一个友方单位充盈着闪电的力量，每秒对附近敌人造成64(+4%每级)点伤害。每命中一名敌人，都会为雷加尔恢复1点法力值。持续5秒。"
+    },
+    {
+      "nameId": "RehgarEarthbindTotem",
+      "buttonId": "RehgarEarthbindTotem",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "地缚图腾",
+      "short": "放置一个使附近敌人减速的图腾",
+      "full": "放置一个使周围敌人减速35%的图腾。该图腾拥有260(+4%每级)点生命值，持续6秒。"
+    },
+    {
+      "nameId": "RehgarBloodlust",
+      "buttonId": "RehgarBloodlust",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rehgar_bloodlust.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "嗜血",
+      "short": "提高友方英雄的移动速度、攻击速度和生命窃取效果",
+      "full": "使附近友方英雄的攻击速度提高40%，移动速度提高35%，并且他们对主要目标的普通攻击伤害的30%转化为生命值，持续6秒。"
+    },
+    {
+      "nameId": "RehgarAncestralHealing",
+      "buttonId": "RehgarAncestralHealing",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rehgar_ancestralhealing.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "先祖治疗",
+      "short": "大幅治疗友方英雄",
+      "full": "1秒后，为一名友方英雄治疗1180(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "RehgarLightningShieldStormcaller",
+      "buttonId": "RehgarLightningShieldStormcaller",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_rehgar_lightningshield.png",
+      "sort": 1,
+      "name": "风暴召唤者",
+      "short": "任务：闪电之盾提高生命值和法力值",
+      "full": "闪电之盾的范围增加25%。\n\n任务：闪电之盾每对敌方英雄造成一次伤害，永久使雷加尔的生命值提高2点，法力值提高1点，最多可叠加200次。"
+    },
+    {
+      "nameId": "RehgarEarthbindTotemColossalTotem",
+      "buttonId": "RehgarEarthbindTotemColossalTotem",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
+      "sort": 2,
+      "name": "巨型图腾",
+      "short": "提高地缚图腾的生命值、范围和持续时间",
+      "full": "再次激活地缚图腾可以把图腾移动到新的位置。每次施放该技能只能移动一次图腾的位置。\n\n被动：使地缚图腾的作用范围和持续时间提高50%，生命值提高25%。"
+    },
+    {
+      "nameId": "RehgarFeralHeart",
+      "buttonId": "RehgarGhostWolfFeralHeartTalent",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_rehgar_ghostwolf.png",
+      "sort": 3,
+      "name": "野性狼心",
+      "short": "提高幽魂之狼移动速度，获得护甲",
+      "full": "幽魂之狼的移动速度加成在第一秒时提高至40%，然后降低至30%。进入或离开幽魂之狼形态可以获得15点护甲值，持续1秒。"
+    },
+    {
+      "nameId": "RehgarEarthlivingEnchant",
+      "buttonId": "RehgarEarthlivingEnchant",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_rehgar_chainheal.png",
+      "sort": 1,
+      "name": "大地生命附魔",
+      "short": "提高治疗链对低生命值英雄的治疗量",
+      "full": "治疗链治疗生命值低于50%的英雄时，他们在4秒内额外恢复160(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "RehgarLightningShieldElectricCharge",
+      "buttonId": "RehgarLightningShieldElectricCharge",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_rehgar_lightningshield.png",
+      "sort": 2,
+      "name": "充电",
+      "short": "闪电之盾产生治疗，提高移动速度",
+      "full": "闪电之盾对敌方英雄造成伤害时，闪电之盾效果的持有者会恢复相当于造成伤害量20%的生命值，当持有者是雷加尔时该效果翻倍。\n\n当闪电之盾对一名敌人造成伤害时，闪电之盾效果的持有者会获得10%移动速度加成。"
+    },
+    {
+      "nameId": "RehgarHealingTotem",
+      "buttonId": "RehgarHealingTotem",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_healingward.png",
+      "sort": 3,
+      "name": "治疗图腾",
+      "short": "激活后放置范围治疗的图腾",
+      "full": "激活后放置一个图腾，为范围内的友方英雄每秒恢复最大生命值的2%。这个图腾拥有125(+4%每级)点生命值，持续10秒。"
+    },
+    {
+      "nameId": "RehgarEarthbindTotemGroundedTotem",
+      "buttonId": "RehgarEarthbindTotemGroundedTotem",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
+      "sort": 1,
+      "name": "根基图腾",
+      "short": "强化地缚图腾",
+      "full": "在地缚图腾影响范围内的敌方英雄，其攻击速度降低15%，法术强度降低15%。\n\n被动：地缚图腾的施法距离和作用范围提高50%。"
+    },
+    {
+      "nameId": "RehgarPurification",
+      "buttonId": "RehgarPurification",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_rehgar_purge.png",
+      "sort": 2,
+      "name": "净化",
+      "short": "强化净化术",
+      "full": "如果净化术从一名盟友身上移除了一个减速、昏迷、定身或沉默效果，则为其恢复220(+4%每级)点生命值。\n\n对一名敌方英雄使用净化术，最多可以对其护盾造成330(+4%每级)点伤害并使其受到的治疗效果降低40%，持续2秒。\n\n被动：净化术的冷却时间缩短15秒。"
+    },
+    {
+      "nameId": "RehgarBloodAndThunder",
+      "buttonId": "RehgarBloodAndThunder",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_rehgar_ghostwolf.png",
+      "sort": 3,
+      "name": "鲜血与雷鸣",
+      "short": "幽魂之狼的普通攻击降低基本技能的冷却时间",
+      "full": "幽魂之狼的普通攻击可以使基本技能的冷却时间缩短1.5秒并恢复雷加尔4%的最大法力值。"
+    },
+    {
+      "nameId": "RehgarAncestralHealing",
+      "buttonId": "RehgarAncestralHealing",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rehgar_ancestralhealing.png",
+      "sort": 1,
+      "name": "先祖治疗",
+      "short": "大幅治疗友方英雄",
+      "full": "1秒后，为一名友方英雄治疗1180(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "RehgarBloodlust",
+      "buttonId": "RehgarBloodlust",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rehgar_bloodlust.png",
+      "sort": 2,
+      "name": "嗜血",
+      "short": "提高友方英雄的移动速度、攻击速度和生命窃取效果",
+      "full": "使附近友方英雄的攻击速度提高40%，移动速度提高35%，并且他们对主要目标的普通攻击伤害的30%转化为生命值，持续6秒。"
+    },
+    {
+      "nameId": "RehgarMasteryTidalWaves",
+      "buttonId": "RehgarChainHealTidalWavesTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_rehgar_chainheal.png",
+      "sort": 1,
+      "name": "潮汐奔涌",
+      "short": "减少治疗链的冷却时间和法力消耗",
+      "full": "每治疗一个英雄，治疗链的冷却时间就会缩短1秒，法力消耗从60点降低至40点。"
+    },
+    {
+      "nameId": "RehgarLightningShieldEarthShield",
+      "buttonId": "RehgarLightningShieldEarthShield",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_rehgar_lightningshield.png",
+      "sort": 2,
+      "name": "大地之盾",
+      "short": "闪电之盾还将提供护盾",
+      "full": "闪电之盾为英雄提供一层护盾，可吸收相当于其最大生命值14%的伤害，持续3秒。"
+    },
+    {
+      "nameId": "RehgarWellspring",
+      "buttonId": "RehgarWellspring",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
+      "sort": 3,
+      "name": "奔涌之流",
+      "short": "地缚图腾施放治疗链",
+      "full": "每过2秒，地缚图腾会对距离最近且生命值最低的友方英雄施放一次无天赋加成的治疗链。该治疗链可以恢复相当于其正常治疗量35%的生命值。"
+    },
+    {
+      "nameId": "RehgarLightningShieldRisingStorm",
+      "buttonId": "RehgarLightningShieldRisingStorm",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_rehgar_lightningshield.png",
+      "sort": 1,
+      "name": "风暴崛起",
+      "short": "提高闪电之盾的伤害和持续时间",
+      "full": "闪电之盾每对敌方英雄造成一次伤害，使其伤害提高10%。最多可叠加15次。\n\n被动：使闪电之盾的持续时间延长3秒。"
+    },
+    {
+      "nameId": "RehgarEarthbindTotemEarthgraspTotem",
+      "buttonId": "RehgarEarthbindTotemEarthgraspTotem",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
+      "sort": 2,
+      "name": "地握图腾",
+      "short": "放置地缚图腾造成伤害，减速效果提高",
+      "full": "首次施放地缚图腾时，造成90(+4%每级)点伤害，使附近的敌人减速90%，持续1秒。"
+    },
+    {
+      "nameId": "RehgarHungerOfTheWolf",
+      "buttonId": "RehgarHungeroftheWolf",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_rehgar_ghostwolf.png",
+      "sort": 3,
+      "name": "饿狼",
+      "short": "幽魂之狼的攻击造成额外伤害和治疗",
+      "full": "幽魂之狼对英雄的攻击造成相当于其最大生命值6%的额外伤害，并为雷加尔恢复6%的最大生命值。"
+    },
+    {
+      "nameId": "RehgarAncestralHealingFarseersBlessing",
+      "buttonId": "RehgarAncestralHealingFarseersBlessing",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rehgar_ancestralhealing.png",
+      "sort": 1,
+      "name": "先知的赐福",
+      "short": "治疗效果再次生效并进行范围治疗",
+      "full": "1.5秒后，先祖治疗会对同一目标再次施放。并且使目标附近的盟友恢复590(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "RehgarGladiatorsWarShout",
+      "buttonId": "RehgarBloodlustGladiatorsWarShout",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rehgar_bloodlust.png",
+      "sort": 2,
+      "name": "角斗士的战吼",
+      "short": "增加嗜血的持续时间并扩大使用范围",
+      "full": "嗜血的持续时间和使用范围提高100%。"
+    },
+    {
+      "nameId": "RehgarElementalConduit",
+      "buttonId": "RehgarElementalConduit",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_stormshield.png",
+      "sort": 3,
+      "name": "元素导能",
+      "short": "获得闪电之盾，为附近盟友提供护盾",
+      "full": "激活可以获得闪电之盾并为附近所有盟友提供一层相当于其自身最大生命值10%的护盾，持续5秒。\n\n激活后最多5秒内，使用该效果获得的闪电之盾对敌方英雄造成伤害时，可以为附近盟友提供一层相当于其自身最大生命值1.5%的护盾，持续5秒。"
+    },
+    {
+      "nameId": "RehgarPitFighter",
+      "buttonId": "RehgarPitFighter",
+      "abilityType": "Passive",
+      "icon": "storm_ui_ingame_heroselect_btn_rehgar.png",
+      "sort": 4,
+      "name": "格斗士",
+      "short": "在靠近盟友时获得攻击伤害和法术强度加成",
+      "full": "获得10%的攻击伤害加成和3的法术强度加成。附近每名友方英雄都会使雷加尔额外获得一层该效果，最多5层。\n\n当达到2层或更多时，净化术的冷却时间刷新速度加快50%。"
+    }
+  ]
+}

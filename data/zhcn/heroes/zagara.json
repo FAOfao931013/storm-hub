@@ -1,0 +1,295 @@
+{
+  "shortName": "zagara",
+  "heroName": "Zagara",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "ZagaraSummonCreepTumor",
+      "buttonId": "ZagaraCreepTumor",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zagara_creep.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "菌毯肿瘤",
+      "short": "生成菌毯使扎加拉和她的爪牙可以更快移动",
+      "full": "召唤一个可以生成菌毯的肿瘤。在菌毯上时，扎加拉的移动速度提高20%，并且她的召唤物的移动速度提高30%。肿瘤持续240秒，并在激活时显示附近区域。\n\n最多储存3次使用次数。"
+    },
+    {
+      "nameId": "ZagaraBanelingBarrage",
+      "buttonId": "ZagaraBanelingBarrage",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zagara_banelingbarrage.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "爆虫冲锋",
+      "short": "召唤2只爆虫，遇到敌人后爆炸",
+      "full": "召唤2只爆虫，对命中的敌人造成80(+4%每级)点伤害。\n\n最多储存2次使用次数。"
+    },
+    {
+      "nameId": "ZagaraSummonHydralisk",
+      "buttonId": "ZagaraHunterKiller",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zagara_hunterkiller.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "屠猎者",
+      "short": "对敌人释放一只刺蛇",
+      "full": "召唤一只刺蛇攻击单体目标，每秒造成71(+5%每级)点伤害。刺蛇持续8秒。"
+    },
+    {
+      "nameId": "ZagaraInfestedDrop",
+      "buttonId": "ZagaraInfestedDrop",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zagara_infesteddrop.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "异化空投",
+      "short": "使用异虫空投囊轰炸目标区域，并生成小蟑螂",
+      "full": "召唤异虫空投囊轰炸目标区域，造成140(+4%每级)点伤害。\n\n空投囊孵化2只蟑螂，每秒能够造成30(+4%每级)点伤害，持续8秒。"
+    },
+    {
+      "nameId": "ZagaraSummonNydusWorm",
+      "buttonId": "ZagaraNydusNetwork",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zagara_nydusworm.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "坑道网络",
+      "short": "强化菌毯并召唤坑道虫",
+      "full": "在扎加拉拥有视野的菌毯上召唤一只坑道虫。扎加拉可以右键点击进入坑道虫前往另一只坑道虫所在的位置。在坑道虫内时，扎加拉每秒恢复10%的生命值和法力值。\n\n最多储存2次使用次数。同一时间最多4条坑道虫。\n\n被动：菌毯的扩散范围扩大15%。\n被动：在菌毯上时，每次普通攻击使扎加拉所有技能的冷却时间缩短0.4秒。"
+    },
+    {
+      "nameId": "ZagaraDevouringMaw",
+      "buttonId": "ZagaraDevouringMaw",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zagara_devouringmaw.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "吞噬巨口",
+      "short": "吞食区域内的敌人",
+      "full": "召唤吞噬巨口吞噬敌人，持续4秒。被吞噬的敌人无法战斗并且每秒受到94(+4%每级)点伤害。\n\n可以对不可阻挡的英雄使用。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ZagaraMasteryVolatileAcid",
+      "buttonId": "ZagaraBanelingBarrageVolatileAcidTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zagara_banelingbarrage.png",
+      "sort": 1,
+      "name": "不稳定强酸",
+      "short": "提高爆虫的射程",
+      "full": "爆虫爆炸前的翻滚距离提高50%。"
+    },
+    {
+      "nameId": "ZagaraMasteryCorpseFeeders",
+      "buttonId": "ZagaraInfestedDropCorpseFeedersTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zagara_infesteddrop.png",
+      "sort": 2,
+      "name": "食尸虫",
+      "short": "缩短异化空投的冷却时间，提高小蟑螂生命值",
+      "full": "异化空投的冷却时间缩短3秒，并且小蟑螂的生命值提高30% 。"
+    },
+    {
+      "nameId": "ZagaraMasteryInfest",
+      "buttonId": "ZagaraInfest",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_zagara_infest.png",
+      "sort": 3,
+      "name": "感染",
+      "short": "提高附近友方远程小兵的伤害",
+      "full": "附近远程小兵造成125%的额外伤害，并且扎加拉每造成1000点攻城伤害，该伤害加成就会提高1%。可以手动开启或关闭。"
+    },
+    {
+      "nameId": "ZagaraMasteryEnvenomedSpines",
+      "buttonId": "ZagaraEnvenomedSpinesTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_autoattack_range.png",
+      "sort": 1,
+      "name": "淬毒骨刺",
+      "short": "强化扎加拉的下一次普通攻击",
+      "full": "激活后使扎加拉的下一次普通攻击在5秒内造成230(+4%每级)点额外伤害。"
+    },
+    {
+      "nameId": "ZagaraCombatStyleMedusaBlades",
+      "buttonId": "ZagaraMedusaBladesTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_aoe.png",
+      "sort": 2,
+      "name": "美杜莎之刃",
+      "short": "普通攻击命中3个额外目标",
+      "full": "普通攻击对周围的三个目标造成33%伤害。"
+    },
+    {
+      "nameId": "ZagaraMasterySerratedSpines",
+      "buttonId": "ZagaraSerratedSpinesTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "锯齿脊针",
+      "short": "任务：普通攻击提高对英雄的伤害",
+      "full": "任务：每次对英雄的普通攻击使扎加拉的攻击伤害提高0.2%。"
+    },
+    {
+      "nameId": "ZagaraMasteryBanelingMassacre",
+      "buttonId": "ZagaraBanelingBarrageBanelingMassacreTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zagara_banelingbarrage.png",
+      "sort": 1,
+      "name": "爆戮场",
+      "short": "获得爆虫使用次数，但提高冷却时间",
+      "full": "获得额外2次爆虫冲锋使用次数，但爆虫冲锋的冷却时间提高2秒。"
+    },
+    {
+      "nameId": "ZagaraViscousAcid",
+      "buttonId": "ZagaraViscousAcid",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zagara_banelingbarrage_a.png",
+      "sort": 2,
+      "name": "黏性强酸",
+      "short": "爆虫还会使敌人减速",
+      "full": "爆虫使敌人的移动速度降低25%，持续2.5秒。"
+    },
+    {
+      "nameId": "ZagaraMasteryBileDrop",
+      "buttonId": "ZagaraInfestedDropBileDropTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zagara_infesteddrop.png",
+      "sort": 3,
+      "name": "胆汁喷淋",
+      "short": "任务：提高蟑螂数量",
+      "full": "任务：异化空投的范围提高20%。\n\n奖励：异化空投击中12次英雄后，额外生成一只蟑螂。"
+    },
+    {
+      "nameId": "ZagaraHeroicAbilityDevouringMaw",
+      "buttonId": "ZagaraDevouringMaw",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zagara_devouringmaw.png",
+      "sort": 1,
+      "name": "吞噬巨口",
+      "short": "吞食区域内的敌人",
+      "full": "召唤吞噬巨口吞噬敌人，持续4秒。被吞噬的敌人无法战斗并且每秒受到94(+4%每级)点伤害。\n\n可以对不可阻挡的英雄使用。"
+    },
+    {
+      "nameId": "ZagaraHeroicAbilityNydusAssault",
+      "buttonId": "ZagaraNydusNetwork",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zagara_nydusworm.png",
+      "sort": 2,
+      "name": "坑道网络",
+      "short": "强化菌毯并召唤坑道虫",
+      "full": "在扎加拉拥有视野的菌毯上召唤一只坑道虫。扎加拉可以右键点击进入坑道虫前往另一只坑道虫所在的位置。在坑道虫内时，扎加拉每秒恢复10%的生命值和法力值。\n\n最多储存2次使用次数。同一时间最多4条坑道虫。\n\n被动：菌毯的扩散范围扩大15%。\n被动：在菌毯上时，每次普通攻击使扎加拉所有技能的冷却时间缩短0.4秒。"
+    },
+    {
+      "nameId": "ZagaraMasteryHydraliskTransfusion",
+      "buttonId": "ZagaraHydraliskTransfusionTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zagara_hunterkiller.png",
+      "sort": 1,
+      "name": "刺蛇哺液",
+      "short": "屠猎者的攻击可以恢复生命值",
+      "full": "屠猎者对敌方英雄造成伤害时会为你恢复生命值，数值相当于其普通攻击伤害的60%。"
+    },
+    {
+      "nameId": "ZagaraMasteryProtectiveCoating",
+      "buttonId": "ZagaraCreepTumorProtectiveCoating",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zagara_creep.png",
+      "sort": 2,
+      "name": "防护外壳",
+      "short": "在菌毯上时获得护甲",
+      "full": "在菌毯上时，扎加拉获得20点护甲，使受到的伤害降低20%。"
+    },
+    {
+      "nameId": "GenericTalentSpellShield",
+      "buttonId": "GenericSpellShieldTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_spellshield.png",
+      "sort": 3,
+      "name": "法术护盾",
+      "short": "周期性获得临时法术护甲",
+      "full": "每隔30秒，获得50点法术护甲，抵御下一次敌人的技能和后续技能，使受到的伤害降低50%，持续3秒。\n\n可以开启或关闭该天赋是否自动触发。"
+    },
+    {
+      "nameId": "ZagaraMasteryCorrosiveSaliva",
+      "buttonId": "ZagaraCorrosiveSalivaHunterKillerTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zagara_hunterkiller.png",
+      "sort": 1,
+      "name": "腐蚀唾液",
+      "short": "强化屠猎者和小蟑螂对英雄的伤害",
+      "full": "当攻击英雄时，屠猎者和小蟑螂会额外造成相当于其最大生命值1.5%的伤害。"
+    },
+    {
+      "nameId": "ZagaraMasteryMutalisk",
+      "buttonId": "ZagaraHunterKillerMutaliskTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zagara_hunterkillermuta.png",
+      "sort": 2,
+      "name": "尖啸异龙",
+      "short": "屠猎者现在会召唤一只异龙",
+      "full": "屠猎者的冷却时间缩短4秒。屠猎者现在孵化一只拥有弹射攻击的异龙，持续30秒。"
+    },
+    {
+      "nameId": "ZagaraJaggedBarbsTalent",
+      "buttonId": "ZagaraCreepTumorJaggedBarbs",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zagara_creep.png",
+      "sort": 3,
+      "name": "锯状倒刺",
+      "short": "在菌毯上提高攻击伤害和射程",
+      "full": "在菌毯上时，扎加拉的普通攻击伤害提高50%，并且她的攻击射程额外提高1.1码。"
+    },
+    {
+      "nameId": "ZagaraMasteryTyrantMaw",
+      "buttonId": "ZagaraDevouringMawTyrantMawTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zagara_devouringmaw.png",
+      "sort": 1,
+      "name": "暴君巨口",
+      "short": "伤害提高并且可以通过击杀英雄降低冷却时间",
+      "full": "吞噬巨口的伤害提高50%。击杀英雄使其冷却时间缩短25秒。"
+    },
+    {
+      "nameId": "ZagaraMasteryEndlessCreep",
+      "buttonId": "ZagaraCreepTumorEndlessCreepTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zagara_nydusworm.png",
+      "sort": 2,
+      "name": "无限菌毯",
+      "short": "增加菌毯肿瘤的施法范围和持续时间",
+      "full": "菌毯肿瘤的施法范围扩大2000%。菌毯肿瘤现在持续600秒。站在菌毯上时，扎加拉的移动速度额外提高10%。"
+    },
+    {
+      "nameId": "ZagaraBroodmother",
+      "buttonId": "ZagaraBroodmother",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zagara_banelingbarrage.png",
+      "sort": 3,
+      "name": "虫母",
+      "short": "普通攻击召唤爆虫",
+      "full": "每第3次普通攻击会召唤一只爆虫向目标发动攻击。\n\n被动：获得 20%攻击速度加成。"
+    },
+    {
+      "nameId": "ZagaraPackInstinct",
+      "buttonId": "ZagaraPackInstinct",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zagara_hunterkiller.png",
+      "sort": 4,
+      "name": "群集本能",
+      "short": "提高对屠猎者目标造成的伤害",
+      "full": "扎加拉和她的召唤物对2秒内被屠猎者攻击过的敌人额外造成20%的伤害。"
+    }
+  ]
+}

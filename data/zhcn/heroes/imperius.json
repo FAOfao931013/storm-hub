@@ -1,0 +1,305 @@
+{
+  "shortName": "imperius",
+  "heroName": "Imperius",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "ImperiusValorousBrand",
+      "buttonId": "ImperiusValorousBrand",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_imperius_trait.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "英勇烙印",
+      "short": "基本技能标记敌方英雄，提高普通攻击伤害并给予治疗。",
+      "full": "每个基本技能都可以标记敌方英雄，持续10秒。对目标进行普通攻击可以消耗标记，每个标记造成20%的额外伤害，并恢复自己75(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "ImperiusCelestialCharge",
+      "buttonId": "ImperiusCelestialCharge",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_imperius_q.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "天界冲锋",
+      "short": "向前突刺并击晕敌人",
+      "full": "朝目标方向突刺，造成35(+4%每级)点伤害。如果击中敌方英雄，则持续引导使其昏迷1秒，并在引导结束时造成80(+4%每级)点额外伤害。"
+    },
+    {
+      "nameId": "ImperiusSolarionsFire",
+      "buttonId": "ImperiusSolarionsFire",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_imperius_w.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "索拉里昂之焰",
+      "short": "对一条直线上的敌人造成伤害，并使其减速",
+      "full": "释放一道火焰波，造成110(+4%每级)点伤害。火焰波中心击中的敌人受到50%额外伤害并且减速40%，持续3秒。"
+    },
+    {
+      "nameId": "ImperiusMoltenArmor",
+      "buttonId": "ImperiusMoltenArmor",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_imperius_e.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "熔火战甲",
+      "short": "灼烧周围的敌人",
+      "full": "用火焰包裹英普瑞斯，持续3秒，每0.25秒对附近的一名敌人造成19(+4%每级)点伤害。英普瑞斯恢复相当于该技能伤害50%的生命值，对英雄造成伤害时，此效果提高至100%。范围内不存在英雄时可以打击2个额外目标。"
+    },
+    {
+      "nameId": "ImperiusAngelicArmaments",
+      "buttonId": "ImperiusAngelicArmaments",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_imperius_r1.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "天堂神兵",
+      "short": "获得大量护盾，重新激活可输出伤害",
+      "full": "召唤数把燃烧的飞剑在身边环绕，获得850(+4%每级)点护盾，持续3秒。\n\n如果护盾在持续时间内未被打破，可以在5秒内再次激活该技能，朝目标区域发射6把飞剑，每把飞剑对击中的第一个敌人造成140(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "ImperiusWrathOfTheAngiris",
+      "buttonId": "ImperiusWrathOfTheAngiris",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_imperius_r2.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "大天使之怒",
+      "short": "带一名敌人上天",
+      "full": "在0.75秒后，朝目标方向冲锋并抓住击中的第一个敌方英雄，将其带上高空。升空后，英普瑞斯可以移动来改变降落位置。\n\n在2秒后，将目标重重砸向地面，造成250(+4%每级)点伤害和1秒的昏迷。落地时目标身上的每个英勇烙印使伤害提高20%。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ImperiusCelestialChargeImpalingLight",
+      "buttonId": "ImperiusCelestialChargeImpalingLight",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_imperius_q.png",
+      "sort": 1,
+      "name": "穿刺之光",
+      "short": "英勇烙印强化天界冲锋",
+      "full": "天界冲锋对英雄造成的伤害提高180%，每额外击中一个敌方英雄降低20%。当天界冲锋对目标造成的昏迷时间结束时，其拥有的每一层英勇烙印都会使该技能的冷却时间缩短1秒。\n\n被动：天界冲锋的冷却时间缩短2秒，法力消耗从40点降低至30点。"
+    },
+    {
+      "nameId": "ImperiusSolarionsFireConsumingFlame",
+      "buttonId": "ImperiusSolarionsFireConsumingFlame",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_imperius_w.png",
+      "sort": 2,
+      "name": "噬体烈焰",
+      "short": "提高索拉里昂之焰的减速效果和中心伤害",
+      "full": "索拉里昂之焰的中心伤害额外提高125%，并且减速效果提高15%。索拉里昂之焰击中第一名敌方英雄可恢复30点法力值。"
+    },
+    {
+      "nameId": "ImperiusValorousBrandBurnTheImpure",
+      "buttonId": "ImperiusValorousBrandBurnTheImpure",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_imperius_trait.png",
+      "sort": 3,
+      "name": "净化不洁者",
+      "short": "英勇烙印标记造成额外伤害",
+      "full": "消耗一个英勇烙印的标记可造成相当于英雄最大生命值2.5%的额外伤害。"
+    },
+    {
+      "nameId": "ImperiusMoltenArmorSovereignArmor",
+      "buttonId": "ImperiusMoltenArmorSovereignArmor",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_imperius_e.png",
+      "sort": 1,
+      "name": "君王护甲",
+      "short": "熔火战甲提供护甲",
+      "full": "熔火战甲给予20点护甲，持续1.5秒。使用熔火战甲对敌方英雄造成伤害可使该护甲的持续时间延长0.5秒。"
+    },
+    {
+      "nameId": "ImperiusValorousBrandBattleHunger",
+      "buttonId": "ImperiusValorousBrandBattleHunger",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_imperius_trait.png",
+      "sort": 2,
+      "name": "战斗饥渴",
+      "short": "提高英勇烙印的治疗",
+      "full": "英勇烙印的治疗效果提高80%。"
+    },
+    {
+      "nameId": "ImperiusPressForward",
+      "buttonId": "ImperiusPressForward",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_imperius_globe.png",
+      "sort": 3,
+      "name": "勇往直前",
+      "short": "对英雄造成伤害可刷新恢复之球",
+      "full": "在被恢复之球治疗时，获得10点护甲。对敌方英雄造成伤害可以将英普瑞斯身上激活的恢复之球持续时间设为8秒（除非已有持续更久的效果）。"
+    },
+    {
+      "nameId": "ImperiusCelestialChargeFlashOfAnger",
+      "buttonId": "ImperiusCelestialChargeFlashOfAnger",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_imperius_q.png",
+      "sort": 1,
+      "name": "怒火闪耀",
+      "short": "天界冲锋标记一个区域并造成伤害",
+      "full": "消耗一层天界冲锋的标记可对目标及其周围造成150(+4%每级)点伤害，并给予英普瑞斯250(+4%每级)点护盾，持续4秒。"
+    },
+    {
+      "nameId": "ImperiusSolarionsFireBlazeOfGlory",
+      "buttonId": "ImperiusSolarionsFireBlazeOfGlory",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_imperius_w.png",
+      "sort": 2,
+      "name": "炽燃荣耀",
+      "short": "索拉里昂之焰在短暂延迟后爆炸",
+      "full": "索拉里昂之焰会在中心留下一道焦土，在1.75秒后发生爆炸，造成205(+4%每级)点伤害，对带有英勇烙印标记的目标造成额外伤害。"
+    },
+    {
+      "nameId": "ImperiusHolyFervor",
+      "buttonId": "ImperiusHolyFervor",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_imperius_item_01.png",
+      "sort": 3,
+      "name": "神圣狂热",
+      "short": "激活后普通攻击可顺劈",
+      "full": "在激活后的10秒内，下4次普通攻击变成顺劈，造成30%的额外伤害。"
+    },
+    {
+      "nameId": "ImperiusAngelicArmaments",
+      "buttonId": "ImperiusAngelicArmaments",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_imperius_r1.png",
+      "sort": 1,
+      "name": "天堂神兵",
+      "short": "获得大量护盾，重新激活可输出伤害",
+      "full": "召唤数把燃烧的飞剑在身边环绕，获得850(+4%每级)点护盾，持续3秒。\n\n如果护盾在持续时间内未被打破，可以在5秒内再次激活该技能，朝目标区域发射6把飞剑，每把飞剑对击中的第一个敌人造成140(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "ImperiusWrathOfTheAngiris",
+      "buttonId": "ImperiusWrathOfTheAngiris",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_imperius_r2.png",
+      "sort": 2,
+      "name": "大天使之怒",
+      "short": "带一名敌人上天",
+      "full": "在0.75秒后，朝目标方向冲锋并抓住击中的第一个敌方英雄，将其带上高空。升空后，英普瑞斯可以移动来改变降落位置。\n\n在2秒后，将目标重重砸向地面，造成250(+4%每级)点伤害和1秒的昏迷。落地时目标身上的每个英勇烙印使伤害提高20%。"
+    },
+    {
+      "nameId": "ImperiusCelestialChargePatheticMortals",
+      "buttonId": "ImperiusCelestialChargePatheticMortals",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_imperius_q.png",
+      "sort": 1,
+      "name": "可悲凡众",
+      "short": "天界冲锋减速敌人并降低敌方伤害",
+      "full": "天界冲锋使敌方英雄昏迷且移动速度降低25%，造成伤害降低50%，持续4秒。"
+    },
+    {
+      "nameId": "ImperiusMoltenArmorDivineRage",
+      "buttonId": "ImperiusMoltenArmorDivineRage",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_imperius_e.png",
+      "sort": 2,
+      "name": "神怒",
+      "short": "英勇烙印缩短熔火战甲的冷却时间",
+      "full": "消耗一层英勇烙印可使熔火战甲的冷却时间减少1秒。"
+    },
+    {
+      "nameId": "ImperiusMoltenArmorHeatOfBattle",
+      "buttonId": "ImperiusMoltenArmorHeatOfBattle",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_imperius_e_alt_01.png",
+      "sort": 3,
+      "name": "越战越勇",
+      "short": "对英雄造成伤害时，熔火战甲的治疗提高",
+      "full": "英普瑞斯每损失1%的生命值，熔火战甲对英雄造成伤害时的治疗效果便提高2%。"
+    },
+    {
+      "nameId": "ImperiusCelestialChargeCelestialSwiftness",
+      "buttonId": "ImperiusCelestialSwiftness",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_imperius_q.png",
+      "sort": 1,
+      "name": "天界迅捷",
+      "short": "天界冲锋提高攻击速度和移动速度",
+      "full": "施放天界冲锋后，移动速度提高20%，持续5秒。天界冲锋每击晕一名英雄，攻击速度便提高40%，持续5秒。"
+    },
+    {
+      "nameId": "ImperiusMoltenArmorMeltingTouch",
+      "buttonId": "ImperiusMoltenArmorMeltingTouch",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_imperius_e.png",
+      "sort": 2,
+      "name": "熔火之触",
+      "short": "熔火战甲的标记可降低护甲",
+      "full": "消耗一层熔火战甲的标记可使目标的护甲降低25点，持续4秒。"
+    },
+    {
+      "nameId": "ImperiusValorousPursuit",
+      "buttonId": "ImperiusValorousPursuit",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_imperius_item_03.png",
+      "sort": 3,
+      "name": "英勇追击",
+      "short": "传送到英勇烙印标记的敌人身边",
+      "full": "激活以传送到一名被英勇烙印标记的敌人身边，并获得25点护甲，持续3秒。"
+    },
+    {
+      "nameId": "ImperiusAngelicArmamentsHeavenlyHost",
+      "buttonId": "ImperiusAngelicArmamentsHeavenlyHost",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_imperius_r1.png",
+      "sort": 1,
+      "name": "天使军团",
+      "short": "友方英雄获得一个武装护盾",
+      "full": "天堂神兵提供的护盾不再消失，初始激活时，附近友方英雄会获得吸收600(+4%每级)点伤害的护盾。\n\n如果友方英雄获得的护盾持续了3秒，它会朝最近的敌人发射1把飞剑，优先以最近的英雄为目标，造成140(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "ImperiusWrathOfTheAngirisUnrelentingDescent",
+      "buttonId": "ImperiusWrathOfTheAngirisUnrelentingDescent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_imperius_r2.png",
+      "sort": 2,
+      "name": "神罚天降",
+      "short": "大天使之怒获得治疗，减少冷却时间",
+      "full": "从天堂降落时为英普瑞斯恢复30%的最大生命值和法力值。消耗一层英勇烙印可使大天使之怒的冷却时间减少10秒。"
+    },
+    {
+      "nameId": "ImperiusMoltenWrath",
+      "buttonId": "ImperiusMoltenWrath",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_imperius_e.png",
+      "sort": 3,
+      "name": "熔火狂怒",
+      "short": "熔火战甲总是命中额外目标",
+      "full": "即使范围内存在英雄，熔火战甲总是打击2个额外目标。"
+    },
+    {
+      "nameId": "ImperiusValorousBrandBrandOfSolarion",
+      "buttonId": "ImperiusValorousBrandBrandOfSolarion",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_imperius_trait.png",
+      "sort": 4,
+      "name": "索拉里昂烙印",
+      "short": "不再消耗英勇烙印",
+      "full": "使英勇烙印触发时不再会被消耗掉，但持续时间缩短至5秒。"
+    },
+    {
+      "nameId": "ImperiusImpervious",
+      "buttonId": "ImperiusImpervious",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_imperius_item_02.png",
+      "sort": 5,
+      "name": "不动如山",
+      "short": "激活后变得不可阻挡，并获得法术护甲",
+      "full": "激活后变得不可阻挡，并获得75点法术护甲，持续3秒。 索拉里昂之焰的中心命中英雄可以使该技能的冷却时间缩短5秒。"
+    }
+  ]
+}

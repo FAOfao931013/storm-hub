@@ -1,0 +1,295 @@
+{
+  "shortName": "lucio",
+  "heroName": "Lucio",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "LucioPushOff",
+      "buttonId": "LucioPushOff",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lucio_accelerando.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "反冲",
+      "short": "从墙上反冲下来以减速敌人",
+      "full": "在地形表面移动时，激活此技能以滑向目标位置。被击中的敌人受到100(+4%每级)点伤害并减速75%，持续1秒。"
+    },
+    {
+      "nameId": "LucioSoundwave",
+      "buttonId": "LucioSoundwave",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lucio_soundwave.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "音波",
+      "short": "击退附近的敌人",
+      "full": "对范围内敌人造成105(+4%每级)点伤害，并将其击退。"
+    },
+    {
+      "nameId": "LucioCrossfade",
+      "buttonId": "LucioCrossfadeActivateHealingBoost",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lucio_crossfadehealing.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "切歌",
+      "short": "播放治愈音效或加速音效",
+      "full": "目前正在播放加速音效，使卢西奥和附近友方英雄的移动速度提高10%。\n\n切换后播放治愈音效。"
+    },
+    {
+      "nameId": "LucioAmpItUp",
+      "buttonId": "LucioAmpItUp",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lucio_ampitup.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "强音",
+      "short": "强化卢西奥切歌的效果",
+      "full": "提高卢西奥的切歌音量，持续3秒，治愈音效的治疗效果提高至每秒112(+4%每级)点生命值，加速音效的移动速度加成提高至30%。"
+    },
+    {
+      "nameId": "LucioSoundBarrier",
+      "buttonId": "LucioSoundBarrier",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lucio_soundbarrier.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "音障",
+      "short": "使附近盟友获得护盾",
+      "full": "1秒后，卢西奥和附近友方英雄获得1296(+4%每级)点护盾，会在6秒内快速递减。"
+    },
+    {
+      "nameId": "LucioHighFive",
+      "buttonId": "LucioHighFive",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lucio_highfive.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "击掌",
+      "short": "滑向盟友，给予治疗和不可阻挡",
+      "full": "快速滑向一名友方英雄，到达时为其恢复230(+4%每级)点生命值，卢西奥恢复80(+4%每级)点生命值。双方获得不可阻挡，持续1秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "LucioCrossfadePartyMixQuest",
+      "buttonId": "LucioCrossfadePartyMix",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lucio_crossfade_all.png",
+      "sort": 1,
+      "name": "混音派对",
+      "short": "任务：提高切歌范围和最大法力值",
+      "full": "任务：为附近盟友播放卢西奥的切歌。多个盟友提供额外的时间。\n\n奖励：每播放1分钟的切歌，卢西奥的最大法力值永久提高10点。\n奖励：当你播放切歌的时间达到8分钟或以上时，切歌的范围永久扩大20%。"
+    },
+    {
+      "nameId": "LucioWallRideAccelerando",
+      "buttonId": "LucioWallRideAccelerando",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_lucio_wallride.png",
+      "sort": 2,
+      "name": "墙面快步",
+      "short": "滑墙渐渐提高移动速度",
+      "full": "卢西奥保持滑墙效果时，其移动速度加成在6秒内逐渐提高至40%。"
+    },
+    {
+      "nameId": "LucioPassiveSmoothMoves",
+      "buttonId": "LucioPassiveSmoothMoves",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_lucio_wallride_a.png",
+      "sort": 3,
+      "name": "行云流水",
+      "short": "滑墙时的普通攻击可治疗",
+      "full": "滑墙激活时，普攻攻击可恢复相当于所造成伤害30%的生命值，并恢复0.5点法力值。\n\n被动：滑墙的持续时间提高1秒。"
+    },
+    {
+      "nameId": "LucioSoundwaveSubwoofer",
+      "buttonId": "LucioSoundwaveSubwoofer",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lucio_soundwave.png",
+      "sort": 1,
+      "name": "重低音",
+      "short": "任务：强化音波",
+      "full": "在音波前半范围内的敌人被击退的距离提高75%。\n\n任务：使用音波一次击中3名敌方英雄。\n\n奖励：音波的弧度提高50%，半径提高20%。"
+    },
+    {
+      "nameId": "LucioSoundwaveOffTheWall",
+      "buttonId": "LucioSoundwaveOffTheWall",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lucio_soundwave_a.png",
+      "sort": 2,
+      "name": "即兴表演",
+      "short": "滑墙时音波命中敌人可以缩短冷却时间",
+      "full": "滑墙激活时使用音波击中敌人，其冷却时间缩短至5秒，并返还15点法力值。"
+    },
+    {
+      "nameId": "LucioPushOffSupersonic",
+      "buttonId": "LucioPushOffSupersonic",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lucio_accelerando.png",
+      "sort": 3,
+      "name": "超强音障",
+      "short": "滑墙加快反冲的冷却速度",
+      "full": "滑墙激活时，反冲的冷却速度加快100%。"
+    },
+    {
+      "nameId": "LucioSoundwaveGoodVibrations",
+      "buttonId": "LucioSoundwaveGoodVibrations",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lucio_soundwave.png",
+      "sort": 1,
+      "name": "良性振动",
+      "short": "音波给予护盾",
+      "full": "音波击中敌人可使卢西奥获得38(+4%每级)点护盾，持续8秒。击中敌方英雄可给予3倍的护盾量。"
+    },
+    {
+      "nameId": "LucioReverseAmp",
+      "buttonId": "LucioReverseAmp",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lucio_crossfade_all.png",
+      "sort": 2,
+      "name": "刺耳强音",
+      "short": "强音可以用切歌冲击敌方英雄",
+      "full": "用卢西奥当前切歌播放的音轨冲击敌方英雄。强音激活时，治愈音效每秒造成50(+4%每级)点伤害，加速音效使其移动速度降低20%。\n\n该技能不受切歌天赋影响。"
+    },
+    {
+      "nameId": "LucioBoombox",
+      "buttonId": "LucioBoomboxBoombox",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_lucio_fineshrine.png",
+      "sort": 3,
+      "name": "立体音箱",
+      "short": "放下一个播放切歌的立体音箱",
+      "full": "放下一个播放卢西奥激活的切歌立体音箱。其音量受强音加成。立体音箱附近的友方英雄获得5点护甲加成。\n\n切歌效果不会叠加。"
+    },
+    {
+      "nameId": "LucioSoundBarrier",
+      "buttonId": "LucioSoundBarrier",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lucio_soundbarrier.png",
+      "sort": 1,
+      "name": "音障",
+      "short": "使附近盟友获得护盾",
+      "full": "1秒后，卢西奥和附近友方英雄获得1296(+4%每级)点护盾，会在6秒内快速递减。"
+    },
+    {
+      "nameId": "LucioHighFive",
+      "buttonId": "LucioHighFive",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lucio_highfive.png",
+      "sort": 2,
+      "name": "击掌",
+      "short": "滑向盟友，给予治疗和不可阻挡",
+      "full": "快速滑向一名友方英雄，到达时为其恢复230(+4%每级)点生命值，卢西奥恢复80(+4%每级)点生命值。双方获得不可阻挡，持续1秒。"
+    },
+    {
+      "nameId": "LucioCrossfadeAllTogetherTalent",
+      "buttonId": "LucioCrossfadeAllTogether",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lucio_crossfade_all.png",
+      "sort": 1,
+      "name": "一起嗨",
+      "short": "周围有盟友可提高移动速度",
+      "full": "每有一个盟友受到切歌的影响，卢西奥就可以获得5%的移动速度。此加成可以与其他移动速度加成叠加。"
+    },
+    {
+      "nameId": "LucioPushOffHeavyCasters",
+      "buttonId": "LucioPushOffHeavyCasters",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lucio_accelerando.png",
+      "sort": 2,
+      "name": "重型脚轮",
+      "short": "反冲使击中的第一个英雄昏迷",
+      "full": "反冲不再使击中的第一个英雄减速，但会使其昏迷0.5秒。"
+    },
+    {
+      "nameId": "LucioWallRideSlip",
+      "buttonId": "LucioWallRideSlip",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_lucio_wallride.png",
+      "sort": 3,
+      "name": "滑行",
+      "short": "滑墙期间获得护甲和移动速度",
+      "full": "在滑墙效果期间从敌方英雄附近穿过可以使该技能的移动速度加成提高至40%并获得15点护甲加成，持续1秒。"
+    },
+    {
+      "nameId": "LucioAmpItUpRejuvenescencia",
+      "buttonId": "LucioAmpItUpRejuvenescencia",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lucio_ampitup.png",
+      "sort": 1,
+      "name": "新生",
+      "short": "治愈音效按百分比恢复生命值",
+      "full": "强音激活时，切歌的治愈音效每秒额外恢复目标2.5%的最大生命值。"
+    },
+    {
+      "nameId": "LucioAmpItUpUpTheFrequency",
+      "buttonId": "LucioAmpItUpUpTheFrequency",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lucio_ampitup_b.png",
+      "sort": 2,
+      "name": "频率加快",
+      "short": "普通攻击减少强音的冷却时间",
+      "full": "对敌方英雄造成普通攻击伤害可使强音的冷却时间减少0.3秒。\n\n被动：滑墙时普通攻击的射程提高2.2码。"
+    },
+    {
+      "nameId": "LucioAmpItUpUpToEleven",
+      "buttonId": "LucioAmpItUpUpToEleven",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lucio_ampitup_a.png",
+      "sort": 3,
+      "name": "音量爆表",
+      "short": "延长强音的持续时间",
+      "full": "使用音波或反冲击中敌人会延长强音的持续时间。\n\n音波可延长0.25秒，反冲可延长0.5秒。如果未激活强音，这些加成将在下一次激活时生效，最多1.5秒。\n\n被动：使强音的持续时间延长1秒。"
+    },
+    {
+      "nameId": "LucioSoundBarrierBossaNova",
+      "buttonId": "LucioSoundBarrierBossaNova",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lucio_soundbarrier.png",
+      "sort": 1,
+      "name": "波萨诺瓦",
+      "short": "缩短音障的冷却时间和持续时间",
+      "full": "使音障的冷却时间缩短至30秒，但护盾现在会在4秒内递减。"
+    },
+    {
+      "nameId": "LucioCrossfadeMixingFire",
+      "buttonId": "LucioHighFiveMixingFire",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lucio_highfive.png",
+      "sort": 2,
+      "name": "混音火力",
+      "short": "击掌对敌造成伤害，并降低其受到的治疗",
+      "full": "你现在可以对敌方英雄使用击掌，造成160(+4%每级)点伤害并使其受到的治疗降低50%，持续3秒。\n\n被动：击掌的消耗和冷却时间减少30%。"
+    },
+    {
+      "nameId": "LucioPassiveHouseParty",
+      "buttonId": "LucioPassiveHouseParty",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lucio_crossfade_all.png",
+      "sort": 3,
+      "name": "家庭派对",
+      "short": "周围有盟友可提高治疗",
+      "full": "切歌每影响到一名盟友，卢西奥的治疗效果就能提高8%。"
+    },
+    {
+      "nameId": "LucioItemSummerAnthem",
+      "buttonId": "LucioItemSummerAnthem",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_lucio_crossfade_a.png",
+      "sort": 4,
+      "name": "夏日圣歌",
+      "short": "激活后使切歌获得无法击杀效果",
+      "full": "激活后，受到切歌影响的其他友方英雄变得无法击杀，持续1.5秒。"
+    }
+  ]
+}

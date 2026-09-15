@@ -1,0 +1,295 @@
+{
+  "shortName": "thebutcher",
+  "heroName": "Butcher",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "ButcherFreshMeatDummy",
+      "buttonId": "ButcherFreshMeat",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_butcher_freshmeat.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "新鲜的肉",
+      "short": "杀死敌人收集新鲜的肉可以获得力量",
+      "full": "附近小兵死亡后掉落1块新鲜的肉，英雄死亡后掉落20块新鲜的肉。每拾取一块新鲜的肉使你获得0.5点攻击伤害。死亡后失去15块新鲜的肉。\n\n任务：收集200块新鲜的肉。\n\n奖励：获得额外125点攻击伤害和25%的攻击速度。英雄掉落10块新鲜的肉，小兵不再掉落新鲜的肉，死亡后不再失去新鲜的肉。"
+    },
+    {
+      "nameId": "ButcherHamstring",
+      "buttonId": "ButcherHamstring",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_butcher_hamstring.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "断筋打击",
+      "short": "对范围内的敌人造成伤害并使其减速",
+      "full": "造成110(+4%每级)点伤害并使敌人减速50%。减速效果会在2秒内递减。屠夫会立即发动下一次普通攻击。"
+    },
+    {
+      "nameId": "ButcherButchersBrand",
+      "buttonId": "ButcherButchersBrand",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_butcher_tenderize.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "屠夫烙印",
+      "short": "在一名敌人身上打下烙印，获得生命窃取效果",
+      "full": "对敌人造成37(+4%每级)点伤害，并在其身上打下烙印，持续4秒。屠夫对被烙印目标的普通攻击为其恢复相当于伤害75%的生命值。\n\n对被烙印英雄的普通攻击产生两倍的治疗，并使烙印的持续时间延长0.5秒。"
+    },
+    {
+      "nameId": "ButcherRuthlessOnslaught",
+      "buttonId": "ButcherRuthlessOnslaught",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_butcher_fullboar.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "赶尽杀绝",
+      "short": "冲向一个敌人，使其昏迷并造成伤害",
+      "full": "向一名敌人冲锋，移动速度提高并变得不可阻挡。如果屠夫撞到目标，目标将会昏迷1秒并受到119(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "ButcherFurnaceBlast",
+      "buttonId": "ButcherFurnaceBlast",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_butcher_furnaceblast.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "焚炉冲击",
+      "short": "几秒后对屠夫附近的敌人造成伤害",
+      "full": "3秒延迟后，屠夫周围将爆发出烈焰，对敌人造成500(+4%每级)点伤害。\n\n可以在使用赶尽杀绝时施放。"
+    },
+    {
+      "nameId": "ButcherLambToTheSlaughter",
+      "buttonId": "ButcherLambToTheSlaughter",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_butcher_lambtotheslaughter.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "待宰羔羊",
+      "short": "将一名敌方英雄锁在柱子边上",
+      "full": "扔出一根栓马柱，在1秒后锁住最近的敌方英雄，造成171(+4%每级)点伤害并使敌人在3秒内沉默并锁在柱子附近。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ButcherMasteryHamstringInvigoration",
+      "buttonId": "ButcherHamstringInvigorationTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_butcher_hamstring.png",
+      "sort": 1,
+      "name": "精力充沛",
+      "short": "降低断筋打击的法力消耗和冷却时间",
+      "full": "如果断筋打击命中一名英雄，一半的法力消耗将会返还而且冷却时间也会降低1秒。"
+    },
+    {
+      "nameId": "ButcherMasteryHamstringChopMeat",
+      "buttonId": "ButcherHamstringChopMeatTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_butcher_hamstring_var1.png",
+      "sort": 2,
+      "name": "剁肉",
+      "short": "提高断筋打击对非英雄单位的伤害",
+      "full": "断筋打击对小兵、雇佣兵和怪物造成100%的额外伤害."
+    },
+    {
+      "nameId": "GenericTalentBlock",
+      "buttonId": "GenericBlockTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_block.png",
+      "sort": 3,
+      "name": "格挡",
+      "short": "周期性提供物理护甲",
+      "full": "每隔5秒，获得75点物理护甲，抵御下一次敌方英雄的普通攻击，使受到的伤害降低75%。\n\n最多储存2次使用次数。"
+    },
+    {
+      "nameId": "ButcherMasteryHamstringFlailAxe",
+      "buttonId": "ButcherHamstringFlailAxeTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_butcher_hamstring.png",
+      "sort": 1,
+      "name": "连枷斧",
+      "short": "断筋打击的距离增加",
+      "full": "断筋打击的距离增加40%。"
+    },
+    {
+      "nameId": "ButcherMasteryHamstringCheapShot",
+      "buttonId": "ButcherHamstringCheapShotTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_butcher_hamstring_var1.png",
+      "sort": 2,
+      "name": "卑鄙偷袭",
+      "short": "提高断筋打击对受到控制效果的目标的伤害",
+      "full": "断筋打击对受到减速、定身、昏迷效果影响的目标造成100%的额外伤害。"
+    },
+    {
+      "nameId": "ButcherMasteryRuthlessOnslaughtUnrelentingPursuit",
+      "buttonId": "ButcherRuthlessOnslaughtUnrelentingPursuitTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_butcher_fullboar.png",
+      "sort": 3,
+      "name": "无情追击",
+      "short": "赶尽杀绝命中时缩短冷却时间",
+      "full": "赶尽杀绝命中目标时冷却时间缩短33%。"
+    },
+    {
+      "nameId": "ButcherMasteryButchersBrandInsatiableBlade",
+      "buttonId": "ButcherButchersBrandInsatiableBladeTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_butcher_tenderize.png",
+      "sort": 1,
+      "name": "嗜血狂刀",
+      "short": "敌人被烙印时提高屠夫的移动速度",
+      "full": "面对被烙印的目标时，屠夫的移动速度提高25%。"
+    },
+    {
+      "nameId": "ButcherMeatShield",
+      "buttonId": "ButcherMeatShield",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_butcher_fullboar.png",
+      "sort": 2,
+      "name": "血肉之盾",
+      "short": "赶尽杀绝提供法术护甲",
+      "full": "赶尽杀绝击中敌方英雄时，屠夫获得50点法术护甲，使受到的技能伤害降低50%，持续2.5秒。"
+    },
+    {
+      "nameId": "ButcherMasteryFreshMeatVictuals",
+      "buttonId": "ButcherFreshMeatVictualsTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_butcher_freshmeat.png",
+      "sort": 3,
+      "name": "吃肉补肉",
+      "short": "附近死亡的小兵提供治疗",
+      "full": "每当附近有敌方小兵死亡，屠夫恢复5%的最大生命值。"
+    },
+    {
+      "nameId": "ButcherHeroicAbilityButcherFurnaceBlast",
+      "buttonId": "ButcherFurnaceBlast",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_butcher_furnaceblast.png",
+      "sort": 1,
+      "name": "焚炉冲击",
+      "short": "几秒后对屠夫附近的敌人造成伤害",
+      "full": "3秒延迟后，屠夫周围将爆发出烈焰，对敌人造成500(+4%每级)点伤害。\n\n可以在使用赶尽杀绝时施放。"
+    },
+    {
+      "nameId": "ButcherHeroicAbilityLambToTheSlaughter",
+      "buttonId": "ButcherLambToTheSlaughter",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_butcher_lambtotheslaughter.png",
+      "sort": 2,
+      "name": "待宰羔羊",
+      "short": "将一名敌方英雄锁在柱子边上",
+      "full": "扔出一根栓马柱，在1秒后锁住最近的敌方英雄，造成171(+4%每级)点伤害并使敌人在3秒内沉默并锁在柱子附近。"
+    },
+    {
+      "nameId": "ButcherMasteryHamstringBrutalStrike",
+      "buttonId": "ButcherHamstringBrutalStrikeTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_butcher_hamstring.png",
+      "sort": 1,
+      "name": "残忍打击",
+      "short": "断筋打击强化普通攻击",
+      "full": "使用断筋打击后，屠夫在5秒内的下3次普通攻击造成15%的额外伤害。"
+    },
+    {
+      "nameId": "ButcherMasteryRuthlessOnslaughtSavageCharge",
+      "buttonId": "ButcherRuthlessOnslaughtSavageChargeTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_butcher_fullboar.png",
+      "sort": 2,
+      "name": "野蛮冲撞",
+      "short": "赶尽杀绝造成额外伤害",
+      "full": "赶尽杀绝可以对英雄造成相当于其最大生命值10%的额外伤害。"
+    },
+    {
+      "nameId": "ButcherCleaver",
+      "buttonId": "ButcherCleaver",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_aoe.png",
+      "sort": 3,
+      "name": "劈肉斧",
+      "short": "普通攻击造成范围伤害",
+      "full": "普通攻击对目标周围的敌人造成相当于屠夫普通攻击伤害35%的伤害。"
+    },
+    {
+      "nameId": "ButcherMasteryHamstringCripplingSlam",
+      "buttonId": "ButcherHamstringCripplingSlamTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_butcher_hamstring.png",
+      "sort": 1,
+      "name": "致残猛劈",
+      "short": "断筋打击的减速效果不再递减且持续更久",
+      "full": "断筋打击的减速效果现在不再递减，且持续时间延长30%。"
+    },
+    {
+      "nameId": "ButcherTalentEnraged",
+      "buttonId": "ButcherEnragedTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_butcher_enraged.png",
+      "sort": 2,
+      "name": "激怒",
+      "short": "生命值较低时获得攻击速度和护甲",
+      "full": "生命值低于50%时，受到伤害使屠夫变为激怒状态，持续10秒，攻击速度提高40%，并提高25点护甲，使受到的伤害降低25%。\n\n该效果有25秒的冷却时间。"
+    },
+    {
+      "nameId": "ButcherMasteryFreshMeatBloodFrenzy",
+      "buttonId": "ButcherFreshBloodFrenzyMeatTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_speed.png",
+      "sort": 3,
+      "name": "血性狂乱",
+      "short": "普通攻击提高攻击速度和移动速度",
+      "full": "对敌方英雄的普通攻击使你的攻击速度和移动速度提高5%，持续3秒，最多提高25%。"
+    },
+    {
+      "nameId": "ButcherMasteryFiresofHell",
+      "buttonId": "ButcherFurnaceBlastFiresofHellTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_butcher_furnaceblast.png",
+      "sort": 1,
+      "name": "地狱烈焰",
+      "short": "焚炉冲击将爆炸两次",
+      "full": "焚炉冲击将在初始爆炸3秒后再次爆炸。"
+    },
+    {
+      "nameId": "ButcherMasterySlaughterhouse",
+      "buttonId": "ButcherLambToTheSlaughterSlaughterhouseTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_butcher_lambtotheslaughter.png",
+      "sort": 2,
+      "name": "屠宰场",
+      "short": "待宰羔羊可以锁住所有敌方英雄",
+      "full": "待宰羔羊现在会把范围内的所有敌方英雄锁住。"
+    },
+    {
+      "nameId": "GenericTalentNexusBlades",
+      "buttonId": "NexusBladesTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_slow.png",
+      "sort": 3,
+      "name": "时空利刃",
+      "short": "普通攻击造成更高伤害并带有减速效果",
+      "full": "普通攻击造成的伤害提高20%，并使目标减速20%，持续1秒。"
+    },
+    {
+      "nameId": "GenericTalentFlashoftheStorms",
+      "buttonId": "GenericBoltoftheStormTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_boltofthestorm.png",
+      "sort": 4,
+      "name": "风暴转移",
+      "short": "激活后传送一小段距离",
+      "full": "激活后传送到附近区域。"
+    }
+  ]
+}

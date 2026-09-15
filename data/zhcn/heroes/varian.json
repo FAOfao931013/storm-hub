@@ -1,0 +1,316 @@
+{
+  "shortName": "varian",
+  "heroName": "Varian",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "VarianHeroicStrike",
+      "buttonId": "VarianHeroicStrike",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_varian_heroicstrike.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "英勇打击",
+      "short": "下一次普通攻击造成额外伤害",
+      "full": "每隔18秒，瓦里安的下一次普通攻击造成125(+4%每级)点额外法术伤害。普通攻击使该效果的冷却时间缩短3秒。"
+    },
+    {
+      "nameId": "VarianLionsFang",
+      "buttonId": "VarianLionsFang",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_varian_lionsfang.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "雄狮之牙",
+      "short": "对一条直线上的敌人造成伤害并减速，同时治疗瓦里安",
+      "full": "制造一道震荡波沿直线前进，对敌人造成150(+4%每级)点伤害，并使其减速35%，持续1.5秒。每击中一名敌人治疗瓦里安35(+4%每级)点生命，击中英雄提高至140(+4%每级)点生命。"
+    },
+    {
+      "nameId": "VarianParry",
+      "buttonId": "VarianParry",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_varian_parry.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "招架",
+      "short": "格挡短时间内的普通攻击",
+      "full": "招架所有普通攻击，持续1.25秒，使其伤害降低100%。\n\n最多储存2次使用次数。"
+    },
+    {
+      "nameId": "VarianCharge",
+      "buttonId": "VarianCharge",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_varian_charge.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "冲锋",
+      "short": "向一名敌人冲锋，并对其造成伤害",
+      "full": "向目标敌人冲锋，造成50(+4%每级)点伤害，并使其减速75%，持续1秒。"
+    },
+    {
+      "nameId": "VarianTaunt",
+      "buttonId": "VarianTaunt",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_varian_taunt.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "嘲讽",
+      "short": "提高生命值\n强迫一名英雄攻击瓦里安",
+      "full": "沉默目标英雄并强迫他们攻击瓦里安，持续1.25秒。\n\n被动：最大生命值和生命恢复速度提高40%。"
+    },
+    {
+      "nameId": "VarianColossusSmash",
+      "buttonId": "VarianColossusSmash",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_varian_colossus_smash.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "巨人打击",
+      "short": "提高伤害，但降低生命值\n重击敌人，降低其护甲",
+      "full": "重击目标敌人，造成185(+4%每级)点伤害，并降低其25点护甲，持续3秒，使其受到的伤害提高25%。\n\n被动：普通攻击伤害提高100%。\n被动：最大生命值和生命回复速度降低10%。"
+    },
+    {
+      "nameId": "VarianTwinBladesOfFury",
+      "buttonId": "VarianTwinBladesOfFury",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_varian_twinbladesoffury.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "愤怒双刃",
+      "short": "提高攻击速度，但降低伤害\n普通攻击缩短英勇打击的冷却时间",
+      "full": "普通攻击使英勇打击的冷却时间缩短9秒，并使瓦里安的移动速度提高30%，持续2秒。\n\n被动：攻击速度提高100%。\n被动：普通攻击伤害降低25%。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "VarianLionsFangLionsMawQuest",
+      "buttonId": "VarianLionsFangLionsMawQuest",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_varian_lionsfang.png",
+      "sort": 1,
+      "name": "雄狮之爪",
+      "short": "任务：击中英雄来强化雄狮之牙",
+      "full": "任务：雄狮之牙每次击中一个英雄，伤害就会提高7点，最多提高175点。\n\n奖励：击中25个英雄后，减速效果提高至50%，并且持续时间延长至2秒。"
+    },
+    {
+      "nameId": "VarianParryOverpower",
+      "buttonId": "VarianParryOverpower",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_varian_parry.png",
+      "sort": 2,
+      "name": "压制",
+      "short": "招架英雄的攻击会刷新英勇打击",
+      "full": "招架一次英雄普通攻击后刷新英勇打击的冷却时间，并且下一次英勇打击造成40%的额外伤害。"
+    },
+    {
+      "nameId": "VarianHighKingsQuestQuest",
+      "buttonId": "VarianHighKingsQuestQuest",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_varian_highkingsquest.png",
+      "sort": 3,
+      "name": "至高王的任务",
+      "short": "任务：完成任务提高攻击伤害",
+      "full": "任务：用普通攻击击中50个英雄。\n任务：参与5次英雄击杀。\n任务：收集15个恢复之球。\n\n奖励：完成一个任务后，获得10点普通攻击伤害加成。完成所有3个任务后，额外获得30点普通攻击伤害加成。"
+    },
+    {
+      "nameId": "VarianTaunt",
+      "buttonId": "VarianTaunt",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_varian_taunt.png",
+      "sort": 1,
+      "name": "嘲讽",
+      "short": "提高生命值\n强迫一名英雄攻击瓦里安",
+      "full": "沉默目标英雄并强迫他们攻击瓦里安，持续1.25秒。\n\n被动：最大生命值和生命恢复速度提高40%。"
+    },
+    {
+      "nameId": "VarianColossusSmash",
+      "buttonId": "VarianColossusSmash",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_varian_colossus_smash.png",
+      "sort": 2,
+      "name": "巨人打击",
+      "short": "提高伤害，但降低生命值\n重击敌人，降低其护甲",
+      "full": "重击目标敌人，造成185(+4%每级)点伤害，并降低其25点护甲，持续3秒，使其受到的伤害提高25%。\n\n被动：普通攻击伤害提高100%。\n被动：最大生命值和生命回复速度降低10%。"
+    },
+    {
+      "nameId": "VarianTwinBladesOfFury",
+      "buttonId": "VarianTwinBladesOfFury",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_varian_twinbladesoffury.png",
+      "sort": 3,
+      "name": "愤怒双刃",
+      "short": "提高攻击速度，但降低伤害\n普通攻击缩短英勇打击的冷却时间",
+      "full": "普通攻击使英勇打击的冷却时间缩短9秒，并使瓦里安的移动速度提高30%，持续2秒。\n\n被动：攻击速度提高100%。\n被动：普通攻击伤害降低25%。"
+    },
+    {
+      "nameId": "VarianLionsFangLionheart",
+      "buttonId": "VarianLionsFangLionheart",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_varian_lionsfang.png",
+      "sort": 1,
+      "name": "雄狮之心",
+      "short": "提高雄狮之牙的治疗量",
+      "full": "使雄狮之牙从英雄身上获得的治疗量提高75%。"
+    },
+    {
+      "nameId": "VarianSecondWind",
+      "buttonId": "VarianSecondWind",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_varian_secondwind.png",
+      "sort": 2,
+      "name": "复苏之风",
+      "short": "普通攻击产生治疗，生命值较低时效果更高",
+      "full": "普通攻击为瓦里安恢复1%的最大生命值。生命值低于50%时，还会为他恢复相当于造成伤害的50%的生命值。"
+    },
+    {
+      "nameId": "VarianVictoryRush",
+      "buttonId": "VarianVictoryRush",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_varian_victoryrush.png",
+      "sort": 3,
+      "name": "乘胜追击",
+      "short": "普通攻击周期性地提供大量治疗",
+      "full": "每隔30秒，瓦里安的下一次普通攻击为他恢复350(+4%每级)点生命值。附近有敌方小兵或怪物死亡时，冷却时间缩短10秒。"
+    },
+    {
+      "nameId": "VarianParryShieldWall",
+      "buttonId": "VarianParryShieldWall",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_varian_parry.png",
+      "sort": 1,
+      "name": "盾墙",
+      "short": "招架给予保护效果",
+      "full": "招架现在提供保护，在持续时间内阻挡所有伤害。冷却时间缩短5秒，但使用次数减少1次。"
+    },
+    {
+      "nameId": "VarianChargeWarbringer",
+      "buttonId": "VarianChargeWarbringer",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_varian_charge.png",
+      "sort": 2,
+      "name": "战神",
+      "short": "冲锋的冷却时间缩短并且可以对友方英雄施放",
+      "full": "冲锋的冷却时间缩短8秒，并且法力消耗从45点减少至22点。另外，冲锋可以对友方英雄施放。"
+    },
+    {
+      "nameId": "VarianChargeJuggernaut",
+      "buttonId": "VarianChargeJuggernaut",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_varian_charge.png",
+      "sort": 1,
+      "name": "主宰",
+      "short": "提高冲锋的伤害",
+      "full": "冲锋对英雄造成额外伤害，数值相当于其最大生命值的4%。"
+    },
+    {
+      "nameId": "VarianMortalStrike",
+      "buttonId": "VarianMortalStrike",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_varian_mortalstrike.png",
+      "sort": 2,
+      "name": "致死打击",
+      "short": "英勇打击降低敌人的治疗效果",
+      "full": "被英勇打击击中的英雄受到的治疗效果降低40%，持续4秒。"
+    },
+    {
+      "nameId": "VarianShatteringThrow",
+      "buttonId": "VarianShatteringThrow",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_varian_shatteringthrow.png",
+      "sort": 3,
+      "name": "碎裂投掷",
+      "short": "对敌人的护盾造成大量伤害",
+      "full": "激活后向目标英雄扔出一把剑，造成50(+4%每级)点伤害，并对其护盾造成最多1400(+4%每级)点额外伤害。\n\n被动：普通攻击对英雄的护盾造成最多额外200%的物理伤害。"
+    },
+    {
+      "nameId": "VarianBannerOfStormwind",
+      "buttonId": "VarianBannerOfStormwind",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_varian_bannerofstormwind.png",
+      "sort": 1,
+      "name": "暴风城战旗",
+      "short": "提供移动速度的战旗",
+      "full": "激活后放置一面战旗，使附近友方英雄的移动速度提高25%，持续12秒。"
+    },
+    {
+      "nameId": "VarianBannerOfIronforge",
+      "buttonId": "VarianBannerOfIronforge",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_varian_bannerofironforge.png",
+      "sort": 2,
+      "name": "铁炉堡战旗",
+      "short": "提供护甲的战旗",
+      "full": "激活后放置一面战旗，使附近友方英雄获得20点护甲，受到的伤害降低20%，持续12秒。"
+    },
+    {
+      "nameId": "VarianBannerOfDalaran",
+      "buttonId": "VarianBannerOfDalaran",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_varian_bannerofdalaran.png",
+      "sort": 3,
+      "name": "达拉然战旗",
+      "short": "提供法术强度的战旗",
+      "full": "激活后放置一面战旗，使附近友方英雄的法术强度提高20%，持续12秒。"
+    },
+    {
+      "nameId": "VarianTauntVigilance",
+      "buttonId": "VarianTauntVigilance",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_varian_taunt.png",
+      "sort": 1,
+      "name": "警戒",
+      "short": "受到攻击会缩短嘲讽的冷却时间",
+      "full": "被英雄的普通攻击命中后，嘲讽的冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "VarianColossusSmashMasterAtArms",
+      "buttonId": "VarianColossusSmashMasterAtArms",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_varian_colossus_smash.png",
+      "sort": 2,
+      "name": "武器大师",
+      "short": "巨人打击会攻击目标附近的敌人",
+      "full": "巨人打击会影响目标附近的所有敌人，并且冷却时间缩短10秒。"
+    },
+    {
+      "nameId": "VarianTwinBladesOfFuryFrenzy",
+      "buttonId": "VarianTwinBladesOfFuryFrenzy",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_varian_twinbladesoffury.png",
+      "sort": 3,
+      "name": "狂暴",
+      "short": "提高愤怒双刃的加成效果",
+      "full": "愤怒双刃使英勇打击的伤害额外提高25%，普通攻击使瓦里安的移动速度额外提高10%。"
+    },
+    {
+      "nameId": "VarianBannersGloryToTheAlliance",
+      "buttonId": "VarianBannersGloryToTheAlliance",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_varian_glorytothealliance.png",
+      "sort": 4,
+      "name": "荣耀属于联盟",
+      "short": "提高治疗效果的战旗",
+      "full": "战旗现在还使附近友方英雄的生命恢复速度和受到的所有治疗效果提高50%，并且冷却时间缩短50%。"
+    },
+    {
+      "nameId": "VarianDemoralizingShout",
+      "buttonId": "VarianDemoralizingShout",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_varian_demoralizingshout.png",
+      "sort": 5,
+      "name": "挫志怒吼",
+      "short": "降低附近英雄的伤害",
+      "full": "激活后降低敌方英雄的士气，使其造成的伤害降低40%，持续5秒。\n\n每当受到挫志怒吼影响的敌方英雄对一名英雄造成伤害，使其冷却时间与招架的冷却时间缩短2.5%。"
+    }
+  ]
+}

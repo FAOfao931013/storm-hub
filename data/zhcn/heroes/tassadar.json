@@ -1,0 +1,295 @@
+{
+  "shortName": "tassadar",
+  "heroName": "Tassadar",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "TassadarResonanceBeam",
+      "buttonId": "TassadarResonanceBeam",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tassadar_rework_trait.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "共鸣射线",
+      "short": "普通攻击变为引导型攻击，恢复法力值",
+      "full": "塔萨达尔的普通攻击为需引导的射线，使敌人减速15%。引导时，你的普通攻击伤害和法力回复速度每秒提高25%，最多提高100%。完全充能时，每秒额外获得3点法力值。\n\n该效果在结束引导6秒后消失。"
+    },
+    {
+      "nameId": "TassadarShockRay",
+      "buttonId": "TassadarShockRay",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tassadar_rework_q_ray.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "震荡射线",
+      "short": "对一条直线上的敌人造成伤害，并使其减速",
+      "full": "引导一道灵能射线，对一条直线上的敌人造成280(+4%每级)点伤害并使其减速30%，持续2秒。"
+    },
+    {
+      "nameId": "TassadarPsionicStorm",
+      "buttonId": "TassadarPsionicStorm",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tassadar_psionicstorm.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "灵能风暴",
+      "short": "对范围内敌人造成伤害",
+      "full": "在目标位置制造一次灵能风暴，持续3秒。处于风暴中时，敌人每0.5秒受到38(+4%每级)点伤害，风暴每次造成伤害会使伤害提高20%，最多提高100%。"
+    },
+    {
+      "nameId": "TassadarForceWall",
+      "buttonId": "TassadarForceWall",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tassadar_forcewall.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "力场屏障",
+      "short": "制造一道无法通过的墙",
+      "full": "在0.5秒延迟后，制造一堵墙，阻挡所有单位通行，持续2秒。"
+    },
+    {
+      "nameId": "TassadarArchon",
+      "buttonId": "TassadarArchon",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tassadar_archon.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "执政官",
+      "short": "变为执政官",
+      "full": "塔萨达尔变身为执政官，获得相当于他最大生命值25%的护盾，并强化共鸣射线。持续12秒。\n\n共鸣射线：对目标造成140(+4%每级)点伤害并对周围敌人造成70(+4%每级)点溅射伤害。被命中的英雄的法术护甲降低20点，持续2秒。执政官激活时，共鸣射线获得完全充能。"
+    },
+    {
+      "nameId": "TassadarBlackHole",
+      "buttonId": "TassadarBlackHole",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tassadar_rework_blackhole.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "黑洞",
+      "short": "对一条长线上的英雄造成伤害并使其昏迷",
+      "full": "施放0.5秒后，制造一个黑洞并直线穿越一段很远的距离。黑洞区域内的敌方英雄会被快速拉向中心。触碰中心会对目标造成310(+4%每级)点伤害并使其昏迷，持续1.25秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "TassadarStaticCharge",
+      "buttonId": "TassadarStaticCharge",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tassadar_rework_q_ray.png",
+      "sort": 1,
+      "name": "静电冲击",
+      "short": "任务：击中英雄提高伤害",
+      "full": "任务：震荡射线命中英雄会永久提高5点伤害并获得33%共鸣射线充能。\n\n最多提高200点额外伤害。"
+    },
+    {
+      "nameId": "TassadarPsionicStormPsiInfusion",
+      "buttonId": "TassadarPsionicStormPsiInfusionTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tassadar_psionicstorm.png",
+      "sort": 2,
+      "name": "灵能灌注",
+      "short": "范围扩大，击中目标返还法力值",
+      "full": "使灵能风暴的施法范围扩大33%。灵能风暴每命中一名非建筑敌人，就会恢复0.5点法力值，击中英雄使恢复的法力值提高至5点。"
+    },
+    {
+      "nameId": "TassadarKhaydarinAmulet",
+      "buttonId": "TassadarKhaydarinAmulet",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tassadar_rework_trait.png",
+      "sort": 3,
+      "name": "心能水晶坠饰",
+      "short": "任务：强化共鸣射线",
+      "full": "任务：共鸣射线充能速度加快50%。\n\n奖励：在共鸣射线完全充能80秒后，将会弹射至1名额外目标身上，造成75%伤害，优先锁定英雄。\n\n奖励：在共鸣射线完全充能160秒后，将会弹射至2名额外目标身上，造成75%伤害，优先锁定英雄。"
+    },
+    {
+      "nameId": "TassadarInduction",
+      "buttonId": "TassadarInduction",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tassadar_rework_q_ray.png",
+      "sort": 1,
+      "name": "电磁感应",
+      "short": "震荡射线使移动速度提高",
+      "full": "塔萨达尔获得10%移动速度加成。施放震荡射线会使该加成提高至30%，持续3秒。"
+    },
+    {
+      "nameId": "TassadarElectricFence",
+      "buttonId": "TassadarElectricFence",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tassadar_forcewall.png",
+      "sort": 2,
+      "name": "电力围栏",
+      "short": "力场屏障会造成伤害和减速效果",
+      "full": "力场屏障每秒对附近敌人造成92(+4%每级)点伤害并使其减速35%。"
+    },
+    {
+      "nameId": "TassadarPlasmaShield",
+      "buttonId": "TassadarPlasmaShieldTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tassadar_rework_trait.png",
+      "sort": 3,
+      "name": "等离子护盾",
+      "short": "共鸣射线充能获得护盾",
+      "full": "当共鸣射线完全充能时，每秒获得一个相当于其最大生命值3%的护盾，最多可叠加至12%。"
+    },
+    {
+      "nameId": "TassadarBeamAlignment",
+      "buttonId": "TassadarBeamAlignment",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tassadar_rework_q_ray.png",
+      "sort": 1,
+      "name": "光束校准",
+      "short": "共鸣射线会缩短震荡射线的冷却时间",
+      "full": "当共鸣射线完全充能时，震荡射线的冷却速度加快100%，并使减速持续时间延长至4秒。\n\n被动：使震荡射线的魔法消耗从55点降低到40点。"
+    },
+    {
+      "nameId": "TassadarPsionicEcho",
+      "buttonId": "TassadarPsionicEcho",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tassadar_psionicstorm.png",
+      "sort": 2,
+      "name": "灵能回响",
+      "short": "命中英雄后，震荡射线将制造灵能风暴",
+      "full": "施放灵能风暴会使你在3秒内施放的下一个震荡射线仅消耗30点法力值，并在命中第一个敌方英雄时制造一次灵能风暴。"
+    },
+    {
+      "nameId": "TassadarArcDischarge",
+      "buttonId": "TassadarArcDischarge",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tassadar_rework_trait.png",
+      "sort": 3,
+      "name": "弧形放电",
+      "short": "共鸣射线能够制造灵能风暴",
+      "full": "当共鸣射线完全充能时，塔萨达尔的普通攻击射程会提高1码，并且下一次造成伤害会在目标处制造一场灵能风暴。\n\n该效果有20秒冷却时间，在共鸣射线完全充能时冷却速度加倍。"
+    },
+    {
+      "nameId": "TassadarHeroicAbilityArchon",
+      "buttonId": "TassadarArchon",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tassadar_archon.png",
+      "sort": 1,
+      "name": "执政官",
+      "short": "变为执政官",
+      "full": "塔萨达尔变身为执政官，获得相当于他最大生命值25%的护盾，并强化共鸣射线。持续12秒。\n\n共鸣射线：对目标造成140(+4%每级)点伤害并对周围敌人造成70(+4%每级)点溅射伤害。被命中的英雄的法术护甲降低20点，持续2秒。执政官激活时，共鸣射线获得完全充能。"
+    },
+    {
+      "nameId": "TassadarHeroicAbilityBlackHole",
+      "buttonId": "TassadarBlackHole",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tassadar_rework_blackhole.png",
+      "sort": 2,
+      "name": "黑洞",
+      "short": "对一条长线上的英雄造成伤害并使其昏迷",
+      "full": "施放0.5秒后，制造一个黑洞并直线穿越一段很远的距离。黑洞区域内的敌方英雄会被快速拉向中心。触碰中心会对目标造成310(+4%每级)点伤害并使其昏迷，持续1.25秒。"
+    },
+    {
+      "nameId": "TassadarFeedback",
+      "buttonId": "TassadarFeedback",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tassadar_psionicstorm.png",
+      "sort": 1,
+      "name": "能量反蚀",
+      "short": "灵能风暴强化共鸣射线",
+      "full": "当一名敌方英雄受到灵能风暴影响时，共鸣射线的减速效果提高至50%并使物理护甲降低25点。"
+    },
+    {
+      "nameId": "TassadarShadowWalk",
+      "buttonId": "TassadarShadowWalk",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_tassadar_dimensionalshift.png",
+      "sort": 2,
+      "name": "暗遁",
+      "short": "暂时变为潜行状态，护甲提高",
+      "full": "塔萨达尔进入潜行状态且无法被暴露，但无法攻击或使用技能，持续1.5秒。当效果激活时，移动速度提高40%，护甲提高35点。\n\n可以在引导震荡射线时施放。"
+    },
+    {
+      "nameId": "TassadarOracle",
+      "buttonId": "TassadarOracleTargeted",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_tassadar_oracle.png",
+      "sort": 3,
+      "name": "先知",
+      "short": "获得法术护甲，引导以暴露一片区域",
+      "full": "被动：静止状态下，获得30点法术护甲，持续0.75秒，并每秒恢复12(+4%每级)点生命值。\n\n激活并引导至多4秒，将逐渐暴露地图上一块任意区域。"
+    },
+    {
+      "nameId": "TassadarThermalLance",
+      "buttonId": "TassadarThermalLance",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tassadar_rework_q_ray.png",
+      "sort": 1,
+      "name": "热能射线枪",
+      "short": "对命中的首个英雄造成百分比伤害",
+      "full": "震荡射线对命中的第一个英雄额外造成相当于其最大生命值8%的伤害。"
+    },
+    {
+      "nameId": "TassadarPsychicShock",
+      "buttonId": "TassadarPsychicShock",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tassadar_psionicstorm.png",
+      "sort": 2,
+      "name": "心灵震击",
+      "short": "灵能风暴会更快造成伤害",
+      "full": "灵能风暴造成伤害的速度加快25%。"
+    },
+    {
+      "nameId": "TassadarExecutorsWill",
+      "buttonId": "TassadarExecutorsWill",
+      "abilityType": "Active",
+      "icon": "storm_temp_btn-upgrade-protoss-khaydarinamulet.png",
+      "sort": 3,
+      "name": "执行官的意志",
+      "short": "激活以强化共鸣射线",
+      "full": "激活以使共鸣射线获得完全充能，获得20%法术强度，并使基本技能和终极技能的冷却恢复时间加快25%。当共鸣射线处于完全充能状态时，该效果会一直存在。"
+    },
+    {
+      "nameId": "TassadarMasteryTwilightArchon",
+      "buttonId": "TassadarArchonTwilightArchonTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tassadar_archon.png",
+      "sort": 1,
+      "name": "暮光执政官",
+      "short": "普通攻击延长执政官的持续时间",
+      "full": "执政官形态下的普通攻击使持续时间延长2秒。"
+    },
+    {
+      "nameId": "TassadarKugelblitz",
+      "buttonId": "TassadarKugelblitz",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tassadar_rework_blackhole.png",
+      "sort": 2,
+      "name": "球形闪电",
+      "short": "黑洞能够降低护甲，制造灵能风暴",
+      "full": "黑洞的中心命中敌方英雄时，会使其护甲值降低20点，持续3秒，并且会在其所在位置制造一场灵能风暴。"
+    },
+    {
+      "nameId": "TassadarMasteryForceBarrier",
+      "buttonId": "TassadarForceBarrier",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tassadar_forcewall.png",
+      "sort": 3,
+      "name": "力场壁垒",
+      "short": "范围扩大，冷却时间缩短",
+      "full": "使力场屏障的持续时间延长0.5秒，施法范围扩大50%，冷却时间缩短10秒。"
+    },
+    {
+      "nameId": "TassadarKhalasGift",
+      "buttonId": "TassadarKhalasGift",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_tassadar_rework_active_khala.png",
+      "sort": 4,
+      "name": "卡拉之赐",
+      "short": "使附近盟友的法术强度提高",
+      "full": "使自身和附近所有友方英雄获得4%法术强度，总计最多获得20%法术强度。你获得的所有额外法术强度将与所有正在贡献的盟友分享。"
+    }
+  ]
+}

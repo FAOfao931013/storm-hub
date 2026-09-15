@@ -1,0 +1,295 @@
+{
+  "shortName": "blaze",
+  "heroName": "Firebat",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "FirebatIgnite",
+      "buttonId": "FirebatIgnite",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_blaze_pyromania.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "纵火狂",
+      "short": "获得护甲并伤害附近的敌人",
+      "full": "激活后获得40点护甲，并且每0.5秒对周围的敌人造成40(+4%每级)点伤害，持续4秒。\n\n火焰喷流每击中一名英雄，纵火狂的冷却时间缩短4秒。"
+    },
+    {
+      "nameId": "FirebatFlameStream",
+      "buttonId": "FirebatFlameStream",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_blaze_flame.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "火焰喷流",
+      "short": "射出两股火焰喷流",
+      "full": "射出两股火焰喷流，对击中的敌人造成76(+4%每级)点伤害，且被两股火焰喷流命中的非建筑敌人受到120(+4%每级)点额外伤害。火焰喷流接触到浮油时会将其点燃。"
+    },
+    {
+      "nameId": "FirebatOilSpill",
+      "buttonId": "FirebatOilSpill",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_blaze_oil.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "浮油",
+      "short": "制造一滩可减速的燃油，可以点燃对敌人造成伤害并治疗布雷泽",
+      "full": "选择方向\n喷洒一层燃油，持续存在5秒，其所接触到的敌人被减速50%。\n\n火焰喷流击中敌人时，将点燃浮油，持续2.5秒。被点燃的浮油不再减速敌人，而是每0.3秒对其造成16(+4%每级)点伤害。另外，布雷泽站在燃烧的浮油当中时，每0.3秒受到49(+4%每级)点生命值的治疗。\n\n最多储存2层充能。"
+    },
+    {
+      "nameId": "FirebatJetPropulsion",
+      "buttonId": "FirebatJetPropulsion",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_blaze_jet.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "喷射推进",
+      "short": "向前冲锋，撞晕并伤害敌方英雄",
+      "full": "0.375秒后向前发起冲锋。撞击一名敌方英雄，可对目标以及附近的敌方英雄造成52(+4%每级)点伤害，并将其撞晕1.25秒。"
+    },
+    {
+      "nameId": "FirebatBunkerDrop",
+      "buttonId": "FirebatBunkerDrop",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_blaze_bunker.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "空投地堡",
+      "short": "空投一座地堡",
+      "full": "0.5秒延迟后，空投一座拥有1435(+4%每级)点生命值的地堡。布雷泽和他的盟友可以自由出入地堡。地堡中的所有人可以使用火焰喷射技能，对直线上的敌人造成150(+4%每级)点伤害。\n\n离开地堡时获得25点护甲，持续2秒。地堡持续存在10秒或直到被摧毁为止。"
+    },
+    {
+      "nameId": "FirebatCombustion",
+      "buttonId": "FirebatCombustion",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_blaze_combustion.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "增压爆燃",
+      "short": "引导一场爆炸，对敌人造成伤害并减速",
+      "full": "可引导最多2.6秒。引导结束时，使附近敌人减速60%，并且每0.5秒对他们造成55(+4%每级)点伤害。增压爆燃的减速和持续性伤害效果所存在的时间取决于技能引导时间，从1秒开始最高可达到5秒。\n\n引导技能时，布雷泽的移动速度降低40%。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "FirebatAdrenalineStimpack",
+      "buttonId": "FirebatAdrenalineStimpack",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_blaze_stim_2.png",
+      "sort": 1,
+      "name": "肾上腺素强化剂",
+      "short": "激活后获得攻击与移动速度加成",
+      "full": "被动：当生命值高于80%时，获得20%的攻击速度加成和10%的移动速度加成。\n\n激活后攻击速度提高100%，移动速度提高25%，持续5秒。"
+    },
+    {
+      "nameId": "FirebatEnduranceStimpack",
+      "buttonId": "FirebatEnduranceStimpack",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_blaze_stim_1.png",
+      "sort": 2,
+      "name": "耐力强化剂",
+      "short": "激活后获得护盾",
+      "full": "激活后获得一个吸收590(+4%每级)点伤害的护盾，持续5秒。\n\n如果在生命值低于30%的时候受到伤害，耐力强化剂会在准备就绪的情况下自动施放。"
+    },
+    {
+      "nameId": "FirebatNeuralStimpack",
+      "buttonId": "FirebatNeuralStimpack",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_blaze_stim_3.png",
+      "sort": 3,
+      "name": "神经强化剂",
+      "short": "激活后提高技能冷却回复率",
+      "full": "激活后获得40点法力值，并使基本技能的冷却速度加快100%，持续5秒。"
+    },
+    {
+      "nameId": "FirebatNewHabits",
+      "buttonId": "FirebatNewHabits",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_blaze_new_habits.png",
+      "sort": 4,
+      "name": "新嗜好",
+      "short": "任务：纵火狂给予不可阻挡效果",
+      "full": "恢复之球使纵火狂的冷却时间降低6秒。\n\n任务：收集15个恢复之球。 \n\n奖励：纵火狂给予不可阻挡效果，持续2秒。"
+    },
+    {
+      "nameId": "FirebatOilSpillOilDispersal",
+      "buttonId": "FirebatOilSpillOilDispersal",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_blaze_oil.png",
+      "sort": 1,
+      "name": "播洒燃油",
+      "short": "扩大浮油范围",
+      "full": "使浮油的区域扩大20%。火焰喷流每击中一个英雄，浮油的冷却时间就减少0.75秒，并返还5点法力值。"
+    },
+    {
+      "nameId": "FirebatIgniteMeltdown",
+      "buttonId": "FirebatIgniteMeltdown",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_blaze_pyromania.png",
+      "sort": 2,
+      "name": "熔解",
+      "short": "纵火狂减少敌人造成的伤害",
+      "full": "使用纵火狂击中敌方英雄会使他们的伤害降低8%，持续2.5秒，最高可降低40%。"
+    },
+    {
+      "nameId": "FirebatWeaponIncineratorGauntlets",
+      "buttonId": "FirebatWeaponIncineratorGauntlets",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_building.png",
+      "sort": 3,
+      "name": "焚烧臂铠",
+      "short": "普通攻击对非英雄单位造成额外伤害",
+      "full": "普通攻击范围提高15%，普通攻击对小兵、雇佣兵和怪物的伤害提高40%。"
+    },
+    {
+      "nameId": "FirebatFlameStreamSuppressiveFire",
+      "buttonId": "FirebatFlameStreamSuppressiveFire",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_blaze_flame.png",
+      "sort": 1,
+      "name": "火焰压制",
+      "short": "火焰喷流可降低敌人法术强度",
+      "full": "火焰喷流的每一股都会使被击中的敌方英雄的法术强度降低20%，持续4秒，最多可降低40%。"
+    },
+    {
+      "nameId": "FirebatOilSpillNanomachineCoating",
+      "buttonId": "FirebatOilSpillNanomachineCoating",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_blaze_oil.png",
+      "sort": 2,
+      "name": "纳米机器人涂层",
+      "short": "浮油可降低攻击速度",
+      "full": "站在浮油和被点燃的浮油当中的敌人，其攻击速度降低35%，持续4秒。"
+    },
+    {
+      "nameId": "FirebatJetPropulsionFuelLeak",
+      "buttonId": "FirebatJetPropulsionFuelLeak",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_blaze_jet.png",
+      "sort": 3,
+      "name": "燃油泄漏",
+      "short": "喷射推进会留下一道浮油轨迹",
+      "full": "喷射推进在布雷泽沿途生成浮油。如果喷射推进撞击到敌方英雄，则在他们脚下产生额外的浮油。"
+    },
+    {
+      "nameId": "FirebatHeroicAbilityBunkerDrop",
+      "buttonId": "FirebatBunkerDrop",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_blaze_bunker.png",
+      "sort": 1,
+      "name": "空投地堡",
+      "short": "空投一座地堡",
+      "full": "0.5秒延迟后，空投一座拥有1435(+4%每级)点生命值的地堡。布雷泽和他的盟友可以自由出入地堡。地堡中的所有人可以使用火焰喷射技能，对直线上的敌人造成150(+4%每级)点伤害。\n\n离开地堡时获得25点护甲，持续2秒。地堡持续存在10秒或直到被摧毁为止。"
+    },
+    {
+      "nameId": "FirebatHeroicAbilityCombustion",
+      "buttonId": "FirebatCombustion",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_blaze_combustion.png",
+      "sort": 2,
+      "name": "增压爆燃",
+      "short": "引导一场爆炸，对敌人造成伤害并减速",
+      "full": "可引导最多2.6秒。引导结束时，使附近敌人减速60%，并且每0.5秒对他们造成55(+4%每级)点伤害。增压爆燃的减速和持续性伤害效果所存在的时间取决于技能引导时间，从1秒开始最高可达到5秒。\n\n引导技能时，布雷泽的移动速度降低40%。"
+    },
+    {
+      "nameId": "FirebatOilSpillGrillandKill",
+      "buttonId": "FirebatOilSpillGrillandKill",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_blaze_oil.png",
+      "sort": 1,
+      "name": "现杀现烤",
+      "short": "任务：提高被点燃浮油的伤害，延长持续时间",
+      "full": "点燃的浮油伤害提高45%。\n\n任务：用点燃的浮油对敌方英雄造成30次伤害。\n\n奖励：浮油燃烧的持续时间延长2.5秒。"
+    },
+    {
+      "nameId": "FirebatOilSpillAdhesivePetroleum",
+      "buttonId": "FirebatOilSpillAdhesivePetroleum",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_blaze_oil_b.png",
+      "sort": 2,
+      "name": "黏性燃油",
+      "short": "浮油点燃后可减速",
+      "full": "当浮油被点燃时，站在浮油里的敌人被减速40%，并且布雷泽的普通攻击对其造成35%的额外伤害，持续3秒。另外，普通攻击会点燃浮油。"
+    },
+    {
+      "nameId": "FirebatJetPropulsionCollisionCourse",
+      "buttonId": "FirebatJetPropulsionCollisionCourse",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_blaze_jet.png",
+      "sort": 3,
+      "name": "碰撞航行",
+      "short": "喷射推进碰撞时造成伤害",
+      "full": "喷射推进对第一个撞到的敌方英雄造成260(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "FirebatJetPropulsionThermalProtection",
+      "buttonId": "FirebatJetPropulsionThermalProtection",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_blaze_jet.png",
+      "sort": 1,
+      "name": "隔热防护",
+      "short": "喷射推进击中敌人可给予护甲，减少冷却时间",
+      "full": "喷射推进每击中一名敌人提供10点护甲，持续3秒，并使该技能的冷却时间减少1.25秒。"
+    },
+    {
+      "nameId": "FirebatIgniteHeatTreatment",
+      "buttonId": "FirebatIgniteHeatTreatment",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_blaze_pyromania.png",
+      "sort": 2,
+      "name": "高温疗法",
+      "short": "纵火狂造成的伤害转化为治疗",
+      "full": "纵火狂造成伤害的75%转化为治疗。"
+    },
+    {
+      "nameId": "FirebatActiveJuggernautPlating",
+      "buttonId": "FirebatActiveJuggernautPlating",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_blaze_vanadium_plating.png",
+      "sort": 3,
+      "name": "铁人装甲",
+      "short": "获得法术护甲，随后获得一个受吸收法术伤害量影响的护盾",
+      "full": "激活后获得50点法术护甲，持续3秒。结束时，布雷泽获得一个相当于铁人装甲激活时所吸收法术伤害量125%的护盾。"
+    },
+    {
+      "nameId": "FirebatBunkerDropFortifiedBunker",
+      "buttonId": "FirebatBunkerDropFortifiedBunker",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_blaze_bunker.png",
+      "sort": 1,
+      "name": "加固地堡",
+      "short": "盟友可从地堡内喷洒浮油",
+      "full": "进入地堡的盟友每6秒可以从空投地堡中喷洒浮油。另外，离开空投地堡时的护甲加成提高25点，护甲加成的持续时间延长1秒。"
+    },
+    {
+      "nameId": "FirebatCombustionFlashFire",
+      "buttonId": "FirebatCombustionFlashFire",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_blaze_combustion.png",
+      "sort": 2,
+      "name": "急速燃烧",
+      "short": "增压爆燃减速敌人，解除移动速度惩罚效果",
+      "full": "布雷泽可以在引导增压爆燃时全速移动，并使周围敌人的移动速度降低60%。"
+    },
+    {
+      "nameId": "FirebatWeaponBurnNotice",
+      "buttonId": "FirebatWeaponBurnNotice",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_slow.png",
+      "sort": 3,
+      "name": "烧伤警告",
+      "short": "普通攻击减速并造成持续伤害",
+      "full": "普通攻击使敌人移动速度降低5%并在2.5秒内造成18(+4%每级)点额外伤害，最多叠加5次。"
+    }
+  ]
+}

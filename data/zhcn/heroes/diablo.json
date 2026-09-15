@@ -1,0 +1,295 @@
+{
+  "shortName": "diablo",
+  "heroName": "Diablo",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "DiabloBlackSoulstone",
+      "buttonId": "DiabloBlackSoulstone",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_diablo_blacksoulstone_var1.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "黑暗灵魂石",
+      "short": "从敌人身上获得灵魂来提高生命值并缩短复活时间",
+      "full": "可重复任务：每消灭一个英雄获得10个灵魂，每消灭一个小兵获得1个灵魂，最多拥有100个灵魂。每拥有一个灵魂，最大生命值提高0.3%。在拥有100个灵魂的情况下死亡时，迪亚波罗会在5秒后复活并失去100个灵魂。\n\n等级到达10级后，迪亚波罗复活时只会消耗75个灵魂。"
+    },
+    {
+      "nameId": "DiabloShadowCharge",
+      "buttonId": "DiabloShadowCharge",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_diablo_shadowcharge_var1.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "暗影冲锋",
+      "short": "冲向目标敌人并将其击退",
+      "full": "冲向一名敌人将其击退，造成40(+4%每级)点伤害，并获得15%移动速度，持续2秒。如果敌人撞上地形，则昏迷1秒，并受到额外130(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "DiabloFireStomp",
+      "buttonId": "DiabloFireStomp",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_diablo_firestomp.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "火焰践踏",
+      "short": "朝一个方向施放火焰波",
+      "full": "向目标区域释放出火焰波，每条火焰波造成12(+4%每级)点伤害。火焰波达到最远距离后返回，造成36(+4%每级)点额外伤害。迪亚波罗获得治疗，数值相当于对英雄造成伤害的130%。"
+    },
+    {
+      "nameId": "DiabloOverpower",
+      "buttonId": "DiabloOverpower",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_diablo_overpower_var1.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "压制",
+      "short": "抓住一名敌人并将其重重扔到身后，对其造成伤害并使其昏迷",
+      "full": "抓住目标并将其扔向背后，造成73(+4%每级)点伤害，并使其昏迷0.25秒。"
+    },
+    {
+      "nameId": "DiabloApocalypse",
+      "buttonId": "DiabloApocalypse",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_diablo_apocalypse.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "末世浩劫",
+      "short": "使所有敌方英雄昏迷",
+      "full": "在每个敌方英雄脚下创造符文。符文将在1.75秒后爆发，造成137(+4%每级)点伤害并使其昏迷1.75秒。"
+    },
+    {
+      "nameId": "DiabloLightningBreath",
+      "buttonId": "DiabloLightningBreath",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_diablo_lightningbreath.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "闪电吐息",
+      "short": "伤害并减速迪亚波罗前方的敌人",
+      "full": "在0.5秒进入不可阻挡状态，并且引导最多4秒。每0.25秒对迪亚波罗前方的敌人造成50(+4%每级)点伤害。受影响的敌人被减速4%，持续2秒，最高可被减速至40%。\n\n移动鼠标可改变闪电吐息的方向。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "DiabloMasteryFeastOnFearBlackSoulstone",
+      "buttonId": "DiabloBlackSoulstoneFeastOnFearTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_diablo_combo_1.png",
+      "sort": 1,
+      "name": "狂啖恐惧",
+      "short": "暗影冲锋与压制可恢复生命值",
+      "full": "使用暗影冲锋或压制击晕一名敌方英雄可在3秒内治疗迪亚波罗最大生命值10%的生命。"
+    },
+    {
+      "nameId": "DiabloMasteryDevilsDueBlackSoulstone",
+      "buttonId": "DiabloBlackSoulstoneDevilsDueTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_diablo_blacksoulstone_var1.png",
+      "sort": 2,
+      "name": "恶魔代价",
+      "short": "灵魂强化恢复之球和治疗之泉的效果",
+      "full": "黑暗灵魂石的每个灵魂使恢复之球和治疗之泉的效果提高2.25% 。"
+    },
+    {
+      "nameId": "DiabloSoulShield",
+      "buttonId": "DiabloSoulShield",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_hardenedshield.png",
+      "sort": 3,
+      "name": "灵魂护盾",
+      "short": "激活后获得基于灵魂数量的法术护甲",
+      "full": "激活后获得25点外加迪亚波罗当前灵魂数50%的法术护甲，持续4秒。迪亚波罗每次对敌方英雄造成伤害，该技能的冷却时间便缩短1秒。"
+    },
+    {
+      "nameId": "DiabloShadowChargeSacrificialSoul",
+      "buttonId": "DiabloShadowChargeSacrificialSoul",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_diablo_shadowcharge_var1.png",
+      "sort": 1,
+      "name": "献祭灵魂",
+      "short": "暗影冲锋给予灵魂和护甲",
+      "full": "使用暗影冲锋击晕英雄可给予10个灵魂和20点护甲，持续3秒。当有100个灵魂后，护甲提高至40点。"
+    },
+    {
+      "nameId": "DiabloFireStompSoulsToTheFlame",
+      "buttonId": "DiabloFireStompSoulsToTheFlame",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_diablo_firestomp.png",
+      "sort": 2,
+      "name": "灵魂化火",
+      "short": "火焰践踏给予灵魂并恢复更多生命值",
+      "full": "火焰践踏对敌方英雄每造成3次伤害，便给予1个灵魂，并且每个灵魂额外治疗相当于技能伤害量1.3%的生命值。"
+    },
+    {
+      "nameId": "DiabloLifeLeech",
+      "buttonId": "DiabloLifeLeechTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_heal.png",
+      "sort": 3,
+      "name": "汲取生命",
+      "short": "普通攻击给予灵魂并恢复生命值",
+      "full": "对敌方英雄进行普通攻击时，迪亚波罗获得1个灵魂并治疗其最大生命值1.75%的生命。当有100个灵魂后，该治疗量提高至其最大生命值的3.5%。"
+    },
+    {
+      "nameId": "DiabloShadowChargeOverpowerEternalFlames",
+      "buttonId": "DiabloShadowChargeOverpowerEternalFlames",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_diablo_firestomp.png",
+      "sort": 1,
+      "name": "永恒烈焰",
+      "short": "暗影冲锋与压制重置火焰践踏",
+      "full": "火焰践踏的冷却时间缩短1秒。当迪亚波罗使用暗影冲锋或压制击晕敌方英雄时，重置火焰践踏的冷却时间并恢复45点法力值。"
+    },
+    {
+      "nameId": "DiabloMalevolence",
+      "buttonId": "DiabloMalevolence",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 2,
+      "name": "怨毒",
+      "short": "使用技能提高普通攻击的伤害",
+      "full": "使用基本技能会使迪亚波罗在6秒内的下一次普通攻击造成额外100(+4%每级)点法术伤害。最多储存2次使用次数。"
+    },
+    {
+      "nameId": "DiabloDiabolicalMomentum",
+      "buttonId": "DiabloDiabolicalMomentum",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_diablo_combo_1.png",
+      "sort": 3,
+      "name": "魔王动能",
+      "short": "普通攻击缩短技能的冷却时间",
+      "full": "迪亚波罗的普通攻击对敌人造成伤害时，可以使暗影冲锋和压制的冷却时间缩短1.5秒。"
+    },
+    {
+      "nameId": "DiabloHeroicAbilityApocalypse",
+      "buttonId": "DiabloApocalypse",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_diablo_apocalypse.png",
+      "sort": 1,
+      "name": "末世浩劫",
+      "short": "使所有敌方英雄昏迷",
+      "full": "在每个敌方英雄脚下创造符文。符文将在1.75秒后爆发，造成137(+4%每级)点伤害并使其昏迷1.75秒。"
+    },
+    {
+      "nameId": "DiabloHeroicAbilityLightningBreath",
+      "buttonId": "DiabloLightningBreath",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_diablo_lightningbreath.png",
+      "sort": 2,
+      "name": "闪电吐息",
+      "short": "伤害并减速迪亚波罗前方的敌人",
+      "full": "在0.5秒进入不可阻挡状态，并且引导最多4秒。每0.25秒对迪亚波罗前方的敌人造成50(+4%每级)点伤害。受影响的敌人被减速4%，持续2秒，最高可被减速至40%。\n\n移动鼠标可改变闪电吐息的方向。"
+    },
+    {
+      "nameId": "DiabloDevastatingCharge",
+      "buttonId": "DiabloDevastatingCharge",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_diablo_shadowcharge_var1.png",
+      "sort": 1,
+      "name": "毁灭冲锋",
+      "short": "任务：暗影冲锋可降低护甲",
+      "full": "暗影冲锋的地形碰撞伤害提高50%。\n\n任务：把敌方英雄撞上地形5次。\n\n奖励：把敌方英雄撞上地形可使其护甲降低20点，持续4秒。"
+    },
+    {
+      "nameId": "DiabloHellfire",
+      "buttonId": "DiabloHellfire",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_diablo_firestomp.png",
+      "sort": 2,
+      "name": "地狱火",
+      "short": "火焰践踏给予法术强度",
+      "full": "火焰践踏每击中一个敌方英雄给予3%法术强度，持续10秒，最多可提高至30%。叠加到最大层数时，迪亚波罗每秒对周围敌人造成33(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "DiabloShadowChargeOverpowerCruelty",
+      "buttonId": "DiabloShadowChargeOverpowerCruelty",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_diablo_combo_1.png",
+      "sort": 3,
+      "name": "残酷",
+      "short": "暗影冲锋与压制给予攻击速度加成",
+      "full": "使用暗影冲锋或压制击晕敌方英雄可以使迪亚波罗的攻击速度提高50%，持续7秒，最高可叠加至100%。"
+    },
+    {
+      "nameId": "DiabloTalentDominationOverpower",
+      "buttonId": "DiabloOverpowerDominationTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_diablo_shadowcharge_var1.png",
+      "sort": 1,
+      "name": "魔王统御",
+      "short": "压制重置暗影冲锋的冷却时间",
+      "full": "施放压制重置暗影冲锋的冷却时间。"
+    },
+    {
+      "nameId": "DiabloDebilitatingFlames",
+      "buttonId": "DiabloDebilitatingFlames",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_diablo_firestomp.png",
+      "sort": 2,
+      "name": "虚弱烈焰",
+      "short": "火焰践踏削弱敌方英雄",
+      "full": "被火焰践踏击中的敌方英雄减速6%，持续4秒，最多减速60%。被虚弱烈焰减速24%或以上的英雄，其造成的伤害降低50%。"
+    },
+    {
+      "nameId": "DiabloOverpowerOverpoweringNightmare",
+      "buttonId": "DiabloOverpowerOverpoweringNightmareTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_diablo_overpower_var1.png",
+      "sort": 3,
+      "name": "无间噩梦",
+      "short": "获得压制使用次数",
+      "full": "获得额外2次压制使用次数，每次使用有2秒冷却间隔。"
+    },
+    {
+      "nameId": "DiabloMasteryDyingBreathApocalypse",
+      "buttonId": "DiabloApocalypseDyingBreathTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_diablo_apocalypse.png",
+      "sort": 1,
+      "name": "殒命之息",
+      "short": "死亡时触发末世浩劫",
+      "full": "末世浩劫每击中一名敌方英雄其冷却时间缩短25秒，最多可缩短至5秒，并且迪亚波罗死亡时该技能会自动施放。"
+    },
+    {
+      "nameId": "DiabloMasteryHellstormLightningBreath",
+      "buttonId": "DiabloLightningBreathHellstormTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_diablo_lightningbreath.png",
+      "sort": 2,
+      "name": "地狱风暴",
+      "short": "闪电吐息持续的时间更久",
+      "full": "闪电吐息的持续时间延长200%。"
+    },
+    {
+      "nameId": "DiabloTalentLordOfTerror",
+      "buttonId": "DiabloLordOfTerror",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_diablo_lordofterror.png",
+      "sort": 3,
+      "name": "恐惧之王",
+      "short": "从附近的敌方英雄身上偷取生命值和灵魂",
+      "full": "激活后偷取附近敌方英雄10%的最大生命值，并且每击中一名英雄获得5个灵魂。"
+    },
+    {
+      "nameId": "DiabloHellgate",
+      "buttonId": "DiabloHellgateTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_boltofthestorm.png",
+      "sort": 4,
+      "name": "地狱之门",
+      "short": "传送并制造一次末世浩劫",
+      "full": "传送并在目标位置放置一个恶魔符文。1.75秒后符文爆炸，对敌人造成137(+4%每级)点伤害，并使其昏迷1.75秒。"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "shortName": "zarya",
+  "heroName": "Zarya",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "ZaryaEnergy",
+      "buttonId": "ZaryaEnergy",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zarya_energy.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "能量",
+      "short": "查莉娅的屏障所吸收的伤害可以提高她的伤害",
+      "full": "个人屏障和投射屏障每吸收9(+4%每级)点伤害就会使查莉娅的能量提高1点。每点能量使查莉娅的伤害提高2%。0.5秒后，能量会每秒降低3点。"
+    },
+    {
+      "nameId": "ZaryaParticleGrenade",
+      "buttonId": "ZaryaParticleGrenade",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zarya_particlegrenade.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "粒子榴弹",
+      "short": "对小范围内的敌人造成伤害",
+      "full": "射出一枚粒子榴弹，对范围内的敌人造成80(+4%每级)点伤害。对建筑造成50%的伤害。\n\n最多储存4次使用次数。"
+    },
+    {
+      "nameId": "ZaryaPersonalBarrier",
+      "buttonId": "ZaryaPersonalBarrier",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zarya_personalbarrier.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "个人屏障",
+      "short": "获得一个吸收伤害的护盾",
+      "full": "获得一个护盾，吸收560(+4%每级)点伤害，持续3秒。"
+    },
+    {
+      "nameId": "ZaryaShieldAlly",
+      "buttonId": "ZaryaShieldAlly",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zarya_shieldally.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "投射屏障",
+      "short": "为盟友套上护盾来吸收伤害",
+      "full": "使一个友方英雄获得护盾，吸收420(+4%每级)点伤害，持续3秒。"
+    },
+    {
+      "nameId": "ZaryaGravitonSurge",
+      "buttonId": "ZaryaGravitonSurge",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zarya_gravitonsurge.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "重力喷涌",
+      "short": "射出一枚重力炸弹，吸引敌人",
+      "full": "射出一枚重力炸弹，在1秒后爆炸并将敌方英雄拉向中心，持续2.5秒。受影响的敌人每秒受到30(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "ZaryaExpulsionZone",
+      "buttonId": "ZaryaExpulsionZone",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zarya_expulsionzone.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "喷涌区域",
+      "short": "射出一枚炸弹，持续击退敌人",
+      "full": "射出一枚重力炸弹，造成124(+4%每级)点伤害，并制造一片喷涌区域，持续3.5秒。进入该区域的敌人将被击退，并且移动速度降低50%，持续1秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "HearthstoneNoMana",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ZaryaParticleGrenadeDemolitionsExpertQuest",
+      "buttonId": "ZaryaParticleGrenadeDemolitionsExpertTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zarya_particlegrenade.png",
+      "sort": 1,
+      "name": "爆破专家",
+      "short": "任务：扩大粒子榴弹的范围，并缩短冷却时间",
+      "full": "任务：粒子榴弹每击中5个敌方英雄使充能时间缩短0.4375秒，最多缩短3.5秒。\n\n奖励：粒子榴弹击中40个敌方英雄后，范围扩大15%。"
+    },
+    {
+      "nameId": "ZaryaShieldAllyTogetherWeAreStrong",
+      "buttonId": "ZaryaShieldAllyTogetherWeAreStrongTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zarya_shieldally.png",
+      "sort": 2,
+      "name": "众志成城",
+      "short": "受到投射屏障影响的盟友造成伤害会提供能量",
+      "full": "盟友在获得投射屏障后的3秒内，每造成5.35(+4%每级)点伤害，就会使查莉娅获得1点能量，每个护盾最多可以获得40点能量。"
+    },
+    {
+      "nameId": "ZaryaWeaponFeelTheHeat",
+      "buttonId": "ZaryaWeaponFeelTheHeatTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "感受热量",
+      "short": "普通攻击对近距离敌人造成更高伤害，大小增加",
+      "full": "查莉娅的普通攻击对近战范围内的敌人造成50%的额外伤害。当能量超过40点时，查莉娅的普通攻击大小增加35%。"
+    },
+    {
+      "nameId": "ZaryaEnergyMaximumChargeQuest",
+      "buttonId": "ZaryaEnergyMaximumChargeTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zarya_energy.png",
+      "sort": 4,
+      "name": "能量全满",
+      "short": "恢复之球可以提供能量\n任务：提高能量上限",
+      "full": "恢复之球立即提供20点能量。\n\n任务：能量达到或高于50点时，保持150秒。\n\n奖励：最大能量值提高20点。"
+    },
+    {
+      "nameId": "ZaryaPersonalBarrierIAmTheStrongest",
+      "buttonId": "ZaryaPersonalBarrierIAmTheStrongestTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zarya_personalbarrier.png",
+      "sort": 1,
+      "name": "我最强壮",
+      "short": "提高个人屏障的护盾值，获得能量",
+      "full": "个人屏障可以吸收额外140(+4%每级)点伤害。\n\n被动：查莉娅的护盾吸收的伤害可以额外提供20%的能量。"
+    },
+    {
+      "nameId": "ZaryaShieldAllyGiveMeTwentyQuest",
+      "buttonId": "ZaryaShieldAllyGiveMeTwentyTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zarya_shieldally.png",
+      "sort": 2,
+      "name": "二十个俯卧撑",
+      "short": "任务：提高投射屏障的吸收量，并缩短冷却时间",
+      "full": "任务：恢复之球使投射屏障的吸收量永久提高15点，最多提高300点。\n\n奖励：收集20个恢复之球后，投射屏障的冷却时间永久缩短2秒。"
+    },
+    {
+      "nameId": "ZaryaShieldAllySpeedBarrier",
+      "buttonId": "ZaryaShieldAllySpeedBarrierTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zarya_shieldally_a.png",
+      "sort": 3,
+      "name": "加速屏障",
+      "short": "投射屏障获得移动速度加成",
+      "full": "投射屏障使友方英雄的移动速度在持续时间内提高50%。"
+    },
+    {
+      "nameId": "ZaryaDefensiveShielding",
+      "buttonId": "ZaryaDefensiveShieldingTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_zarya_pumped.png",
+      "sort": 4,
+      "name": "防御屏障",
+      "short": "个人屏障和投射屏障提供物理护甲",
+      "full": "效果消失或被打破后，个人屏障和投射屏障提供75点物理护甲，抵御下2次敌方英雄的普通攻击，使受到的伤害降低75%，持续6秒。"
+    },
+    {
+      "nameId": "ZaryaParticleGrenadePinpointAccuracy",
+      "buttonId": "ZaryaParticleGrenadePinpointAccuracyTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zarya_particlegrenade.png",
+      "sort": 1,
+      "name": "弹无虚发",
+      "short": "粒子榴弹在中心区域造成更高伤害并减速",
+      "full": "粒子榴弹对被轰击点中心附近的敌人造成25(+4%每级)点额外伤害，并且使其移动速度降低25%，持续2秒。"
+    },
+    {
+      "nameId": "ZaryaDeepBurn",
+      "buttonId": "ZaryaDeepBurn",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zarya_particlegrenade_a.png",
+      "sort": 2,
+      "name": "深度烧伤",
+      "short": "粒子榴弹可以生成能量",
+      "full": "使用粒子榴弹命中敌方英雄后，对其发动普通攻击可以生成2点能量。该效果持续4秒。"
+    },
+    {
+      "nameId": "ZaryaPersonalBarrierExplosiveBarrier",
+      "buttonId": "ZaryaPersonalBarrierExplosiveBarrierTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zarya_personalbarrier.png",
+      "sort": 3,
+      "name": "爆炸屏障",
+      "short": "个人屏障造成范围伤害",
+      "full": "效果消失或被打破后，个人屏障会爆炸，对附近敌人造成110(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "ZaryaHeroicAbilityGravitonSurge",
+      "buttonId": "ZaryaGravitonSurge",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zarya_gravitonsurge.png",
+      "sort": 1,
+      "name": "重力喷涌",
+      "short": "射出一枚重力炸弹，吸引敌人",
+      "full": "射出一枚重力炸弹，在1秒后爆炸并将敌方英雄拉向中心，持续2.5秒。受影响的敌人每秒受到30(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "ZaryaHeroicAbilityExpulsionZone",
+      "buttonId": "ZaryaExpulsionZone",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zarya_expulsionzone.png",
+      "sort": 2,
+      "name": "喷涌区域",
+      "short": "射出一枚炸弹，持续击退敌人",
+      "full": "射出一枚重力炸弹，造成124(+4%每级)点伤害，并制造一片喷涌区域，持续3.5秒。进入该区域的敌人将被击退，并且移动速度降低50%，持续1秒。"
+    },
+    {
+      "nameId": "ZaryaPersonalBarrierUnstoppableCompetitor",
+      "buttonId": "ZaryaPersonalBarrierUnstoppableCompetitorTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zarya_personalbarrier.png",
+      "sort": 1,
+      "name": "不可阻挡的对手",
+      "short": "个人屏障使你不可阻挡",
+      "full": "个人屏障使查莉娅不可阻挡，最多持续2秒。"
+    },
+    {
+      "nameId": "ZaryaPersonalBarrierSpellBarrier",
+      "buttonId": "ZaryaPersonalBarrierSpellBarrierTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_zarya_personalbarrier_a.png",
+      "sort": 2,
+      "name": "法术屏障",
+      "short": "个人屏障提供法术护甲",
+      "full": "效果消失或被打破后，个人屏障为查莉娅提供75点法术护甲，使受到的技能伤害降低75%，持续3秒。"
+    },
+    {
+      "nameId": "ZaryaEnergyEnduranceTraining",
+      "buttonId": "ZaryaEnergyEnduranceTrainingTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zarya_energy.png",
+      "sort": 3,
+      "name": "耐力训练",
+      "short": "高能量时获得护甲",
+      "full": "能量达到或高于75点时，查莉娅获得20点护甲，使受到的所有伤害降低20%。"
+    },
+    {
+      "nameId": "ZaryaPainIsTemporary",
+      "buttonId": "ZaryaPainIsTemporaryTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_zarya_painistemporary.png",
+      "sort": 4,
+      "name": "短暂痛苦",
+      "short": "消耗能量来获得护盾",
+      "full": "激活后消耗所有能量并获得一个护盾，每消耗一点能量就能吸收相当于查莉娅最大生命值0.8%的伤害，持续3秒。同一时间内查莉娅只能在自己身上激活一个个人护盾。"
+    },
+    {
+      "nameId": "ZaryaShieldAllyCleansingShield",
+      "buttonId": "ZaryaShieldAllyCleansingShieldTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zarya_shieldally.png",
+      "sort": 1,
+      "name": "净化屏障",
+      "short": "投射屏障移除所有限制效果",
+      "full": "投射屏障移除所有限制效果，并且冷却时间缩短3秒。"
+    },
+    {
+      "nameId": "ZaryaShieldAllyGainTrain",
+      "buttonId": "ZaryaShieldAllyGainTrainTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_zarya_shieldally_a.png",
+      "sort": 2,
+      "name": "获得训练",
+      "short": "投射屏障现在会影响第二名盟友",
+      "full": "投射屏障还会使目标附近的一个盟友获得一个未经过天赋加强的护盾。"
+    },
+    {
+      "nameId": "ZaryaEnergyBornInBattle",
+      "buttonId": "ZaryaEnergyBornInBattleTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_zarya_energy.png",
+      "sort": 3,
+      "name": "生于战斗",
+      "short": "高能量时缩短冷却时间",
+      "full": "能量达到或高于75点时，查莉娅的冷却速度加快25%。"
+    },
+    {
+      "nameId": "ZaryaGravitonSurgeGravityKills",
+      "buttonId": "ZaryaGravitonSurgeGravityKillsTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zarya_gravitonsurge.png",
+      "sort": 1,
+      "name": "致命重力",
+      "short": "延长重力喷涌的持续时间，并造成沉默",
+      "full": "重力喷涌的持续时间延长1秒，并使被困住的英雄沉默。"
+    },
+    {
+      "nameId": "ZaryaExpulsionZoneClearOut",
+      "buttonId": "ZaryaExpulsionZoneClearOutTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_zarya_expulsionzone.png",
+      "sort": 2,
+      "name": "驱逐出境",
+      "short": "缩短喷涌区域的冷却时间，增加持续时间",
+      "full": "喷涌区域的冷却时间缩短25秒，持续时间增加1.5秒。"
+    },
+    {
+      "nameId": "ZaryaParticleGrenadeGrenadier",
+      "buttonId": "ZaryaParticleGrenadeGrenadierTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_zarya_particlegrenade.png",
+      "sort": 3,
+      "name": "掷弹兵",
+      "short": "一次恢复所有粒子榴弹的使用次数",
+      "full": "一次恢复所有粒子榴弹的使用次数。"
+    },
+    {
+      "nameId": "ZaryaUnyieldingDefender",
+      "buttonId": "ZaryaUnyieldingDefenderTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_zarya_unyieldingdefender.png",
+      "sort": 4,
+      "name": "不屈卫士",
+      "short": "激活后重置屏障的冷却时间",
+      "full": "激活后重置个人屏障和投射屏障的冷却时间。"
+    }
+  ]
+}

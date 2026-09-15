@@ -1,0 +1,306 @@
+{
+  "shortName": "gazlowe",
+  "heroName": "Tinker",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "GazloweSalvagerSalvageTurretAbility",
+      "buttonId": "GazloweReduceReuseRecycleTrait",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_gazlowe_salvager.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "降解、循环、回收",
+      "short": "获得碎片，牺牲摇滚炮台",
+      "full": "每4秒获得1个碎片。摇滚炮台被摧毁时掉落1个可拾取的碎片。\n\n激活可以摧毁一个目标摇滚炮台。"
+    },
+    {
+      "nameId": "TinkerRockItTurret",
+      "buttonId": "TinkerRockItTurret",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gazlowe_rockitturret.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "摇滚炮台",
+      "short": "放置一座可以攻击敌人的炮台。",
+      "full": "建造一座可造成36(+4%每级)点伤害的炮台，持续15秒。\n\n炮台在刚刚建造的时候会以最近的敌方英雄为优先目标。"
+    },
+    {
+      "nameId": "GazloweDethLazor",
+      "buttonId": "GazloweDethLazor",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_gazlowe_dethlazor.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "死亡射线",
+      "short": "对一条直线上的目标造成伤害",
+      "full": "0.65秒后，对一条直线上的敌人造成175(+4%每级)点伤害。可恢复相当于伤害量25%的生命值，击中敌方英雄时提高至75%。"
+    },
+    {
+      "nameId": "TinkerXplodiumBomb",
+      "buttonId": "TinkerXplodiumCharge",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_gazlowe_explodiumcharge.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "爆素炸药",
+      "short": "扔出定时手雷对范围内敌人造成伤害并使其昏迷",
+      "full": "放置一枚炸弹，1.25秒后对范围内的敌人造成142(+4%每级)点伤害并使其昏迷1秒。"
+    },
+    {
+      "nameId": "TinkerRoboGoblin",
+      "buttonId": "TinkerRoboGoblinPassive",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gazlowe_robogoblin.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "机械地精",
+      "short": "变得不可阻挡，提高普通攻击伤害",
+      "full": "激活后变得不可阻挡，持续1.5秒。\n\n被动：普通攻击在接下来的5秒内额外造成90(+4%每级)点伤害，最多叠加3次。"
+    },
+    {
+      "nameId": "TinkerGravOBomb3000",
+      "buttonId": "TinkerGravOBomb3000",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gazlowe_gravobomb.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "3000型引力炸弹",
+      "short": "牵引并对敌人造成伤害",
+      "full": "在1.5秒后，将敌人拉向一块区域的中心，造成220(+4%每级)点伤害。施放3000型引力炸弹后，基本技能造成的伤害提高30%，持续5秒。"
+    },
+    {
+      "nameId": "TinkerFocusTurrets",
+      "buttonId": "TinkerFocusTurrets",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_gazlowe_rockitturret_var1.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "炮台集火！",
+      "short": "命令炮台攻击一个目标",
+      "full": "命令附近任意摇滚炮台集火目标。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "GazloweXplodiumChargeRocketBoots",
+      "buttonId": "GazloweXplodiumChargeRocketBoots",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_gazlowe_explodiumcharge.png",
+      "sort": 1,
+      "name": "火箭靴",
+      "short": "提高爆素炸药的施法距离，伤害",
+      "full": "使爆素炸药的施法距离提高30%，伤害提高35%。击中一名敌方英雄时获得20%的移动速度加成，持续3秒。"
+    },
+    {
+      "nameId": "GazloweBigGameHunter",
+      "buttonId": "GazloweBigGameHunter",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_gazlowe_salvager.png",
+      "sort": 2,
+      "name": "王牌猎人",
+      "short": "击中英雄、雇佣兵、怪物提高碎片数量",
+      "full": "使碎片的最大数量提高2。对敌方英雄、雇佣兵和怪物发动普通攻击可以使降解、循环、回收的碎片生成速度加快1.5秒。"
+    },
+    {
+      "nameId": "GazloweOneManWreckingCrew",
+      "buttonId": "GazloweOneManWreckingCrew",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "地精无双",
+      "short": "基本技能强化普通攻击",
+      "full": "施放基本技能会使加兹鲁维的普通攻击在6秒内造成60%额外伤害。最多储存2次使用次数。"
+    },
+    {
+      "nameId": "GazloweRockItSockIt",
+      "buttonId": "GazloweRockItSockIt",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gazlowe_rockitturret.png",
+      "sort": 1,
+      "name": "尽情摇摆",
+      "short": "施放摇滚炮台获得护盾",
+      "full": "施放摇滚炮台可以使加兹鲁维获得一个护盾，最多可以吸收200(+4%每级)点伤害，持续2.5秒。"
+    },
+    {
+      "nameId": "GazloweHyperfocusCoils",
+      "buttonId": "GazloweHyperfocusCoils",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_gazlowe_combo_w_e.png",
+      "sort": 2,
+      "name": "超焦线圈",
+      "short": "死亡射线和爆素炸药造成额外伤害，获得治疗",
+      "full": "被死亡射线或爆素炸药命中的英雄会额外受到相当于其最大生命值2%的伤害。加兹鲁维会受到相当于伤害量150%的治疗量。"
+    },
+    {
+      "nameId": "TinkerMasteryEZPZDimensionalRipper",
+      "buttonId": "TinkerDethLazorEZPZDimensionalRipperTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_imposingpresence.png",
+      "sort": 3,
+      "name": "EZ-PZ相位撕裂射线",
+      "short": "激活获得护甲，减少敌人伤害",
+      "full": "激活获得40点护甲值，持续3秒，使受到的伤害减少40%，并使附近所有的敌方英雄和召唤物造成的伤害降低50%，持续3秒。"
+    },
+    {
+      "nameId": "TinkerMasteryGoblinFusion",
+      "buttonId": "GazloweDethLazorGoblinFusionTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gazlowe_combo_q_w.png",
+      "sort": 1,
+      "name": "地精聚变",
+      "short": "死亡射线可以获得碎片",
+      "full": "死亡射线每击中一名英雄可以获得3个碎片。"
+    },
+    {
+      "nameId": "GazloweOverload",
+      "buttonId": "GazloweOverload",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_gazlowe_dethlazor_a.png",
+      "sort": 2,
+      "name": "超载",
+      "short": "获得一次额外的死亡射线使用次数",
+      "full": "死亡射线最多可以储存2次使用次数。死亡射线每击中一名英雄都会使冷却时间缩短0.75秒。"
+    },
+    {
+      "nameId": "GazloweMasterBlaster",
+      "buttonId": "GazloweMasterBlaster",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_gazlowe_combo_w_e.png",
+      "sort": 3,
+      "name": "破坏大师",
+      "short": "死亡射线和爆素炸药造成减速",
+      "full": "死亡射线和爆素炸药命中敌人会使其减速35%，持续3秒。摇滚炮台对受到该天赋影响而被减速的敌人进行普通攻击时，会使减速效果的持续时间延长0.5秒。"
+    },
+    {
+      "nameId": "TinkerHeroicAbilityRoboGoblin",
+      "buttonId": "TinkerRoboGoblinPassive",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gazlowe_robogoblin.png",
+      "sort": 1,
+      "name": "机械地精",
+      "short": "变得不可阻挡，提高普通攻击伤害",
+      "full": "激活后变得不可阻挡，持续1.5秒。\n\n被动：普通攻击在接下来的5秒内额外造成90(+4%每级)点伤害，最多叠加3次。"
+    },
+    {
+      "nameId": "TinkerHeroicAbilityGravOBomb3000",
+      "buttonId": "TinkerGravOBomb3000",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gazlowe_gravobomb.png",
+      "sort": 2,
+      "name": "3000型引力炸弹",
+      "short": "牵引并对敌人造成伤害",
+      "full": "在1.5秒后，将敌人拉向一块区域的中心，造成220(+4%每级)点伤害。施放3000型引力炸弹后，基本技能造成的伤害提高30%，持续5秒。"
+    },
+    {
+      "nameId": "GazloweRockItTurretPositiveReinforcement",
+      "buttonId": "GazloweRockItTurretPositiveReinforcement",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gazlowe_rockitturret.png",
+      "sort": 1,
+      "name": "阳极强化",
+      "short": "摇滚炮台攻击提高英雄攻击速度",
+      "full": "摇滚炮台的初始攻击命中英雄时，可以使加兹鲁维获得40%的攻击速度加成，持续3秒。"
+    },
+    {
+      "nameId": "GazloweRockItTurretSuperiorSchematics",
+      "buttonId": "GazloweRockItTurretSuperiorSchematics",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gazlowe_rockitturret_var1.png",
+      "sort": 2,
+      "name": "卓越结构",
+      "short": "摇滚炮台可以攻击多个目标",
+      "full": "摇滚炮台可以攻击最多2名额外敌人，造成60%的伤害，并且普通攻击射程提高30%。"
+    },
+    {
+      "nameId": "GazloweRockItTurretOverchargedCapacitors",
+      "buttonId": "GazloweRockItTurretOverchargedCapacitors",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gazlowe_rockitturret_var2.png",
+      "sort": 3,
+      "name": "过载电容器",
+      "short": "摇滚炮台提高法术强度，提高持续时间",
+      "full": "每个激活的摇滚炮台可以使加兹鲁维获得5%的法术强度加成，最多提升15%。普通攻击造成伤害可以使摇滚炮台的持续时间延长1.25秒。"
+    },
+    {
+      "nameId": "GazloweDethLazorFirinMahLazorz",
+      "buttonId": "GazloweDethLazorFirinMahLazorz",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_gazlowe_dethlazor.png",
+      "sort": 1,
+      "name": "同步射线",
+      "short": "摇滚炮台发射死亡射线",
+      "full": "发射死亡射线会使加兹鲁维的所有摇滚炮台发射一次死亡射线，造成125(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "GazloweXplodiumChargeArkReaktor",
+      "buttonId": "GazloweXplodiumChargeArkReaktor",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_gazlowe_explodiumcharge.png",
+      "sort": 2,
+      "name": "聚变反应堆",
+      "short": "爆素炸药建造炮台，缩短冷却时间",
+      "full": "使爆素炸药的冷却时间缩短2秒。施放爆素炸药时建造3个持续3秒的迷你摇滚炮台。\n\n这些炮台不掉落碎片，也无法从其他天赋中获得增益效果。"
+    },
+    {
+      "nameId": "GazloweOverklock",
+      "buttonId": "GazloweOverklock",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_searing.png",
+      "sort": 3,
+      "name": "加速时钟",
+      "short": "攻击获得移动速度，造成额外伤害",
+      "full": "普通攻击使加兹鲁维获得15%移动速度加成，持续2秒。\n\n使用普通攻击对英雄造成伤害时，使其额外受到相当于最大生命值2.5%的伤害。"
+    },
+    {
+      "nameId": "TinkerMasteryMechaLord",
+      "buttonId": "TinkerRoboGoblinMechaLordTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gazlowe_robogoblin.png",
+      "sort": 1,
+      "name": "机甲霸王",
+      "short": "普通攻击获得护甲，可以造成额外伤害",
+      "full": "普通攻击使加兹鲁维的护甲值提高10点，持续10秒，最多提高30点。并且对被击晕或被减速的敌人造成50%的额外伤害。"
+    },
+    {
+      "nameId": "TinkerMasteryMiniatureBlackHole",
+      "buttonId": "TinkerGravOBombMiniatureBlackHoleTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gazlowe_gravobomb.png",
+      "sort": 2,
+      "name": "迷你黑洞",
+      "short": "扩大范围并提高伤害，缩短冷却时间",
+      "full": "3000型引力炸弹的范围扩大25%，伤害提高50%。每牵引一名敌人都会使其冷却时间缩短12秒。"
+    },
+    {
+      "nameId": "TinkerItsRainingScrap",
+      "buttonId": "TinkerItsRainingScrap",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gazlowe_rockitturret.png",
+      "sort": 3,
+      "name": "天降碎片",
+      "short": "摇滚炮台消耗更少碎片，获得更多碎片",
+      "full": "摇滚炮台消耗的碎片数量减少1个。每拾取1个碎片，获得2个碎片。"
+    },
+    {
+      "nameId": "GazloweXplodiumChargeBombToss",
+      "buttonId": "GazloweXplodiumChargeBombToss",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_gazlowe_explodiumcharge.png",
+      "sort": 4,
+      "name": "投掷炸弹",
+      "short": "爆素炸药释放更多炸弹",
+      "full": "爆素炸药现在拥有2次充能，两次使用之间有3秒的冷却时间，并且在爆炸时额外发射2枚炸弹。"
+    }
+  ]
+}

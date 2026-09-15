@@ -1,0 +1,295 @@
+{
+  "shortName": "greymane",
+  "heroName": "Greymane",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "GreymaneWorgenForm",
+      "buttonId": "GreymaneWorgenForm",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_greymane_curseoftheworgen.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "狼人诅咒",
+      "short": "在狼人和人类之间切换",
+      "full": "格雷迈恩可以使用特定技能在人类和狼人形态之间切换。\n\n人类形态时，格雷迈恩的普通攻击为远程攻击。\n\n狼人形态时，格雷迈恩获得10点护甲，普通攻击变为近战攻击，但伤害提高40%。"
+    },
+    {
+      "nameId": "GreymaneGilneanCocktail",
+      "buttonId": "GreymaneGilneanCocktail",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_greymane_qattack.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "吉尔尼斯鸡尾酒",
+      "short": "对首个击中的敌人造成伤害，并对目标后方敌人造成大量伤害",
+      "full": "投掷酒瓶，对第一个击中的敌人造成55(+4%每级)点伤害，然后爆炸并对目标后方锥形区域的敌人造成220(+4%每级)点伤害。\n\n狼人：利爪横扫\n向前方横扫，对敌人造成伤害。"
+    },
+    {
+      "nameId": "GreymaneInnerBeast",
+      "buttonId": "GreymaneInnerBeast",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_greymane_beastfocus.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "野兽之力",
+      "short": "大幅提高攻击速度",
+      "full": "攻击���度提高50%，持续3秒。普通攻击刷新持续时间，并使野兽之力的冷却时间缩短0.5秒。"
+    },
+    {
+      "nameId": "GreymaneDarkflight",
+      "buttonId": "GreymaneDarkflight",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_greymane_darkflight.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "疾步夜行",
+      "short": "跃向敌人并变形为狼人",
+      "full": "变形成狼人，跃向目标并造成88(+4%每级)点伤害。\n\n狼人：逃脱\n翻滚逃跑并变形为人类。"
+    },
+    {
+      "nameId": "GreymaneGoForTheThroat",
+      "buttonId": "GreymaneGoForTheThroat",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_greymane_goforthethroat.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "直取要害",
+      "short": "撕碎英雄，如果用该技能击杀了英雄则冷却时间重置",
+      "full": "跃向一名敌方英雄并变形成狼人，对其撕扯攻击造成355(+4%每级)点伤害。如果该技能击杀了目标，则可以在10秒内再度使用一次无消耗的技能。"
+    },
+    {
+      "nameId": "GreymaneCursedBullet",
+      "buttonId": "GreymaneCursedBullet",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_greymane_snapshot.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "诅咒枪弹",
+      "short": "消耗敌人当前生命值的一部分",
+      "full": "格雷迈恩变为人类并射出一枚子弹，对路径上的第一个敌方英雄造成相当于其当前生命值35%的伤害。\n\n不会影响载具。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "GreymaneInnerBeastWolfheart",
+      "buttonId": "GreymaneInnerBeastWolfheartTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_greymane_beastfocus.png",
+      "sort": 1,
+      "name": "恶狼之心",
+      "short": "提高狼人护甲，野兽之力冷却时间缩短",
+      "full": "野兽之力期间普通攻击缩短的冷却时间从0.5秒提高至1.2秒。狼人形态的护甲加成从10点提高至15点。"
+    },
+    {
+      "nameId": "GreymaneGilneanCocktailPerfectAim",
+      "buttonId": "GreymaneGilneanCocktailPerfectAimTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_greymane_qattack.png",
+      "sort": 2,
+      "name": "精确打击",
+      "short": "提高吉尔尼斯鸡尾酒的射程，击中英雄将返还法力值",
+      "full": "吉尔尼斯鸡尾酒射程提高30%，击中敌方英雄将返还45点法力值。"
+    },
+    {
+      "nameId": "GreymaneInnerBeastViciousness",
+      "buttonId": "GreymaneInnerBeastViciousnessTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_greymane_beastfocus_var1.png",
+      "sort": 3,
+      "name": "恶意",
+      "short": "提高野兽之力的持续时间，技能也会刷新持续时间",
+      "full": "野兽之力的持续时间延长至4秒，造成技能伤害时也会刷新持续时间。"
+    },
+    {
+      "nameId": "GreymaneDarkflightThickSkin",
+      "buttonId": "GreymaneDarkflightThickSkinTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_greymane_darkflight.png",
+      "sort": 1,
+      "name": "厚皮",
+      "short": "疾步夜行提供物理护甲",
+      "full": "使用疾步夜行提供50点物理护甲，抵御下2次英雄的普通攻击。在狼人形态下使受到的伤害降低50%。"
+    },
+    {
+      "nameId": "GreymaneDisengageEyesInTheDark",
+      "buttonId": "GreymaneDisengageEyesInTheDarkTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_greymane_disengage.png",
+      "sort": 2,
+      "name": "黑暗中的眼睛",
+      "short": "使用逃脱会获得潜行",
+      "full": "使用逃脱获得潜行，持续3秒。"
+    },
+    {
+      "nameId": "GreymaneInnerBeastInsatiable",
+      "buttonId": "GreymaneInnerBeastInsatiableTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_greymane_beastfocus.png",
+      "sort": 3,
+      "name": "无尽贪欲",
+      "short": "获得法力，缩短治疗之泉的冷却时间",
+      "full": "野兽之力使普通攻击恢复10点法力值，并使治疗之泉的冷却时间缩短0.5秒。"
+    },
+    {
+      "nameId": "GreymaneWorgenFormQuicksilverBullets",
+      "buttonId": "GreymaneQuicksilverBulletsTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_greymane_curseoftheworgen.png",
+      "sort": 1,
+      "name": "水银子弹",
+      "short": "提高人类普通攻击射程",
+      "full": "格雷迈恩的人类形态的普通攻击距离扩大1.1。"
+    },
+    {
+      "nameId": "GreymaneGilneanCocktailIncendiaryElixir",
+      "buttonId": "GreymaneGilneanCocktailIncendiaryElixirTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_greymane_qattack.png",
+      "sort": 2,
+      "name": "易燃药剂",
+      "short": "任务：提高吉尔尼斯鸡尾酒伤害",
+      "full": "任务：吉尔尼斯鸡尾酒的冷却时间缩短2秒。每次格雷迈恩用吉尔尼斯鸡尾酒的爆炸伤害击中敌方英雄，其爆炸伤害将提高25点，最高提高375点。\n\n奖励：击中15个英雄后，冷却时间额外缩短3秒。"
+    },
+    {
+      "nameId": "GreymaneWizenedDuelist",
+      "buttonId": "GreymaneWizenedDuelistTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_greymane_curseoftheworgen_var1.png",
+      "sort": 3,
+      "name": "枯瘦的对手",
+      "short": "任务：普通攻击英雄可提高伤害",
+      "full": "任务：人形态下每对英雄进行6次普通攻击，普通攻击的伤害便提高1%，最多提高30%。狼人形态下的普通攻击算3下。格雷迈恩阵亡后损失一半该加成效果。"
+    },
+    {
+      "nameId": "GreymaneHeroicAbilityGoForTheThroat",
+      "buttonId": "GreymaneGoForTheThroat",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_greymane_goforthethroat.png",
+      "sort": 1,
+      "name": "直取要害",
+      "short": "撕碎英雄，如果用该技能击杀了英雄则冷却时间重置",
+      "full": "跃向一名敌方英雄并变形成狼人，对其撕扯攻击造成355(+4%每级)点伤害。如果该技能击杀了目标，则可以在10秒内再度使用一次无消耗的技能。"
+    },
+    {
+      "nameId": "GreymaneHeroicAbilityCursedBullet",
+      "buttonId": "GreymaneCursedBullet",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_greymane_snapshot.png",
+      "sort": 2,
+      "name": "诅咒枪弹",
+      "short": "消耗敌人当前生命值的一部分",
+      "full": "格雷迈恩变为人类并射出一枚子弹，对路径上的第一个敌方英雄造成相当于其当前生命值35%的伤害。\n\n不会影响载具。"
+    },
+    {
+      "nameId": "GreymaneDarkflightDisengageRunningWild",
+      "buttonId": "GreymaneDarkflightRunningWildTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_greymane_darkflight.png",
+      "sort": 1,
+      "name": "狂野奔跑",
+      "short": "提高疾步夜行和逃脱的距离，缩短冷却时间",
+      "full": "疾步夜行和逃脱的距离提高35%，而且使其冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "GreymaneRazorSwipeUnfetteredAssault",
+      "buttonId": "GreymaneRazorSwipeUnfetteredAssaultTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_greymane_swipe.png",
+      "sort": 2,
+      "name": "无缚攻势",
+      "short": "扩大利爪横扫的距离，缩短冷却时间",
+      "full": "利爪横扫的突进距离扩大60%，并且狼人的普通攻击使利爪横扫的冷却时间缩短1.5秒。"
+    },
+    {
+      "nameId": "GreymaneInnerBeastOnTheProwl",
+      "buttonId": "GreymaneInnerBeastOnTheProwlTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_greymane_beastfocus.png",
+      "sort": 3,
+      "name": "潜伏徘徊",
+      "short": "野兽之力提高移动速度",
+      "full": "激活野兽之力3秒后，移动速度提高30%。"
+    },
+    {
+      "nameId": "GreymaneEagerWolf",
+      "buttonId": "GreymaneEagerWolf",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_greymane_beastfocus.png",
+      "sort": 1,
+      "name": "恶狼",
+      "short": "提高野兽之力的攻击速度加成",
+      "full": "如果野兽之力的激活时间达到4秒，那么攻击速度加成将额外提高40%。"
+    },
+    {
+      "nameId": "GreymaneLordofHisPack",
+      "buttonId": "GreymaneLordofHisPackTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 2,
+      "name": "狼群之王",
+      "short": "攻击被控制的英雄造成额外伤害",
+      "full": "攻击被减速、定身或昏迷的英雄使格雷迈恩的普通攻击伤害提高25%，持续3秒，在狼人形态下提高至50%。"
+    },
+    {
+      "nameId": "GreymaneWorgenFormAlphaKiller",
+      "buttonId": "GreymaneAlphaKillerTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_greymane_curseoftheworgen_var1.png",
+      "sort": 3,
+      "name": "头狼杀手",
+      "short": "提高狼人普通攻击对英雄的伤害",
+      "full": "狼人对英雄的普通攻击将额外造成等同于目标最大生命值3%的伤害。"
+    },
+    {
+      "nameId": "GreymaneGoForTheThroatUnleashed",
+      "buttonId": "GreymaneUnleashed",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_greymane_goforthethroat.png",
+      "sort": 1,
+      "name": "解禁",
+      "short": "提高直取要害的伤害，重置技能冷却时间",
+      "full": "被动：直取要害的伤害提高25%。\n\n如果直取要害击杀目标，则返还法力值消耗并重置格雷迈恩的技能冷却时间。"
+    },
+    {
+      "nameId": "GreymaneCursedBulletGilneanRoulette",
+      "buttonId": "GreymaneCursedBulletGilneanRouletteTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_greymane_snapshot.png",
+      "sort": 2,
+      "name": "吉尔尼斯轮盘",
+      "short": "诅咒枪弹造成较少伤害，冷却时间缩短",
+      "full": "诅咒枪弹的伤害减少至当前生命值的30%，但冷却时间缩短24秒。"
+    },
+    {
+      "nameId": "GreymaneHuntersBlunderbuss",
+      "buttonId": "GreymaneHuntersBlunderbussTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_greymane_curseoftheworgen.png",
+      "sort": 3,
+      "name": "猎人短炮",
+      "short": "人类普通攻击造成溅射伤害",
+      "full": "人类普通攻击会对目标后方的敌人造成100%的溅射伤害。"
+    },
+    {
+      "nameId": "GreymaneToothAndClaw",
+      "buttonId": "GreymaneToothAndClawTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_greymane_curseoftheworgen_var1.png",
+      "sort": 4,
+      "name": "尖牙与利爪",
+      "short": "强化狼人形态",
+      "full": "狼人普通攻击会造成100%的顺劈伤害。利爪横扫的伤害提高100%。"
+    }
+  ]
+}

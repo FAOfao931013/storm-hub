@@ -1,0 +1,295 @@
+{
+  "shortName": "hanzo",
+  "heroName": "Hanzo",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "HanzoNaturalAgilityButton",
+      "buttonId": "HanzoNaturalAgility",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_hanzo_wallvault.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "敏",
+      "short": "跃过地形",
+      "full": "纵身翻越最大使用范围内无法通行的地形或建筑物。"
+    },
+    {
+      "nameId": "HanzoStormBowFireTargetPoint",
+      "buttonId": "HanzoStormBow",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_hanzo_stormbow.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "风",
+      "short": "蓄力后发射一支致命的箭矢",
+      "full": "激活后给一支箭矢充能，对击中的第一个敌人造成291(+4%每级)点伤害。“风”的引导时间越长，其射程越远。"
+    },
+    {
+      "nameId": "HanzoScatterArrow",
+      "buttonId": "HanzoScatterArrow",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_hanzo_scatterarrow.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "散",
+      "short": "射出一支箭矢，可分裂成数枚小箭头并进行弹射",
+      "full": "射出一支箭矢，对击中的第一个敌方英雄造成88(+4%每级)点伤害。“散”可以与地形和建筑碰撞，分裂成5枚可飞行额外距离的小箭头，最多可额外弹射4次，并且对击中的第一个敌人造成88(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "HanzoSonicArrow",
+      "buttonId": "HanzoSonicArrow",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_hanzo_sonicarrow.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "音",
+      "short": "暴露一大片区域",
+      "full": "射出一支箭矢，显示一个大范围内的视野，持续5秒。范围内的敌人将被暴露1秒。如果“音”直接落在一名敌人身上，它将对其造成165(+4%每级)点伤害，并随其一起移动。"
+    },
+    {
+      "nameId": "HanzoDragonstrike",
+      "buttonId": "HanzoDragonstrike",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hanzo_dragonstrike.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "竜",
+      "short": "召唤一对龙魂对敌人造成伤害",
+      "full": "1.5秒后，召唤一对龙魂向前飞行，对其范围内的敌方英雄每0.25秒造成84(+4%每级)点伤害。位于中心区域的敌人受到75%的额外伤害。"
+    },
+    {
+      "nameId": "HanzoDragonsArrow",
+      "buttonId": "HanzoDragonsArrow",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hanzo_thedragonsarrow.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "绝",
+      "short": "射出一支全图箭矢，击晕敌人并造成伤害",
+      "full": "射出一个飞行物，飞越整个战场。击中一名敌方英雄时爆炸，对附近的敌人造成130(+4%每级)点伤害，使他们昏迷0.5秒。\n\n飞行中程距离后，伤害提高至260(+4%每级)点，并且昏迷时间延长至1.25秒。\n\n飞行长程距离后，伤害提高至390(+4%每级)点，并且昏迷时间延长至2秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "HanzoTargetPractice",
+      "buttonId": "HanzoTargetPractice",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_hanzo_stormbow.png",
+      "sort": 1,
+      "name": "箭靶练习",
+      "short": "任务：击中所有敌方英雄可强化“风”",
+      "full": "任务：使用“风”击中每一位敌方英雄。\n\n奖励：使用“风”击中每一位敌方英雄后，其射程提高30%。\n\n奖励：使用“风”击中每一位敌方英雄3次后，其伤害提高100点。"
+    },
+    {
+      "nameId": "HanzoSimpleGeometry",
+      "buttonId": "HanzoSimpleGeometry",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_hanzo_scatterarrow.png",
+      "sort": 2,
+      "name": "简单几何学",
+      "short": "任务：“散”获得额外的分裂小箭头",
+      "full": "任务：用同一发“散”分裂出的多枚小箭头击中一名英雄20次。 若有两枚以上的小箭头击中英雄可获得额外进度。\n\n奖励：首次碰撞地形后，“散”会额外分裂出2枚小箭头。"
+    },
+    {
+      "nameId": "HanzoRedemption",
+      "buttonId": "HanzoRedemption",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_hanzo_redemption.png",
+      "sort": 3,
+      "name": "救赎",
+      "short": "任务：击中英雄可获得攻击速度",
+      "full": "任务：在10秒内对同一名英雄每进行2次普通攻击可获得1点救赎值，最多可叠加至12点。死亡时会失去3点救赎值，即使救赎值叠到最高后仍会丢失。\n\n奖励：达到12点救赎值时，获得50%攻击速度。"
+    },
+    {
+      "nameId": "HanzoExplosiveArrows",
+      "buttonId": "HanzoExplosiveArrows",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_hanzo_stormbow.png",
+      "sort": 1,
+      "name": "爆破箭矢",
+      "short": "“风”的箭矢在击中小兵和怪物时会爆炸",
+      "full": "“风”击中小兵或怪物时，对目标周围的敌人造成60%的伤害。"
+    },
+    {
+      "nameId": "HanzoSerratedArrows",
+      "buttonId": "HanzoSerratedArrows",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_hanzo_scatterarrow.png",
+      "sort": 2,
+      "name": "锯齿箭矢",
+      "short": "“散”对非英雄单位造成的伤害提高",
+      "full": "“散”对小兵、雇佣兵和怪物造成的伤害提高100%。"
+    },
+    {
+      "nameId": "HanzoIgnoreAllDistractions",
+      "buttonId": "HanzoIgnoreAllDistractions",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_hanzo_fromonething.png",
+      "sort": 3,
+      "name": "心无旁骛",
+      "short": "普通攻击立即击杀小兵并且射程提高",
+      "full": "普通攻击立即杀死小兵，并使半藏的普通攻击射程增加2码，持续3秒。"
+    },
+    {
+      "nameId": "HanzoTheDragonHungers",
+      "buttonId": "HanzoTheDragonHungers",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_hanzo_draconicadvantage.png",
+      "sort": 1,
+      "name": "巨龙饿了",
+      "short": "“风”给予法术强度加成",
+      "full": "使用“风”击中英雄可给予5%法术强度加成，持续12秒，最多可叠加至20%。"
+    },
+    {
+      "nameId": "HanzoNeverOutmatched",
+      "buttonId": "HanzoNeverOutmatched",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_hanzo_scatterarrow.png",
+      "sort": 2,
+      "name": "未逢敌手",
+      "short": "普通攻击可缩短“散”的冷却时间",
+      "full": "“散”的法力消耗从50点降低至30点。对英雄进行普通攻击可以使“散”的冷却时间减少3秒。"
+    },
+    {
+      "nameId": "HanzoSharpenedArrowheads",
+      "buttonId": "HanzoSharpenedArrowheads",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_hanzo_shieldbreaker.png",
+      "sort": 3,
+      "name": "锋锐箭矢",
+      "short": "普通攻击和“风”的箭矢可以降低护甲",
+      "full": "被普通攻击和“风”击中的英雄护甲值降低3点，持续3秒，最多可降低20点护甲。"
+    },
+    {
+      "nameId": "HanzoDragonstrike",
+      "buttonId": "HanzoDragonstrike",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hanzo_dragonstrike.png",
+      "sort": 1,
+      "name": "竜",
+      "short": "召唤一对龙魂对敌人造成伤害",
+      "full": "1.5秒后，召唤一对龙魂向前飞行，对其范围内的敌方英雄每0.25秒造成84(+4%每级)点伤害。位于中心区域的敌人受到75%的额外伤害。"
+    },
+    {
+      "nameId": "HanzoDragonsArrow",
+      "buttonId": "HanzoDragonsArrow",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hanzo_thedragonsarrow.png",
+      "sort": 2,
+      "name": "绝",
+      "short": "射出一支全图箭矢，击晕敌人并造成伤害",
+      "full": "射出一个飞行物，飞越整个战场。击中一名敌方英雄时爆炸，对附近的敌人造成130(+4%每级)点伤害，使他们昏迷0.5秒。\n\n飞行中程距离后，伤害提高至260(+4%每级)点，并且昏迷时间延长至1.25秒。\n\n飞行长程距离后，伤害提高至390(+4%每级)点，并且昏迷时间延长至2秒。"
+    },
+    {
+      "nameId": "HanzoFleetofFoot",
+      "buttonId": "HanzoFleetofFoot",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_hanzo_stormbow.png",
+      "sort": 1,
+      "name": "健步如飞",
+      "short": "“风”给予移动速度加成",
+      "full": "使用“风”击中英雄可给予10%的移动速度加成，持续6秒，最高可达30%。"
+    },
+    {
+      "nameId": "HanzoNinjaAssassin",
+      "buttonId": "HanzoNinjaAssassin",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_hanzo_wallvault.png",
+      "sort": 2,
+      "name": "忍者刺客",
+      "short": "“风”可降低“敏”的冷却时间",
+      "full": "使用“风”击中英雄可使“敏”的冷却时间减少10秒。另外，击杀英雄会重置“敏”的冷却时间。"
+    },
+    {
+      "nameId": "HanzoMountedArchery",
+      "buttonId": "HanzoMountedArchery",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_hanzo_grabthereins.png",
+      "sort": 3,
+      "name": "翻身上马",
+      "short": "提高坐骑速度，“敏”可瞬发坐骑",
+      "full": "使召唤坐骑的冷却时间缩短2秒。骑乘坐骑时，获得25%的额外移动速度，持续5秒。使用“敏”可立即骑上坐骑。"
+    },
+    {
+      "nameId": "HanzoFlawlessTechnique",
+      "buttonId": "HanzoFlawlessTechnique",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_hanzo_fromonething.png",
+      "sort": 1,
+      "name": "技艺精湛",
+      "short": "“风”与普通攻击相互强化",
+      "full": "使用“风”击中英雄可让半藏在5秒内的下一次普通攻击的伤害提高40%。对英雄进行普通攻击可使半藏在5秒内的下一次“风”的伤害提高40%。"
+    },
+    {
+      "nameId": "HanzoPiercingArrows",
+      "buttonId": "HanzoPiercingArrows",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_hanzo_piercingarrows.png",
+      "sort": 2,
+      "name": "穿透箭矢",
+      "short": "“风”与“散”的箭矢可以穿透",
+      "full": "“风”与“散”的箭矢可以穿透，额外击中一名敌人。另外，“散”的箭矢每次弹射都可以穿透1名敌人。"
+    },
+    {
+      "nameId": "HanzoGiantSlayer",
+      "buttonId": "HanzoGiantSlayer",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_hanzo_kaijuhunter.png",
+      "sort": 3,
+      "name": "巨人杀手",
+      "short": "普通攻击和“散”的箭矢造成额外伤害",
+      "full": "“散”和普通攻击对敌方英雄额外造成相当于他们最大生命值1.6%的伤害。"
+    },
+    {
+      "nameId": "HanzoTheDragonAwakens",
+      "buttonId": "HanzoTheDragonAwakens",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hanzo_dragonstrike.png",
+      "sort": 1,
+      "name": "龙魂觉醒",
+      "short": "技能和攻击可减少“竜”的冷却时间",
+      "full": "使用“风”、“散”或普通攻击击中英雄可使竜的冷却时间缩短4秒。"
+    },
+    {
+      "nameId": "HanzoPOTG",
+      "buttonId": "HanzoPOTG",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hanzo_thedragonsarrow.png",
+      "sort": 2,
+      "name": "全场最佳",
+      "short": "激活后传送至“绝”所在位置",
+      "full": "在飞行阶段或在击中一名目标2秒后，再次激活“绝”可以传送至其所在位置并向后跳跃。如果在击中目标后使用，半藏射出的箭矢可对每一个被击中的目标造成132(+4%每级)点伤害。\n\n半藏在“全场最佳”状态下是不可阻挡的。"
+    },
+    {
+      "nameId": "HanzoBullseye",
+      "buttonId": "HanzoBullseye",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_hanzo_sonicarrow.png",
+      "sort": 3,
+      "name": "正中靶心",
+      "short": "“音”的箭矢飞行得更快，击晕敌人",
+      "full": "“音”的箭矢速度和中心点范围提高100%。另外，英雄被“音”的中心点击中时陷入昏迷，持续1秒。"
+    },
+    {
+      "nameId": "HanzoPerfectAgility",
+      "buttonId": "HanzoPerfectAgility",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_hanzo_wallvault.png",
+      "sort": 4,
+      "name": "完美敏捷",
+      "short": "获得“敏”的使用次数，冷却时间缩短",
+      "full": "“敏”获得第2次使用次数并且冷却时间缩短10秒。"
+    }
+  ]
+}

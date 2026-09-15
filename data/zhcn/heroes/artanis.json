@@ -1,0 +1,305 @@
+{
+  "shortName": "artanis",
+  "heroName": "Artanis",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "ArtanisShieldOverloadDummy",
+      "buttonId": "ArtanisShieldOverloadTrait",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_artanis_shieldoverload.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "护盾过载",
+      "short": "低生命值时获得一层护盾",
+      "full": "如果在生命值低于75%时受到伤害，阿塔尼斯获得一个365(+4%每级)点的护盾，持续5秒。普通攻击使护盾过载的冷却时间缩短4秒。"
+    },
+    {
+      "nameId": "ArtanisBladeDash",
+      "buttonId": "ArtanisBladeDash",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_artanis_powerstrikes.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "利刃冲刺",
+      "short": "向前冲刺随后返回，对沿途的敌人造成伤害",
+      "full": "向前冲刺对敌人造成63(+4%每级)点伤害，随后返回造成171(+4%每级)点伤害。每击中一个敌人使护盾过载的冷却时间缩短1秒，击中英雄使冷却时间缩短2秒。"
+    },
+    {
+      "nameId": "ArtanisTwinBlades",
+      "buttonId": "ArtanisTwinBlades",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_artanis_doubleslash_on.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "双刃",
+      "short": "冲锋并普通攻击两次",
+      "full": "阿塔尼斯的下一次普通攻击立即向前冲锋一小段距离，并攻击敌人2次。"
+    },
+    {
+      "nameId": "ArtanisPhasePrism",
+      "buttonId": "ArtanisPhasePrism",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_artanis_repositionmatrix.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "相位棱镜",
+      "short": "与敌对英雄互换位置",
+      "full": "射出一个相位棱镜，对击中的第一个英雄造成66(+4%每级)点伤害，并与目标互换位置。命中一名英雄可以使阿塔尼斯获得不可阻挡，持续1.5秒。该技能可以在利刃冲刺期间使用。"
+    },
+    {
+      "nameId": "ArtanisSpearofAdunPurifierBeam",
+      "buttonId": "ArtanisSpearofAdunPurifierBeam",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_artanis_purifierbeam.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "净化光束",
+      "short": "用轨道光束追踪一个敌人",
+      "full": "用亚顿之矛上的轨道光束锁定一个敌对英雄，每秒对其造成184(+4%每级)点伤害，持续8秒。光束会跟着目标一起移动。无限射程。"
+    },
+    {
+      "nameId": "ArtanisSpearofAdunSuppressionPulse",
+      "buttonId": "ArtanisSpearofAdunSuppressionPulse",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_artanis_disruptionweb.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "压制脉冲",
+      "short": "对大范围内的敌人造成伤害并使其致盲。",
+      "full": "从亚顿之矛射出大范围脉冲，造成114(+4%每级)点伤害并致盲敌人，持续4秒。无限射程。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ArtanisTwinBladesReactiveParry",
+      "buttonId": "ArtanisTwinBladesReactiveParryTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_artanis_doubleslash_on.png",
+      "sort": 1,
+      "name": "反应招架",
+      "short": "双刃、利刃冲刺提供物理护甲",
+      "full": "使用双刃或利刃冲刺对敌人造成伤害时，将为阿塔尼斯提供50点物理护甲，抵御下一次敌方英雄的普通攻击，使其伤害降低50%。\n\n最多储存2次。"
+    },
+    {
+      "nameId": "ArtanisTwinBladesAmateurOpponent",
+      "buttonId": "ArtanisTwinBladesAmateurOpponentTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_artanis_doubleslash_var1.png",
+      "sort": 2,
+      "name": "业余对手",
+      "short": "提高双刃对非英雄单位造成的伤害",
+      "full": "双刃对非英雄敌人造成150%的额外伤害。"
+    },
+    {
+      "nameId": "ArtanisProtectorOfAiur",
+      "buttonId": "ArtanisProtectorOfAiurTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "艾尔守护者",
+      "short": "任务：攻击英雄可以提高伤害",
+      "full": "任务：对敌方英雄进行普通攻击使阿塔尼斯的攻击伤害提高0.1%。造成英雄击杀会获得额外1%伤害。"
+    },
+    {
+      "nameId": "ArtanisPhasePrismPsionicSynergy",
+      "buttonId": "ArtanisPhasePrismPsionicSynergyTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_artanis_repositionmatrix.png",
+      "sort": 1,
+      "name": "灵能协同",
+      "short": "相位棱镜提供护甲",
+      "full": "使用相位棱镜命中敌方英雄可给予30点护甲，持续5秒。"
+    },
+    {
+      "nameId": "ArtanisShieldOverloadShieldBattery",
+      "buttonId": "ArtanisShieldOverloadShieldBatteryTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_artanis_shieldoverload.png",
+      "sort": 2,
+      "name": "护盾充能",
+      "short": "护盾过载激活时冷却速度更快",
+      "full": "护盾过载的护盾激活时，该技能的冷却速度加快125%。\n\n被动：护盾过载的冷却时间缩短4秒。"
+    },
+    {
+      "nameId": "ArtanisShieldOverloadShieldSurge",
+      "buttonId": "ArtanisShieldOverloadShieldSurgeTalentNew",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_artanis_shieldoverload_a.png",
+      "sort": 3,
+      "name": "护盾喷涌",
+      "short": "低生命值时提高护盾过载的护盾",
+      "full": "生命值低于25%时，护盾过载的护盾值提高80%。"
+    },
+    {
+      "nameId": "ArtanisBladeDashSolariteReaper",
+      "buttonId": "ArtanisBladeDashSolariteReaperTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_artanis_powerstrikes.png",
+      "sort": 1,
+      "name": "太阳能灵刃",
+      "short": "提高利刃冲刺伤害",
+      "full": "利刃冲刺的第一击伤害提高175%。"
+    },
+    {
+      "nameId": "ArtanisPhasePrismChronoSurge",
+      "buttonId": "ArtanisPhasePrismChronoSurgeTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_artanis_repositionmatrix.png",
+      "sort": 2,
+      "name": "时空涌动",
+      "short": "相位棱镜获得攻击速度加成、造成减速",
+      "full": "相位棱镜击中一名敌方英雄后使你获得40%的攻击速度加成，持续5秒，并使敌人的移动速度降低30%，持续4秒。"
+    },
+    {
+      "nameId": "ArtanisFinalCut",
+      "buttonId": "ArtanisFinalCut",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "斩断",
+      "short": "使用技能提高普通攻击的伤害",
+      "full": "使用一个技能后，6秒内发动的下一次普通攻击造成40%的额外伤害。当生命值低于25%时，该伤害加成提高至60%。"
+    },
+    {
+      "nameId": "ArtanisHeroicAbilitySpearofAdunSuppressionPulse",
+      "buttonId": "ArtanisSpearofAdunSuppressionPulse",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_artanis_disruptionweb.png",
+      "sort": 1,
+      "name": "压制脉冲",
+      "short": "对大范围内的敌人造成伤害并使其致盲。",
+      "full": "从亚顿之矛射出大范围脉冲，造成114(+4%每级)点伤害并致盲敌人，持续4秒。无限射程。"
+    },
+    {
+      "nameId": "ArtanisHeroicAbilitySpearofAdunPurifierBeam",
+      "buttonId": "ArtanisSpearofAdunPurifierBeam",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_artanis_purifierbeam.png",
+      "sort": 2,
+      "name": "净化光束",
+      "short": "用轨道光束追踪一个敌人",
+      "full": "用亚顿之矛上的轨道光束锁定一个敌对英雄，每秒对其造成184(+4%每级)点伤害，持续8秒。光束会跟着目标一起移动。无限射程。"
+    },
+    {
+      "nameId": "ArtanisBladeDashTemplarsZeal",
+      "buttonId": "ArtanisBladeDashTemplarsZealTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_artanis_powerstrikes.png",
+      "sort": 1,
+      "name": "圣堂武士的狂热",
+      "short": "缩短利刃冲刺的冷却时间",
+      "full": "利刃冲刺的法力消耗从50点降低至25点。护盾过载的每次激活都能使利刃冲刺的冷却时间缩短6秒。"
+    },
+    {
+      "nameId": "ArtanisTwinBladesTripleStrike",
+      "buttonId": "ArtanisTwinBladesTripleStrikeTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_artanis_doubleslash_on.png",
+      "sort": 2,
+      "name": "三连击",
+      "short": "双刃可以攻击3次",
+      "full": "双刃的普通攻击次数提高至3次，但冷却时间延长1秒。"
+    },
+    {
+      "nameId": "ArtanisPhasePrismGravitonVortex",
+      "buttonId": "ArtanisPhasePrismGravitonVortexTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_artanis_repositionmatrix.png",
+      "sort": 3,
+      "name": "重力漩涡",
+      "short": "攻击缩短相位棱镜的冷却时间",
+      "full": "相位棱镜的法力消耗从50点降低至25点。使用普通攻击或利刃冲刺击中敌方英雄可使相位棱镜的冷却时间缩短2秒。"
+    },
+    {
+      "nameId": "ArtanisShieldOverloadPhaseBulwark",
+      "buttonId": "ArtanisShieldOverloadPhaseBulwarkTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_artanis_shieldoverload.png",
+      "sort": 4,
+      "name": "相位壁垒",
+      "short": "护盾过载提供法术护甲",
+      "full": "护盾过载激活时获得50点法术护甲，此护甲可在护盾过载结束后持续2秒。"
+    },
+    {
+      "nameId": "ArtanisTwinBladesTitanKiller",
+      "buttonId": "ArtanisTwinBladesTitanKillerTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_artanis_doubleslash_on.png",
+      "sort": 1,
+      "name": "泰坦杀手",
+      "short": "普通攻击造成百分比伤害",
+      "full": "普通攻击对英雄造成相当于目标最大生命值 0.5%的额外伤害。当获得双刃强化时，该额外伤害提升至1.5%。"
+    },
+    {
+      "nameId": "ArtanisShieldOverloadForceofWill",
+      "buttonId": "ArtanisShieldOverloadForceofWillTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_artanis_shieldoverload.png",
+      "sort": 2,
+      "name": "意志之力",
+      "short": "技能减少护盾过载的冷却时间",
+      "full": "施放基本技能可以使护盾过载的冷却时间缩短5秒。"
+    },
+    {
+      "nameId": "ArtanisTwinBladesBladesofaTemplar",
+      "buttonId": "ArtanisTwinBladesBladesofaTemplar",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_slow.png",
+      "sort": 3,
+      "name": "圣堂武士之刃",
+      "short": "获得攻速，攻击使敌人减速",
+      "full": "攻击速度提高20%。普通攻击使目标减速20%，持续1.25秒。"
+    },
+    {
+      "nameId": "ArtanisSpearofAdunSuppressionPulseOrbitalBombardment",
+      "buttonId": "ArtanisSpearofAdunSuppressionPulseOrbitalBombardmentTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_artanis_disruptionweb.png",
+      "sort": 1,
+      "name": "轨道轰炸",
+      "short": "压制脉冲获得额外一次使用次数",
+      "full": "压制脉冲获得额外一次使用次数。两次使用之间有10秒冷却时间。"
+    },
+    {
+      "nameId": "ArtanisSpearofAdunPurifierBeamTargetPurified",
+      "buttonId": "ArtanisSpearofAdunPurifierBeamTargetPurifiedTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_artanis_purifierbeam.png",
+      "sort": 2,
+      "name": "目标灭除",
+      "short": "净化光束速度加快，目标死亡时再次启动",
+      "full": "使净化光束的速度提高15%。如果目标被净化光束杀死，则自动在最近的可见敌对英雄位置再次施放净化光束。"
+    },
+    {
+      "nameId": "ArtanisTwinBladesZealotCharge",
+      "buttonId": "ArtanisTwinBladesZealotChargeTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_artanis_doubleslash_on.png",
+      "sort": 3,
+      "name": "狂热冲锋",
+      "short": "提高双刃冲锋距离",
+      "full": "双刃的冲锋距离提高75%。"
+    },
+    {
+      "nameId": "ArtanisPlasmaBurn",
+      "buttonId": "ArtanisPlasmaBurn",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_artanis_shieldoverload.png",
+      "sort": 4,
+      "name": "等离子灼烧",
+      "short": "护盾过载灼烧附近敌人",
+      "full": "护盾过载激活时，每秒对附近敌人造成70(+4%每级)点伤害。"
+    }
+  ]
+}

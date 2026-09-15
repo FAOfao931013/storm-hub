@@ -1,0 +1,295 @@
+{
+  "shortName": "malfurion",
+  "heroName": "Malfurion",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "MalfurionInnervate",
+      "buttonId": "MalfurionInnervate",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_malfurion_innerrvate.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "激活",
+      "short": "为一名盟友恢复法力值，并缩短他们的冷却时间",
+      "full": "在5秒内为友方英雄恢复20%的最大法力值。受到激活影响时，目标的基本技能冷却时间加快50%。\n\n无法对不使用法力值的英雄使用"
+    },
+    {
+      "nameId": "MalfurionRegrowth",
+      "buttonId": "MalfurionRegrowth",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malfurion_regrowth.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "愈合",
+      "short": "持续治疗一名友方英雄",
+      "full": "在20秒内治疗一名友方英雄380(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "MalfurionMoonfire",
+      "buttonId": "MalfurionMoonfire",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malfurion_moonfire.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "月火术",
+      "short": "对范围内的敌人造成伤害，并治疗带有愈合效果的盟友",
+      "full": "对目标范围内敌人造成90(+4%每级)点伤害并使其暴露，持续2秒。\n\n月火术每击中一名敌方英雄，治疗所有受到愈合效果的友方英雄130(+4%每级)点生命。"
+    },
+    {
+      "nameId": "MalfurionEntanglingRoots",
+      "buttonId": "MalfurionEntanglingRoots",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malfurion_entanglingroots.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "纠缠根须",
+      "short": "使范围内敌方英雄定身并对其造成伤害",
+      "full": "使范围内敌方英雄定身，持续1.25秒，并在被定身期间总共造成117(+4%每级)点伤害。法术范围会在3秒内不断扩大。"
+    },
+    {
+      "nameId": "MalfurionTranquility",
+      "buttonId": "MalfurionTranquility",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malfurion_tranquility.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "宁静",
+      "short": "持续性治疗附近的盟友",
+      "full": "每秒治疗附近友方英雄80(+4%每级)点生命值，持续8秒。在宁静范围内受到愈合效果的友方英雄获得10点护甲。"
+    },
+    {
+      "nameId": "MalfurionTwilightDream",
+      "buttonId": "MalfurionTwilightDream",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malfurion_twilightdream.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "暮光梦境",
+      "short": "沉默并对附近敌人造成伤害",
+      "full": "0.5秒后，对玛法里奥周围大范围内的敌人造成310(+4%每级)点伤害，并将其沉默，无法使用技能，持续3秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "MalfurionEntanglingRootsDeepRootsTalent",
+      "buttonId": "MalfurionEntanglingRootsDeepRootsTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malfurion_entanglingroots.png",
+      "sort": 1,
+      "name": "根深蒂固",
+      "short": "任务：纠缠根须提供永久法力值",
+      "full": "纠缠根须的生长范围扩大25%，在地面上的持续存在时间延长40%。\n\n可重复任务：每当一名敌方英雄被定身，永久获得14点法力值。"
+    },
+    {
+      "nameId": "MalfurionMasteryVengefulRoots",
+      "buttonId": "MalfurionEntanglingRootsVengefulRootsTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malfurion_entanglingroots_b.png",
+      "sort": 2,
+      "name": "复仇根须",
+      "short": "任务：施放纠缠根须时召唤一只树人",
+      "full": "施放纠缠根须还会召唤一只每秒造成58点伤害的的树人，持续10秒。\n\n可重复任务：用纠缠根须击中敌方英雄可使树人的普通攻击伤害永久提高7点。"
+    },
+    {
+      "nameId": "MalfurionEntanglingRootsEmeraldDreams",
+      "buttonId": "MalfurionEntanglingRootsEmeraldDreams",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malfurion_entanglingroots_a.png",
+      "sort": 3,
+      "name": "翡翠之梦",
+      "short": "纠缠根须沉睡",
+      "full": "纠缠根须在消失后使敌方英雄陷入沉睡，持续2秒。"
+    },
+    {
+      "nameId": "MalfurionRejuvenation",
+      "buttonId": "MalfurionRejuvenationTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malfurion_regrowth.png",
+      "sort": 1,
+      "name": "回春术",
+      "short": "愈合也会作用于玛法里奥",
+      "full": "对盟友施放愈合也会让玛法里奥获得愈合效果，持续时间为正常持续时间的50%。"
+    },
+    {
+      "nameId": "MalfurionCelestialAlignment",
+      "buttonId": "MalfurionMoonfireCelestialAlignmentTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malfurion_moonfire.png",
+      "sort": 2,
+      "name": "众星合月",
+      "short": "月火术暴露的时间更长，强化普通攻击",
+      "full": "月火术的暴露效果的持续时间延长3秒。玛法里奥对被月火术暴露的英雄所进行的普通攻击造成85%额外伤害。"
+    },
+    {
+      "nameId": "MalfurionCombatStyleShandosClarity",
+      "buttonId": "MalfurionInnervateShandosClarityTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_malfurion_innerrvate.png",
+      "sort": 3,
+      "name": "杉多之澈",
+      "short": "激活获得一次额外的使用次数",
+      "full": "激活获得一次额外的使用次数。每有一名盟友受到愈合效果影响，激活的冷却时间恢复速度便加快25%。"
+    },
+    {
+      "nameId": "MalfurionWildGrowthTalent",
+      "buttonId": "MalfurionMoonfireWildGrowthTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_malfurion_wildgrowth.png",
+      "sort": 1,
+      "name": "野性成长",
+      "short": "月火术延长愈合的持续时间",
+      "full": "月火术每击中一名英雄，当前正在生效的愈合的持续时间延长1秒。"
+    },
+    {
+      "nameId": "MalfurionMasteryTenaciousRootsEntanglingRoots",
+      "buttonId": "MalfurionEntanglingRootsTenaciousRootsTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malfurion_entanglingroots.png",
+      "sort": 2,
+      "name": "坚韧根须",
+      "short": "延长纠缠根须的持续时间，被击晕可重置冷却时间",
+      "full": "纠缠根须的定身时间延长25%。如果玛法里奥被击晕，则立即刷新纠缠根须的冷却时间。该效果每10秒只能生效一次。"
+    },
+    {
+      "nameId": "MalfurionNaturesCureRegrowth",
+      "buttonId": "MalfurionNaturesCure",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_malfurion_regrowth.png",
+      "sort": 3,
+      "name": "自然之愈",
+      "short": "激活后移除盟友遭受的瘫痪效果",
+      "full": "激活后，移除受到愈合影响的盟友身上的昏迷、定身和减速效果。"
+    },
+    {
+      "nameId": "MalfurionHeroicAbilityTranquility",
+      "buttonId": "MalfurionTranquility",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malfurion_tranquility.png",
+      "sort": 1,
+      "name": "宁静",
+      "short": "持续性治疗附近的盟友",
+      "full": "每秒治疗附近友方英雄80(+4%每级)点生命值，持续8秒。在宁静范围内受到愈合效果的友方英雄获得10点护甲。"
+    },
+    {
+      "nameId": "MalfurionHeroicAbilityTwilightDream",
+      "buttonId": "MalfurionTwilightDream",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malfurion_twilightdream.png",
+      "sort": 2,
+      "name": "暮光梦境",
+      "short": "沉默并对附近敌人造成伤害",
+      "full": "0.5秒后，对玛法里奥周围大范围内的敌人造成310(+4%每级)点伤害，并将其沉默，无法使用技能，持续3秒。"
+    },
+    {
+      "nameId": "MalfurionRegrowthNaturesSwiftness",
+      "buttonId": "MalfurionRegrowthNaturesSwiftnessTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malfurion_regrowth.png",
+      "sort": 1,
+      "name": "自然迅捷",
+      "short": "愈合给予玛法里奥移动速度加成",
+      "full": "每有一个激活的愈合，玛法里奥获得6%移动速度。"
+    },
+    {
+      "nameId": "MalfurionMasteryHinderingMoonfire",
+      "buttonId": "MalfurionMoonfireHinderingMoonfireTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malfurion_moonfire.png",
+      "sort": 2,
+      "name": "妨害月火",
+      "short": "月火术可减速",
+      "full": "被月火术击中的敌人速度降低25%，持续3秒。"
+    },
+    {
+      "nameId": "MalfurionRevitalizeInnervateTalent",
+      "buttonId": "MalfurionRevitalizeInnervateTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_malfurion_innerrvate.png",
+      "sort": 3,
+      "name": "新生",
+      "short": "激活也会影响玛法里奥",
+      "full": "使用激活也会使玛法里奥获得相当于最大法力值15%的法力，并使其基本技能的冷却时间刷新速度加快50%，持续5秒。"
+    },
+    {
+      "nameId": "MalfurionYserasGift",
+      "buttonId": "MalfurionYserasGift",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malfurion_regrowth.png",
+      "sort": 1,
+      "name": "伊瑟拉之赐",
+      "short": "高生命值时，愈合的治疗量提高。",
+      "full": "玛法里奥的生命值高于75%时，愈合的持续治疗效果提高75%。"
+    },
+    {
+      "nameId": "MalfurionRegrowthNaturesBalance",
+      "buttonId": "MalfurionRegrowthNaturesBalanceTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_malfurion_wildgrowth.png",
+      "sort": 2,
+      "name": "自然平衡",
+      "short": "扩大月火术的范围，增加愈合的持续时间",
+      "full": "月火术的范围扩大25%，愈合的持续时间延长5秒。"
+    },
+    {
+      "nameId": "MalfurionMoonfireMoonlitHarmonyTalent",
+      "buttonId": "MalfurionMoonfireMoonlitHarmonyTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_malfurion_wildgrowth_a.png",
+      "sort": 3,
+      "name": "月光调谐",
+      "short": "每有一位盟友受到愈合影响，月火术的治疗效果便会相应提高",
+      "full": "月火术的治疗效果提高20%，而且每有一名盟友受到愈合影响，其治疗效果便提高15%。"
+    },
+    {
+      "nameId": "MalfurionMasterySerenity",
+      "buttonId": "MalfurionTranquilitySerenityTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malfurion_tranquility.png",
+      "sort": 1,
+      "name": "平静",
+      "short": "强化宁静",
+      "full": "月火术每击中一名敌方英雄，宁静的冷却时间减少3秒。宁静的治疗效果提高25%，且每有一位盟友受到愈合法术的影响，宁静的治疗效果便额外提高10%。"
+    },
+    {
+      "nameId": "MalfurionMasteryAstralCommunion",
+      "buttonId": "MalfurionTwilightDreamAstralCommunionTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malfurion_twilightdream.png",
+      "sort": 2,
+      "name": "星界沟通",
+      "short": "激活后传送并施放暮光梦境",
+      "full": "激活后引导1秒，然后立即传送到目标位置并施放暮光梦境。与暮光梦境共享冷却时间。\n\n被动：暮光梦境的沉默持续时间延长至5秒。"
+    },
+    {
+      "nameId": "MalfurionLifebloomRegrowth",
+      "buttonId": "MalfurionRegrowthMoonfireLifebloomTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malfurion_regrowth.png",
+      "sort": 3,
+      "name": "生命绽放",
+      "short": "愈合立即治疗损失的生命值",
+      "full": "施放愈合立即治疗目标所损失生命值10%的生命。"
+    },
+    {
+      "nameId": "MalfurionMasteryLunarShower",
+      "buttonId": "MalfurionMoonfireLunarShowerTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malfurion_moonfire.png",
+      "sort": 4,
+      "name": "月光淋漓",
+      "short": "连续施放月火术将更强大",
+      "full": "如果月火术击中一名英雄，其冷却时间缩短1秒，并且在6秒内下一个月火术造成的伤害提高20%。该伤害加成效果最多可叠加至60%。"
+    }
+  ]
+}

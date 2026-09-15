@@ -1,0 +1,305 @@
+{
+  "shortName": "medivh",
+  "heroName": "Medivh",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "MedivhRavenForm",
+      "buttonId": "MedivhRavenForm",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_medivh_ravenform.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "乌鸦形态",
+      "short": "变形为一只乌鸦",
+      "full": "虽然无法使用坐骑，但麦迪文可以变形为一只乌鸦，移动速度提高20%。变形后麦迪文可以飞越所有地形，并免疫所有效果。"
+    },
+    {
+      "nameId": "MedivhArcaneRift",
+      "buttonId": "MedivhArcaneRift",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_medivh_arcanemissile.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "奥术裂隙",
+      "short": "射出一支奥术箭，对一条直线上的敌人造成伤害",
+      "full": "射出奥术裂隙，对沿途敌人造成170(+4%每级)点伤害。如果击中敌方英雄，那么冷却时间将缩短5秒，并返还50点法力值。\n\n任务：使用奥术裂隙击中40名敌方英雄并且不死。\n\n奖励：造成的伤害永久提高75点，击中英雄缩短冷却时间1秒。"
+    },
+    {
+      "nameId": "MedivhForceOfWill",
+      "buttonId": "MedivhForceOfWill",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_medivh_forceofwill.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "意志之力",
+      "short": "保护一名友方英雄免受伤害",
+      "full": "保护一名盟友，使其免受所有伤害，持续1.5秒。效果结束后，意志之力治疗目标20%其所吸收的伤害量。"
+    },
+    {
+      "nameId": "MedivhPortalInstant",
+      "buttonId": "MedivhPortal",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_medivh_portal.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "传送门",
+      "short": "召唤一个盟友可以穿越的传送门",
+      "full": "在麦迪文和目标位置之间制造一组传送门，使盟友可以在两者之间传送。传送门持续6秒。"
+    },
+    {
+      "nameId": "MedivhPolyBomb",
+      "buttonId": "MedivhPolyBomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_medivh_polybomb.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "变形炸弹",
+      "short": "使一个英雄变形并且该效果会扩散至其他英雄身上",
+      "full": "变形一个敌方英雄，持续2秒，沉默他们并使其无法攻击。效果结束时，变形炸弹会扩散到附近其他敌方英雄身上。"
+    },
+    {
+      "nameId": "MedivhLeyLineSeal",
+      "buttonId": "MedivhLeyLineSeal",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_medivh_leylineblast.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "魔网封印",
+      "short": "释放出能量波使敌方英雄时间停止",
+      "full": "0.5秒后，释放出能量波使敌方英雄时间停止，持续3秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "MedivhTransformRavenWindsOfCelerity",
+      "buttonId": "MedivhTransformRavenWindsOfCelerity",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_medivh_ravenform.png",
+      "sort": 1,
+      "name": "灵犀之风",
+      "short": "提高乌鸦形态的移动速度",
+      "full": "乌鸦形态的移动速度加成提高50%。"
+    },
+    {
+      "nameId": "MedivhTransformRavenRavensIntellect",
+      "buttonId": "MedivhTransformRavenRavensIntellect",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_medivh_ravenform_b.png",
+      "sort": 2,
+      "name": "乌鸦智慧",
+      "short": "乌鸦形态提高生命值与法力值恢复",
+      "full": "乌鸦形态可以使麦迪文的法力值与生命值的恢复速度提高75%。"
+    },
+    {
+      "nameId": "MedivhPortalPortalMastery",
+      "buttonId": "MedivhPortalPortalMasteryTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_medivh_portal.png",
+      "sort": 3,
+      "name": "传送门专精",
+      "short": "控制两个传送门的位置",
+      "full": "麦迪文可以手动放置传送门两端的位置，并且不再打破乌鸦形态。\n\n激活麦迪文的特质可以取消未连接的传送门。"
+    },
+    {
+      "nameId": "MedivhPortalMageArmor",
+      "buttonId": "MedivhPortalMageArmor",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_medivh_portal.png",
+      "sort": 1,
+      "name": "法师护甲",
+      "short": "使用传送门可获得护甲",
+      "full": "盟友第一次使用传送门时获得40点护甲，持续5秒，使受到的伤害降低40%。"
+    },
+    {
+      "nameId": "MedivhPortalRavenFamiliar",
+      "buttonId": "MedivhPortalRavenFamiliar",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_medivh_portal_a.png",
+      "sort": 2,
+      "name": "乌鸦仆从",
+      "short": "使用传送门后获得一只乌鸦伙伴",
+      "full": "盟友每次使用传送门后将获得乌鸦伙伴的帮助。乌鸦在5秒内将冲向盟友下一次普通攻击的英雄，造成114(+4%每级)点伤害，使其减速30%，持续2.5秒。"
+    },
+    {
+      "nameId": "MedivhDustOfAppearance",
+      "buttonId": "MedivhDustOfAppearance",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_medivh_dustofappearance.png",
+      "sort": 3,
+      "name": "显影之尘",
+      "short": "激活后暴露附近的英雄",
+      "full": "激活后大幅扩大视野范围，持续5秒，并暴露范围内的敌方英雄，持续8秒。不会取消乌鸦形态。\n\n被动：麦迪文在乌鸦形态下的视野范围扩大25%。"
+    },
+    {
+      "nameId": "MedivhMysticAssault",
+      "buttonId": "MedivhMysticAssault",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_medivh_arcanemissile.png",
+      "sort": 1,
+      "name": "神秘攻击",
+      "short": "奥术裂隙可以强化普通攻击",
+      "full": "如果奥术裂隙击中一名敌方英雄，麦迪文的下一次普通攻击在6秒内造成50%额外伤害，造成伤害的50%治疗麦迪文。"
+    },
+    {
+      "nameId": "MedivhForceOfWillArcaneExplosion",
+      "buttonId": "MedivhForceOfWillArcaneExplosion",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_medivh_forceofwill.png",
+      "sort": 2,
+      "name": "魔爆术",
+      "short": "意志之力可以造成范围伤害",
+      "full": "意志之力结束后，对周围的敌人造成80(+4%每级)点伤害，外加其阻挡伤害的50%，最高可达315(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "MedivhForceofMagic",
+      "buttonId": "MedivhForceofMagic",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_medivh_forceofwill_a.png",
+      "sort": 3,
+      "name": "魔法之力",
+      "short": "意志之力可以给予法术强度",
+      "full": "单次施法意志之力阻止至少268(+4%每级)点伤害可给予30%法术强度，持续15秒。最多叠加2次。"
+    },
+    {
+      "nameId": "MedivhPolyBomb",
+      "buttonId": "MedivhPolyBomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_medivh_polybomb.png",
+      "sort": 1,
+      "name": "变形炸弹",
+      "short": "使一个英雄变形并且该效果会扩散至其他英雄身上",
+      "full": "变形一个敌方英雄，持续2秒，沉默他们并使其无法攻击。效果结束时，变形炸弹会扩散到附近其他敌方英雄身上。"
+    },
+    {
+      "nameId": "MedivhLeyLineSeal",
+      "buttonId": "MedivhLeyLineSeal",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_medivh_leylineblast.png",
+      "sort": 2,
+      "name": "魔网封印",
+      "short": "释放出能量波使敌方英雄时间停止",
+      "full": "0.5秒后，释放出能量波使敌方英雄时间停止，持续3秒。"
+    },
+    {
+      "nameId": "MedivhForceOfWillCircleOfProtection",
+      "buttonId": "MedivhForceOfWillCircleOfProtection",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_medivh_forceofwill.png",
+      "sort": 1,
+      "name": "守护之环",
+      "short": "意志之力可以保护目标附近的盟友",
+      "full": "意志之力还会对目标周围的盟友施加，但其冷却时间增加2秒。"
+    },
+    {
+      "nameId": "MedivhForceOfWillEnduringWill",
+      "buttonId": "MedivhForceOfWillEnduringWill",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_medivh_forceofwill_a.png",
+      "sort": 2,
+      "name": "坚韧意志",
+      "short": "阻止伤害可以减少意志之力的冷却时间",
+      "full": "使用意志之力阻挡至少268(+4%每级)点伤害可使其冷却时间缩短至4秒。"
+    },
+    {
+      "nameId": "MedivhForceOfWillReabsorption",
+      "buttonId": "MedivhForceOfWillReabsorption",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_medivh_forceofwill_b.png",
+      "sort": 3,
+      "name": "重新吸收",
+      "short": "提高意志之力的治疗效果",
+      "full": "意志之力的治疗量提高至其所吸收伤害的70%。"
+    },
+    {
+      "nameId": "MedivhArcaneRiftArcaneCharge",
+      "buttonId": "MedivhArcaneRiftArcaneCharge",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_medivh_arcanemissile.png",
+      "sort": 1,
+      "name": "奥术充能",
+      "short": "击中英雄后奥术裂隙造成更大伤害",
+      "full": "奥术裂隙击中一个敌方英雄后，下一个奥术裂隙将造成15%的额外伤害。"
+    },
+    {
+      "nameId": "MedivhTemporalFlux",
+      "buttonId": "MedivhTemporalFlux",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_medivh_arcanemissile_a.png",
+      "sort": 2,
+      "name": "时间流转",
+      "short": "奥术裂隙可减少终极技能冷却时间",
+      "full": "普通攻击可以使麦迪文的终极技能的冷却时间减少3%。奥术裂隙每击中一名英雄，麦迪文的终极技能的冷却时间便减少9%。"
+    },
+    {
+      "nameId": "MedivhPortalStablePortal",
+      "buttonId": "MedivhPortalStablePortal",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_medivh_portal.png",
+      "sort": 3,
+      "name": "稳定传送门",
+      "short": "延长传送门的持续时间",
+      "full": "传送门的冷却时间缩短25%，传送门的持续时间延长50%。"
+    },
+    {
+      "nameId": "MedivhPolyBombGlyphOfPolyBomb",
+      "buttonId": "MedivhPolyBombGlyphOfPolyBomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_medivh_polybomb.png",
+      "sort": 1,
+      "name": "变形炸弹雕文",
+      "short": "变形炸弹立即在大范围内扩散",
+      "full": "变形炸弹现在会击中一片区域，立即使敌方英雄变形，并在1秒后再次击中相同区域。\n\n变形炸弹的持续时间缩短至1秒，扩散范围扩大25%。"
+    },
+    {
+      "nameId": "MedivhLeyLineSealMedivhCheats",
+      "buttonId": "MedivhLeyLineSealMedivhCheats",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_medivh_leylineblast.png",
+      "sort": 2,
+      "name": "麦迪文作弊！",
+      "short": "魔网封印激活时可以重新导向",
+      "full": "使时间停止的持续时间延长33%，并可以在时间停止激活时重新导向。"
+    },
+    {
+      "nameId": "MedivhArcaneRiftGuardianOfTirisfal",
+      "buttonId": "MedivhArcaneRiftGuardianOfTirisfal",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_medivh_arcanemissile.png",
+      "sort": 3,
+      "name": "提瑞斯法守护者",
+      "short": "奥术裂隙可以立即杀死小兵",
+      "full": "奥术裂隙可以立即杀死小兵和投石机。"
+    },
+    {
+      "nameId": "MedivhArcaneBrilliance",
+      "buttonId": "MedivhArcaneBrilliance",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_jaina_arcaneintellect.png",
+      "sort": 4,
+      "name": "奥术光辉",
+      "short": "为盟友提供法术强度和法力值",
+      "full": "激活后立即为附近所有友方英雄恢复200点法力值，并使他们的法术强度提高15%，持续10秒。"
+    },
+    {
+      "nameId": "MedivhDustofDisappearance",
+      "buttonId": "MedivhDustofDisappearance",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_medivh_invisibility.png",
+      "sort": 5,
+      "name": "隐匿之尘",
+      "short": "使一名友方英雄潜行",
+      "full": "使一名友方英雄潜行40秒，并在前0.5秒内无法被暴露。在潜行状态下保持静止状态至少1.5秒后，获得隐形效果。\n\n储存最多2次充能。"
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "shortName": "garrosh",
+  "heroName": "Garrosh",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "GarroshArmorUp",
+      "buttonId": "GarroshArmorUp",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_garrosh_armor_up.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "铁甲加身",
+      "short": "生命值降低时获得护甲",
+      "full": "加尔鲁什每失去2%的最大生命值就会获得1点护甲。"
+    },
+    {
+      "nameId": "GarroshGroundbreaker",
+      "buttonId": "GarroshGroundbreaker",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_garrosh_groundbreaker.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "裂地重斧",
+      "short": "对敌人造成伤害并击晕他们",
+      "full": "对范围内的敌人造成81(+4%每级)点伤害。在范围边缘被击中的英雄将被击晕0.5秒，然后被减速40% ，持续2秒。"
+    },
+    {
+      "nameId": "GarroshBloodthirst",
+      "buttonId": "GarroshBloodthirst",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_garrosh_bloodthirst.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "嗜血打击",
+      "short": "造成伤害并治疗一部分损失的生命值",
+      "full": "对一名敌人造成156(+4%每级)点伤害，并为加尔鲁什恢复损失生命值的10%。对英雄使用时，治疗效果提高100%。"
+    },
+    {
+      "nameId": "GarroshWreckingBall",
+      "buttonId": "GarroshWreckingBall",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_garrosh_wrecking_ball.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "肉弹抛投",
+      "short": "投掷一名敌人，造成伤害并使其减速",
+      "full": "将附近的一名敌方英雄、小兵或雇佣兵投掷到目标地点，对撞击点附近的敌人造成91(+4%每级)点伤害，并使其减速30%，持续2.5秒。"
+    },
+    {
+      "nameId": "GarroshWarlordsChallenge",
+      "buttonId": "GarroshWarlordsChallenge",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_garrosh_warlords_challenge.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "督军的挑战",
+      "short": "强迫附近的英雄攻击加尔鲁什",
+      "full": "沉默附近的英雄，并强制其攻击加尔鲁什，持续2秒。"
+    },
+    {
+      "nameId": "GarroshDecimate",
+      "buttonId": "GarroshDecimate",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_garrosh_decimate.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "致残挥砍",
+      "short": "对附近的敌人造成伤害并使其减速",
+      "full": "对附近的敌人造成50(+4%每级)点伤害，并使其减速40%，持续1.5秒。对英雄额外造成100%的伤害；每击中一名英雄，冷却时间缩短1秒。\n\n最多储存3层充能。"
+    },
+    {
+      "nameId": "GarroshWreckingBallIntotheFray",
+      "buttonId": "GarroshWreckingBallIntotheFray",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_garrosh_intothefray.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "盟友抛投",
+      "short": "激活后投掷一名盟友",
+      "full": "激活后投掷一名附近的盟友，使其获得20点护甲，持续3秒。着陆后对附近的敌人造成91(+4%每级)点伤害，并使其减速30%，持续2.5秒。\n\n盟友英雄在空中飞行时不可阻挡。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "GarroshGroundbreakerWarbreaker",
+      "buttonId": "GarroshGroundbreakerWarbreaker",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_garrosh_groundbreaker.png",
+      "sort": 1,
+      "name": "灭战者",
+      "short": "任务：击晕英雄可强化裂地重斧",
+      "full": "任务：用裂地重斧击晕英雄。\n\n奖励：击晕5名英雄后，裂地重斧的击晕在3秒内额外对英雄造成165(+4%每级)点伤害。\n\n奖励：击晕15名英雄后，裂地重斧的冷却时间永久缩短2秒。"
+    },
+    {
+      "nameId": "GarroshWreckingBallUnrivaledStrength",
+      "buttonId": "GarroshWreckingBallUnrivaledStrength",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_garrosh_wrecking_ball.png",
+      "sort": 2,
+      "name": "无匹之力",
+      "short": "提高肉弹抛投的投掷范围和伤害",
+      "full": "肉弹抛投的投掷范围扩大25%，伤害提高125%。"
+    },
+    {
+      "nameId": "GarroshArmorUpBodyCheck",
+      "buttonId": "GarroshArmorUpBodyCheck",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_garrosh_slam.png",
+      "sort": 3,
+      "name": "身体阻截",
+      "short": "对一名敌人造成伤害并使其减速",
+      "full": "激活后，对一名目标敌人造成111(+4%每级)点伤害，并使其减速35%，持续3秒。被击中的敌方英雄受到的治疗效果降低30%，持续3秒。"
+    },
+    {
+      "nameId": "GarroshBloodthirstInFortheKill",
+      "buttonId": "GarroshBloodthirstInFortheKill",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_garrosh_bloodthirst.png",
+      "sort": 1,
+      "name": "杀心骤起",
+      "short": "嗜血打击击杀敌人后重置冷却时间并恢复法力",
+      "full": "嗜血打击对非英雄单位的伤害提高70%。用嗜血打击杀死敌人可重置冷却时间，并返还法力消耗。"
+    },
+    {
+      "nameId": "GarroshBloodthirstThirstforBattle",
+      "buttonId": "GarroshBloodthirstThirstforBattle",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_garrosh_bloodthirst_var1.png",
+      "sort": 2,
+      "name": "渴望战斗",
+      "short": "普通攻击缩短嗜血打击的冷却时间",
+      "full": "对英雄的普通攻击使嗜血打击的冷却时间缩短2秒。"
+    },
+    {
+      "nameId": "GarroshIndomitable",
+      "buttonId": "GarroshIndomitable",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_garrosh_indomitablel.png",
+      "sort": 3,
+      "name": "无人敢挡",
+      "short": "激活后变得不可阻挡",
+      "full": "激活后变得不可阻挡，持续1.5秒。"
+    },
+    {
+      "nameId": "GarroshGroundbreakerIntimidation",
+      "buttonId": "GarroshGroundbreakerIntimidation",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_garrosh_groundbreaker.png",
+      "sort": 1,
+      "name": "实力震慑",
+      "short": "裂地重斧可降低攻击速度",
+      "full": "裂地重斧使被击中的英雄攻击速度降低30%，持续4秒。"
+    },
+    {
+      "nameId": "GarroshOppressor",
+      "buttonId": "GarroshOppressor",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_garrosh_bloodthirst.png",
+      "sort": 2,
+      "name": "武力压迫",
+      "short": "普通攻击与嗜血打击可降低法术强度",
+      "full": "对英雄发动的普通攻击和嗜血打击使目标的法术强度降低30%，持续2.5秒。"
+    },
+    {
+      "nameId": "GarroshIntotheFrayLoktarOgar",
+      "buttonId": "GarroshIntoTheFrayLoktarOgar",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_garrosh_intothefray.png",
+      "sort": 3,
+      "name": "Lok-tar ogar!",
+      "short": "提高盟友抛投护甲，缩短冷却时间",
+      "full": "使盟友抛投的护甲值加成提高20点。使用盟友抛投命中敌方英雄可以使其冷却时间缩短12秒。"
+    },
+    {
+      "nameId": "GarroshHeroicAbilityWarlordsChallenge",
+      "buttonId": "GarroshWarlordsChallenge",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_garrosh_warlords_challenge.png",
+      "sort": 1,
+      "name": "督军的挑战",
+      "short": "强迫附近的英雄攻击加尔鲁什",
+      "full": "沉默附近的英雄，并强制其攻击加尔鲁什，持续2秒。"
+    },
+    {
+      "nameId": "GarroshHeroicAbilityDecimate",
+      "buttonId": "GarroshDecimate",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_garrosh_decimate.png",
+      "sort": 2,
+      "name": "致残挥砍",
+      "short": "对附近的敌人造成伤害并使其减速",
+      "full": "对附近的敌人造成50(+4%每级)点伤害，并使其减速40%，持续1.5秒。对英雄额外造成100%的伤害；每击中一名英雄，冷却时间缩短1秒。\n\n最多储存3层充能。"
+    },
+    {
+      "nameId": "GarroshGroundbreakerDefensiveMeasures",
+      "buttonId": "GarroshGroundbreakerDefensiveMeasures",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_garrosh_groundbreaker.png",
+      "sort": 1,
+      "name": "防御措施",
+      "short": "裂地重斧击晕敌人可以使你获得护盾",
+      "full": "如果裂地重斧击晕一名英雄，加尔鲁什获得350(+4%每级)点护盾，持续6秒。"
+    },
+    {
+      "nameId": "GarroshBloodthirstBloodcraze",
+      "buttonId": "GarroshBloodthirstBloodcraze",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_garrosh_bloodthirst.png",
+      "sort": 2,
+      "name": "血腥疯狂",
+      "short": "嗜血打击持续恢复生命值",
+      "full": "击中英雄时，嗜血打击在3秒内额外为加尔鲁什恢复15%的最大生命值。"
+    },
+    {
+      "nameId": "GarroshArmorUpDoubleUp",
+      "buttonId": "GarroshArmorUpDoubleUp",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_garrosh_armor_up.png",
+      "sort": 3,
+      "name": "加倍武装",
+      "short": "激活铁甲加身提高加成效果",
+      "full": "铁甲加身可以手动激活，使护甲加成提高100%，持续3秒。"
+    },
+    {
+      "nameId": "GarroshGroundbreakerMortalCombo",
+      "buttonId": "GarroshGroundbreakerMortalCombo",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_garrosh_groundbreaker.png",
+      "sort": 1,
+      "name": "致死连击",
+      "short": "对被击晕的目标使用肉弹抛投可缩短冷却时间",
+      "full": "如果在3秒内对同一名英雄使用裂地重斧的击晕和肉弹抛投技能，则肉弹抛投的冷却时间缩短10秒，不论技能先后。"
+    },
+    {
+      "nameId": "GarroshWreckingBallEarthshaker",
+      "buttonId": "GarroshWreckingBallEarthshaker",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_garrosh_wrecking_ball.png",
+      "sort": 2,
+      "name": "震地者",
+      "short": "肉弹抛投可击晕撞击点附近的敌人",
+      "full": "肉弹抛投击晕撞击区域附近的敌人，持续0.5秒。"
+    },
+    {
+      "nameId": "GarroshArmorUpSeasonedSoldier",
+      "buttonId": "GarroshArmorUpSeasonedSoldier",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_garrosh_bloodthirst.png",
+      "sort": 3,
+      "name": "百战老兵",
+      "short": "获得多个增益效果",
+      "full": "获得5%的最大生命值加成，使裂地重斧的减速持续时间提高1秒，并且嗜血打击获得额外一次使用次数。"
+    },
+    {
+      "nameId": "GarroshWarlordsChallengeDeathWish",
+      "buttonId": "GarroshWarlordsChallengeDeathWish",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_garrosh_warlords_challenge.png",
+      "sort": 1,
+      "name": "死亡之愿",
+      "short": "击杀英雄可减少\"督军的挑战\"的冷却时间",
+      "full": "使“督军的挑战”持续时间提高0.5秒。如果敌方英雄在受到“督军的挑战”影响期间被杀死，其冷却时间缩短45秒。"
+    },
+    {
+      "nameId": "GarroshDecimateDeadlyCalm",
+      "buttonId": "GarroshDecimateDeadlyCalm",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_garrosh_decimate.png",
+      "sort": 2,
+      "name": "致命平静",
+      "short": "致残挥砍可降低造成的伤害",
+      "full": "被致残挥砍击中的英雄造成的伤害降低40%，持续3秒。"
+    },
+    {
+      "nameId": "GarroshWreckingBallTitanicMight",
+      "buttonId": "GarroshWreckingBallTitanicMight",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_garrosh_wrecking_ball.png",
+      "sort": 3,
+      "name": "泰坦之力",
+      "short": "肉弹抛投额外投掷一名敌人",
+      "full": "肉弹抛投现在投掷2名距离最近的敌人。"
+    },
+    {
+      "nameId": "GarroshArmorUpInnerRage",
+      "buttonId": "GarroshArmorUpInnerRage",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_garrosh_slam.png",
+      "sort": 4,
+      "name": "怒火中烧",
+      "short": "身体阻截额外获得一层充能",
+      "full": "身体阻截额外获得一层充能，并且其治疗降低效果额外提高45%。"
+    }
+  ]
+}

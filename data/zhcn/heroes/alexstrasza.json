@@ -1,0 +1,295 @@
+{
+  "shortName": "alexstrasza",
+  "heroName": "Alexstrasza",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "AlexstraszaDragonqueen",
+      "buttonId": "AlexstraszaDragonqueen",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_alexstrasza_dragon_queen.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "红龙女王",
+      "short": "变身成守护巨龙，拥有强化技能",
+      "full": "1.25秒后变身成巨龙，生命值提高500(+4%每级)点。\n\n红龙女王激活时，阿莱克丝塔萨的基本技能获得强化，普通攻击的范围变为前方弧形，造成143(+4%每级)点伤害，并为友方英雄治疗43(+4%每级)点生命值，受到的昏迷、定身和减速效果持续时间缩短50%。\n\n持续15秒。"
+    },
+    {
+      "nameId": "AlexstraszaGiftOfLife",
+      "buttonId": "AlexstraszaGiftOfLife",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_alexstrasza_gift_of_life.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "生命赐福",
+      "short": "将一定比例的生命值转移给一名友方英雄",
+      "full": "阿莱克丝塔萨牺牲15%的当前生命值，为一名友方英雄治疗该数值的150%。\n\n被动：阿莱克丝塔萨的生命恢复速度提高150%。\n\n红龙女王：生命吐息\n冷却时间大幅缩短，并且不消耗生命值。"
+    },
+    {
+      "nameId": "AlexstraszaAbundance",
+      "buttonId": "AlexstraszaAbundance",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_alexstrasza_abundance.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "生机绽放",
+      "short": "治疗范围内的友方英雄",
+      "full": "种下一颗治疗之种，在3秒后绽放，为附近的友方英雄治疗20%的最大生命值。\n\n红龙女王：保护\n大幅提高治疗范围和数值。"
+    },
+    {
+      "nameId": "AlexstraszaFlameBuffet",
+      "buttonId": "AlexstraszaFlameBuffet",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_alexstrasza_flame_buffet.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "烈焰打击",
+      "short": "发射火球，点燃敌人并使其减速",
+      "full": "发射火球点燃敌人，在5.5秒内造成75(+4%每级)点伤害。\n\n击中已经在燃烧的敌人时，则在命中时额外造成125(+4%每级)点伤害，使其减速40%，效果在2秒内递减，并返还消耗的法力。\n\n红龙女王：龙翼打击\n对弧形范围内的敌人造成伤害并击飞。"
+    },
+    {
+      "nameId": "AlexstraszaLifebinder",
+      "buttonId": "AlexstraszaLifebinder",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_alexstrasza_life_binder.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "生命缚誓者",
+      "short": "将阿莱克丝塔萨的生命值与盟友连接",
+      "full": "将阿莱克丝塔萨的生命能量与一名友方英雄连接。她和目标在2秒内都获得480(+4%每级)点生命值。之后，生命值百分比较低的英雄的生命值恢复至与另一名英雄相同的百分比水平。"
+    },
+    {
+      "nameId": "AlexstraszaCleansingFlame",
+      "buttonId": "AlexstraszaCleansingFlame",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_alexstrasza_cleansing_flame.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "净化烈焰",
+      "short": "从天空中降下治疗和伤害的火焰",
+      "full": "1.25秒后飞上天空，在6秒内向鼠标指针地点投下5颗火球。每颗火球对敌人造成135(+4%每级)点伤害并治疗友方英雄300(+4%每级)点生命值。\n\n所有火球投完的2秒后，阿莱克丝塔萨降落在鼠标指针地点。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "AlexstraszaLiveAndLetLiveGiftOfLife",
+      "buttonId": "AlexstraszaLiveAndLetLiveGiftOfLife",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_alexstrasza_gift_of_life.png",
+      "sort": 1,
+      "name": "好生之德",
+      "short": "生命值较高时，生命赐福的冷却时间缩短",
+      "full": "阿莱克丝塔萨的生命值高于75%时，生命赐福的冷却速度提高125%。"
+    },
+    {
+      "nameId": "AlexstraszaCircleOfLifeAbundance",
+      "buttonId": "AlexstraszaCircleOfLifeAbundance",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_alexstrasza_abundance.png",
+      "sort": 2,
+      "name": "生生不息",
+      "short": "任务：恢复之球可强化生机绽放",
+      "full": "任务：收集恢复之球。\n\n奖励：收集10个恢复之球后，生机绽放额外治疗5%的最大生命值。\n\n奖励：收集15个恢复之球后，生机绽放的治疗喷发会制造一个恢复之球。"
+    },
+    {
+      "nameId": "AlexstraszaFlamesOfFuryFlameBuffet",
+      "buttonId": "AlexstraszaFlamesOfFuryFlameBuffet",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_alexstrasza_flame_buffet.png",
+      "sort": 3,
+      "name": "愤怒烈焰",
+      "short": "任务：烈焰打击可减少红龙女王的冷却时间",
+      "full": "烈焰打击的法力消耗从50降低至40。\n\n任务：用烈焰打击击中20名燃烧的英雄。\n\n奖励：用烈焰打击击中一名燃烧的英雄后，红龙女王的冷却时间缩短5秒。"
+    },
+    {
+      "nameId": "AlexstraszaSurgeOfVitalityAbundance",
+      "buttonId": "AlexstraszaSurgeOfVitalityAbundance",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_alexstrasza_abundance.png",
+      "sort": 1,
+      "name": "活力涌现",
+      "short": "生机绽放使移动速度提高",
+      "full": "生机绽放的治疗喷发还会使友方英雄的移动速度提高30%，持续3秒。"
+    },
+    {
+      "nameId": "AlexstraszaHeatExhaustionFlameBuffet",
+      "buttonId": "AlexstraszaHeatExhaustionFlameBuffet",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_alexstrasza_flame_buffet.png",
+      "sort": 2,
+      "name": "热力衰竭",
+      "short": "提高烈焰打击的减速效果",
+      "full": "烈焰打击的减速效果从40%提高至50%且不再衰减。"
+    },
+    {
+      "nameId": "AlexstraszaExuberance",
+      "buttonId": "AlexstraszaExuberance",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_alexstrasza_exuberance.png",
+      "sort": 3,
+      "name": "精力旺盛",
+      "short": "生命值较高时移动速度提高",
+      "full": "生命值高于75%时，移动速度提高15%。"
+    },
+    {
+      "nameId": "AlexstraszaLifeblossomGiftOfLife",
+      "buttonId": "AlexstraszaLifeblossomeGiftOfLife",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_alexstrasza_life_blossom.png",
+      "sort": 1,
+      "name": "生命之花",
+      "short": "生命值较高时，生命赐福产生一朵生命之花",
+      "full": "当阿莱克丝塔萨的生命值高于75%时，生命赐福将在目标地点产生一朵生命之花。阿莱克丝塔萨可以收集生命之花，使其下一次生命赐福不消耗生命值。\n\n被动：使生命赐福的消耗降低至阿莱克丝塔萨当前生命值的10%。"
+    },
+    {
+      "nameId": "AlexstraszaVerdantFlourishAbundance",
+      "buttonId": "AlexstraszaVerdantFlourishAbundance",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_alexstrasza_abundance.png",
+      "sort": 2,
+      "name": "春雨荷露",
+      "short": "提高恢复之球和生机绽放的治疗",
+      "full": "阿莱克丝塔萨从生机绽放获得的治疗提高40%，从恢复之球获得治疗提高100%。"
+    },
+    {
+      "nameId": "AlexstraszaFireWithinFlameBuffet",
+      "buttonId": "AlexstraszaFireWithinFlameBuffet",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_alexstrasza_flame_buffet.png",
+      "sort": 3,
+      "name": "火焰反哺",
+      "short": "烈焰打击恢复生命值",
+      "full": "用烈焰打击击中燃烧的英雄可为阿莱克丝塔萨治疗10%的最大生命值。"
+    },
+    {
+      "nameId": "AlexstraszaLifebinder",
+      "buttonId": "AlexstraszaLifebinder",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_alexstrasza_life_binder.png",
+      "sort": 1,
+      "name": "生命缚誓者",
+      "short": "将阿莱克丝塔萨的生命值与盟友连接",
+      "full": "将阿莱克丝塔萨的生命能量与一名友方英雄连接。她和目标在2秒内都获得480(+4%每级)点生命值。之后，生命值百分比较低的英雄的生命值恢复至与另一名英雄相同的百分比水平。"
+    },
+    {
+      "nameId": "AlexstraszaCleansingFlame",
+      "buttonId": "AlexstraszaCleansingFlame",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_alexstrasza_cleansing_flame.png",
+      "sort": 2,
+      "name": "净化烈焰",
+      "short": "从天空中降下治疗和伤害的火焰",
+      "full": "1.25秒后飞上天空，在6秒内向鼠标指针地点投下5颗火球。每颗火球对敌人造成135(+4%每级)点伤害并治疗友方英雄300(+4%每级)点生命值。\n\n所有火球投完的2秒后，阿莱克丝塔萨降落在鼠标指针地点。"
+    },
+    {
+      "nameId": "AlexstraszaDragonScales",
+      "buttonId": "AlexstraszaDragonScales",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_alexstrasza_dragon_scales.png",
+      "sort": 1,
+      "name": "巨龙之鳞",
+      "short": "被瘫痪时护甲值提高",
+      "full": "被昏迷、定身或沉默时，以及效果解除后2秒内，护甲值提高50点。每10秒只能触发一次。"
+    },
+    {
+      "nameId": "AlexstraszaPacify",
+      "buttonId": "AlexstraszaPacify",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_alexstrasza_pacify.png",
+      "sort": 2,
+      "name": "安抚",
+      "short": "使一名敌方英雄减速，并降低其伤害",
+      "full": "激活后，使一名敌方英雄的速度和伤害降低50%，持续3秒。\n\n治疗被昏迷、定身或沉默的盟友后，安抚的冷却时间缩短30秒。"
+    },
+    {
+      "nameId": "AlexstraszaLifeUnbound",
+      "buttonId": "AlexstraszaLifeUnbound",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_alexstrasza_life_unbound.png",
+      "sort": 3,
+      "name": "生命释放",
+      "short": "治疗一名盟友，并对敌人造成伤害",
+      "full": "激活后，为一名友方英雄治疗15%的最大生命值，并对附近的敌人造成200(+4%每级)点伤害。\n\n治疗被昏迷、定身或沉默的盟友后，生命释放的冷却时间缩短30秒。\n\n不能对阿莱克丝塔萨使用。"
+    },
+    {
+      "nameId": "AlexstraszaToughLoveGiftOfLife",
+      "buttonId": "AlexstraszaToughLoveGiftOfLife",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_alexstrasza_gift_of_life.png",
+      "sort": 1,
+      "name": "坚实的爱",
+      "short": "生命赐福获得护甲值",
+      "full": "生命赐福使目标的护甲值提高10点，持续2.5秒，阿莱克丝塔萨的生命值高于75%时，提高的护甲值增加至30点。"
+    },
+    {
+      "nameId": "AlexstraszaOverprotectiveAbundance",
+      "buttonId": "AlexstraszaOverprotectiveAbundance",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_alexstrasza_abundance.png",
+      "sort": 2,
+      "name": "过度保护",
+      "short": "生机绽放使目标获得护盾",
+      "full": "生机绽放治疗英雄时使其获得护盾，持续6秒，护盾值为治疗值的70%。"
+    },
+    {
+      "nameId": "AlexstraszaDraconicDisciplineDragonqueen",
+      "buttonId": "AlexstraszaDraconicDisciplineDragonqueen",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_alexstrasza_dragon_queen.png",
+      "sort": 3,
+      "name": "巨龙戒律",
+      "short": "延长红龙女王的持续时间",
+      "full": "红龙女王的持续时间延长6秒，并且普通攻击的治疗效果提高 50%。"
+    },
+    {
+      "nameId": "AlexstraszaRitualOfLife",
+      "buttonId": "AlexstraszaRitualOfLifeLifebinder",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_alexstrasza_life_binder.png",
+      "sort": 1,
+      "name": "生命仪式",
+      "short": "生命缚誓者可以多次激活",
+      "full": "生命缚誓者在6秒内激活3次。"
+    },
+    {
+      "nameId": "AlexstraszaOnRubyWingsCleansingFlame",
+      "buttonId": "AlexstraszaOnRubyWingsCleansingFlame",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_alexstrasza_cleansing_flame.png",
+      "sort": 2,
+      "name": "红龙之翼",
+      "short": "净化烈焰可以激活红龙女王",
+      "full": "用净化烈焰治疗或伤害英雄至少8次后，着陆时激活红龙女王，持续15秒。"
+    },
+    {
+      "nameId": "AlexstraszaAncientFlameFlameBuffet",
+      "buttonId": "AlexstraszaAncientFlameFlameBuffet",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_alexstrasza_dragon_queen_a.png",
+      "sort": 3,
+      "name": "远古烈焰",
+      "short": "红龙女王的攻击附加烈焰打击",
+      "full": "红龙女王激活时，阿莱克丝塔萨的普通攻击附加烈焰打击。"
+    },
+    {
+      "nameId": "AlexstraszaBlessingOfTheRed",
+      "buttonId": "AlexstraszaBlessingOfTheRed",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_alexstrasza_blessing_of_the_red.png",
+      "sort": 4,
+      "name": "红龙祝福",
+      "short": "使一名盟友获得额外生命值",
+      "full": "激活后，使一名友方英雄最大生命值提高500点，直到该英雄死亡。\n\n无法对阿莱克丝塔萨和已经拥有红龙祝福的英雄使用。"
+    }
+  ]
+}

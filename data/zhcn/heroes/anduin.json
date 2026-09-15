@@ -1,0 +1,305 @@
+{
+  "shortName": "anduin",
+  "heroName": "Anduin",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "AnduinLeapOfFaithInstant",
+      "buttonId": "AnduinLeapOfFaithInstant",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_anduin_leap_of_faith.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "信仰飞跃",
+      "short": "把一名友方英雄拉向你的位置",
+      "full": "用信仰将一名友方英雄立刻拉到安度因的位置，在其移动期间给予不可阻挡。\n\n沐恩\n\n对敌方英雄发动普通攻击可以为安度因附近生命值最低的盟友恢复32(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "AnduinFlashHeal",
+      "buttonId": "AnduinFlashHeal",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_anduin_flash_heal.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "快速治疗",
+      "short": "治疗一名盟友",
+      "full": "施法0.75秒后，治疗一名友方英雄280(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "AnduinDivineStar",
+      "buttonId": "AnduinDivineStar",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_anduin_divine_star.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "神圣之星",
+      "short": "发射一道圣光，造成伤害和治疗",
+      "full": "发射一道圣光，对敌人造成140(+4%每级)点伤害，然后轨迹变宽并回到安度因身边，为途径的友方英雄恢复130(+4%每级)点生命值。 每击中一名敌方英雄，该治疗效果就提高25%。"
+    },
+    {
+      "nameId": "AnduinChastise",
+      "buttonId": "AnduinChastise",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_anduin_chastise.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "惩戒之光",
+      "short": "向前投掷可定身的圣光",
+      "full": "向前投掷一个光团，对击中的第一个英雄造成175(+4%每级)点伤害，并使其被定身1.25秒。"
+    },
+    {
+      "nameId": "AnduinHolyWordSalvation",
+      "buttonId": "AnduinHolyWordSalvation",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anduin_holy_word_salvation.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "圣言术：赎",
+      "short": "给予安度因周围的盟友保护和治疗",
+      "full": "在0.5秒后，引导施法以祈求圣光，持续3秒。施法期间，安度因周围的友方英雄最多可获得相当于自身最大生命值30%的治疗，并获得受保护状态。"
+    },
+    {
+      "nameId": "AnduinLightBomb",
+      "buttonId": "AnduinLightBomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anduin_light_bomb.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "圣光炸弹",
+      "short": "击晕一名盟友周围的敌人",
+      "full": "把圣光注入一名友方英雄，在1.5秒后爆发，对敌人造成150(+4%每级)点伤害并使其昏迷1.25秒。\n\n每击中一名敌方英雄，目标就获得一个可吸收165(+4%每级)点伤害的护盾，持续5秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "AnduinFlashHealEvenhandedBlessings",
+      "buttonId": "AnduinFlashHealEvenhandedBlessings",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_anduin_flash_heal.png",
+      "sort": 1,
+      "name": "公正祝福",
+      "short": "对新目标使用快速治疗可返还冷却时间",
+      "full": "如果快速治疗的目标与上一次不同，其治疗量提高15%，并返还40%的冷却时间。"
+    },
+    {
+      "nameId": "AnduinDivineStarPowerWordShield",
+      "buttonId": "AnduinDivineStarPowerWordShield",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_anduin_divine_star.png",
+      "sort": 2,
+      "name": "真言术：盾",
+      "short": "神圣之星给予护盾",
+      "full": "神圣之星飞行过程中，在其飞行路径上的盟友可以获得一个可吸收128(+4%每级)点伤害的护盾，持续4秒。\n\n如果神圣之星击中一名敌方英雄，安度因获得一个可吸收185(+4%每级)点伤害的护盾，持续4秒。"
+    },
+    {
+      "nameId": "AnduinLightwell",
+      "buttonId": "AnduinLightwell",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_anduin_lightwell.png",
+      "sort": 3,
+      "name": "光明之泉",
+      "short": "激活后召唤一个治疗性的光明之泉",
+      "full": "召唤一座光明之泉，周期性为附近一名友方英雄恢复50(+4%每级)点生命值。泉水在进行了15次治疗、或重新施放该技能后才会消失。\n\n安度因每治疗一次友方英雄，其冷却时间就会减少1秒。"
+    },
+    {
+      "nameId": "AnduinDivineStarMoralCompass",
+      "buttonId": "AnduinDivineStarMoralCompass",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_anduin_divine_star.png",
+      "sort": 1,
+      "name": "道德罗盘",
+      "short": "神圣之星在飞行终点处发射普通攻击",
+      "full": "神圣之星向靠近其飞行终点处的英雄发射普通攻击。\n\n被动：攻击射程提高1.1码。"
+    },
+    {
+      "nameId": "AnduinSurgeofLight",
+      "buttonId": "AnduinSurgeofLight",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_anduin_chastise.png",
+      "sort": 2,
+      "name": "圣光涌动",
+      "short": "惩戒之光强化普通攻击",
+      "full": "普通攻击使惩戒之光的冷却时间缩短0.75秒。对被惩戒之光定身的英雄发动普通攻击，可以额外触发一次普通攻击并恢复25点法力值。"
+    },
+    {
+      "nameId": "AnduinPiercingLight",
+      "buttonId": "AnduinPiercingLight",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_anduin_chastise_a.png",
+      "sort": 3,
+      "name": "穿透之光",
+      "short": "惩戒之光穿透敌人，获得法术强度加成",
+      "full": "惩戒之光可以穿透并额外命中一名英雄。\n\n任务：单次使用惩戒之光命中两名英雄使法术强度提高1点，最多可提高10点。"
+    },
+    {
+      "nameId": "AnduinFlashHealBindingHeal",
+      "buttonId": "AnduinFlashHealBindingHeal",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_anduin_flash_heal.png",
+      "sort": 1,
+      "name": "联结治疗",
+      "short": "快速治疗同时治疗安度因",
+      "full": "对盟友使用快速治疗同时会恢复安度因135(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "AnduinBlessedRecovery",
+      "buttonId": "AnduinBlessedRecovery",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_anduin_blessed_recovery.png",
+      "sort": 2,
+      "name": "神恩回复",
+      "short": "受到高额伤害时恢复生命",
+      "full": "如果安度因一次性受到超过最大生命值8%的伤害，则在3秒内恢复15%的生命值。\n\n该效果有10秒的冷却时间。\n\n当前需要生命值：133(+4%每级)点"
+    },
+    {
+      "nameId": "AnduinFlashHealDesperatePrayer",
+      "buttonId": "AnduinFlashHealDesperatePrayer",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_anduin_desperate_prayer.png",
+      "sort": 3,
+      "name": "绝望祷言",
+      "short": "激活后给予一名友方英雄紧急治疗",
+      "full": "激活后立即对一名友方英雄进行治疗，为其恢复375(+4%每级)点生命值，但会因此跪倒2秒，期间无法采取任何行动。"
+    },
+    {
+      "nameId": "AnduinHolyWordSalvation",
+      "buttonId": "AnduinHolyWordSalvation",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anduin_holy_word_salvation.png",
+      "sort": 1,
+      "name": "圣言术：赎",
+      "short": "给予安度因周围的盟友保护和治疗",
+      "full": "在0.5秒后，引导施法以祈求圣光，持续3秒。施法期间，安度因周围的友方英雄最多可获得相当于自身最大生命值30%的治疗，并获得受保护状态。"
+    },
+    {
+      "nameId": "AnduinLightBomb",
+      "buttonId": "AnduinLightBomb",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anduin_light_bomb.png",
+      "sort": 2,
+      "name": "圣光炸弹",
+      "short": "击晕一名盟友周围的敌人",
+      "full": "把圣光注入一名友方英雄，在1.5秒后爆发，对敌人造成150(+4%每级)点伤害并使其昏迷1.25秒。\n\n每击中一名敌方英雄，目标就获得一个可吸收165(+4%每级)点伤害的护盾，持续5秒。"
+    },
+    {
+      "nameId": "AnduinDivineStarSpeedOfThePious",
+      "buttonId": "AnduinDivineStarSpeedOfThePious",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_anduin_divine_star.png",
+      "sort": 1,
+      "name": "虔诚之速",
+      "short": "神圣之星提高移动速度，缩短冷却时间",
+      "full": "当神圣之星在飞行时，获得30%移动速度加成。神圣之星在返回安度因的过程中，每治疗一名友方英雄，都将使其冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "AnduinPushForward",
+      "buttonId": "AnduinPushForward",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_anduin_varians_legacy.png",
+      "sort": 2,
+      "name": "向前推进！",
+      "short": "对英雄造成伤害可以提高移动速度，提高治疗量",
+      "full": "对一名敌方英雄造成伤害使移动速度提高2.5%并使沐恩的治疗量提高5%，持续6秒。该效果最多可叠加8次。"
+    },
+    {
+      "nameId": "AnduinLeapOfFaithEnchantBootsLionsSpeed",
+      "buttonId": "AnduinLeapOfFaithEnchantBootsLionsSpeed",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_anduin_leap_of_faith.png",
+      "sort": 3,
+      "name": "附魔靴子 - 雄狮之速",
+      "short": "信仰飞跃提高移动速度，提供治疗",
+      "full": "提高5%移动速度。在信仰飞跃可用时，获得四倍效果。被信仰飞跃拖拽的盟友在4秒内恢复280(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "AnduinFlashHealRenew",
+      "buttonId": "AnduinFlashHealRenew",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_anduin_flash_heal.png",
+      "sort": 1,
+      "name": "强化恢复",
+      "short": "快速治疗可获得持续治疗效果",
+      "full": "快速治疗可在接下来的6秒内额外恢复180(+4%每级)点生命值。每当安度因用普通攻击命中一名敌方英雄时，该治疗的持续时间都会刷新。"
+    },
+    {
+      "nameId": "AnduinDivineStarHolyNova",
+      "buttonId": "AnduinDivineStarHolyNova",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_anduin_divine_star.png",
+      "sort": 2,
+      "name": "神圣新星",
+      "short": "神圣之星回归时发生爆炸",
+      "full": "神圣之星在回到安度因身边时发生爆炸，为周围的友方英雄恢复105(+4%每级)点生命值和对敌人造成150(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "AnduinLeapOfFaithGlyphOfFaith",
+      "buttonId": "AnduinLeapOfFaithGlyphOfFaith",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_anduin_leap_of_faith.png",
+      "sort": 3,
+      "name": "信仰雕文",
+      "short": "信仰飞跃额外获得一层使用次数",
+      "full": "信仰飞跃获得第2层使用次数。"
+    },
+    {
+      "nameId": "AnduinFlashHealInnerFocus",
+      "buttonId": "AnduinFlashHealInnerFocus",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_anduin_inner_focus.png",
+      "sort": 4,
+      "name": "心灵专注",
+      "short": "激活后重置快速治疗的冷却时间",
+      "full": "激活后重置快速治疗的冷却时间，并使下一次施放该技能时的治疗效果提高25%。\n\n对敌方英雄造成伤害可以使该技能的冷却时间减少1秒。"
+    },
+    {
+      "nameId": "AnduinHolyWordSalvationLightOfStormwind",
+      "buttonId": "AnduinHolyWordSalvationLightOfStormwind",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anduin_holy_word_salvation.png",
+      "sort": 1,
+      "name": "暴风城之光",
+      "short": "圣言术：赎可给予友军无敌",
+      "full": "圣言术：赎给予友方英雄无敌而非保护效果。该效果不影响安度因。\n\n完整引导圣言术：赎将使其冷却时间缩短60秒。"
+    },
+    {
+      "nameId": "AnduinInnerFire",
+      "buttonId": "AnduinInnerFire",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anduin_light_bomb.png",
+      "sort": 2,
+      "name": "心灵之火",
+      "short": "圣光炸弹提高移动速度，获得护甲",
+      "full": "圣光炸弹的目标获得40%移动速度加成和50点护甲加成，持续3秒。"
+    },
+    {
+      "nameId": "AnduinCensure",
+      "buttonId": "AnduinCensure",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_anduin_chastise.png",
+      "sort": 3,
+      "name": "谴罚",
+      "short": "惩戒之光造成昏迷，提高定身持续时间",
+      "full": "惩戒之光击晕目标0.75秒，并且其定身时间延长0.5秒。"
+    },
+    {
+      "nameId": "AnduinVariansLegacy",
+      "buttonId": "AnduinVariansLegacy",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_anduin_varians_legacy.png",
+      "sort": 4,
+      "name": "瓦里安的遗产",
+      "short": "普通攻击可灼烧敌人",
+      "full": "普通攻击点燃敌人，在3秒内造成87(+4%每级)点伤害，并且安度因获得相当于所造成伤害50%的治疗。"
+    }
+  ]
+}

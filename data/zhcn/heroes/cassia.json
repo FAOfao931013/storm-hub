@@ -1,0 +1,295 @@
+{
+  "shortName": "cassia",
+  "heroName": "Amazon",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "AmazonAvoidance",
+      "buttonId": "AmazonAvoidance",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_cassia_avoidance_b.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "闪避",
+      "short": "移动时获得护甲",
+      "full": "移动时，卡西娅在3秒内逐渐获得最多30点护甲。站立不动0.75秒后，获得的护甲会在0.5秒内迅速消失。\n\n当施放猛刺时，闪避会保持充能状态。"
+    },
+    {
+      "nameId": "AmazonLightningFury",
+      "buttonId": "AmazonLightningFury",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_cassia_lightningfury.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "雷霆之怒",
+      "short": "扔出一支闪电标枪，击中敌人后分裂",
+      "full": "扔出一支闪电标枪，对第一个被击中的敌人造成158(+4%每级)点伤害，并分裂成两支闪电箭，对沿途的敌人造成158(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "AmazonBlindingLight",
+      "buttonId": "AmazonBlindingLight",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_cassia_blindinglight.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "致盲之光",
+      "short": "致盲范围内的敌人",
+      "full": "0.5秒后，造成50(+4%每级)点伤害，致盲目标区域内的敌人2秒。\n\n被动：卡西娅对被致盲的目标造成15%的额外伤害。"
+    },
+    {
+      "nameId": "AmazonFend",
+      "buttonId": "AmazonFend",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_cassia_fend.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "猛刺",
+      "short": "冲向目标并快速攻击附近敌人",
+      "full": "向一名敌人冲锋，接触到目标后引导攻击最多1.5秒，每0.25秒对卡西娅前方的敌人造成64(+4%每级)点伤害。对非英雄单位的伤害降低50%。当处于引导状态时，闪避会保持充能状态。"
+    },
+    {
+      "nameId": "AmazonBallLightning",
+      "buttonId": "AmazonBallLightning",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cassia_balllightning.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "闪电球",
+      "short": "扔出一枚弹跳的闪电球",
+      "full": "向敌方英雄扔出一枚闪电球，在她和附近敌方英雄之间弹跳最多6次，对被击中的敌人造成180(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "AmazonValkyrie",
+      "buttonId": "AmazonValkyrie",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cassia_valkrie.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "女武神",
+      "short": "召唤女武神刺穿敌人",
+      "full": "0.75秒后，召唤一个女武神冲向卡西娅，拖拽第一个被击中的敌方英雄，造成225(+4%每级)点伤害，使其在路径终点处昏迷0.5秒，并击退沿途的所有其他敌方英雄。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "AmazonThunderstroke",
+      "buttonId": "AmazonLightningFuryThunderstroke",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_cassia_lightningfury.png",
+      "sort": 1,
+      "name": "雷击",
+      "short": "任务：提高雷霆之怒的伤害",
+      "full": "使雷霆之怒的伤害提高20点。\n\n任务：每击中一名英雄，雷霆之怒的伤害都会提高1.5点。"
+    },
+    {
+      "nameId": "AmazonImpale",
+      "buttonId": "AmazonFendImpale",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_cassia_fend.png",
+      "sort": 2,
+      "name": "刺爆",
+      "short": "提高猛刺的射程和伤害",
+      "full": "使猛刺的施法距离和效果范围提高25%。生命值低于50%的敌人受到的猛刺伤害提高70%。"
+    },
+    {
+      "nameId": "AmazonChargedStrikes",
+      "buttonId": "AmazonAvoidanceChargedStrikes",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_cassia_new_chargedstrikes.png",
+      "sort": 3,
+      "name": "充能一击",
+      "short": "获得攻击速度与弹跳伤害",
+      "full": "攻击速度提高15%。每第3次普通攻击将额外造成20%的伤害并弹射至附近的敌方英雄身上。"
+    },
+    {
+      "nameId": "AmazonPlateoftheWhale",
+      "buttonId": "AmazonAvoidancePlateoftheWhale",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_cassia_avoidance_b.png",
+      "sort": 1,
+      "name": "巨鲸护甲",
+      "short": "闪避恢复生命值",
+      "full": "闪避激活时，每秒恢复6(+4%每级)点生命值。当完全充能时，每秒获得额外12(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "AmazonRingoftheLeech",
+      "buttonId": "AmazonRingoftheLeech",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_cassia_ringoftheleech.png",
+      "sort": 2,
+      "name": "吸血指环",
+      "short": "普通攻击产生治疗",
+      "full": "对你的主要目标发动的普通攻击可恢复相当于其伤害量20%的生命值。如果一名敌人被致盲，则此效果同样适用于雷霆之怒和猛刺。"
+    },
+    {
+      "nameId": "AmazonInnerLight",
+      "buttonId": "AmazonLightningFuryInnerLight",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_cassia_innerlight.png",
+      "sort": 3,
+      "name": "内视之光",
+      "short": "激活后进行治疗",
+      "full": "激活后，在5秒内恢复最大生命值的25%。雷霆之怒击中敌方英雄时可以使该技能的冷却时间缩短10秒。"
+    },
+    {
+      "nameId": "AmazonFendGroundingRod",
+      "buttonId": "AmazonFendGroundingRod",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_cassia_combo_q_e.png",
+      "sort": 1,
+      "name": "定身针刺",
+      "short": "雷霆之怒和猛刺减速敌人",
+      "full": "被雷霆之怒和猛刺命中的敌人会被减速20%，持续2秒。"
+    },
+    {
+      "nameId": "AmazonSeraphsHymn",
+      "buttonId": "AmazonBlindingLightSeraphsHymn",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_cassia_blindinglight.png",
+      "sort": 2,
+      "name": "天使赞美诗",
+      "short": "强化普通攻击和致盲之光",
+      "full": "对主要敌方英雄进行普通攻击时可以获得10点法力值，并使致盲之光的冷却时间缩短2秒。\n\n被动：使致盲之光的被动伤害加成从15%提高至30%。"
+    },
+    {
+      "nameId": "AmazonSurgeOfLight",
+      "buttonId": "AmazonAvoidanceSurgeOfLight",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_cassia_avoidance_b.png",
+      "sort": 3,
+      "name": "圣光涌动",
+      "short": "激活闪避来造成伤害",
+      "full": "闪避激活时受到650(+4%每级)点伤害后，卡西娅可以激活闪避对她附近的敌人造成220(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "AmazonBallLightning",
+      "buttonId": "AmazonBallLightning",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cassia_balllightning.png",
+      "sort": 1,
+      "name": "闪电球",
+      "short": "扔出一枚弹跳的闪电球",
+      "full": "向敌方英雄扔出一枚闪电球，在她和附近敌方英雄之间弹跳最多6次，对被击中的敌人造成180(+4%每级)点伤害。"
+    },
+    {
+      "nameId": "AmazonValkyrie",
+      "buttonId": "AmazonValkyrie",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cassia_valkrie.png",
+      "sort": 2,
+      "name": "女武神",
+      "short": "召唤女武神刺穿敌人",
+      "full": "0.75秒后，召唤一个女武神冲向卡西娅，拖拽第一个被击中的敌方英雄，造成225(+4%每级)点伤害，使其在路径终点处昏迷0.5秒，并击退沿途的所有其他敌方英雄。"
+    },
+    {
+      "nameId": "AmazonFendWarMatron",
+      "buttonId": "Amazon-FendWarMatron",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_cassia_fend.png",
+      "sort": 1,
+      "name": "战争仕女",
+      "short": "猛刺获得保护状态",
+      "full": "卡西娅引导猛刺时会进入受保护状态，如果完成引导，保护状态将额外持续1秒。"
+    },
+    {
+      "nameId": "AmazonWarTraveler",
+      "buttonId": "AmazonAvoidanceWarTraveler",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_cassia_avoidance_b.png",
+      "sort": 2,
+      "name": "战争旅者",
+      "short": "提高移动速度，瞬发坐骑",
+      "full": "移动速度提高5%。当闪避完全充能时，获得额外10%移动速度并且召唤坐骑将变为瞬发。"
+    },
+    {
+      "nameId": "AmazonFendGlovesOfAlacrity",
+      "buttonId": "AmazonFendGlovesOfAlacrity",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_cassia_new_gloves.png",
+      "sort": 3,
+      "name": "敏锐手套",
+      "short": "提高攻击射程",
+      "full": "获得1码普通攻击射程。当闪避完全充能时，获得额外1码普通攻击射程。"
+    },
+    {
+      "nameId": "AmazonPowerStrike",
+      "buttonId": "AmazonPowerStrike",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_cassia_combo_q_w.png",
+      "sort": 1,
+      "name": "强力一击",
+      "short": "雷霆之怒可以穿透目标并施放致盲之光",
+      "full": "雷霆之怒穿透目标但只在击中英雄时分裂。击中英雄时使冷却时间缩短1秒，被击中的英雄会被标记15秒。当标记达到3层时，移除标记并在目标脚下释放致盲之光。"
+    },
+    {
+      "nameId": "AmazonStaticElectricity",
+      "buttonId": "AmazonFendStaticElectricity",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_cassia_combo_q_e.png",
+      "sort": 2,
+      "name": "静电电能",
+      "short": "猛刺释放雷霆之怒箭矢",
+      "full": "获得额外2次雷霆之怒使用次数。猛刺命中目标时会向附近敌方英雄发射闪电箭。"
+    },
+    {
+      "nameId": "AmazonMartialLaw",
+      "buttonId": "AmazonMartialLaw",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_searing.png",
+      "sort": 3,
+      "name": "戒严",
+      "short": "被控制的英雄受到额外伤害",
+      "full": "普通攻击对敌方英雄造成相当于其最大生命值1%的额外伤害。如果目标被击晕、定身、减速或致盲，则会造成相当于其最大生命值3%的额外伤害。"
+    },
+    {
+      "nameId": "AmazonInfiniteLightning",
+      "buttonId": "AmazonBallLightningInfiniteLightning",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cassia_balllightning.png",
+      "sort": 1,
+      "name": "无限闪电",
+      "short": "闪电球无限弹跳",
+      "full": "闪电球现在可以无限弹跳。每次弹跳使冷却时间缩短4秒。"
+    },
+    {
+      "nameId": "AmazonImprisoningLight",
+      "buttonId": "AmazonValkyrieImprisoningLight",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cassia_valkrie.png",
+      "sort": 2,
+      "name": "禁锢之光",
+      "short": "女武神使敌人定身并沉默",
+      "full": "穿刺敌方英雄时会对其施加致盲，持续5秒。并且卡西娅的女武神会制造一道圣光波，对附近敌人造成200(+4%每级)点伤害。圣光波还会使其定身并沉默，持续3秒。"
+    },
+    {
+      "nameId": "AmazonTitansRevenge",
+      "buttonId": "AmazonTitansRevenge",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_cassia_avoidance_b.png",
+      "sort": 3,
+      "name": "泰坦的复仇",
+      "short": "普通攻击忽略护甲",
+      "full": "卡西娅的普通攻击现在忽略护甲，并且当闪避完全充能时造成额外20%的伤害。"
+    },
+    {
+      "nameId": "Amazon-AvoidanceRockstopper",
+      "buttonId": "AmazonAvoidanceRockstopper",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_cassia_avoidance.png",
+      "sort": 4,
+      "name": "御石之钢",
+      "short": "立即充能并强化闪避",
+      "full": "激活可以使闪避获得完全充能并使护甲值提高至60点，持续4秒。\n\n失去闪避效果时将移除此加成。"
+    }
+  ]
+}

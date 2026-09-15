@@ -1,0 +1,295 @@
+{
+  "shortName": "ragnaros",
+  "heroName": "Ragnaros",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "RagnarosMoltenCore",
+      "buttonId": "RagnarosMoltenCore",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_ragnaros_moltencore.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "熔火之心",
+      "short": "占据一座被摧毁的或友方堡垒释放出拉格纳罗斯的全部力量",
+      "full": "对一座友方或被摧毁的堡垒或要塞引导来用拉格纳罗斯的终极形态将其取代，暂时获得新技能，并拥有3996(+4%每级)点生命值，在18秒内递减。\n\n拉格纳罗斯失去所有生命值后回到普通形态。"
+    },
+    {
+      "nameId": "RagnarosEmpowerSulfuras",
+      "buttonId": "RagnarosEmpowerSulfuras",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ragnaros_empowersulfuras.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "强化萨弗拉斯",
+      "short": "造成范围伤害，并治疗拉格纳罗斯",
+      "full": "拉格纳罗斯立即进行下一次普通攻击，对范围内的敌人造成191(+4%每级)点技能伤害，并恢复相当于伤害的20%的生命值。对英雄的治疗量翻倍。\n\n熔火之心：熔火横扫\n击晕并对附近敌人造成伤害。"
+    },
+    {
+      "nameId": "RagnarosLivingMeteor",
+      "buttonId": "RagnarosLivingMeteor",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_ragnaros_livingmeteor.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "活体流星",
+      "short": "召唤流星对一条直线上的敌人造成伤害",
+      "full": "选择方向\n在目标位置召唤一颗流星，造成68(+4%每级)点伤害，随后沿着指定方向滚动，每秒造成272(+4%每级)点伤害，持续1.75秒。\n\n熔火之心：流星雨\n在一条直线上召唤流星。"
+    },
+    {
+      "nameId": "RagnarosBlastWave",
+      "buttonId": "RagnarosBlastWave",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_ragnaros_blastwave.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "冲击波",
+      "short": "在一名队友附近引发延迟爆炸",
+      "full": "点燃拉格纳罗斯或一个盟友，使其移动速度提高25%，持续1.5秒，随后引发爆炸对附近敌人造成104(+4%每级)点伤害。\n\n熔火之心：爆炸符文\n在大范围内引发延迟爆炸。"
+    },
+    {
+      "nameId": "RagnarosSulfurasSmash",
+      "buttonId": "RagnarosSulfurasSmash",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ragnaros_sulfurassmash.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "萨弗拉斯重击",
+      "short": "对范围内敌人造成伤害并将其击晕",
+      "full": "向目标位置扔出萨弗拉斯。0.75秒后着陆，造成250(+4%每级)点伤害。中心的敌人受到594(+4%每级)点伤害，并被击晕0.5秒。"
+    },
+    {
+      "nameId": "RagnarosLavaWaveTargetPoint",
+      "buttonId": "RagnarosLavaWaveTargetPoint",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ragnaros_lavawave.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "熔岩波浪",
+      "short": "在一条兵线上施放熔岩波浪",
+      "full": "从拉格纳罗斯的核心释放出一股熔岩波浪沿着指定兵线前进，每秒对沿途的非建筑敌人造成240(+4%每级)点伤害，并立刻杀死敌方小兵。对英雄的伤害提高100%。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "RagnarosEmpowerSulfurasSulfurasHungers",
+      "buttonId": "RagnarosEmpowerSulfurasSulfurasHungers",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ragnaros_empowersulfuras.png",
+      "sort": 1,
+      "name": "萨弗拉斯的饥渴",
+      "short": "任务：用强化萨弗拉斯击杀小兵可以提高伤害",
+      "full": "任务：强化萨弗拉斯每击杀一个小兵，伤害就会提高1点，最多提高25点。\n\n奖励：击杀25个小兵后，伤害额外提高100点。"
+    },
+    {
+      "nameId": "RagnarosLivingMeteorShiftingMeteor",
+      "buttonId": "RagnarosLivingMeteorShiftingMeteor",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_ragnaros_livingmeteor.png",
+      "sort": 2,
+      "name": "移形流星",
+      "short": "任务：击中英雄强化活体流星",
+      "full": "敌人每次被同一个活体流星击中，他们从中受到的伤害便提高6%。\n\n任务：用活体流星击中75个英雄。\n\n奖励：用活体流星击中75个英雄后，其持续时间延长至2.25秒，并且每次施放你可以重新使用该技能来改变方向一次。"
+    },
+    {
+      "nameId": "RagnarosBlastWaveEngulfingFlame",
+      "buttonId": "RagnarosBlastWaveEngulfingFlame",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_ragnaros_blastwave.png",
+      "sort": 3,
+      "name": "噬体烈焰",
+      "short": "提高冲击波的伤害并扩大范围",
+      "full": "冲击波的伤害提高75%，范围扩大15%。"
+    },
+    {
+      "nameId": "RagnarosLivingMeteorFireWard",
+      "buttonId": "RagnarosLivingMeteorFireWard",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_ragnaros_livingmeteor.png",
+      "sort": 1,
+      "name": "防护火焰结界",
+      "short": "活体流星提供法术护甲",
+      "full": "活体流星击中敌方英雄后获得一层法术护甲，使受到的下一次敌人技能的伤害降低50%。\n\n最多保留2层。"
+    },
+    {
+      "nameId": "RagnarosBlastWaveSlowBurn",
+      "buttonId": "RagnarosBlastWaveSlowBurn",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_ragnaros_blastwave.png",
+      "sort": 2,
+      "name": "缓慢烧灼",
+      "short": "冲击波使敌人减速",
+      "full": "冲击波使被击中的敌人减速40%，持续2秒。"
+    },
+    {
+      "nameId": "RagnarosCatchingFire",
+      "buttonId": "RagnarosCatchingFireTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_ragnaros_catchingfire.png",
+      "sort": 3,
+      "name": "着火",
+      "short": "任务：恢复之球提高生命恢复",
+      "full": "任务：收集恢复之球使拉格纳罗斯的每秒生命恢复提高1.25点，最多提高18.75点。\n\n奖励：收集15个恢复之球后，激活着火来获得25点护甲，使受到的伤害降低25%，持续3秒。"
+    },
+    {
+      "nameId": "RagnarosEmpowerSulfurasHandOfRagnaros",
+      "buttonId": "RagnarosEmpowerSulfurasHandOfRagnaros",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ragnaros_empowersulfuras.png",
+      "sort": 1,
+      "name": "拉格纳罗斯之手",
+      "short": "缩短强化萨弗拉斯的冷却时间",
+      "full": "如果强化萨弗拉斯击中至少2个敌方英雄，则恢复10点法力值，并且冷却时间恢复速度加快100%，持续4秒。"
+    },
+    {
+      "nameId": "RagnarosLivingMeteorMoltenPower",
+      "buttonId": "RagnarosLivingMeteorMoltenPower",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_ragnaros_livingmeteor.png",
+      "sort": 2,
+      "name": "熔火之力",
+      "short": "减少活体流星冷却时间",
+      "full": "如果活体流星击中敌方英雄至少5次，冷却时间减少7秒，并返还30点法力值。"
+    },
+    {
+      "nameId": "RagnarosBlisteringAttacks",
+      "buttonId": "RagnarosBlisteringAttacks",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "灼热攻击",
+      "short": "周期性强化你对英雄进行的普通攻击",
+      "full": "每10秒，拉格纳罗斯下一次对英雄的普通攻击额外造成60%伤害。用基本技能击中英雄可使该冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "RagnarosSulfurasSmash",
+      "buttonId": "RagnarosSulfurasSmash",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ragnaros_sulfurassmash.png",
+      "sort": 1,
+      "name": "萨弗拉斯重击",
+      "short": "对范围内敌人造成伤害并将其击晕",
+      "full": "向目标位置扔出萨弗拉斯。0.75秒后着陆，造成250(+4%每级)点伤害。中心的敌人受到594(+4%每级)点伤害，并被击晕0.5秒。"
+    },
+    {
+      "nameId": "RagnarosLavaWave",
+      "buttonId": "RagnarosLavaWaveTargetPoint",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ragnaros_lavawave.png",
+      "sort": 2,
+      "name": "熔岩波浪",
+      "short": "在一条兵线上施放熔岩波浪",
+      "full": "从拉格纳罗斯的核心释放出一股熔岩波浪沿着指定兵线前进，每秒对沿途的非建筑敌人造成240(+4%每级)点伤害，并立刻杀死敌方小兵。对英雄的伤害提高100%。"
+    },
+    {
+      "nameId": "RagnarosEmpowerSulfurasCauterizeWounds",
+      "buttonId": "RagnarosEmpowerSulfurasCauterizeWounds",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ragnaros_empowersulfuras.png",
+      "sort": 1,
+      "name": "烧灼伤口",
+      "short": "提高强化萨弗拉斯的治疗量",
+      "full": "强化萨弗拉斯在2秒内额外恢复相当于对英雄伤害45%的生命值。"
+    },
+    {
+      "nameId": "RagnarosBlastWaveTemperedFlame",
+      "buttonId": "RagnarosBlastWaveTemperedFlame",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_ragnaros_blastwave.png",
+      "sort": 2,
+      "name": "回火",
+      "short": "冲击波的伤害提供护盾",
+      "full": "冲击波对敌方英雄造成伤害时，获得一层护盾，数值相当于伤害的100%，持续3秒。"
+    },
+    {
+      "nameId": "RagnarosResilientFlame",
+      "buttonId": "RagnarosResilientFlame",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_resistance.png",
+      "sort": 3,
+      "name": "顽强烈焰",
+      "short": "被击晕时获得护甲",
+      "full": "拉格纳罗斯被击晕后获得40点护甲，使受到的伤害降低40%，持续3秒。\n\n该效果有15秒冷却时间。"
+    },
+    {
+      "nameId": "RagnarosEmpowerSulfurasGiantScorcher",
+      "buttonId": "RagnarosEmpowerSulfurasGiantScorcher",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_ragnaros_empowersulfuras.png",
+      "sort": 1,
+      "name": "巨人天敌",
+      "short": "强化萨弗拉斯对英雄造成额外伤害",
+      "full": "强化萨弗拉斯灼烧敌方英雄，在3秒内造成相当于其最大生命值9%的伤害。额外伤害不会治疗拉格纳罗斯。"
+    },
+    {
+      "nameId": "RagnarosLivingMeteorMeteorBomb",
+      "buttonId": "RagnarosLivingMeteorMeteorBomb",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_ragnaros_livingmeteor.png",
+      "sort": 2,
+      "name": "爆破流星",
+      "short": "熔岩滚石结束后爆炸",
+      "full": "活体流星会在技能结束时爆炸，造成220(+4%每级)点伤害。位于其中心的敌人受到30%的额外伤害。"
+    },
+    {
+      "nameId": "RagnarosBlastWaveBlastEcho",
+      "buttonId": "RagnarosBlastWaveBlastEcho",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_ragnaros_blastwave.png",
+      "sort": 3,
+      "name": "余波",
+      "short": "第一次爆炸后制造第二次冲击波",
+      "full": "冲击波爆炸后，在拉格纳罗斯身上制造另一次冲击波。"
+    },
+    {
+      "nameId": "RagnarosSulfurasSmashFlamesOfSulfuron",
+      "buttonId": "RagnarosSulfurasSmashFlamesOfSulfuron",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ragnaros_sulfurassmash.png",
+      "sort": 1,
+      "name": "萨弗隆烈焰",
+      "short": "萨弗拉斯重击使敌人减速，并延长昏迷时间",
+      "full": "萨弗拉斯重击使敌人减速50%，持续2.5秒，对中心的敌人造成的昏迷时间延长1秒。"
+    },
+    {
+      "nameId": "RagnarosLavaWaveLavaSurge",
+      "buttonId": "RagnarosLavaWaveLavaSurge",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_ragnaros_lavawave.png",
+      "sort": 2,
+      "name": "熔岩奔腾",
+      "short": "熔岩波浪有2次使用次数",
+      "full": "熔岩波浪获得额外一次使用次数，并且冷却时间缩短30秒。"
+    },
+    {
+      "nameId": "RagnarosMoltenCoreHeroicDifficulty",
+      "buttonId": "RagnarosMoltenCoreHeroicDifficulty",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_ragnaros_moltencore.png",
+      "sort": 3,
+      "name": "英雄难度",
+      "short": "强化熔火之心的生命值、冷却时间和伤害",
+      "full": "熔火之心的生命值和伤害提高25%，并且冷却时间缩短50秒。"
+    },
+    {
+      "nameId": "RagnarosSubmerge",
+      "buttonId": "RagnarosSubmerge",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_ragnaros_submerge.png",
+      "sort": 4,
+      "name": "下潜",
+      "short": "激活后治疗，并��入静止状态",
+      "full": "拉格纳罗斯潜入地下，进入静止状态并在3秒内恢复600(+4%每级)点生命值。"
+    }
+  ]
+}

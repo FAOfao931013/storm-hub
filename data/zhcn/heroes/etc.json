@@ -1,0 +1,305 @@
+{
+  "shortName": "etc",
+  "heroName": "L90ETC",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "RockstarDummy",
+      "buttonId": "L90ETCRockstar",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_etc_rockstar.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "摇滚明星",
+      "short": "使用技能后，精英牛头人酋长获得护甲",
+      "full": "使用一个基本技能后，获得25点护甲，持续2秒。使用终极技能可以获得50 点护甲。"
+    },
+    {
+      "nameId": "L90ETCPowerslide",
+      "buttonId": "L90ETCPowerslide",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_etc_powerslide.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "动感滑步",
+      "short": "冲向目标区域，对击中的敌人造成伤害并使其昏迷",
+      "full": "滑向目标位置，对沿途的敌人造成105(+4%每级)点伤害，并使其昏迷1.25秒。"
+    },
+    {
+      "nameId": "L90ETCFaceMelt",
+      "buttonId": "L90ETCFaceMelt",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_etc_facemelt.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "热力四射",
+      "short": "击退附近敌人，并对其造成伤害",
+      "full": "对附近敌人造成68(+4%每级)点伤害并将他们击退。"
+    },
+    {
+      "nameId": "L90ETCGuitarSolo",
+      "buttonId": "L90ETCGuitarSolo",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_etc_guitarsolo.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "吉他独奏",
+      "short": "恢复生命值",
+      "full": "每秒恢复66点生命值，持续4秒。"
+    },
+    {
+      "nameId": "L90ETCMoshPit",
+      "buttonId": "L90ETCMoshPit",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_etc_moshpit.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "纵情狂欢",
+      "short": "强迫附近敌人开始热舞",
+      "full": "0.75秒后，引导使附近的敌人昏迷，持续4秒。"
+    },
+    {
+      "nameId": "L90ETCStageDive",
+      "buttonId": "L90ETCStageDive",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_etc_stagedive.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "舞台跳水",
+      "short": "跳到任意位置并造成伤害",
+      "full": "跃向目标地点，2.75秒后着陆，对区域内敌人造成330(+4%每级)点伤害，并降低他们50%的移动速度，持续4秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ETCMasteryGuitarHero",
+      "buttonId": "L90ETCGuitarSoloGuitarHeroTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_etc_guitarsolo.png",
+      "sort": 1,
+      "name": "吉他英雄",
+      "short": "吉他独奏期间，普通攻击可恢复生命值和延长该技能时间",
+      "full": "吉他独奏激活时，精英牛头人酋长恢复相当于普通攻击造成伤害量60%的生命值。普通攻击使吉他独奏的持续时间延长0.5秒。"
+    },
+    {
+      "nameId": "ETCMasteryProgRock",
+      "buttonId": "ETCProgRockTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_etc_guitarsolo_a.png",
+      "sort": 2,
+      "name": "前卫摇滚",
+      "short": "任务：恢复之球强化吉他独奏",
+      "full": "任务：收集恢复之球使吉他独奏的每秒治疗量永久提高5点，最多提高100点。\n\n奖励：收集20个恢复之球后，吉他独奏还会在激活时每秒为附近友方英雄恢复50(+4%每级)点生命值。"
+    },
+    {
+      "nameId": "ETCBlockParty",
+      "buttonId": "ETCBlockParty",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_etc_rockstar.png",
+      "sort": 3,
+      "name": "街舞派对",
+      "short": "摇滚明星为盟友提供物理护甲",
+      "full": "使用普通技能或终极技能还会为附近盟友提供一层格挡，提供75点物理护甲，抵御下一次敌方英雄的普通攻击，使受到的伤害降低75%，持续8秒。最多2层格挡。"
+    },
+    {
+      "nameId": "ETCCrowdSurfer",
+      "buttonId": "ETCCrowdSurfer",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_etc_powerslide.png",
+      "sort": 1,
+      "name": "舞台冲浪",
+      "short": "动感滑步可以穿越地形",
+      "full": "动感滑步可以穿越墙壁和地形。如果没有击中敌人，则使冷却时间缩短6秒并返还消耗的法力值。"
+    },
+    {
+      "nameId": "L90ETCMasteryFaceMeltLoudSpeakers",
+      "buttonId": "L90ETCFaceMeltLoudSpeakersTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_etc_facemelt.png",
+      "sort": 2,
+      "name": "扩音器",
+      "short": "热力四射的范围和击退距离增加",
+      "full": "热力四射的范围以及击退的距离扩大50%。"
+    },
+    {
+      "nameId": "ETCMasterySpeedMetal",
+      "buttonId": "ETCSpeedMetalTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_etc_speedmetal.png",
+      "sort": 3,
+      "name": "速度金属",
+      "short": "摇滚明星还会提高移动速度",
+      "full": "使用基本技能或终极技能还会使附近友方英雄的移动速度提高20%，持续2.5秒。"
+    },
+    {
+      "nameId": "L90ETCMasteryFaceMeltPinballWizard",
+      "buttonId": "ETCPinballWizardTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_etc_facemelt.png",
+      "sort": 1,
+      "name": "流行歌曲",
+      "short": "提高动感滑步后的热力四射伤害",
+      "full": "动感滑步击中一个敌人会使2秒内对其使用的下一个热力四射造成300%的额外伤害。"
+    },
+    {
+      "nameId": "ETCMasteryHammeron",
+      "buttonId": "ETCHammeronTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_etc_guitarsolo.png",
+      "sort": 2,
+      "name": "上半音",
+      "short": "吉他独奏提高普通攻击伤害",
+      "full": "精英牛头人酋长的普通攻击造成12%的额外伤害，吉他独奏处于激活状态时提高至36%。"
+    },
+    {
+      "nameId": "ETCCombatStyleEchoPedal",
+      "buttonId": "L90ETCRockstarEchoPedalTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_etc_echopedal.png",
+      "sort": 3,
+      "name": "回声踏板",
+      "short": "使用技能会引发范围伤害",
+      "full": "使用基本技能或终极技能释放两波脉冲，造成18(+4%每级)点伤害。对小兵、雇佣兵和怪物造成200%的额外伤害。第一波脉冲立即触发，第二波在2秒后触发。"
+    },
+    {
+      "nameId": "ETCHeroicAbilityMoshPit",
+      "buttonId": "L90ETCMoshPit",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_etc_moshpit.png",
+      "sort": 1,
+      "name": "纵情狂欢",
+      "short": "强迫附近敌人开始热舞",
+      "full": "0.75秒后，引导使附近的敌人昏迷，持续4秒。"
+    },
+    {
+      "nameId": "ETCHeroicAbilityStageDive",
+      "buttonId": "L90ETCStageDive",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_etc_stagedive.png",
+      "sort": 2,
+      "name": "舞台跳水",
+      "short": "跳到任意位置并造成伤害",
+      "full": "跃向目标地点，2.75秒后着陆，对区域内敌人造成330(+4%每级)点伤害，并降低他们50%的移动速度，持续4秒。"
+    },
+    {
+      "nameId": "ETCMasteryMicCheck",
+      "buttonId": "ETCMicCheckTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_etc_facemelt.png",
+      "sort": 1,
+      "name": "试音",
+      "short": "热力四射命中多个敌人时降低冷却时间",
+      "full": "热力四射命中至少2个目标时，冷却时间缩短6秒。"
+    },
+    {
+      "nameId": "ETCMasteryEncore",
+      "buttonId": "ETCEncoreTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_etc_facemelt_a.png",
+      "sort": 2,
+      "name": "再来一首",
+      "short": "热力四射会再次击退敌人，缩短终极技能冷却时间",
+      "full": "热力四射会留下一个扩音器，并在2秒钟后再次将敌人击退。\n\n被动：每名被热力四射或扩音器击中的敌方英雄，都会使你终极技能的冷却时间缩短4%。"
+    },
+    {
+      "nameId": "ETCMasteryFaceSmelt",
+      "buttonId": "L90ETCFaceMeltFaceSmeltTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_etc_facemelt_b.png",
+      "sort": 3,
+      "name": "热情难挡",
+      "short": "热力四射使敌人减速",
+      "full": "热力四射使敌人的速度降低50%，效果在2秒内递减。"
+    },
+    {
+      "nameId": "ETCMasteryShowStopper",
+      "buttonId": "ETCShowStopperTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_etc_powerslide.png",
+      "sort": 1,
+      "name": "热烈掌声",
+      "short": "动感滑步提供护甲",
+      "full": "使用动感滑步后，获得35点护甲，使受到的所有伤害降低35%，持续4秒。"
+    },
+    {
+      "nameId": "ETCMasteryGuitarSoloAggressiveShredding",
+      "buttonId": "ETCGuitarSoloAggressiveShreddingTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_etc_guitarsolo.png",
+      "sort": 2,
+      "name": "绝佳狂奏",
+      "short": "普通攻击缩短吉他独奏的冷却时间",
+      "full": "精英牛头人酋长的普通攻击使吉他独奏的冷却时间缩短0.75秒。"
+    },
+    {
+      "nameId": "GenericTalentImposingPresence",
+      "buttonId": "GenericImposingPresenceTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_imposingpresence.png",
+      "sort": 3,
+      "name": "盛气凌人",
+      "short": "激活后降低敌人的攻击速度和移动速度",
+      "full": "激活后使附近英雄和召唤物的攻击速度降低50%，移动速度降低20%，持续2.5秒。\n\n被动：攻击你的英雄和召唤物的攻击速度降低20%，持续2.5秒。"
+    },
+    {
+      "nameId": "L90ETCMasteryMoshPitTourBus",
+      "buttonId": "L90ETCMoshPitTourBusTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_etc_moshpit.png",
+      "sort": 1,
+      "name": "巡回演出",
+      "short": "纵情狂欢期间施放动感滑步",
+      "full": "引导纵情狂欢可以刷新动感滑步的冷却时间，而且可以施放动感滑步使纵情狂欢的持续时间延长2秒。"
+    },
+    {
+      "nameId": "L90ETCMasteryStageDiveCrowdPleaser",
+      "buttonId": "ETCStageDiveCrowdPleaserTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_etc_stagedive.png",
+      "sort": 2,
+      "name": "取悦观众",
+      "short": "舞台跳水的命中区域扩大，减速效果提高",
+      "full": "舞台跳水的命中区域扩大50%。并且减速效果提高30%。"
+    },
+    {
+      "nameId": "L90ETCMasteryDeathMetal",
+      "buttonId": "L90ETCDeathMetalTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_etc_moshpit_a.png",
+      "sort": 3,
+      "name": "死亡金属",
+      "short": "死后施放纵情狂欢",
+      "full": "死亡后，一个幽灵在精英牛头人酋长的位置使用纵情狂欢。"
+    },
+    {
+      "nameId": "L90ETCPoweroftheHorde",
+      "buttonId": "L90ETCPoweroftheHorde",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_stormshield.png",
+      "sort": 4,
+      "name": "部落的力量",
+      "short": "激活后给附近的盟友施放护盾",
+      "full": "激活后使附近所有友方英雄获得一个持续5秒的护盾，可吸收相当于其最大生命值30%的伤害，范围内每有一个其他的友方英雄，吸收量提高2%。"
+    },
+    {
+      "nameId": "L90ETCRidetheLightning",
+      "buttonId": "L90ETCRidetheLightning",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_boltofthestorm.png",
+      "sort": 5,
+      "name": "驾驭闪电",
+      "short": "激活后传送一小段距离",
+      "full": "激活后传送到附近位置，对周围的敌方英雄造成48(+4%每级)点伤害。每击中一名敌方英雄，冷却时间就会缩短10秒，最多50秒。"
+    }
+  ]
+}
