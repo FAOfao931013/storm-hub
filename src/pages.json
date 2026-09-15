@@ -1,16 +1,41 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "风暴枢纽"
+				"navigationBarTitleText": "英雄",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#1e1432",
+				"backgroundColor": "#1e1432",
+				"backgroundColorTop": "#1e1432",
+				"backgroundColorBottom": "#190f2d"
 			}
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "风暴枢纽",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#1e1432",
+		"backgroundColor": "#1e1432"
+	},
+	"tabBar": {
+		"color": "#8e8398",
+		"selectedColor": "#9682ff",
+		"backgroundColor": "#1e1432",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "英雄"
+			},
+			{
+				"pagePath": "pages/favorites/index",
+				"text": "收藏"
+			},
+			{
+				"pagePath": "pages/about/index",
+				"text": "关于"
+			}
+		]
 	}
 }
