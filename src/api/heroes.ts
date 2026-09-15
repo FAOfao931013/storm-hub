@@ -70,6 +70,7 @@ export async function fetchHeroes(): Promise<Hero[]> {
 
 /**
  * Fetch hero talents from Heroes Profile API
+ * API returns object keyed by hero name: {"Abathur": [...]}
  */
 export async function fetchTalents(heroName?: string): Promise<Talent[]> {
   try {
@@ -83,8 +84,35 @@ export async function fetchTalents(heroName?: string): Promise<Talent[]> {
       timeout: 10000
     })
 
-    if (response.statusCode === 200 && Array.isArray(response.data)) {
-      return response.data as Talent[]
+    if (response.statusCode === 200 && response.data) {
+      const data = response.data as any
+      
+      // API returns object keyed by hero name: {"Abathur": [...], "Alarak": [...]}
+      let talentArray: any[] = []
+      
+      if (Array.isArray(data)) {
+        // Fallback if API returns array
+        talentArray = data
+      } else if (typeof data === 'object') {
+        // Convert object to array - if heroName specified, get that hero's talents
+        if (heroName && data[heroName]) {
+          talentArray = data[heroName]
+        } else {
+          // Flatten all heroes' talents
+          talentArray = Object.values(data).flat()
+        }
+      }
+      
+      // Normalize talent fields to match our interface
+      return talentArray.map((t: any) => ({
+        name: t.talent_name || t.name || '',
+        title: t.title || t.talent_name || '',
+        description: t.description || '',
+        icon: t.icon || '',
+        icon_url: t.icon_url,
+        level: parseInt(String(t.level), 10) || 0,
+        sort: parseInt(String(t.sort), 10) || 0
+      }))
     }
     
     throw new Error(`API returned status ${response.statusCode}`)
@@ -96,12 +124,13 @@ export async function fetchTalents(heroName?: string): Promise<Talent[]> {
 
 /**
  * Fetch hero abilities from jsDelivr heroes-talents repo
- * Fallback if openApi doesn't provide full ability kits
+ * Correct path: hero/{shortname}.json (not hero/{shortname}/data.json)
+ * Abilities are nested by owner: {"Abathur": [...], "AbathurSymbiote": [...]}
  */
 export async function fetchAbilities(heroShortName: string): Promise<Ability[]> {
   try {
-    // Try fetching from heroes-talents JSON structure
-    const url = `${JSDELIVR_BASE}/hero/${heroShortName.toLowerCase()}/data.json`
+    // Correct path: hero/abathur.json
+    const url = `${JSDELIVR_BASE}/hero/${heroShortName.toLowerCase()}.json`
     
     const response = await uni.request({
       url,
@@ -111,25 +140,50 @@ export async function fetchAbilities(heroShortName: string): Promise<Ability[]> 
 
     if (response.statusCode === 200 && response.data) {
       const data: any = response.data
-      // Parse abilities from the JSON structure
       const abilities: Ability[] = []
       
-      if (data.abilities) {
-        for (const key in data.abilities) {
-          const ability = data.abilities[key]
-          abilities.push({
-            owner: heroShortName,
-            name: ability.name || key,
-            title: ability.name || key,
-            description: ability.description || '',
-            icon: ability.icon || '',
-            hotkey: ability.hotkey || key.toUpperCase(),
-            cooldown: ability.cooldown,
-            mana_cost: ability.manaCost,
-            trait: ability.trait || false
-          })
+      // Abilities are nested by owner key (e.g., "Abathur", "AbathurSymbiote")
+      if (data.abilities && typeof data.abilities === 'object') {
+        for (const ownerKey in data.abilities) {
+          const ownerAbilities = data.abilities[ownerKey]
+          
+          if (Array.isArray(ownerAbilities)) {
+            ownerAbilities.forEach((ability: any) => {
+              // Include basic abilities, heroics, and traits
+              // Skip mount abilities (type === 'mount')
+              if (ability.type !== 'mount') {
+                abilities.push({
+                  owner: ownerKey,
+                  name: ability.name || ability.abilityId || '',
+                  title: ability.name || '',
+                  description: ability.description || '',
+                  icon: ability.icon || '',
+                  hotkey: ability.hotkey || '',
+                  cooldown: ability.cooldown,
+                  mana_cost: ability.manaCost,
+                  trait: ability.trait || false
+                })
+              }
+            })
+          }
         }
       }
+      
+      // Sort: trait first, then basic (Q/W/E), then heroics (R)
+      abilities.sort((a, b) => {
+        if (a.trait && !b.trait) return -1
+        if (!a.trait && b.trait) return 1
+        
+        const order = ['D', 'Q', 'W', 'E', 'R', 'R2']
+        const aIndex = order.indexOf(a.hotkey || '')
+        const bIndex = order.indexOf(b.hotkey || '')
+        
+        if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex
+        if (aIndex !== -1) return -1
+        if (bIndex !== -1) return 1
+        
+        return 0
+      })
       
       return abilities
     }

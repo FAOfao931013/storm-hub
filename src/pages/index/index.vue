@@ -53,7 +53,7 @@
           :key="hero.short_name"
           :hero="hero"
           :isFav="favorites.includes(hero.short_name)"
-          @tap="goToDetail"
+          @select="goToDetail"
           @toggle-favorite="onToggleFavorite"
         />
       </view>
@@ -148,6 +148,12 @@ const onFilterRole = (role: string) => {
 }
 
 const goToDetail = (hero: Hero) => {
+  // Guard against invalid hero objects
+  if (!hero || !hero.short_name) {
+    console.error('Invalid hero object:', hero)
+    return
+  }
+  
   uni.navigateTo({
     url: `/pages/detail/detail?hero=${encodeURIComponent(hero.short_name)}`
   })

@@ -11,9 +11,9 @@
         <text>加载中...</text>
       </view>
 
-      <view v-else-if="error" class="error">
+      <view v-else-if="error && !hero" class="error">
         <text class="error-text">{{ error }}</text>
-        <button class="retry-btn" @tap="loadHeroData">重试</button>
+        <button class="retry-btn" @tap="retryLoad">重试</button>
       </view>
 
       <view v-else-if="hero">
@@ -117,6 +117,7 @@ const loading = ref(false)
 const refreshing = ref(false)
 const error = ref('')
 const imageError = ref(false)
+const currentHeroShortName = ref('')
 
 const displayName = computed(() => {
   if (!hero.value) return ''
@@ -154,6 +155,7 @@ const getAbilityIcon = (icon: string) => {
 const loadHeroData = async (heroShortName: string) => {
   loading.value = true
   error.value = ''
+  currentHeroShortName.value = heroShortName
 
   try {
     // Load hero basic info
@@ -167,14 +169,22 @@ const loadHeroData = async (heroShortName: string) => {
     hero.value = foundHero
     isFavorite.value = checkFavorite(heroShortName)
 
-    // Load talents and abilities in parallel
-    const [talentsData, abilitiesData] = await Promise.all([
-      fetchTalents(foundHero.name).catch(() => []),
-      fetchAbilities(heroShortName).catch(() => [])
+    // Load talents and abilities in parallel - don't fail if they error
+    const [talentsData, abilitiesData] = await Promise.allSettled([
+      fetchTalents(foundHero.name),
+      fetchAbilities(heroShortName)
     ])
 
-    talents.value = talentsData
-    abilities.value = abilitiesData
+    talents.value = talentsData.status === 'fulfilled' ? talentsData.value : []
+    abilities.value = abilitiesData.status === 'fulfilled' ? abilitiesData.value : []
+    
+    // Log warnings if data failed but don't show error to user
+    if (talentsData.status === 'rejected') {
+      console.warn('Talents fetch failed:', talentsData.reason)
+    }
+    if (abilitiesData.status === 'rejected') {
+      console.warn('Abilities fetch failed:', abilitiesData.reason)
+    }
   } catch (err: any) {
     error.value = err.message || '加载失败'
     uni.showToast({
@@ -186,12 +196,18 @@ const loadHeroData = async (heroShortName: string) => {
   }
 }
 
+const retryLoad = () => {
+  if (currentHeroShortName.value) {
+    loadHeroData(currentHeroShortName.value)
+  }
+}
+
 const onRefresh = async () => {
-  if (!hero.value) return
+  if (!currentHeroShortName.value) return
   
   refreshing.value = true
   try {
-    await loadHeroData(hero.value.short_name)
+    await loadHeroData(currentHeroShortName.value)
   } finally {
     refreshing.value = false
   }

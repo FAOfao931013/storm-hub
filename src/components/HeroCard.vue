@@ -39,7 +39,7 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const emit = defineEmits<{
-  tap: [hero: Hero]
+  select: [hero: Hero]
   toggleFavorite: [hero: Hero]
 }>()
 
@@ -58,7 +58,7 @@ const heroIcon = computed(() => {
 })
 
 const onTap = () => {
-  emit('tap', props.hero)
+  emit('select', props.hero)
 }
 
 const onToggleFavorite = () => {
