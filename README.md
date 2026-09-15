@@ -29,7 +29,7 @@
 - **英雄头像**: `images/heroes/{shortname}.png`
 - **技能图标**: `images/talents/{iconname}.png` (技能和天赋共用同一目录)
 - **天赋图标**: `images/talents/{iconname}.png`
-- **中文本地化数据**: `https://cdn.jsdelivr.net/gh/FAOfao931013/storm-hub@cursor/storm-hub-mvp-fb56/data/zhcn/heroes/{shortname}.json`
+- **中文本地化数据**: `https://cdn.jsdelivr.net/gh/FAOfao931013/storm-hub@main/data/zhcn/heroes/{shortname}.json`
   - 技能和天赋的中文名称和描述
   - 来源: HeroesToolChest/heroes-data build 2.55.11.94387 (MIT License)
   - 运行时在线加载,失败时回退到英文
@@ -151,8 +151,7 @@ storm-hub/
 
 **运行时覆盖 (`src/utils/zhcn.ts`)**
 - 详情页加载时从jsDelivr获取中文数据
-- **jsDelivr URL使用 `%2F` 编码** 分支名中的斜杠 (`cursor%2Fstorm-hub-mvp-fb56`)
-- 合并到main后,切换到 `@main` 以获得稳定的CDN URL
+- 使用 `@main` 分支获得稳定的CDN URL
 - 将中文文本合并到英文数据上,获取失败时回退到英文
 - UI控件本地化(搜索占位符、区块标签、角色/类型名称)
 
