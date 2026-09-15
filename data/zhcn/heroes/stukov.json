@@ -1,0 +1,295 @@
+{
+  "shortName": "stukov",
+  "heroName": "Stukov",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "StukovBioKillSwitch",
+      "buttonId": "StukovBioKillSwitch",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stukov_bio-killswitch.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "生化杀伤",
+      "short": "引爆不同类型的病毒，造成各种即刻效果",
+      "full": "激活后，引爆斯托科夫的所有病毒。每个医疗病原体都为目标恢复435~~0.04~~点生命值，每个负重脓疱都对目标造成100~~0.04~~点伤害，并使其减速70%，持续2秒。<n/><n/>可以在引导潜伏手臂时施放。"
+    },
+    {
+      "nameId": "StukovHealingPathogen",
+      "buttonId": "StukovHealingPathogen",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_stukov_healingpathogen.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "医疗病原体",
+      "short": "用传染性治愈系病毒感染盟友",
+      "full": "用医疗病原体感染一名友方英雄，可以在4.5秒内治疗目标222~~0.04~~点生命值。医疗病原体每0.75秒就会传播到附近的一名友方英雄身上。<n/><n/>每次施放医疗病原体只能传播到各个友方英雄身上1次。"
+    },
+    {
+      "nameId": "StukovWeightedPustule",
+      "buttonId": "StukovWeightedPustule",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_stukov_weightedpustule.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "负重脓疱",
+      "short": "用减速系病毒感染敌人并造成伤害",
+      "full": "投掷一个脓疱，可击中路径上的所有敌方英雄，造成20~~0.04~~点伤害并减速5%，减速效果在3秒内提高至50%。负重脓疱结束或被移除时，额外造成88~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "StukovLurkingArm",
+      "buttonId": "StukovLurkingArm",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_stukov_lurkingarm.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "潜伏手臂",
+      "short": "持续对范围内敌人造成伤害并使其沉默",
+      "full": "朝目标位置引导手臂，制造一个区域，对范围内的非建筑敌人每秒造成136~~0.04~~点伤害并使其沉默。对非英雄造成50%伤害。<n/><n/>引导时不消耗法力值，并且一直持续至取消或被打断。 "
+    },
+    {
+      "nameId": "StukovMassiveShove",
+      "buttonId": "StukovMassiveShove",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stukov_massiveshove.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "巨力猛推",
+      "short": "猛推一名敌人，直至其撞到障碍物",
+      "full": "伸展斯托科夫的手臂。如果击中敌方英雄则快速将其推远直至接触到无法通行的地形，造成190~~0.04~~点伤害并使其昏迷0.5秒。在推动敌人期间，斯托科夫获得50点护甲。 "
+    },
+    {
+      "nameId": "StukovFlailingSwipe",
+      "buttonId": "StukovFlailingSwipe",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stukov_flailingswipe.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "横扫猛击",
+      "short": "击退斯托科夫前方的敌人",
+      "full": "斯托科夫在1.75秒内朝前方横扫3次，对击中的敌人造成48~~0.04~~点伤害并将其击退。每次横扫范围都比上一次更大。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "StukovFetidTouch",
+      "buttonId": "StukovFetidTouchTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_stukov_weightedpustule.png",
+      "sort": 1,
+      "name": "腐臭之触",
+      "short": "任务：缩短负重脓疱的冷却时间并减少消耗",
+      "full": "普通攻击射程提高，并使敌人减速20%，持续1.5秒，但造成的伤害降低35%。该效果可选择开启或关闭。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：用负重脓疱击中英雄。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：击中15名英雄后，负重脓疱的冷却时间额外缩短5秒，并且不再消耗法力。"
+    },
+    {
+      "nameId": "StukovLowBlow",
+      "buttonId": "StukovLowBlowTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_stukov_lurkingarm.png",
+      "sort": 2,
+      "name": "卑鄙攻击",
+      "short": "提高潜伏手臂对低生命值目标的伤害",
+      "full": "潜伏手臂对生命值低于50%的敌方英雄额外造成100%伤害，且在该技能结束后效果仍持续1秒。"
+    },
+    {
+      "nameId": "StukovWeightedPustuleReactiveBallistospores",
+      "buttonId": "StukovReactiveBallistosporesTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_stukov_bio-killswitch.png",
+      "sort": 3,
+      "name": "本能扩散",
+      "short": "生命值较低时传播负重脓疱",
+      "full": "生命值降到50%以下时，生化杀伤的冷却时间刷新速率加快100%。<n/><n/>激活可立即把一个负重脓疱传播到附近所有敌方英雄身上，并且重置生化杀伤的冷却时间。<n/><n/>该效果有75秒的冷却时间。"
+    },
+    {
+      "nameId": "StukovOneGoodSpread",
+      "buttonId": "StukovOneGoodSpreadTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_stukov_healingpathogen.png",
+      "sort": 1,
+      "name": "高效传播",
+      "short": "医疗病原体传播时降低冷却时间",
+      "full": "医疗病原体感染3个目标后，其冷却时间缩短2秒，并且恢复10点法力值。"
+    },
+    {
+      "nameId": "StukovBioticArmor",
+      "buttonId": "StukovBioticArmorTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_stukov_healingpathogen_a.png",
+      "sort": 2,
+      "name": "生化护甲",
+      "short": "医疗病原体提供物理护甲",
+      "full": "当医疗病原体激活时，其目标获得10点物理护甲。引爆生化杀伤可以使该加成提高至50点，持续2.5秒。"
+    },
+    {
+      "nameId": "StukovVigorousReuptake",
+      "buttonId": "StukovVigorousReuptakeTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stukov_bio-killswitch.png",
+      "sort": 3,
+      "name": "活力摄取",
+      "short": "提高生化杀伤的治疗量",
+      "full": "引爆至少3个医疗病原体时，生化杀伤的治疗量提高30%。"
+    },
+    {
+      "nameId": "StukovLongPitch",
+      "buttonId": "StukovLongPitchTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_stukov_weightedpustule.png",
+      "sort": 1,
+      "name": "远距抛投",
+      "short": "扩大负重脓疱的范围，缩短冷却时间",
+      "full": "负重脓疱的范围扩大50%。引爆至少2个负重脓疱可使斯托科夫的生化杀伤和基本技能的冷却速度加快100%，持续4秒。"
+    },
+    {
+      "nameId": "StukovGrowingInfestation",
+      "buttonId": "StukovGrowingInfestationTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_stukov_lurkingarm.png",
+      "sort": 2,
+      "name": "感染增生",
+      "short": "潜伏手臂会扩张，持续时间固定",
+      "full": "潜伏手臂的范围在2.5秒内扩大50%，但其引导时间不能超过3秒。"
+    },
+    {
+      "nameId": "StukovTargetedExcision",
+      "buttonId": "StukovTargetedExcisionTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stukov_bio-killswitch.png",
+      "sort": 3,
+      "name": "精准切除",
+      "short": "引爆单个负重脓疱可以缩短冷却时间",
+      "full": "使用生化杀伤精确引爆1个负重脓疱（医疗病原体数量不限），则生化杀伤的冷却时间缩短至7秒，其他基本技能的冷却时间缩短1.5秒。"
+    },
+    {
+      "nameId": "StukovHeroicAbilityFlailingSwipe",
+      "buttonId": "StukovFlailingSwipe",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stukov_flailingswipe.png",
+      "sort": 1,
+      "name": "横扫猛击",
+      "short": "击退斯托科夫前方的敌人",
+      "full": "斯托科夫在1.75秒内朝前方横扫3次，对击中的敌人造成48~~0.04~~点伤害并将其击退。每次横扫范围都比上一次更大。"
+    },
+    {
+      "nameId": "StukovHeroicAbilityMassiveShove",
+      "buttonId": "StukovMassiveShove",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stukov_massiveshove.png",
+      "sort": 2,
+      "name": "巨力猛推",
+      "short": "猛推一名敌人，直至其撞到障碍物",
+      "full": "伸展斯托科夫的手臂。如果击中敌方英雄则快速将其推远直至接触到无法通行的地形，造成190~~0.04~~点伤害并使其昏迷0.5秒。在推动敌人期间，斯托科夫获得50点护甲。 "
+    },
+    {
+      "nameId": "StukovItHungers",
+      "buttonId": "StukovLurkingArmItHungersTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_stukov_lurkingarm.png",
+      "sort": 1,
+      "name": "它饿了",
+      "short": "潜伏手臂可以返还法力消耗",
+      "full": "使潜伏手臂的射程提高30%。如果潜伏手臂对英雄造成8次伤害，则重置其冷却时间，并返还法力消耗。"
+    },
+    {
+      "nameId": "StukovVirulentReaction",
+      "buttonId": "StukovVirulentReactionTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_stukov_lurkingarm_a.png",
+      "sort": 2,
+      "name": "剧毒反应",
+      "short": "引爆在潜伏手臂中的负重脓疱可定身敌人",
+      "full": "引爆一个在潜伏手臂范围内敌人身上的负重脓疱可将他们定身1.5秒。"
+    },
+    {
+      "nameId": "StukovPoppinPustules",
+      "buttonId": "StukovPoppinPustulesTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stukov_bio-killswitch.png",
+      "sort": 3,
+      "name": "脓疱爆裂",
+      "short": "负重脓疱可以在一个范围内引爆",
+      "full": "在负重脓疱的效果结束前1.5秒内使用生化杀伤将其引爆，可以使其伤害提高150%并造成范围性的伤害和减速效果。被击中的敌方英雄也会被施以负重脓庖。"
+    },
+    {
+      "nameId": "StukovSuperstrain",
+      "buttonId": "StukovSuperstrainTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_stukov_healingpathogen.png",
+      "sort": 1,
+      "name": "超级菌株",
+      "short": "处于昏迷、被定身状态时，医疗病原体会进行治疗",
+      "full": "队友携带医疗病原体的情况下陷入昏迷或定身状态时，会立刻受到300~~0.04~~点治疗。"
+    },
+    {
+      "nameId": "StukovUniversalCarrier",
+      "buttonId": "StukovUniversalCarrierTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_stukov_healingpathogen_a.png",
+      "sort": 2,
+      "name": "万能携带体",
+      "short": "医疗病原体可以持续传播",
+      "full": "医疗病原体可以通过斯托科夫持续传播，但治疗效果降低25%。"
+    },
+    {
+      "nameId": "StukovPoxPopuli",
+      "buttonId": "StukovPoxPopuliTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stukov_bio-killswitch.png",
+      "sort": 3,
+      "name": "益向病变",
+      "short": "生化杀伤不再移除医疗病原体",
+      "full": "生化杀伤不再移除医疗病原体，相反会使其持续时间延长至3秒。"
+    },
+    {
+      "nameId": "StukovControlledChaos",
+      "buttonId": "StukovControlledChaosTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stukov_flailingswipe.png",
+      "sort": 1,
+      "name": "隐忍杀欲",
+      "short": "横扫猛击只攻击一次，但获得多次充能",
+      "full": "横扫猛击获得额外2层充能，但每次使用只能以最大范围横扫1次。另外，其冷却时间降低至25秒，法力消耗从60减少至25。"
+    },
+    {
+      "nameId": "StukovPushComesToShove",
+      "buttonId": "StukovPushComesToShoveTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_stukov_massiveshove.png",
+      "sort": 2,
+      "name": "愈推愈劲",
+      "short": "巨力猛推使敌人减速，可以降低冷却时间",
+      "full": "在巨力猛推的目标与地形碰撞后，还会被减速50%，持续4秒。如果巨力猛推推动一个目标超过1.25秒，则冷却时间缩短15秒。"
+    },
+    {
+      "nameId": "StukovTopOff",
+      "buttonId": "StukovTopOffTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_stukov_healingpathogen.png",
+      "sort": 3,
+      "name": "强健治愈",
+      "short": "高生命值时医疗病原体的效果增强",
+      "full": "如果目标的生命值高于60%，则医疗病原体的持续治疗效果提高30%。"
+    },
+    {
+      "nameId": "StukovBioExplosionSwitch",
+      "buttonId": "StukovBioExplosionSwitchTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_stukov_bio-killswitch.png",
+      "sort": 4,
+      "name": "生化爆裂",
+      "short": "生化杀伤引爆潜伏手臂",
+      "full": "生化杀伤现在还会引爆潜伏手臂，造成230~~0.04~~点伤害，同时施加一个负重脓疱，并使其中的敌方英雄沉默2.5秒。"
+    }
+  ]
+}

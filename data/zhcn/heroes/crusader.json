@@ -1,0 +1,295 @@
+{
+  "shortName": "crusader",
+  "heroName": "Crusader",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "CrusaderIronSkin",
+      "buttonId": "CrusaderIronSkin",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_johanna_iron_skin.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "钢铁之肤",
+      "short": "变为不可阻挡并获得护盾",
+      "full": "激活后乔汉娜获得一个吸收810~~0.04~~点伤害的护盾，持续4秒。护盾激活时，乔汉娜不可阻挡。"
+    },
+    {
+      "nameId": "CrusaderPunish",
+      "buttonId": "CrusaderPunish",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_johanna_punish.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "惩罚",
+      "short": "对敌人造成伤害并使其减速",
+      "full": "向前挥击造成113~~0.04~~点伤害，并使敌人的速度降低60%，该效果在2秒内递减。"
+    },
+    {
+      "nameId": "CrusaderCondemn",
+      "buttonId": "CrusaderCondemn",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_johanna_condemn.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "天谴",
+      "short": "牵拉并对附近的敌人造成伤害",
+      "full": "1秒后，乔汉娜把附近的敌人拉向自己，使其昏迷0.25秒，并造成55~~0.04~~点伤害。对小兵和雇佣兵额外造成200%伤害。"
+    },
+    {
+      "nameId": "CrusaderShieldGlare",
+      "buttonId": "CrusaderShieldGlare",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_johanna_shield_glare.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "盾闪",
+      "short": "对锥形范围内的敌人造成伤害并使其致盲",
+      "full": "对敌人造成59~~0.04~~点伤害并使他们致盲，持续1.5秒。"
+    },
+    {
+      "nameId": "CrusaderFallingSword",
+      "buttonId": "CrusaderFallingSword",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_johanna_falling_sword.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "天罚之剑",
+      "short": "跳到目标区域保护盟友，使敌人昏迷",
+      "full": "乔汉娜跳向空中，制空时间持续2秒，她可以通过移动调整落地位置。在空中时，位于乔汉娜下方的盟友获得不可阻挡。落地时对附近敌人造成225~~0.04~~点伤害，使其昏迷0.25秒。"
+    },
+    {
+      "nameId": "CrusaderBlessedShield",
+      "buttonId": "CrusaderBlessedShield",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_johanna_blessed_shield.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "祝福之盾",
+      "short": "投掷一面可以击晕敌人的弹射飞盾",
+      "full": "对击中的第一个敌人造成114~~0.04~~点伤害并使其昏迷1.5秒。祝福之盾然后会弹向2名附近的敌人，对他们造成57~~0.04~~点伤害并使其昏迷0.75秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "CrusaderZealousGlare",
+      "buttonId": "CrusaderZealousGlare",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_johanna_shield_glare.png",
+      "sort": 1,
+      "name": "狂热眩光",
+      "short": "获得盾闪使用次数，提高伤害",
+      "full": "盾闪获得额外1次使用次数，造成70%的额外伤害。"
+    },
+    {
+      "nameId": "CrusaderPassiveDivineFortress",
+      "buttonId": "CrusaderPassiveDivineFortress",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_block.png",
+      "sort": 2,
+      "name": "神圣堡垒",
+      "short": "孤注一掷：获得最大生命<n/>普通攻击给予物理护甲",
+      "full": "普通攻击可以获得10点物理护甲加成，持续4秒，最多可叠加至40点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>孤注一掷：获得25%最大生命值加成。每次死亡使该加成损失5%。"
+    },
+    {
+      "nameId": "CrusaderMasteryLawsOfHope",
+      "buttonId": "CrusaderLawsOfHope",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_johanna_lawsofhope.png",
+      "sort": 3,
+      "name": "希望律法",
+      "short": "激活后在一定时间内恢复生命值<n/>任务：提高治疗量",
+      "full": "激活后，在5秒内为乔汉娜恢复20%的最大生命值。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：每收集10个恢复之球可提高该治疗量，提高的数值相当于乔汉娜最大生命值的5%。"
+    },
+    {
+      "nameId": "CrusaderMasteryPunishSubdue",
+      "buttonId": "CrusaderSubdueTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_johanna_punish.png",
+      "sort": 1,
+      "name": "强光克敌",
+      "short": "任务：提高惩罚的减速效果",
+      "full": "如果单次施放惩罚击中2名或以上英雄，则减速效果提高至80%，并且不会衰减。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：单次施放惩罚击中4名或以上英雄。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：惩罚现在总是使目标减速80%。"
+    },
+    {
+      "nameId": "CrusaderMasteryCondemnEternalRetaliation",
+      "buttonId": "CrusaderEternalRetaliationTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_johanna_condemn.png",
+      "sort": 2,
+      "name": "无尽复仇",
+      "short": "天谴标记敌人，消灭小兵",
+      "full": "被天谴命中的敌人会被标记10秒。乔汉娜对其发动的下一次普通攻击会移除该标记，使天谴的冷却时间缩短1秒，返还10点法力值并消灭小兵。"
+    },
+    {
+      "nameId": "CrusaderMasteryIronSkinHoldYourGround",
+      "buttonId": "CrusaderIronSkinHoldYourGroundTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_johanna_iron_skin.png",
+      "sort": 3,
+      "name": "坚守阵地",
+      "short": "提高钢铁之肤的护盾值，缩短冷却时间",
+      "full": "钢铁之肤的护盾值提高40%，其冷却时间缩短2秒。"
+    },
+    {
+      "nameId": "CrusaderMasteryShieldGlareSinsExposed",
+      "buttonId": "CrusaderPunishSinsExposedTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_johanna_punish.png",
+      "sort": 1,
+      "name": "原形毕露",
+      "short": "惩罚降低敌人恢复效果",
+      "full": "被惩罚命中的敌人受到的治疗效果降低35%，持续3秒。对其发动普通攻击可刷新该效果的持续时间。"
+    },
+    {
+      "nameId": "CrusaderMasteryCondemnConviction",
+      "buttonId": "CrusaderCondemnConvictionTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_johanna_condemn.png",
+      "sort": 2,
+      "name": "定罪",
+      "short": "天谴可以提高移动速度",
+      "full": "获得10%移动速度加成。天谴蓄力期间的该加成提高至20%。"
+    },
+    {
+      "nameId": "CrusaderIronSkinSteedCharge",
+      "buttonId": "CrusaderIronSkinSteedCharge",
+      "abilityType": "Active",
+      "icon": "storm_btn_d3ros_crusader_steedcharge.png",
+      "sort": 3,
+      "name": "战马冲锋",
+      "short": "激活获得强化坐骑",
+      "full": "激活后瞬间骑上坐骑，持续4秒，在此期间内受到伤害不会解除坐骑。<n/><n/>被动：钢铁之肤的持续时间增加2秒。"
+    },
+    {
+      "nameId": "CrusaderHeroicAbilityFallingSword",
+      "buttonId": "CrusaderFallingSword",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_johanna_falling_sword.png",
+      "sort": 1,
+      "name": "天罚之剑",
+      "short": "跳到目标区域保护盟友，使敌人昏迷",
+      "full": "乔汉娜跳向空中，制空时间持续2秒，她可以通过移动调整落地位置。在空中时，位于乔汉娜下方的盟友获得不可阻挡。落地时对附近敌人造成225~~0.04~~点伤害，使其昏迷0.25秒。"
+    },
+    {
+      "nameId": "CrusaderHeroicAbilityBlessedShield",
+      "buttonId": "CrusaderBlessedShield",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_johanna_blessed_shield.png",
+      "sort": 2,
+      "name": "祝福之盾",
+      "short": "投掷一面可以击晕敌人的弹射飞盾",
+      "full": "对击中的第一个敌人造成114~~0.04~~点伤害并使其昏迷1.5秒。祝福之盾然后会弹向2名附近的敌人，对他们造成57~~0.04~~点伤害并使其昏迷0.75秒。"
+    },
+    {
+      "nameId": "CrusaderMasteryPunishRoar",
+      "buttonId": "CrusaderRoarTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_johanna_punish.png",
+      "sort": 1,
+      "name": "怒吼",
+      "short": "提高惩罚伤害",
+      "full": "惩罚的伤害提高50%。如果惩罚击中2名或以上敌方英雄，伤害加成会提高到150%。"
+    },
+    {
+      "nameId": "CrusaderHolyFury",
+      "buttonId": "CrusaderHolyFury",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_talent_burningrage.png",
+      "sort": 2,
+      "name": "神圣愤怒",
+      "short": "对附近敌人造成伤害",
+      "full": "每秒对附近的敌人造成15~~0.04~~点伤害。天谴每击中一名英雄，就使其伤害提高40%，持续5秒。"
+    },
+    {
+      "nameId": "CrusaderBlessedHammer",
+      "buttonId": "CrusaderCondemnBlessedHammerTalent",
+      "abilityType": "Active",
+      "icon": "storm_btn_d3ros_crusader_blessedhammer.png",
+      "sort": 3,
+      "name": "祝福之锤",
+      "short": "激活后制造出旋转的锤子",
+      "full": "激活后，在乔汉娜身边制造出2枚回旋的锤子，对击中的敌人造成65~~0.04~~点伤害。用基本技能对敌人造成伤害可使该技能冷却时间缩短2秒。<n/><n/>被动：每对敌方英雄发动的第3次普通攻击产生一枚锤子。"
+    },
+    {
+      "nameId": "CrusaderCondemnShrinkingVacuum",
+      "buttonId": "CrusaderCondemnShrinkingVacuumTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_johanna_condemn.png",
+      "sort": 1,
+      "name": "收缩真空",
+      "short": "天谴降低敌人造成伤害，减速",
+      "full": "被天谴命中的敌方英雄，伤害降低30%，移动速度降低30%，持续3秒。"
+    },
+    {
+      "nameId": "CrusaderMasteryShieldGlareHolyRenewal",
+      "buttonId": "CrusaderShieldGlareHolyRenewalTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_johanna_shield_glare.png",
+      "sort": 2,
+      "name": "神圣恢复",
+      "short": "盾闪获得治疗",
+      "full": "盾闪命中敌方英雄可以使其冷却时间缩短1秒，并为乔汉娜恢复5%的最大生命值。"
+    },
+    {
+      "nameId": "CrusaderBlessedMomentum",
+      "buttonId": "JohannaBlessedMomentum",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+      "sort": 3,
+      "name": "祝福动能",
+      "short": "普通攻击可以缩短基本技能冷却时间",
+      "full": "普通攻击的攻击速度提高10%，持续4秒，最多可叠加至40%。普通攻击同时也使乔汉娜基本技能的冷却时间缩短0.5秒。"
+    },
+    {
+      "nameId": "CrusaderMasteryFallingSwordHeavensFury",
+      "buttonId": "CrusaderFallingSwordHeavensFuryTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_johanna_falling_sword.png",
+      "sort": 1,
+      "name": "天堂之怒",
+      "short": "天罚之剑落下神圣闪电",
+      "full": "天罚之剑落下神圣闪电，对敌人造成50~~0.04~~点伤害，为友方英雄恢复68~~0.04~~点生命值，并且每命中一名英雄都可以使天罚之剑的冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "CrusaderMasteryBlessedShieldRadiatingFaith",
+      "buttonId": "CrusaderBlessedShieldRadiatingFaithTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_johanna_blessed_shield.png",
+      "sort": 2,
+      "name": "辉煌信仰",
+      "short": "延长祝福之盾的昏迷持续时间并增加目标上限。",
+      "full": "祝福之盾可击中的敌人数量增加2个，昏迷时间提高至1.75秒，并且被击中的所有目标昏迷时间不会衰减。"
+    },
+    {
+      "nameId": "CrusaderHeroicMasteryIndestructable",
+      "buttonId": "CrusaderIndestructableTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_johanna_indestructible.png",
+      "sort": 3,
+      "name": "坚不可摧",
+      "short": "濒死时获得护盾",
+      "full": "受到致命伤害时，乔汉娜获得一个相当于她最大生命值的护盾，持续4秒。该效果有120秒的冷却时间。"
+    },
+    {
+      "nameId": "CrusaderBlindedByTheLight",
+      "buttonId": "CrusaderBlindedByTheLight",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_stormshield.png",
+      "sort": 4,
+      "name": "眩目圣光",
+      "short": "激活后给附近的盟友施放护盾",
+      "full": "激活后给附近的盟友施放相当于其最大生命值25%的护盾，持续3秒。<n/><n/>用盾闪击中英雄可使该技能冷却时间缩短8秒。"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "shortName": "cho",
+  "heroName": "Cho",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "ChoOgreHide",
+      "buttonId": "ChoOgreHideActivated",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_cho_ogrehide.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "食人魔之皮",
+      "short": "激活后提高护甲",
+      "full": "激活后获得25点护甲，但加尔的伤害降低25%。"
+    },
+    {
+      "nameId": "ChoSurgingFistCast",
+      "buttonId": "ChoSurgingFist",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_cho_moltensurge_a.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "涌动之拳",
+      "short": "向指定方向冲刺并击退沿途的敌人",
+      "full": "激活后开始蓄力涌动之拳。再次激活后向前冲刺，击退沿途的敌人，并造成46~~0.04~~点伤害。冲刺距离根据蓄力时间最多提高250%。"
+    },
+    {
+      "nameId": "ChoConsumingBlaze",
+      "buttonId": "ChoConsumingBlaze",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_cho_consumingflame.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "吞噬耀光",
+      "short": "对附近敌人造成伤害，并治疗古",
+      "full": "点燃周围敌人，在5秒内造成150~~0.04~~点伤害。对被点燃的敌人进行普通攻击会将其重新点燃。每点燃一个敌人使古恢复40~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "ChoRuneBomb",
+      "buttonId": "ChoRuneBomb",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_cho_runebomb.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "符文炸弹",
+      "short": "投掷一枚直线前进的符文炸弹。加尔可以引爆炸弹，造成范围伤害。",
+      "full": "放出一枚符文炸弹，对移动路径上的敌人造成91~~0.04~~点伤害。加尔可以使用符文冲击引爆炸弹，在范围内造成210~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "ChoUpheaval",
+      "buttonId": "ChoUpheaval",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cho_upheaval.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "颠覆之击",
+      "short": "将大范围内的敌人拉回身边",
+      "full": "1秒后，将敌人拉向古加尔，使其减速25%，持续3秒，并造成175~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "ChoHammerOfTwilight",
+      "buttonId": "ChoHammerOfTwilight",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cho_hammeroftwilight.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "暮光神锤",
+      "short": "激活后击退并击晕敌人",
+      "full": "激活后挥舞暮光神锤，造成150~~0.045~~点伤害，将敌人击退，并使其昏迷0.75秒。<n/><n/>被动：古的普通攻击造成25%的额外伤害。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "HearthstoneNoMana",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "ChoConsumingFire",
+      "buttonId": "ChoConsumingFire",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_cho_consumingflame.png",
+      "sort": 1,
+      "name": "吞噬之焰",
+      "short": "提高对英雄的治疗量",
+      "full": "英雄被点燃时，吞噬耀光的治疗量提高150%。"
+    },
+    {
+      "nameId": "ChoCallousedHide",
+      "buttonId": "ChoCallousedHide",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_cho_ogrehide.png",
+      "sort": 2,
+      "name": "硬化外皮",
+      "short": "低生命值时提高治疗效果与移动速度",
+      "full": "当低于60%最大生命值时，古的移动速度和受到的治疗提高15%。"
+    },
+    {
+      "nameId": "ChoTheWillofCho",
+      "buttonId": "ChoTheWillofCho",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_cho_ogrehide_var1.png",
+      "sort": 3,
+      "name": "古的意志",
+      "short": "击杀小兵和英雄可以提高护甲",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：击杀敌方小兵可以获得1层古的意志。击杀英雄可以获得10层。每30层古的意志可以获得1点护甲值，最多10点。<n/><n/>此护甲可以与食人魔之皮叠加。"
+    },
+    {
+      "nameId": "ChoUppercut",
+      "buttonId": "ChoUppercut",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_cho_moltensurge_a.png",
+      "sort": 1,
+      "name": "上勾拳",
+      "short": "提高涌动之拳的伤害",
+      "full": "涌动之拳击中一名敌方英雄时，可以造成相当于其最大生命值5%的额外伤害，并且使涌动之拳的冷却时间缩短5秒。"
+    },
+    {
+      "nameId": "ChoRollback",
+      "buttonId": "ChoRollbackTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_cho_runebomb.png",
+      "sort": 2,
+      "name": "炸弹回弹",
+      "short": "符文炸弹会返回",
+      "full": "符文炸弹会返回古身边，对沿途的敌人造成伤害。"
+    },
+    {
+      "nameId": "ChoSearedFlesh",
+      "buttonId": "ChoSearedFleshTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "肉体灼烧",
+      "short": "连续的普通攻击造成额外伤害",
+      "full": "对敌方英雄连续进行普通攻击会造成20%的额外伤害，最多可提高至60%。该加成持续5秒，或直到攻击另外一个非英雄敌人为止。"
+    },
+    {
+      "nameId": "ChoPowerSurge",
+      "buttonId": "ChoPowerSurgeTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_cho_moltensurge_a.png",
+      "sort": 1,
+      "name": "强力涌动",
+      "short": "涌动之拳使敌方英雄减速",
+      "full": "涌动之拳击中敌方英雄时会使其减速30%，持续2.5秒。引导涌动之拳时会获得15%的移动速度加成，并且该加成在施放此技能2.5秒后仍然存在。"
+    },
+    {
+      "nameId": "ChoFirestarter",
+      "buttonId": "ChoFirestarter",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_cho_consumingflame.png",
+      "sort": 2,
+      "name": "纵火者",
+      "short": "缩短吞噬耀光的冷却时间",
+      "full": "对被点燃的英雄进行普通攻击使吞噬耀光的冷却时间缩短1秒。<n/><n/>被动：吞噬耀光的冷却时间缩短3秒。"
+    },
+    {
+      "nameId": "ChoEnragedRegeneration",
+      "buttonId": "ChoEnragedRegeneration",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_cho_ogrehide.png",
+      "sort": 3,
+      "name": "狂怒恢复",
+      "short": "古从英雄伤害中获得治疗，加尔减少敌人的治疗",
+      "full": "古使用技能或普通攻击每击中一次敌方英雄，他便在3秒内获得60~~0.04~~点治疗。被加尔的恐惧之球击中的敌方英雄获得的治疗效果降低35%，持续2秒。"
+    },
+    {
+      "nameId": "ChoHeroicAbilityHammerOfTwilight",
+      "buttonId": "ChoHammerOfTwilight",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cho_hammeroftwilight.png",
+      "sort": 1,
+      "name": "暮光神锤",
+      "short": "激活后击退并击晕敌人",
+      "full": "激活后挥舞暮光神锤，造成150~~0.045~~点伤害，将敌人击退，并使其昏迷0.75秒。<n/><n/>被动：古的普通攻击造成25%的额外伤害。"
+    },
+    {
+      "nameId": "ChoHeroicAbilityUpheaval",
+      "buttonId": "ChoUpheaval",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cho_upheaval.png",
+      "sort": 2,
+      "name": "颠覆之击",
+      "short": "将大范围内的敌人拉回身边",
+      "full": "1秒后，将敌人拉向古加尔，使其减速25%，持续3秒，并造成175~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "ChoSurgingDash",
+      "buttonId": "ChoSurgingDashTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_cho_moltensurge_a.png",
+      "sort": 1,
+      "name": "涌动冲刺",
+      "short": "引导涌动之拳时获得治疗",
+      "full": "引导涌动之拳时，古每秒恢复150~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "ChoTwilightVeil",
+      "buttonId": "ChoTwilightVeilTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_hardenedshield.png",
+      "sort": 2,
+      "name": "暮光帷幕",
+      "short": "激活后提高食人魔之皮的护甲",
+      "full": "激活后使食人魔之皮的护甲加成提高至75点，持续4秒。如果在食人魔之怒激活时施放，则立刻切换为食人魔之皮。"
+    },
+    {
+      "nameId": "ChoTalentMoltenBlock",
+      "buttonId": "ChoTalentMoltenBlock",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_cho_moltenblock.png",
+      "sort": 3,
+      "name": "熔火格挡",
+      "short": "激活后变为无敌",
+      "full": "激活后变为静止并获得无敌，持续3秒，并且每秒对附近敌人造成92~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "ChoFrenziedFists",
+      "buttonId": "ChoFrenziedFistsTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_cho_moltensurge_a.png",
+      "sort": 1,
+      "name": "狂暴之拳",
+      "short": "涌动之拳提高攻击速度",
+      "full": "使用涌动之拳后，攻击速度提高75%，持续5秒。"
+    },
+    {
+      "nameId": "ChoRunicFeedback",
+      "buttonId": "ChoRunicFeedbackTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_cho_runebomb.png",
+      "sort": 2,
+      "name": "符文反馈",
+      "short": "符文冲击缩短符文炸弹的冷却时间",
+      "full": "加尔的符文冲击每击中一个敌人使古的符文炸弹的冷却时间缩短1秒，每击中一个英雄缩短2秒。"
+    },
+    {
+      "nameId": "ChoRunedGauntlet",
+      "buttonId": "ChoRunedGauntletTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+      "sort": 3,
+      "name": "符文护手",
+      "short": "普通攻击缩短终极技能的冷却时间",
+      "full": "普通攻击使古和加尔的终极技能的冷却时间减少6%。"
+    },
+    {
+      "nameId": "ChoCthunsGift",
+      "buttonId": "ChoCthunsGiftTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cho_hammeroftwilight.png",
+      "sort": 1,
+      "name": "克苏恩的赠礼",
+      "short": "普通攻击变为远程，并使目标减速",
+      "full": "古的普通攻击变为远程攻击，并使目标减速20%，持续2秒。"
+    },
+    {
+      "nameId": "ChoFavorOfTheOldGods",
+      "buttonId": "ChoFavorOfTheOldGodsTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_cho_upheaval.png",
+      "sort": 2,
+      "name": "上古之神的眷顾",
+      "short": "颠覆之击使英雄定身",
+      "full": "颠覆之击使敌方英雄定身2秒。"
+    },
+    {
+      "nameId": "ChoFuelForTheFlame",
+      "buttonId": "ChoFuelForTheFlameTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_aoe.png",
+      "sort": 3,
+      "name": "烈焰能量",
+      "short": "基本攻击造成伤害时引发爆炸",
+      "full": "对敌人发动普通攻击会令其爆炸，造成21~~0.04~~点伤害，并对附近的敌人造成45~~0.04~~点伤害。该伤害对敌方英雄翻倍。"
+    },
+    {
+      "nameId": "ChoHourofTwilight",
+      "buttonId": "ChoHourofTwilight",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_gall_psychoticbreak.png",
+      "sort": 4,
+      "name": "暮光审判",
+      "short": "缩短复活时间",
+      "full": "古加尔的复活时间缩短50%。"
+    }
+  ]
+}

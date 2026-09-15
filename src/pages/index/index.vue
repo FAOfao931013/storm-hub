@@ -16,12 +16,12 @@
       <view class="filter-chips">
         <view 
           v-for="role in roles" 
-          :key="role"
+          :key="role.value"
           class="filter-chip"
-          :class="{ active: selectedRole === role }"
-          @tap="onFilterRole(role)"
+          :class="{ active: selectedRole === role.value }"
+          @tap="onFilterRole(role.value)"
         >
-          {{ role }}
+          {{ role.label }}
         </view>
       </view>
     </scroll-view>
@@ -66,6 +66,7 @@ import { ref, computed, onMounted } from 'vue'
 import type { Hero } from '@/types/hero'
 import { fetchHeroes, clearHeroesCache, getChineseName } from '@/api/heroes'
 import { getFavorites, toggleFavorite } from '@/utils/storage'
+import { getRoleCN } from '@/utils/zhcn'
 import HeroCard from '@/components/HeroCard.vue'
 
 const heroes = ref<Hero[]>([])
@@ -76,7 +77,16 @@ const loading = ref(false)
 const refreshing = ref(false)
 const error = ref('')
 
-const roles = ['全部', 'Tank', 'Bruiser', 'Healer', 'Support', 'Melee Assassin', 'Ranged Assassin']
+// Role filter options with Chinese labels
+const roles = [
+  { label: '全部', value: '全部' },
+  { label: '坦克', value: 'Tank' },
+  { label: '战士', value: 'Bruiser' },
+  { label: '治疗', value: 'Healer' },
+  { label: '辅助', value: 'Support' },
+  { label: '近战刺杀', value: 'Melee Assassin' },
+  { label: '远程刺杀', value: 'Ranged Assassin' }
+]
 
 const filteredHeroes = computed(() => {
   let result = heroes.value
@@ -143,8 +153,8 @@ const onSearch = () => {
   // Reactive computed property will handle filtering
 }
 
-const onFilterRole = (role: string) => {
-  selectedRole.value = role
+const onFilterRole = (roleValue: string) => {
+  selectedRole.value = roleValue
 }
 
 const goToDetail = (hero: Hero) => {

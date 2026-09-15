@@ -1,0 +1,295 @@
+{
+  "shortName": "hogger",
+  "heroName": "Hogger",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "HoggerLootHoard",
+      "buttonId": "HoggerLootHoard",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_hogger_trait.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "肉桶大餐",
+      "short": "制造地形和恢复生命值",
+      "full": "在战场上投掷一堆废物，对一个区域的敌人造成102~~0.04~~点伤害并将其击退，同时可将这堆废物视为地形，持续最多5秒。<n/><n/>肉桶持续时间结束或被摧毁后会掉出一块可以被拾取的肉，拾取后每秒恢复3%的最大生命值，持续4秒。<n/><n/>重新激活以摧毁肉桶。"
+    },
+    {
+      "nameId": "HoggerStaggeringBlow",
+      "buttonId": "HoggerStaggeringBlow",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_hogger_q.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "链球甩击",
+      "short": "攻击弧形范围内的敌人",
+      "full": "用你的链球挥出一道巨弧，对击中的敌人造成140~~0.04~~点伤害，并将其击退。如果敌人撞到地形，则造成150~~0.04~~点额外伤害，使其昏迷0.75秒并获得15点怒气。"
+    },
+    {
+      "nameId": "HoggerEzThroDynamite",
+      "buttonId": "HoggerEzThroDynamite",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_hogger_w.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "简易炸弹",
+      "short": "投掷一捆炸药",
+      "full": "投掷一捆炸药，在1.5秒后引爆。爆炸时，敌人受到180~~0.04~~点伤害并减速30%，持续2秒。<n/><n/>该炸药落到英雄身上会直接引爆，并给予霍格10点怒气。"
+    },
+    {
+      "nameId": "HoggerHoggWild",
+      "buttonId": "HoggerHoggWild",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_hogger_e.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "河爪旋风",
+      "short": "快速旋转，造成伤害",
+      "full": "在0.25秒后，朝目标方向旋转，并在撞到地形时反弹，在此期间变得不可阻挡且无法控制。碰到地形反弹可刷新该技能的持续时间。<n/><n/>每0.125秒对周围的非建筑敌人造成44~~0.04~~点伤害，每点怒气可以使该技能对英雄造成的伤害提高0.5%。"
+    },
+    {
+      "nameId": "HoggerHoardapult",
+      "buttonId": "HoggerHoardapult",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hogger_r1.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "肉桶飞拽",
+      "short": "投掷肉桶大餐与霍格",
+      "full": "霍格把强化后的肉桶连同自己一起甩出去，造成100~~0.04~~点伤害，并使敌人减速50%，持续2秒。<n/><n/>肉桶飞拽的肉桶最多存在20秒，并且会在霍格远离它时迅速衰竭。每隔10秒，霍格可以从肉桶中获得一块肉。"
+    },
+    {
+      "nameId": "HoggerShockwave",
+      "buttonId": "HoggerShockwave",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hogger_r2.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "链球震波",
+      "short": "在一条长线上造成伤害和昏迷",
+      "full": "在0.5秒后重击地面，发出一道沿着直线移动的震荡波。被第一下重击打中的敌人会受到335~~0.04~~点伤害并昏迷1.5秒。只被震荡波击中的敌人则受到230~~0.04~~点伤害并昏迷0.75秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "HoggerJourneymanCooking",
+      "buttonId": "HoggerJourneymanCooking",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_hogger_w.png",
+      "sort": 1,
+      "name": "烹饪熟手",
+      "short": "任务：简易炸弹可治疗和提高生命值",
+      "full": "简易炸弹每击中一名英雄，就能恢复你8%的最大生命值。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：用简易炸弹击中英雄可以使你的最大生命值永久提高10点，最多获得750点生命值加成。"
+    },
+    {
+      "nameId": "HoggerBonestoGnaw",
+      "buttonId": "HoggerBonestoGnaw",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_hogger_trait.png",
+      "sort": 2,
+      "name": "嚼骨吸髓",
+      "short": "肉桶大餐生成更多肉并获得护甲",
+      "full": "肉桶大餐在落地时生成一块肉。当受到肉的效果影响时，还会获得10点护甲。"
+    },
+    {
+      "nameId": "HoggerOnTheProwl",
+      "buttonId": "HoggerOnTheProwl",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_hogger_rage.png",
+      "sort": 3,
+      "name": "徘徊游猎",
+      "short": "周期性恢复生命值，激活以获得怒气",
+      "full": "激活后在8秒内获得30点怒气。<n/><n/>被动：每秒恢复7~~0.04~~点生命值，每一点怒气可以使该效果提高2%。 "
+    },
+    {
+      "nameId": "HoggerBruteForce",
+      "buttonId": "HoggerBruteForce",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_hogger_combo_q_d.png",
+      "sort": 1,
+      "name": "兽性蛮力",
+      "short": "提高攻击伤害和肉桶大餐的射程",
+      "full": "使肉桶大餐的射程提高20%，伤害提高50%。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：使用链球甩击命中英雄可永久使普通攻击伤害提高2点，最多获得150点伤害加成。将敌方英雄撞到地形上将额外提供6点伤害加成。"
+    },
+    {
+      "nameId": "HoggerAggroRange",
+      "buttonId": "HoggerAggroRange",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_hogger_e.png",
+      "sort": 2,
+      "name": "仇恨扩散",
+      "short": "提高河爪旋风的半径，产生怒气",
+      "full": "河爪旋风的范围扩大20%，并且每击中一名敌人将产生0.5点怒气，击中英雄时效果提升至2点。"
+    },
+    {
+      "nameId": "HoggerHoggersJoggers",
+      "buttonId": "HoggerHoggersJoggers",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_hogger_rage.png",
+      "sort": 3,
+      "name": "霍格暴走",
+      "short": "怒气提高移动速度和受到的治疗",
+      "full": "怒气值高于30点时，获得10%的移动速度和治疗加成。<n/><n/>怒气值大于或等于50点时，该加成提高至15%。"
+    },
+    {
+      "nameId": "HoggerDenseBlastingPowder",
+      "buttonId": "HoggerDenseBlastingPowder",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_hogger_w.png",
+      "sort": 1,
+      "name": "致密炸药粉",
+      "short": "制作更多简易炸弹",
+      "full": "即刻爆炸的简易炸弹会在命中的英雄身后额外产生一枚炸弹。<n/><n/>使用链球甩击命中一捆简易炸弹可以将其分散为三根炸药，甩向前方扇形区域。"
+    },
+    {
+      "nameId": "HoggerGarbageFire",
+      "buttonId": "HoggerGarbageFire",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_hogger_trait.png",
+      "sort": 2,
+      "name": "残羹爆燃",
+      "short": "肉桶大餐造成范围伤害和减速",
+      "full": "肉桶大餐的冷却时间缩短2秒。每隔0.5秒，肉桶大餐周围大范围内的敌人受到23~~0.04~~点伤害，并减速20%。"
+    },
+    {
+      "nameId": "HoggerSeeingRed",
+      "buttonId": "HoggerSeeingRed",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_hogger_rage.png",
+      "sort": 3,
+      "name": "怒眼圆睁",
+      "short": "怒气强化基本技能和普通攻击",
+      "full": "怒气值大于50点时，获得35%的攻击速度加成，并使链球甩击和河爪旋风的冷却速度加快30%。"
+    },
+    {
+      "nameId": "HoggerHoardapult",
+      "buttonId": "HoggerHoardapult",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hogger_r1.png",
+      "sort": 1,
+      "name": "肉桶飞拽",
+      "short": "投掷肉桶大餐与霍格",
+      "full": "霍格把强化后的肉桶连同自己一起甩出去，造成100~~0.04~~点伤害，并使敌人减速50%，持续2秒。<n/><n/>肉桶飞拽的肉桶最多存在20秒，并且会在霍格远离它时迅速衰竭。每隔10秒，霍格可以从肉桶中获得一块肉。"
+    },
+    {
+      "nameId": "HoggerShockwave",
+      "buttonId": "HoggerShockwave",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hogger_r2.png",
+      "sort": 2,
+      "name": "链球震波",
+      "short": "在一条长线上造成伤害和昏迷",
+      "full": "在0.5秒后重击地面，发出一道沿着直线移动的震荡波。被第一下重击打中的敌人会受到335~~0.04~~点伤害并昏迷1.5秒。只被震荡波击中的敌人则受到230~~0.04~~点伤害并昏迷0.75秒。"
+    },
+    {
+      "nameId": "HoggerDustDevil",
+      "buttonId": "HoggerDustDevil",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_hogger_e.png",
+      "sort": 1,
+      "name": "砂尘旋风",
+      "short": "河爪旋风给予护甲",
+      "full": "当河爪旋风激活时，获得25点护甲，该技能结束后此护甲可持续4秒。当怒气值大于或等于50点时，此护甲值提高至40点。"
+    },
+    {
+      "nameId": "HoggerPummel",
+      "buttonId": "HoggerPummel",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_hogger_e_variant.png",
+      "sort": 2,
+      "name": "重殴",
+      "short": "河爪旋风可减速，降低法术强度",
+      "full": "河爪旋风击中的敌人会被减速10%，持续2秒，最多可叠加5次。<n/><n/>被击中的英雄法术强度降低30%，持续2秒。"
+    },
+    {
+      "nameId": "HoggerBloodthirst",
+      "buttonId": "HoggerBloodthirst",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_heal.png",
+      "sort": 3,
+      "name": "嗜血成性",
+      "short": "普通攻击和部分技能可治疗",
+      "full": "普通攻击、链球甩击或河爪旋风对英雄造成伤害时，所造成伤害的33%转化为对你的治疗。"
+    },
+    {
+      "nameId": "HoggerHeadbanger",
+      "buttonId": "HoggerHeadbanger",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_hogger_q.png",
+      "sort": 1,
+      "name": "当头一锤",
+      "short": "提高链球甩击的伤害和昏迷时间",
+      "full": "被链球甩击击昏的敌方英雄还会受到相当于其最大生命值8%的额外伤害，并且昏迷时间延长0.5秒。"
+    },
+    {
+      "nameId": "HoggerKablooie",
+      "buttonId": "HoggerKablooie",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_hogger_w.png",
+      "sort": 2,
+      "name": "咔嘣！",
+      "short": "强化简易炸弹的瞬间爆炸",
+      "full": "简易炸弹的瞬间爆炸造成50%的额外伤害，并使其冷却时间减少1.5秒，并将减速效果提高至50%。<n/><n/>被动：使简易炸弹的射程提高25%。"
+    },
+    {
+      "nameId": "HoggerFurzerker",
+      "buttonId": "HoggerFurzerker",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "狂毛战士",
+      "short": "强化普通攻击，提高移动速度",
+      "full": "使用链球甩击或简易炸弹命中英雄可以在接下来的8秒内，使下一次普通攻击的伤害提高50%，最多叠加2次。<n/><n/>河爪旋风结束时，获得30%的移动速度加成，持续2秒。"
+    },
+    {
+      "nameId": "HoggerSecretStash",
+      "buttonId": "HoggerSecretStash",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hogger_r1.png",
+      "sort": 1,
+      "name": "秘密珍藏",
+      "short": "肉桶投掷炸弹和肉",
+      "full": "每隔2秒，肉桶飞拽产生的肉桶大餐就会随机投掷简易炸弹，优先以附近的敌方英雄为目标。<n/><n/>每隔5秒，也会向霍格投掷一块肉。"
+    },
+    {
+      "nameId": "HoggerPowerSpike",
+      "buttonId": "HoggerPowerSpike",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_hogger_r2.png",
+      "sort": 2,
+      "name": "能量尖峰",
+      "short": "链球震波降低护甲，缩短冷却时间",
+      "full": "链球震波击中英雄可使其护甲值降低15点，持续4秒，并给予20点怒气。<n/><n/>被动：怒气的冷却缩短效果可作用于链球震波。"
+    },
+    {
+      "nameId": "HoggerNoControl",
+      "buttonId": "HoggerNoControl",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_hogger_e_variant.png",
+      "sort": 3,
+      "name": "失控旋风",
+      "short": "用河爪旋风追击敌人",
+      "full": "激活后释放一个无天赋加成的河爪旋风追击敌方英雄。在追上该英雄后，随机弹向周围另一个敌方英雄。最多持续5秒，如果附近没有其他敌方英雄则迅速衰退。<n/><n/>无法取消。"
+    },
+    {
+      "nameId": "HoggerAngerManagement",
+      "buttonId": "HoggerAngerManagement",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_hogger_rage.png",
+      "sort": 4,
+      "name": "怒气管理",
+      "short": "提高最大怒气和怒气获取速度",
+      "full": "使最大怒气值提高50点，冷却回复速率最大加成提高至75%并且河爪旋风的最大英雄伤害加成提高至75%。<n/><n/>被动：普通攻击给予5点额外怒气。"
+    }
+  ]
+}

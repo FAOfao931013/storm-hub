@@ -1,0 +1,295 @@
+{
+  "shortName": "uther",
+  "heroName": "Uther",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "UtherEternalDevotion",
+      "buttonId": "UtherEternalDevotion",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_uther_eternaldevotion.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "虔诚",
+      "short": "乌瑟尔的治疗提供护甲，并在被杀死后灵魂继续战斗",
+      "full": "乌瑟尔的基本技能可以使友方英雄获得25点护甲加成，并为乌瑟尔自身提供15点护甲加成，持续2秒。<n/><n/><s val=\"cbe8ff-ffffff\" name=\"StandardTooltipHeader\">永恒先锋</s><n/><n/>死亡后，乌瑟尔变为无敌的灵魂状态，持续最多8秒。在灵魂状态下，乌瑟尔可以使用圣光闪现为盟友恢复230~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "UtherHolyLight",
+      "buttonId": "UtherHolyLight",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_uther_holylight.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "圣光术",
+      "short": "治疗一名友方英雄和乌瑟尔",
+      "full": "为目标友方英雄恢复362~~0.04~~点生命值。对乌瑟尔以外的其他目标使用时，还会为乌瑟尔恢复181~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "UtherHolyRadiance",
+      "buttonId": "UtherHolyRadiance",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_uther_holyradiance.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "圣光普照",
+      "short": "对一条直线上的敌人造成伤害，并治疗其中的盟友",
+      "full": "对一条直线上的敌人造成177~~0.04~~点伤害，为接触到的友方英雄和小兵恢复194~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "UtherHammerOfJustice",
+      "buttonId": "UtherHammerofJustice",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_uther_hammerofjustice.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "制裁之锤",
+      "short": "攻击一名敌人使其昏迷",
+      "full": "对目标造成109~~0.04~~点伤害，并使其昏迷1秒。"
+    },
+    {
+      "nameId": "UtherDivineIntervention",
+      "buttonId": "UtherDivineShield",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_uther_divineshield.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "圣盾术",
+      "short": "使一个盟友无敌并提高其移动速度<n/>",
+      "full": "使目标友方英雄无敌并使其移动速度提高20%，持续3秒。"
+    },
+    {
+      "nameId": "UtherDivineStorm",
+      "buttonId": "UtherDivineStorm",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_uther_divinestorm.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "神圣风暴",
+      "short": "击晕并伤害周围的敌人<n/>",
+      "full": "对附近的敌人造成170~~0.04~~点伤害，并使其昏迷1.75秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "UtherHolyLightSilverTouch",
+      "buttonId": "UtherHolyLightSilverTouch",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_uther_holylight.png",
+      "sort": 1,
+      "name": "白银之触",
+      "short": "任务：降低伤害来强化圣光术",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：使用虔诚降低来自英雄的伤害。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：降低40次伤害后，圣光术的法力消耗从80点降低至60点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：降低80次伤害后，圣光术的法力消耗降低至40点，并且范围扩大50%。"
+    },
+    {
+      "nameId": "UtherMasteryWaveofLightHolyRadiance",
+      "buttonId": "UtherHolyRadianceWaveofLightTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_uther_holyradiance.png",
+      "sort": 2,
+      "name": "圣光涌动",
+      "short": "任务：圣光普照延长虔诚的持续时间",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：使用圣光普照攻击或治疗英雄60次。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：虔诚的持续时间延长0.5秒。<n/><n/>被动：使用圣光普照攻击或治疗英雄返还5点法力值，并使其冷却时间缩短0.75秒。"
+    },
+    {
+      "nameId": "UtherCombatStyleHammerOfTheLightbringer",
+      "buttonId": "UtherEternalDevotionHammerOfTheLightbringerTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_talent_autoattack_mana.png",
+      "sort": 3,
+      "name": "光明使者之锤",
+      "short": "任务：缩短制裁之锤的冷却时间",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：普通攻击敌人75次。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：普通攻击使制裁之锤的冷却时间缩短1.5秒。<n/><n/>被动：普通攻击为乌瑟尔恢复1.5%的最大法力值。"
+    },
+    {
+      "nameId": "UtherMasteryHolyShock",
+      "buttonId": "UtherHolyLightHolyShockTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_uther_holylight.png",
+      "sort": 1,
+      "name": "神圣震击",
+      "short": "圣光术能够造成伤害",
+      "full": "圣光术可以对敌人使用，造成相当于40%治疗量的伤害。以这种方式使用时，乌瑟尔获得自我治疗效果，圣光术的冷却时间缩短6秒，并返还45点法力值。"
+    },
+    {
+      "nameId": "UtherHammerOfJusticePursuitOfJustice",
+      "buttonId": "UtherHammerOfJusticePursuitOfJusticeTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_uther_hammerofjustice.png",
+      "sort": 2,
+      "name": "正义追击",
+      "short": "制裁之锤提供移动速度",
+      "full": "制裁之锤使乌瑟尔的移动速度提高25%，持续3秒。"
+    },
+    {
+      "nameId": "UtherHolyFire",
+      "buttonId": "UtherHolyFireTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_uther_holyfire.png",
+      "sort": 3,
+      "name": "神圣之火",
+      "short": "对附近敌人造成伤害",
+      "full": "每秒对附近敌人造成13~~0.04~~点伤害。对敌方英雄的普通攻击使该伤害提高20%，持续3秒。该效果最多叠加3次。"
+    },
+    {
+      "nameId": "UtherEternalDevotionArmorOfFaith",
+      "buttonId": "UtherEternalDevotionArmorOfFaithTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_uther_holylight.png",
+      "sort": 1,
+      "name": "信仰护甲",
+      "short": "被控制时加快圣光术的冷却速度",
+      "full": "受到昏迷、定身或沉默效果可使乌瑟尔恢复90点法力值，并使圣光术的冷却速度加快200%，持续6秒。该效果拥有20秒的冷却时间。"
+    },
+    {
+      "nameId": "UtherEternalDevotionGuardianOfAncientKings",
+      "buttonId": "UtherEternalDevotionGuardianOfAncientKingsTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_uther_eternaldevotion.png",
+      "sort": 2,
+      "name": "远古列王守卫",
+      "short": "提高被控制的目标的虔诚护甲",
+      "full": "使用基本技能治疗被击晕、定身或沉默的英雄可以使其获得50点护甲值加成，持续3秒。"
+    },
+    {
+      "nameId": "UtherHandOfProtection",
+      "buttonId": "UtherHandOfProtection",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_cleanse.png",
+      "sort": 3,
+      "name": "保护之手",
+      "short": "使盟友不可阻挡",
+      "full": "激活后使目标盟友变为不可阻挡，持续1秒。无法对乌瑟尔施放。普通攻击使保护之手的冷却时间缩短5秒。"
+    },
+    {
+      "nameId": "UtherHeroicAbilityDivineShield",
+      "buttonId": "UtherDivineShield",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_uther_divineshield.png",
+      "sort": 1,
+      "name": "圣盾术",
+      "short": "使一个盟友无敌并提高其移动速度<n/>",
+      "full": "使目标友方英雄无敌并使其移动速度提高20%，持续3秒。"
+    },
+    {
+      "nameId": "UtherHeroicAbilityDivineStorm",
+      "buttonId": "UtherDivineStorm",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_uther_divinestorm.png",
+      "sort": 2,
+      "name": "神圣风暴",
+      "short": "击晕并伤害周围的敌人<n/>",
+      "full": "对附近的敌人造成170~~0.04~~点伤害，并使其昏迷1.75秒。"
+    },
+    {
+      "nameId": "UtherMasteryBlessedChampion",
+      "buttonId": "UtherEternalDevotionBlessedChampionTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_uther_holylight.png",
+      "sort": 1,
+      "name": "受祝福的勇士",
+      "short": "圣光术使普通攻击产生治疗",
+      "full": "使用圣光术后的5秒内，乌瑟尔的普通攻击为自己和附近的友方英雄恢复相当于圣光术总治疗量的15%的生命值。"
+    },
+    {
+      "nameId": "UtherHammerOfJusticeWellMet",
+      "buttonId": "UtherHammerOfJusticeWellMetTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_uther_hammerofjustice.png",
+      "sort": 2,
+      "name": "欢迎指教",
+      "short": "制裁之锤削弱敌人",
+      "full": "对英雄使用时，制裁之锤使目标的移动速度和伤害降低25%，持续3秒。"
+    },
+    {
+      "nameId": "GenericTalentSpellShield",
+      "buttonId": "GenericSpellShieldTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_spellshield.png",
+      "sort": 3,
+      "name": "法术护盾",
+      "short": "周期性获得临时法术护甲",
+      "full": "每隔30秒，获得50点法术护甲，抵御下一次敌人的技能和后续技能，使受到的伤害降低50%，持续3秒。<n/><n/>可以开启或关闭该天赋是否自动触发。"
+    },
+    {
+      "nameId": "UtherBeaconOfLight",
+      "buttonId": "UtherBeaconOfLight",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_uther_holylight.png",
+      "sort": 1,
+      "name": "圣光道标",
+      "short": "提高圣光术的自我治疗效果",
+      "full": "乌瑟尔用圣光术治疗其他目标时获得125%的自我治疗效果加成。当他的生命值低于50%时，该加成的效果会提高至250%。"
+    },
+    {
+      "nameId": "UtherHolyRadianceTyrsDeliverance",
+      "buttonId": "UtherHolyRadianceTyrsDeliveranceTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_uther_holyradiance.png",
+      "sort": 2,
+      "name": "提尔的拯救",
+      "short": "提高圣光普照的治疗效果和伤害",
+      "full": "使圣光普照造成的伤害和治疗效果提高10%。对敌方英雄发动普通攻击，会使乌瑟尔的下一次圣光普照造成的伤害和治疗效果额外提高10%，该效果最多可以叠加7次。"
+    },
+    {
+      "nameId": "UtherMasteryBenediction",
+      "buttonId": "UtherBenedictionHotbar",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_uther_benediction.png",
+      "sort": 3,
+      "name": "祈福",
+      "short": "降低下一个技能的法力消耗和冷却时间",
+      "full": "激活后使乌瑟尔下一个基本技能的法力消耗降低50点，并且冷却时间缩短10秒。"
+    },
+    {
+      "nameId": "UtherMasteryBulwarkOfLightDivineShield",
+      "buttonId": "UtherDivineShieldBulwarkOfLightTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_uther_divineshield.png",
+      "sort": 1,
+      "name": "圣光堡垒",
+      "short": "圣盾术的持续时间延长，且对附近的盟友生效",
+      "full": "圣盾术还会施加给所有附近友方英雄，并且持续时间延长1秒。"
+    },
+    {
+      "nameId": "UtherMasteryDivineHurricaneDivineStorm",
+      "buttonId": "UtherDivineStormDivineHurricaneTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_uther_divinestorm.png",
+      "sort": 2,
+      "name": "神圣飓风",
+      "short": "扩大神圣风暴的范围，并缩短冷却时间",
+      "full": "神圣风暴的范围扩大50%，冷却时间缩短40秒。"
+    },
+    {
+      "nameId": "UtherMasteryRedemption",
+      "buttonId": "UtherRedemptionTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_uther_eternaldevotion.png",
+      "sort": 3,
+      "name": "救赎",
+      "short": "永恒先锋结束后复活",
+      "full": "永恒先锋结束后，乌瑟尔在灵魂位置以50%的最大生命值复活。<n/><n/>该效果有180秒的冷却时间。"
+    },
+    {
+      "nameId": "UtherEternalDevotionDivineProtection",
+      "buttonId": "UtherEternalDevotionDivineProtectionTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_uther_eternaldevotion_a.png",
+      "sort": 4,
+      "name": "圣佑术",
+      "short": "提高虔诚的护甲值和持续时间",
+      "full": "使虔诚的护甲值提高至50点，并且持续时间延长0.5秒。"
+    }
+  ]
+}

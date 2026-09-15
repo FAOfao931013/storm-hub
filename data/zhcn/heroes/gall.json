@@ -1,0 +1,296 @@
+{
+  "shortName": "gall",
+  "heroName": "Gall",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "GallOgreRage",
+      "buttonId": "GallOgreRageActivated",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_gall_ogrerage.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "食人魔之怒",
+      "short": "激活后提高加尔的伤害",
+      "full": "激活后使加尔的伤害提高25%，但古的护甲降低25点。<n/><n/>被动：加尔永久免疫昏迷和沉默效果。"
+    },
+    {
+      "nameId": "GallShadowflame",
+      "buttonId": "GallShadowflame",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gall_shadowflame.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "暗影烈焰",
+      "short": "冲击狭窄直线上的敌人",
+      "full": "对范围内敌人造成135~~0.05~~点伤害。"
+    },
+    {
+      "nameId": "GallDreadOrb",
+      "buttonId": "GallDreadOrb",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_gall_chaoscollision.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "恐惧之球",
+      "short": "投掷一颗弹跳三次的能量球，对击中的敌人造成伤害",
+      "full": "投掷一枚会弹跳三次的炸弹，对敌人造成126~~0.05~~点伤害。"
+    },
+    {
+      "nameId": "GallRunicBlast",
+      "buttonId": "GallRunicBlast",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_gall_detonaterunes.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "符文冲击",
+      "short": "引爆古的符文炸弹，造成范围伤害",
+      "full": "引爆古的符文炸弹，对周围造成210~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "GallTwistingNether",
+      "buttonId": "GallTwistingNether",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gall_twistingnether_a.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "扭曲虚空",
+      "short": "减速并伤害周围敌人",
+      "full": "1秒后，附近敌人在加尔引导时减速50%，最多持续5秒。激活后造成353~~0.05~~点伤害。"
+    },
+    {
+      "nameId": "GallShadowboltVolley",
+      "buttonId": "GallShadowboltVolley",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gall_shadowboltvolley.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "暗影箭雨",
+      "short": "射出暗影箭雨",
+      "full": "1秒后，施放20支暗影箭，持续4秒，每支暗影箭对首个击中的目标造成87~~0.04~~点伤害。暗影箭会对着鼠标光标方向发射。"
+    },
+    {
+      "nameId": "GallTalentEyeOfKilrogg",
+      "buttonId": "GallEyeofKilroggHotbar",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_gall_eyeofkilrogg.png",
+      "hotkey": "Active",
+      "trait": false,
+      "name": "基尔罗格之眼",
+      "short": "放置一个提供视野的眼睛",
+      "full": "放置一个眼睛，获得大片地区的视野，持续45秒。眼睛可以被敌人的2次普通攻击摧毁。最多储存2次使用次数。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "GallKeepMoving",
+      "buttonId": "GallKeepMoving",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_gall_shove.png",
+      "sort": 1,
+      "name": "别停下！",
+      "short": "猛推的移动速度提高，持续时间延长",
+      "full": "猛推的移动速度加成提高10%，持续时间延长2秒。"
+    },
+    {
+      "nameId": "GallTaskmaster",
+      "buttonId": "GallTaskmaster",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_gall_shove_a.png",
+      "sort": 2,
+      "name": "监工",
+      "short": "缩短猛推的冷却时间",
+      "full": "每次古被英雄的普通攻击击中使猛推的冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "GallWeSeeYou",
+      "buttonId": "GallWeSeeYou",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_gall_eyeofkilrogg.png",
+      "sort": 3,
+      "name": "我们看到你了！",
+      "short": "缩短基尔罗格之眼的冷却时间",
+      "full": "基尔罗格之眼的冷却时间缩短25秒，施放范围扩大33%，并且击毁它所需的普通攻击次数加1。"
+    },
+    {
+      "nameId": "GallRisingDread",
+      "buttonId": "GallRisingDreadTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_gall_chaoscollision.png",
+      "sort": 1,
+      "name": "恐惧升腾",
+      "short": "提高恐惧之球的范围和伤害",
+      "full": "恐惧之球每次弹跳使其范围扩大25%，并且伤害提高15%。在第二次弹跳结束之前激活恐惧之球可以使第三次弹跳朝着相反的方向前进。"
+    },
+    {
+      "nameId": "GallRunicPersistence",
+      "buttonId": "GallRunicPersistenceTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_gall_detonaterunes.png",
+      "sort": 2,
+      "name": "符文耐久",
+      "short": "符文冲击造成额外的持续伤害",
+      "full": "符文冲击在3秒内对引爆点周围的敌人造成180~~0.04~~点额外伤害。"
+    },
+    {
+      "nameId": "GallBombsAway",
+      "buttonId": "GallBombsAwayTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_cho_runebomb_var1.png",
+      "sort": 3,
+      "name": "炸弹发射",
+      "short": "任务：强化符文冲击",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：用符文冲击对英雄造成伤害可使该技能的伤害提高5点，最多200点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：对20个英雄造成伤害后，古的符文炸弹的射程和速度提高20%。"
+    },
+    {
+      "nameId": "GallEdgeOfMadness",
+      "buttonId": "GallEdgeOfMadnessTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gall_shadowflame.png",
+      "sort": 1,
+      "name": "疯狂边缘",
+      "short": "提高暗影烈焰的伤害",
+      "full": "对同一个敌方英雄施放暗影烈焰使其伤害提高12%，最多提高60%。如果该英雄在7秒内没有受到暗影烈焰攻击，则会失去这些加成效果。"
+    },
+    {
+      "nameId": "GallDoubleTrouble",
+      "buttonId": "GallDoubleTroubleTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gall_shadowflame_var1.png",
+      "sort": 2,
+      "name": "双重麻烦",
+      "short": "任务：缩短暗影烈焰的冷却时间",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：如果暗影烈焰击中一个受到古的吞噬耀光影响的敌方英雄，其冷却时间则会缩短0.5秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：击中20个英雄后，暗影烈焰的冷却时间永久缩短0.5秒。"
+    },
+    {
+      "nameId": "GallOgreRampage",
+      "buttonId": "GallOgreRampage",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_gall_ogrerage.png",
+      "sort": 3,
+      "name": "食人魔狂暴",
+      "short": "强化食人魔之怒",
+      "full": "食人魔之怒的伤害加成提高5%。食人魔之怒激活时，加尔每对敌方英雄造成一次伤害，该加成效果便提高1%，持续4秒，最多可提高至额外10%加成伤害。"
+    },
+    {
+      "nameId": "GallHeroicAbilityShadowboltVolley",
+      "buttonId": "GallShadowboltVolley",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gall_shadowboltvolley.png",
+      "sort": 1,
+      "name": "暗影箭雨",
+      "short": "射出暗影箭雨",
+      "full": "1秒后，施放20支暗影箭，持续4秒，每支暗影箭对首个击中的目标造成87~~0.04~~点伤害。暗影箭会对着鼠标光标方向发射。"
+    },
+    {
+      "nameId": "GallHeroicAbilityTwistingNether",
+      "buttonId": "GallTwistingNether",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gall_twistingnether_a.png",
+      "sort": 2,
+      "name": "扭曲虚空",
+      "short": "减速并伤害周围敌人",
+      "full": "1秒后，附近敌人在加尔引导时减速50%，最多持续5秒。激活后造成353~~0.05~~点伤害。"
+    },
+    {
+      "nameId": "GallSearingShadows",
+      "buttonId": "GallSearingShadows",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_gall_shadowflame.png",
+      "sort": 1,
+      "name": "灼热暗影",
+      "short": "提高暗影烈焰对英雄的伤害",
+      "full": "被暗影烈焰击中的敌方英雄受到相当于其最大生命值2%的额外伤害。"
+    },
+    {
+      "nameId": "GallPsychoticBreak",
+      "buttonId": "GallPsychoticBreakTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_gall_psychoticbreak.png",
+      "sort": 2,
+      "name": "精神脱离",
+      "short": "获得对英雄的伤害加成，并且死亡后施放技能",
+      "full": "使加尔对敌方英雄造成的伤害提高10%。死亡后，加尔获得食人魔之怒，并可以使用技能，持续10秒。"
+    },
+    {
+      "nameId": "GallTwilightNova",
+      "buttonId": "GallTwilightNovaTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_gall_chaoscollision_var1.png",
+      "sort": 3,
+      "name": "暮光新星",
+      "short": "恐惧之球会发射2枚额外的炸弹",
+      "full": "恐惧之球第一次弹跳后，向两边发射2枚额外的炸弹。"
+    },
+    {
+      "nameId": "GallLeadenOrb",
+      "buttonId": "GallLeadenOrb",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_gall_chaoscollision.png",
+      "sort": 1,
+      "name": "沉重铁球",
+      "short": "恐惧之球击晕敌人",
+      "full": "恐惧之球击晕敌方英雄0.75秒。"
+    },
+    {
+      "nameId": "GallDeafeningBlast",
+      "buttonId": "GallDeafeningBlast",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_gall_detonaterunes.png",
+      "sort": 2,
+      "name": "震耳欲聋",
+      "short": "符文冲击使敌人沉默",
+      "full": "符文冲击使敌方英雄沉默1.25秒。"
+    },
+    {
+      "nameId": "GallShadowsnare",
+      "buttonId": "GallShadowsnare",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_gall_twoheaded.png",
+      "sort": 3,
+      "name": "暗影诱捕",
+      "short": "基本技能使英雄减速",
+      "full": "被你的基本技能击中的敌方英雄减速15%，持续4秒。该效果最多叠加2次。"
+    },
+    {
+      "nameId": "GallShadowboltVolleyShadowfury",
+      "buttonId": "GallShadowboltVolleyShadowfuryTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gall_shadowboltvolley.png",
+      "sort": 1,
+      "name": "暗影之怒",
+      "short": "暗影箭雨将穿透目标",
+      "full": "暗影箭将对移动路径上的所有敌人造成伤害。"
+    },
+    {
+      "nameId": "GallShiftingNether",
+      "buttonId": "GallShiftingNether",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_gall_twistingnether_a.png",
+      "sort": 2,
+      "name": "转移虚空",
+      "short": "传送并施放扭曲虚空",
+      "full": "扭曲虚空开始引导前现在会将古传送至目标位置。"
+    },
+    {
+      "nameId": "GallTheWillofGall",
+      "buttonId": "GallTheWillofGall",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_gall_ogrerage.png",
+      "sort": 3,
+      "name": "加尔的意志",
+      "short": "击杀英雄提高食人魔之怒的伤害加成",
+      "full": "击杀英雄使食人魔之怒的加成永久提高2%。"
+    },
+    {
+      "nameId": "GallTwilightFrenzy",
+      "buttonId": "GallTwilightFrenzy",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_gall_psychoticbreak.png",
+      "sort": 4,
+      "name": "暮光狂热",
+      "short": "激活后缩短冷却时间",
+      "full": "激活可以在接下来的6秒内，使暗影烈焰和恐惧之球的冷却时间缩短至2秒。"
+    }
+  ]
+}

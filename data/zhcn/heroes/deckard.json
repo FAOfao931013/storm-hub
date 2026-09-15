@@ -1,0 +1,295 @@
+{
+  "shortName": "deckard",
+  "heroName": "Deckard",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "DeckardFortitudeOfTheFaithful",
+      "buttonId": "DeckardFortitudeOfTheFaithful",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_deckard_protectors_of_cain.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "信仰弥坚",
+      "short": "附近的盟友给予迪卡德护甲，冷却时间缩短",
+      "full": "当周围有至少1名其他友方英雄时，迪卡德获得10点护甲，并且其基本技能冷却速度加快50%。"
+    },
+    {
+      "nameId": "DeckardHealingPotion",
+      "buttonId": "DeckardHealingPotion",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_deckard_healing_potion.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "治疗药水",
+      "short": "投掷药水来治疗盟友",
+      "full": "朝地上扔出一瓶治疗药水，治疗第一个接触到药水的友方英雄285~~0.04~~点生命。 <n/><n/>最多5瓶激活的药水。"
+    },
+    {
+      "nameId": "DeckardHoradricCube",
+      "buttonId": "DeckardHoradricCubeCharging",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_deckard_horadric_cube.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "赫拉迪姆方块",
+      "short": "伤害并减速范围内的敌人",
+      "full": "投掷赫拉迪姆方块。在 0.5秒后爆炸，对范围内的所有敌人造成80~~0.04~~点伤害，并使其减速35%，持续2秒。"
+    },
+    {
+      "nameId": "DeckardScrollOfSealing",
+      "buttonId": "DeckardScrollOfSealing",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_deckard_scroll_of_sealing.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "封印卷轴",
+      "short": "对一个区域内的敌人造成伤害并将其定身",
+      "full": "在2.25秒内展开一副魔法卷轴，召唤一个三角形状物，对三角区域内的敌人造成150~~0.04~~点伤害，将其定身1.5秒。"
+    },
+    {
+      "nameId": "DeckardStayAWhileAndListen",
+      "buttonId": "DeckardStayAWhileAndListen",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_deckard_stay_awhile_and_listen.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "英雄请留步",
+      "short": "给敌人讲上一段生动的故事，使其沉睡",
+      "full": "1秒后，迪卡德对前方的敌方英雄讲故事并使其沉睡，引导3秒。敌方英雄将在其引导结束后继续沉睡2秒。<n/><n/>每次施法只能使敌人沉睡一次，受到伤害后沉睡的所有效果立即消失。"
+    },
+    {
+      "nameId": "DeckardLorenado",
+      "buttonId": "DeckardLorenado",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_deckard_lorenado.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "书籍旋风",
+      "short": "召唤一道书籍旋风，击退敌人",
+      "full": "选择方向<n/>在1秒后，生成一道旋转的书籍旋风朝目标方向前进，持续击退其所接触到的任何敌人。对被命中的英雄造成20~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "DeckardScrollOfIdentify",
+      "buttonId": "DeckardScrollOfIdentify",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_deckard_scroll_of_sealing.png",
+      "sort": 1,
+      "name": "辨识卷轴",
+      "short": "任务：提高封印卷轴伤害，削减护甲",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：使用封印卷轴击中敌方英雄永久使该技能伤害提高2点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：击中15名英雄后，封印卷轴还会使被命中的英雄暴露并使其护甲降低10点，持续4秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：击中30名英雄后，该天赋的护甲削减效果提高至15点，而且持续时间提高至6秒。"
+    },
+    {
+      "nameId": "DeckardFieldStudy",
+      "buttonId": "DeckardFieldStudy",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_deckard_scroll_of_sealing_a.png",
+      "sort": 2,
+      "name": "实地研究",
+      "short": "封印卷轴可给予法术强度",
+      "full": "封印卷轴每击中一名敌方英雄便给予20%法术强度，持续16秒，最高可达40%。"
+    },
+    {
+      "nameId": "DeckardGemSapphire",
+      "buttonId": "DeckardGemSapphire",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_deckard_sapphire.png",
+      "sort": 3,
+      "name": "蓝宝石",
+      "short": "下一个赫拉迪姆方块的减速效果提高",
+      "full": "激活后使下一个赫拉迪姆方块的伤害提高100%，减速效果提高30%。<n/><n/>同一时间只能激活1种宝石。"
+    },
+    {
+      "nameId": "DeckardPotionOfShielding",
+      "buttonId": "DeckardPotionOfShielding",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_deckard_healing_potion.png",
+      "sort": 1,
+      "name": "防护药水",
+      "short": "治疗药水可给予一个护盾",
+      "full": "每当盟友受到治疗药水的治疗，他们获得一个140~~0.04~~点的护盾，持续6秒。"
+    },
+    {
+      "nameId": "DeckardRejuvenationPotion",
+      "buttonId": "DeckardRejuvenationPotion",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_deckard_rejuvination_potion.png",
+      "sort": 2,
+      "name": "复苏药水",
+      "short": "治疗药水恢复法力值并且治疗效果提高",
+      "full": "治疗药水恢复15点法力值，并在3秒内持续治疗额外114~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "DeckardGemRuby",
+      "buttonId": "DeckardGemRuby",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_deckard_ruby.png",
+      "sort": 3,
+      "name": "红宝石",
+      "short": "下一个赫拉迪姆方块生成次级治疗药水",
+      "full": "激活后使下一个赫拉迪姆方块的伤害提高100% ，并且会从每一名被击中的敌方英雄位置生成3瓶次级治疗药水，拾取时治疗250~~0.04~~点生命。每一瓶次级治疗药水持续存在10秒。<n/><n/>同一时间只能激活1种宝石。"
+    },
+    {
+      "nameId": "DeckardCubeMastery",
+      "buttonId": "DeckardCubeMastery",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_deckard_horadric_cube.png",
+      "sort": 1,
+      "name": "魔盒老手",
+      "short": "赫拉迪姆方块缩短封印卷轴的冷却时间",
+      "full": "封印卷轴的法力消耗从40点降低至25点。赫拉迪姆方块每击中一名敌方英雄，封印卷轴的冷却时间就缩短4秒。"
+    },
+    {
+      "nameId": "DeckardKanaisCube",
+      "buttonId": "DeckardKanaisCube",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_deckard_kanais_cube.png",
+      "sort": 2,
+      "name": "卡奈魔盒",
+      "short": "赫拉迪姆方块减少英雄造成的伤害",
+      "full": "赫拉迪姆方块使英雄造成的伤害减少30%，持续4秒。"
+    },
+    {
+      "nameId": "DeckardGemEmerald",
+      "buttonId": "DeckardGemEmerald",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_deckard_emerald.png",
+      "sort": 3,
+      "name": "绿宝石",
+      "short": "下一个赫拉迪姆方块减少敌人受到的治疗",
+      "full": "激活后使下一个赫拉迪姆方块的伤害提高100% ，并让敌方英雄受到的治疗效果减少75%，持续4秒。<n/><n/>同一时间只能激活1种宝石。"
+    },
+    {
+      "nameId": "DeckardStayAWhileAndListen",
+      "buttonId": "DeckardStayAWhileAndListen",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_deckard_stay_awhile_and_listen.png",
+      "sort": 1,
+      "name": "英雄请留步",
+      "short": "给敌人讲上一段生动的故事，使其沉睡",
+      "full": "1秒后，迪卡德对前方的敌方英雄讲故事并使其沉睡，引导3秒。敌方英雄将在其引导结束后继续沉睡2秒。<n/><n/>每次施法只能使敌人沉睡一次，受到伤害后沉睡的所有效果立即消失。"
+    },
+    {
+      "nameId": "DeckardLorenado",
+      "buttonId": "DeckardLorenado",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_deckard_lorenado.png",
+      "sort": 2,
+      "name": "书籍旋风",
+      "short": "召唤一道书籍旋风，击退敌人",
+      "full": "选择方向<n/>在1秒后，生成一道旋转的书籍旋风朝目标方向前进，持续击退其所接触到的任何敌人。对被命中的英雄造成20~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "DeckardSuperHealingPotion",
+      "buttonId": "DeckardSuperHealingPotion",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_deckard_super_healing_potion.png",
+      "sort": 1,
+      "name": "超级治疗药水",
+      "short": "治疗药水在过上一段时间后其治疗的效果会更高",
+      "full": "如果治疗药水在至少2秒内未被拾取，其治疗效果提高100%。<n/><n/>被动：如果目标的生命值低于50%，治疗药水的治疗效果提高25%。"
+    },
+    {
+      "nameId": "DeckardPotionOfRevival",
+      "buttonId": "DeckardPotionOfRevival",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_deckard_unstable_healing_potion.png",
+      "sort": 2,
+      "name": "振奋药水",
+      "short": "治疗药水可以进行范围性治疗",
+      "full": "当治疗药水被拾取时，它还会治疗周围所有友方英雄，数值相当于75%的治疗量。"
+    },
+    {
+      "nameId": "DeckardAncientBlessings",
+      "buttonId": "DeckardAncientBlessings",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_deckard_angelic_conduit.png",
+      "sort": 3,
+      "name": "远古祝福",
+      "short": "激活信仰弥坚来强化盟友攻击",
+      "full": "激活信仰弥坚来强化附近友方英雄的普通攻击，持续8秒，使他们造成额外62~~0.04~~点范围伤害，并且每击中一名英雄治疗90~~0.04~~点生命值。该效果每秒只能生效一次。"
+    },
+    {
+      "nameId": "DeckardScrollOfStoneCurse",
+      "buttonId": "DeckardScrollOfStoneCurse",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_deckard_scroll_of_sealing.png",
+      "sort": 1,
+      "name": "石咒卷轴",
+      "short": "封印卷轴造成更多的伤害",
+      "full": "封印卷轴击中至少2名英雄时，其造成的伤害提高200%。"
+    },
+    {
+      "nameId": "DeckardSafetyInNumbers",
+      "buttonId": "DeckardSafetyInNumbers",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_deckard_study_time.png",
+      "sort": 2,
+      "name": "人多安全",
+      "short": "额外的盟友可强化信仰弥坚",
+      "full": "如果周围有至少2名友方英雄在身边，信仰弥坚给予额外10点护甲和每秒50%的法力恢复，并且使迪卡德的基本技能恢复速度加快50%。"
+    },
+    {
+      "nameId": "DeckardHoradricStaff",
+      "buttonId": "DeckardHoradricStaff",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_deckard_horadric_staff.png",
+      "sort": 3,
+      "name": "赫拉迪姆法杖",
+      "short": "普通攻击周期性击晕英雄",
+      "full": "每隔5秒，迪卡德的下一次普通攻击击晕英雄0.75秒。"
+    },
+    {
+      "nameId": "DeckardRespectTheElderly",
+      "buttonId": "DeckardRespectTheElderly",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_deckard_stay_awhile_and_listen.png",
+      "sort": 1,
+      "name": "尊敬长者",
+      "short": "英雄请留步沉默并致盲敌人",
+      "full": "英雄请留步沉默并致盲从睡眠中醒来的敌人，持续3秒。"
+    },
+    {
+      "nameId": "DeckardMorenados",
+      "buttonId": "DeckardMorenados",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_deckard_lorenado.png",
+      "sort": 2,
+      "name": "又要刮风啦！",
+      "short": "获得书籍旋风使用次数，减少冷却时间",
+      "full": "书籍旋风获得一次额外使用次数。每击退一次敌方英雄，书籍旋风的冷却时间便缩短10秒。该效果每0.5秒只会生效一次。"
+    },
+    {
+      "nameId": "DeckardBottomlessFlask",
+      "buttonId": "DeckardBottomlessFlask",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_deckard_healing_potion.png",
+      "sort": 3,
+      "name": "无尽药水",
+      "short": "治疗药水使用后重新充能",
+      "full": "使用后，治疗药水会在8秒后重新充能。"
+    },
+    {
+      "nameId": "DeckardPerfectGems",
+      "buttonId": "DeckardPerfectGems",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_deckard_perfect_gems.png",
+      "sort": 4,
+      "name": "完美宝石",
+      "short": "缩短宝石和赫拉迪姆方块的冷却时间",
+      "full": "使所有宝石的冷却时间缩短至5秒，并且赫拉迪姆方块的冷却时间缩短6秒。"
+    }
+  ]
+}

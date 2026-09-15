@@ -1,0 +1,295 @@
+{
+  "shortName": "muradin",
+  "heroName": "Muradin",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "MuradinSecondWind",
+      "buttonId": "MuradinSecondWind",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_muradin_secondwind.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "复苏之风",
+      "short": "未受到攻击时恢复生命值",
+      "full": "穆拉丁在4秒内没有受到伤害后，每秒恢复55~~0.04~~点生命值。生命值低于40%时，效果提高至每秒111~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "MuradinStormBolt",
+      "buttonId": "MuradinStormbolt",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_muradin_stormbolt.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "风暴之锤",
+      "short": "扔出飞锤对击中的第一名敌人造成伤害并使其昏迷",
+      "full": "扔出一把锤子，对击中的第一个敌人造成110~~0.04~~点伤害，并使其昏迷1.25秒。<n/><n/>等级到达10级后，风暴之锤可以穿透击中一个额外的目标，而且穆拉丁的普通攻击使风暴之锤的冷却时间降低1秒并恢复3点法力值。"
+    },
+    {
+      "nameId": "MuradinThunderclap",
+      "buttonId": "MuradinThunderclap",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_muradin_thunderclap.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "雷霆一击",
+      "short": "对附近敌人造成伤害并使其减速",
+      "full": "冲击附近敌人，造成96~~0.04~~点伤害，并使其减速30%，持续2.5秒。被击中的英雄的攻击速度在持续时间内降低30%。"
+    },
+    {
+      "nameId": "MuradinDwarfToss",
+      "buttonId": "MuradinDwarfToss",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_muradin_dwarftoss.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "矮人投掷",
+      "short": "跃起对附近敌人造成伤害",
+      "full": "跃向目标位置，落地后对敌人造成59~~0.04~~点伤害。起跳时获得30点护甲，使受到的伤害降低30%，持续2秒。"
+    },
+    {
+      "nameId": "MuradinAvatar",
+      "buttonId": "MuradinAvatar",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_muradin_avatar.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "天神下凡",
+      "short": "暂时提高生命值",
+      "full": "变身，持续20秒，获得1000~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "MuradinHaymaker",
+      "buttonId": "MuradinHaymaker",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_muradin_haymaker.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "野蛮斗殴",
+      "short": "击晕并击退一个敌人",
+      "full": "击晕目标敌方英雄并挥拳造成319~~0.04~~点伤害并将目标击退，击退过程中打到的敌人将受到319~~0.04~~点伤害且被击退一小段距离。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "MuradinStormboltPerfectStorm",
+      "buttonId": "MuradinStormboltPerfectStormTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_muradin_stormbolt.png",
+      "sort": 1,
+      "name": "完美风暴",
+      "short": "任务：击中英雄强化风暴之锤",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：每次穆拉丁用普通攻击命中一名敌方英雄，都会使风暴之锤的伤害提高0.75点。如果一名敌方英雄在被风暴之锤命中后的3秒内死亡，则额外使该伤害提高10点。"
+    },
+    {
+      "nameId": "MuradinDwarfBlock",
+      "buttonId": "MuradinDwarfBlock",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_muradin_dwarftoss.png",
+      "sort": 2,
+      "name": "矮人格挡",
+      "short": "矮人投掷给予物理护甲",
+      "full": "施放矮人投掷将获得4层格挡。每一层格挡提供75点物理护甲来抵御下一次敌方英雄的普通攻击，使受到的伤害降低75%。"
+    },
+    {
+      "nameId": "MuradinCombatStyleThirdWind",
+      "buttonId": "MuradinSecondWindThirdWindTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_muradin_secondwind.png",
+      "sort": 3,
+      "name": "觉醒之风",
+      "short": "提高复苏之风的治疗效果",
+      "full": "生命恢复速度提高至每秒90~~0.04~~，生命值不足60%时恢复速度提高每秒180~~0.04~~。"
+    },
+    {
+      "nameId": "MuradinMasteryStormhammerSledgehammer",
+      "buttonId": "MuradinStormboltSledgehammerTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_muradin_stormbolt.png",
+      "sort": 1,
+      "name": "无情铁锤",
+      "short": "提高风暴之锤对非英雄单位的伤害",
+      "full": "风暴之锤对非英雄单位造成350%的伤害。普通攻击提供的风暴之锤冷却时间缩减效果从1秒提高至1.25秒。"
+    },
+    {
+      "nameId": "MuradinMasteryThunderclapReverberation",
+      "buttonId": "MuradinThunderclapReverberationTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_muradin_thunderclap.png",
+      "sort": 2,
+      "name": "余波回荡",
+      "short": "强化雷霆一击和终极技能",
+      "full": "使雷霆一击的攻速降低效果从30%提高到50%，并使持续时间从2.5秒提高到3.5秒。每击中一名敌方英雄可以使你的终极技能冷却时间减少5%。"
+    },
+    {
+      "nameId": "MuradinMasteryThunderburn",
+      "buttonId": "MuradinThunderclapThunderburnTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_muradin_thunderclap_b.png",
+      "sort": 3,
+      "name": "雷霆灼烧",
+      "short": "雷霆一击将会造成两次伤害",
+      "full": "雷霆一击击中一名敌方英雄后，可在2秒后于相同位置触发第二次爆炸，造成72~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "MuradinMasteryDwarfTossHeavyImpact",
+      "buttonId": "MuradinDwarfTossHeavyImpactTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_muradin_dwarftoss.png",
+      "sort": 1,
+      "name": "猛烈撞击",
+      "short": "矮人投掷使敌人减速",
+      "full": "被矮人投掷击中的敌人被减速80%，持续1.5秒。"
+    },
+    {
+      "nameId": "MuradinGiveEmTheAxeExecutioner60DamageBonus",
+      "buttonId": "MuradinGiveEmTheAxeTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 2,
+      "name": "吃我一斧",
+      "short": "攻击被控制的英雄造成额外伤害",
+      "full": "攻击被减速、定身或昏迷的英雄使穆拉丁的普通攻击伤害提高50%，持续3秒。"
+    },
+    {
+      "nameId": "MuradinCombatStyleSkullcracker",
+      "buttonId": "MuradinSecondWindSkullcrackerTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_stun.png",
+      "sort": 3,
+      "name": "碎颅者",
+      "short": "对同一目标进行连续普通攻击会使其昏迷，并造成更多伤害",
+      "full": "对同一个敌人的每第3次普通攻击造成90% 的额外伤害，并使其昏迷0.25秒。"
+    },
+    {
+      "nameId": "MuradinHeroicAbilityAvatar",
+      "buttonId": "MuradinAvatar",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_muradin_avatar.png",
+      "sort": 1,
+      "name": "天神下凡",
+      "short": "暂时提高生命值",
+      "full": "变身，持续20秒，获得1000~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "MuradinHeroicAbilityHaymaker",
+      "buttonId": "MuradinHaymaker",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_muradin_haymaker.png",
+      "sort": 2,
+      "name": "野蛮斗殴",
+      "short": "击晕并击退一个敌人",
+      "full": "击晕目标敌方英雄并挥拳造成319~~0.04~~点伤害并将目标击退，击退过程中打到的敌人将受到319~~0.04~~点伤害且被击退一小段距离。"
+    },
+    {
+      "nameId": "MuradinBronzebeardRage",
+      "buttonId": "MuradinBronzebeardRage",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_talent_burningrage.png",
+      "sort": 1,
+      "name": "铜须之怒",
+      "short": "对附近敌人造成伤害",
+      "full": "对附近的敌人每秒造成15~~0.04~~点伤害，并恢复相当于该伤害75%的生命值。使用风暴之锤命中一名敌方英雄会使该伤害提高200%，持续3秒。"
+    },
+    {
+      "nameId": "MuradinMasteryThunderclapHealingStatic",
+      "buttonId": "MuradinThunderclapHealingStaticTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_muradin_thunderclap_a.png",
+      "sort": 2,
+      "name": "静电恢复",
+      "short": "雷霆一击治疗穆拉丁",
+      "full": "雷霆一击每击中一个英雄为穆拉丁恢复5%的最大生命值。"
+    },
+    {
+      "nameId": "MuradinMasteryThunderclapThunderstrike",
+      "buttonId": "MuradinThunderclapThunderstrikeTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_muradin_thunderclap.png",
+      "sort": 3,
+      "name": "雷霆打击",
+      "short": "提高雷霆一击对单个敌人的伤害",
+      "full": "雷霆一击如果只命中一个目标，则造成200%的额外伤害。<n/><n/>被动：矮人投掷的护甲持续时间延长2秒。"
+    },
+    {
+      "nameId": "MuradinMasteryDwarfTossDwarfLaunch",
+      "buttonId": "MuradinDwarfTossDwarfLaunchTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_muradin_dwarftoss.png",
+      "sort": 1,
+      "name": "矮人飞射",
+      "short": "矮人投掷的范围扩大",
+      "full": "矮人投掷的范围扩大40%。用矮人投掷击中一名敌方英雄可使冷却时间降低2秒。"
+    },
+    {
+      "nameId": "GenericTalentImposingPresence",
+      "buttonId": "GenericImposingPresenceTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_imposingpresence.png",
+      "sort": 2,
+      "name": "盛气凌人",
+      "short": "激活后降低敌人的攻击速度和移动速度",
+      "full": "激活后使附近英雄和召唤物的攻击速度降低50%，移动速度降低20%，持续2.5秒。<n/><n/>被动：攻击你的英雄和召唤物的攻击速度降低20%，持续2.5秒。"
+    },
+    {
+      "nameId": "MuradinMasteryPassiveStoneform",
+      "buttonId": "MuradinSecondWindStoneformTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_muradin_secondwind.png",
+      "sort": 3,
+      "name": "石像形态",
+      "short": "激活后持续恢复生命值",
+      "full": "激活后在10秒内为穆拉丁恢复30%的最大生命值。在此期间，复苏之风不会生效。"
+    },
+    {
+      "nameId": "MuradinMasteryAvatarUnstoppableForce",
+      "buttonId": "MuradinAvatarUnstoppableForceTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_muradin_avatar.png",
+      "sort": 1,
+      "name": "无坚不摧之力",
+      "short": "天神下凡提供额外加成",
+      "full": "天神下凡激活时，会提供20点护甲，而且使穆拉丁的普通攻击可以让雷霆一击和矮人投掷的冷却时间降低0.75秒。"
+    },
+    {
+      "nameId": "MuradinMasteryHaymakerGrandSlam",
+      "buttonId": "MuradinHaymakerGrandSlamTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_muradin_haymaker.png",
+      "sort": 2,
+      "name": "裂地震击",
+      "short": "提高野蛮斗殴的伤害，获得更多使用次数",
+      "full": "野蛮斗殴的伤害提高25%，并获得额外一次使用次数。如果一名英雄在被野蛮斗殴击中后的3秒内死亡，则立刻获得1次使用次数。"
+    },
+    {
+      "nameId": "GenericTalentHardenedShield",
+      "buttonId": "HardenedShieldTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_hardenedshield.png",
+      "sort": 3,
+      "name": "刚毅护盾",
+      "short": "激活后获得大量护甲",
+      "full": "激活后获得75点护甲，使受到的伤害降低75%，持续4秒。"
+    },
+    {
+      "nameId": "GenericTalentRewind",
+      "buttonId": "GenericRewindHotbar",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_rewind.png",
+      "sort": 4,
+      "name": "时光回溯",
+      "short": "激活后重置冷却时间",
+      "full": "激活后重置基本技能的冷却时间。"
+    }
+  ]
+}

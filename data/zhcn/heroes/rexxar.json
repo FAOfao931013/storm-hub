@@ -1,0 +1,305 @@
+{
+  "shortName": "rexxar",
+  "heroName": "Rexxar",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "RexxarMishaFocus",
+      "buttonId": "RexxarMishaFocus",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_rexxar_mishafixate.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "米莎锁定",
+      "short": "命令米莎移动或攻击",
+      "full": "被动：米莎的移动速度提高15%。<n/><n/>命令米莎攻击某个敌人，或移动到某个地点待命。<n/><n/>选择雷克萨命令米莎返回他身边，在抵达雷克萨之前获得30%的移动速度加成。<n/><n/>选择米莎命令她留在原地。"
+    },
+    {
+      "nameId": "RexxarSpiritSwoop",
+      "buttonId": "RexxarSpiritSwoop",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_rexxar_spiritswoop.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "灵魂猛扑",
+      "short": "派出一只猎鹰对敌人造成伤害并使其减速",
+      "full": "对直线上的敌人造成141~~0.04~~点伤害，并使其减速30%，持续2秒。"
+    },
+    {
+      "nameId": "RexxarMishaChargeRedirect",
+      "buttonId": "RexxarMishaChargeRedirect",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_rexxar_mishacharge.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "米莎冲锋",
+      "short": "命令米莎冲锋，对敌人造成伤害并使其昏迷",
+      "full": "米莎进行直线冲锋，对敌人造成150~~0.04~~点伤害并使其昏迷1.25秒。"
+    },
+    {
+      "nameId": "RexxarMendPet",
+      "buttonId": "RexxarMendPet",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_rexxar_mendpet.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "治疗宠物",
+      "short": "持续治疗米莎",
+      "full": "在5秒内为米莎恢复714~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "RexxarUnleashTheBoars",
+      "buttonId": "RexxarUnleashTheBoars",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rexxar_unleashtheboars.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "关门放猪",
+      "short": "派出一群野猪追捕敌方英雄",
+      "full": "放出一群野猪，追踪一个方向的所有敌方英雄，对他们造成110~~0.04~~点伤害，使敌人暴露并减速40%，持续5秒。"
+    },
+    {
+      "nameId": "RexxarBestialWrath",
+      "buttonId": "RexxarBestialWrath",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rexxar_bestialwrath.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "狂野怒火",
+      "short": "提高米莎的普通攻击伤害",
+      "full": "米莎的普通攻击伤害提高200%，持续12秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "RexxarSpiritSwoopBirdOfPrey",
+      "buttonId": "RexxarSpiritSwoopBirdOfPreyTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_rexxar_spiritswoop.png",
+      "sort": 1,
+      "name": "猛禽猎杀",
+      "short": "提高灵魂猛扑对小兵的伤害",
+      "full": "灵魂猛扑对小兵的伤害提高150%。"
+    },
+    {
+      "nameId": "RexxarSpiritBondEasyPrey",
+      "buttonId": "RexxarSpiritBondEasyPreyTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_rexxar_heremishaactive.png",
+      "sort": 2,
+      "name": "小菜一碟",
+      "short": "米莎对付小兵和雇佣兵更有效",
+      "full": "米莎的普通攻击对小兵和雇佣兵的伤害提高150%，并且米莎获得50点对小兵和雇佣兵的护甲，使受到的伤害降低50%。"
+    },
+    {
+      "nameId": "RexxarFlare",
+      "buttonId": "RexxarFlare",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_rexxar_flare.png",
+      "sort": 3,
+      "name": "照明弹",
+      "short": "获得区域视野",
+      "full": "向目标位置发射照明弹，暴露该区域，持续20秒。"
+    },
+    {
+      "nameId": "RexxarHungryBear",
+      "buttonId": "RexxarHungryBearTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_rexxar_heremishaactive.png",
+      "sort": 1,
+      "name": "饥饿巨熊",
+      "short": "米莎的普通攻击可以治疗自己",
+      "full": "米莎的普通攻击为自己恢复最大生命值的4.5%。"
+    },
+    {
+      "nameId": "RexxarHunterGatherer",
+      "buttonId": "RexxarHunterGathererTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_regenerationmaster.png",
+      "sort": 2,
+      "name": "野外生存",
+      "short": "任务：收集恢复之球提高生命恢复速度",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：收集恢复之球使雷克萨和米莎的每秒生命恢复提高1点，最多提高25点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：收集25个恢复之球后，雷克萨和米莎获得15点护甲值。"
+    },
+    {
+      "nameId": "RexxarSpiritBondGrizzledFortitude",
+      "buttonId": "RexxarSpiritBondGrizzledFortitudeTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_block.png",
+      "sort": 3,
+      "name": "巨熊坚韧",
+      "short": "周期性获得物理护甲",
+      "full": "每隔6秒，雷克萨和米莎获得75点物理护甲，抵御下一次敌方英雄的普通攻击，使受到的伤害降低75%。<n/><n/>最多储存2层。雷克萨和米莎拥有各自独立的层数。"
+    },
+    {
+      "nameId": "RexxarAnimalHusbandry",
+      "buttonId": "RexxarAnimalHusbandry",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_rexxar_stayinalive.png",
+      "sort": 4,
+      "name": "野兽驯养",
+      "short": "最大生命值随时间提高",
+      "full": "雷克萨存活时，雷克萨和米莎每秒获得2点最大生命值。这些加成在雷克萨死亡时失去。"
+    },
+    {
+      "nameId": "RexxarSpiritSwoopCripplingTalons",
+      "buttonId": "RexxarCripplingTalonsTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_rexxar_spiritswoop.png",
+      "sort": 1,
+      "name": "致残利爪",
+      "short": "提高灵魂猛扑的减速量和持续时间",
+      "full": "灵魂猛扑的减速效果提高至50%，并且持续时间延长至3.5秒。"
+    },
+    {
+      "nameId": "RexxarTakingFlightSpiritSwoop",
+      "buttonId": "RexxarTakingFlightTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_rexxar_spiritswoop_var1.png",
+      "sort": 2,
+      "name": "振翅高飞",
+      "short": "灵魂猛扑的射程提高并且返还法力",
+      "full": "灵魂猛扑的距离提高20%。如果灵魂猛扑击中敌方英雄，法力消耗将会返还，并且冷却时间缩短2秒。"
+    },
+    {
+      "nameId": "RexxarAspectoftheBeastCharge",
+      "buttonId": "RexxarAspectoftheBeastTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_rexxar_mishacharge.png",
+      "sort": 3,
+      "name": "野兽守护",
+      "short": "米莎的普通攻击可以缩短米莎冲锋的冷却时间",
+      "full": "米莎的普通攻击使米莎冲锋的冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "RexxarHeroicAbilityBestialWrath",
+      "buttonId": "RexxarBestialWrath",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rexxar_bestialwrath.png",
+      "sort": 1,
+      "name": "狂野怒火",
+      "short": "提高米莎的普通攻击伤害",
+      "full": "米莎的普通攻击伤害提高200%，持续12秒。"
+    },
+    {
+      "nameId": "RexxarHeroicAbilityUnleashTheBoars",
+      "buttonId": "RexxarUnleashTheBoars",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rexxar_unleashtheboars.png",
+      "sort": 2,
+      "name": "关门放猪",
+      "short": "派出一群野猪追捕敌方英雄",
+      "full": "放出一群野猪，追踪一个方向的所有敌方英雄，对他们造成110~~0.04~~点伤害，使敌人暴露并减速40%，持续5秒。"
+    },
+    {
+      "nameId": "RexxarAspectOfTheHawkSpiritSwoop",
+      "buttonId": "RexxarAspectOfTheHawkTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_rexxar_spiritswoop.png",
+      "sort": 1,
+      "name": "雄鹰守护",
+      "short": "灵魂猛扑提高攻击速度",
+      "full": "灵魂猛扑击中敌方英雄时，雷克萨的攻击速度提高125%，持续4秒。米莎的普通攻击使该增益效果的持续时间延长0.75秒。"
+    },
+    {
+      "nameId": "RexxarDireBeast",
+      "buttonId": "RexxarDireBeast",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_rexxar_mishacharge.png",
+      "sort": 2,
+      "name": "凶暴野兽",
+      "short": "普通攻击提高米莎冲锋的伤害",
+      "full": "雷克萨和米莎的普通攻击使下一次米莎冲锋的伤害提高15%，最多叠加至150%。"
+    },
+    {
+      "nameId": "RexxarSpiritBondWildfireBear",
+      "buttonId": "RexxarSpiritBondWildfireBearTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_burningrage.png",
+      "sort": 3,
+      "name": "烈火巨熊",
+      "short": "米莎对附近敌人造成伤害",
+      "full": "米莎每秒对附近敌人造成28~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "RexxarThrilloftheHunt",
+      "buttonId": "RexxarThrilloftheHuntTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_rexxar_heremishaactive.png",
+      "sort": 1,
+      "name": "狩猎刺激",
+      "short": "普通攻击提高移动速度",
+      "full": "雷克萨的普通攻击使他和米莎的移动速度提高25%，持续2秒。"
+    },
+    {
+      "nameId": "RexxarSpiritBondPrimalIntimidation",
+      "buttonId": "RexxarSpiritBondPrimalIntimidationTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_imposingpresence.png",
+      "sort": 2,
+      "name": "野性威吓",
+      "short": "激活后降低敌人的攻击速度和移动速度",
+      "full": "激活后使雷克萨和米莎附近的敌方英雄和召唤物的攻击速度降低50%，移动速度降低20%，持续2.5秒。<n/><n/>被动：攻击雷克萨或米莎的敌方英雄和召唤物的攻击速度降低20%，持续2.5秒。"
+    },
+    {
+      "nameId": "RexxarFeignDeath",
+      "buttonId": "RexxarFeignDeath",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_rexxar_feigndeath.png",
+      "sort": 3,
+      "name": "假死",
+      "short": "变为无敌并控制米莎",
+      "full": "雷克萨假装死亡，无敌并无法被选中，持续5秒。在此期间，你可以控制米莎。"
+    },
+    {
+      "nameId": "RexxarSpiritBond",
+      "buttonId": "RexxarSpiritBondTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rexxar_bestialwrath.png",
+      "sort": 1,
+      "name": "灵魂相连",
+      "short": "米莎的普通攻击治疗雷克萨",
+      "full": "狂野怒火的持续时间延长50%，米莎的普通攻击可以为雷克萨恢复生命值，数值相当于在狂野怒火期间米莎伤害的50%。"
+    },
+    {
+      "nameId": "RexxarUnleashTheBoarsKillCommand",
+      "buttonId": "RexxarUnleashTheBoarsKillCommandTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_rexxar_unleashtheboars.png",
+      "sort": 2,
+      "name": "杀戮命令",
+      "short": "关门放猪造成更高伤害并且带有定身效果",
+      "full": "关门放猪的伤害提高50%并且拥有1.5秒定身效果。"
+    },
+    {
+      "nameId": "RexxarFrenzyofKalimdor",
+      "buttonId": "RexxarFrenzyofKalimdorTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_slow.png",
+      "sort": 3,
+      "name": "卡利姆多的狂野",
+      "short": "雷克萨的普通攻击造成更大伤害，米莎的普通攻击使敌人减速",
+      "full": "雷克萨的普通攻击伤害提高10%，米莎的普通攻击使目标减速20%，持续1.25秒。"
+    },
+    {
+      "nameId": "RexxarHardenedSkin",
+      "buttonId": "RexxarHardenedSkin",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_hardenedshield.png",
+      "sort": 4,
+      "name": "硬化皮肤",
+      "short": "雷克萨和米莎获得大量护甲",
+      "full": "雷克萨和米莎获得75点护甲，使受到的伤害降低75%，持续4秒。"
+    }
+  ]
+}

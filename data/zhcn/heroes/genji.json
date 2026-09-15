@@ -1,0 +1,295 @@
+{
+  "shortName": "genji",
+  "heroName": "Genji",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "GenjiCyberAgility",
+      "buttonId": "GenjiCyberAgility",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_genji_cyberagility.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "灵",
+      "short": "跃过地形",
+      "full": "激活后跳向目标位置。"
+    },
+    {
+      "nameId": "GenjiShuriken",
+      "buttonId": "GenjiShuriken",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_genji_shurikens.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "镖",
+      "short": "用散射方式射出“镖”",
+      "full": "以散射方式射出3枚忍镖，每一枚忍镖对被击中的第一个敌人造成65~~0.04~~点伤害。<n/><n/>最多储存3次使用次数。“镖”的冷却时间同时恢复全部使用次数。"
+    },
+    {
+      "nameId": "GenjiDeflectInstant",
+      "buttonId": "GenjiDeflect",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_genji_deflect.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "闪",
+      "short": "变为保护状态，并反弹攻击",
+      "full": "引导1.25秒，变为保护状态并且格挡伤害。源氏在引导时格挡了任何伤害，都会朝最近的敌人扔出镖，优先攻击英雄并造成55~~0.04~~点伤害。<n/><n/>反弹总伤害：0"
+    },
+    {
+      "nameId": "GenjiSwiftStrike",
+      "buttonId": "GenjiSwiftStrike",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_genji_swiftstrike.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "影",
+      "short": "向前冲刺，对穿过的敌人造成伤害",
+      "full": "向前冲刺，对一条直线上的所有敌人造成190~~0.04~~点伤害。被“影”击中后1.5秒内死亡的敌方英雄返还冷却时间和法力消耗。"
+    },
+    {
+      "nameId": "GenjiDragonblade",
+      "buttonId": "GenjiDragonblade",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_genji_dragonblade.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "斩",
+      "short": "释放斩",
+      "full": "释放斩，持续8秒。激活时，可以再次按下“斩”向前突刺并大弧度劈砍，造成240~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "GenjiXStrike",
+      "buttonId": "GenjiXStrike",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_genji_shurikens_xblade.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "烈",
+      "short": "以十字形攻击，造成大量伤害",
+      "full": "劈砍两次，造成145~~0.04~~点伤害。劈砍留下的剑气在1.25秒后爆炸，对范围内的敌人造成290~~0.04~~点额外伤害。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "GenjiSwiftStrikeSwiftAsTheWind",
+      "buttonId": "GenjiSwiftStrikeSwiftAsTheWind",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_genji_swiftstrike.png",
+      "sort": 1,
+      "name": "动如疾风",
+      "short": "“影”提供移动速度",
+      "full": "“影”击中敌方英雄使源氏的移动速度提高30%，持续3秒。"
+    },
+    {
+      "nameId": "GenjiCyberAgilityAgileDismount",
+      "buttonId": "GenjiCyberAgilityAgileDismount",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_genji_cyberagility.png",
+      "sort": 2,
+      "name": "灵巧身法",
+      "short": "使用坐骑时扩大“灵”的范围",
+      "full": "使用坐骑时，“灵”的范围扩大70%，冷却时间缩短14秒，并且使落地点范围内的敌方英雄减速25%，持续2秒。"
+    },
+    {
+      "nameId": "GenjiCyberAgilityPathfinder",
+      "buttonId": "GenjiCyberAgilityPathfinder",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_genji_cyberagility_a.png",
+      "sort": 3,
+      "name": "寻路者",
+      "short": "跃过地形提高移动速度，获得潜行",
+      "full": "使用“灵”跃过地形使源氏的移动速度提高30%并获得潜行，持续4秒。<n/><n/>被动：源氏的终极技能为其恢复相当于对敌方英雄造成伤害量10%的生命值，源氏的生命值越低，治疗量越高，最多30%。"
+    },
+    {
+      "nameId": "GenjiShurikenShurikenMastery",
+      "buttonId": "GenjiShurikenShurikenMastery",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_genji_shurikens.png",
+      "sort": 1,
+      "name": "忍镖精通",
+      "short": "任务：提高“镖”的伤害，并恢复使用次数",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：用“镖”攻击敌方英雄。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：击中30个英雄后，“镖”的伤害提高25点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：击中60个英雄后，“灵”返还3次“镖”的使用次数。"
+    },
+    {
+      "nameId": "GenjiSwiftStrikeStrikeAtTheHeart",
+      "buttonId": "GenjiSwiftStrikeStrikeAtTheHeart",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_genji_swiftstrike.png",
+      "sort": 2,
+      "name": "直击要害",
+      "short": "在“影”的终点位置击中敌人造成额外伤害",
+      "full": "在“影”的终点位置被击中的敌人在134~~0.04~~秒后受到1点额外伤害。"
+    },
+    {
+      "nameId": "GenjiDeflectDragonClaw",
+      "buttonId": "GenjiDeflectDragonClawTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_genji_shurikens_dragonsoul.png",
+      "sort": 3,
+      "name": "龙爪",
+      "short": "激活后对附近敌人造成伤害",
+      "full": "源氏用“闪”格挡330~~0.04~~点伤害后，激活后释放龙爪对附近所有敌人造成190~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "GenjiDeflectAugmentedGuard",
+      "buttonId": "GenjiDeflectAugmentedGuard",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_genji_deflect.png",
+      "sort": 1,
+      "name": "强化防御",
+      "short": "“闪”结束后获得护盾",
+      "full": "“闪”结束后，源氏获得一个相当于格挡伤害100%的护盾，持续4秒。"
+    },
+    {
+      "nameId": "GenjiDeflectPerfectDefense",
+      "buttonId": "GenjiDeflectPerfectDefense",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_genji_deflect_a.png",
+      "sort": 2,
+      "name": "攻不可破",
+      "short": "缩短“闪”的冷却时间",
+      "full": "反弹伤害使“闪”的冷却时间缩短2秒，最多缩短10秒。"
+    },
+    {
+      "nameId": "GenjiCyberAgilityCyberShield",
+      "buttonId": "GenjiCyberAgilityCyberShield",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_genji_cyberagility.png",
+      "sort": 3,
+      "name": "机械护盾",
+      "short": "源氏获得闪避，“灵”提供法术护甲加成",
+      "full": "使用“灵”提供40点法术护甲加成，持续4秒。<n/><n/>被动：每隔5秒，源氏可以闪避1次来自英雄的普通攻击。"
+    },
+    {
+      "nameId": "GenjiHeroicDragonblade",
+      "buttonId": "GenjiDragonblade",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_genji_dragonblade.png",
+      "sort": 1,
+      "name": "斩",
+      "short": "释放斩",
+      "full": "释放斩，持续8秒。激活时，可以再次按下“斩”向前突刺并大弧度劈砍，造成240~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "GenjiHeroicXStrike",
+      "buttonId": "GenjiXStrike",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_genji_shurikens_xblade.png",
+      "sort": 2,
+      "name": "烈",
+      "short": "以十字形攻击，造成大量伤害",
+      "full": "劈砍两次，造成145~~0.04~~点伤害。劈砍留下的剑气在1.25秒后爆炸，对范围内的敌人造成290~~0.04~~点额外伤害。"
+    },
+    {
+      "nameId": "GenjiShurikenShingan",
+      "buttonId": "GenjiShurikenShingan",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_genji_shurikens.png",
+      "sort": 1,
+      "name": "心眼",
+      "short": "提高“镖”的单目标伤害",
+      "full": "所有3枚忍镖击中一个敌人时造成100~~0.04~~点额外伤害。对建筑造成的伤害降低40%。"
+    },
+    {
+      "nameId": "GenjiSwiftStrikeFlowLikeWater",
+      "buttonId": "GenjiSwiftStrikeFlowLikeWater",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_genji_swiftstrike.png",
+      "sort": 2,
+      "name": "行如流水",
+      "short": "击中英雄缩短“影”的冷却时间",
+      "full": "“影”每击中一个敌方英雄使其冷却时间缩短3秒。"
+    },
+    {
+      "nameId": "GenjiWayOfTheShimadaTalent",
+      "buttonId": "GenjiWayOfTheShimada",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "岛田之道",
+      "short": "提高普通攻击射程和伤害",
+      "full": "使源氏的普通攻击射程提高1码。每次源氏使用普通攻击命中一名敌方英雄时，都会使其普通攻击伤害提高1%，持续3秒，最多叠加至15%。"
+    },
+    {
+      "nameId": "GenjiDeflectReflect",
+      "buttonId": "GenjiDeflectReflect",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_genji_deflect.png",
+      "sort": 1,
+      "name": "一闪",
+      "short": "提高“闪”的伤害",
+      "full": "“闪”还会造成相当于所格挡伤害33%的额外伤害。"
+    },
+    {
+      "nameId": "GenjiSwiftStrikeFinalCut",
+      "buttonId": "GenjiSwiftStrikeFinalCut",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_genji_swiftstrike.png",
+      "sort": 2,
+      "name": "斩断",
+      "short": "短暂延迟后“影”造成额外伤害",
+      "full": "1秒后，“影”对范围内的所有敌人造成125~~0.04~~点额外伤害。"
+    },
+    {
+      "nameId": "GenjiSwiftStrikeSteadyBlade",
+      "buttonId": "GenjiSwiftStrikeSteadyBlade",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_genji_swiftstrike_a.png",
+      "sort": 3,
+      "name": "静刃",
+      "short": "每击中一个英雄提高“影”的伤害",
+      "full": "“影”每击中一个敌方英雄使下一次“影”的伤害提高30%。该效果最多叠加3次。"
+    },
+    {
+      "nameId": "GenjiDragonbladeTheDragonBecomesMe",
+      "buttonId": "GenjiDragonbladeTheDragonBecomesMe",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_genji_dragonblade.png",
+      "sort": 1,
+      "name": "人竜合一",
+      "short": "击中敌方英雄延长“斩”的持续时间",
+      "full": "“斩”每次击中敌方英雄使持续时间延长0.5秒。如果敌方英雄在被“斩”击中后的1.5秒内死亡，则重置“影”的冷却时间。"
+    },
+    {
+      "nameId": "GenjiXStrikeLivingWeapon",
+      "buttonId": "GenjiXStrikeLivingWeapon",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_genji_shurikens_xblade.png",
+      "sort": 2,
+      "name": "人剑合一",
+      "short": "击中英雄缩短“烈”的冷却时间",
+      "full": "“烈”每击中一个敌方英雄使其冷却时间缩短12.5秒。"
+    },
+    {
+      "nameId": "GenjiShurikenSharpenedStars",
+      "buttonId": "GenjiShurikenSharpenedStars",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_genji_shurikens.png",
+      "sort": 3,
+      "name": "星镖",
+      "short": "“镖”穿透敌人，“影”可以提供“镖”的使用次数",
+      "full": "“镖”现在穿透所有被击中的敌人。“影”触发返还效果时，可以使“镖”获得1次使用次数。"
+    },
+    {
+      "nameId": "GenjiDeflectZanshin",
+      "buttonId": "GenjiDeflectZanshin",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_genji_deflect.png",
+      "sort": 4,
+      "name": "残心",
+      "short": "任务：“闪”攻击附近所有英雄",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：用“闪”格挡6500点伤害，包括目前为止格挡的伤害。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：“闪”攻击附近所有敌方英雄。"
+    }
+  ]
+}

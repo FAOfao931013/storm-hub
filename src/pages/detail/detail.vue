@@ -29,8 +29,8 @@
             <view class="hero-name-cn">{{ displayName }}</view>
             <view class="hero-name-en">{{ hero.name }}</view>
             <view class="hero-meta">
-              <text class="role-tag">{{ hero.new_role || hero.role }}</text>
-              <text class="type-tag">{{ hero.type }}</text>
+              <text class="role-tag">{{ displayRole }}</text>
+              <text class="type-tag">{{ displayType }}</text>
             </view>
           </view>
           <view class="favorite-btn" @tap="onToggleFavorite">
@@ -108,6 +108,7 @@ import { onLoad } from '@dcloudio/uni-app'
 import type { Hero, Talent, Ability } from '@/types/hero'
 import { fetchHeroes, fetchTalents, fetchAbilities, getHeroIconUrl, getTalentIconUrl, getAbilityIconUrl, getChineseName } from '@/api/heroes'
 import { isFavorite as checkFavorite, toggleFavorite } from '@/utils/storage'
+import { fetchZhcnHeroData, mergeZhcnAbilities, mergeZhcnTalents, getRoleCN, getTypeCN } from '@/utils/zhcn'
 
 const hero = ref<Hero | null>(null)
 const talents = ref<Talent[]>([])
@@ -123,6 +124,16 @@ const displayName = computed(() => {
   if (!hero.value) return ''
   const chineseName = getChineseName(hero.value.translations)
   return chineseName || hero.value.name
+})
+
+const displayRole = computed(() => {
+  if (!hero.value) return ''
+  return getRoleCN(hero.value.new_role || hero.value.role)
+})
+
+const displayType = computed(() => {
+  if (!hero.value) return ''
+  return getTypeCN(hero.value.type)
 })
 
 const heroIcon = computed(() => {
@@ -169,14 +180,21 @@ const loadHeroData = async (heroShortName: string) => {
     hero.value = foundHero
     isFavorite.value = checkFavorite(heroShortName)
 
-    // Load talents and abilities in parallel - don't fail if they error
-    const [talentsData, abilitiesData] = await Promise.allSettled([
+    // Load English talents/abilities and Chinese overlay in parallel
+    const [talentsData, abilitiesData, zhcnData] = await Promise.allSettled([
       fetchTalents(foundHero.name),
-      fetchAbilities(heroShortName)
+      fetchAbilities(heroShortName),
+      fetchZhcnHeroData(heroShortName)
     ])
 
-    talents.value = talentsData.status === 'fulfilled' ? talentsData.value : []
-    abilities.value = abilitiesData.status === 'fulfilled' ? abilitiesData.value : []
+    // Get English data
+    const talentsEn = talentsData.status === 'fulfilled' ? talentsData.value : []
+    const abilitiesEn = abilitiesData.status === 'fulfilled' ? abilitiesData.value : []
+    const zhcn = zhcnData.status === 'fulfilled' ? zhcnData.value : null
+    
+    // Merge Chinese text if available
+    talents.value = mergeZhcnTalents(talentsEn, zhcn)
+    abilities.value = mergeZhcnAbilities(abilitiesEn, zhcn)
     
     // Log warnings if data failed but don't show error to user
     if (talentsData.status === 'rejected') {
@@ -184,6 +202,9 @@ const loadHeroData = async (heroShortName: string) => {
     }
     if (abilitiesData.status === 'rejected') {
       console.warn('Abilities fetch failed:', abilitiesData.reason)
+    }
+    if (zhcnData.status === 'rejected') {
+      console.warn('Chinese data fetch failed:', zhcnData.reason)
     }
   } catch (err: any) {
     error.value = err.message || '加载失败'

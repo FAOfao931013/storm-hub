@@ -1,0 +1,295 @@
+{
+  "shortName": "anubarak",
+  "heroName": "Anubarak",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "AnubarakLegionOfBeetlesVisual",
+      "buttonId": "AnubarakScarabHostTrait",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_anubarak_scarabhost.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "甲虫宿主",
+      "short": "使用技能时孵化一只甲虫",
+      "full": "使用技能孵化出一只甲虫，持续8秒，并攻击附近的敌人，造成20~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "AnubarakImpale",
+      "buttonId": "AnubarakImpale",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_anubarak_impale.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "穿刺",
+      "short": "发射一排刺针伤害并击晕敌人",
+      "full": "造成90~~0.04~~点伤害并使目标昏迷1秒。"
+    },
+    {
+      "nameId": "AnubarakHardenCarapace",
+      "buttonId": "AnubarakHardenCarapace",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_anubarak_hardencarapace_var1.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "硬化甲壳",
+      "short": "获得护盾",
+      "full": "获得一个护盾，给予40点法术护甲，在3秒内吸收340~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "AnubarakBurrowCharge",
+      "buttonId": "AnubarakBurrowCharge",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_anubarak_burrowcharge.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "潜地冲锋",
+      "short": "潜入地下并向着一个方向冲锋",
+      "full": "潜地钻往目标位置，钻出地面后对小范围内的敌人造成91~~0.04~~点伤害，将其短暂击晕，并使其减速25%，持续2.5秒。<n/><n/>在潜地途中再次使用该技能可以提前钻出地面。"
+    },
+    {
+      "nameId": "AnubarakLocustSwarm",
+      "buttonId": "AnubarakLocustSwarm",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anubarak_locustswarm.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "虫群风暴",
+      "short": "对敌人造成伤害并治疗自己",
+      "full": "每秒对周围的敌人造成68~~0.04~~点伤害。每对一名敌人造成伤害，恢复24~~0.04~~点生命值。持续6秒。"
+    },
+    {
+      "nameId": "AnubarakCocoon",
+      "buttonId": "AnubarakCocoon",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anubarak_webblast.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "虫茧缚体",
+      "short": "将敌人束缚在虫茧内",
+      "full": "将目标敌方英雄包裹在虫茧内，使其无法行动或被选中为目标，持续7秒。被困英雄的盟友可以攻击虫茧让受害者提前脱离。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "AnubarakNerubianArmor",
+      "buttonId": "AnubarakNerubianArmor",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_anubarak_hardencarapace_var1.png",
+      "sort": 1,
+      "name": "蛛魔护甲",
+      "short": "提高硬化甲壳的法术护甲",
+      "full": "使硬化甲壳的法术护甲提高25点。"
+    },
+    {
+      "nameId": "AnubarakCombatStyleLegionOfBeetles",
+      "buttonId": "AnubarakLegionOfBeetlesTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_anubarak_scarabhost.png",
+      "sort": 2,
+      "name": "甲虫军团",
+      "short": "周期性孵化甲虫",
+      "full": "甲虫拥有30点法术护甲。每12秒自动孵化一只甲虫。可以手动关闭或开启。"
+    },
+    {
+      "nameId": "GenericTalentRegenerationMaster",
+      "buttonId": "GenericRegenerationMasterTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_regenerationmaster.png",
+      "sort": 3,
+      "name": "恢复大师",
+      "short": "任务：恢复之球提高生命恢复",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：收集恢复之球使你的每秒生命恢复速度提高1点，最多提高30点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：收集30个恢复之球后，你获得500点生命值。"
+    },
+    {
+      "nameId": "AnubarakMasteryBedOfBarbs",
+      "buttonId": "AnubarakImpaleBedOfBarbsTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_anubarak_impale.png",
+      "sort": 1,
+      "name": "荆棘之丛",
+      "short": "穿刺使敌人减速并造成持续伤害",
+      "full": "穿刺所经过之处会留下一排刺针，使敌人的移动速度降低25%，并每秒造成21~~0.04~~点伤害。刺针持续3.5秒。"
+    },
+    {
+      "nameId": "AnubarakMasteryShedExoskeletonHardenCarapace",
+      "buttonId": "AnubarakRegeneratingCarapaceShedExoskeletonTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_anubarak_hardencarapace_var1.png",
+      "sort": 2,
+      "name": "蜕皮外壳",
+      "short": "硬化甲壳可以提高移动速度",
+      "full": "硬化甲壳使移动速度提高30%，持续3秒。"
+    },
+    {
+      "nameId": "AnubarakMasteryUnderkingBurrowCharge",
+      "buttonId": "AnubarakBurrowChargeUnderkingTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_anubarak_burrowcharge.png",
+      "sort": 3,
+      "name": "地底虫王",
+      "short": "提高潜地冲锋的射程和伤害",
+      "full": "潜地冲锋的射程提高20%，伤害提高100%。"
+    },
+    {
+      "nameId": "AnubarakCombatStyleChitinousPlating",
+      "buttonId": "AnubarakRegeneratingCarapaceChitinousPlatingTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_anubarak_hardencarapace_var1.png",
+      "sort": 1,
+      "name": "强化骨板",
+      "short": "缩短硬化甲壳的冷却时间",
+      "full": "硬化甲壳激活时，受到敌人技能的伤害会使其冷却时间缩短1秒，最多缩短3秒。"
+    },
+    {
+      "nameId": "AnubarakSubterraneanShield",
+      "buttonId": "AnubarakSubterraneanShield",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_anubarak_burrowcharge.png",
+      "sort": 2,
+      "name": "遁地护盾",
+      "short": "潜地冲锋提供护盾",
+      "full": "潜地冲锋还会提供400~~0.04~~点护盾，持续5秒。"
+    },
+    {
+      "nameId": "AnubarakMasteryLeechingScarabs",
+      "buttonId": "AnubarakLeechingMandiblesTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_anubarak_scarabhost.png",
+      "sort": 3,
+      "name": "吸血甲虫",
+      "short": "甲虫治疗阿努巴拉克",
+      "full": "甲虫的攻击伤害提高30%，并且只要阿努巴拉克在附近，甲虫每次攻击都会为其恢复相当于伤害的50%的生命值。"
+    },
+    {
+      "nameId": "AnubarakLocustSwarm",
+      "buttonId": "AnubarakLocustSwarm",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anubarak_locustswarm.png",
+      "sort": 1,
+      "name": "虫群风暴",
+      "short": "对敌人造成伤害并治疗自己",
+      "full": "每秒对周围的敌人造成68~~0.04~~点伤害。每对一名敌人造成伤害，恢复24~~0.04~~点生命值。持续6秒。"
+    },
+    {
+      "nameId": "AnubarakHeroicAbilityCocoon",
+      "buttonId": "AnubarakCocoon",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anubarak_webblast.png",
+      "sort": 2,
+      "name": "虫茧缚体",
+      "short": "将敌人束缚在虫茧内",
+      "full": "将目标敌方英雄包裹在虫茧内，使其无法行动或被选中为目标，持续7秒。被困英雄的盟友可以攻击虫茧让受害者提前脱离。"
+    },
+    {
+      "nameId": "AnubarakMasteryUrticatingSpines",
+      "buttonId": "AnubarakHardenCarapaceUrtricatingSpinesTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_anubarak_hardencarapace_var1.png",
+      "sort": 1,
+      "name": "毒虫螫刺",
+      "short": "硬化甲壳造成范围伤害",
+      "full": "施放硬化甲壳会对附近的敌人造成90~~0.04~~点伤害。对英雄造成双倍伤害。"
+    },
+    {
+      "nameId": "AnubarakBurningBeetles",
+      "buttonId": "AnubarakBurningBeetlesTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_talent_burningrage.png",
+      "sort": 2,
+      "name": "燃火甲虫",
+      "short": "对附近敌人造成伤害",
+      "full": "每秒对附近敌人造成21~~0.04~~点伤害。甲虫每秒对附近敌人造成6~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "AnubarakAcidDrenchedMandibles",
+      "buttonId": "AnubarakAcidDrenchedMandibles",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "强酸上颚",
+      "short": "攻击被控制的英雄造成额外伤害",
+      "full": "攻击被减速、定身或昏迷的英雄时，阿努巴拉克的普通攻击伤害提高80%，持续4秒。"
+    },
+    {
+      "nameId": "AnubarakMasteryEpicenterBurrowCharge",
+      "buttonId": "AnubarakBurrowChargeEpicenterTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_anubarak_burrowcharge.png",
+      "sort": 1,
+      "name": "地震中心",
+      "short": "扩大潜地冲锋范围并缩短冷却时间",
+      "full": "潜地冲锋的冲击范围扩大60%，并且每击中一个英雄使冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "AnubarakDebilitation",
+      "buttonId": "AnubarakDebilitation",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_anubarak_combo_q_e.png",
+      "sort": 2,
+      "name": "衰竭",
+      "short": "潜地冲锋和穿刺会降低敌人的法术强度",
+      "full": "被潜地冲锋或穿刺击中的敌方英雄的法术强度降低50%，持续4秒。"
+    },
+    {
+      "nameId": "AnubarakScarabHostBeetleJuiced",
+      "buttonId": "AnubarakBeetleSpitBeetleJuiceTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_anubarak_scarabhost.png",
+      "sort": 3,
+      "name": "吃饱喝足",
+      "short": "普通攻击可以召唤甲虫",
+      "full": "被动：甲虫的生命值提高30%。<n/><n/>每第4次普通攻击可以召唤一只甲虫。"
+    },
+    {
+      "nameId": "AnubarakLocustSwarmHiveMaster",
+      "buttonId": "AnubarakLocustSwarmHiveMasterTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anubarak_locustswarm.png",
+      "sort": 1,
+      "name": "吸血暴蝗",
+      "short": "孵化一只永久的吸血蝗虫",
+      "full": "获得一只永久的吸血蝗虫，每3秒攻击一次附近的一名敌人。吸血蝗虫造成165~~0.04~~点伤害，然后返回治疗阿努巴拉克80~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "AnubarakCocoonCryptweave",
+      "buttonId": "AnubarakCryptweaveCocoonTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_anubarak_webblast.png",
+      "sort": 2,
+      "name": "地穴织网",
+      "short": "延长虫茧缚体的持续时间，挣脱时造成伤害",
+      "full": "阿努巴拉克在虫茧缚体周围时可以延长其持续时间，每个虫茧最多延长6秒。敌人从虫茧挣脱时，会在4秒内受到60~~0.04~~点伤害。敌人每被虫茧束缚1秒，该伤害就会提高100%。"
+    },
+    {
+      "nameId": "AnubarakTheTraitorKing",
+      "buttonId": "AnubarakTheTraitorKing",
+      "abilityType": "Active",
+      "icon": "storm_ui_glues_draft_portrait_anubarak.png",
+      "sort": 3,
+      "name": "叛徒国王",
+      "short": "获得生命值和护甲",
+      "full": "获得10%最大生命值加成和20点法术护甲值加成。<n/><n/>激活后获得75点护甲值，持续4秒。"
+    },
+    {
+      "nameId": "GenericTalentRewind",
+      "buttonId": "GenericRewindHotbar",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_rewind.png",
+      "sort": 4,
+      "name": "时光回溯",
+      "short": "激活后重置冷却时间",
+      "full": "激活后重置基本技能的冷却时间。"
+    }
+  ]
+}

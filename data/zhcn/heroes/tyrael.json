@@ -1,0 +1,295 @@
+{
+  "shortName": "tyrael",
+  "heroName": "Tyrael",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "TyraelArchangelsWrathDummy",
+      "buttonId": "TyraelArchangelsWrath",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tyrael_archangelswrath.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "大天使之怒",
+      "short": "死亡时变为无敌并爆炸",
+      "full": "死亡时变为无敌状态并获得20%移动速度加成，持续4秒。效果结束时，你将爆炸并对附近敌人造成450~~0.04~~点伤害。每名被爆炸击中的敌方英雄使泰瑞尔的复活倒计时缩短10%。<n/><n>大天使之怒激活时使周围敌方英雄造成的伤害降低</n><n/>50%<n>，并且技能结束后效果仍然持续</n><n/>3秒。"
+    },
+    {
+      "nameId": "TyraelElDruinsMight",
+      "buttonId": "TyraelElDruinsMight",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrael_eldruinsmight_a.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "圣剑之力",
+      "short": "使范围内的敌人减速并对其造成伤害。再次使用该技能将可传送至该区域",
+      "full": "将圣剑投向目标区域，对周围的敌人造成110~~0.04~~点伤害，使其减速25%，持续2.5秒。在5秒内可以重新激活将泰瑞尔传送到圣剑位置，并再次使附近敌人减速。"
+    },
+    {
+      "nameId": "TyraelRighteousness",
+      "buttonId": "TyraelRighteousness",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tyrael_righteousness.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "正义凛然",
+      "short": "获得一层临时护盾",
+      "full": "泰瑞尔获得一个可吸收336~~0.04~~点伤害的护盾，周围的友方英雄和小兵获得相当于泰瑞尔40%的护盾量，持续4秒。"
+    },
+    {
+      "nameId": "TyraelSmite",
+      "buttonId": "TyraelSmite",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tyrael_smite.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "惩击",
+      "short": "对范围内的敌人造成伤害并提高附近盟友的移动速度",
+      "full": "扫过目标区域造成150~~0.04~~点伤害。经过该区域的盟友的移动速度将提高25%，持续2秒。"
+    },
+    {
+      "nameId": "TyraelJudgement",
+      "buttonId": "TyraelJudgment",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrael_judgement.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "审判",
+      "short": "向一名敌方英雄冲锋并使其昏迷",
+      "full": "0.75秒后，冲向一个敌方英雄，造成150~~0.04~~点伤害并使其昏迷1.5秒。附近敌人被弹开并受到75~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "TyraelSanctificationStationary",
+      "buttonId": "TyraelSanctificationStationary",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrael_sanctification.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "圣化",
+      "short": "召唤一片无敌区域",
+      "full": "0.5秒后召唤一片充满神圣能量的区域，使盟友变为无敌状态，持续3秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "TyraelSalvation",
+      "buttonId": "TyraelSalvation",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tyrael_righteousness.png",
+      "sort": 1,
+      "name": "救赎",
+      "short": "强化正义凛然，如果护盾被摧毁则治疗泰瑞尔",
+      "full": "使泰瑞尔从正义凛然中获得的护盾值提高40%，并且如果其护盾被摧毁则治疗泰瑞尔140~~0.04~~点生命。不会提高盟友获得的护盾值。"
+    },
+    {
+      "nameId": "TyraelJusticeForAll",
+      "buttonId": "TyraelJusticeForAll",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tyrael_righteousness_var1.png",
+      "sort": 2,
+      "name": "义昭万众",
+      "short": "提高盟友身上的正义凛然护盾值",
+      "full": "使盟友获得的正义凛然护盾值提高至泰瑞尔所获得护盾值的80%。"
+    },
+    {
+      "nameId": "TyraelArdentRestoration",
+      "buttonId": "TyraelArdentRestoration",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_regenerationmaster.png",
+      "sort": 3,
+      "name": "热忱治愈",
+      "short": "任务：对英雄造成伤害可获得持续治疗效果",
+      "full": "对英雄造成伤害可在5秒内持续为泰瑞尔恢复20~~0.04~~点生命值。造成伤害可重置持续时间，治疗量最多可叠加10次。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：每收集一枚恢复之球将使该治疗量提高1%。"
+    },
+    {
+      "nameId": "TyraelStalwartAngel",
+      "buttonId": "TyraelStalwartAngel",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrael_eldruinsmight_a.png",
+      "sort": 1,
+      "name": "强韧天使",
+      "short": "圣剑之力激活时给予护甲",
+      "full": "圣剑之力激活时获得25点护甲，传送后持续3秒。"
+    },
+    {
+      "nameId": "TyraelElDruinsMightBoundByLaw",
+      "buttonId": "TyraelElDruinsMightBoundByLawTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrael_eldruinsmight_b.png",
+      "sort": 2,
+      "name": "天律之缚",
+      "short": "圣剑之力获得治疗，提高减速持续时间",
+      "full": "被圣剑之力命中的英雄会为泰瑞尔恢复他最大生命值的3%。泰瑞尔对被圣剑之力减速的敌人进行普通攻击可使减速时间延长1秒，最多持续4秒。"
+    },
+    {
+      "nameId": "TyraelDivineVigor",
+      "buttonId": "TyraelDivineVigor",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tyrael_smite.png",
+      "sort": 3,
+      "name": "神圣活力",
+      "short": "惩击使普通攻击可以治疗",
+      "full": "如果惩击击中一名敌人，泰瑞尔在接下来4秒内的普通攻击可以治疗造成伤害的70%。"
+    },
+    {
+      "nameId": "TyraelMasteryRighteousnessReciprocate",
+      "buttonId": "TyraelRighteousnessReciprocateTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tyrael_righteousness.png",
+      "sort": 1,
+      "name": "回馈",
+      "short": "正义凛然的护盾会爆炸",
+      "full": "当泰瑞尔的正义凛然护盾消失或被摧毁时，对附近敌人造成190~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "TyraelMasteryPurgeEvil",
+      "buttonId": "TyraelSmitePurgeEvilTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tyrael_smite.png",
+      "sort": 2,
+      "name": "驱邪",
+      "short": "惩击提高普通攻击的伤害",
+      "full": "惩击每击中一名敌方英雄，泰瑞尔的普通攻击伤害提高60%，持续4秒。"
+    },
+    {
+      "nameId": "TyraelMasterySwiftRetribution",
+      "buttonId": "TyraelSmiteSwiftRetributionTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tyrael_smite_a.png",
+      "sort": 3,
+      "name": "即时正义",
+      "short": "提高惩击移动速度，给予攻击速度加成",
+      "full": "惩击给予20%移动速度加成，同时还给予25%攻击速度加成，持续2秒。"
+    },
+    {
+      "nameId": "TyraelHeroicAbilityJudgement",
+      "buttonId": "TyraelJudgment",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrael_judgement.png",
+      "sort": 1,
+      "name": "审判",
+      "short": "向一名敌方英雄冲锋并使其昏迷",
+      "full": "0.75秒后，冲向一个敌方英雄，造成150~~0.04~~点伤害并使其昏迷1.5秒。附近敌人被弹开并受到75~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "TyraelHeroicAbilitySanctification",
+      "buttonId": "TyraelSanctificationStationary",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrael_sanctification.png",
+      "sort": 2,
+      "name": "圣化",
+      "short": "召唤一片无敌区域",
+      "full": "0.5秒后召唤一片充满神圣能量的区域，使盟友变为无敌状态，持续3秒。"
+    },
+    {
+      "nameId": "TyraelMasteryElDruinsMightSwordOfJustice",
+      "buttonId": "TyraelElDruinsMightSwordOfJusticeTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrael_eldruinsmight_a.png",
+      "sort": 1,
+      "name": "公正之剑",
+      "short": "圣剑之力可以传送两次",
+      "full": "使用圣剑之力传送后，圣剑与泰瑞尔交换位置，圣剑之力可以再次激活进行一次额外传送。"
+    },
+    {
+      "nameId": "TyraelMasteryHolyGround",
+      "buttonId": "TyraelElDruinsMightHolyGroundTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrael_eldruinsmight_b.png",
+      "sort": 2,
+      "name": "神圣之地",
+      "short": "使用圣剑之力传送制造一个阻挡区域",
+      "full": "制造一个环形屏障，持续3秒，阻止敌人进入使用圣剑之力传送后的区域。"
+    },
+    {
+      "nameId": "TyraelMasteryLawAndOrder",
+      "buttonId": "TyraelRighteousnessLawAndOrderTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_tyrael_zealous_conviction.png",
+      "sort": 3,
+      "name": "法律与秩序",
+      "short": "正义凛然与惩击可互相强化",
+      "full": "惩击每击中一名敌方英雄使正义凛然的冷却时间缩短1秒。正义凛然的护盾每保护一名友方英雄，下一个惩击的伤害提高35%。"
+    },
+    {
+      "nameId": "TyraelHoradricReforging",
+      "buttonId": "TyraelElDruinsMightHoradricReforgingTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+      "sort": 1,
+      "name": "赫拉迪姆重铸",
+      "short": "普通攻击可以缩短圣剑之力的冷却时间",
+      "full": "泰瑞尔的普通攻击使圣剑之力的冷却时间缩短2秒。"
+    },
+    {
+      "nameId": "TyraelBurningHalo",
+      "buttonId": "TyraelBurningHalo",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_talent_burningrage.png",
+      "sort": 2,
+      "name": "炽热光环",
+      "short": "泰瑞尔和圣剑对周围的敌人造成伤害",
+      "full": "泰瑞尔和圣剑每秒对周围的敌人造成18~~0.04~~点伤害。传送可使泰瑞尔造成的该伤害提高150%，持续2秒。"
+    },
+    {
+      "nameId": "TyraelSmiteTheWicked",
+      "buttonId": "TyraelSmiteTheWicked",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tyrael_smite.png",
+      "sort": 3,
+      "name": "严惩罪恶",
+      "short": "圣剑之力提高惩击的冷却速度",
+      "full": "当圣剑之力激活时，在传送后的2秒内，惩击的冷却时间回复速度加快125%。"
+    },
+    {
+      "nameId": "TyraelMasteryJudgmentAngelofJustice",
+      "buttonId": "TyraelJudgmentAngelOfJusticeTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrael_judgement.png",
+      "sort": 1,
+      "name": "正义天使",
+      "short": "扩大审判的施法范围，减少其冷却时间",
+      "full": "使审判的施法范围扩大50%，冷却时间缩短40秒。"
+    },
+    {
+      "nameId": "TyraelMasterySanctificationHolyArena",
+      "buttonId": "TyraelSanctificationHolyArenaTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrael_sanctification.png",
+      "sort": 2,
+      "name": "神圣竞技场",
+      "short": "延长圣化的持续时间，强化盟友",
+      "full": "圣化的持续时间延长1秒，并使区域内盟友的伤害提高25%。"
+    },
+    {
+      "nameId": "TyraelSealOfElDruin",
+      "buttonId": "TyraelSealofElDruin",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_speed.png",
+      "sort": 3,
+      "name": "圣剑之印",
+      "short": "使用基本技能可给予攻击速度加成",
+      "full": "使用基本技能可给予50%攻击速度加成，持续3秒。"
+    },
+    {
+      "nameId": "TyraelDefenseOfTheAngels",
+      "buttonId": "TyraelDefenseOfTheAngels",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_hardenedshield.png",
+      "sort": 4,
+      "name": "天使之御",
+      "short": "激活后获得护甲",
+      "full": "激活后获得50点护甲，持续3秒。<n/><n/>泰瑞尔使用普通攻击或基本技能每对敌方英雄造成一次伤害，该护甲加成效果的持续时间便延长0.5秒。"
+    }
+  ]
+}

@@ -15,8 +15,8 @@
       <view class="hero-name-cn">{{ displayName }}</view>
       <view class="hero-name-en">{{ hero.name }}</view>
       <view class="hero-meta">
-        <text class="role-tag">{{ hero.new_role || hero.role }}</text>
-        <text class="type-tag">{{ hero.type }}</text>
+        <text class="role-tag">{{ displayRole }}</text>
+        <text class="type-tag">{{ displayType }}</text>
       </view>
     </view>
   </view>
@@ -26,6 +26,7 @@
 import { computed, ref } from 'vue'
 import type { Hero } from '@/types/hero'
 import { getHeroIconUrl, getChineseName } from '@/api/heroes'
+import { getRoleCN, getTypeCN } from '@/utils/zhcn'
 
 interface Props {
   hero: Hero
@@ -48,6 +49,14 @@ const imageError = ref(false)
 const displayName = computed(() => {
   const chineseName = getChineseName(props.hero.translations)
   return chineseName || props.hero.name
+})
+
+const displayRole = computed(() => {
+  return getRoleCN(props.hero.new_role || props.hero.role)
+})
+
+const displayType = computed(() => {
+  return getTypeCN(props.hero.type)
 })
 
 const heroIcon = computed(() => {

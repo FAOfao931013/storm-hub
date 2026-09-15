@@ -1,0 +1,295 @@
+{
+  "shortName": "falstad",
+  "heroName": "Falstad",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "FalstadTailwindCooldownDisplay",
+      "buttonId": "FalstadTailwind",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_falstad_tailwind.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "顺风之力",
+      "short": "在短时间内没有受到任何伤害后，提高移动速度",
+      "full": "如果5秒内没有受到任何伤害，移动速度提高15%。"
+    },
+    {
+      "nameId": "FalstadHammerang",
+      "buttonId": "FalstadHammerang",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_falstad_hammerang.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "回旋锤",
+      "short": "扔出一柄可以返回并爆炸的锤子",
+      "full": "投掷一把会返回弗斯塔德手中的飞锤，造成80~~0.04~~点伤害并使被命中的敌人减速25%，持续2秒。再次激活可以引爆飞锤，对附近敌人造成95~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "FalstadLightningRod",
+      "buttonId": "FalstadLightningRod",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_falstad_lightningrod.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "引雷针",
+      "short": "在敌人附近时对他们造成伤害",
+      "full": "对一名敌人造成107~~0.04~~点伤害，在目标附近时，每秒额外造成75~~0.04~~点伤害，持续4秒。对小兵和雇佣兵造成的伤害提高100%。"
+    },
+    {
+      "nameId": "FalstadBarrelRoll",
+      "buttonId": "FalstadBarrelRoll",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_falstad_barrelroll.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "侧滚翻",
+      "short": "快速前往目标区域，获得一层临时护盾",
+      "full": "向目标区域冲刺，获得171~~0.04~~点护盾，持续3秒。"
+    },
+    {
+      "nameId": "FalstadMightyGust",
+      "buttonId": "FalstadMightyGust",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_falstad_mightygust.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "狂风来袭",
+      "short": "将敌人推开并使其减速",
+      "full": "将敌人推开并使其减速40%，减速效果在4秒内递减。"
+    },
+    {
+      "nameId": "FalstadHinterlandBlast",
+      "buttonId": "FalstadHinterlandBlast",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_falstad_hinterlandblast.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "辛特兰雷击",
+      "short": "超远距离的伤害光束",
+      "full": "1秒后，对一长段直线上的敌人造成475~~0.0475~~点伤害。每击中一名敌方英雄，冷却时间就会缩短30秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "FalstadHammerangGatheringStorm",
+      "buttonId": "FalstadGatheringStormTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_falstad_hammerang.png",
+      "sort": 1,
+      "name": "风暴聚集",
+      "short": "任务：提高回旋锤伤害",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：回旋锤每次击中英雄都会使其伤害提高0.5%并返还6点法力值。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：使用回旋锤命中30名英雄后，回旋锤的伤害提高15%。"
+    },
+    {
+      "nameId": "FalstadLightningRodDishonorableDischarge",
+      "buttonId": "FalstadLightningRodDishonorableDischarge",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_falstad_lightningrod.png",
+      "sort": 2,
+      "name": "开除军籍",
+      "short": "任务：提高引雷针的伤害",
+      "full": "引雷针的冷却时间缩短2秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：在引雷针进行3次打击后，对敌方英雄的后续打击使引雷针的伤害提高1%，最多提高75%。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：在30次后续打击过后，引雷针的冷却时间额外缩短2秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：在75次后续打击过后，获得击杀会重置引雷针的冷却时间。"
+    },
+    {
+      "nameId": "FalstadTailwindFrequentFlyer",
+      "buttonId": "FalstadTailwindFrequentFlyer",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_falstad_tailwind_a.png",
+      "sort": 3,
+      "name": "飞行老手",
+      "short": "激活时获得攻击速度和顺风之力<n/>任务：消灭敌人提高普通攻击伤害",
+      "full": "激活飞行老手将获得40%攻击速度加成和顺风之力，持续4秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：消灭小兵将提高0.2点普通攻击伤害。击杀英雄将提高0.5点普通攻击伤害。"
+    },
+    {
+      "nameId": "FalstadMasteryLightningRodStaticShield",
+      "buttonId": "FalstadStaticShieldTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_falstad_lightningrod.png",
+      "sort": 1,
+      "name": "静电护盾",
+      "short": "引雷针攻击获得护盾",
+      "full": "引雷针的攻击能使弗斯塔德获得相当于他最大生命值4%的护盾值，最多可叠加至28%，持续4秒。"
+    },
+    {
+      "nameId": "FalstadMasteryUpdraftBarrelRoll",
+      "buttonId": "FalstadBarrelRollUpdraftTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_falstad_barrelroll.png",
+      "sort": 2,
+      "name": "上升气流",
+      "short": "增加侧滚翻的距离和护盾值",
+      "full": "侧滚翻的距离提高40% ，护盾值提高70%，并且该护盾的持续时间不限。"
+    },
+    {
+      "nameId": "FalstadTalentHammerGains",
+      "buttonId": "FalstadHammerGainsTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_heal.png",
+      "sort": 3,
+      "name": "强化蛮锤",
+      "short": "普通攻击恢复生命值",
+      "full": "普通攻击对主要目标造成伤害的20%转化为你的生命值。"
+    },
+    {
+      "nameId": "FalstadMasteryHammerangSecretWeapon",
+      "buttonId": "FalstadSecretWeaponTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_falstad_hammerang.png",
+      "sort": 1,
+      "name": "秘密武器",
+      "short": "提高回旋锤的射程和普通攻击伤害",
+      "full": "回旋锤的射程提高30%，并且回旋锤飞行的过程中，普通攻击伤害提高75%。"
+    },
+    {
+      "nameId": "FalstadHammerangBOOMerang",
+      "buttonId": "FalstadHammerangBOOMerangTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_falstad_hammerang_a.png",
+      "sort": 2,
+      "name": "爆炸回旋锤",
+      "short": "提高回旋锤的爆炸伤害",
+      "full": "回旋锤在爆炸时造成100%额外伤害，在命中敌方英雄时会使其法术护甲降低15点，持续3秒。"
+    },
+    {
+      "nameId": "FalstadMasteryLightningRodChargedUp",
+      "buttonId": "FalstadChargedUpTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_falstad_lightningrod.png",
+      "sort": 3,
+      "name": "灌魔雷电",
+      "short": "提高引雷针攻击次数和范围",
+      "full": "引雷针的攻击次数增加2次，并且射程提高25%。"
+    },
+    {
+      "nameId": "FalstadHeroicAbilityHinterlandBlast",
+      "buttonId": "FalstadHinterlandBlast",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_falstad_hinterlandblast.png",
+      "sort": 1,
+      "name": "辛特兰雷击",
+      "short": "超远距离的伤害光束",
+      "full": "1秒后，对一长段直线上的敌人造成475~~0.0475~~点伤害。每击中一名敌方英雄，冷却时间就会缩短30秒。"
+    },
+    {
+      "nameId": "FalstadHeroicAbilityMightyGust",
+      "buttonId": "FalstadMightyGust",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_falstad_mightygust.png",
+      "sort": 2,
+      "name": "狂风来袭",
+      "short": "将敌人推开并使其减速",
+      "full": "将敌人推开并使其减速40%，减速效果在4秒内递减。"
+    },
+    {
+      "nameId": "FalstadMasteryLightningRodThunderstrikes",
+      "buttonId": "FalstadThunderstrikesTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_falstad_lightningrod.png",
+      "sort": 1,
+      "name": "雷霆打击",
+      "short": "引雷针造成越来越高的伤害",
+      "full": "引雷针每次后续攻击造成25%的额外伤害。"
+    },
+    {
+      "nameId": "FalstadMasteryBarrelRollFlowRider",
+      "buttonId": "FalstadFlowRiderTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_falstad_tailwind.png",
+      "sort": 2,
+      "name": "气流骑士",
+      "short": "顺风之力期间基本技能冷却速度加快",
+      "full": "顺风之力激活时，弗斯塔德基本技能的冷却速度加快100%。"
+    },
+    {
+      "nameId": "FalstadTailwindSustainedWinds",
+      "buttonId": "FalstadTailwindSustainedWinds",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_falstad_tailwind_a.png",
+      "sort": 3,
+      "name": "持续强风",
+      "short": "提高对英雄的普通攻击伤害",
+      "full": "普通攻击对敌方英雄造成相当于其最大生命值1.5%的额外伤害，当顺风之力激活时，该伤害加成提高至2%。"
+    },
+    {
+      "nameId": "FalstadMasteryCripplingHammerHammerang",
+      "buttonId": "FalstadHammerangCripplingHammerTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_falstad_hammerang.png",
+      "sort": 1,
+      "name": "致残回旋锤",
+      "short": "强化回旋锤的减速效果和爆炸减速效果",
+      "full": "回旋锤的减速效果从25%提高至50%，同时回旋锤的爆炸也会产生减速效果。"
+    },
+    {
+      "nameId": "FalstadMasteryAerieGustsTailwind",
+      "buttonId": "FalstadTailwindAerieGustsTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_falstad_tailwind.png",
+      "sort": 2,
+      "name": "鹰巢狂风",
+      "short": "缩短顺风之力的延迟时间，提高移动速度",
+      "full": "顺风之力所需激活时间从5秒缩短至3秒，并且移动速度加成从15%提高至25%。"
+    },
+    {
+      "nameId": "FalstadMasteryAfterburner",
+      "buttonId": "FalstadBarrelRollAfterburnerTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_falstad_barrelroll.png",
+      "sort": 3,
+      "name": "后燃充能",
+      "short": "侧滚翻提高移动速度",
+      "full": "侧滚翻使移动速度提高60%，该效果在3秒内递减。"
+    },
+    {
+      "nameId": "FalstadMasteryCalloftheWildhammerHinterlandBlast",
+      "buttonId": "FalstadHinterlandBlastCalloftheWildhammerTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_falstad_hinterlandblast.png",
+      "sort": 1,
+      "name": "蛮锤召唤",
+      "short": "提高辛特兰雷击的射程和伤害",
+      "full": "辛特兰雷击的射程提高一倍，并且伤害提高25%。"
+    },
+    {
+      "nameId": "FalstadMasteryMightyGustWindTunnel",
+      "buttonId": "FalstadWindTunnelTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_falstad_mightygust.png",
+      "sort": 2,
+      "name": "风之隧道",
+      "short": "狂风来袭持续击退敌人",
+      "full": "狂风来袭创造一个持续4秒的风之隧道。踏入隧道的敌人会不断被推开。"
+    },
+    {
+      "nameId": "GenericTalentNexusFrenzy",
+      "buttonId": "NexusFrenzyTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_range.png",
+      "sort": 3,
+      "name": "时空狂暴",
+      "short": "提高攻击速度和范围",
+      "full": "攻击速度提高20%，攻击范围提高1.1。"
+    },
+    {
+      "nameId": "FalstadMasteryFlightEpicMount",
+      "buttonId": "FalstadEpicMountTalent",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_falstad_epicmount.png",
+      "sort": 4,
+      "name": "史诗坐骑",
+      "short": "降低飞行的冷却时间和施法时间",
+      "full": "飞行的冷却时间缩短50秒，飞行前的施法时间缩短至0.5秒，并且速度提高50%。"
+    }
+  ]
+}

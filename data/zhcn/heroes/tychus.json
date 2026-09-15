@@ -1,0 +1,295 @@
+{
+  "shortName": "tychus",
+  "heroName": "Tychus",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "TychusMinigun",
+      "buttonId": "TychusMinigun",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tychus_minigun.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "速射机枪",
+      "short": "激活后提高普通攻击对英雄造成的伤害",
+      "full": "激活后对英雄的普通攻击造成相当于其最大生命值2.5%的额外伤害，持续3秒。"
+    },
+    {
+      "nameId": "TychusOverkillTargeted",
+      "buttonId": "TychusOverkill",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tychus_overkill.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "致命连射",
+      "short": "移动攻击一个目标，同时对附近的敌人造成伤害",
+      "full": "在4秒内对目标造成552~~0.04~~点伤害，并对附近目标造成276~~0.04~~点伤害。再次激活来选择新目标。引导时可以移动和使用技能。"
+    },
+    {
+      "nameId": "TychusGrenade",
+      "buttonId": "TychusFragGrenade",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tychus_fraggrenade.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "破片手雷",
+      "short": "扔出手雷，对敌人造成伤害并将其击退",
+      "full": "投出手雷造成256~~0.04~~点伤害并击退敌人。"
+    },
+    {
+      "nameId": "TychusRunAndGun",
+      "buttonId": "TychusRunandGun",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tychus_runandgun.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "冲刺射击",
+      "short": "向前冲锋一小段距离",
+      "full": "向前冲锋一小段距离。"
+    },
+    {
+      "nameId": "TychusDrakkenLaserDrill",
+      "buttonId": "TychusDrakkenLaserDrill",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tychus_drakkinlaserdrill.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "德拉肯激光钻机",
+      "short": "空投一台激光钻机，攻击附近的敌人",
+      "full": "召唤一台激光钻机攻击附近的敌人，对他们每秒造成142~~0.04~~点伤害。再次激活可以为钻机指定新的攻击目标。钻机持续22秒。"
+    },
+    {
+      "nameId": "TychusOdinNoHealth",
+      "buttonId": "TychusCommandeerOdin",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tychus_commandeerodin.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "奥丁降临",
+      "short": "召唤一台奥丁并驾驶它参战",
+      "full": "召唤一台奥丁进行驾驶。奥丁造成更高伤害，普通攻击的射程提高100%，并使用不同的技能。奥丁拥有25点护甲，持续23秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "TychusMasteryQuarterback",
+      "buttonId": "TychusFragGrenadeQuarterbackTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tychus_fraggrenade.png",
+      "sort": 1,
+      "name": "四分卫",
+      "short": "提高破片手雷的伤害和使用范围",
+      "full": "破片手雷的伤害提高10%，使用范围扩大50%。"
+    },
+    {
+      "nameId": "TychusMasteryRunandGunDash",
+      "buttonId": "TychusRunandGunDashTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tychus_runandgun.png",
+      "sort": 2,
+      "name": "突进",
+      "short": "提高冲刺射击的距离，并提高移动速度",
+      "full": "冲刺射击的距离提高50%。施放后，泰凯斯的移动速度提高20%，持续2.5秒。"
+    },
+    {
+      "nameId": "TychusPressTheAdvantage",
+      "buttonId": "TychusPressTheAdvantage",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_range.png",
+      "sort": 3,
+      "name": "扩大优势",
+      "short": "提高泰凯斯的普通攻击射程",
+      "full": "泰凯斯的普通攻击射程提高1码。"
+    },
+    {
+      "nameId": "TychusInTheRhythm",
+      "buttonId": "TychusIntheRhythmTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tychus_minigun.png",
+      "sort": 1,
+      "name": "节奏步伐",
+      "short": "任务：普通攻击延长速射机枪的持续时间",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：速射机枪激活时，对英雄的普通攻击使后续速射机枪的持续时间永久延长0.03秒。"
+    },
+    {
+      "nameId": "TychusTheBiggerTheyAre",
+      "buttonId": "TychusTheBiggerTheyAre",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tychus_minigun_a.png",
+      "sort": 2,
+      "name": "越大就越……",
+      "short": "高速射机枪的的伤害",
+      "full": "对生命值高于30%的敌方英雄造成的加成伤害提高至4%，但速射机枪不再对生命值低于30%的目标产生任何效果。"
+    },
+    {
+      "nameId": "TychusMasterAssassin",
+      "buttonId": "TychusMasterAssassinTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_speed.png",
+      "sort": 3,
+      "name": "刺客大师",
+      "short": "任务：击杀英雄提高攻击速度",
+      "full": "被动：使泰凯斯的攻击速度提高10%。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：击杀15个英雄后，泰凯斯的攻击速度额外提高15%。"
+    },
+    {
+      "nameId": "TychusMeltingPoint",
+      "buttonId": "TychusMeltingPoint",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tychus_fraggrenade.png",
+      "sort": 1,
+      "name": "熔点",
+      "short": "破片手雷造成额外的持续伤害",
+      "full": "破片手雷命中敌人会使其在接下来的3秒内额外受到75~~0.04~~点伤害。该伤害对小兵，雇佣兵和怪物提高100%。"
+    },
+    {
+      "nameId": "TychusCombatTactician",
+      "buttonId": "TychusCombatTactician",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tychus_minigun.png",
+      "sort": 2,
+      "name": "战斗专家",
+      "short": "冲刺射击缩短速射机枪的冷却时间",
+      "full": "速射机枪的冷却时间缩短4秒。施放冲刺射击后可以使速射机枪的冷却时间额外缩短4秒。"
+    },
+    {
+      "nameId": "TychusRelentlessSoldier",
+      "buttonId": "TychusRelentlessSoldierTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_relentless.png",
+      "sort": 3,
+      "name": "坚韧士兵",
+      "short": "击晕和定身提供护甲",
+      "full": "被昏迷或定身时提供30点护甲，使受到的伤害降低30%，持续3秒。"
+    },
+    {
+      "nameId": "TychusHeroicAbilityCommandeerOdin",
+      "buttonId": "TychusCommandeerOdin",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tychus_commandeerodin.png",
+      "sort": 1,
+      "name": "奥丁降临",
+      "short": "召唤一台奥丁并驾驶它参战",
+      "full": "召唤一台奥丁进行驾驶。奥丁造成更高伤害，普通攻击的射程提高100%，并使用不同的技能。奥丁拥有25点护甲，持续23秒。"
+    },
+    {
+      "nameId": "TychusHeroicAbilityDrakkenLaserDrill",
+      "buttonId": "TychusDrakkenLaserDrill",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tychus_drakkinlaserdrill.png",
+      "sort": 2,
+      "name": "德拉肯激光钻机",
+      "short": "空投一台激光钻机，攻击附近的敌人",
+      "full": "召唤一台激光钻机攻击附近的敌人，对他们每秒造成142~~0.04~~点伤害。再次激活可以为钻机指定新的攻击目标。钻机持续22秒。"
+    },
+    {
+      "nameId": "TychusMasterySprayNPray",
+      "buttonId": "TychusOverkillSprayNPrayTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tychus_overkill.png",
+      "sort": 1,
+      "name": "机枪扫射",
+      "short": "致命连射造成减速，并且增加射程",
+      "full": "致命连射使敌人的移动速度降低25%，并且射程增加25%。"
+    },
+    {
+      "nameId": "TychusThatsTheStuff",
+      "buttonId": "TychusThatsTheStuff",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tychus_minigun.png",
+      "sort": 2,
+      "name": "这才像话！",
+      "short": "速射机枪的伤害治疗泰凯斯",
+      "full": "速射机枪效果消失后泰凯斯恢复相当于100%额外伤害的生命值。"
+    },
+    {
+      "nameId": "TychusNeosteelCoating",
+      "buttonId": "TychusNeosteelCoatingTalent",
+      "abilityType": "Active",
+      "icon": "storm_temp_btn-upgrade-terran-neosteelframe.png",
+      "sort": 3,
+      "name": "精钢装甲",
+      "short": "激活后获得法术护甲",
+      "full": "激活后获得75点法术护甲，使受到的技能伤害降低75%，持续4秒。"
+    },
+    {
+      "nameId": "TychusMasteryOverkillArmorPiercingRounds",
+      "buttonId": "TychusOverkillArmorPiercingRoundsTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tychus_overkill.png",
+      "sort": 1,
+      "name": "穿甲弹",
+      "short": "致命连射连续击中会提高伤害",
+      "full": "致命连射每次击中一名敌人，都会使致命连射对其造成的伤害增加15%，该伤害加成最多叠加至60%。"
+    },
+    {
+      "nameId": "TychusMasteryFragGrenadeTitanGrenade",
+      "buttonId": "TychusFragGrenadeTitanGrenadeTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tychus_fraggrenade.png",
+      "sort": 2,
+      "name": "泰坦手雷",
+      "short": "提高破片手雷对英雄造成的伤害",
+      "full": "破片手雷对英雄造成相当于其最大生命值5%的额外伤害。破片手雷每击中一名敌方英雄都会使其冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "TychusSizzlinAttacks",
+      "buttonId": "TychusSizzlinAttacks",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_talent_autoattack_searing.png",
+      "sort": 3,
+      "name": "灼热攻击",
+      "short": "提高普通攻击对英雄造成的伤害",
+      "full": "普通攻击对英雄造成相当于其最大生命值1%的额外伤害。效果与速射机枪叠加。"
+    },
+    {
+      "nameId": "TychusMasteryOdinBigRedButton",
+      "buttonId": "TychusCommandeerOdinBigRedButtonTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tychus_commandeerodin.png",
+      "sort": 1,
+      "name": "红色按钮",
+      "short": "延长奥丁的持续时间，还会发射核弹",
+      "full": "奥丁的持续时间延长50%，并且毁灭者导弹还会发射一枚核弹，在2.5秒后落地，对区域内造成319~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "TychusMasteryDrakkenLaserFocusingDiodes",
+      "buttonId": "TychusDrakkenLaserFocusingDiodesTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tychus_drakkinlaserdrill.png",
+      "sort": 2,
+      "name": "聚焦二极管",
+      "short": "扩大激光钻机射程并提高伤害",
+      "full": "德拉肯激光钻机的射程增加50%，对同一目标持续攻击会使伤害逐渐提高，最高可提高100%的伤害。"
+    },
+    {
+      "nameId": "TychusCanDoThisAllDayOverkillTalent",
+      "buttonId": "TychusOverkillCanDoThisAllDayTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tychus_overkill.png",
+      "sort": 3,
+      "name": "我可以和你耗一整天",
+      "short": "致命连射冷却时间缩短，并获得护甲",
+      "full": "使致命连射的冷却时间缩短5秒。当引导致命连射时，泰凯斯获得40点护甲值。"
+    },
+    {
+      "nameId": "TychusRunAndGunBobAndWeave",
+      "buttonId": "TychusRunAndGunBobAndWeaveTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tychus_runandgun.png",
+      "sort": 4,
+      "name": "闪避身法",
+      "short": "增加冲刺射击的使用次数，降低法力值消耗",
+      "full": "冲刺射击和奥丁推进器获得2次额外使用次数，冲刺射击的法力值消耗从50点降低至25点。在使用冲刺射击后，泰凯斯的普通攻击射程将会提高1.5码，持续4秒。"
+    }
+  ]
+}

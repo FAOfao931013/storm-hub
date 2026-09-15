@@ -1,0 +1,295 @@
+{
+  "shortName": "barbarian",
+  "heroName": "Barbarian",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "BarbarianFury",
+      "buttonId": "BarbarianFury",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_sonya_fury.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "狂怒",
+      "short": "在战斗中产生怒气。所有技能提供移动速度",
+      "full": "怒气取代法力，通过受到伤害或造成普通攻击伤害来获得。使用基本技能或终极技能使移动速度提高10%，持续4秒。"
+    },
+    {
+      "nameId": "BarbarianAncientSpear",
+      "buttonId": "BarbarianAncientSpear",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_sonya_ancientspear.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "上古之矛",
+      "short": "投掷一柄长矛，将自身拉向第一个被长矛击中的敌人，使其昏迷并造成伤害",
+      "full": "扔出一柄长矛，将桑娅拉向第一个被击中的敌人，造成173~~0.04~~点伤害，并使其短暂昏迷。如果上古之矛击中敌人，则产生40点怒气。"
+    },
+    {
+      "nameId": "BarbarianSeismicSlam",
+      "buttonId": "BarbarianSeismicSlam",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_sonya_seismicslam.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "裂地斩",
+      "short": "对一名敌人造成伤害并对其后方的敌人造成溅射伤害",
+      "full": "对目标敌人造成176~~0.04~~点伤害，并对目标身后的敌人造成44~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "BarbarianWhirlwind",
+      "buttonId": "BarbarianWhirlwind",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_sonya_whirlwind.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "旋风斩",
+      "short": "对附近敌人造成伤害并按伤害百分比恢复一定量生命值",
+      "full": "在3秒内对附近敌人造成138~~0.04~~点伤害，并将造成伤害的25%转化为生命值。对英雄的效果为三倍。"
+    },
+    {
+      "nameId": "BarbarianLeap",
+      "buttonId": "BarbarianLeap",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sonya_leap.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "腾空斩",
+      "short": "向目标地点跳跃，造成伤害并使敌人昏迷",
+      "full": "腾空跃起，对周围敌人造成135~~0.04~~点伤害，并使其昏迷1.25秒。"
+    },
+    {
+      "nameId": "BarbarianWrathoftheBerserker",
+      "buttonId": "BarbarianWrathoftheBerserker",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sonya_wrathoftheberserker.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "狂战之怒",
+      "short": "提高伤害并降低控制效果",
+      "full": "造成的伤害提高40%。桑娅受到的昏迷、定身和减速效果的持续时间缩短50%，持续15秒，并且每获得10点怒气使持续时间延长1秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "HearthstoneNoMana",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "BarbarianFuriousBlow",
+      "buttonId": "BarbarianSeismicSlamFuriousBlowTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_sonya_seismicslam.png",
+      "sort": 1,
+      "name": "狂暴打击",
+      "short": "强化裂地斩",
+      "full": "每第4次施放裂地斩，对主要目标造成40%额外伤害，且不消耗怒气。"
+    },
+    {
+      "nameId": "BarbarianWarPaint",
+      "buttonId": "BarbarianFuryWarPaintTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_heal.png",
+      "sort": 2,
+      "name": "作战伪装",
+      "short": "普通攻击产生治疗",
+      "full": "普通攻击伤害的30%会为桑娅治疗。"
+    },
+    {
+      "nameId": "BarbarianToughAsNails",
+      "buttonId": "BarbarianToughAsNails",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_block.png",
+      "sort": 3,
+      "name": "坚如钢钉",
+      "short": "周期性获得物理护甲",
+      "full": "每16秒，获得60点物理护甲，抵御下一次敌方英雄普通攻击，受到的伤害减少60%。<n/><n/>最多储存3层充能。怒气的移动速度加成激活时，充能刷新速度加快200%。"
+    },
+    {
+      "nameId": "BarbarianShatteredGround",
+      "buttonId": "BarbarianSeismicSlamShatteredGroundTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_sonya_seismicslam.png",
+      "sort": 1,
+      "name": "破碎大地",
+      "short": "提高裂地斩的溅射伤害",
+      "full": "裂地斩的溅射伤害提高250%。用裂地斩瞄准一名英雄额外使溅射伤害提高250%，瞄准其他敌人时使裂地斩的溅射长度增加66%。"
+    },
+    {
+      "nameId": "BarbarianHurricane",
+      "buttonId": "BarbarianHurricaneWhirlwindTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_sonya_whirlwind.png",
+      "sort": 2,
+      "name": "飓风",
+      "short": "旋风斩可以移除减速和定身效果",
+      "full": "旋风斩的冷却时间缩短2秒，并且可以移除桑娅受到的所有减速和定身效果。"
+    },
+    {
+      "nameId": "BarbarianShotOfFury",
+      "buttonId": "BarbarianFuryShotOfFuryTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_sonya_fury.png",
+      "sort": 3,
+      "name": "无名怒火",
+      "short": "激活后获得怒气",
+      "full": "激活后获得50点怒气。可在旋风斩期间使用。<n/><n/>被动：施放裂地斩之后，你的下一次普通攻击造成40%额外伤害。"
+    },
+    {
+      "nameId": "BarbarianPoisonedSpear",
+      "buttonId": "BarbarianAncientSpearPoisonedSpearTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_sonya_ancientspear.png",
+      "sort": 1,
+      "name": "剧毒之矛",
+      "short": "上古之矛造成持续性伤害",
+      "full": "上古之矛在6秒内造成额外100%的伤害。"
+    },
+    {
+      "nameId": "BarbarianLifeFunnel",
+      "buttonId": "BarbarianWhirlwindLifeFunnelTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_sonya_whirlwind.png",
+      "sort": 2,
+      "name": "生命通道",
+      "short": "提高旋风斩的治疗效果",
+      "full": "旋风斩的治疗量提高至其造成伤害的35%。"
+    },
+    {
+      "nameId": "BarbarianBattleRage",
+      "buttonId": "BarbarianBattleRage",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_mercenarylord.png",
+      "sort": 3,
+      "name": "战斗怒火",
+      "short": "提高对雇佣兵的伤害，激活后治疗",
+      "full": "激活后立即恢复桑娅10%最大生命值。储存最多2次使用次数。可以在旋风斩期间使用。<n/><n/>被动：桑娅对雇佣兵造成的伤害提高25%。"
+    },
+    {
+      "nameId": "BarbarianHeroicAbilityLeap",
+      "buttonId": "BarbarianLeap",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sonya_leap.png",
+      "sort": 1,
+      "name": "腾空斩",
+      "short": "向目标地点跳跃，造成伤害并使敌人昏迷",
+      "full": "腾空跃起，对周围敌人造成135~~0.04~~点伤害，并使其昏迷1.25秒。"
+    },
+    {
+      "nameId": "BarbarianHeroicAbilityWrathoftheBerserker",
+      "buttonId": "BarbarianWrathoftheBerserker",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sonya_wrathoftheberserker.png",
+      "sort": 2,
+      "name": "狂战之怒",
+      "short": "提高伤害并降低控制效果",
+      "full": "造成的伤害提高40%。桑娅受到的昏迷、定身和减速效果的持续时间缩短50%，持续15秒，并且每获得10点怒气使持续时间延长1秒。"
+    },
+    {
+      "nameId": "BarbarianMysticalSpear",
+      "buttonId": "BarbarianAncientSpearMysticalSpearTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_sonya_ancientspear.png",
+      "sort": 1,
+      "name": "神秘之矛",
+      "short": "上古之矛总能拉向目标地点，缩短冷却时间",
+      "full": "上古之矛即使没有命中任何目标，依然能够将桑娅拉向目标地点。当这样使用时，上古之矛的冷却时间缩短5秒。"
+    },
+    {
+      "nameId": "BarbarianRuthless",
+      "buttonId": "BarbarianRuthless",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_sonya_whirlwind.png",
+      "sort": 2,
+      "name": "残忍",
+      "short": "提高旋风斩对低生命值目标的伤害",
+      "full": "旋风斩对生命值低于50%的英雄每秒造成50~~0.04~~点额外伤害。不产生额外治疗。"
+    },
+    {
+      "nameId": "BarbarianNoEscape",
+      "buttonId": "BarbarianFuryNoEscapeTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_sonya_fury.png",
+      "sort": 3,
+      "name": "无处可逃",
+      "short": "使用技能后移动速度加成进一步提高",
+      "full": "使用基本技能和终极技能后的移动速度加成提高至20%。"
+    },
+    {
+      "nameId": "BarbarianGiantSlammer",
+      "buttonId": "BarbarianGiantSlammer",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_sonya_seismicslam.png",
+      "sort": 1,
+      "name": "巨人煞星",
+      "short": "普通攻击和裂地斩造成额外伤害",
+      "full": "普通攻击和裂地斩造成相当于英雄最大生命值1.5%的额外伤害，并为桑娅恢复相当于造成伤害量60%的生命值。"
+    },
+    {
+      "nameId": "BarbarianRampage",
+      "buttonId": "BarbarianRampage",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+      "sort": 2,
+      "name": "狂暴践踏",
+      "short": "普通攻击减少上古之矛的冷却时间",
+      "full": "普通攻击的伤害提高25%。普通攻击使上古之矛的冷却时间缩短1.5秒。"
+    },
+    {
+      "nameId": "BarbarianNervesOfSteel",
+      "buttonId": "BarbarianNervesOfSteel",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_sonya_nervesofsteel.png",
+      "sort": 3,
+      "name": "钢铁神经",
+      "short": "激活后获得护盾",
+      "full": "激活后获得一个相当于你最大生命值25%的护盾，持续3秒。可在旋风斩期间使用。"
+    },
+    {
+      "nameId": "BarbarianArreatCrater",
+      "buttonId": "BarbarianLeapArreatCraterTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sonya_leap.png",
+      "sort": 1,
+      "name": "亚瑞特巨坑",
+      "short": "腾空斩留下一个巨坑，并且冷却时间缩短",
+      "full": "腾空斩留下一个无法逾越的巨坑，持续5秒。腾空斩的冷却时间缩短20秒。"
+    },
+    {
+      "nameId": "BarbarianStridingGiant",
+      "buttonId": "BarbarianStridingGiant",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_sonya_wrathoftheberserker.png",
+      "sort": 2,
+      "name": "天神步",
+      "short": "狂战之怒可以给予不可阻挡效果",
+      "full": "狂战之怒使最大生命值提高10%并给予天神步，激活后获得不可阻挡效果，持续2秒。30秒冷却。"
+    },
+    {
+      "nameId": "BarbarianCompositeSpear",
+      "buttonId": "BarbarianAncientSpearCompositeSpearTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_sonya_ancientspear.png",
+      "sort": 3,
+      "name": "复合之矛",
+      "short": "增加上古之矛的射程，给予护甲",
+      "full": "上古之矛的施法距离提高50%，使用上古之矛击中敌方英雄可获得25点护甲，持续4秒。"
+    },
+    {
+      "nameId": "BarbarianIgnorePain",
+      "buttonId": "BarbarianIgnorePain",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_sonya_ignorepain.png",
+      "sort": 4,
+      "name": "无视苦痛",
+      "short": "激活后获得大量护甲",
+      "full": "激活后获得60点护甲值，持续4秒，受到的伤害降低60%。可在旋风斩期间使用。"
+    }
+  ]
+}

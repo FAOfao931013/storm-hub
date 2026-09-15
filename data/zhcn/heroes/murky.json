@@ -1,0 +1,295 @@
+{
+  "shortName": "murky",
+  "heroName": "Murky",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "MurkyRespawnEgg",
+      "buttonId": "MurkySpawnEgg",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_murky_trait_spawnegg.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "放置鱼人蛋",
+      "short": "放置一颗蛋，奔波尔霸可以从蛋中复活",
+      "full": "在目标位置放一颗蛋并暴露周围的区域。死亡后，奔波尔霸会在8秒后从蛋中重新孵化。奔波尔霸的死亡只提供正常英雄25%的经验值。<n/><n/>如果奔波尔霸的蛋被摧毁，他将在15秒内暴露在敌人视野内，并且放置鱼人蛋将会进入冷却。"
+    },
+    {
+      "nameId": "MurkySlime",
+      "buttonId": "MurkySlime",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_murky_slime.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "粘液喷射",
+      "short": "施放粘液对敌人造成伤害并使其减速",
+      "full": "造成86~~0.04~~点伤害，并使附近的敌人沾上粘液，持续6秒，使其减速20%。<n/><n/>对已经沾上粘液的敌人造成210~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "MurkyPufferfish",
+      "buttonId": "MurkyPufferfish",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_murky_pufferfish.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "气泡鱼",
+      "short": "吐出一条鱼，小段时间后爆炸",
+      "full": "在目标位置吐出一条拥有225~~0.055~~点生命值的气泡鱼。3秒后气泡鱼爆炸，造成410~~0.04~~点伤害。对建筑的伤害降低50%。"
+    },
+    {
+      "nameId": "MurkySafetyBubble",
+      "buttonId": "MurkySafetyBubble",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_murky_safetybubble.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "安全泡泡",
+      "short": "无敌但无法攻击或使用技能",
+      "full": "变为无敌，持续2秒。在此期间，奔波尔霸无法攻击或使用技能。"
+    },
+    {
+      "nameId": "MurkyMarchoftheMurlocs",
+      "buttonId": "MurkyMarchOfTheMurlocs",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_murky_marchofthemurlocs.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "鱼人冲锋",
+      "short": "让敌人感受被一群鱼人追着打的感觉",
+      "full": "0.75秒后，奔波尔霸指挥鱼人军团向目标方向冲锋。每个鱼人都会跃向他们找到的第一个敌方英雄或建筑，造成125~~0.04~~点伤害，并使目标减速15%，持续5秒。鱼人对建筑造成50%的伤害。"
+    },
+    {
+      "nameId": "MurkyOctoGrab",
+      "buttonId": "MurkyOctoGrab",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_murky_octograb.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "章鱼缠绕",
+      "short": "击晕敌方英雄并对其猛戳",
+      "full": "奔波尔霸变得不可阻挡，使目标敌方英雄昏迷，持续3秒，并每秒对其造成1点伤害。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "HearthstoneNoMana",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "MurkyFishEye",
+      "buttonId": "MurkyFishEye",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_murky_trait_spawnegg.png",
+      "sort": 1,
+      "name": "鱼眼",
+      "short": "鱼蛋视野更远，并且侦测潜行",
+      "full": "鱼人蛋的生命值提高100%，视野范围扩大300%，并且能看到潜行的敌人。<n/><n/>被动：从蛋中孵化后，奔波尔霸的坐骑速度提高至45%，持续5秒。"
+    },
+    {
+      "nameId": "MurkyEggHunt",
+      "buttonId": "MurkyEggHuntTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_murky_egghunt.png",
+      "sort": 2,
+      "name": "鱼蛋狩猎",
+      "short": "放置假蛋",
+      "full": "激活后放置一枚假蛋。如果假蛋被摧毁，则施放一次未经过天赋加强的粘液喷射。最多放置3枚假蛋。<n/><n/>被动：从鱼人蛋中复活后使奔波尔霸获得潜行，持续5秒。"
+    },
+    {
+      "nameId": "MurkyAFishyDeal",
+      "buttonId": "MurkyAFishyDeal",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_bribe.png",
+      "sort": 3,
+      "name": "鱼奸鱼猾",
+      "short": "用气泡鱼击杀小兵来贿赂雇佣兵",
+      "full": "用气泡鱼杀死小兵提供一层贿赂。使用8层可以贿赂一名雇佣兵，立即将其击败。对精英雇佣兵无效。<n/><n/>最多32层。"
+    },
+    {
+      "nameId": "MurkySlimeTime",
+      "buttonId": "MurkySlimeTime",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_murky_slime.png",
+      "sort": 1,
+      "name": "粘液表演",
+      "short": "任务：对英雄使用粘液喷射获得强化",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：对受到粘液喷射影响的敌人使用粘液喷射。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：对10个英雄使用粘液喷射后，粘液喷射的加成伤害提高125点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：对20个英雄使用粘液喷射后，粘液喷射的减速效果提高至30%。"
+    },
+    {
+      "nameId": "MurkyMasteryTufferfish",
+      "buttonId": "MurkyPufferfishTufferfishTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_murky_pufferfish.png",
+      "sort": 2,
+      "name": "铁甲鱼",
+      "short": "气泡鱼获得法术护甲和伤害",
+      "full": "气泡鱼获得50点法术护甲，并对受到粘液喷射影响的目标造成50%的额外伤害。"
+    },
+    {
+      "nameId": "MurkyLivingtheDream",
+      "buttonId": "MurkyLivingTheDreamTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_murky_trait_spawnegg_var1.png",
+      "sort": 3,
+      "name": "美梦成真",
+      "short": "任务：存活提高法术强度",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：奔波尔霸每存活15秒，法术强度就会提高5%，最多提高25%。该加成在死亡时重置。"
+    },
+    {
+      "nameId": "MurkyBlackLagoon",
+      "buttonId": "MurkySlimeBlackLagoonTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_murky_slime.png",
+      "sort": 1,
+      "name": "黑湖粘液",
+      "short": "扩大粘液喷射的范围",
+      "full": "粘液喷射的范围扩大30%。"
+    },
+    {
+      "nameId": "MurkySlipperyWhenWet",
+      "buttonId": "MurkySafetyBubbleSlipperyWhenWetTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_murky_safetybubble.png",
+      "sort": 2,
+      "name": "湿湿滑滑",
+      "short": "安全泡泡期间提高移动速度，降低冷却时间",
+      "full": "安全泡泡期间的移动速度提高50%，并且可以穿过单位。此外，安全泡泡的冷却时间缩短2秒。"
+    },
+    {
+      "nameId": "MurkyTimetoKrill",
+      "buttonId": "MurkyTimetoKrill",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_slow.png",
+      "sort": 3,
+      "name": "虾戮时间",
+      "short": "普通攻击使敌人减速",
+      "full": "对英雄的普通攻击每秒造成7~~0.04~~点额外伤害，并使目标的移动速度降低7%，持续4秒。该效果最多叠加5次。"
+    },
+    {
+      "nameId": "MurkyHeroicAbilityMarchoftheMurlocs",
+      "buttonId": "MurkyMarchOfTheMurlocs",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_murky_marchofthemurlocs.png",
+      "sort": 1,
+      "name": "鱼人冲锋",
+      "short": "让敌人感受被一群鱼人追着打的感觉",
+      "full": "0.75秒后，奔波尔霸指挥鱼人军团向目标方向冲锋。每个鱼人都会跃向他们找到的第一个敌方英雄或建筑，造成125~~0.04~~点伤害，并使目标减速15%，持续5秒。鱼人对建筑造成50%的伤害。"
+    },
+    {
+      "nameId": "MurkyHeroicAbilityOctoGrab",
+      "buttonId": "MurkyOctoGrab",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_murky_octograb.png",
+      "sort": 2,
+      "name": "章鱼缠绕",
+      "short": "击晕敌方英雄并对其猛戳",
+      "full": "奔波尔霸变得不可阻挡，使目标敌方英雄昏迷，持续3秒，并每秒对其造成1点伤害。"
+    },
+    {
+      "nameId": "MurkyMasteryRejuvenatingBubble",
+      "buttonId": "MurkyRejuvenatingBubbleTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_murky_safetybubble.png",
+      "sort": 1,
+      "name": "恢复泡泡",
+      "short": "安全泡泡恢复生命值",
+      "full": "安全泡泡为奔波尔霸恢复40%的最大生命值。"
+    },
+    {
+      "nameId": "MurkyEggShell",
+      "buttonId": "MurkyEggShell",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_murky_trait_spawnegg.png",
+      "sort": 2,
+      "name": "蛋壳",
+      "short": "从鱼蛋中复活提供护盾",
+      "full": "从鱼人蛋中复活后使奔波尔霸获得一个相当于其最大生命值100%的护盾。施放放置鱼人蛋会将护盾刷新至奔波尔霸当前生命值的35%。"
+    },
+    {
+      "nameId": "MurkyFishTank",
+      "buttonId": "MurkyFishTank",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_murky_fishtank.png",
+      "sort": 3,
+      "name": "鱼缸",
+      "short": "造成伤害同时获得治疗",
+      "full": "奔波尔霸可以从普通攻击和基本技能中恢复生命值，相当于其造成伤害的25%。"
+    },
+    {
+      "nameId": "MurkyToxicBuildup",
+      "buttonId": "MurkyToxicBuildup",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_murky_slime.png",
+      "sort": 1,
+      "name": "毒性物质",
+      "short": "连续的普通攻击施放粘液喷射",
+      "full": "对敌方英雄的每第3次普通攻击免费对其施放一次粘液喷射。"
+    },
+    {
+      "nameId": "MurkyFishOil",
+      "buttonId": "MurkyFishOil",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_murky_pufferfish.png",
+      "sort": 2,
+      "name": "鱼油",
+      "short": "在气泡鱼的位置施放粘液喷射",
+      "full": "气泡鱼在其着陆位置施放粘液喷射。"
+    },
+    {
+      "nameId": "MurkyMasteryWrathOfCod",
+      "buttonId": "MurkyPufferfishWrathOfCodTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_murky_pufferfish_b.png",
+      "sort": 3,
+      "name": "鳕鱼之怒",
+      "short": "提高气泡鱼对英雄的伤害",
+      "full": "被气泡鱼击中的英雄在5秒内受到相当于其最大生命值15%的额外伤害。"
+    },
+    {
+      "nameId": "MurkyMasteryNeverEndingMurlocs",
+      "buttonId": "MurkyMarchOfTheMurlocsNeverEndingMurlocsTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_murky_marchofthemurlocs.png",
+      "sort": 1,
+      "name": "汹涌鱼潮",
+      "short": "鱼人冲锋可以永久引导",
+      "full": "可以永久引导鱼人冲锋，派出无穷无尽的小鱼人。"
+    },
+    {
+      "nameId": "MurkyMasteryAndASharkToo",
+      "buttonId": "MurkyOctoGrabAndASharkTooTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_murky_octograb.png",
+      "sort": 2,
+      "name": "…还有鲨鱼！",
+      "short": "提高章鱼缠绕的伤害",
+      "full": "章鱼缠绕的伤害提高13700%~~0.04~~。"
+    },
+    {
+      "nameId": "MurkyBigTunaKahuna",
+      "buttonId": "MurkyBigTunaKahuna",
+      "abilityType": "Trait",
+      "icon": "storm_ui_ingame_heroselect_btn_murky.png",
+      "sort": 3,
+      "name": "大鱼人",
+      "short": "提高生命值，并延长复活时间",
+      "full": "奔波尔霸的最大生命值和复活时间翻倍。"
+    },
+    {
+      "nameId": "MurkyMakingInky",
+      "buttonId": "MurkyMakingInky",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_murky_slime.png",
+      "sort": 4,
+      "name": "脏兮兮粘乎乎",
+      "short": "缩短粘液喷射的冷却时间",
+      "full": "粘液喷射的冷却时间从4秒缩短至2秒。"
+    }
+  ]
+}

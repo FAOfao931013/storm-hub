@@ -1,0 +1,295 @@
+{
+  "shortName": "tyrande",
+  "heroName": "Tyrande",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "TyrandeHuntersMark",
+      "buttonId": "TyrandeHuntersMark",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tyrande_huntersmark.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "猎人印记",
+      "short": "降低护甲并暴露被标记的目标",
+      "full": "暴露一名非建筑敌人，并降低其15点护甲，持续4秒。<n/><n/>被动：泰兰德的普通攻击可以为自身恢复1%的最大生命值，对有猎人印记效果的目标造成双倍效果。"
+    },
+    {
+      "nameId": "TyrandeLightofElune",
+      "buttonId": "TyrandeLightOfElune",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrande_lightofelune.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "月神之光",
+      "short": "治疗一名盟友英雄",
+      "full": "为一名友方英雄恢复270~~0.04~~点生命值。每当泰兰德以普通攻击命中一名敌人或对一名敌方英雄造成伤害，月神之光的冷却时间就会减少1.5秒。<n/><n/>最多储存2层使用次数。冷却时间结束时补充所有层数。"
+    },
+    {
+      "nameId": "TyrandeSentinelShot",
+      "buttonId": "TyrandeSentinel",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tyrande_sentinel.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "哨兵",
+      "short": "派出一只猫头鹰暴露战场并对敌方英雄造成伤害",
+      "full": "派一只猫头鹰飞越战场显示沿途情况。对击中的第一名敌方英雄造成120~~0.04~~点伤害并使其暴露，持续5秒。如果一名被哨兵暴露的英雄死亡，则刷新该技能的冷却时间。"
+    },
+    {
+      "nameId": "TyrandeLunarFlare",
+      "buttonId": "TyrandeLunarFlare",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tyrande_lunarflare.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "月光术",
+      "short": "对范围内敌人造成伤害并使其昏迷",
+      "full": "0.75秒后，对目标范围内的敌人造成150~~0.04~~点伤害并使其昏迷，持续0.75秒。"
+    },
+    {
+      "nameId": "TyrandeShadowstalk",
+      "buttonId": "TyrandeShadowstalk",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrande_shadowstalk.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "暗影潜行",
+      "short": "治疗并使所有盟友获得潜行",
+      "full": "使所有友方英雄获得潜行，持续10 秒，并恢复他们380~~0.04~~点生命值，在10秒内。在潜行状态下保持静止状态至少1.5秒后进入隐形。"
+    },
+    {
+      "nameId": "TyrandeStarfall",
+      "buttonId": "TyrandeStarfall",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrande_starfall.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "星辰坠落",
+      "short": "对范围内的敌人造成伤害和减速",
+      "full": "每秒对一片区域内的敌人造成92~~0.04~~点伤害，并使敌人减速20%，持续6秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "TyrandeRanger",
+      "buttonId": "TyrandeSentinelRangerTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tyrande_sentinel.png",
+      "sort": 1,
+      "name": "游侠",
+      "short": "哨兵可以穿透并造成额外伤害",
+      "full": "哨兵可以穿透第一个命中的英雄。哨兵的宽度增加25%，并随着飞行距离的提高，造成最多250%的额外伤害。"
+    },
+    {
+      "nameId": "TyrandeMasteryLunarBlaze",
+      "buttonId": "TyrandeLunarFlareLunarBlazeTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_tyrande_lunarflare.png",
+      "sort": 2,
+      "name": "炽热月火",
+      "short": "任务：提高月光术的射程和伤害",
+      "full": "月光术的射程提高30%。<n/><n/>任务：使用月光术击中英雄可使该技能的伤害提高5%，最多达到150%。"
+    },
+    {
+      "nameId": "TyrandeTrueshotAura",
+      "buttonId": "TyrandeHuntersMarkTrueshotAuraTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_tyrande_trueshotaura.png",
+      "sort": 3,
+      "name": "强击光环",
+      "short": "获得攻击伤害，重置猎人印记",
+      "full": "激活后，使周围友方英雄的普通攻击伤害提高40%，持续5秒，重置猎人印记的冷却时间。<n/><n/>被动：普通攻击伤害提高30%。"
+    },
+    {
+      "nameId": "TyrandeLightOfEluneEverlastingLight",
+      "buttonId": "TyrandeLightOfEluneEverlastingLight",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrande_lightofelune.png",
+      "sort": 1,
+      "name": "永续之光",
+      "short": "提高月神之光对多个目标的治疗",
+      "full": "如果月神之光第二层的施法对象与第一次的目标不同，则治疗效果提高80%。"
+    },
+    {
+      "nameId": "TyrandeMarkofMending",
+      "buttonId": "TyrandeHuntersMarkMarkOfMendingTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tyrande_huntersmark.png",
+      "sort": 2,
+      "name": "愈合印记",
+      "short": "攻击标记的敌人治疗附近盟友",
+      "full": "泰兰德对有猎人印记的目标发动普通攻击可为敌人附近的其他友方英雄恢复4%的最大生命值。"
+    },
+    {
+      "nameId": "TyrandeElunesChosen",
+      "buttonId": "TyrandeElunesChosen",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_autoattack_heal.png",
+      "sort": 3,
+      "name": "艾露恩钦定者",
+      "short": "普通攻击治疗目标英雄",
+      "full": "激活后，泰兰德的普通攻击治疗目标友方英雄，相当于造成伤害的175%。持续8秒。"
+    },
+    {
+      "nameId": "TyrandeMoonlitArrows",
+      "buttonId": "TyrandeMoonlitArrows",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrande_lightofelune.png",
+      "sort": 1,
+      "name": "月光箭矢",
+      "short": "提高月神之光的冷却时间缩减",
+      "full": "普通攻击使月神之光的冷却时间额外减少0.75秒。"
+    },
+    {
+      "nameId": "TyrandeKaldoreiResistance",
+      "buttonId": "TyrandeKaldoreiResistance",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrande_lightofelune_a.png",
+      "sort": 2,
+      "name": "卡多雷抗性",
+      "short": "月神之光提供法术护甲",
+      "full": "月神之光给予目标10法术护甲，持续2秒。该效果最多叠加2次。"
+    },
+    {
+      "nameId": "TyrandeHuntressFury",
+      "buttonId": "TyrandeHuntersMarkHuntressFuryTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tyrande_huntersmark.png",
+      "sort": 3,
+      "name": "女猎手之怒",
+      "short": "猎人印记使普通攻击具有弹射效果",
+      "full": "猎人印记的施法范围和持续时间提高25%。泰兰德对有猎人印记的目标进行的普通攻击会弹射到附近的敌方英雄身上。"
+    },
+    {
+      "nameId": "TyrandeHeroicAbilityShadowstalk",
+      "buttonId": "TyrandeShadowstalk",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrande_shadowstalk.png",
+      "sort": 1,
+      "name": "暗影潜行",
+      "short": "治疗并使所有盟友获得潜行",
+      "full": "使所有友方英雄获得潜行，持续10 秒，并恢复他们380~~0.04~~点生命值，在10秒内。在潜行状态下保持静止状态至少1.5秒后进入隐形。"
+    },
+    {
+      "nameId": "TyrandeHeroicAbilityStarfall",
+      "buttonId": "TyrandeStarfall",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrande_starfall.png",
+      "sort": 2,
+      "name": "星辰坠落",
+      "short": "对范围内的敌人造成伤害和减速",
+      "full": "每秒对一片区域内的敌人造成92~~0.04~~点伤害，并使敌人减速20%，持续6秒。"
+    },
+    {
+      "nameId": "TyrandeMasteryLightofEluneQuickeningBlessing",
+      "buttonId": "TyrandeLightOfEluneQuickeningBlessingTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrande_lightofelune.png",
+      "sort": 1,
+      "name": "急速祝福",
+      "short": "月神之光提高移动速度",
+      "full": "获得5%的移动速度。月神之光使目标的移动速度提高20%，持续3秒。"
+    },
+    {
+      "nameId": "TyrandeHarshMoonlight",
+      "buttonId": "TyrandeHarshMoonlight",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tyrande_sentinel.png",
+      "sort": 2,
+      "name": "苛烈月光",
+      "short": "哨兵减速并降低目标的伤害",
+      "full": "哨兵使击中目标减速35%并使其造成的伤害减少35%，持续3秒。"
+    },
+    {
+      "nameId": "TyrandeRangersMark",
+      "buttonId": "TyrandeHuntersMarkRangersMarkTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_tyrande_huntersmark.png",
+      "sort": 3,
+      "name": "游侠印记",
+      "short": "普通攻击可强化猎人印记和月光术",
+      "full": "普通攻击减少猎人印记的冷却时间2秒。对被标记的目标进行普通攻击可使月光术的冷却时间减少4秒。"
+    },
+    {
+      "nameId": "TyrandeCelestialAttunement",
+      "buttonId": "TyrandeLightOfEluneCelestialAttunementTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_tyrande_lightofelune.png",
+      "sort": 1,
+      "name": "星空弦音",
+      "short": "月神之光可解除昏迷、沉默和减速",
+      "full": "月神之光可解除目标的昏迷、沉默和减速效果。"
+    },
+    {
+      "nameId": "TyrandeEmpower",
+      "buttonId": "TyrandeSentinelEmpowerTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_tyrande_sentinel.png",
+      "sort": 2,
+      "name": "强化术",
+      "short": "缩短哨兵的冷却时间，造成百分比伤害",
+      "full": "哨兵的冷却时间缩短3秒。哨兵击中的英雄会受到额外伤害，相当于其最大生命值的6%。"
+    },
+    {
+      "nameId": "TyrandeDarnassianArchery",
+      "buttonId": "TyrandeDarnassianArchery",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_damage.png",
+      "sort": 3,
+      "name": "达纳苏斯箭术",
+      "short": "连续的普通攻击造成更多伤害",
+      "full": "对敌方英雄进行普通攻击时可以获得12%的攻击伤害加成，持续4秒。该效果可以叠加。"
+    },
+    {
+      "nameId": "TyrandeEyesOfTheHuntress",
+      "buttonId": "TyrandeEyesOfTheHuntress",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrande_shadowstalk.png",
+      "sort": 1,
+      "name": "女猎手之眼",
+      "short": "暗影潜行暴露英雄，治疗提高",
+      "full": "暗影潜行使所有敌方英雄暴露10秒，并且治疗效果提高75%。"
+    },
+    {
+      "nameId": "TyrandeMasteryStarfallCelestialWrath",
+      "buttonId": "TyrandeStarfallCelestialWrathTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_tyrande_starfall.png",
+      "sort": 2,
+      "name": "星空之怒",
+      "short": "星辰坠落对英雄施加猎人印记，减速增强",
+      "full": "星辰坠落的减速效果提高至60%，并且该技能会对效果范围内的敌方英雄施加猎人印记。"
+    },
+    {
+      "nameId": "TyrandeShootingStar",
+      "buttonId": "TyrandeShootingStar",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_range.png",
+      "sort": 3,
+      "name": "疾速流星",
+      "short": "普通攻击周期性施放月光术",
+      "full": "普通攻击射程扩大1码。泰兰德的每8次普通攻击都会对她周围一名随机目标免费施放一次月光术，并优先攻击英雄目标。"
+    },
+    {
+      "nameId": "TyrandeIcebladeArrows",
+      "buttonId": "TyrandeIcebladeArrows",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_slow.png",
+      "sort": 4,
+      "name": "冰刃箭矢",
+      "short": "获得攻击速度，减少敌人伤害",
+      "full": "攻击速度提高20%。对敌方英雄进行普通攻击会使他们造成的伤害减少8%，持续2秒。该效果最多叠加5次。"
+    }
+  ]
+}

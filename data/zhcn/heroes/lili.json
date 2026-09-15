@@ -1,0 +1,295 @@
+{
+  "shortName": "lili",
+  "heroName": "LiLi",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "LiLiFastFeet",
+      "buttonId": "LiLiFastFeet",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lili_fastfeet.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "无影步",
+      "short": "被敌人击中后，提高移动速度",
+      "full": "受到伤害后，你的基本技能冷却速度提高50%，并且移动速度提高10%，持续1秒。"
+    },
+    {
+      "nameId": "LiLiHealingBrew",
+      "buttonId": "LiLiHealingBrew",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lili_healingbrew.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "治愈佳酿",
+      "short": "治疗一名附近盟友",
+      "full": "为6码范围内生命值最低的盟友（英雄优先）恢复175~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "LiLiCloudSerpent",
+      "buttonId": "LiLiCloudSerpent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lili_cloudserpent.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "云端翔龙",
+      "short": "召唤一条云端翔龙协助目标盟友",
+      "full": "为一名友方英雄召唤一条云端翔龙，每一秒攻击附近的敌人一次。每次攻击造成26~~0.04~~点伤害并治疗盟友20~~0.04~~点生命，持续8秒。"
+    },
+    {
+      "nameId": "LiLiBlindingWind",
+      "buttonId": "LiLiBlindingWind",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lili_blindingwind.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "炫目之风",
+      "short": "对附近敌人造成伤害、使其减速并致盲",
+      "full": "向距离最近的2名敌人掷出一阵风（英雄优先），造成133~~0.04~~点伤害。被命中的英雄将被致盲并减速15%，持续1.5秒。"
+    },
+    {
+      "nameId": "LiLiJugof1000Cups",
+      "buttonId": "LiLiJugof1000Cups",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lili_jugofathousandcups.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "千杯不倒",
+      "short": "快速治疗附近盟友",
+      "full": "引导最多6秒。每0.25秒使千杯不倒的冷却时间延长2秒，最多延长50秒。并为附近生命值最低的友方英雄恢复75~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "LiLiWaterDragon",
+      "buttonId": "LiLiWaterDragon",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lili_waterdragon.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "深海游龙",
+      "short": "对距离最近的敌方英雄造成伤害并使其大幅减速",
+      "full": "丽丽引导2秒后召唤一条深海游龙，对附近12码范围内距离最近的敌方英雄及其附近所有敌人造成300~~0.04~~点伤害，并使他们的移动速度降低70%，持续4秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "LiLiFreeDrinks",
+      "buttonId": "LiLiFreeDrinks",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lili_healingbrew.png",
+      "sort": 1,
+      "name": "免费饮料",
+      "short": "治愈佳酿治疗低生命值目标所需的消耗降低",
+      "full": "如果治愈佳酿治疗一名生命值低于50%的英雄，其冷却时间缩短1秒，并且返还消耗的法力值。"
+    },
+    {
+      "nameId": "LiLiMasteryCloudSerpentSerpentSidekick",
+      "buttonId": "LiLiSerpentSidekickTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lili_cloudserpent.png",
+      "sort": 2,
+      "name": "翔龙伙伴",
+      "short": "降低云端翔龙的法力消耗及冷却",
+      "full": "当无影步激活时，云端翔龙不再消耗法力值，并且其冷却速度加快75%。"
+    },
+    {
+      "nameId": "LiLiEagerAdventurer",
+      "buttonId": "LiLiEagerAdventurer",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lili_fastfeet.png",
+      "sort": 3,
+      "name": "急切的冒险者",
+      "short": "延长无影步的持续时间",
+      "full": "无影步的持续时间延长150%，并且无影步激活期间法力回复速度提高150%。"
+    },
+    {
+      "nameId": "LiLiWindSerpent",
+      "buttonId": "LiLiWindSerpent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lili_cloudserpent.png",
+      "sort": 1,
+      "name": "风龙",
+      "short": "提高云端翔龙的攻击速度，提升移动速度",
+      "full": "云端祥龙会使其携带者的移动速度提高10%。施放炫目之风会使该移动速度加成提高至20%，持续3秒。<n/><n/>被动：云端翔龙的攻击速度提高25%。"
+    },
+    {
+      "nameId": "LiLiMasteryBlindingWindSurgingWinds",
+      "buttonId": "LiLiSurgingWindsTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lili_blindingwind.png",
+      "sort": 2,
+      "name": "席卷之风",
+      "short": "炫目之风提供法术强度",
+      "full": "如果炫目之风击中2名英雄，则冷却时间缩短2秒，并且丽丽的法术强度提高10%，持续10秒。"
+    },
+    {
+      "nameId": "LiLiMasteryFastFeetSafetySprint",
+      "buttonId": "LiLiSafetySprintTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lili_fastfeet.png",
+      "sort": 3,
+      "name": "安全冲刺",
+      "short": "激活无影步，短时间内提高速度",
+      "full": "激活后获得无影步效果、30点护甲和30%移动速度加成，持续3秒。<n/><n/>被动：无影步激活时，丽丽获得10点护甲。"
+    },
+    {
+      "nameId": "LiLiMasteryHealingBrewTheGoodStuff",
+      "buttonId": "LiLiHealingBrewTheGoodStuffTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lili_healingbrew.png",
+      "sort": 1,
+      "name": "千年老酒",
+      "short": "治愈佳酿还会进行持续治疗",
+      "full": "治愈佳酿在3秒内额外治疗42~~0.04~~点生命值。当无影步激活时，该治疗效果提高100%。"
+    },
+    {
+      "nameId": "LiLiMasteryBlindingWindMassVortex",
+      "buttonId": "LiLiBlindingWindMassVortexTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lili_blindingwind.png",
+      "sort": 2,
+      "name": "超强漩涡",
+      "short": "炫目之风可击中更多目标",
+      "full": "炫目之风击中的敌人数量从2个提高至3个。如果炫目之风击中的3名敌人都是英雄，则伤害提高75%。"
+    },
+    {
+      "nameId": "LiLiLetsGo",
+      "buttonId": "LiLiLetsGo",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_cleanse.png",
+      "sort": 3,
+      "name": "出发！",
+      "short": "激活后治疗盟友，使其不可阻挡",
+      "full": "激活后，为一名友方英雄治疗160~~0.04~~点生命值，并使其不可阻挡，持续1秒。“出发”的冷却时间受无影步影响。<n/><n/>无法对丽丽使用。"
+    },
+    {
+      "nameId": "LiLiHeroicAbilityJugof1000Cups",
+      "buttonId": "LiLiJugof1000Cups",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lili_jugofathousandcups.png",
+      "sort": 1,
+      "name": "千杯不倒",
+      "short": "快速治疗附近盟友",
+      "full": "引导最多6秒。每0.25秒使千杯不倒的冷却时间延长2秒，最多延长50秒。并为附近生命值最低的友方英雄恢复75~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "LiLiHeroicAbilityWaterDragon",
+      "buttonId": "LiLiWaterDragon",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lili_waterdragon.png",
+      "sort": 2,
+      "name": "深海游龙",
+      "short": "对距离最近的敌方英雄造成伤害并使其大幅减速",
+      "full": "丽丽引导2秒后召唤一条深海游龙，对附近12码范围内距离最近的敌方英雄及其附近所有敌人造成300~~0.04~~点伤害，并使他们的移动速度降低70%，持续4秒。"
+    },
+    {
+      "nameId": "LiLiMasteryCloudSerpentLightningSerpent",
+      "buttonId": "LiLiCloudSerpentLightningSerpentTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lili_cloudserpent.png",
+      "sort": 1,
+      "name": "闪电翔龙",
+      "short": "云端翔龙的攻击能够进行弹跳",
+      "full": "云端翔龙的攻击弹跳击中额外2名目标，造成13~~0.04~~点伤害并治疗盟友10~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "LiLiMasteryBlindingWindGaleForce",
+      "buttonId": "LiLiBlindingWindGaleForceTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lili_blindingwind.png",
+      "sort": 2,
+      "name": "狂风之力",
+      "short": "延长炫目之风的致盲持续时间",
+      "full": "炫目之风的致盲持续时间延长0.75秒。丽丽的普通攻击对被致盲的英雄造成的伤害提高100%。"
+    },
+    {
+      "nameId": "LiLiHinderingWinds",
+      "buttonId": "LiLiHinderingWinds",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_lili_blindingwind_a.png",
+      "sort": 3,
+      "name": "妨害之风",
+      "short": "提高炫目之风的减速效果",
+      "full": "炫目之风的减速效果提高至30%，持续时间延长至2秒。"
+    },
+    {
+      "nameId": "LiLiMasteryHealingBrewTwoForOne",
+      "buttonId": "LiLiHealingBrewTwoForOneTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lili_healingbrew.png",
+      "sort": 1,
+      "name": "一酒两用",
+      "short": "治愈佳酿可以治疗两次，但有更长的冷却时间",
+      "full": "使受到治愈佳酿治疗的盟友数提高至2名，但冷却时间延长1秒。"
+    },
+    {
+      "nameId": "LiLiPickMeUp",
+      "buttonId": "LiLiPickMeUp",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_lili_healingbrew_a.png",
+      "sort": 2,
+      "name": "捡我",
+      "short": "治愈佳酿对低生命值的目标治疗效果提高",
+      "full": "如果目标的生命值低于50%，治愈佳酿的治疗效果提高33%。"
+    },
+    {
+      "nameId": "LiLiBlessingsOfYulon",
+      "buttonId": "LiLiBlessingsOfYulon",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_lili_cloudserpent.png",
+      "sort": 3,
+      "name": "玉珑的祝福",
+      "short": "提高云端翔龙的治疗",
+      "full": "云端翔龙将使其携带者受到的治疗效果提高10%，并且每次攻击时额外恢复其0.5%的最大生命值。"
+    },
+    {
+      "nameId": "LiLiMasteryJugof1000CupsJugof1000000Cups",
+      "buttonId": "LiLiJugof1000CupsJugof1000000CupsTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lili_jugofathousandcups.png",
+      "sort": 1,
+      "name": "万杯不醉",
+      "short": "千杯不倒同时治疗两名盟友",
+      "full": "千杯不倒同时治疗两名盟友。"
+    },
+    {
+      "nameId": "LiLiMasteryWaterDragonDoubleDragon",
+      "buttonId": "LiLiWaterDragonDoubleDragonTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_lili_waterdragon.png",
+      "sort": 2,
+      "name": "双龙戏珠",
+      "short": "召唤两条龙",
+      "full": "深海游龙击中一个目标后，将在命中目标的位置召唤另一条龙。"
+    },
+    {
+      "nameId": "LiLiMistweaver",
+      "buttonId": "LiLiMistweaver",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_lili_mistweaver.png",
+      "sort": 3,
+      "name": "织雾",
+      "short": "激活后治疗附近的英雄",
+      "full": "激活后，为附近的友方英雄治疗149~~0.04~~点生命值。普通攻击和云端翔龙的攻击使织雾的冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "LiLiShakeItOff",
+      "buttonId": "LiLiShakeItOffTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_lili_fastfeet.png",
+      "sort": 4,
+      "name": "出入无形",
+      "short": "在瘫痪时获得护甲，强化无影步",
+      "full": "在被击晕、沉默或定身时和之后的2秒内，丽丽获得35点护甲。<n/><n/>被动：无影步的冷却时间刷新速率提高至75%。"
+    }
+  ]
+}

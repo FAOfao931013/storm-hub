@@ -1,0 +1,295 @@
+{
+  "shortName": "yrel",
+  "heroName": "Yrel",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "YrelDivinePurpose",
+      "buttonId": "YrelDivinePurpose",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_yrel_divine_purpose.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "神圣意志",
+      "short": "使下一个基本技能瞬发",
+      "full": "激活后立即充能伊瑞尔的下一个基本技能，且不消耗法力。当伊瑞尔施放终极技能时，神圣意志的冷却时间会重置。<n/><n/>被动：伊瑞尔的基本技能可充能最多1.5秒，逐步提高技能效果，但会使伊瑞尔的移动速度降低25%。"
+    },
+    {
+      "nameId": "YrelVindication",
+      "buttonId": "YrelVindication",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_yrel_vindication.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "辩护之光",
+      "short": "恢复生命值，伤害敌人",
+      "full": "在伊瑞尔周围施放神圣的能量，对附近的敌人造成42~~0.04~~点伤害并为她恢复96~~0.04~~点生命值。<n/><n/>充能该技能可以使其伤害最高提高至140~~0.04~~点，治疗效果最高提高至320~~0.04~~点。"
+    },
+    {
+      "nameId": "YrelRighteousHammerChannel",
+      "buttonId": "YrelRighteousHammer",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_yrel_righteous_hammer.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "正义之锤",
+      "short": "击退并击晕敌人",
+      "full": "挥舞伊瑞尔的锤子，对前方的敌人造成38~~0.04~~点伤害并将其击退。<n/><n/>充能该技能可以增加击退的距离和伤害，伤害最高可达125~~0.04~~点。敌人若是被充满能量的该技能击中，将昏迷0.75秒。"
+    },
+    {
+      "nameId": "YrelAvengingWrath",
+      "buttonId": "YrelAvengingWrath",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_yrel_avenging_wrath.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "复仇之怒",
+      "short": "跃向一个区域，造成伤害并减速敌人",
+      "full": "跃向一个区域，对范围内的敌人造成225~~0.04~~点伤害，使其减速50%，持续1秒。<n/><n/>充能该技能可以提高其射程。"
+    },
+    {
+      "nameId": "YrelArdentDefender",
+      "buttonId": "YrelArdentDefender",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_yrel_ardent_defender.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "炽热防御者",
+      "short": "将受到的伤害转换成生命值",
+      "full": "伊瑞尔被一个屏障环绕，持续3秒，吸收受到的所有伤害并将50%受到的伤害转化为治疗。"
+    },
+    {
+      "nameId": "YrelSacredGround",
+      "buttonId": "YrelSacredGround",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_yrel_sacred_ground.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "圣洁之地",
+      "short": "伊瑞尔在一个区域内获得护甲",
+      "full": "伊瑞尔将她周围的地面圣化，获得50点护甲，直至其离开该区域。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "YrelVindicationLightOfKarabor",
+      "buttonId": "YrelVindicationLightOfKarabor",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_yrel_vindication.png",
+      "sort": 1,
+      "name": "卡拉波之光",
+      "short": "提高辩护之光的范围和治疗效果",
+      "full": "辩护之光的范围扩大15%。击中一名敌方英雄，则辩护之光的治疗量提高45%。若击中多名英雄，则治疗量提高90%。"
+    },
+    {
+      "nameId": "YrelDauntless",
+      "buttonId": "YrelDauntless",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_abilitytalent_armor.png",
+      "sort": 2,
+      "name": "坚定",
+      "short": "基本技能提供物理护甲",
+      "full": "施放基本技能给予伊瑞尔35点物理护甲，持续2.5秒。"
+    },
+    {
+      "nameId": "YrelMaraadsInsight",
+      "buttonId": "YrelMaraadsInsight",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_heal.png",
+      "sort": 3,
+      "name": "玛尔拉德的洞察",
+      "short": "施放基本技能后的攻击具有治疗效果",
+      "full": "对敌方英雄使用基本技能造成伤害后，伊瑞尔的下一次普通攻击恢复其160~~0.04~~点生命。"
+    },
+    {
+      "nameId": "YrelAvengingWrathAegisOfLight",
+      "buttonId": "YrelAvengingWrathAegisOfLight",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_yrel_avenging_wrath.png",
+      "sort": 1,
+      "name": "圣光护盾",
+      "short": "复仇之怒给予盟友护甲",
+      "full": "落地时，复仇之怒给予附近的友方英雄40点护甲，持续5秒。"
+    },
+    {
+      "nameId": "YrelDivinePurposeGiftOfTheNaaru",
+      "buttonId": "YrelDivinePurposeGiftOfTheNaaru",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_yrel_divine_purpose.png",
+      "sort": 2,
+      "name": "纳鲁的赐福",
+      "short": "神圣意志治疗一名盟友",
+      "full": "使用神圣意志可以为伊瑞尔附近生命值最低的友方英雄恢复275~~0.04~~点生命。"
+    },
+    {
+      "nameId": "YrelHandOfFreedom",
+      "buttonId": "YrelHandOfFreedom",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_yrel_hand_of_freedom.png",
+      "sort": 3,
+      "name": "自由之手",
+      "short": "给予移动速度加成，移除减速、定身效果",
+      "full": "给予一名友方英雄30%移动速度加成，持续3秒，并且移除其减速和定身效果。"
+    },
+    {
+      "nameId": "YrelRighteousHammerRighteousMomentum",
+      "buttonId": "YrelRighteousHammerRighteousMomentum",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_yrel_righteous_hammer.png",
+      "sort": 1,
+      "name": "正义势能",
+      "short": "正义之锤提高移动速度",
+      "full": "获得5%的移动速度。伊瑞尔在引导正义之锤期间不再会被减速，并获得四倍该加成效果。"
+    },
+    {
+      "nameId": "YrelAvengingWrathHolyAvenger",
+      "buttonId": "YrelAvengingWrathHolyAvenger",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_yrel_avenging_wrath.png",
+      "sort": 2,
+      "name": "神圣复仇者",
+      "short": "充满能量的复仇之怒击中敌人可缩短其冷却时间",
+      "full": "使用充满能量的复仇之怒击中敌方英雄可造成25%的额外伤害，并使该技能的冷却时间缩短至1秒。"
+    },
+    {
+      "nameId": "YrelDivineSteed",
+      "buttonId": "YrelDivineSteed",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_yrel_divine_steed.png",
+      "sort": 3,
+      "name": "神圣马驹",
+      "short": "召唤坐骑瞬发",
+      "full": "召唤坐骑瞬发并且给予60%移动速度加成，该效果会在3秒内逐步递减。"
+    },
+    {
+      "nameId": "YrelArdentDefender",
+      "buttonId": "YrelArdentDefender",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_yrel_ardent_defender.png",
+      "sort": 1,
+      "name": "炽热防御者",
+      "short": "将受到的伤害转换成生命值",
+      "full": "伊瑞尔被一个屏障环绕，持续3秒，吸收受到的所有伤害并将50%受到的伤害转化为治疗。"
+    },
+    {
+      "nameId": "YrelSacredGround",
+      "buttonId": "YrelSacredGround",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_yrel_sacred_ground.png",
+      "sort": 2,
+      "name": "圣洁之地",
+      "short": "伊瑞尔在一个区域内获得护甲",
+      "full": "伊瑞尔将她周围的地面圣化，获得50点护甲，直至其离开该区域。"
+    },
+    {
+      "nameId": "YrelVindicationAldorPeacekeeper",
+      "buttonId": "YrelVindicationAldorPeacekeeper",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_yrel_vindication.png",
+      "sort": 1,
+      "name": "奥尔多卫士",
+      "short": "辩护之光可以减少敌人的伤害",
+      "full": "被充满能量的辩护之光击中的敌方英雄，其伤害能力降低40%，持续3秒。"
+    },
+    {
+      "nameId": "YrelAvengingWrathRepentance",
+      "buttonId": "YrelAvengingWrathRepentance",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_yrel_avenging_wrath.png",
+      "sort": 2,
+      "name": "忏悔",
+      "short": "提高复仇之怒的减速效果，延长持续时间",
+      "full": "复仇之怒的减速效果提高25%，持续时间延长0.75秒。"
+    },
+    {
+      "nameId": "YrelVelensChosen",
+      "buttonId": "YrelVelensChosen",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_yrel_velens_chosen.png",
+      "sort": 3,
+      "name": "维伦的恩泽",
+      "short": "基本技能可以给予法术强度",
+      "full": "使用充满能量的基本技能击中敌方英雄给予10%法术强度，持续10秒，最高可达30%。"
+    },
+    {
+      "nameId": "YrelRighteousHammerTemplarsVerdict",
+      "buttonId": "YrelRighteousHammerTemplarsVerdict",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_yrel_righteous_hammer.png",
+      "sort": 1,
+      "name": "圣殿骑士的裁决",
+      "short": "正义之锤削减护甲并造成百分比伤害",
+      "full": "正义之锤削减被击中的敌方英雄15点护甲，持续4秒，并造成相当于其最大生命值6%的额外伤害。"
+    },
+    {
+      "nameId": "YrelDivinePurposeDivineFavor",
+      "buttonId": "YrelDivinePurposeDivineFavor",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_yrel_divine_purpose.png",
+      "sort": 2,
+      "name": "神恩术",
+      "short": "基本技能缩短神圣意志的冷却时间",
+      "full": "施放基本技能可以使神圣意志的冷却时间缩短2.5秒。"
+    },
+    {
+      "nameId": "YrelHolyWrath",
+      "buttonId": "YrelHolyWrath",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_aoe.png",
+      "sort": 3,
+      "name": "神圣愤怒",
+      "short": "施放基本技能后的攻击具有溅射效果",
+      "full": "施放基本技能后，伊瑞尔的下一次普通攻击对目标周围造成额外35%溅射伤害。"
+    },
+    {
+      "nameId": "YrelArdentDefenderWordOfGlory",
+      "buttonId": "YrelArdentDefenderWordOfGlory",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_yrel_ardent_defender.png",
+      "sort": 1,
+      "name": "荣耀圣令",
+      "short": "炽热防御者的转化率提高，并治疗一定范围内的盟友",
+      "full": "使伊瑞尔所受伤害转化为治疗的比率从50%提高至75%。炽热防御者还会治疗附近的友方英雄，数值相当于伊瑞尔受到治疗量的100%。"
+    },
+    {
+      "nameId": "YrelSacredGroundHallowedGround",
+      "buttonId": "YrelSacredGroundHallowedGround",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_yrel_sacred_ground.png",
+      "sort": 2,
+      "name": "高圣之地",
+      "short": "复仇之怒移动圣洁之地",
+      "full": "在圣洁之地范围内施放复仇之怒，可以将圣洁之地移动到伊瑞尔的落地位置。"
+    },
+    {
+      "nameId": "YrelBubbleHearth",
+      "buttonId": "YrelBubbleHearth",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_yrel_bubble_hearth.png",
+      "sort": 3,
+      "name": "无敌炉石",
+      "short": "激活后施放无敌炉石",
+      "full": "1秒后，伊瑞尔进入无敌状态并使用炉石。无法被取消。"
+    },
+    {
+      "nameId": "YrelSeraphim",
+      "buttonId": "YrelSeraphim",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_yrel_seraphim.png",
+      "sort": 4,
+      "name": "炽天使",
+      "short": "激活后变得不可阻挡",
+      "full": "激活后不可阻挡，持续2秒。"
+    }
+  ]
+}

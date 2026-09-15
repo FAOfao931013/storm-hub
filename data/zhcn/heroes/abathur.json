@@ -1,0 +1,304 @@
+{
+  "shortName": "abathur",
+  "heroName": "Abathur",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "AbathurSpawnLocusts",
+      "buttonId": "AbathurLocustStrain",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_abathur_spawnlocust.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "蝗虫变种",
+      "short": "生成蝗虫攻击最近的路线",
+      "full": "每15秒生成一只蝗虫攻击最近的线路。蝗虫持续16秒，拥有350~~0.04~~点生命值，每次普通攻击造成46~~0.04~~点伤害，对敌方建筑造成25%加成伤害。"
+    },
+    {
+      "nameId": "AbathurSymbiote",
+      "buttonId": "AbathurSymbiote",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_abathur_symbiote.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "共生体",
+      "short": "协助盟友，获得新技能",
+      "full": "孵化一只共生体，并附在目标盟友或建筑上。激活时，阿巴瑟控制共生体并获得新技能。共生体可以从附近敌人的死亡中获得经验值。"
+    },
+    {
+      "nameId": "AbathurToxicNest",
+      "buttonId": "AbathurToxicNest",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_abathur_toxicnest.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "剧毒巢穴",
+      "short": "生成一个地雷",
+      "full": "在目标区域生成一个类似地雷的巢穴，在短暂的筑巢时间后激活。对触碰到它的敌人造成153~~0.04~~点伤害，并使敌人暴露4秒。巢穴持续90秒。<n/><n/>最多储存3次使用次数。"
+    },
+    {
+      "nameId": "AbathurEvolveMonstrosity",
+      "buttonId": "AbathurEvolveMonstrosityHotbar",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_abathur_evolvemonstrosity.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "进化畸兽",
+      "short": "小兵或蝗虫变为一只强大的畸兽",
+      "full": "将友方小兵或蝗虫变成一只畸兽。畸兽附近的敌方小兵或雇佣兵死亡时，它的生命值提高2%，普通攻击伤害提高2%，最多提高40次。畸兽可享受甲壳硬化的治疗效果，并且每80秒可以使用一次潜地，移动到一个可见位置。<n/><n/>阿巴瑟可以对畸兽使用共生体来控制它，并获得共生体通常的好处。重新使用该技能会自动对畸兽使用共生体。"
+    },
+    {
+      "nameId": "AbathurUltimateEvolution",
+      "buttonId": "AbathurUltimateEvolution",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_abathur_ultimateevolution.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "终极进化",
+      "short": "复制目标友方英雄并控制他",
+      "full": "复制并控制目标友方英雄，持续20秒。阿巴瑟已经改进了克隆体，使其法术强度提高20%，攻击伤害提高20%，移动速度提高10%。无法使用他们的终极技能。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "HearthstoneNoMana",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "AbathurMasteryPressurizedGlands",
+      "buttonId": "AbathurSymbiotePressurizedGlandsTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_abathur_spikeburst.png",
+      "sort": 1,
+      "name": "加压腺体",
+      "short": "增加尖刺喷射的范围并降低冷却时间",
+      "full": "使共生体的尖刺喷射的范围扩大25%，并使冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "AbathurMasteryEnvenomedNestsToxicNest",
+      "buttonId": "AbathurToxicNestEnvenomedNestTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_abathur_toxicnest.png",
+      "sort": 2,
+      "name": "毒害巢穴",
+      "short": "剧毒巢穴造成额外伤害，削减护甲",
+      "full": "剧毒巢穴在3秒内额外造成75%伤害，削减被命中的敌方英雄10点护甲，持续4秒。"
+    },
+    {
+      "nameId": "AbathurReinforcedCarapace",
+      "buttonId": "AbathurReinforcedCarapaceTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_abathur_carapace.png",
+      "sort": 3,
+      "name": "强化甲壳",
+      "short": "提高甲壳硬化的护盾值",
+      "full": "甲壳硬化的护盾值提高40%。"
+    },
+    {
+      "nameId": "AbathurCombatStyleSurvivalInstincts",
+      "buttonId": "AbathurLocustStrainSurvivalInstinctsTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_abathur_spawnlocust.png",
+      "sort": 4,
+      "name": "生存本能",
+      "short": "提高蝗虫的生命值和伤害",
+      "full": "蝗虫的生命值提高100%，伤害提高60%。"
+    },
+    {
+      "nameId": "AbathurSymbioteAdrenalOverload",
+      "buttonId": "AbathurSymbioteAdrenalOverloadTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_abathur_symbiote.png",
+      "sort": 1,
+      "name": "腺体过载",
+      "short": "共生体宿主的攻击速度提高",
+      "full": "共生体宿主英雄的攻击速度提高25%。"
+    },
+    {
+      "nameId": "AbathurMasteryNeedlespine",
+      "buttonId": "AbathurSymbioteNeedlespineTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_abathur_stab.png",
+      "sort": 2,
+      "name": "尖刺之脊",
+      "short": "刺击的伤害和施放距离提高",
+      "full": "共生体刺击的伤害和施放距离提高20%。"
+    },
+    {
+      "nameId": "AbathurMasteryProlificDispersal",
+      "buttonId": "AbathurToxicNestProlificDispersalTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_abathur_toxicnest.png",
+      "sort": 3,
+      "name": "散播繁殖",
+      "short": "增加剧毒巢穴的使用次数和持续时间",
+      "full": "剧毒巢穴的持续时间增加45秒，冷却时间缩短2秒，并增加2次使用次数。"
+    },
+    {
+      "nameId": "AbathurMasteryVileNestsToxicNest",
+      "buttonId": "AbathurToxicNestVileNestTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_abathur_toxicnest.png",
+      "sort": 1,
+      "name": "邪恶巢穴",
+      "short": "剧毒巢穴使敌人减速",
+      "full": "剧毒巢穴使敌人移动速度降低40%，持续2.5秒。"
+    },
+    {
+      "nameId": "AbathurSymbioteCarapaceNetworkedCarapace",
+      "buttonId": "AbathurSymbioteCarapaceNetworkedCarapaceTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_abathur_carapace.png",
+      "sort": 2,
+      "name": "连锁甲壳",
+      "short": "甲壳硬化为附近所有盟友添加护盾",
+      "full": "使用共生体的甲壳硬化还会使附近所有友方英雄、小兵和雇佣兵获得未经过天赋加强的护盾效果"
+    },
+    {
+      "nameId": "GenericTalentCalldownMULE",
+      "buttonId": "GenericCalldownMule",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_mule.png",
+      "sort": 3,
+      "name": "轨道空投：矿骡",
+      "short": "激活后可以修理建筑",
+      "full": "激活后召唤一个矿骡，每次修理一个目标点附近的建筑，持续40秒，每1秒修复90点生命值。"
+    },
+    {
+      "nameId": "AbathurHeroicAbilityUltimateEvolution",
+      "buttonId": "AbathurUltimateEvolution",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_abathur_ultimateevolution.png",
+      "sort": 1,
+      "name": "终极进化",
+      "short": "复制目标友方英雄并控制他",
+      "full": "复制并控制目标友方英雄，持续20秒。阿巴瑟已经改进了克隆体，使其法术强度提高20%，攻击伤害提高20%，移动速度提高10%。无法使用他们的终极技能。"
+    },
+    {
+      "nameId": "AbathurHeroicAbilityEvolveMonstrosity",
+      "buttonId": "AbathurEvolveMonstrosityHotbar",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_abathur_evolvemonstrosity.png",
+      "sort": 2,
+      "name": "进化畸兽",
+      "short": "小兵或蝗虫变为一只强大的畸兽",
+      "full": "将友方小兵或蝗虫变成一只畸兽。畸兽附近的敌方小兵或雇佣兵死亡时，它的生命值提高2%，普通攻击伤害提高2%，最多提高40次。畸兽可享受甲壳硬化的治疗效果，并且每80秒可以使用一次潜地，移动到一个可见位置。<n/><n/>阿巴瑟可以对畸兽使用共生体来控制它，并获得共生体通常的好处。重新使用该技能会自动对畸兽使用共生体。"
+    },
+    {
+      "nameId": "AbathurMasterySpatialEfficiency",
+      "buttonId": "AbathurSymbioteSpatialEfficiencyTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_abathur_stab.png",
+      "sort": 1,
+      "name": "腔体进化",
+      "short": "额外增加一次刺击的使用次数",
+      "full": "共生体额外增加1次刺击的使用次数，并且冷却时间缩短0.5秒。"
+    },
+    {
+      "nameId": "AbathurSymbioteSpikeBurstSomaTransference",
+      "buttonId": "AbathurSymbioteSpikeBurstSomaTransferenceTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_abathur_spikeburst.png",
+      "sort": 2,
+      "name": "细胞转移",
+      "short": "尖刺喷射击中的每个英雄目标将为宿主治疗",
+      "full": "共生体的尖刺喷射每击中一个敌方英雄就会为其宿主治疗64~~0.04~~点生命值。"
+    },
+    {
+      "nameId": "AbathurCombatStyleBombardStrain",
+      "buttonId": "AbathurLocustStrainBombardStrainTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_abathur_spawnlocust.png",
+      "sort": 3,
+      "name": "轰击变种",
+      "short": "蝗虫可以远程攻击，持续时间提高",
+      "full": "蝗虫的普通攻击变为远程攻城攻击，并且持续时间延长75%。"
+    },
+    {
+      "nameId": "AbathurMasteryEnvenomedSpikes",
+      "buttonId": "AbathurSymbioteEnvenomedSpikesTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_abathur_spikeburst.png",
+      "sort": 1,
+      "name": "剧毒尖刺",
+      "short": "尖刺喷射降低敌人的移动速度",
+      "full": "阿巴瑟的共生体的尖刺喷射技能还会使敌人的移动速度降低40%，持续2秒。"
+    },
+    {
+      "nameId": "AbathurMasteryAdrenalineBoost",
+      "buttonId": "AbathurSymbioteAdrenalineBoostTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_abathur_carapace.png",
+      "sort": 2,
+      "name": "肾上腺激素",
+      "short": "甲壳硬化提高移动速度",
+      "full": "共生体的甲壳硬化还能够使目标的移动速度提高40%，持续3.5秒。"
+    },
+    {
+      "nameId": "AbathurVolatileMutation",
+      "buttonId": "AbathurVolatileMutationTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_abathur_volatilemutation.png",
+      "sort": 3,
+      "name": "猛烈突变",
+      "short": "终极技能召唤的单位会辐射伤害",
+      "full": "终极进化产生的克隆体和畸兽每3秒以及死亡时对附近敌人造成137~~0.04~~点伤害。击中敌方英雄可以治疗克隆体或畸兽，恢复相当于所造成伤害100%的生命值。"
+    },
+    {
+      "nameId": "AbathurCombatStyleLocustBrood",
+      "buttonId": "AbathurLocustSwarm",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_abathur_spawnlocust.png",
+      "sort": 4,
+      "name": "蝗虫大军",
+      "short": "孵化一组蝗虫",
+      "full": "激活后在附近孵化3只蝗虫。"
+    },
+    {
+      "nameId": "AbathurUltimateEvolutionEvolutionaryLink",
+      "buttonId": "AbathurUltimateEvolutionEvolutionaryLinkTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_abathur_ultimateevolution.png",
+      "sort": 1,
+      "name": "进化链条",
+      "short": "终极进化目标获得一个护盾",
+      "full": "使终极进化的持续时间提高50%。只要终极进化仍然存活，克隆的初始目标获得一个相当于其最大生命值35%的护盾。每5秒刷新一次。"
+    },
+    {
+      "nameId": "AbathurMasteryEvolutionComplete",
+      "buttonId": "AbathurMonstrosityEvolutionCompleteTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_abathur_evolvemonstrosity.png",
+      "sort": 2,
+      "name": "进化完成",
+      "short": "畸兽获得攻击伤害",
+      "full": "畸兽的普通攻击伤害提高100%。"
+    },
+    {
+      "nameId": "AbathurSymbioteHivemind",
+      "buttonId": "AbathurSymbioteHivemindTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_abathur_symbiote.png",
+      "sort": 3,
+      "name": "主巢心智",
+      "short": "在两个目标身上创造共生体",
+      "full": "共生体会在一名附近友方英雄身上创造一个额外的共生体。该共生体会模仿第一个共生体的行为，但只能造成一半的伤害，获得一半的护盾。"
+    },
+    {
+      "nameId": "AbathurMasteryLocustMaster",
+      "buttonId": "AbathurLocustMasterHotbar",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_abathur_locustnest.png",
+      "sort": 4,
+      "name": "蝗虫巢穴",
+      "short": "创造蝗虫巢穴",
+      "full": "激活后制造一个可以不断孵化蝗虫的巢穴。同时只能有一个活动的蝗虫巢穴。"
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "shortName": "malthael",
+  "heroName": "Malthael",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "MalthaelReapersMark",
+      "buttonId": "MalthaelReapersMark",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_malthael_reapersmark.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "死神印记",
+      "short": "普通攻击可顺劈，施加死神印记",
+      "full": "普通攻击顺劈马萨伊尔前方区域，对非建筑目标施加死神印记，持续4秒。被标记的敌人将会暴露，并且每1秒受到相当于其最大生命值2%的伤害。"
+    },
+    {
+      "nameId": "MalthaelSoulRip",
+      "buttonId": "MalthaelSoulRip",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malthael_soulrip.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "夺魂",
+      "short": "对被标记的敌人造成伤害，恢复生命",
+      "full": "从附近有死神印记的敌人身上抽取灵魂，造成100~~0.04~~点伤害，每击中一个目标就为马萨伊尔治疗25~~0.04~~点生命值。英雄目标额外治疗马萨伊尔相当于敌方英雄最大生命值4%的生命。"
+    },
+    {
+      "nameId": "MalthaelWraithStrike",
+      "buttonId": "MalthaelWraithStrike",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malthael_wraithstrike.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "怨鬼扑杀",
+      "short": "传送到被标记的目标身边",
+      "full": "立即传送到一个身上有死神印记的敌人身边，造成59~~0.04~~点伤害，并刷新死神印记。"
+    },
+    {
+      "nameId": "MalthaelDeathShroud",
+      "buttonId": "MalthaelDeathShroud",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malthael_deathshroud.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "死亡笼罩",
+      "short": "释放一股能量，施加死神印记",
+      "full": "0.25秒后，释放一股黑暗迷雾，对击中的敌人施加死神印记。"
+    },
+    {
+      "nameId": "MalthaelTormentedSouls",
+      "buttonId": "MalthaelTormentedSouls",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malthael_tormentedsoul.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "折磨之魂",
+      "short": "对附近的敌人施加死神印记",
+      "full": "释放一波灵魂，持续对附近的敌人施加死神印记，持续4秒。<n/><n/>激活折磨之魂会重置怨鬼扑杀的冷却时间，并且激活时怨鬼扑杀不消耗法力值，冷却时间缩短至2秒。"
+    },
+    {
+      "nameId": "MalthaelLastRites",
+      "buttonId": "MalthaelLastRites",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malthael_lastrites.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "断魂仪式",
+      "short": "任务：对一名英雄造成伤害，伤害量取决于其损失的生命值",
+      "full": "宣判一名敌方英雄的死亡，在2秒后，造成相当于其已损失生命值50%的伤害。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：敌人若在断魂仪式开始执行一直到其造成伤害的1.5秒内被杀死，可以永久缩短断魂仪式的冷却时间5秒，最多缩短至20秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "MalthaelDeathsReach",
+      "buttonId": "MalthaelDeathsReach",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malthael_wraithstrike.png",
+      "sort": 1,
+      "name": "死亡延伸",
+      "short": "提高怨鬼扑杀的距离",
+      "full": "怨鬼扑杀的距离延长35%。"
+    },
+    {
+      "nameId": "MalthaelOnAPaleHorse",
+      "buttonId": "MalthaelOnAPaleHorse",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_malthael_onpalehorse.png",
+      "sort": 2,
+      "name": "死神驾到",
+      "short": "在坐骑上移动速度提高",
+      "full": "在坐骑上移动速度额外提高20%。"
+    },
+    {
+      "nameId": "MalthaelFearTheReaper",
+      "buttonId": "MalthaelFearTheReaper",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_malthael_fearthereaper.png",
+      "sort": 3,
+      "name": "惧怕夺魂者",
+      "short": "激活后提高移动速度",
+      "full": "激活后移动速度提高25%，并且可以穿过其他单位，持续4秒。"
+    },
+    {
+      "nameId": "MalthaelDieAlone",
+      "buttonId": "MalthaelDieAlone",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malthael_soulrip.png",
+      "sort": 1,
+      "name": "孤独死亡",
+      "short": "提高夺魂的单体目标伤害",
+      "full": "如果夺魂只击中1名英雄，那么伤害提高50%。"
+    },
+    {
+      "nameId": "MalthaelThrowingShade",
+      "buttonId": "MalthaelThrowingShade",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malthael_deathshroud.png",
+      "sort": 2,
+      "name": "死亡投影",
+      "short": "提高死亡笼罩的使用范围，缩短冷却时间",
+      "full": "死亡笼罩的使用范围增加33%，冷却时间缩短3秒，法力值消耗从50点减少至30点。<n/><n/>死亡笼罩的第一段攻击可以对非建筑敌人造成相当于最大生命值2%的伤害。"
+    },
+    {
+      "nameId": "MalthaelBlackHarvest",
+      "buttonId": "MalthaelBlackHarvest",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_malthael_reapersmark.png",
+      "sort": 3,
+      "name": "黑暗收割",
+      "short": "任务：延长死神印记的持续时间",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：对英雄施加的死神印记总共持续150秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：死神印记的持续时间永久延长2秒。"
+    },
+    {
+      "nameId": "MalthaelColdHand",
+      "buttonId": "MalthaelColdHand",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malthael_soulrip.png",
+      "sort": 1,
+      "name": "冰冷之手",
+      "short": "夺魂附加减速效果",
+      "full": "夺魂使敌人减速20%，持续2.5秒。"
+    },
+    {
+      "nameId": "MalthaelMassacre",
+      "buttonId": "MalthaelMassacre",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malthael_wraithstrike.png",
+      "sort": 2,
+      "name": "屠杀",
+      "short": "怨鬼扑杀击中一片区域",
+      "full": "怨鬼扑杀对目标附近的敌人造成伤害，并施加死神印记。"
+    },
+    {
+      "nameId": "MalthaelTouchOfDeath",
+      "buttonId": "MalthaelTouchOfDeath",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_malthael_touchofdeath.png",
+      "sort": 3,
+      "name": "死亡之触",
+      "short": "激活后降低敌人受到的治疗",
+      "full": "激活后，身上有死神印记的英雄获得的治疗效果降低50%，持续4秒。"
+    },
+    {
+      "nameId": "MalthaelTormentedSouls",
+      "buttonId": "MalthaelTormentedSouls",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malthael_tormentedsoul.png",
+      "sort": 1,
+      "name": "折磨之魂",
+      "short": "对附近的敌人施加死神印记",
+      "full": "释放一波灵魂，持续对附近的敌人施加死神印记，持续4秒。<n/><n/>激活折磨之魂会重置怨鬼扑杀的冷却时间，并且激活时怨鬼扑杀不消耗法力值，冷却时间缩短至2秒。"
+    },
+    {
+      "nameId": "MalthaelLastRites",
+      "buttonId": "MalthaelLastRites",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malthael_lastrites.png",
+      "sort": 2,
+      "name": "断魂仪式",
+      "short": "任务：对一名英雄造成伤害，伤害量取决于其损失的生命值",
+      "full": "宣判一名敌方英雄的死亡，在2秒后，造成相当于其已损失生命值50%的伤害。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：敌人若在断魂仪式开始执行一直到其造成伤害的1.5秒内被杀死，可以永久缩短断魂仪式的冷却时间5秒，最多缩短至20秒。"
+    },
+    {
+      "nameId": "MalthaelSoulSiphon",
+      "buttonId": "MalthaelSoulSiphon",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malthael_soulrip.png",
+      "sort": 1,
+      "name": "灵魂虹吸",
+      "short": "提高夺魂的治疗效果",
+      "full": "夺魂在英雄身上获得的治疗加成提高至该英雄最大生命值的4.75%。"
+    },
+    {
+      "nameId": "MalthaelEtherealExistence",
+      "buttonId": "MalthaelEtherealExistence",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_malthael_reapersmark.png",
+      "sort": 2,
+      "name": "虚幻之躯",
+      "short": "被标记的目标使你获得物理护甲",
+      "full": "每有1名敌方英雄受到死神印记影响，获得10点物理护甲，最多30点。"
+    },
+    {
+      "nameId": "MalthaelInevitableEnd",
+      "buttonId": "MalthaelInevitableEnd",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_malthael_inevitableend.png",
+      "sort": 3,
+      "name": "在劫难逃",
+      "short": "激活后变得不可阻挡，移除印记",
+      "full": "激活后变得不可阻挡，持续2秒，但会移除所有激活的死神印记。"
+    },
+    {
+      "nameId": "MalthaelShroudOfWisdom",
+      "buttonId": "MalthaelShroudOfWisdom",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_malthael_shroudofwisdom.png",
+      "sort": 4,
+      "name": "智慧帷幕",
+      "short": "激活后获得法术护甲",
+      "full": "2秒后，获得50点法术护甲，持续4秒。"
+    },
+    {
+      "nameId": "MalthaelSoulCollector",
+      "buttonId": "MalthaelSoulCollector",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_malthael_soulrip.png",
+      "sort": 1,
+      "name": "集魂者",
+      "short": "提高夺魂的距离，缩短冷却时间",
+      "full": "夺魂的冷却时间缩短0.5秒，距离延长25%。"
+    },
+    {
+      "nameId": "MalthaelMortality",
+      "buttonId": "MalthaelMortality",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_malthael_wraithstrike.png",
+      "sort": 2,
+      "name": "震魂摄魄",
+      "short": "怨鬼扑杀对英雄造成额外伤害",
+      "full": "怨鬼扑杀对英雄造成伤害时，造成相当于该英雄最大生命值8%的额外伤害。"
+    },
+    {
+      "nameId": "MalthaelMementoMori",
+      "buttonId": "MalthaelMementoMori",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_malthael_reapersmark.png",
+      "sort": 3,
+      "name": "死亡警示",
+      "short": "死神印记的持续伤害提高",
+      "full": "死神印记在敌人身上持续时间超过4秒后，伤害提高60%。"
+    },
+    {
+      "nameId": "MalthaelReaperOfSouls",
+      "buttonId": "MalthaelReaperOfSouls",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malthael_tormentedsoul.png",
+      "sort": 1,
+      "name": "夺魂之镰",
+      "short": "延长折磨之魂的持续时间",
+      "full": "折磨之魂的持续时间延长至6秒，折磨之魂激活时，击杀英雄会重置持续时间。<n/><n/>如果折磨之魂的范围内存在2名或以上敌方英雄，该技能的剩余持续时间不会减少。"
+    },
+    {
+      "nameId": "MalthaelAngelOfDeath",
+      "buttonId": "MalthaelAngelOfDeath",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_malthael_lastrites.png",
+      "sort": 2,
+      "name": "死亡天使",
+      "short": "断魂仪式附加治疗效果",
+      "full": "断魂仪式治疗马萨伊尔，数值相当于造成伤害的100%，并且其当前和后续的冷却时间缩短加成效果翻倍。"
+    },
+    {
+      "nameId": "MalthaelFinalCurtain",
+      "buttonId": "MalthaelFinalCurtain",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_malthael_deathshroud.png",
+      "sort": 3,
+      "name": "谢幕演出",
+      "short": "死亡笼罩留下一条轨迹",
+      "full": "死亡笼罩留下一条轨迹，持续4秒，对范围内的敌人施加死神印记。"
+    },
+    {
+      "nameId": "MalthaelNoOneCanStopDeath",
+      "buttonId": "MalthaelNoOneCanStopDeath",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_malthael_noonecanstopdeath.png",
+      "sort": 4,
+      "name": "没人能阻止死亡",
+      "short": "激活后复活",
+      "full": "死亡后激活可立即在风暴大厅复活，但马萨伊尔下次复活时间延长25%。"
+    }
+  ]
+}

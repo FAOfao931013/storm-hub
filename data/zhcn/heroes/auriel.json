@@ -1,0 +1,295 @@
+{
+  "shortName": "auriel",
+  "heroName": "Auriel",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "AurielBestowHope",
+      "buttonId": "AurielBestowHope",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_auriel_bestowhope.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "希望恩赐",
+      "short": "受到恩赐的盟友的伤害提供能量",
+      "full": "被动：奥莉尔对英雄造成伤害的70%以及对非英雄单位造成伤害的35%储存为能量。<n/><n/>用希望的力量赐福一名友方英雄。当该英雄在奥莉尔附近时，其对英雄造成伤害的30%和对非英雄造成伤害的10%转化为奥莉尔的能量。同一时间内奥莉尔只能赐福1名盟友。<n/><n/>奥莉尔可以储存最多475~~0.04~~点能量。"
+    },
+    {
+      "nameId": "AurielSacredSweep",
+      "buttonId": "AurielSacredSweep",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_auriel_angelicsweep.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "神圣扫击",
+      "short": "对大弧度范围内的敌人造成伤害，对中心的敌人造成额外伤害",
+      "full": "用神圣能量扫击一片区域，对敌人造成40~~0.04~~点伤害，并对中心内的敌人造成160~~0.04~~点额外伤害。"
+    },
+    {
+      "nameId": "AurielRayOfHeaven",
+      "buttonId": "AurielRayOfHeaven",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_auriel_rayofheaven.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "天堂之光",
+      "short": "消耗全部能量来治疗范围内的友方英雄",
+      "full": "消耗奥莉尔储存的能量，并根据消耗的能量治疗目标范围内的友方英雄。"
+    },
+    {
+      "nameId": "AurielDetainmentStrike",
+      "buttonId": "AurielDetainmentStrike",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_auriel_restrainingblow.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "束缚打击",
+      "short": "击退一个敌方英雄，如果撞上地形则将昏迷。",
+      "full": "对击中的第一个敌方英雄造成55~~0.04~~点伤害并将其击退。如果目标撞上地形，则将昏迷1.25秒并受到额外165~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "AurielResurrect",
+      "buttonId": "AurielResurrect",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_auriel_resurrect.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "圣洁新生",
+      "short": "复活一名友方英雄",
+      "full": "对一名阵亡盟友的灵魂引导1秒。经过3秒延迟后，阵亡盟友原地复活，并恢复100%的最大生命值。<n/><n/>奥莉尔可以在阵亡后使用该技能复活自己。"
+    },
+    {
+      "nameId": "AurielCrystalAegis",
+      "buttonId": "AurielCrystalAegis",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_auriel_ribboncocoon.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "水晶庇护",
+      "short": "使友方英雄变为静止状态，随后爆炸",
+      "full": "使一个友方英雄变为静止状态，持续2秒。结束时，水晶庇护对附近所有敌人造成255~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "HearthstoneNoMana",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "AurielIncreasingClaritySacredSweepTalent",
+      "buttonId": "AurielIncreasingClaritySacredSweepTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_auriel_angelicsweep.png",
+      "sort": 1,
+      "name": "明澈之势",
+      "short": "任务：击中英雄可以提高中心伤害",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：每次神圣扫击的中心击中一个英雄，就会使中心伤害提高2点，最多提高50点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：击中25个英雄后，中心伤害加成提高至180点。"
+    },
+    {
+      "nameId": "AurielRighteousAssaultSacredSweepTalent",
+      "buttonId": "AurielRighteousAssaultSacredSweepTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_auriel_angelicsweep_b.png",
+      "sort": 2,
+      "name": "正义突袭",
+      "short": "击中英雄缩短神圣扫击的冷却时间",
+      "full": "神圣扫击的中心每击中一个敌方英雄使冷却时间缩短3秒。"
+    },
+    {
+      "nameId": "AurielSearingLightRayOfHeavenTalent",
+      "buttonId": "AurielSearingLightRayOfHeavenTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_auriel_rayofheaven.png",
+      "sort": 3,
+      "name": "灼热之光",
+      "short": "天堂之光还会对范围内的英雄造成伤害",
+      "full": "天堂之光还会对范围内的敌方英雄造成伤害，数值相当于消耗能量的30%。"
+    },
+    {
+      "nameId": "AurielMajesticSpanSacredSweepTalent",
+      "buttonId": "AurielMajesticSpanSacredSweepTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_auriel_angelicsweep.png",
+      "sort": 1,
+      "name": "辉煌耀光",
+      "short": "扩大神圣扫击的范围",
+      "full": "神圣扫击的范围扩大15%。"
+    },
+    {
+      "nameId": "AurielHeavyBurdenDetainmentStrikeTalent",
+      "buttonId": "AurielHeavyBurdenDetainmentStrikeTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_auriel_restrainingblow.png",
+      "sort": 2,
+      "name": "寸步难行",
+      "short": "束缚打击减速",
+      "full": "束缚打击使敌方英雄的移动速度降低20%，持续2.5秒。被击晕的敌人减速效果与持续时间加倍。<n/><n/>被动：束缚打击的昏迷持续时间延长0.25秒。"
+    },
+    {
+      "nameId": "AurielRepeatedOffenseDetainmentStrikeTalent",
+      "buttonId": "AurielRepeatedOffenseDetainmentStrikeTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_auriel_restrainingblow_a.png",
+      "sort": 3,
+      "name": "连续进攻",
+      "short": "增加束缚打击的射程<n/>任务：击晕英雄后提高伤害",
+      "full": "束缚打击击退敌人的距离增加25%。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：束缚打击每次击晕一个英雄，就可以使击晕伤害提高10点，最多提高60点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：击晕6个英雄后，该伤害加成提高至250点。"
+    },
+    {
+      "nameId": "AurielGlimmerofHopeRayOfHeavenTalent",
+      "buttonId": "AurielGlimmerofHopeRayOfHeavenTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_auriel_rayofheaven.png",
+      "sort": 1,
+      "name": "闪烁希望",
+      "short": "恢复之球可以降低天堂之光的能量消耗",
+      "full": "收集恢复之球使奥莉尔的下一个天堂之光的消耗降低75%。"
+    },
+    {
+      "nameId": "AurielEmpathicLinkBestowHopeTalent",
+      "buttonId": "AurielEmpathicLinkBestowHopeTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_auriel_bestowhope.png",
+      "sort": 2,
+      "name": "共鸣链接",
+      "short": "盟友受到伤害会使你获得能量",
+      "full": "希望恩赐的目标受到伤害的25%转化为你的能量。"
+    },
+    {
+      "nameId": "AurielEnergizedCordRayOfHeavenTalent",
+      "buttonId": "AurielEnergizedCordRayOfHeavenTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_auriel_bestowhope_a.png",
+      "sort": 3,
+      "name": "充能束带",
+      "short": "提高奥莉尔的普通攻击所储存的能量",
+      "full": "奥莉尔的普通攻击所储存的能量提高至对英雄伤害的130%以及对非英雄单位伤害的70%。<n/><n/>不会影响希望恩赐的目标。<n/><n/>被动：普通攻击射程提高1.1码。"
+    },
+    {
+      "nameId": "AurielHeroicResurrect",
+      "buttonId": "AurielResurrect",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_auriel_resurrect.png",
+      "sort": 1,
+      "name": "圣洁新生",
+      "short": "复活一名友方英雄",
+      "full": "对一名阵亡盟友的灵魂引导1秒。经过3秒延迟后，阵亡盟友原地复活，并恢复100%的最大生命值。<n/><n/>奥莉尔可以在阵亡后使用该技能复活自己。"
+    },
+    {
+      "nameId": "AurielHeroicCrystalAegis",
+      "buttonId": "AurielCrystalAegis",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_auriel_ribboncocoon.png",
+      "sort": 2,
+      "name": "水晶庇护",
+      "short": "使友方英雄变为静止状态，随后爆炸",
+      "full": "使一个友方英雄变为静止状态，持续2秒。结束时，水晶庇护对附近所有敌人造成255~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "AurielBlindingFlashSacredSweepTalent",
+      "buttonId": "AurielBlindingFlashSacredSweepTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_auriel_angelicsweep.png",
+      "sort": 1,
+      "name": "眩目闪光",
+      "short": "神圣扫击将使中心的敌人致盲",
+      "full": "被神圣扫击中心区域击中的敌人将被致盲2秒。"
+    },
+    {
+      "nameId": "AurielConvergingForceSacredSweepTalent",
+      "buttonId": "AurielConvergingForceSacredSweepTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_auriel_angelicsweep_b.png",
+      "sort": 2,
+      "name": "汇聚之力",
+      "short": "神圣扫击可以将敌人拉向中心",
+      "full": "被外围区域击中的敌人将被略微推向中心。"
+    },
+    {
+      "nameId": "AurielPiercingLashDetainmentStrikeTalent",
+      "buttonId": "AurielPiercingLashDetainmentStrikeTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_auriel_restrainingblow.png",
+      "sort": 3,
+      "name": "穿刺猛击",
+      "short": "束缚打击攻击一条直线上的所有敌方英雄",
+      "full": "束缚打击现在穿透目标，攻击一条直线上的所有敌方英雄，每击中一个英雄使冷却时间缩短2秒。"
+    },
+    {
+      "nameId": "AurielReservoirofHopeRayOfHeavenTalent",
+      "buttonId": "AurielReservoirofHopeRayOfHeavenTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_auriel_rayofheaven.png",
+      "sort": 1,
+      "name": "充满希望",
+      "short": "任务：提高天堂之光的最大能量",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：奥莉尔施放的每个最大能量的天堂之光都可以使储存的能量最大值提高55点。"
+    },
+    {
+      "nameId": "AurielWillofHeavenBestowHopeTalent",
+      "buttonId": "AurielWillofHeavenBestowHopeTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_auriel_bestowhope.png",
+      "sort": 2,
+      "name": "天堂意志",
+      "short": "希望恩赐可以使盟友获得攻击速度加成",
+      "full": "受希望恩赐影响的盟友，攻击速度提高20%。<n/><n/>被动：奥莉尔获得10%的普通攻击伤害加成。"
+    },
+    {
+      "nameId": "AurielWrathofHeavenBestowHopeTalent",
+      "buttonId": "AurielWrathofHeavenBestowHopeTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_auriel_bestowhope_a.png",
+      "sort": 3,
+      "name": "天堂之怒",
+      "short": "希望恩赐的盟友获得法术强度",
+      "full": "受希望恩赐影响的盟友，法术强度提高15%。<n/><n/>神圣扫击中心区域或束缚打击的地形碰撞命中敌方英雄时，会使其法术护甲降低20点，持续3秒。"
+    },
+    {
+      "nameId": "AurielLightSpeedResurrectTalent",
+      "buttonId": "AurielLightSpeedResurrectTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_auriel_resurrect.png",
+      "sort": 1,
+      "name": "光速",
+      "short": "被复活的盟友移动更快，缩短冷却时间",
+      "full": "被复活的盟友的移动速度提高200%，效果在4秒内递减。被复活的盟友存活时，下一个圣洁新生的冷却速度加快100%。"
+    },
+    {
+      "nameId": "AurielDiamondResolveCrystalAegisTalent",
+      "buttonId": "AurielDiamondResolveCrystalAegisTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_auriel_ribboncocoon.png",
+      "sort": 2,
+      "name": "钻石决心",
+      "short": "水晶庇护提供护甲",
+      "full": "水晶庇护消失后为目标提供75点护甲，使受到的伤害降低75%，持续5秒。"
+    },
+    {
+      "nameId": "AurielAngelicFlightTalent",
+      "buttonId": "AurielAngelicFlightTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_auriel_angelicflight.png",
+      "sort": 3,
+      "name": "天使飞行",
+      "short": "激活后飞向目标位置",
+      "full": "2秒后，飞向目标位置。"
+    },
+    {
+      "nameId": "AurielShieldOfHopeTalent",
+      "buttonId": "AurielShieldOfHopeTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_auriel_shieldofhope.png",
+      "sort": 4,
+      "name": "希望之盾",
+      "short": "根据盟友损失的生命值为其施加护盾",
+      "full": "激活后使附近所有友方英雄获得一个持续3秒的护盾，数值相当于其损失生命值的50%。"
+    }
+  ]
+}

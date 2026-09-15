@@ -1,0 +1,285 @@
+{
+  "shortName": "maiev",
+  "heroName": "Maiev",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "MaievVaultOfTheWardens",
+      "buttonId": "MaievVaultOfTheWardens",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_maiev_trait.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "守望者空翻",
+      "short": "跃向空中，短时间内对所有效果免疫",
+      "full": "跃向空中，对所有敌对效果免疫，持续0.75秒。<n/><n/>等级达到20级后，守望者空翻获得额外一次使用次数。"
+    },
+    {
+      "nameId": "MaievFanOfKnives",
+      "buttonId": "MaievFanOfKnives",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_maiev_knives.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "刀扇",
+      "short": "投掷一轮飞刀",
+      "full": "对一个月牙状区域内的敌人造成152~~0.04~~点伤害。<n/><n/>使用刀扇击中至少2名敌方英雄，可使其冷却时间缩短至0.5秒，并且返还消耗的法力值。"
+    },
+    {
+      "nameId": "MaievUmbralBind",
+      "buttonId": "MaievUmbralBind",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_maiev_umbra_1.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "黑月缚杀",
+      "short": "捆缚敌人，如果相间距离太远将被拽向玛维",
+      "full": "玛维的下一次普通攻击变成顺劈，并对被击中的敌人施加一条绳索，持续2.5秒。如果被捆英雄距离玛维太远，他们将被拽向她，造成110~~0.04~~点伤害并打破绳索。"
+    },
+    {
+      "nameId": "MaievSpiritOfVengeance",
+      "buttonId": "MaievSpiritOfVengeance",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_maiev_rush_1.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "复仇之魂",
+      "short": "投射出一个玛维的阴影，她可以稍后闪现至阴影所在位置",
+      "full": "朝外界投射出一个玛维的阴影，稍后会返回至施法位置，对沿途的敌人造成150~~0.04~~点伤害。如果击中一名敌方英雄，冷却时间缩短4秒。"
+    },
+    {
+      "nameId": "MaievContainmentDisc",
+      "buttonId": "MaievContainmentDisc",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_maiev_heroic_1_a.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "禁锢环刃",
+      "short": "使一名敌方英雄陷入时间停止状态并丧失视野",
+      "full": "朝目标方向投掷环刃。如果击中敌方英雄，可以重新激活禁锢环刃，移除目标的视野，并使其陷入时间停止状态，持续4秒。禁锢效果结束后，沉默敌方英雄1.5秒。<n/><n/>击中英雄6秒后，禁锢环刃会自动激活。"
+    },
+    {
+      "nameId": "MaievWardensCage",
+      "buttonId": "MaievWardensCage",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_maiev_heroic_2.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "守望者牢笼",
+      "short": "用一个复仇化身的牢笼困住敌人",
+      "full": "在玛维周围召唤8个守望者化身组成一个牢笼。1.5秒后，接触到化身的敌方英雄将被弹向牢笼中心。守望者化身持续5秒。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "MaievUmbralBindBondsOfJustice",
+      "buttonId": "MaievUmbralBindBondsOfJustice",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_maiev_umbra_1.png",
+      "sort": 1,
+      "name": "制裁之索",
+      "short": "任务：捆绑次要目标可提高黑月缚杀的伤害",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：对黑月缚杀次要目标每施加一条绳索，黑月缚杀的拉扯伤害永久提高15点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：对5名次要目标施加绳索后，黑月缚杀的拉扯伤害提高75点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：对10名次要目标施加绳索后，黑月缚杀的顺劈伤害提高30%。"
+    },
+    {
+      "nameId": "MaievUmbralBindPursuitOfVengeance",
+      "buttonId": "MaievUmbralBindPursuitOfVengeance",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_maiev_pursuit_vengeance.png",
+      "sort": 2,
+      "name": "复仇追击",
+      "short": "缩短黑月缚杀、复仇之魂的冷却时间",
+      "full": "黑月缚杀每对一名英雄施加绳索，复仇之魂的冷却时间缩短2.5秒。并且复仇之魂每击中一名英雄都会使黑月缚杀的冷却时间缩短1秒。"
+    },
+    {
+      "nameId": "MaievFanOfKnivesNaishasMemento",
+      "buttonId": "MaievFanOfKnivesNaishasMemento",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_maiev_memento.png",
+      "sort": 3,
+      "name": "娜萨的遗物",
+      "short": "激活后使普通攻击可以弹射",
+      "full": "激活后使主要普通攻击在附近的敌人之间最多弹射2次，持续8秒。<n/><n/>单次使用刀扇击中至少2名英雄后可以充能娜萨的遗物。"
+    },
+    {
+      "nameId": "MaievFanOfKnivesPinDown",
+      "buttonId": "MaievFanOfKnivesPinDown",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_maiev_knives.png",
+      "sort": 1,
+      "name": "飞刀刺击",
+      "short": "任务：击中多名英雄可以强化刀扇",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：使用刀扇一次击中3名敌方英雄。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：刀扇的伤害提高35%。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：每用刀扇一次击中3名敌方英雄，刀扇的伤害提高5%，最高50%。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：使用刀扇一次击中4名敌方英雄可立即获得所有奖励效果。"
+    },
+    {
+      "nameId": "MaievFanOfKnivesBladeDance",
+      "buttonId": "MaievFanOfKnivesBladeDance",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_maiev_knives_2.png",
+      "sort": 2,
+      "name": "飞刀轮舞",
+      "short": "刀扇会在玛维周围造成物理伤害",
+      "full": "使用刀扇会对玛维周围的敌人造成50~~0.04~~点物理伤害。"
+    },
+    {
+      "nameId": "MaievSpiritOfVengeanceSuddenVengeance",
+      "buttonId": "MaievSpiritOfVengeanceSuddenVengeance",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_maiev_rush_2.png",
+      "sort": 3,
+      "name": "突然复仇",
+      "short": "闪现造成范围伤害",
+      "full": "在使用复仇之魂的闪现后，影子会发生爆炸，对周围的敌方英雄造成相当于其最大生命值6%的伤害。"
+    },
+    {
+      "nameId": "MaievFanOfKnivesElunesWrath",
+      "buttonId": "MaievFanOfKnivesElunesWrath",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_maiev_knives.png",
+      "sort": 1,
+      "name": "艾露恩之怒",
+      "short": "刀扇击中多名英雄后可造成更高伤害",
+      "full": "单次使用刀扇击中至少2名敌方英雄，可以使下一个刀扇对目标降下一颗星星，造成77~~0.04~~点伤害。"
+    },
+    {
+      "nameId": "MaievUmbralBindBondsOfCorruption",
+      "buttonId": "MaievUmbralBindBondsOfCorruption",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_maiev_orb_corruption.png",
+      "sort": 2,
+      "name": "腐蚀之索",
+      "short": "黑月缚杀拉扯可削减护甲和移动速度",
+      "full": "使用黑月缚杀拉扯敌方英雄可削减其15点护甲并使其减速25%，持续3秒。"
+    },
+    {
+      "nameId": "MaievSpiritOfVengeanceRuthlessSpirit",
+      "buttonId": "MaievSpiritOfVengeanceRuthlessSpirit",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_maiev_rush_1.png",
+      "sort": 3,
+      "name": "无情怨魂",
+      "short": "复仇之魂击中敌方英雄可提高玛维伤害",
+      "full": "复仇之魂每击中一个敌方英雄，就能使玛维造成的所有伤害提高15%，持续4秒，最多叠加至30%。"
+    },
+    {
+      "nameId": "MaievContainmentDisc",
+      "buttonId": "MaievContainmentDisc",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_maiev_heroic_1_a.png",
+      "sort": 1,
+      "name": "禁锢环刃",
+      "short": "使一名敌方英雄陷入时间停止状态并丧失视野",
+      "full": "朝目标方向投掷环刃。如果击中敌方英雄，可以重新激活禁锢环刃，移除目标的视野，并使其陷入时间停止状态，持续4秒。禁锢效果结束后，沉默敌方英雄1.5秒。<n/><n/>击中英雄6秒后，禁锢环刃会自动激活。"
+    },
+    {
+      "nameId": "MaievWardensCage",
+      "buttonId": "MaievWardensCage",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_maiev_heroic_2.png",
+      "sort": 2,
+      "name": "守望者牢笼",
+      "short": "用一个复仇化身的牢笼困住敌人",
+      "full": "在玛维周围召唤8个守望者化身组成一个牢笼。1.5秒后，接触到化身的敌方英雄将被弹向牢笼中心。守望者化身持续5秒。"
+    },
+    {
+      "nameId": "MaievFanOfKnivesBladedArmor",
+      "buttonId": "MaievFanOfKnivesBladedArmor",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_maiev_knives.png",
+      "sort": 1,
+      "name": "刀刃护甲",
+      "short": "刀扇给予护甲",
+      "full": "刀扇每击中一名敌方英雄给予5点护甲，持续5秒，最多20点护甲。"
+    },
+    {
+      "nameId": "MaievUmbralBindChainGang",
+      "buttonId": "MaievUmbralBindChainGang",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_maiev_umbra_1.png",
+      "sort": 2,
+      "name": "环锁囚禁",
+      "short": "黑月缚杀捆绑多个敌人可给予护甲",
+      "full": "使用黑月缚杀捆绑至少2名敌方英雄，给予35点护甲，持续4秒。"
+    },
+    {
+      "nameId": "MaievSpiritOfVengeanceShadowArmor",
+      "buttonId": "MaievSpiritOfVengeanceShadowArmor",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_maiev_rush_2.png",
+      "sort": 3,
+      "name": "暗影护甲",
+      "short": "闪现给予护甲",
+      "full": "闪现给予20点护甲，持续3.5秒。玛维对敌方英雄的普通攻击可以刷新该效果的持续时间。"
+    },
+    {
+      "nameId": "MaievSpiritOfVengeanceVengefulKnives",
+      "buttonId": "MaievSpiritOfVengeanceVengefulKnives",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_maiev_knives.png",
+      "sort": 1,
+      "name": "报复之刃",
+      "short": "造成伤害会提高刀扇伤害",
+      "full": "对敌方英雄造成伤害可以使下一次刀扇对敌方英雄造成相当于其最大生命值1%的加成伤害。该伤害加成最多可叠加至5%。"
+    },
+    {
+      "nameId": "MaievUmbralBindCruelChain",
+      "buttonId": "MaievUmbralBindCruelChain",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_maiev_umbra_1.png",
+      "sort": 2,
+      "name": "残忍锁链",
+      "short": "对黑月缚杀的目标造成伤害来提高拉拽伤害",
+      "full": "黑月缚杀给予25%移动速度，持续2.5秒。另外，玛维每对被捆缚的目标造成一次伤害，黑月缚杀对所有目标的拉扯伤害提高30%，最高可达150%。"
+    },
+    {
+      "nameId": "MaievArmoredAssault",
+      "buttonId": "MaievArmoredAssault",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_maiev_heavy_strikes.png",
+      "sort": 3,
+      "name": "重甲突袭",
+      "short": "护甲提高造成的物理伤害",
+      "full": "当玛维有任意类型的正护甲时，其所造成的所有物理伤害提高25%。"
+    },
+    {
+      "nameId": "MaievSpiritOfVengeanceShadowOrbVengeance",
+      "buttonId": "MaievSpiritOfVengeanceShadowOrbVengeance",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_maiev_shadoworb_vengeance.png",
+      "sort": 1,
+      "name": "暗影宝珠：复仇之魂",
+      "short": "激活后重置复仇之魂的冷却时间",
+      "full": "激活后重置复仇之魂的冷却时间。<n/><n/>复仇之魂击中敌方英雄5次后可充能暗影宝珠。"
+    },
+    {
+      "nameId": "MaievShadowOrbHuntress",
+      "buttonId": "MaievShadowOrbHuntress",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_maiev_shadoworb_relentless.png",
+      "sort": 2,
+      "name": "暗影宝珠：女猎手",
+      "short": "激活后获得移动速度和攻击速度加成",
+      "full": "激活后提高移动速度和攻击速度40%，持续5秒。<n/><n/>对敌方英雄造成物理伤害10次后可以充能暗影宝珠。"
+    },
+    {
+      "nameId": "MaievShadowOrbShadowStrike",
+      "buttonId": "MaievShadowOrbShadowStrike",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_maiev_shadoworb_strike.png",
+      "sort": 3,
+      "name": "暗影宝珠：暗影突袭",
+      "short": "激活后减速敌人并削减其护甲",
+      "full": "激活后对一名敌方英雄造成75~~0.04~~点伤害，使其减速30%，削减20点护甲。持续4秒。<n/><n/>对敌方英雄造成法术伤害10次后可以充能暗影宝珠。"
+    }
+  ]
+}

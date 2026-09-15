@@ -1,0 +1,305 @@
+{
+  "shortName": "junkrat",
+  "heroName": "Junkrat",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "JunkratTotalMayhem",
+      "buttonId": "JunkratTotalMayhem",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_junkrat_bomb_pack.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "临别礼物",
+      "short": "死亡时丢下榴弹",
+      "full": "死亡时，留下5枚手雷，会在0.75秒后爆炸，每枚对附近敌人造成250~~0.04~~点伤害。对建筑造成的伤害减少75%。<n/><n/><s val=\"cbe8ff-ffffff\" name=\"StandardTooltipHeader\">引爆地雷</s><n/><n/>引爆激活的震荡地雷。"
+    },
+    {
+      "nameId": "JunkratFragLauncher",
+      "buttonId": "JunkratFragLauncher",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_junkrat_frag_launcher.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "榴弹发射器",
+      "short": "发射一枚可弹跳的榴弹",
+      "full": "发射一枚榴弹，会在其路径终点爆炸，或者在击中一名敌人后爆炸，对附近敌人造成124~~0.04~~点伤害。榴弹可以利用地形弹跳。对建筑造成的伤害降低50%。<n/><n/>最多可以储存4层。榴弹发射器的冷却时间结束后，可以一次补充所有层数。"
+    },
+    {
+      "nameId": "JunkratConcussionMine",
+      "buttonId": "JunkratConcussionMine",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_junkrat_concussion_mine.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "震荡地雷",
+      "short": "放置一个可以引爆的地雷",
+      "full": "在地上放置一个地雷。激活狂鼠的特质可以引爆地雷，对附近的敌人造成180~~0.04~~点伤害并将其击退。狂鼠也会受到震荡地雷的影响，但不会受到伤害。<n/><n/>最多存在1个激活的地雷。"
+    },
+    {
+      "nameId": "JunkratSteelTrap",
+      "buttonId": "JunkratSteelTrap",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_junkrat_steel_trap.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "捕兽夹",
+      "short": "放置一个陷阱，使敌人定身",
+      "full": "在地上放置一个陷阱，在2秒后准备就绪。第一个走上来的敌人将会受到130~~0.04~~点伤害，并被定身2秒。<n/><n/>最多存在1个激活的陷阱。"
+    },
+    {
+      "nameId": "JunkratRIPTire",
+      "buttonId": "JunkratRIPTire",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_junkrat_rip_tire.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "炸弹轮胎",
+      "short": "制造一个装有摩托引擎的炸弹",
+      "full": "制造一个装有摩托引擎的炸弹，炸弹具有530~~0.04~~点生命值，可持续15秒。激活时，狂鼠无法移动，但可以操纵炸弹轮胎的移动。<n/><n/>再次激活炸弹轮胎可立刻引爆，击退附近的敌人，并对靠近爆炸中心点的敌人造成720~~0.04~~点伤害，对靠近边缘的敌人造成的伤害会逐渐降低至445~~0.04~~点。"
+    },
+    {
+      "nameId": "JunkratRocketRide",
+      "buttonId": "JunkratRocketRide",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_junkrat_rocket_ride.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "火箭狂飙",
+      "short": "发射到空中，着陆时对敌人造成伤害",
+      "full": "1.25秒后，狂鼠发射到空中。在空中，你可以通过移动来控制着陆地点。<n/><n/>狂鼠在3.75秒后落地，对附近的敌人造成935~~0.04~~点伤害，并激活临别礼物。狂鼠在5秒后重新出现在风暴大厅，并且移动速度提高150%，直到解除坐骑。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "JunkratFragLauncherTrickyShuffles",
+      "buttonId": "JunkratTrickyShufflesFragLauncherTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_junkrat_frag_launcher.png",
+      "sort": 1,
+      "name": "魔鬼步",
+      "short": "榴弹发射器补充弹药时移动速度提高",
+      "full": "榴弹发射器的层数用光时，移动速度提高10%，并且普通攻击造成15%的额外伤害。"
+    },
+    {
+      "nameId": "JunkratFragLauncherExtraWoundTimers",
+      "buttonId": "JunkratExtraWoundTimersFragLauncherTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_junkrat_frag_launcher_b.png",
+      "sort": 2,
+      "name": "加长引信",
+      "short": "榴弹发射器造成额外伤害",
+      "full": "榴弹发射器发射的最后一颗榴弹可造成100%的额外伤害，并且榴弹在自动引爆前，可以多持续2秒。 "
+    },
+    {
+      "nameId": "JunkratConcussionMineBlowEmUp",
+      "buttonId": "JunkratBlowEmUpConcussionMineTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_junkrat_trap_mine.png",
+      "sort": 3,
+      "name": "炸飞他们！",
+      "short": "震荡地雷和捕兽夹伤害提高",
+      "full": "用震荡地雷或捕兽夹击中一名敌方英雄可使狂鼠造成的普通攻击和基本技能伤害提高25%，持续6秒。"
+    },
+    {
+      "nameId": "JunkratFragLauncherTasteForExplosions",
+      "buttonId": "JunkratTasteForExplosionsFragLauncherTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_junkrat_frag_launcher.png",
+      "sort": 1,
+      "name": "爆炸美学",
+      "short": "任务：提高榴弹发射器的伤害",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：用榴弹发射器每击中一名敌方英雄，此技能伤害便提高0.2%，最多提高40%。"
+    },
+    {
+      "nameId": "JunkratConcussionMineBOOMPOW",
+      "buttonId": "JunkratBOOMPOWConcussionMineTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_junkrat_concussion_mine.png",
+      "sort": 2,
+      "name": "咔哒砰",
+      "short": "击中英雄时震荡地雷的冷却时间缩短",
+      "full": "用震荡地雷击中一名敌方英雄可以使冷却时间缩短10秒。"
+    },
+    {
+      "nameId": "JunkratSteelTrapChatteringTeeth",
+      "buttonId": "JunkratChatteringTeethSteelTrapTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_junkrat_steel_trap.png",
+      "sort": 3,
+      "name": "追着咬",
+      "short": "捕兽夹会追逐英雄",
+      "full": "捕兽夹会缓慢地追逐附近的敌方英雄。"
+    },
+    {
+      "nameId": "JunkratConcussionMineBoggedDown",
+      "buttonId": "JunkratBoggedDownConcussionMineTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_junkrat_concussion_mine.png",
+      "sort": 1,
+      "name": "恐雷症",
+      "short": "震荡地雷可减速",
+      "full": "被震荡地雷击飞的敌人在落地后的移动速度降低40%，持续2.5秒。"
+    },
+    {
+      "nameId": "JunkratSteelTrapStickyWicket",
+      "buttonId": "JunkratStickyWicketSteelTrapTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_junkrat_steel_trap.png",
+      "sort": 2,
+      "name": "黏性陷阱",
+      "short": "捕兽夹使英雄沉默",
+      "full": "捕兽夹击中的敌方英雄会被沉默2秒。"
+    },
+    {
+      "nameId": "JunkratTotalMayhemDirtyTricksterTalent",
+      "buttonId": "JunkratDirtyTrickster",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_junkrat_bomb_pack.png",
+      "sort": 3,
+      "name": "卑鄙小人",
+      "short": "更频繁地触发临别礼物",
+      "full": "使临别礼物的爆炸半径提高20%。当狂鼠陷入昏迷、定身时，或在生命值低于50%时受到敌方英雄攻击，他会使用临别礼物，在自己脚下丢下5颗榴弹。<n/><n/>此效果有20秒的冷却时间。"
+    },
+    {
+      "nameId": "JunkratRIPTire",
+      "buttonId": "JunkratRIPTire",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_junkrat_rip_tire.png",
+      "sort": 1,
+      "name": "炸弹轮胎",
+      "short": "制造一个装有摩托引擎的炸弹",
+      "full": "制造一个装有摩托引擎的炸弹，炸弹具有530~~0.04~~点生命值，可持续15秒。激活时，狂鼠无法移动，但可以操纵炸弹轮胎的移动。<n/><n/>再次激活炸弹轮胎可立刻引爆，击退附近的敌人，并对靠近爆炸中心点的敌人造成720~~0.04~~点伤害，对靠近边缘的敌人造成的伤害会逐渐降低至445~~0.04~~点。"
+    },
+    {
+      "nameId": "JunkratRocketRide",
+      "buttonId": "JunkratRocketRide",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_junkrat_rocket_ride.png",
+      "sort": 2,
+      "name": "火箭狂飙",
+      "short": "发射到空中，着陆时对敌人造成伤害",
+      "full": "1.25秒后，狂鼠发射到空中。在空中，你可以通过移动来控制着陆地点。<n/><n/>狂鼠在3.75秒后落地，对附近的敌人造成935~~0.04~~点伤害，并激活临别礼物。狂鼠在5秒后重新出现在风暴大厅，并且移动速度提高150%，直到解除坐骑。"
+    },
+    {
+      "nameId": "JunkratFragLauncherBombsAwayTalent",
+      "buttonId": "JunkratBombsAwayFragLauncherTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_junkrat_frag_launcher.png",
+      "sort": 1,
+      "name": "准备投弹",
+      "short": "获得普通攻击伤害和射程",
+      "full": "狂鼠的普通攻击射程提高1。在普通攻击后的0.5秒内使用榴弹发射器可造成30%的额外伤害。"
+    },
+    {
+      "nameId": "JunkratConcussionMineRipperAir",
+      "buttonId": "JunkratRipperAirConcussionMineTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_junkrat_concussion_mine.png",
+      "sort": 2,
+      "name": "窜天鼠",
+      "short": "震荡地雷把狂鼠击飞得更远",
+      "full": "狂鼠被震荡地雷击退的距离延长50%。此外，如果震荡地雷只击中了狂鼠，冷却时间缩短12秒。"
+    },
+    {
+      "nameId": "JunkratSteelTrapGottaTrapEmAll",
+      "buttonId": "JunkratGottaTrapEmAllSteelTrapTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_junkrat_steel_trap.png",
+      "sort": 3,
+      "name": "全都夹住！",
+      "short": "提高捕兽夹的数量",
+      "full": "捕兽夹的冷却时间缩短5秒，并把可激活的最大陷阱数量提高至2个。"
+    },
+    {
+      "nameId": "JunkratSteelTrapBigAs",
+      "buttonId": "JunkratBigAsSteelTrapTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_junkrat_steel_trap_a.png",
+      "sort": 4,
+      "name": "大钢牙",
+      "short": "捕兽夹只命中英雄",
+      "full": "捕兽夹现在只会命中英雄，并且被击中的英雄护甲降低15点，持续3秒。捕兽夹的半径和伤害提高50%。"
+    },
+    {
+      "nameId": "JunkratFragLauncherBurstFire",
+      "buttonId": "JunkratBurstFireFragLauncherTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_junkrat_frag_launcher_f.png",
+      "sort": 1,
+      "name": "急促连射",
+      "short": "榴弹发射器急促连射",
+      "full": "榴弹发射器爆急促地连续射出所有层数，冷却时间降低6秒，但是最大层数减少1层。"
+    },
+    {
+      "nameId": "JunkratFragLauncherEndlessNades",
+      "buttonId": "JunkratEndlessNadesFragLauncherTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_junkrat_frag_launcher_e.png",
+      "sort": 2,
+      "name": "快速装弹",
+      "short": "击中英雄时榴弹发射器的冷却时间缩短",
+      "full": "用榴弹发射器击中敌方英雄可使其冷却时间缩短1.5秒。"
+    },
+    {
+      "nameId": "JunkratFragLauncherSpreadVolley",
+      "buttonId": "JunkratSpreadVolleyFragLauncherTalent",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_junkrat_frag_launcher_d.png",
+      "sort": 3,
+      "name": "散射榴弹",
+      "short": "激活后使榴弹发射器分散投掷榴弹",
+      "full": "激活后，榴弹发射器可额外发射2枚榴弹。最多作用于4层层数，或者持续到榴弹发射器层数用光。"
+    },
+    {
+      "nameId": "JunkratRIPTireExtraOomph",
+      "buttonId": "JunkratExtraOomphRIPTireTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_junkrat_rip_tire.png",
+      "sort": 1,
+      "name": "炸上瘾",
+      "short": "提高炸弹轮胎的击退效果，降低冷却时间",
+      "full": "炸弹轮胎的击退距离增加50%。每击中一名敌方英雄，其冷却时间缩短25秒。"
+    },
+    {
+      "nameId": "JunkratRocketRidePuckishScamp",
+      "buttonId": "JunkratPuckishScampRocketRideTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_junkrat_rocket_ride.png",
+      "sort": 2,
+      "name": "淘气流氓",
+      "short": "同时获得炸弹轮胎技能",
+      "full": "狂鼠也会获得炸弹轮胎技能。狂鼠每次使用终极技能后，都会切换为另一个终极技能。<n/><n/>被动：使两个终极技能的冷却时间都缩短20秒。"
+    },
+    {
+      "nameId": "JunkratFragLauncherCannonball",
+      "buttonId": "JunkratCannonballFragLauncherTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_junkrat_frag_launcher_g.png",
+      "sort": 3,
+      "name": "换炮弹！",
+      "short": "更大的普通攻击，榴弹发射器射出的榴弹爆炸",
+      "full": "普通攻击和榴弹发射器射出的榴弹，其弹丸尺寸与爆炸范围增大50%。"
+    },
+    {
+      "nameId": "JunkratIHateWaitingTalent",
+      "buttonId": "JunkratIHateWaiting",
+      "abilityType": "Z",
+      "icon": "storm_ui_icon_junkrat_mount_rocket.png",
+      "sort": 4,
+      "name": "我讨厌等人！",
+      "short": "骑乘狂鼠的火箭！",
+      "full": "狂鼠会一直骑乘他的火箭坐骑，使移动速度提高150%，但他的坐骑冷却时间提高至8秒。"
+    }
+  ]
+}

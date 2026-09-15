@@ -1,0 +1,295 @@
+{
+  "shortName": "jaina",
+  "heroName": "Jaina",
+  "build": "2.55.11.94387",
+  "abilities": [
+    {
+      "nameId": "JainaTraitFrostbite",
+      "buttonId": "JainaTraitFrostbite",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_jaina_frostbite.png",
+      "hotkey": "Trait",
+      "trait": true,
+      "name": "霜寒",
+      "short": "吉安娜的技能冰冻目标，使其减速并受到额外伤害",
+      "full": "吉安娜的技能可以冰冻目标，使他们的移动速度降低25%，并使她的技能对目标造成的伤害提高50%。持续4秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：对被冰冻的英雄造成12000点技能伤害<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：解锁强化寒冰屏障技能，使吉安娜在短时间内无敌。"
+    },
+    {
+      "nameId": "JainaFrostbolt",
+      "buttonId": "JainaFrostbolt",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_jaina_frostbolt.png",
+      "hotkey": "Q",
+      "trait": false,
+      "name": "寒冰箭",
+      "short": "射出一枚寒冰箭对敌人造成伤害并使其冰冻",
+      "full": "造成184~~0.04~~点伤害并使目标冰冻。"
+    },
+    {
+      "nameId": "JainaBlizzard",
+      "buttonId": "JainaBlizzard",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_jaina_blizzard.png",
+      "hotkey": "W",
+      "trait": false,
+      "name": "暴风雪",
+      "short": "在目标位置召唤冰霜风暴，对敌人造成伤害并使其减速",
+      "full": "召唤3阵冰雨冲击目标区域，每阵冰雨造成142~~0.04~~点伤害。受到伤害的敌人将被冰冻。"
+    },
+    {
+      "nameId": "JainaConeOfCold",
+      "buttonId": "JainaConeOfCold",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_jaina_coneofcold.png",
+      "hotkey": "E",
+      "trait": false,
+      "name": "冰锥术",
+      "short": "对锥形范围内的敌人造成伤害并冰冻目标",
+      "full": "对目标造成220~~0.04~~点伤害并使其冰冻。"
+    },
+    {
+      "nameId": "JainaSummonWaterElemental",
+      "buttonId": "JainaSummonWaterElemental",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_jaina_summonwaterelemental.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "召唤水元素",
+      "short": "召唤水元素冰冻敌人",
+      "full": "在目标位置召唤一个水元素。水元素的普通攻击会造成62~~0.04~~点伤害和25%的溅射伤害，并使敌人冰冻。再次使用技能可以重新指定水元素的目标。水元素持续20秒。"
+    },
+    {
+      "nameId": "JainaRingOfFrost",
+      "buttonId": "JainaRingOfFrost",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_jaina_ringoffrost.png",
+      "hotkey": "Heroic",
+      "trait": false,
+      "name": "冰霜之环",
+      "short": "生成一圈冰霜之环，对敌人造成伤害并使其定身",
+      "full": "1.5秒后，在指定位置召唤一圈冰霜之环，造成310~~0.04~~点伤害并使敌人定身，持续3秒。冰霜之环随后持续3秒，冰冻任何接触到的敌人。"
+    },
+    {
+      "nameId": "Hearthstone",
+      "buttonId": "Hearthstone",
+      "abilityType": "B",
+      "icon": "storm_ui_icon_miscrune_1.png",
+      "hotkey": "B",
+      "trait": false,
+      "name": "炉石",
+      "full": "引导6秒后，传送回风暴大厅，立即恢复1125的生命值和150法力值。"
+    }
+  ],
+  "talents": [
+    {
+      "nameId": "JainaFrostboltWintersReach",
+      "buttonId": "JainaFrostboltWintersReachTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_jaina_frostbolt.png",
+      "sort": 1,
+      "name": "寒冬蔓延",
+      "short": "提高寒冰箭的射程和弹道速度",
+      "full": "寒冰箭的射程和弹道速度增加30%。"
+    },
+    {
+      "nameId": "JainaFrostbiteLingeringChill",
+      "buttonId": "JainaFrostbiteLingeringChillTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_jaina_frostbite.png",
+      "sort": 2,
+      "name": "不散之寒",
+      "short": "延长冰冻效果的持续时间",
+      "full": "冰冻的持续时间从4秒延长至6秒。"
+    },
+    {
+      "nameId": "JainaFingersOfFrost",
+      "buttonId": "JainaFingersOfFrost",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_conjurerspursuit.png",
+      "sort": 3,
+      "name": "寒冰指",
+      "short": "任务：收集恢复之球提高法力恢复速度",
+      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：收集恢复之球使吉安娜的每秒法力恢复提高0.1点，最多提高2点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：收集20个恢复之球后，从霜寒中获得的伤害加成提高10%。"
+    },
+    {
+      "nameId": "JainaFrostboltFrostShards",
+      "buttonId": "JainaFrostboltFrostShardsTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_jaina_frostbolt.png",
+      "sort": 1,
+      "name": "寒冰碎片",
+      "short": "寒冰箭穿透前两个目标",
+      "full": "寒冰箭现在会穿透击中的前两个目标。"
+    },
+    {
+      "nameId": "JainaFrostbiteArcaneIntellect",
+      "buttonId": "JainaFrostbiteArcaneIntellectTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_jaina_arcaneintellect.png",
+      "sort": 2,
+      "name": "奥术智慧",
+      "short": "对冰冻的敌人造成伤害可以恢复法力",
+      "full": "对冰冻的敌人造成伤害还会使吉安娜获得法力值。普通攻击返还5点法力值，技能返还20点法力值。<n/><n/>被动：当法力值高于75%时，吉安娜获得10%的法术强度加成。"
+    },
+    {
+      "nameId": "JainaFrostbiteFrostArmor",
+      "buttonId": "JainaFrostbiteFrostArmorTalent",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_jaina_frostarmor.png",
+      "sort": 3,
+      "name": "霜甲术",
+      "short": "冰冻攻击者并获得物理护甲",
+      "full": "攻击吉安娜的敌人将被冰冻。此外，每10秒获得75点物理护甲，抵御下一次敌方英雄的普通攻击，使受到的伤害降低75%。"
+    },
+    {
+      "nameId": "JainaFrostboltIceLance",
+      "buttonId": "JainaFrostboltIceLanceTalent",
+      "abilityType": "Q",
+      "icon": "storm_ui_icon_jaina_frostbolt.png",
+      "sort": 1,
+      "name": "冰枪术",
+      "short": "击中被冰冻的目标后缩短寒冰箭的冷却时间",
+      "full": "寒冰箭击中冰冻目标后，其冷却时间缩短1.5秒，并恢复10点法力值。"
+    },
+    {
+      "nameId": "JainaConeOfColdIceFloes",
+      "buttonId": "JainaConeOfColdIceFloesTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_jaina_coneofcold.png",
+      "sort": 2,
+      "name": "浮冰术",
+      "short": "扩大冰锥术的范围并缩短冷却时间",
+      "full": "冰锥术的范围扩大100%，并且每击中一个英雄可以使冷却时间缩短2秒，击中被冰冻的英雄时该效果翻倍，每次施放最多缩短8秒。"
+    },
+    {
+      "nameId": "JainaIcefuryWand",
+      "buttonId": "JainaIcefuryWand",
+      "abilityType": "Passive",
+      "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+      "sort": 3,
+      "name": "冰怒魔杖",
+      "short": "提高普通攻击的伤害",
+      "full": "对被冰冻的敌人使用普通攻击可额外造成50%伤害，并使暴风雪的冷却时间缩短1.25秒。对敌方英雄效果翻倍。"
+    },
+    {
+      "nameId": "JainaHeroicRingOfFrost",
+      "buttonId": "JainaRingOfFrost",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_jaina_ringoffrost.png",
+      "sort": 1,
+      "name": "冰霜之环",
+      "short": "生成一圈冰霜之环，对敌人造成伤害并使其定身",
+      "full": "1.5秒后，在指定位置召唤一圈冰霜之环，造成310~~0.04~~点伤害并使敌人定身，持续3秒。冰霜之环随后持续3秒，冰冻任何接触到的敌人。"
+    },
+    {
+      "nameId": "JainaHeroicSummonWaterElemental",
+      "buttonId": "JainaSummonWaterElemental",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_jaina_summonwaterelemental.png",
+      "sort": 2,
+      "name": "召唤水元素",
+      "short": "召唤水元素冰冻敌人",
+      "full": "在目标位置召唤一个水元素。水元素的普通攻击会造成62~~0.04~~点伤害和25%的溅射伤害，并使敌人冰冻。再次使用技能可以重新指定水元素的目标。水元素持续20秒。"
+    },
+    {
+      "nameId": "JainaBlizzardStormFront",
+      "buttonId": "JainaBlizzardStormFrontTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_jaina_blizzard.png",
+      "sort": 1,
+      "name": "风暴之锋",
+      "short": "增加暴风雪的施法距离和范围",
+      "full": "暴风雪的施法距离提高75%，技能半径提高30%。"
+    },
+    {
+      "nameId": "JainaFrostbiteIceBarrier",
+      "buttonId": "JainaFrostbiteIceBarrierTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_jaina_frostbite.png",
+      "sort": 2,
+      "name": "寒冰护体",
+      "short": "对被冰冻的目标造成伤害可以获得护盾",
+      "full": "获得一个护盾，可吸收相当于对被冰冻目标造成伤害的25%的伤害。护盾持续4秒。"
+    },
+    {
+      "nameId": "JainaIcyVeins",
+      "buttonId": "JainaIcyVeinsHotbar",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_jaina_icyveins.png",
+      "sort": 3,
+      "name": "冰冷血脉",
+      "short": "缩短冷却时间并降低法力消耗",
+      "full": "激活后使吉安娜的基本技能的冷却速度加快200%，并且法力消耗降低50%，持续5秒。"
+    },
+    {
+      "nameId": "JainaBlizzardSnowstorm",
+      "buttonId": "JainaBlizzardSnowstormTalent",
+      "abilityType": "W",
+      "icon": "storm_ui_icon_jaina_blizzard.png",
+      "sort": 1,
+      "name": "雪暴",
+      "short": "提高暴风雪的伤害",
+      "full": "第二波暴风雪的伤害提高50%，第三波的伤害提高100%。"
+    },
+    {
+      "nameId": "JainaConeOfColdNorthernExposure",
+      "buttonId": "JainaConeOfColdNorthernExposureTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_jaina_coneofcold.png",
+      "sort": 2,
+      "name": "北地暴寒",
+      "short": "冰锥术降低护甲",
+      "full": "受到冰锥术伤害的敌人的护甲降低25点，使其受到的伤害提高25%，持续2秒。"
+    },
+    {
+      "nameId": "JainaConeOfColdNumbingBlast",
+      "buttonId": "JainaConeOfColdNumbingBlastTalent",
+      "abilityType": "E",
+      "icon": "storm_ui_icon_jaina_coneofcold_var1.png",
+      "sort": 3,
+      "name": "麻木冲击",
+      "short": "冰锥术使冰冻目标定身",
+      "full": "冰锥术会使被冰冻的目标定身1秒。"
+    },
+    {
+      "nameId": "JainaRingOfFrostColdSnap",
+      "buttonId": "JainaRingOfFrostColdSnapTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_jaina_ringoffrost.png",
+      "sort": 1,
+      "name": "急速冷却",
+      "short": "冰霜之环中心造成伤害并定身",
+      "full": "冰霜之环的外层消失后，其中心区域造成310~~0.04~~点伤害，并将敌人定身。每击中一名敌方英雄可使冷却时间缩短15秒。"
+    },
+    {
+      "nameId": "JainaSummonWaterElementalWintermute",
+      "buttonId": "JainaSummonWaterElementalWintermuteTalent",
+      "abilityType": "Heroic",
+      "icon": "storm_ui_icon_jaina_summonwaterelemental.png",
+      "sort": 2,
+      "name": "寂静寒冬",
+      "short": "扩大施法距离并且会模仿你的基本技能",
+      "full": "召唤水元素的施法距离提高50%，并且水元素还会模仿吉安娜的基本技能，造成50%的伤害。"
+    },
+    {
+      "nameId": "JainaFrigidTransmission",
+      "buttonId": "JainaFrigidTransmission",
+      "abilityType": "Active",
+      "icon": "storm_ui_icon_talent_boltofthestorm.png",
+      "sort": 3,
+      "name": "冰霜闪现",
+      "short": "激活后传送并冰冻附近的敌人",
+      "full": "激活后传送一小段距离，并冰冻附近的所有敌人。"
+    },
+    {
+      "nameId": "JainaFrostbiteDeepChill",
+      "buttonId": "JainaFrostbiteDeepChillTalent",
+      "abilityType": "Trait",
+      "icon": "storm_ui_icon_jaina_frostbite.png",
+      "sort": 4,
+      "name": "极寒冰冻",
+      "short": "冰冻减速效果叠加",
+      "full": "霜寒的冰冻效果现在可以叠加2次，使目标最多减速40%。"
+    }
+  ]
+}
