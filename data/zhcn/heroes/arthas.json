@@ -12,7 +12,7 @@
       "trait": true,
       "name": "霜之哀伤的饥渴",
       "short": "激活后强化下一次攻击，并在击中后获得法力值",
-      "full": "激活后阿尔萨斯立即进行下一次普通攻击，造成99~~0.04~~点额外伤害。造成伤害时恢复30点法力值。"
+      "full": "激活后阿尔萨斯立即进行下一次普通攻击，造成99(+4%每级)点额外伤害。造成伤害时恢复30点法力值。"
     },
     {
       "nameId": "ArthasDeathCoil",
@@ -23,7 +23,7 @@
       "trait": false,
       "name": "死亡缠绕",
       "short": "对目标造成伤害或治疗阿尔萨斯",
-      "full": "对目标敌人造成164~~0.04~~点伤害。<n/><n/>可以对自己使用恢复290~~0.04~~点生命值。"
+      "full": "对目标敌人造成164(+4%每级)点伤害。\n\n可以对自己使用恢复290(+4%每级)点生命值。"
     },
     {
       "nameId": "ArthasHowlingBlast",
@@ -34,7 +34,7 @@
       "trait": false,
       "name": "凛风冲击",
       "short": "使范围内敌人定身并对其造成伤害",
-      "full": "使目标范围内的敌人定身，持续1.25秒，并造成68~~0.04~~点伤害。"
+      "full": "使目标范围内的敌人定身，持续1.25秒，并造成68(+4%每级)点伤害。"
     },
     {
       "nameId": "ArthasFrozenTempest",
@@ -45,7 +45,7 @@
       "trait": false,
       "name": "寒冰风暴",
       "short": "对附近敌人造成伤害并使其减速。激活后持续消耗法力值",
-      "full": "每秒对附近的敌人造成40~~0.04~~点伤害，并使其移动速度降低10%，最多降低40%。击中英雄还会使其攻击速度每秒降低10%，最多降低40%。寒冰风暴的效果持续1.5秒。"
+      "full": "每秒对附近的敌人造成40(+4%每级)点伤害，并使其移动速度降低10%，最多降低40%。击中英雄还会使其攻击速度每秒降低10%，最多降低40%。寒冰风暴的效果持续1.5秒。"
     },
     {
       "nameId": "ArthasArmyOfTheDead",
@@ -56,7 +56,7 @@
       "trait": false,
       "name": "亡者大军",
       "short": "复活食尸鬼攻击敌人，并治疗阿尔萨斯",
-      "full": "召唤持续15秒的食尸鬼并攻击造成20~~0.04~~点伤害。牺牲食尸鬼可以恢复267~~0.04~~点生命值。"
+      "full": "召唤持续15秒的食尸鬼并攻击造成20(+4%每级)点伤害。牺牲食尸鬼可以恢复267(+4%每级)点生命值。"
     },
     {
       "nameId": "ArthasSummonSindragosa",
@@ -67,7 +67,7 @@
       "trait": false,
       "name": "召唤辛达苟萨",
       "short": "使敌人和建筑无法动弹",
-      "full": "造成230~~0.04~~点伤害，并使敌人的速度降低60%，持续4秒。还会使小兵、雇佣兵、怪物和建筑失效，持续20秒。"
+      "full": "造成230(+4%每级)点伤害，并使敌人的速度降低60%，持续4秒。还会使小兵、雇佣兵、怪物和建筑失效，持续20秒。"
     },
     {
       "nameId": "Hearthstone",
@@ -89,7 +89,7 @@
       "sort": 1,
       "name": "冰霜灵气",
       "short": "任务：定身英雄来强化凛风冲击",
-      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：使用凛风冲击定身敌方英雄。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：定身5个英雄后，凛风冲击的冷却时间缩短2秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：定身10个英雄后，凛风冲击的施法范围扩大20%。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：定身20个英雄后，凛风冲击还会定身沿途的敌人。"
+      "full": "任务：使用凛风冲击定身敌方英雄。\n\n奖励：定身5个英雄后，凛风冲击的冷却时间缩短2秒。\n\n奖励：定身10个英雄后，凛风冲击的施法范围扩大20%。\n\n奖励：定身20个英雄后，凛风冲击还会定身沿途的敌人。"
     },
     {
       "nameId": "ArthasMasteryEternalHungerFrostmourneHungers",
@@ -99,7 +99,7 @@
       "sort": 2,
       "name": "无尽饥渴",
       "short": "任务：强化霜之哀伤的饥渴",
-      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：对敌方英雄使用霜之哀伤的饥渴。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：霜之哀伤的饥渴恢复的法力值提高4点，最多提高40点，并且伤害提高4点。"
+      "full": "任务：对敌方英雄使用霜之哀伤的饥渴。\n\n奖励：霜之哀伤的饥渴恢复的法力值提高4点，最多提高40点，并且伤害提高4点。"
     },
     {
       "nameId": "ArthasRime",
@@ -129,7 +129,7 @@
       "sort": 2,
       "name": "冰冻废土",
       "short": "任务：寒冰风暴的减速效果持续更长",
-      "full": "寒冰风暴的每秒法力消耗降低2点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：用寒冰风暴对敌方英雄造成伤害。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：用寒冰风暴对敌方英雄造成150次伤害后，寒冰风暴的移动速度和攻击速度降低效果额外持续1.5秒。"
+      "full": "寒冰风暴的每秒法力消耗降低2点。\n\n任务：用寒冰风暴对敌方英雄造成伤害。\n\n奖励：用寒冰风暴对敌方英雄造成150次伤害后，寒冰风暴的移动速度和攻击速度降低效果额外持续1.5秒。"
     },
     {
       "nameId": "ArthasIcyTalons",
@@ -179,7 +179,7 @@
       "sort": 1,
       "name": "亡者大军",
       "short": "复活食尸鬼攻击敌人，并治疗阿尔萨斯",
-      "full": "召唤持续15秒的食尸鬼并攻击造成20~~0.04~~点伤害。牺牲食尸鬼可以恢复267~~0.04~~点生命值。"
+      "full": "召唤持续15秒的食尸鬼并攻击造成20(+4%每级)点伤害。牺牲食尸鬼可以恢复267(+4%每级)点生命值。"
     },
     {
       "nameId": "ArthasHeroicAbilitySummonSindragosa",
@@ -189,7 +189,7 @@
       "sort": 2,
       "name": "召唤辛达苟萨",
       "short": "使敌人和建筑无法动弹",
-      "full": "造成230~~0.04~~点伤害，并使敌人的速度降低60%，持续4秒。还会使小兵、雇佣兵、怪物和建筑失效，持续20秒。"
+      "full": "造成230(+4%每级)点伤害，并使敌人的速度降低60%，持续4秒。还会使小兵、雇佣兵、怪物和建筑失效，持续20秒。"
     },
     {
       "nameId": "ArthasShatteredArmor",

@@ -24,11 +24,15 @@
 - **天赋数据**: `GET https://api.heroesprofile.com/openApi/Heroes/Talents?hero={heroName}`
   - 提供完整的天赋树信息(名称、描述、等级、图标)
 
-### jsDelivr CDN (图标资源)
+### jsDelivr CDN (图标资源 + 中文数据)
 - **图标仓库**: `https://cdn.jsdelivr.net/gh/heroespatchnotes/heroes-talents@master/`
 - **英雄头像**: `images/heroes/{shortname}.png`
 - **技能图标**: `images/abilities/{iconname}.png`
 - **天赋图标**: `images/talents/{iconname}.png`
+- **中文本地化数据**: `https://cdn.jsdelivr.net/gh/FAOfao931013/storm-hub@cursor/storm-hub-mvp-fb56/data/zhcn/heroes/{shortname}.json`
+  - 技能和天赋的中文名称和描述
+  - 来源: HeroesToolChest/heroes-data build 2.55.11.94387 (MIT License)
+  - 运行时在线加载,失败时回退到英文
 
 *图片加载失败时会显示本地占位图*
 

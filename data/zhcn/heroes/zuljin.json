@@ -12,7 +12,7 @@
       "trait": true,
       "name": "狂暴",
       "short": "攻击速度随生命值降低而提高",
-      "full": "激活后使普通攻击伤害提高25%，但每次攻击会消耗2%的最大生命值。<n/><n/>被动：祖尔金每损失1%的最大生命值，攻击速度就会提高1%。<n/><n/><s val=\"cbe8ff-ffffff\" name=\"StandardTooltipHeader\">你想吃一斧头？</s><n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：祖尔金攻击英雄时，每进行5次普通攻击，其普通攻击伤害永久提高1点，最多50点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：攻击英雄75次后，普通攻击距离扩大1.1码。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：攻击英雄150次后，他的双斧投掷会旋转两次。"
+      "full": "激活后使普通攻击伤害提高25%，但每次攻击会消耗2%的最大生命值。\n\n被动：祖尔金每损失1%的最大生命值，攻击速度就会提高1%。\n\n你想吃一斧头？\n\n任务：祖尔金攻击英雄时，每进行5次普通攻击，其普通攻击伤害永久提高1点，最多50点。\n\n奖励：攻击英雄75次后，普通攻击距离扩大1.1码。\n\n奖励：攻击英雄150次后，他的双斧投掷会旋转两次。"
     },
     {
       "nameId": "ZuljinGrievousThrow",
@@ -23,7 +23,7 @@
       "trait": false,
       "name": "重伤投掷",
       "short": "扔出一把战斧，造成伤害并标记目标，提高祖尔金的普通攻击伤害。",
-      "full": "祖尔金向前扔出一把飞斧，对前2名被击中的敌人造成125~~0.04~~点伤害并标记他们，持续6秒。祖尔金对被标记的目标进行的下3次普通攻击造成50%的额外伤害。"
+      "full": "祖尔金向前扔出一把飞斧，对前2名被击中的敌人造成125(+4%每级)点伤害并标记他们，持续6秒。祖尔金对被标记的目标进行的下3次普通攻击造成50%的额外伤害。"
     },
     {
       "nameId": "ZuljinTwinCleave",
@@ -34,7 +34,7 @@
       "trait": false,
       "name": "双斧投掷",
       "short": "扔出旋转的斧头使敌人减速",
-      "full": "以大圆弧的轨迹扔出2把斧头，每把斧头造成112~~0.04~~点伤害，并使被影响的敌人减速15%，持续2秒。"
+      "full": "以大圆弧的轨迹扔出2把斧头，每把斧头造成112(+4%每级)点伤害，并使被影响的敌人减速15%，持续2秒。"
     },
     {
       "nameId": "ZuljinRegeneration",
@@ -67,7 +67,7 @@
       "trait": false,
       "name": "断头斧",
       "short": "造成大量范围伤害",
-      "full": "祖尔金向空中投出一把巨斧落在目标区域，造成330~~0.04~~点伤害。他的生命值越低，额外伤害就越高。"
+      "full": "祖尔金向空中投出一把巨斧落在目标区域，造成330(+4%每级)点伤害。他的生命值越低，额外伤害就越高。"
     },
     {
       "nameId": "ZuljinAmaniRage",
@@ -120,7 +120,7 @@
       "sort": 3,
       "name": "猎头者",
       "short": "任务：击杀英雄会提高伤害",
-      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：祖尔金首次击杀某一名敌方英雄后，他造成的伤害会永久提高2%。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：每名敌方英雄都被他击杀后，普通攻击的范围扩大1.1码。"
+      "full": "任务：祖尔金首次击杀某一名敌方英雄后，他造成的伤害会永久提高2%。\n\n奖励：每名敌方英雄都被他击杀后，普通攻击的范围扩大1.1码。"
     },
     {
       "nameId": "ZuljinTrollsBlood",
@@ -140,7 +140,7 @@
       "sort": 2,
       "name": "巫毒步",
       "short": "激活后移除定身和减速效果",
-      "full": "激活后移除定身和减速效果。<n/><n/>被动：使再生的冷却时间和法力消耗降低40%。"
+      "full": "激活后移除定身和减速效果。\n\n被动：使再生的冷却时间和法力消耗降低40%。"
     },
     {
       "nameId": "Zul'jinAmaniRageAmaniHide",
@@ -170,7 +170,7 @@
       "sort": 2,
       "name": "奥金飞斧",
       "short": "任务：提高双斧投掷的伤害",
-      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：每用双斧投掷击中一名英雄，此技能伤害就永久提高0.75点。"
+      "full": "任务：每用双斧投掷击中一名英雄，此技能伤害就永久提高0.75点。"
     },
     {
       "nameId": "ZuljinFerocity",
@@ -200,7 +200,7 @@
       "sort": 2,
       "name": "断头斧",
       "short": "造成大量范围伤害",
-      "full": "祖尔金向空中投出一把巨斧落在目标区域，造成330~~0.04~~点伤害。他的生命值越低，额外伤害就越高。"
+      "full": "祖尔金向空中投出一把巨斧落在目标区域，造成330(+4%每级)点伤害。他的生命值越低，额外伤害就越高。"
     },
     {
       "nameId": "ZuljinLacerate",
@@ -250,7 +250,7 @@
       "sort": 2,
       "name": "阴差阳错",
       "short": "双斧投掷在顶点处造成额外伤害",
-      "full": "如果敌人被双斧投掷的两把斧头同时击中，则受到100~~0.04~~点额外伤害。而且会算做“你想吃一斧头？”命中了 5名英雄。"
+      "full": "如果敌人被双斧投掷的两把斧头同时击中，则受到100(+4%每级)点额外伤害。而且会算做“你想吃一斧头？”命中了 5名英雄。"
     },
     {
       "nameId": "ZuljinLetTheKillingBegin",
@@ -260,7 +260,7 @@
       "sort": 3,
       "name": "杀戮开始",
       "short": "击杀敌人提高攻击速度",
-      "full": "祖尔金杀死一个敌人后，他的攻击速度提高5%，最多提高40%，持续12秒。普通攻击刷新持续时间。<n/><n/>杀死英雄立即提供40%的攻击速度加成。"
+      "full": "祖尔金杀死一个敌人后，他的攻击速度提高5%，最多提高40%，持续12秒。普通攻击刷新持续时间。\n\n杀死英雄立即提供40%的攻击速度加成。"
     },
     {
       "nameId": "ZuljinAmaniResilience",

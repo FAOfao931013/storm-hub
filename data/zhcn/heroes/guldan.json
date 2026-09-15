@@ -12,7 +12,7 @@
       "trait": true,
       "name": "生命分流",
       "short": "消耗生命值来恢复法力值",
-      "full": "古尔丹无法被动恢复法力值。<n/><n/>激活后恢复25%的法力值。"
+      "full": "古尔丹无法被动恢复法力值。\n\n激活后恢复25%的法力值。"
     },
     {
       "nameId": "GuldanFelFlame",
@@ -23,7 +23,7 @@
       "trait": false,
       "name": "邪焰",
       "short": "释放烈焰波对敌人造成伤害",
-      "full": "释放一道烈焰波，对敌人造成210~~0.045~~点伤害。"
+      "full": "释放一道烈焰波，对敌人造成210(+5%每级)点伤害。"
     },
     {
       "nameId": "GuldanDrainLife",
@@ -34,7 +34,7 @@
       "trait": false,
       "name": "吸取生命",
       "short": "吸取一个敌人的生命值，造成伤害并治疗古尔丹",
-      "full": "在3秒内吸取一名敌人的生命值，每秒造成132~~0.04~~点伤害并每秒为古尔丹恢复188~~0.04~~点生命值。"
+      "full": "在3秒内吸取一名敌人的生命值，每秒造成132(+4%每级)点伤害并每秒为古尔丹恢复188(+4%每级)点生命值。"
     },
     {
       "nameId": "GuldanCorruption",
@@ -45,7 +45,7 @@
       "trait": false,
       "name": "腐蚀术",
       "short": "对范围内的敌人造成持续伤害",
-      "full": "向前方召唤出三波暗影能量，在6秒内造成204~~0.045~~点伤害。腐蚀术可以在一个敌人身上叠加3次。"
+      "full": "向前方召唤出三波暗影能量，在6秒内造成204(+5%每级)点伤害。腐蚀术可以在一个敌人身上叠加3次。"
     },
     {
       "nameId": "GuldanHorrify",
@@ -56,7 +56,7 @@
       "trait": false,
       "name": "地狱嚎叫",
       "short": "造成伤害并恐惧英雄",
-      "full": "0.5秒后，造成120~~0.04~~点伤害并恐惧范围内敌方英雄，持续2秒。被恐惧时，英雄被沉默且被迫逃离恐惧中心点。"
+      "full": "0.5秒后，造成120(+4%每级)点伤害并恐惧范围内敌方英雄，持续2秒。被恐惧时，英雄被沉默且被迫逃离恐惧中心点。"
     },
     {
       "nameId": "GuldanRainOfDestruction",
@@ -67,7 +67,7 @@
       "trait": false,
       "name": "毁灭之雨",
       "short": "在目标范围内召唤陨石雨",
-      "full": "1.5秒后，在目标范围内召唤一波陨石雨，持续7秒。每一颗陨石在小范围内造成165~~0.04~~点伤害。"
+      "full": "1.5秒后，在目标范围内召唤一波陨石雨，持续7秒。每一颗陨石在小范围内造成165(+4%每级)点伤害。"
     },
     {
       "nameId": "Hearthstone",
@@ -89,7 +89,7 @@
       "sort": 1,
       "name": "烈焰渴求",
       "short": "任务：击中30个英雄后扩大范围",
-      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：用邪焰击中30个敌方英雄。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：邪焰的范围扩大10%。"
+      "full": "任务：用邪焰击中30个敌方英雄。\n\n奖励：邪焰的范围扩大10%。"
     },
     {
       "nameId": "GuldanChaoticEnergy",
@@ -99,7 +99,7 @@
       "sort": 2,
       "name": "混沌能量",
       "short": "任务：收集恢复之球可以降低法力消耗",
-      "full": "吸取生命的施法范围扩大25%，并且恢复之球的治疗效果提高50%。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：收集15个恢复之球。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：基本技能的法力消耗永久降低20点。"
+      "full": "吸取生命的施法范围扩大25%，并且恢复之球的治疗效果提高50%。\n\n任务：收集15个恢复之球。\n\n奖励：基本技能的法力消耗永久降低20点。"
     },
     {
       "nameId": "GuldanCorruptionEchoedCorruption",
@@ -109,7 +109,7 @@
       "sort": 3,
       "name": "回荡腐蚀",
       "short": "任务：用腐蚀术击中40个英雄可以增加攻击次数",
-      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：用腐蚀术击中40个敌方英雄。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：在第三次攻击后，腐蚀术会向反方向攻击3次。"
+      "full": "任务：用腐蚀术击中40个敌方英雄。\n\n奖励：在第三次攻击后，腐蚀术会向反方向攻击3次。"
     },
     {
       "nameId": "GuldanDrainLifeHealthFunnel",
@@ -139,7 +139,7 @@
       "sort": 3,
       "name": "吞噬灵魂",
       "short": "立即杀死敌方小兵并治疗自己",
-      "full": "立即消灭一个敌方小兵并恢复365~~0.04~~点生命值。<n/><n/>最多储存3次使用次数。"
+      "full": "立即消灭一个敌方小兵并恢复365(+4%每级)点生命值。\n\n最多储存3次使用次数。"
     },
     {
       "nameId": "GuldanFelFlameBoundByShadow",
@@ -179,7 +179,7 @@
       "sort": 1,
       "name": "地狱嚎叫",
       "short": "造成伤害并恐惧英雄",
-      "full": "0.5秒后，造成120~~0.04~~点伤害并恐惧范围内敌方英雄，持续2秒。被恐惧时，英雄被沉默且被迫逃离恐惧中心点。"
+      "full": "0.5秒后，造成120(+4%每级)点伤害并恐惧范围内敌方英雄，持续2秒。被恐惧时，英雄被沉默且被迫逃离恐惧中心点。"
     },
     {
       "nameId": "GuldanRainOfDestruction",
@@ -189,7 +189,7 @@
       "sort": 2,
       "name": "毁灭之雨",
       "short": "在目标范围内召唤陨石雨",
-      "full": "1.5秒后，在目标范围内召唤一波陨石雨，持续7秒。每一颗陨石在小范围内造成165~~0.04~~点伤害。"
+      "full": "1.5秒后，在目标范围内召唤一波陨石雨，持续7秒。每一颗陨石在小范围内造成165(+4%每级)点伤害。"
     },
     {
       "nameId": "GuldanFelFlameFelArmor",
@@ -249,7 +249,7 @@
       "sort": 2,
       "name": "毁灭痛苦",
       "short": "腐蚀术造成额外伤害",
-      "full": "腐蚀术造成78~~0.04~~点额外冲击伤害。如果敌人被三次攻击全部命中，那么第三次攻击将造成268~~0.04~~点伤害。"
+      "full": "腐蚀术造成78(+4%每级)点额外冲击伤害。如果敌人被三次攻击全部命中，那么第三次攻击将造成268(+4%每级)点伤害。"
     },
     {
       "nameId": "GuldanLifeTapDarknessWithin",
@@ -259,7 +259,7 @@
       "sort": 3,
       "name": "黑暗之心",
       "short": "生命分流可提高伤害",
-      "full": "对敌方英雄造成600~~0.04~~点伤害可以使下一次生命分流不消耗任何生命值，并给予古尔丹25%的法术强度，持续5秒。"
+      "full": "对敌方英雄造成600(+4%每级)点伤害可以使下一次生命分流不消耗任何生命值，并给予古尔丹25%的法术强度，持续5秒。"
     },
     {
       "nameId": "GuldanHorrifyHaunt",

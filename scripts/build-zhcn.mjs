@@ -53,11 +53,50 @@ async function fetchJson(url) {
 }
 
 /**
- * Strip HTML color tags from text
+ * Clean game markup and format Chinese text for display
+ * Handles: color tags, newlines, images, scaling tokens, HTML remnants
  */
-function stripHtmlTags(text) {
+function cleanGamestring(text) {
   if (!text) return text;
-  return text.replace(/<\/?c[^>]*>/g, '');
+  
+  let cleaned = text;
+  
+  // 1. Strip color tags: <c val="#ColorName">...</c> or <c>...</c>
+  cleaned = cleaned.replace(/<\/?c[^>]*>/g, '');
+  
+  // 2. Replace newline markers with actual newlines
+  cleaned = cleaned.replace(/<n\/?>|<\/n>/g, '\n');
+  
+  // 3. Remove image tags entirely (quest icons, etc.)
+  // Optional: add "任务：" prefix only for quest icons if helpful
+  cleaned = cleaned.replace(/<img[^>]*StormTalentInTextQuestIcon[^>]*\/?>/gi, '');
+  cleaned = cleaned.replace(/<img[^>]*\/?>/gi, '');
+  
+  // 4. Convert scaling tokens: ~~0.04~~ adjacent to numbers
+  // e.g., "350~~0.04~~" -> "350(+4%每级)"
+  cleaned = cleaned.replace(/(\d+(?:\.\d+)?)~~(0\.\d+)~~/g, (match, baseValue, scaling) => {
+    const scalingPercent = Math.round(parseFloat(scaling) * 100);
+    return `${baseValue}(+${scalingPercent}%每级)`;
+  });
+  
+  // Handle standalone scaling tokens (just in case)
+  cleaned = cleaned.replace(/~~(0\.\d+)~~/g, (match, scaling) => {
+    const scalingPercent = Math.round(parseFloat(scaling) * 100);
+    return `(+${scalingPercent}%每级)`;
+  });
+  
+  // 5. Remove any remaining HTML-like tags
+  cleaned = cleaned.replace(/<[^>]+>/g, '');
+  
+  // 6. Clean up whitespace
+  // Replace multiple spaces with single space
+  cleaned = cleaned.replace(/ {2,}/g, ' ');
+  // Replace multiple newlines with max 2 (paragraph break)
+  cleaned = cleaned.replace(/\n{3,}/g, '\n\n');
+  // Trim leading/trailing whitespace
+  cleaned = cleaned.trim();
+  
+  return cleaned;
 }
 
 /**
@@ -167,9 +206,9 @@ async function build() {
               icon: ability.icon,
               hotkey: abilityType,
               trait: groupKey === 'trait',
-              name: stripHtmlTags(name),
-              short: stripHtmlTags(short),
-              full: stripHtmlTags(full)
+              name: cleanGamestring(name),
+              short: cleanGamestring(short),
+              full: cleanGamestring(full)
             });
             totalAbilities++;
           }
@@ -222,9 +261,9 @@ async function build() {
               icon: talent.icon,
               level: talent.tier,
               sort: talent.sort,
-              name: stripHtmlTags(name),
-              short: stripHtmlTags(short),
-              full: stripHtmlTags(full)
+              name: cleanGamestring(name),
+              short: cleanGamestring(short),
+              full: cleanGamestring(full)
             });
             totalTalents++;
           }

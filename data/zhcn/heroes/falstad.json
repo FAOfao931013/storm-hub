@@ -23,7 +23,7 @@
       "trait": false,
       "name": "回旋锤",
       "short": "扔出一柄可以返回并爆炸的锤子",
-      "full": "投掷一把会返回弗斯塔德手中的飞锤，造成80~~0.04~~点伤害并使被命中的敌人减速25%，持续2秒。再次激活可以引爆飞锤，对附近敌人造成95~~0.04~~点伤害。"
+      "full": "投掷一把会返回弗斯塔德手中的飞锤，造成80(+4%每级)点伤害并使被命中的敌人减速25%，持续2秒。再次激活可以引爆飞锤，对附近敌人造成95(+4%每级)点伤害。"
     },
     {
       "nameId": "FalstadLightningRod",
@@ -34,7 +34,7 @@
       "trait": false,
       "name": "引雷针",
       "short": "在敌人附近时对他们造成伤害",
-      "full": "对一名敌人造成107~~0.04~~点伤害，在目标附近时，每秒额外造成75~~0.04~~点伤害，持续4秒。对小兵和雇佣兵造成的伤害提高100%。"
+      "full": "对一名敌人造成107(+4%每级)点伤害，在目标附近时，每秒额外造成75(+4%每级)点伤害，持续4秒。对小兵和雇佣兵造成的伤害提高100%。"
     },
     {
       "nameId": "FalstadBarrelRoll",
@@ -45,7 +45,7 @@
       "trait": false,
       "name": "侧滚翻",
       "short": "快速前往目标区域，获得一层临时护盾",
-      "full": "向目标区域冲刺，获得171~~0.04~~点护盾，持续3秒。"
+      "full": "向目标区域冲刺，获得171(+4%每级)点护盾，持续3秒。"
     },
     {
       "nameId": "FalstadMightyGust",
@@ -67,7 +67,7 @@
       "trait": false,
       "name": "辛特兰雷击",
       "short": "超远距离的伤害光束",
-      "full": "1秒后，对一长段直线上的敌人造成475~~0.0475~~点伤害。每击中一名敌方英雄，冷却时间就会缩短30秒。"
+      "full": "1秒后，对一长段直线上的敌人造成475(+5%每级)点伤害。每击中一名敌方英雄，冷却时间就会缩短30秒。"
     },
     {
       "nameId": "Hearthstone",
@@ -89,7 +89,7 @@
       "sort": 1,
       "name": "风暴聚集",
       "short": "任务：提高回旋锤伤害",
-      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：回旋锤每次击中英雄都会使其伤害提高0.5%并返还6点法力值。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：使用回旋锤命中30名英雄后，回旋锤的伤害提高15%。"
+      "full": "任务：回旋锤每次击中英雄都会使其伤害提高0.5%并返还6点法力值。\n\n奖励：使用回旋锤命中30名英雄后，回旋锤的伤害提高15%。"
     },
     {
       "nameId": "FalstadLightningRodDishonorableDischarge",
@@ -99,7 +99,7 @@
       "sort": 2,
       "name": "开除军籍",
       "short": "任务：提高引雷针的伤害",
-      "full": "引雷针的冷却时间缩短2秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：在引雷针进行3次打击后，对敌方英雄的后续打击使引雷针的伤害提高1%，最多提高75%。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：在30次后续打击过后，引雷针的冷却时间额外缩短2秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：在75次后续打击过后，获得击杀会重置引雷针的冷却时间。"
+      "full": "引雷针的冷却时间缩短2秒。\n\n任务：在引雷针进行3次打击后，对敌方英雄的后续打击使引雷针的伤害提高1%，最多提高75%。\n\n奖励：在30次后续打击过后，引雷针的冷却时间额外缩短2秒。\n\n奖励：在75次后续打击过后，获得击杀会重置引雷针的冷却时间。"
     },
     {
       "nameId": "FalstadTailwindFrequentFlyer",
@@ -108,8 +108,8 @@
       "icon": "storm_ui_icon_falstad_tailwind_a.png",
       "sort": 3,
       "name": "飞行老手",
-      "short": "激活时获得攻击速度和顺风之力<n/>任务：消灭敌人提高普通攻击伤害",
-      "full": "激活飞行老手将获得40%攻击速度加成和顺风之力，持续4秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：消灭小兵将提高0.2点普通攻击伤害。击杀英雄将提高0.5点普通攻击伤害。"
+      "short": "激活时获得攻击速度和顺风之力\n任务：消灭敌人提高普通攻击伤害",
+      "full": "激活飞行老手将获得40%攻击速度加成和顺风之力，持续4秒。\n\n任务：消灭小兵将提高0.2点普通攻击伤害。击杀英雄将提高0.5点普通攻击伤害。"
     },
     {
       "nameId": "FalstadMasteryLightningRodStaticShield",
@@ -179,7 +179,7 @@
       "sort": 1,
       "name": "辛特兰雷击",
       "short": "超远距离的伤害光束",
-      "full": "1秒后，对一长段直线上的敌人造成475~~0.0475~~点伤害。每击中一名敌方英雄，冷却时间就会缩短30秒。"
+      "full": "1秒后，对一长段直线上的敌人造成475(+5%每级)点伤害。每击中一名敌方英雄，冷却时间就会缩短30秒。"
     },
     {
       "nameId": "FalstadHeroicAbilityMightyGust",

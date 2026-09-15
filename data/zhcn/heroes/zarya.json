@@ -12,7 +12,7 @@
       "trait": true,
       "name": "能量",
       "short": "查莉娅的屏障所吸收的伤害可以提高她的伤害",
-      "full": "个人屏障和投射屏障每吸收9~~0.04~~点伤害就会使查莉娅的能量提高1点。每点能量使查莉娅的伤害提高2%。0.5秒后，能量会每秒降低3点。"
+      "full": "个人屏障和投射屏障每吸收9(+4%每级)点伤害就会使查莉娅的能量提高1点。每点能量使查莉娅的伤害提高2%。0.5秒后，能量会每秒降低3点。"
     },
     {
       "nameId": "ZaryaParticleGrenade",
@@ -23,7 +23,7 @@
       "trait": false,
       "name": "粒子榴弹",
       "short": "对小范围内的敌人造成伤害",
-      "full": "射出一枚粒子榴弹，对范围内的敌人造成80~~0.04~~点伤害。对建筑造成50%的伤害。<n/><n/>最多储存4次使用次数。"
+      "full": "射出一枚粒子榴弹，对范围内的敌人造成80(+4%每级)点伤害。对建筑造成50%的伤害。\n\n最多储存4次使用次数。"
     },
     {
       "nameId": "ZaryaPersonalBarrier",
@@ -34,7 +34,7 @@
       "trait": false,
       "name": "个人屏障",
       "short": "获得一个吸收伤害的护盾",
-      "full": "获得一个护盾，吸收560~~0.04~~点伤害，持续3秒。"
+      "full": "获得一个护盾，吸收560(+4%每级)点伤害，持续3秒。"
     },
     {
       "nameId": "ZaryaShieldAlly",
@@ -45,7 +45,7 @@
       "trait": false,
       "name": "投射屏障",
       "short": "为盟友套上护盾来吸收伤害",
-      "full": "使一个友方英雄获得护盾，吸收420~~0.04~~点伤害，持续3秒。"
+      "full": "使一个友方英雄获得护盾，吸收420(+4%每级)点伤害，持续3秒。"
     },
     {
       "nameId": "ZaryaGravitonSurge",
@@ -56,7 +56,7 @@
       "trait": false,
       "name": "重力喷涌",
       "short": "射出一枚重力炸弹，吸引敌人",
-      "full": "射出一枚重力炸弹，在1秒后爆炸并将敌方英雄拉向中心，持续2.5秒。受影响的敌人每秒受到30~~0.04~~点伤害。"
+      "full": "射出一枚重力炸弹，在1秒后爆炸并将敌方英雄拉向中心，持续2.5秒。受影响的敌人每秒受到30(+4%每级)点伤害。"
     },
     {
       "nameId": "ZaryaExpulsionZone",
@@ -67,7 +67,7 @@
       "trait": false,
       "name": "喷涌区域",
       "short": "射出一枚炸弹，持续击退敌人",
-      "full": "射出一枚重力炸弹，造成124~~0.04~~点伤害，并制造一片喷涌区域，持续3.5秒。进入该区域的敌人将被击退，并且移动速度降低50%，持续1秒。"
+      "full": "射出一枚重力炸弹，造成124(+4%每级)点伤害，并制造一片喷涌区域，持续3.5秒。进入该区域的敌人将被击退，并且移动速度降低50%，持续1秒。"
     },
     {
       "nameId": "Hearthstone",
@@ -89,7 +89,7 @@
       "sort": 1,
       "name": "爆破专家",
       "short": "任务：扩大粒子榴弹的范围，并缩短冷却时间",
-      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：粒子榴弹每击中5个敌方英雄使充能时间缩短0.4375秒，最多缩短3.5秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：粒子榴弹击中40个敌方英雄后，范围扩大15%。"
+      "full": "任务：粒子榴弹每击中5个敌方英雄使充能时间缩短0.4375秒，最多缩短3.5秒。\n\n奖励：粒子榴弹击中40个敌方英雄后，范围扩大15%。"
     },
     {
       "nameId": "ZaryaShieldAllyTogetherWeAreStrong",
@@ -99,7 +99,7 @@
       "sort": 2,
       "name": "众志成城",
       "short": "受到投射屏障影响的盟友造成伤害会提供能量",
-      "full": "盟友在获得投射屏障后的3秒内，每造成5.35~~0.04~~点伤害，就会使查莉娅获得1点能量，每个护盾最多可以获得40点能量。"
+      "full": "盟友在获得投射屏障后的3秒内，每造成5.35(+4%每级)点伤害，就会使查莉娅获得1点能量，每个护盾最多可以获得40点能量。"
     },
     {
       "nameId": "ZaryaWeaponFeelTheHeat",
@@ -118,8 +118,8 @@
       "icon": "storm_ui_icon_zarya_energy.png",
       "sort": 4,
       "name": "能量全满",
-      "short": "恢复之球可以提供能量<n/>任务：提高能量上限",
-      "full": "恢复之球立即提供20点能量。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：能量达到或高于50点时，保持150秒。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：最大能量值提高20点。"
+      "short": "恢复之球可以提供能量\n任务：提高能量上限",
+      "full": "恢复之球立即提供20点能量。\n\n任务：能量达到或高于50点时，保持150秒。\n\n奖励：最大能量值提高20点。"
     },
     {
       "nameId": "ZaryaPersonalBarrierIAmTheStrongest",
@@ -129,7 +129,7 @@
       "sort": 1,
       "name": "我最强壮",
       "short": "提高个人屏障的护盾值，获得能量",
-      "full": "个人屏障可以吸收额外140~~0.04~~点伤害。<n/><n/>被动：查莉娅的护盾吸收的伤害可以额外提供20%的能量。"
+      "full": "个人屏障可以吸收额外140(+4%每级)点伤害。\n\n被动：查莉娅的护盾吸收的伤害可以额外提供20%的能量。"
     },
     {
       "nameId": "ZaryaShieldAllyGiveMeTwentyQuest",
@@ -139,7 +139,7 @@
       "sort": 2,
       "name": "二十个俯卧撑",
       "short": "任务：提高投射屏障的吸收量，并缩短冷却时间",
-      "full": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>任务：恢复之球使投射屏障的吸收量永久提高15点，最多提高300点。<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/>奖励：收集20个恢复之球后，投射屏障的冷却时间永久缩短2秒。"
+      "full": "任务：恢复之球使投射屏障的吸收量永久提高15点，最多提高300点。\n\n奖励：收集20个恢复之球后，投射屏障的冷却时间永久缩短2秒。"
     },
     {
       "nameId": "ZaryaShieldAllySpeedBarrier",
@@ -169,7 +169,7 @@
       "sort": 1,
       "name": "弹无虚发",
       "short": "粒子榴弹在中心区域造成更高伤害并减速",
-      "full": "粒子榴弹对被轰击点中心附近的敌人造成25~~0.04~~点额外伤害，并且使其移动速度降低25%，持续2秒。"
+      "full": "粒子榴弹对被轰击点中心附近的敌人造成25(+4%每级)点额外伤害，并且使其移动速度降低25%，持续2秒。"
     },
     {
       "nameId": "ZaryaDeepBurn",
@@ -189,7 +189,7 @@
       "sort": 3,
       "name": "爆炸屏障",
       "short": "个人屏障造成范围伤害",
-      "full": "效果消失或被打破后，个人屏障会爆炸，对附近敌人造成110~~0.04~~点伤害。"
+      "full": "效果消失或被打破后，个人屏障会爆炸，对附近敌人造成110(+4%每级)点伤害。"
     },
     {
       "nameId": "ZaryaHeroicAbilityGravitonSurge",
@@ -199,7 +199,7 @@
       "sort": 1,
       "name": "重力喷涌",
       "short": "射出一枚重力炸弹，吸引敌人",
-      "full": "射出一枚重力炸弹，在1秒后爆炸并将敌方英雄拉向中心，持续2.5秒。受影响的敌人每秒受到30~~0.04~~点伤害。"
+      "full": "射出一枚重力炸弹，在1秒后爆炸并将敌方英雄拉向中心，持续2.5秒。受影响的敌人每秒受到30(+4%每级)点伤害。"
     },
     {
       "nameId": "ZaryaHeroicAbilityExpulsionZone",
@@ -209,7 +209,7 @@
       "sort": 2,
       "name": "喷涌区域",
       "short": "射出一枚炸弹，持续击退敌人",
-      "full": "射出一枚重力炸弹，造成124~~0.04~~点伤害，并制造一片喷涌区域，持续3.5秒。进入该区域的敌人将被击退，并且移动速度降低50%，持续1秒。"
+      "full": "射出一枚重力炸弹，造成124(+4%每级)点伤害，并制造一片喷涌区域，持续3.5秒。进入该区域的敌人将被击退，并且移动速度降低50%，持续1秒。"
     },
     {
       "nameId": "ZaryaPersonalBarrierUnstoppableCompetitor",
