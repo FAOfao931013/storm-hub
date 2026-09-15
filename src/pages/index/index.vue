@@ -167,17 +167,25 @@ async function fetchHeroes() {
     loading.value = true;
     
     // Fetch franchise map
-    const franchiseMapResponse = await uni.request({
-      url: franchiseMapUrl,
-      method: 'GET'
+    const franchiseMapResponse: any = await new Promise((resolve, reject) => {
+      uni.request({
+        url: franchiseMapUrl,
+        method: 'GET',
+        success: (res) => resolve(res),
+        fail: (err) => reject(err)
+      });
     });
     
     const franchiseMap = franchiseMapResponse.data as Record<string, string>;
     
     // Fetch heroes
-    const response = await uni.request({
-      url: 'https://www.heroesprofile.com/api/Heroes/',
-      method: 'GET'
+    const response: any = await new Promise((resolve, reject) => {
+      uni.request({
+        url: 'https://www.heroesprofile.com/api/Heroes/',
+        method: 'GET',
+        success: (res) => resolve(res),
+        fail: (err) => reject(err)
+      });
     });
     
     const heroData = response.data as Hero[];
