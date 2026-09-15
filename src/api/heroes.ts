@@ -9,7 +9,24 @@ let cacheTimestamp = 0
 const CACHE_TTL = 5 * 60 * 1000 // 5 minutes
 
 /**
+ * Extract Chinese name from translations array
+ * Looks for CJK characters (Chinese simplified/traditional)
+ * Returns first Chinese match or empty string
+ */
+export function getChineseName(translations: string[]): string {
+  if (!Array.isArray(translations)) return ''
+  
+  // Find first string containing CJK characters (Chinese)
+  const chineseEntry = translations.find(t => 
+    t && /[\u4e00-\u9fff]/.test(t)
+  )
+  
+  return chineseEntry || ''
+}
+
+/**
  * Fetch all heroes from Heroes Profile API
+ * API returns an object keyed by hero name, not an array
  */
 export async function fetchHeroes(): Promise<Hero[]> {
   const now = Date.now()
@@ -26,8 +43,20 @@ export async function fetchHeroes(): Promise<Hero[]> {
       timeout: 10000
     })
 
-    if (response.statusCode === 200 && Array.isArray(response.data)) {
-      heroesCache = response.data as Hero[]
+    if (response.statusCode === 200 && response.data) {
+      const data = response.data as any
+      
+      // Convert object to array
+      if (typeof data === 'object' && !Array.isArray(data)) {
+        // API returns { "Abathur": {...}, "Alarak": {...} }
+        heroesCache = Object.values(data) as Hero[]
+      } else if (Array.isArray(data)) {
+        // Fallback if API changes to array format
+        heroesCache = data as Hero[]
+      } else {
+        throw new Error('Invalid API response format')
+      }
+      
       cacheTimestamp = now
       return heroesCache
     }

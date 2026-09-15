@@ -64,7 +64,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import type { Hero } from '@/types/hero'
-import { fetchHeroes, clearHeroesCache } from '@/api/heroes'
+import { fetchHeroes, clearHeroesCache, getChineseName } from '@/api/heroes'
 import { getFavorites, toggleFavorite } from '@/utils/storage'
 import HeroCard from '@/components/HeroCard.vue'
 
@@ -85,10 +85,17 @@ const filteredHeroes = computed(() => {
   if (searchQuery.value.trim()) {
     const query = searchQuery.value.toLowerCase()
     result = result.filter(hero => {
-      const cnName = hero.translations?.chinese_cn?.toLowerCase() || ''
-      const twName = hero.translations?.chinese_tw?.toLowerCase() || ''
+      const chineseName = getChineseName(hero.translations).toLowerCase()
       const enName = hero.name.toLowerCase()
-      return cnName.includes(query) || twName.includes(query) || enName.includes(query)
+      
+      // Search in all translation strings
+      const allTranslations = Array.isArray(hero.translations) 
+        ? hero.translations.join(' ').toLowerCase()
+        : ''
+      
+      return chineseName.includes(query) || 
+             enName.includes(query) || 
+             allTranslations.includes(query)
     })
   }
 

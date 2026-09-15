@@ -1,19 +1,18 @@
 // Heroes Profile API response types
 
-export interface HeroTranslations {
-  chinese_cn?: string;
-  chinese_tw?: string;
-  english?: string;
-  [key: string]: string | undefined;
-}
+// API returns translations as a string array containing multilingual aliases
+// Typically includes: [en_lowercase, variants, russian, korean, chinese_simplified, chinese_traditional]
+export type HeroTranslations = string[];
 
 export interface Hero {
+  id: number;
   name: string;
   short_name: string;
   attribute_id: string;
   role: string;
   new_role: string;
   type: string;
+  release_date?: string;
   translations: HeroTranslations;
   icon?: string;
 }

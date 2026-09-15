@@ -106,7 +106,7 @@
 import { ref, computed } from 'vue'
 import { onLoad } from '@dcloudio/uni-app'
 import type { Hero, Talent, Ability } from '@/types/hero'
-import { fetchHeroes, fetchTalents, fetchAbilities, getHeroIconUrl, getTalentIconUrl, getAbilityIconUrl } from '@/api/heroes'
+import { fetchHeroes, fetchTalents, fetchAbilities, getHeroIconUrl, getTalentIconUrl, getAbilityIconUrl, getChineseName } from '@/api/heroes'
 import { isFavorite as checkFavorite, toggleFavorite } from '@/utils/storage'
 
 const hero = ref<Hero | null>(null)
@@ -120,9 +120,8 @@ const imageError = ref(false)
 
 const displayName = computed(() => {
   if (!hero.value) return ''
-  return hero.value.translations?.chinese_cn || 
-         hero.value.translations?.chinese_tw || 
-         hero.value.name
+  const chineseName = getChineseName(hero.value.translations)
+  return chineseName || hero.value.name
 })
 
 const heroIcon = computed(() => {
