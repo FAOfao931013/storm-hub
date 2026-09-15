@@ -110,6 +110,46 @@ function normalizeHeroName(name) {
 }
 
 /**
+ * Map HeroesToolChest internal hero keys to Heroes Profile short_name format
+ * This ensures generated files match the names used by Heroes Profile API and heroes-talents
+ */
+const HERO_NAME_MAP = {
+  // Internal key -> Heroes Profile short_name
+  'NexusHunter': 'qhira',
+  'Barbarian': 'sonya',
+  'DemonHunter': 'valla',
+  'Amazon': 'cassia',
+  'FaerieDragon': 'brightwing',
+  'Firebat': 'blaze',
+  'Crusader': 'johanna',
+  'Medic': 'ltmorales',
+  'Monk': 'kharazim',
+  'Necromancer': 'xul',
+  'WitchDoctor': 'nazeebo',
+  'Wizard': 'liming',
+  'Tinker': 'gazlowe',
+  'LostVikings': 'thelostvikings',
+  'Butcher': 'thebutcher',
+  'L90ETC': 'etc',
+  'MeiOW': 'mei',
+  'DVa': 'dva',
+  'Dryad': 'lunara',
+  // Add any other special cases as needed
+};
+
+/**
+ * Get Heroes Profile compatible short_name from HeroesToolChest hero key
+ */
+function getHeroShortName(heroKey) {
+  // Check explicit mapping first
+  if (HERO_NAME_MAP[heroKey]) {
+    return HERO_NAME_MAP[heroKey];
+  }
+  // Otherwise normalize the hero key
+  return normalizeHeroName(heroKey);
+}
+
+/**
  * Build join key for matching abilities/talents
  * Note: Uses capitalized False/True to match gamestrings format
  */
@@ -145,7 +185,7 @@ async function build() {
   for (const [heroKey, hero] of Object.entries(heroData)) {
     if (!hero || heroKey === 'TestHero') continue;
     
-    const shortName = normalizeHeroName(heroKey);
+    const shortName = getHeroShortName(heroKey);
     const heroOutput = {
       shortName,
       heroName: heroKey,

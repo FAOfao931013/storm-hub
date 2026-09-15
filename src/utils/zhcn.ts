@@ -1,6 +1,8 @@
 import type { Ability, Talent } from '@/types/hero'
 
-const JSDELIVR_BASE = 'https://cdn.jsdelivr.net/gh/FAOfao931013/storm-hub@cursor/storm-hub-mvp-fb56'
+// jsDelivr requires %2F encoding for branch names with slashes
+// TODO: Switch to @main after merge
+const JSDELIVR_BASE = 'https://cdn.jsdelivr.net/gh/FAOfao931013/storm-hub@cursor%2Fstorm-hub-mvp-fb56'
 const BUILD_ID = '2.55.11.94387'
 
 interface ZhcnAbility {

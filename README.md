@@ -140,6 +140,27 @@ storm-hub/
 └── README.md               # 项目说明文档
 ```
 
+## 中文本地化系统
+
+**构建脚本 (`scripts/build-zhcn.mjs`)**
+- 从 [HeroesToolChest/heroes-data](https://github.com/HeroesToolChest/heroes-data) 下载游戏数据(MIT License)
+- 通过游戏内部键将中文字符串(`gamestrings_zhcn.json`)与英雄技能/天赋关联
+- 清理游戏标记: `<n/>` → 换行, 移除 `<img>`, `~~0.04~~` → `(+4%每级)`
+- **映射内部英雄键到Heroes Profile short_name** (如 `NexusHunter` → `qhira`, `Amazon` → `cassia`) 确保与API/CDN一致
+- 输出精简的单英雄JSON到 `data/zhcn/heroes/{short_name}.json`
+
+**运行时覆盖 (`src/utils/zhcn.ts`)**
+- 详情页加载时从jsDelivr获取中文数据
+- **jsDelivr URL使用 `%2F` 编码** 分支名中的斜杠 (`cursor%2Fstorm-hub-mvp-fb56`)
+- 合并到main后,切换到 `@main` 以获得稳定的CDN URL
+- 将中文文本合并到英文数据上,获取失败时回退到英文
+- UI控件本地化(搜索占位符、区块标签、角色/类型名称)
+
+**数据输出:**
+- `data/zhcn/meta.json` - 构建元数据
+- `data/zhcn/heroes/*.json` - 90个英雄文件,包含中文技能/天赋
+- 文件名匹配Heroes Profile `short_name` 格式以保证URL一致性
+
 ## 功能说明
 
 ### 英雄列表页 (pages/index)
