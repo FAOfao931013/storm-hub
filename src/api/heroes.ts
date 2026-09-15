@@ -217,11 +217,12 @@ export function getTalentIconUrl(iconFilename: string): string {
 
 /**
  * Get ability icon URL from jsDelivr
+ * Note: heroespatchnotes/heroes-talents stores ability icons in images/talents/ (not images/abilities/)
  */
 export function getAbilityIconUrl(iconFilename: string): string {
   if (!iconFilename) return ''
   const name = iconFilename.replace(/\.(png|jpg|jpeg)$/i, '')
-  return `${JSDELIVR_BASE}/images/abilities/${name}.png`
+  return `${JSDELIVR_BASE}/images/talents/${name}.png`
 }
 
 /**

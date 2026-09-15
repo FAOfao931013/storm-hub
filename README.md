@@ -27,7 +27,7 @@
 ### jsDelivr CDN (图标资源 + 中文数据)
 - **图标仓库**: `https://cdn.jsdelivr.net/gh/heroespatchnotes/heroes-talents@master/`
 - **英雄头像**: `images/heroes/{shortname}.png`
-- **技能图标**: `images/abilities/{iconname}.png`
+- **技能图标**: `images/talents/{iconname}.png` (技能和天赋共用同一目录)
 - **天赋图标**: `images/talents/{iconname}.png`
 - **中文本地化数据**: `https://cdn.jsdelivr.net/gh/FAOfao931013/storm-hub@cursor/storm-hub-mvp-fb56/data/zhcn/heroes/{shortname}.json`
   - 技能和天赋的中文名称和描述
