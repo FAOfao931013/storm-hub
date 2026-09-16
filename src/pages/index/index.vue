@@ -2,7 +2,6 @@
   <view class="hero-list-page">
     <!-- Header with Title and Search -->
     <view class="header">
-      <text class="page-title">英雄</text>
       <view class="search-box">
         <input
           class="search-input"
@@ -25,11 +24,7 @@
           :class="{ active: selectedRole === role }"
           @tap="toggleRole(role)"
         >
-          <image
-            class="filter-icon-img"
-            :src="getRoleIcon(role)"
-            mode="aspectFit"
-          />
+          <image class="filter-icon-img" :src="getRoleIcon(role)" mode="aspectFit" />
         </view>
       </view>
 
@@ -45,48 +40,25 @@
           :class="{ active: selectedFranchise === franchise }"
           @tap="toggleFranchise(franchise)"
         >
-          <image
-            class="filter-icon-img"
-            :src="getFranchiseIcon(franchise)"
-            mode="aspectFit"
-          />
+          <image class="filter-icon-img" :src="getFranchiseIcon(franchise)" mode="aspectFit" />
         </view>
       </view>
     </view>
 
     <!-- Hero Grid -->
     <view class="hero-grid" v-if="!loading && !error">
-      <view
-        v-for="hero in filteredHeroes"
-        :key="hero.short_name"
-        class="hero-item"
-        @tap="onHeroTap(hero)"
-      >
+      <view v-for="hero in filteredHeroes" :key="hero.short_name" class="hero-item" @tap="onHeroTap(hero)">
         <view class="hero-avatar-wrapper">
-          <image
-            class="hero-avatar"
-            :src="getHeroIcon(hero)"
-            mode="aspectFill"
-            @error="() => onHeroImageError(hero)"
-          />
-          <view class="hero-ring"></view>
-          
+          <image class="hero-avatar" :src="getHeroIcon(hero)" mode="aspectFill" @error="() => onHeroImageError(hero)" />
+
           <!-- Bottom-left: Franchise badge -->
           <view class="badge badge-franchise">
-            <image
-              class="badge-icon"
-              :src="getFranchiseIcon(hero._franchise)"
-              mode="aspectFit"
-            />
+            <image class="badge-icon" :src="getFranchiseIcon(hero._franchise)" mode="aspectFit" />
           </view>
-          
+
           <!-- Bottom-right: Role badge -->
           <view class="badge badge-role">
-            <image
-              class="badge-icon"
-              :src="getRoleIcon(hero.new_role || hero.role)"
-              mode="aspectFit"
-            />
+            <image class="badge-icon" :src="getRoleIcon(hero.new_role || hero.role)" mode="aspectFit" />
           </view>
         </view>
         <text class="hero-name">{{ getHeroDisplayName(hero) }}</text>
@@ -115,7 +87,13 @@
 import { ref, computed, onMounted } from 'vue'
 import type { Hero } from '@/types/hero'
 import { fetchHeroes, getChineseName, getHeroIconUrl } from '@/api/heroes'
-import { getFranchise, getAllFranchises, getRoleIconPath, getFranchiseIconPath, type FranchiseType } from '@/data/franchise'
+import {
+  getFranchise,
+  getAllFranchises,
+  getRoleIconPath,
+  getFranchiseIconPath,
+  type FranchiseType,
+} from '@/data/franchise'
 
 const loading = ref(true)
 const error = ref('')
@@ -129,7 +107,7 @@ const franchises = getAllFranchises()
 
 // Computed filtered heroes
 const filteredHeroes = computed(() => {
-  return heroes.value.filter(hero => {
+  return heroes.value.filter((hero) => {
     // Role filter
     if (selectedRole.value) {
       const heroRole = hero.new_role || hero.role
@@ -137,28 +115,26 @@ const filteredHeroes = computed(() => {
         return false
       }
     }
-    
+
     // Franchise filter
     if (selectedFranchise.value && hero._franchise !== selectedFranchise.value) {
       return false
     }
-    
+
     // Search filter - match Chinese name and English name
     if (searchQuery.value) {
       const query = searchQuery.value.toLowerCase()
       const name = (hero.name || '').toLowerCase()
       const chineseName = getChineseName(hero.translations).toLowerCase()
-      
+
       // Also search in translations array
-      const matchInTranslations = hero.translations.some(t => 
-        t.toLowerCase().includes(query)
-      )
-      
+      const matchInTranslations = hero.translations.some((t) => t.toLowerCase().includes(query))
+
       if (!name.includes(query) && !chineseName.includes(query) && !matchInTranslations) {
         return false
       }
     }
-    
+
     return true
   })
 })
@@ -167,17 +143,16 @@ const filteredHeroes = computed(() => {
 async function loadHeroes() {
   loading.value = true
   error.value = ''
-  
+
   try {
     const data = await fetchHeroes()
-    
+
     // Enhance heroes with franchise data
-    heroes.value = data.map(hero => ({
+    heroes.value = data.map((hero) => ({
       ...hero,
       _franchise: getFranchise(hero.short_name, hero.attribute_id),
-      _imageError: false
+      _imageError: false,
     }))
-    
   } catch (err: any) {
     console.error('Error fetching heroes:', err)
     error.value = err.message || '加载失败'
@@ -228,9 +203,9 @@ function onHeroTap(hero: Hero) {
     console.error('Invalid hero object:', hero)
     return
   }
-  
+
   uni.navigateTo({
-    url: `/pages/detail/detail?hero=${encodeURIComponent(hero.short_name)}`
+    url: `/pages/detail/detail?hero=${encodeURIComponent(hero.short_name)}`,
   })
 }
 
@@ -242,7 +217,8 @@ onMounted(() => {
 <style scoped>
 .hero-list-page {
   min-height: 100vh;
-  background: linear-gradient(180deg, 
+  background: linear-gradient(
+    180deg,
     rgb(30, 20, 50) 0%,
     rgb(50, 30, 80) 30%,
     rgb(40, 25, 70) 60%,
@@ -255,20 +231,11 @@ onMounted(() => {
   padding: 30rpx 30rpx 15rpx;
 }
 
-.page-title {
-  font-size: 60rpx;
-  font-weight: bold;
-  color: #fff;
-  display: block;
-  margin-bottom: 25rpx;
-}
-
 .search-box {
   margin-bottom: 15rpx;
 }
 
 .search-input {
-  width: 100%;
   height: 68rpx;
   background: rgba(80, 60, 120, 0.5);
   border: 2rpx solid rgba(120, 100, 180, 0.4);
@@ -286,7 +253,6 @@ onMounted(() => {
 .filter-bar {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   padding: 15rpx 30rpx;
   gap: 15rpx;
@@ -299,8 +265,8 @@ onMounted(() => {
 }
 
 .filter-icon {
-  width: 48rpx;
-  height: 48rpx;
+  width: 44rpx;
+  height: 44rpx;
   border-radius: 50%;
   background: rgba(80, 60, 120, 0.5);
   border: 3rpx solid rgba(120, 100, 180, 0.3);
@@ -357,27 +323,15 @@ onMounted(() => {
 
 .hero-avatar {
   position: absolute;
-  top: 8rpx;
-  left: 8rpx;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 124rpx;
   height: 124rpx;
   border-radius: 50%;
   z-index: 2;
   background: rgba(50, 30, 80, 0.8);
-}
-
-.hero-ring {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 140rpx;
-  height: 140rpx;
-  border-radius: 50%;
   border: 4rpx solid rgba(100, 200, 255, 0.6);
-  box-shadow: 
-    0 0 15rpx rgba(100, 200, 255, 0.4),
-    inset 0 0 15rpx rgba(100, 200, 255, 0.2);
-  z-index: 1;
 }
 
 .badge {
@@ -390,18 +344,15 @@ onMounted(() => {
   justify-content: center;
   z-index: 3;
   border: 2rpx solid rgba(255, 255, 255, 0.3);
+  bottom: -12rpx;
 }
 
 .badge-franchise {
-  bottom: 0;
-  left: 0;
-  background: rgba(200, 150, 50, 0.9);
+  left: -12rpx;
 }
 
 .badge-role {
-  bottom: 0;
-  right: 0;
-  background: rgba(150, 130, 255, 0.9);
+  right: -12rpx;
 }
 
 .badge-icon {
@@ -413,10 +364,8 @@ onMounted(() => {
   font-size: 24rpx;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
-  max-width: 140rpx;
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  margin-top: 10rpx;
 }
 
 /* Loading, Error and Empty States */
