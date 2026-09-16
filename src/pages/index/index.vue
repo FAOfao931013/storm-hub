@@ -174,7 +174,7 @@ async function loadHeroes() {
     // Enhance heroes with franchise data
     heroes.value = data.map(hero => ({
       ...hero,
-      _franchise: getFranchise(hero.short_name || hero.attribute_id),
+      _franchise: getFranchise(hero.short_name, hero.attribute_id),
       _imageError: false
     }))
     

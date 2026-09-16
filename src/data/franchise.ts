@@ -9,11 +9,45 @@ export type FranchiseType = 'Warcraft' | 'Starcraft' | 'Diablo' | 'Overwatch' | 
 
 const franchiseMap = franchiseData as Record<string, FranchiseType>
 
+// Build case-insensitive lookup map once
+const lowerCaseMap = new Map<string, FranchiseType>()
+Object.entries(franchiseMap).forEach(([key, value]) => {
+  lowerCaseMap.set(key.toLowerCase(), value)
+})
+
 /**
- * Get franchise for a hero by short_name or attribute_id
+ * Get franchise for a hero by short_name and/or attribute_id
+ * Tries multiple lookup strategies with case-insensitive fallback
  */
-export function getFranchise(shortName: string): FranchiseType {
-  return franchiseMap[shortName] || 'Nexus'
+export function getFranchise(shortName: string, attributeId?: string): FranchiseType {
+  // Try exact match on short_name
+  if (shortName && franchiseMap[shortName]) {
+    return franchiseMap[shortName]
+  }
+  
+  // Try exact match on attribute_id
+  if (attributeId && franchiseMap[attributeId]) {
+    return franchiseMap[attributeId]
+  }
+  
+  // Try case-insensitive match on short_name
+  if (shortName) {
+    const lowerShort = shortName.toLowerCase()
+    if (lowerCaseMap.has(lowerShort)) {
+      return lowerCaseMap.get(lowerShort)!
+    }
+  }
+  
+  // Try case-insensitive match on attribute_id
+  if (attributeId) {
+    const lowerAttr = attributeId.toLowerCase()
+    if (lowerCaseMap.has(lowerAttr)) {
+      return lowerCaseMap.get(lowerAttr)!
+    }
+  }
+  
+  // Default fallback
+  return 'Nexus'
 }
 
 /**
