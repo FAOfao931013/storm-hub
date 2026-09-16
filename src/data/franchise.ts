@@ -24,30 +24,30 @@ export function getAllFranchises(): FranchiseType[] {
 }
 
 /**
- * Get role icon path (SVG for now, may need PNG for WeChat)
+ * Get role icon path (PNG from HotS game assets)
  */
 export function getRoleIconPath(role: string): string {
   const roleMap: Record<string, string> = {
-    'Tank': '/static/icons/roles/tank.svg',
-    'Bruiser': '/static/icons/roles/bruiser.svg',
-    'Melee Assassin': '/static/icons/roles/melee-assassin.svg',
-    'Ranged Assassin': '/static/icons/roles/ranged-assassin.svg',
-    'Healer': '/static/icons/roles/healer.svg',
-    'Support': '/static/icons/roles/support.svg'
+    'Tank': '/static/icons/roles/tank.png',
+    'Bruiser': '/static/icons/roles/bruiser.png',
+    'Melee Assassin': '/static/icons/roles/melee-assassin.png',
+    'Ranged Assassin': '/static/icons/roles/ranged-assassin.png',
+    'Healer': '/static/icons/roles/healer.png',
+    'Support': '/static/icons/roles/support.png'
   }
   return roleMap[role] || ''
 }
 
 /**
- * Get franchise icon path (SVG for now, may need PNG for WeChat)
+ * Get franchise icon path (PNG from HotS game assets)
  */
 export function getFranchiseIconPath(franchise: string): string {
   const franchiseMap: Record<string, string> = {
-    'Warcraft': '/static/icons/franchises/warcraft.svg',
-    'Starcraft': '/static/icons/franchises/starcraft.svg',
-    'Diablo': '/static/icons/franchises/diablo.svg',
-    'Overwatch': '/static/icons/franchises/overwatch.svg',
-    'Nexus': '/static/icons/franchises/nexus.svg'
+    'Warcraft': '/static/icons/franchises/warcraft.png',
+    'Starcraft': '/static/icons/franchises/starcraft.png',
+    'Diablo': '/static/icons/franchises/diablo.png',
+    'Overwatch': '/static/icons/franchises/overwatch.png',
+    'Nexus': '/static/icons/franchises/nexus.png'
   }
   return franchiseMap[franchise] || ''
 }
