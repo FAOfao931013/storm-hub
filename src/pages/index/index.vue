@@ -252,7 +252,7 @@ onMounted(() => {
 }
 
 .header {
-  padding: 40rpx 30rpx 20rpx;
+  padding: 30rpx 30rpx 15rpx;
 }
 
 .page-title {
@@ -260,22 +260,22 @@ onMounted(() => {
   font-weight: bold;
   color: #fff;
   display: block;
-  margin-bottom: 30rpx;
+  margin-bottom: 25rpx;
 }
 
 .search-box {
-  margin-bottom: 20rpx;
+  margin-bottom: 15rpx;
 }
 
 .search-input {
   width: 100%;
-  height: 80rpx;
+  height: 68rpx;
   background: rgba(80, 60, 120, 0.5);
   border: 2rpx solid rgba(120, 100, 180, 0.4);
-  border-radius: 40rpx;
-  padding: 0 30rpx;
+  border-radius: 34rpx;
+  padding: 0 28rpx;
   color: #fff;
-  font-size: 28rpx;
+  font-size: 26rpx;
 }
 
 .search-input::placeholder {
@@ -286,22 +286,21 @@ onMounted(() => {
 .filter-bar {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 20rpx 30rpx;
-  gap: 20rpx;
-  overflow-x: auto;
-  white-space: nowrap;
+  padding: 15rpx 30rpx;
+  gap: 15rpx;
 }
 
 .filter-group {
   display: flex;
   flex-direction: row;
-  gap: 20rpx;
+  gap: 15rpx;
 }
 
 .filter-icon {
-  width: 60rpx;
-  height: 60rpx;
+  width: 48rpx;
+  height: 48rpx;
   border-radius: 50%;
   background: rgba(80, 60, 120, 0.5);
   border: 3rpx solid rgba(120, 100, 180, 0.3);
@@ -319,8 +318,8 @@ onMounted(() => {
 }
 
 .filter-icon-img {
-  width: 36rpx;
-  height: 36rpx;
+  width: 28rpx;
+  height: 28rpx;
   opacity: 0.7;
 }
 
@@ -330,7 +329,7 @@ onMounted(() => {
 
 .filter-divider {
   width: 3rpx;
-  height: 50rpx;
+  height: 40rpx;
   background: rgba(120, 100, 180, 0.4);
   flex-shrink: 0;
 }
