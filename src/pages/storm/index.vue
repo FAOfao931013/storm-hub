@@ -43,10 +43,34 @@ const INTENSITY_INCREMENT = 0.15
 let canvas: any = null
 let ctx: any = null
 let animationFrame: number = 0
+let animating = false
 let particles: Particle[] = []
 let lastLightning = 0
 let canvasWidth = 375
 let canvasHeight = 667
+
+const requestFrame = (callback: () => void): number => {
+  if (canvas && typeof canvas.requestAnimationFrame === 'function') {
+    return canvas.requestAnimationFrame(callback)
+  }
+  if (typeof requestAnimationFrame === 'function') {
+    return requestAnimationFrame(callback)
+  }
+  return setTimeout(callback, 16) as unknown as number
+}
+
+const cancelFrame = (id: number) => {
+  if (!id) return
+  if (canvas && typeof canvas.cancelAnimationFrame === 'function') {
+    canvas.cancelAnimationFrame(id)
+    return
+  }
+  if (typeof cancelAnimationFrame === 'function') {
+    cancelAnimationFrame(id)
+    return
+  }
+  clearTimeout(id)
+}
 
 // Lightning flash state
 let lightningOpacity = 0
@@ -121,7 +145,7 @@ const createParticle = (): Particle => {
 }
 
 const animate = () => {
-  if (!ctx || !canvas) return
+  if (!animating || !ctx || !canvas) return
   
   // Clear canvas with dark background
   ctx.fillStyle = 'rgba(25, 15, 45, 1)'
@@ -188,7 +212,7 @@ const animate = () => {
     }
   }
   
-  animationFrame = requestAnimationFrame(animate)
+  animationFrame = requestFrame(animate)
 }
 
 const drawLightning = () => {
@@ -252,13 +276,13 @@ const onJoin = () => {
 }
 
 onMounted(() => {
+  animating = true
   initCanvas()
 })
 
 onUnmounted(() => {
-  if (animationFrame) {
-    cancelAnimationFrame(animationFrame)
-  }
+  animating = false
+  cancelFrame(animationFrame)
 })
 </script>
 
