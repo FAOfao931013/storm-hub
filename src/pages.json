@@ -66,26 +66,26 @@
 			{
 				"pagePath": "pages/index/index",
 				"text": "英雄",
-				"iconPath": "static/tab/hero.svg",
-				"selectedIconPath": "static/tab/hero-active.svg"
+				"iconPath": "static/tab/hero.png",
+				"selectedIconPath": "static/tab/hero-active.png"
 			},
 			{
 				"pagePath": "pages/storm/index",
 				"text": "风暴聚集",
-				"iconPath": "static/tab/storm.svg",
-				"selectedIconPath": "static/tab/storm-active.svg"
+				"iconPath": "static/tab/storm.png",
+				"selectedIconPath": "static/tab/storm-active.png"
 			},
 			{
 				"pagePath": "pages/favorites/index",
 				"text": "收藏",
-				"iconPath": "static/tab/favorite.svg",
-				"selectedIconPath": "static/tab/favorite-active.svg"
+				"iconPath": "static/tab/favorite.png",
+				"selectedIconPath": "static/tab/favorite-active.png"
 			},
 			{
 				"pagePath": "pages/about/index",
 				"text": "关于",
-				"iconPath": "static/tab/about.svg",
-				"selectedIconPath": "static/tab/about-active.svg"
+				"iconPath": "static/tab/about.png",
+				"selectedIconPath": "static/tab/about-active.png"
 			}
 		]
 	}
