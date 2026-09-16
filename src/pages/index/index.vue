@@ -55,7 +55,7 @@
     </view>
 
     <!-- Hero Grid -->
-    <view class="hero-grid">
+    <view class="hero-grid" v-if="!loading && !error">
       <view
         v-for="hero in filteredHeroes"
         :key="hero.short_name"
@@ -67,7 +67,7 @@
             class="hero-avatar"
             :src="getHeroIcon(hero)"
             mode="aspectFill"
-            @error="onHeroImageError(hero)"
+            @error="() => onHeroImageError(hero)"
           />
           <view class="hero-ring"></view>
           
@@ -75,7 +75,7 @@
           <view class="badge badge-franchise">
             <image
               class="badge-icon"
-              :src="getFranchiseIcon(hero.franchise)"
+              :src="getFranchiseIcon(hero._franchise)"
               mode="aspectFit"
             />
           </view>
@@ -84,12 +84,12 @@
           <view class="badge badge-role">
             <image
               class="badge-icon"
-              :src="getRoleIcon(hero.new_role)"
+              :src="getRoleIcon(hero.new_role || hero.role)"
               mode="aspectFit"
             />
           </view>
         </view>
-        <text class="hero-name">{{ getHeroName(hero) }}</text>
+        <text class="hero-name">{{ getHeroDisplayName(hero) }}</text>
       </view>
     </view>
 
@@ -98,164 +98,124 @@
       <text class="loading-text">加载中...</text>
     </view>
 
+    <!-- Error state -->
+    <view v-if="error" class="error">
+      <text class="error-text">{{ error }}</text>
+      <button class="retry-btn" @tap="loadHeroes">重试</button>
+    </view>
+
     <!-- Empty state -->
-    <view v-if="!loading && filteredHeroes.length === 0" class="empty">
+    <view v-if="!loading && !error && filteredHeroes.length === 0" class="empty">
       <text class="empty-text">未找到英雄</text>
     </view>
   </view>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue'
+import type { Hero } from '@/types/hero'
+import { fetchHeroes, getChineseName, getHeroIconUrl } from '@/api/heroes'
+import { getFranchise, getAllFranchises, getRoleIconPath, getFranchiseIconPath, type FranchiseType } from '@/data/franchise'
 
-interface Hero {
-  short_name: string;
-  name: string;
-  attribute_id: string;
-  new_role?: string;
-  role?: string;
-  franchise?: string;
-  icon?: string;
-  _iconError?: boolean;
-}
+const loading = ref(true)
+const error = ref('')
+const heroes = ref<(Hero & { _franchise?: FranchiseType; _imageError?: boolean })[]>([])
+const searchQuery = ref('')
+const selectedRole = ref<string | null>(null)
+const selectedFranchise = ref<FranchiseType | null>(null)
 
-type RoleType = 'Tank' | 'Bruiser' | 'Melee Assassin' | 'Ranged Assassin' | 'Healer' | 'Support';
-type FranchiseType = 'Warcraft' | 'Starcraft' | 'Diablo' | 'Overwatch' | 'Nexus';
-
-const loading = ref(true);
-const heroes = ref<Hero[]>([]);
-const searchQuery = ref('');
-const selectedRole = ref<RoleType | null>(null);
-const selectedFranchise = ref<FranchiseType | null>(null);
-
-const roles: RoleType[] = ['Tank', 'Bruiser', 'Melee Assassin', 'Ranged Assassin', 'Healer', 'Support'];
-const franchises: FranchiseType[] = ['Warcraft', 'Starcraft', 'Diablo', 'Overwatch', 'Nexus'];
-
-// Franchise map - loaded from data
-const franchiseMapUrl = 'https://cdn.jsdelivr.net/gh/FAOfao931013/storm-hub@main/data/zhcn/franchise.json';
+const roles = ['Tank', 'Bruiser', 'Melee Assassin', 'Ranged Assassin', 'Healer', 'Support']
+const franchises = getAllFranchises()
 
 // Computed filtered heroes
 const filteredHeroes = computed(() => {
   return heroes.value.filter(hero => {
     // Role filter
-    if (selectedRole.value && hero.new_role !== selectedRole.value) {
-      return false;
-    }
-    
-    // Franchise filter
-    if (selectedFranchise.value && hero.franchise !== selectedFranchise.value) {
-      return false;
-    }
-    
-    // Search filter
-    if (searchQuery.value) {
-      const query = searchQuery.value.toLowerCase();
-      const name = (hero.name || '').toLowerCase();
-      const shortName = (hero.short_name || '').toLowerCase();
-      if (!name.includes(query) && !shortName.includes(query)) {
-        return false;
+    if (selectedRole.value) {
+      const heroRole = hero.new_role || hero.role
+      if (heroRole !== selectedRole.value) {
+        return false
       }
     }
     
-    return true;
-  });
-});
+    // Franchise filter
+    if (selectedFranchise.value && hero._franchise !== selectedFranchise.value) {
+      return false
+    }
+    
+    // Search filter - match Chinese name and English name
+    if (searchQuery.value) {
+      const query = searchQuery.value.toLowerCase()
+      const name = (hero.name || '').toLowerCase()
+      const chineseName = getChineseName(hero.translations).toLowerCase()
+      
+      // Also search in translations array
+      const matchInTranslations = hero.translations.some(t => 
+        t.toLowerCase().includes(query)
+      )
+      
+      if (!name.includes(query) && !chineseName.includes(query) && !matchInTranslations) {
+        return false
+      }
+    }
+    
+    return true
+  })
+})
 
-// Fetch heroes from Heroes Profile API
-async function fetchHeroes() {
+// Load heroes from API
+async function loadHeroes() {
+  loading.value = true
+  error.value = ''
+  
   try {
-    loading.value = true;
-    
-    // Fetch franchise map
-    const franchiseMapResponse: any = await new Promise((resolve, reject) => {
-      uni.request({
-        url: franchiseMapUrl,
-        method: 'GET',
-        success: (res) => resolve(res),
-        fail: (err) => reject(err)
-      });
-    });
-    
-    const franchiseMap = franchiseMapResponse.data as Record<string, string>;
-    
-    // Fetch heroes
-    const response: any = await new Promise((resolve, reject) => {
-      uni.request({
-        url: 'https://www.heroesprofile.com/api/Heroes/',
-        method: 'GET',
-        success: (res) => resolve(res),
-        fail: (err) => reject(err)
-      });
-    });
-    
-    const heroData = response.data as Hero[];
+    const data = await fetchHeroes()
     
     // Enhance heroes with franchise data
-    heroes.value = (Array.isArray(heroData) ? heroData : []).map(hero => ({
+    heroes.value = data.map(hero => ({
       ...hero,
-      franchise: franchiseMap[hero.short_name] || 
-                franchiseMap[hero.attribute_id] || 
-                'Nexus'
-    }));
+      _franchise: getFranchise(hero.short_name || hero.attribute_id),
+      _imageError: false
+    }))
     
-  } catch (error) {
-    console.error('Error fetching heroes:', error);
-    uni.showToast({
-      title: '加载失败',
-      icon: 'none'
-    });
+  } catch (err: any) {
+    console.error('Error fetching heroes:', err)
+    error.value = err.message || '加载失败'
   } finally {
-    loading.value = false;
+    loading.value = false
   }
 }
 
-function getRoleIcon(role: string | undefined) {
-  if (!role) return '';
-  const roleMap: Record<string, string> = {
-    'Tank': '/static/icons/roles/tank.svg',
-    'Bruiser': '/static/icons/roles/bruiser.svg',
-    'Melee Assassin': '/static/icons/roles/melee-assassin.svg',
-    'Ranged Assassin': '/static/icons/roles/ranged-assassin.svg',
-    'Healer': '/static/icons/roles/healer.svg',
-    'Support': '/static/icons/roles/support.svg'
-  };
-  return roleMap[role] || '';
+function getRoleIcon(role: string) {
+  return getRoleIconPath(role)
 }
 
 function getFranchiseIcon(franchise: string | undefined) {
-  if (!franchise) return '';
-  const franchiseMap: Record<string, string> = {
-    'Warcraft': '/static/icons/franchises/warcraft.svg',
-    'Starcraft': '/static/icons/franchises/starcraft.svg',
-    'Diablo': '/static/icons/franchises/diablo.svg',
-    'Overwatch': '/static/icons/franchises/overwatch.svg',
-    'Nexus': '/static/icons/franchises/nexus.svg'
-  };
-  return franchiseMap[franchise] || '';
+  return getFranchiseIconPath(franchise || 'Nexus')
 }
 
-function getHeroIcon(hero: Hero): string {
-  if (hero._iconError) {
-    return '/static/icons/franchises/nexus.svg';
+function getHeroIcon(hero: Hero & { _imageError?: boolean }): string {
+  if (hero._imageError) {
+    return '/static/hero-placeholder.png'
   }
-  const shortName = hero.short_name || hero.attribute_id;
-  return `https://raw.githubusercontent.com/HeroesToolChest/heroes-images/main/heroes/${shortName.toLowerCase()}.png`;
+  return getHeroIconUrl(hero.short_name)
 }
 
-function onHeroImageError(hero: Hero) {
-  hero._iconError = true;
+function onHeroImageError(hero: Hero & { _imageError?: boolean }) {
+  hero._imageError = true
 }
 
-function getHeroName(hero: Hero): string {
-  return hero.name || hero.short_name;
+function getHeroDisplayName(hero: Hero): string {
+  const chineseName = getChineseName(hero.translations)
+  return chineseName || hero.name
 }
 
-function toggleRole(role: RoleType) {
-  selectedRole.value = selectedRole.value === role ? null : role;
+function toggleRole(role: string) {
+  selectedRole.value = selectedRole.value === role ? null : role
 }
 
 function toggleFranchise(franchise: FranchiseType) {
-  selectedFranchise.value = selectedFranchise.value === franchise ? null : franchise;
+  selectedFranchise.value = selectedFranchise.value === franchise ? null : franchise
 }
 
 function onSearchInput() {
@@ -263,16 +223,20 @@ function onSearchInput() {
 }
 
 function onHeroTap(hero: Hero) {
-  // Navigate to hero detail page (to be implemented)
-  uni.showToast({
-    title: hero.name,
-    icon: 'none'
-  });
+  // Navigate to detail page
+  if (!hero || !hero.short_name) {
+    console.error('Invalid hero object:', hero)
+    return
+  }
+  
+  uni.navigateTo({
+    url: `/pages/detail/detail?hero=${encodeURIComponent(hero.short_name)}`
+  })
 }
 
 onMounted(() => {
-  fetchHeroes();
-});
+  loadHeroes()
+})
 </script>
 
 <style scoped>
@@ -456,8 +420,9 @@ onMounted(() => {
   white-space: nowrap;
 }
 
-/* Loading and Empty States */
+/* Loading, Error and Empty States */
 .loading,
+.error,
 .empty {
   padding: 80rpx;
   text-align: center;
@@ -467,5 +432,26 @@ onMounted(() => {
 .empty-text {
   font-size: 28rpx;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30rpx;
+}
+
+.error-text {
+  font-size: 28rpx;
+  color: rgba(255, 100, 100, 0.9);
+}
+
+.retry-btn {
+  background: rgba(150, 130, 255, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 40rpx;
+  padding: 20rpx 60rpx;
+  font-size: 28rpx;
 }
 </style>
