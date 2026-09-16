@@ -11,7 +11,6 @@
     <!-- Storm Title -->
     <view class="storm-header">
       <text class="storm-title">风暴聚集</text>
-      <text class="storm-subtitle">Storm Gathering</text>
     </view>
     
     <!-- Join Button -->
@@ -27,54 +26,32 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 interface Particle {
-  x: number
-  y: number
-  vx: number
-  vy: number
-  opacity: number
-  size: number
-  type: 'rain' | 'mist'
+  angle: number        // Position around tornado (radians)
+  height: number       // Height from ground (0-1)
+  radius: number       // Distance from center at this height
+  speed: number        // Rotation speed
+  size: number         // Particle size
+  opacity: number      // Particle opacity
+  color: string        // Particle color
 }
 
-const intensity = ref(1.0)
+const targetIntensity = ref(1.0)
+const displayedIntensity = ref(1.0)
 const MAX_INTENSITY = 3.0
-const INTENSITY_INCREMENT = 0.15
+const INTENSITY_INCREMENT = 0.2
 
 let canvas: any = null
 let ctx: any = null
 let animationFrame: number = 0
-let animating = false
 let particles: Particle[] = []
-let lastLightning = 0
 let canvasWidth = 375
 let canvasHeight = 667
+let lastTime = 0
 
-const requestFrame = (callback: () => void): number => {
-  if (canvas && typeof canvas.requestAnimationFrame === 'function') {
-    return canvas.requestAnimationFrame(callback)
-  }
-  if (typeof requestAnimationFrame === 'function') {
-    return requestAnimationFrame(callback)
-  }
-  return setTimeout(callback, 16) as unknown as number
-}
-
-const cancelFrame = (id: number) => {
-  if (!id) return
-  if (canvas && typeof canvas.cancelAnimationFrame === 'function') {
-    canvas.cancelAnimationFrame(id)
-    return
-  }
-  if (typeof cancelAnimationFrame === 'function') {
-    cancelAnimationFrame(id)
-    return
-  }
-  clearTimeout(id)
-}
-
-// Lightning flash state
-let lightningOpacity = 0
-let lightningDecay = 0
+// Tornado parameters
+const baseTornadoHeight = 280
+const baseTornadoWidth = 60
+const baseRotationSpeed = 0.02
 
 const initCanvas = async () => {
   try {
@@ -100,6 +77,7 @@ const initCanvas = async () => {
           initParticles()
           
           // Start animation
+          lastTime = Date.now()
           animate()
         }
       })
@@ -110,161 +88,172 @@ const initCanvas = async () => {
 
 const initParticles = () => {
   particles = []
-  const baseCount = 50
-  const count = Math.floor(baseCount * intensity.value)
+  const baseCount = 60
   
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < baseCount; i++) {
     particles.push(createParticle())
   }
 }
 
 const createParticle = (): Particle => {
-  const type = Math.random() > 0.7 ? 'mist' : 'rain'
+  const height = Math.random()
+  const radius = Math.random() * 30 + 10
   
-  if (type === 'rain') {
-    return {
-      x: Math.random() * canvasWidth,
-      y: Math.random() * canvasHeight - canvasHeight,
-      vx: -1 - Math.random() * 2,
-      vy: 8 + Math.random() * 8 * intensity.value,
-      opacity: 0.3 + Math.random() * 0.4,
-      size: 1 + Math.random() * 2,
-      type: 'rain'
-    }
-  } else {
-    return {
-      x: Math.random() * canvasWidth,
-      y: Math.random() * canvasHeight,
-      vx: -0.5 + Math.random() * 1,
-      vy: -0.3 - Math.random() * 0.5,
-      opacity: 0.1 + Math.random() * 0.2,
-      size: 20 + Math.random() * 40,
-      type: 'mist'
-    }
+  return {
+    angle: Math.random() * Math.PI * 2,
+    height: height,
+    radius: radius,
+    speed: 0.8 + Math.random() * 0.4,
+    size: 2 + Math.random() * 3,
+    opacity: 0.3 + Math.random() * 0.4,
+    color: Math.random() > 0.7 ? 'rgba(150, 120, 180, ' : 'rgba(100, 80, 120, '
   }
 }
 
 const animate = () => {
-  if (!animating || !ctx || !canvas) return
+  if (!ctx || !canvas) return
+  
+  const now = Date.now()
+  const deltaTime = Math.min((now - lastTime) / 1000, 0.1) // Cap at 0.1s
+  lastTime = now
+  
+  // Lerp displayed intensity toward target (smooth transition over ~0.6s)
+  const lerpSpeed = 1.8 // Higher = faster transition
+  displayedIntensity.value += (targetIntensity.value - displayedIntensity.value) * lerpSpeed * deltaTime
   
   // Clear canvas with dark background
   ctx.fillStyle = 'rgba(25, 15, 45, 1)'
   ctx.fillRect(0, 0, canvasWidth, canvasHeight)
   
-  // Draw lightning flash overlay
-  if (lightningOpacity > 0) {
-    ctx.fillStyle = `rgba(150, 200, 255, ${lightningOpacity * 0.3})`
-    ctx.fillRect(0, 0, canvasWidth, canvasHeight)
-    lightningOpacity = Math.max(0, lightningOpacity - lightningDecay)
-  }
+  // Draw subtle background mist
+  drawBackgroundMist()
   
-  // Update and draw particles
-  particles.forEach((particle, index) => {
-    // Update position
-    particle.x += particle.vx * intensity.value
-    particle.y += particle.vy * intensity.value
-    
-    // Reset particle if out of bounds
-    if (particle.type === 'rain') {
-      if (particle.y > canvasHeight + 10) {
-        particles[index] = createParticle()
-      }
-    } else {
-      if (particle.y < -particle.size || particle.x < -particle.size || particle.x > canvasWidth + particle.size) {
-        particles[index] = createParticle()
-      }
-    }
-    
-    // Draw particle
-    if (particle.type === 'rain') {
-      ctx.strokeStyle = `rgba(100, 200, 255, ${particle.opacity})`
-      ctx.lineWidth = particle.size
-      ctx.lineCap = 'round'
-      ctx.beginPath()
-      ctx.moveTo(particle.x, particle.y)
-      ctx.lineTo(particle.x + particle.vx * 3, particle.y + particle.vy * 0.5)
-      ctx.stroke()
-    } else {
-      const gradient = ctx.createRadialGradient(
-        particle.x, particle.y, 0,
-        particle.x, particle.y, particle.size
-      )
-      gradient.addColorStop(0, `rgba(80, 60, 120, ${particle.opacity})`)
-      gradient.addColorStop(1, 'rgba(80, 60, 120, 0)')
-      ctx.fillStyle = gradient
-      ctx.beginPath()
-      ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
-      ctx.fill()
-    }
-  })
+  // Draw tornado
+  drawTornado()
   
-  // Random lightning
-  const now = Date.now()
-  if (now - lastLightning > 2000) {
-    const chance = 0.01 * intensity.value
-    if (Math.random() < chance) {
-      lastLightning = now
-      lightningOpacity = 0.8 + Math.random() * 0.2
-      lightningDecay = 0.05 + Math.random() * 0.05
-      
-      // Draw lightning bolt
-      drawLightning()
-    }
-  }
-  
-  animationFrame = requestFrame(animate)
+  animationFrame = requestAnimationFrame(animate)
 }
 
-const drawLightning = () => {
-  if (!ctx) return
+const drawBackgroundMist = () => {
+  const intensity = displayedIntensity.value
+  const mistCount = Math.floor(8 * intensity)
   
-  ctx.strokeStyle = `rgba(200, 220, 255, ${lightningOpacity})`
-  ctx.lineWidth = 2 + Math.random() * 3
+  for (let i = 0; i < mistCount; i++) {
+    const x = (Math.sin(Date.now() * 0.0003 + i) * 0.5 + 0.5) * canvasWidth
+    const y = (Math.cos(Date.now() * 0.0002 + i) * 0.5 + 0.5) * canvasHeight
+    const size = 40 + Math.random() * 60
+    
+    const gradient = ctx.createRadialGradient(x, y, 0, x, y, size)
+    gradient.addColorStop(0, `rgba(60, 40, 90, ${0.05 * intensity})`)
+    gradient.addColorStop(1, 'rgba(60, 40, 90, 0)')
+    
+    ctx.fillStyle = gradient
+    ctx.beginPath()
+    ctx.arc(x, y, size, 0, Math.PI * 2)
+    ctx.fill()
+  }
+}
+
+const drawTornado = () => {
+  const intensity = displayedIntensity.value
+  const centerX = canvasWidth / 2
+  const groundY = canvasHeight * 0.75
+  
+  // Scale tornado dimensions with intensity
+  const tornadoHeight = baseTornadoHeight * intensity
+  const tornadoTopWidth = baseTornadoWidth * intensity * 1.5
+  const tornadoBottomWidth = baseTornadoWidth * intensity * 0.4
+  const rotationSpeed = baseRotationSpeed * intensity
+  
+  // Update and draw particles in tornado shape
+  particles.forEach((particle, index) => {
+    // Update particle angle (rotation)
+    particle.angle += rotationSpeed * particle.speed
+    
+    // Gradually move particles upward and reset at top
+    particle.height += 0.003 * intensity * particle.speed
+    if (particle.height > 1) {
+      particle.height = 0
+      particle.angle = Math.random() * Math.PI * 2
+    }
+    
+    // Calculate position in tornado funnel
+    // Wider at top, narrower at bottom
+    const heightRatio = particle.height
+    const radiusAtHeight = tornadoBottomWidth + (tornadoTopWidth - tornadoBottomWidth) * heightRatio
+    const actualRadius = radiusAtHeight * (particle.radius / 30) // Normalize radius
+    
+    const x = centerX + Math.cos(particle.angle) * actualRadius
+    const y = groundY - heightRatio * tornadoHeight
+    
+    // Draw particle
+    const particleOpacity = particle.opacity * (0.6 + heightRatio * 0.4) // More visible higher up
+    ctx.fillStyle = particle.color + particleOpacity + ')'
+    ctx.beginPath()
+    ctx.arc(x, y, particle.size * intensity * 0.8, 0, Math.PI * 2)
+    ctx.fill()
+  })
+  
+  // Optional subtle glow at base of tornado
+  const glowGradient = ctx.createRadialGradient(
+    centerX, groundY, 0,
+    centerX, groundY, tornadoBottomWidth * 3
+  )
+  glowGradient.addColorStop(0, `rgba(100, 80, 150, ${0.15 * intensity})`)
+  glowGradient.addColorStop(1, 'rgba(100, 80, 150, 0)')
+  ctx.fillStyle = glowGradient
+  ctx.beginPath()
+  ctx.arc(centerX, groundY, tornadoBottomWidth * 3, 0, Math.PI * 2)
+  ctx.fill()
+  
+  // Subtle lightning only at high intensity (optional, very subtle)
+  if (intensity > 2.5 && Math.random() < 0.008) {
+    drawSubtleLightning(centerX, groundY - tornadoHeight)
+  }
+}
+
+const drawSubtleLightning = (x: number, y: number) => {
+  ctx.strokeStyle = `rgba(150, 180, 255, 0.2)`
+  ctx.lineWidth = 1
   ctx.lineCap = 'round'
-  ctx.lineJoin = 'miter'
   
   ctx.beginPath()
-  let x = canvasWidth * (0.3 + Math.random() * 0.4)
-  let y = 0
   ctx.moveTo(x, y)
   
-  // Draw zigzag lightning
-  const segments = 5 + Math.floor(Math.random() * 8)
-  for (let i = 0; i < segments; i++) {
-    x += (Math.random() - 0.5) * 40 * intensity.value
-    y += canvasHeight / segments
-    ctx.lineTo(x, y)
+  let currentX = x
+  let currentY = y
+  
+  for (let i = 0; i < 3; i++) {
+    currentX += (Math.random() - 0.5) * 30
+    currentY += 20
+    ctx.lineTo(currentX, currentY)
   }
   
-  ctx.stroke()
-  
-  // Add glow
-  ctx.strokeStyle = `rgba(150, 200, 255, ${lightningOpacity * 0.5})`
-  ctx.lineWidth = 6 + Math.random() * 4
   ctx.stroke()
 }
 
 const onJoin = () => {
-  if (intensity.value < MAX_INTENSITY) {
-    intensity.value = Math.min(MAX_INTENSITY, intensity.value + INTENSITY_INCREMENT)
+  if (targetIntensity.value < MAX_INTENSITY) {
+    targetIntensity.value = Math.min(MAX_INTENSITY, targetIntensity.value + INTENSITY_INCREMENT)
     
-    // Add more particles on join
-    const newCount = Math.floor(20 * intensity.value)
-    for (let i = 0; i < newCount; i++) {
+    // Add more particles for denser effect
+    const newParticleCount = Math.floor(15 * targetIntensity.value)
+    for (let i = 0; i < newParticleCount; i++) {
       particles.push(createParticle())
     }
     
-    // Trigger lightning
-    lightningOpacity = 1.0
-    lightningDecay = 0.08
+    // Keep particle count reasonable
+    if (particles.length > 200) {
+      particles = particles.slice(-200)
+    }
     
     // Visual feedback
     uni.vibrateShort({ type: 'light' })
     
     uni.showToast({
-      title: `风暴强度 ${intensity.value.toFixed(1)}`,
+      title: `风暴强度 ${targetIntensity.value.toFixed(1)}`,
       icon: 'none',
-      duration: 1000
+      duration: 800
     })
   } else {
     uni.showToast({
@@ -276,13 +265,13 @@ const onJoin = () => {
 }
 
 onMounted(() => {
-  animating = true
   initCanvas()
 })
 
 onUnmounted(() => {
-  animating = false
-  cancelFrame(animationFrame)
+  if (animationFrame) {
+    cancelAnimationFrame(animationFrame)
+  }
 })
 </script>
 
@@ -309,7 +298,7 @@ onUnmounted(() => {
 
 .storm-header {
   position: absolute;
-  top: 100rpx;
+  top: 80rpx;
   left: 0;
   right: 0;
   text-align: center;
@@ -318,20 +307,12 @@ onUnmounted(() => {
 
 .storm-title {
   display: block;
-  font-size: 72rpx;
+  font-size: 64rpx;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: 
-    0 0 20rpx rgba(100, 200, 255, 0.5),
-    0 0 40rpx rgba(100, 150, 255, 0.3);
-  margin-bottom: 20rpx;
-}
-
-.storm-subtitle {
-  display: block;
-  font-size: 28rpx;
-  color: rgba(150, 180, 255, 0.8);
-  letter-spacing: 4rpx;
+    0 0 20rpx rgba(100, 150, 200, 0.4),
+    0 0 40rpx rgba(100, 130, 200, 0.2);
 }
 
 .join-container {
