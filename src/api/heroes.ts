@@ -2,6 +2,7 @@ import type { Hero, Talent, Ability } from '@/types/hero'
 
 const BASE_URL = 'https://api.heroesprofile.com/openApi'
 const JSDELIVR_BASE = 'https://cdn.jsdelivr.net/gh/heroespatchnotes/heroes-talents@master'
+const COS_ASSET_BASE = 'https://mini-pro-1256180448.cos.ap-shanghai.myqcloud.com/storm-hub'
 
 // Cache for heroes list (in-memory)
 let heroesCache: Hero[] | null = null
@@ -198,31 +199,29 @@ export async function fetchAbilities(heroShortName: string): Promise<Ability[]> 
 }
 
 /**
- * Get hero icon URL from jsDelivr
+ * Get hero icon URL from Tencent COS
  */
 export function getHeroIconUrl(shortName: string): string {
-  // Try common paths for hero portraits
-  return `${JSDELIVR_BASE}/images/heroes/${shortName.toLowerCase()}.png`
+  return `${COS_ASSET_BASE}/heroes/${shortName.toLowerCase()}.png`
 }
 
 /**
- * Get talent icon URL from jsDelivr
+ * Get talent icon URL from Tencent COS
  */
 export function getTalentIconUrl(iconFilename: string): string {
   if (!iconFilename) return ''
   // Remove any extension and use consistent path
   const name = iconFilename.replace(/\.(png|jpg|jpeg)$/i, '')
-  return `${JSDELIVR_BASE}/images/talents/${name}.png`
+  return `${COS_ASSET_BASE}/talents/${name}.png`
 }
 
 /**
- * Get ability icon URL from jsDelivr
- * Note: heroespatchnotes/heroes-talents stores ability icons in images/talents/ (not images/abilities/)
+ * Get ability icon URL from Tencent COS
  */
 export function getAbilityIconUrl(iconFilename: string): string {
   if (!iconFilename) return ''
   const name = iconFilename.replace(/\.(png|jpg|jpeg)$/i, '')
-  return `${JSDELIVR_BASE}/images/talents/${name}.png`
+  return `${COS_ASSET_BASE}/talents/${name}.png`
 }
 
 /**

@@ -11,8 +11,9 @@
       <view class="section">
         <view class="section-title">数据来源</view>
         <text class="section-text">• Heroes Profile API - 英雄数据与天赋信息</text>
-        <text class="section-text">• heroes-talents (GitHub) - 图标资源</text>
-        <text class="section-text">• jsDelivr CDN - 图片加速</text>
+        <text class="section-text">• heroes-talents (GitHub) - 能力JSON数据</text>
+        <text class="section-text">• Tencent COS - 图标资源</text>
+        <text class="section-text">• jsDelivr CDN - 中文本地化数据</text>
       </view>
 
       <view class="section">

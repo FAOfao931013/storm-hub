@@ -24,11 +24,14 @@
 - **天赋数据**: `GET https://api.heroesprofile.com/openApi/Heroes/Talents?hero={heroName}`
   - 提供完整的天赋树信息(名称、描述、等级、图标)
 
-### jsDelivr CDN (图标资源 + 中文数据)
-- **图标仓库**: `https://cdn.jsdelivr.net/gh/heroespatchnotes/heroes-talents@master/`
-- **英雄头像**: `images/heroes/{shortname}.png`
-- **技能图标**: `images/talents/{iconname}.png` (技能和天赋共用同一目录)
-- **天赋图标**: `images/talents/{iconname}.png`
+### Tencent COS (图标资源)
+- **图标基础URL**: `https://mini-pro-1256180448.cos.ap-shanghai.myqcloud.com/storm-hub`
+- **英雄头像**: `{base}/heroes/{shortname}.png`
+- **技能图标**: `{base}/talents/{iconname}.png` (技能和天赋共用同一目录)
+- **天赋图标**: `{base}/talents/{iconname}.png`
+
+### jsDelivr CDN (能力JSON数据 + 中文数据)
+- **能力数据**: `https://cdn.jsdelivr.net/gh/heroespatchnotes/heroes-talents@master/hero/{shortname}.json`
 - **中文本地化数据**: `https://cdn.jsdelivr.net/gh/FAOfao931013/storm-hub@main/data/zhcn/heroes/{shortname}.json`
   - 技能和天赋的中文名称和描述
   - 来源: HeroesToolChest/heroes-data build 2.55.11.94387 (MIT License)
@@ -120,7 +123,9 @@ npm run build:mp-weixin
 2. 进入小程序后台 → 开发 → 开发管理 → 开发设置 → 服务器域名
 3. 配置以下域名:
    - **request合法域名**: `https://api.heroesprofile.com`
-   - **downloadFile合法域名**: `https://cdn.jsdelivr.net`
+   - **downloadFile合法域名**: 
+     - `https://mini-pro-1256180448.cos.ap-shanghai.myqcloud.com` (图标资源)
+     - `https://cdn.jsdelivr.net` (能力JSON + 中文数据)
 
 *没有配置域名会导致网络请求失败!*
 
@@ -245,7 +250,9 @@ npm run type-check
 - 开发阶段:在微信开发者工具中勾选"不校验合法域名"
 - 正式发布前:必须在小程序后台配置以下域名:
   - request: `https://api.heroesprofile.com`
-  - downloadFile: `https://cdn.jsdelivr.net`
+  - downloadFile: 
+    - `https://mini-pro-1256180448.cos.ap-shanghai.myqcloud.com` (图标资源)
+    - `https://cdn.jsdelivr.net` (能力JSON + 中文数据)
 
 ### 2. TabBar图标显示异常
 
