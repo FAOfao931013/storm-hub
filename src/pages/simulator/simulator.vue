@@ -42,19 +42,18 @@
           <view class="level-badge">
             <text class="level-text">{{ level }}</text>
           </view>
-          <view class="selected-talents">
-            <view v-if="selectedTalents[level]" class="talent-selected">
+          <view class="all-talents-row">
+            <view 
+              v-for="talent in getTalentsByLevel(level)" 
+              :key="talent.name"
+              class="talent-icon-wrapper"
+              :class="{ 'talent-selected': isTalentSelectedAtLevel(talent, level) }"
+            >
               <image 
                 class="talent-icon-main"
-                :src="getTalentIcon(selectedTalents[level].icon)"
+                :src="getTalentIcon(talent.icon)"
                 mode="aspectFill"
               />
-              <view class="talent-name">
-                <text>{{ selectedTalents[level].title }}</text>
-              </view>
-            </view>
-            <view v-else class="talent-placeholder">
-              <text class="placeholder-text">点击选择天赋</text>
             </view>
           </view>
         </view>
@@ -167,6 +166,11 @@ const getTalentIcon = (icon: string) => {
 
 const isSelected = (talent: Talent) => {
   const selected = selectedTalents.value[currentLevel.value]
+  return selected?.name === talent.name
+}
+
+const isTalentSelectedAtLevel = (talent: Talent, level: number) => {
+  const selected = selectedTalents.value[level]
   return selected?.name === talent.name
 }
 
@@ -371,41 +375,31 @@ onLoad((options: any) => {
   color: #fff;
 }
 
-.selected-talents {
+.all-talents-row {
   flex: 1;
-}
-
-.talent-selected {
   display: flex;
   align-items: center;
-  gap: 16rpx;
+  gap: 12rpx;
+  flex-wrap: wrap;
+}
+
+.talent-icon-wrapper {
+  position: relative;
 }
 
 .talent-icon-main {
   width: 64rpx;
   height: 64rpx;
   border-radius: 8rpx;
+  border: 2rpx solid rgba(255, 255, 255, 0.2);
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+
+.talent-icon-wrapper.talent-selected .talent-icon-main {
+  opacity: 1;
   border: 3rpx solid #00ffff;
-  box-shadow: 0 0 12rpx rgba(0, 255, 255, 0.5);
-}
-
-.talent-name {
-  flex: 1;
-}
-
-.talent-name text {
-  font-size: 26rpx;
-  color: #fff;
-  font-weight: 500;
-}
-
-.talent-placeholder {
-  padding: 16rpx 0;
-}
-
-.placeholder-text {
-  font-size: 24rpx;
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 12rpx rgba(0, 255, 255, 0.6), 0 0 24rpx rgba(0, 255, 255, 0.3);
 }
 
 /* Drawer styles */
