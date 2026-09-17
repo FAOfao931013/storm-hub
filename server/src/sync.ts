@@ -3,6 +3,7 @@ import { join } from 'node:path'
 import { HEROES_PROFILE_BASE, JSDELIVR_HERO_BASE, USER_AGENT, ZHCN_DIR } from './config.ts'
 import { countHeroes, replaceAllHeroes, setMeta } from './db.ts'
 import { getFranchise } from './franchise.ts'
+import { getChineseName } from './names.ts'
 import type { Ability, Hero, SyncResult, Talent, ZhcnHeroData } from './types.ts'
 import { mergeZhcnAbilities, mergeZhcnTalents } from './zhcn.ts'
 
@@ -14,12 +15,6 @@ export function isSyncing(): boolean {
 
 export function hasHeroData(): boolean {
   return countHeroes() > 0
-}
-
-function getChineseName(translations: string[]): string {
-  if (!Array.isArray(translations)) return ''
-  const chineseEntry = translations.find((t) => t && /[\u4e00-\u9fff]/.test(t))
-  return chineseEntry || ''
 }
 
 async function fetchJson(url: string, timeoutMs = 20000): Promise<unknown> {
@@ -75,7 +70,7 @@ function asHeroList(data: unknown): Hero[] {
         type: String(item.type || ''),
         release_date: item.release_date ? String(item.release_date) : undefined,
         translations,
-        name_cn: getChineseName(translations),
+        name_cn: getChineseName(translations, Number(item.id) || 0),
         franchise: getFranchise(shortName, String(item.attribute_id || '')),
       }
 

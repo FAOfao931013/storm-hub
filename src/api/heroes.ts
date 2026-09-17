@@ -106,8 +106,15 @@ export async function fetchHeroDetail(shortName: string, options?: { force?: boo
   }
 }
 
+const HERO_ICON_ALIASES: Record<string, string> = {
+  cho: 'chogall',
+  thelostvikings: 'lostvikings',
+}
+
 export function getHeroIconUrl(shortName: string): string {
-  return `${COS_ASSET_BASE}/heroes/${shortName.toLowerCase()}.png`
+  const key = shortName.toLowerCase()
+  const file = HERO_ICON_ALIASES[key] || key
+  return `${COS_ASSET_BASE}/heroes/${file}.png`
 }
 
 export function getTalentIconUrl(iconFilename: string): string {

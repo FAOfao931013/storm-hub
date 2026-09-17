@@ -2,6 +2,7 @@ import { mkdirSync } from 'node:fs'
 import { dirname } from 'node:path'
 import Database from 'better-sqlite3'
 import { DB_PATH } from './config.ts'
+import { getChineseName } from './names.ts'
 import type { Ability, Hero, Talent } from './types.ts'
 
 mkdirSync(dirname(DB_PATH), { recursive: true })
@@ -71,8 +72,11 @@ function parseTranslations(raw: string): string[] {
 }
 
 function rowToHero(row: HeroRow): Hero {
+  const translations = parseTranslations(row.translations_json)
+  const id = row.id ?? 0
+
   return {
-    id: row.id ?? 0,
+    id,
     name: row.name,
     short_name: row.short_name,
     attribute_id: row.attribute_id || '',
@@ -80,9 +84,9 @@ function rowToHero(row: HeroRow): Hero {
     new_role: row.new_role || '',
     type: row.type || '',
     release_date: row.release_date || undefined,
-    translations: parseTranslations(row.translations_json),
+    translations,
     franchise: row.franchise || 'Nexus',
-    name_cn: row.name_cn || '',
+    name_cn: getChineseName(translations, id) || row.name_cn || '',
   }
 }
 
@@ -113,7 +117,7 @@ export function listHeroes(): Hero[] {
       `SELECT short_name, id, name, attribute_id, role, new_role, type,
               franchise, name_cn, translations_json, release_date
        FROM heroes
-       ORDER BY COALESCE(NULLIF(name_cn, ''), name) COLLATE NOCASE`
+       ORDER BY id ASC`
     )
     .all() as HeroRow[]
 
