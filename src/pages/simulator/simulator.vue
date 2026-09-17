@@ -96,14 +96,12 @@
 import { ref, computed } from 'vue'
 import { onLoad } from '@dcloudio/uni-app'
 import type { Hero, Talent } from '@/types/hero'
-import { 
-  fetchHeroes, 
-  fetchTalents, 
-  getHeroIconUrl, 
+import {
+  fetchHeroDetail,
+  getHeroIconUrl,
   getTalentIconUrl,
-  getChineseName 
+  getHeroDisplayName
 } from '@/api/heroes'
-import { fetchZhcnHeroData, mergeZhcnTalents } from '@/utils/zhcn'
 
 const hero = ref<Hero | null>(null)
 const talents = ref<Talent[]>([])
@@ -118,8 +116,7 @@ const talentLevels = [1, 4, 7, 10, 13, 16, 20]
 
 const displayName = computed(() => {
   if (!hero.value) return ''
-  const chineseName = getChineseName(hero.value.translations)
-  return chineseName || hero.value.name
+  return getHeroDisplayName(hero.value)
 })
 
 const heroIcon = computed(() => {
@@ -189,28 +186,9 @@ const loadHeroData = async (heroShortName: string) => {
   currentHeroShortName.value = heroShortName
 
   try {
-    const allHeroes = await fetchHeroes()
-    const foundHero = allHeroes.find(h => h.short_name === heroShortName)
-    
-    if (!foundHero) {
-      throw new Error('英雄不存在')
-    }
-    
-    hero.value = foundHero
-
-    const [talentsData, zhcnData] = await Promise.allSettled([
-      fetchTalents(foundHero.name),
-      fetchZhcnHeroData(heroShortName)
-    ])
-
-    const talentsEn = talentsData.status === 'fulfilled' ? talentsData.value : []
-    const zhcn = zhcnData.status === 'fulfilled' ? zhcnData.value : null
-    
-    talents.value = mergeZhcnTalents(talentsEn, zhcn)
-
-    if (talentsData.status === 'rejected') {
-      console.warn('Talents fetch failed:', talentsData.reason)
-    }
+    const detail = await fetchHeroDetail(heroShortName)
+    hero.value = detail.hero
+    talents.value = detail.talents
   } catch (err: any) {
     error.value = err.message || '加载失败'
     uni.showToast({

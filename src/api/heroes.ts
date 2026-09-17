@@ -1,233 +1,137 @@
-import type { Hero, Talent, Ability } from '@/types/hero'
+import type { Hero, HeroDetailResponse } from '@/types/hero'
 
-const BASE_URL = 'https://api.heroesprofile.com/openApi'
-const JSDELIVR_BASE = 'https://cdn.jsdelivr.net/gh/heroespatchnotes/heroes-talents@master'
+const BASE_URL = 'https://api.fao13578.cn/api'
 const COS_ASSET_BASE = 'https://mini-pro-1256180448.cos.ap-shanghai.myqcloud.com/storm-hub'
 
-// Cache for heroes list (in-memory)
 let heroesCache: Hero[] | null = null
-let cacheTimestamp = 0
-const CACHE_TTL = 5 * 60 * 1000 // 5 minutes
+let heroesCacheTimestamp = 0
+const CACHE_TTL = 5 * 60 * 1000
 
-/**
- * Extract Chinese name from translations array
- * Looks for CJK characters (Chinese simplified/traditional)
- * Returns first Chinese match or empty string
- */
-export function getChineseName(translations: string[]): string {
-  if (!Array.isArray(translations)) return ''
-  
-  // Find first string containing CJK characters (Chinese)
-  const chineseEntry = translations.find(t => 
-    t && /[\u4e00-\u9fff]/.test(t)
-  )
-  
-  return chineseEntry || ''
+const detailCache = new Map<string, { data: HeroDetailResponse; ts: number }>()
+
+function asHeroList(data: unknown): Hero[] {
+  if (Array.isArray(data)) return data as Hero[]
+  if (data && typeof data === 'object' && Array.isArray((data as { heroes?: unknown }).heroes)) {
+    return (data as { heroes: Hero[] }).heroes
+  }
+  throw new Error('Invalid API response format')
 }
 
 /**
- * Fetch all heroes from Heroes Profile API
- * API returns an object keyed by hero name, not an array
+ * Extract Chinese name from translations array.
+ * Prefer API-provided name_cn when present.
  */
-export async function fetchHeroes(): Promise<Hero[]> {
+export function getChineseName(translations: string[] | undefined, nameCn?: string): string {
+  if (nameCn) return nameCn
+  if (!Array.isArray(translations)) return ''
+
+  const chineseEntry = translations.find((t) => t && /[\u4e00-\u9fff]/.test(t))
+  return chineseEntry || ''
+}
+
+export function getHeroDisplayName(hero: Pick<Hero, 'name' | 'name_cn' | 'translations'>): string {
+  return getChineseName(hero.translations, hero.name_cn) || hero.name
+}
+
+export async function fetchHeroes(options?: { force?: boolean }): Promise<Hero[]> {
   const now = Date.now()
-  
-  // Return cached data if still valid
-  if (heroesCache && (now - cacheTimestamp) < CACHE_TTL) {
+
+  if (!options?.force && heroesCache && now - heroesCacheTimestamp < CACHE_TTL) {
     return heroesCache
   }
 
   try {
     const response = await uni.request({
-      url: `${BASE_URL}/Heroes`,
+      url: `${BASE_URL}/heroes`,
       method: 'GET',
-      timeout: 10000
+      timeout: 10000,
     })
 
     if (response.statusCode === 200 && response.data) {
-      const data = response.data as any
-      
-      // Convert object to array
-      if (typeof data === 'object' && !Array.isArray(data)) {
-        // API returns { "Abathur": {...}, "Alarak": {...} }
-        heroesCache = Object.values(data) as Hero[]
-      } else if (Array.isArray(data)) {
-        // Fallback if API changes to array format
-        heroesCache = data as Hero[]
-      } else {
-        throw new Error('Invalid API response format')
-      }
-      
-      cacheTimestamp = now
+      heroesCache = asHeroList(response.data)
+      heroesCacheTimestamp = now
       return heroesCache
     }
-    
+
     throw new Error(`API returned status ${response.statusCode}`)
   } catch (error: any) {
     console.error('Failed to fetch heroes:', error)
-    throw new Error(error.errMsg || '获取英雄列表失败')
+    throw new Error(error.errMsg || error.message || '获取英雄列表失败')
   }
 }
 
-/**
- * Fetch hero talents from Heroes Profile API
- * API returns object keyed by hero name: {"Abathur": [...]}
- */
-export async function fetchTalents(heroName?: string): Promise<Talent[]> {
-  try {
-    const url = heroName 
-      ? `${BASE_URL}/Heroes/Talents?hero=${encodeURIComponent(heroName)}`
-      : `${BASE_URL}/Heroes/Talents`
+export async function fetchHeroDetail(
+  shortName: string,
+  options?: { force?: boolean }
+): Promise<HeroDetailResponse> {
+  const cacheKey = shortName.toLowerCase()
+  const now = Date.now()
+  const cached = detailCache.get(cacheKey)
 
+  if (!options?.force && cached && now - cached.ts < CACHE_TTL) {
+    return cached.data
+  }
+
+  try {
     const response = await uni.request({
-      url,
+      url: `${BASE_URL}/heroes/${encodeURIComponent(shortName)}`,
       method: 'GET',
-      timeout: 10000
+      timeout: 10000,
     })
 
-    if (response.statusCode === 200 && response.data) {
-      const data = response.data as any
-      
-      // API returns object keyed by hero name: {"Abathur": [...], "Alarak": [...]}
-      let talentArray: any[] = []
-      
-      if (Array.isArray(data)) {
-        // Fallback if API returns array
-        talentArray = data
-      } else if (typeof data === 'object') {
-        // Convert object to array - if heroName specified, get that hero's talents
-        if (heroName && data[heroName]) {
-          talentArray = data[heroName]
-        } else {
-          // Flatten all heroes' talents
-          talentArray = Object.values(data).flat()
-        }
-      }
-      
-      // Normalize talent fields to match our interface
-      return talentArray.map((t: any) => ({
-        name: t.talent_name || t.name || '',
-        title: t.title || t.talent_name || '',
-        description: t.description || '',
-        icon: t.icon || '',
-        icon_url: t.icon_url,
-        level: parseInt(String(t.level), 10) || 0,
-        sort: parseInt(String(t.sort), 10) || 0
-      }))
+    if (response.statusCode === 404) {
+      throw new Error('英雄不存在')
     }
-    
+
+    if (response.statusCode === 200 && response.data) {
+      const payload = response.data as HeroDetailResponse
+      if (!payload.hero) {
+        throw new Error('Invalid API response format')
+      }
+
+      const data: HeroDetailResponse = {
+        hero: payload.hero,
+        abilities: Array.isArray(payload.abilities) ? payload.abilities : [],
+        talents: Array.isArray(payload.talents) ? payload.talents : [],
+        synced_at: payload.synced_at ?? null,
+      }
+
+      detailCache.set(cacheKey, { data, ts: now })
+      return data
+    }
+
     throw new Error(`API returned status ${response.statusCode}`)
   } catch (error: any) {
-    console.error('Failed to fetch talents:', error)
-    throw new Error(error.errMsg || '获取天赋数据失败')
+    console.error('Failed to fetch hero detail:', error)
+    throw new Error(error.errMsg || error.message || '获取英雄详情失败')
   }
 }
 
-/**
- * Fetch hero abilities from jsDelivr heroes-talents repo
- * Correct path: hero/{shortname}.json (not hero/{shortname}/data.json)
- * Abilities are nested by owner: {"Abathur": [...], "AbathurSymbiote": [...]}
- */
-export async function fetchAbilities(heroShortName: string): Promise<Ability[]> {
-  try {
-    // Correct path: hero/abathur.json
-    const url = `${JSDELIVR_BASE}/hero/${heroShortName.toLowerCase()}.json`
-    
-    const response = await uni.request({
-      url,
-      method: 'GET',
-      timeout: 10000
-    })
-
-    if (response.statusCode === 200 && response.data) {
-      const data: any = response.data
-      const abilities: Ability[] = []
-      
-      // Abilities are nested by owner key (e.g., "Abathur", "AbathurSymbiote")
-      if (data.abilities && typeof data.abilities === 'object') {
-        for (const ownerKey in data.abilities) {
-          const ownerAbilities = data.abilities[ownerKey]
-          
-          if (Array.isArray(ownerAbilities)) {
-            ownerAbilities.forEach((ability: any) => {
-              // Include basic abilities, heroics, and traits
-              // Skip mount abilities (type === 'mount')
-              if (ability.type !== 'mount') {
-                abilities.push({
-                  owner: ownerKey,
-                  name: ability.name || ability.abilityId || '',
-                  title: ability.name || '',
-                  description: ability.description || '',
-                  icon: ability.icon || '',
-                  hotkey: ability.hotkey || '',
-                  cooldown: ability.cooldown,
-                  mana_cost: ability.manaCost,
-                  trait: ability.trait || false
-                })
-              }
-            })
-          }
-        }
-      }
-      
-      // Sort: trait first, then basic (Q/W/E), then heroics (R)
-      abilities.sort((a, b) => {
-        if (a.trait && !b.trait) return -1
-        if (!a.trait && b.trait) return 1
-        
-        const order = ['D', 'Q', 'W', 'E', 'R', 'R2']
-        const aIndex = order.indexOf(a.hotkey || '')
-        const bIndex = order.indexOf(b.hotkey || '')
-        
-        if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex
-        if (aIndex !== -1) return -1
-        if (bIndex !== -1) return 1
-        
-        return 0
-      })
-      
-      return abilities
-    }
-    
-    // Return empty array if not found (not all heroes may have data)
-    return []
-  } catch (error: any) {
-    console.warn(`Failed to fetch abilities for ${heroShortName}:`, error)
-    // Don't throw error, just return empty array as fallback
-    return []
-  }
-}
-
-/**
- * Get hero icon URL from Tencent COS
- */
 export function getHeroIconUrl(shortName: string): string {
   return `${COS_ASSET_BASE}/heroes/${shortName.toLowerCase()}.png`
 }
 
-/**
- * Get talent icon URL from Tencent COS
- */
 export function getTalentIconUrl(iconFilename: string): string {
   if (!iconFilename) return ''
-  // Remove any extension and use consistent path
   const name = iconFilename.replace(/\.(png|jpg|jpeg)$/i, '')
   return `${COS_ASSET_BASE}/talents/${name}.png`
 }
 
-/**
- * Get ability icon URL from Tencent COS
- */
 export function getAbilityIconUrl(iconFilename: string): string {
   if (!iconFilename) return ''
   const name = iconFilename.replace(/\.(png|jpg|jpeg)$/i, '')
   return `${COS_ASSET_BASE}/talents/${name}.png`
 }
 
-/**
- * Clear heroes cache (useful for pull-to-refresh)
- */
 export function clearHeroesCache(): void {
   heroesCache = null
-  cacheTimestamp = 0
+  heroesCacheTimestamp = 0
+}
+
+export function clearHeroDetailCache(shortName?: string): void {
+  if (shortName) {
+    detailCache.delete(shortName.toLowerCase())
+    return
+  }
+  detailCache.clear()
 }

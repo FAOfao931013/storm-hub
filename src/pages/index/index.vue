@@ -86,7 +86,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import type { Hero } from '@/types/hero'
-import { fetchHeroes, getChineseName, getHeroIconUrl } from '@/api/heroes'
+import { fetchHeroes, getChineseName, getHeroDisplayName, getHeroIconUrl } from '@/api/heroes'
 import {
   getFranchise,
   getAllFranchises,
@@ -125,10 +125,10 @@ const filteredHeroes = computed(() => {
     if (searchQuery.value) {
       const query = searchQuery.value.toLowerCase()
       const name = (hero.name || '').toLowerCase()
-      const chineseName = getChineseName(hero.translations).toLowerCase()
+      const chineseName = getChineseName(hero.translations, hero.name_cn).toLowerCase()
 
       // Also search in translations array
-      const matchInTranslations = hero.translations.some((t) => t.toLowerCase().includes(query))
+      const matchInTranslations = (hero.translations || []).some((t) => t.toLowerCase().includes(query))
 
       if (!name.includes(query) && !chineseName.includes(query) && !matchInTranslations) {
         return false
@@ -150,7 +150,7 @@ async function loadHeroes() {
     // Enhance heroes with franchise data
     heroes.value = data.map((hero) => ({
       ...hero,
-      _franchise: getFranchise(hero.short_name, hero.attribute_id),
+      _franchise: (hero.franchise as FranchiseType) || getFranchise(hero.short_name, hero.attribute_id),
       _imageError: false,
     }))
   } catch (err: any) {
@@ -178,11 +178,6 @@ function getHeroIcon(hero: Hero & { _imageError?: boolean }): string {
 
 function onHeroImageError(hero: Hero & { _imageError?: boolean }) {
   hero._imageError = true
-}
-
-function getHeroDisplayName(hero: Hero): string {
-  const chineseName = getChineseName(hero.translations)
-  return chineseName || hero.name
 }
 
 function toggleRole(role: string) {

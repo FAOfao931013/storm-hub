@@ -15,6 +15,16 @@ export interface Hero {
   release_date?: string;
   translations: HeroTranslations;
   icon?: string;
+  /** Filled by storm-hub API after sync */
+  franchise?: string;
+  name_cn?: string;
+}
+
+export interface HeroDetailResponse {
+  hero: Hero;
+  abilities: Ability[];
+  talents: Talent[];
+  synced_at: string | null;
 }
 
 export interface Talent {

@@ -38,7 +38,7 @@
 import { ref } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import type { Hero } from '@/types/hero'
-import { fetchHeroes, getHeroIconUrl, getChineseName } from '@/api/heroes'
+import { fetchHeroes, getHeroDisplayName, getHeroIconUrl } from '@/api/heroes'
 import { getFavorites, toggleFavorite } from '@/utils/storage'
 
 const favoriteHeroes = ref<Hero[]>([])
@@ -71,11 +71,6 @@ const loadFavorites = async () => {
 
 const getHeroIcon = (hero: Hero): string => {
   return getHeroIconUrl(hero.short_name)
-}
-
-const getHeroDisplayName = (hero: Hero): string => {
-  const chineseName = getChineseName(hero.translations)
-  return chineseName || hero.name
 }
 
 const goToDetail = (hero: Hero) => {

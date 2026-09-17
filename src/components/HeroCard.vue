@@ -25,7 +25,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import type { Hero } from '@/types/hero'
-import { getHeroIconUrl, getChineseName } from '@/api/heroes'
+import { getHeroIconUrl, getHeroDisplayName } from '@/api/heroes'
 import { getRoleCN, getTypeCN } from '@/utils/zhcn'
 
 interface Props {
@@ -46,10 +46,7 @@ const emit = defineEmits<{
 
 const imageError = ref(false)
 
-const displayName = computed(() => {
-  const chineseName = getChineseName(props.hero.translations)
-  return chineseName || props.hero.name
-})
+const displayName = computed(() => getHeroDisplayName(props.hero))
 
 const displayRole = computed(() => {
   return getRoleCN(props.hero.new_role || props.hero.role)

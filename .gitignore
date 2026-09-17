@@ -13,6 +13,18 @@ dist
 dist-ssr
 *.local
 
+# Secrets and local data
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+*.pem
+*.key
+server/data/*.db
+server/data/*.db-*
+
 # uni-app specific
 unpackage
 .hbuilderx
