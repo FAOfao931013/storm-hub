@@ -344,7 +344,8 @@ onLoad((options: any) => {
 .level-badge {
   width: 80rpx;
   height: 80rpx;
-  background: linear-gradient(135deg, #5a9ff5 0%, #3a7bc8 50%, #2a5fa0 100%);
+  /* Outer darker border shadow */
+  background: linear-gradient(135deg, #1a1a2e 0%, #2a2a4e 100%);
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   display: flex;
   align-items: center;
@@ -352,29 +353,99 @@ onLoad((options: any) => {
   flex-shrink: 0;
   position: relative;
   transition: all 0.3s;
-  box-shadow: 0 2rpx 8rpx rgba(74, 144, 226, 0.3), inset 0 1rpx 2rpx rgba(255, 255, 255, 0.2);
+  /* Multi-layer depth shadows */
+  box-shadow: 
+    0 4rpx 12rpx rgba(0, 0, 0, 0.6),
+    0 2rpx 6rpx rgba(0, 0, 0, 0.4),
+    inset 0 -2rpx 4rpx rgba(0, 0, 0, 0.5);
 }
 
+/* Inner bevel/highlight ring + core gradient */
 .level-badge::before {
   content: '';
   position: absolute;
   inset: 3rpx;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  border: 1rpx solid rgba(255, 255, 255, 0.15);
+  /* Core diagonal gradient: purple-blue with top-to-bottom shading */
+  background: 
+    linear-gradient(135deg, 
+      #6b5fb5 0%,
+      #5a4ea0 15%,
+      #4a3d8b 30%,
+      #3a5f9e 50%,
+      #2a4d82 70%,
+      #1a3a66 85%,
+      #0f2847 100%
+    );
+  box-shadow: 
+    inset 0 2rpx 4rpx rgba(255, 255, 255, 0.15),
+    inset 0 -2rpx 6rpx rgba(0, 0, 0, 0.4);
   pointer-events: none;
 }
 
+/* Top diagonal specular highlight (glass/metal facet) */
+.level-badge::after {
+  content: '';
+  position: absolute;
+  top: 8rpx;
+  left: 12rpx;
+  right: 28rpx;
+  height: 24rpx;
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+/* Selected state: cyan-biased but still layered */
 .level-badge.has-selection {
-  background: linear-gradient(135deg, #00d9ff 0%, #00a3cc 50%, #007799 100%);
-  box-shadow: 0 2rpx 12rpx rgba(0, 217, 255, 0.5), 0 0 20rpx rgba(0, 217, 255, 0.2), inset 0 1rpx 2rpx rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, #0a3a4a 0%, #1a5a6a 100%);
+  box-shadow: 
+    0 4rpx 16rpx rgba(0, 217, 255, 0.5),
+    0 2rpx 8rpx rgba(0, 180, 220, 0.4),
+    0 0 24rpx rgba(0, 217, 255, 0.3),
+    inset 0 -2rpx 4rpx rgba(0, 0, 0, 0.4);
+}
+
+.level-badge.has-selection::before {
+  background: 
+    linear-gradient(135deg, 
+      #40d9e8 0%,
+      #30c5d5 15%,
+      #20b0c0 30%,
+      #1098aa 50%,
+      #0a7d8d 70%,
+      #056270 85%,
+      #024a55 100%
+    );
+  box-shadow: 
+    inset 0 2rpx 4rpx rgba(255, 255, 255, 0.25),
+    inset 0 -2rpx 6rpx rgba(0, 0, 0, 0.3);
+}
+
+.level-badge.has-selection::after {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(200, 255, 255, 0.3) 50%,
+    rgba(100, 255, 255, 0.1) 100%
+  );
 }
 
 .level-text {
   font-size: 34rpx;
   font-weight: 700;
   color: #fff;
-  text-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.4), 0 0 8rpx rgba(255, 255, 255, 0.2);
+  text-shadow: 
+    0 2rpx 4rpx rgba(0, 0, 0, 0.6),
+    0 1rpx 2rpx rgba(0, 0, 0, 0.8),
+    0 0 8rpx rgba(255, 255, 255, 0.15);
   letter-spacing: 0rpx;
+  position: relative;
+  z-index: 1;
 }
 
 .all-talents-row {
