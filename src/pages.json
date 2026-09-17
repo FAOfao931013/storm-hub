@@ -17,7 +17,8 @@
 				"navigationBarTextStyle": "white",
 				"navigationBarBackgroundColor": "#1e1432",
 				"backgroundColor": "#1e1432",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"disableScroll": true
 			}
 		},
 		{
