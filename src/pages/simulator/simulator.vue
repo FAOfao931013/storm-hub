@@ -401,37 +401,38 @@ onLoad((options: any) => {
   transition: all 0.3s;
 }
 
-/* Selected state: cyan-biased but still layered */
+/* Selected state: subtle cool accent, still layered */
 .level-badge.has-selection {
-  background: linear-gradient(135deg, #0a3a4a 0%, #1a5a6a 100%);
+  background: linear-gradient(135deg, #2a3a4a 0%, #3a4a5a 100%);
   box-shadow: 
-    0 4rpx 16rpx rgba(0, 217, 255, 0.5),
-    0 2rpx 8rpx rgba(0, 180, 220, 0.4),
-    0 0 24rpx rgba(0, 217, 255, 0.3),
+    0 4rpx 12rpx rgba(100, 140, 180, 0.3),
+    0 2rpx 6rpx rgba(80, 120, 160, 0.2),
+    0 0 16rpx rgba(120, 160, 200, 0.15),
     inset 0 -2rpx 4rpx rgba(0, 0, 0, 0.4);
 }
 
 .level-badge.has-selection::before {
   background: 
     linear-gradient(135deg, 
-      #40d9e8 0%,
-      #30c5d5 15%,
-      #20b0c0 30%,
-      #1098aa 50%,
-      #0a7d8d 70%,
-      #056270 85%,
-      #024a55 100%
+      #7a8fb5 0%,
+      #6a7fa5 15%,
+      #5a6f95 30%,
+      #4a5f85 50%,
+      #3a4f75 70%,
+      #2a3f65 85%,
+      #1a2f55 100%
     );
   box-shadow: 
-    inset 0 2rpx 4rpx rgba(255, 255, 255, 0.25),
-    inset 0 -2rpx 6rpx rgba(0, 0, 0, 0.3);
+    inset 0 2rpx 4rpx rgba(180, 200, 220, 0.2),
+    inset 0 -2rpx 6rpx rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1rpx rgba(140, 180, 220, 0.3);
 }
 
 .level-badge.has-selection::after {
   background: linear-gradient(135deg, 
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(200, 255, 255, 0.3) 50%,
-    rgba(100, 255, 255, 0.1) 100%
+    rgba(220, 235, 255, 0.4) 0%,
+    rgba(180, 210, 240, 0.25) 50%,
+    rgba(140, 185, 220, 0.1) 100%
   );
 }
 
@@ -471,8 +472,11 @@ onLoad((options: any) => {
 
 .talent-icon-wrapper.talent-selected .talent-icon-main {
   opacity: 1;
-  border: 3rpx solid #00ffff;
-  box-shadow: 0 0 12rpx rgba(0, 255, 255, 0.6), 0 0 24rpx rgba(0, 255, 255, 0.3);
+  border: 2rpx solid rgba(160, 180, 210, 0.7);
+  box-shadow: 
+    0 0 8rpx rgba(140, 160, 200, 0.25),
+    0 0 16rpx rgba(120, 150, 190, 0.15),
+    inset 0 1rpx 2rpx rgba(180, 200, 230, 0.2);
 }
 
 /* Drawer styles */
@@ -547,9 +551,9 @@ onLoad((options: any) => {
 }
 
 .drawer-talent-item.selected {
-  background: rgba(74, 144, 226, 0.2);
-  border-color: #00ffff;
-  box-shadow: 0 0 12rpx rgba(0, 255, 255, 0.3);
+  background: rgba(100, 130, 170, 0.15);
+  border-color: rgba(140, 170, 210, 0.6);
+  box-shadow: 0 0 10rpx rgba(120, 150, 190, 0.2), inset 0 1rpx 2rpx rgba(160, 190, 220, 0.15);
 }
 
 .drawer-talent-item:active {
