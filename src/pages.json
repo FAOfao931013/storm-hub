@@ -65,7 +65,10 @@
       "path": "pages/detail/detail",
       "style": {
         "navigationBarTitleText": "英雄详情",
-        "enablePullDownRefresh": false
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#1e1432",
+        "backgroundColor": "#1e1432",
+        "enablePullDownRefresh": true
       }
     },
     {
