@@ -23,16 +23,25 @@ function getChineseName(translations: string[]): string {
 }
 
 async function fetchJson(url: string, timeoutMs = 20000): Promise<unknown> {
-  const response = await fetch(url, {
-    headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' },
-    signal: AbortSignal.timeout(timeoutMs),
-  })
+  try {
+    const response = await fetch(url, {
+      headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' },
+      signal: AbortSignal.timeout(timeoutMs),
+    })
 
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status} for ${url}`)
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status} for ${url}`)
+    }
+
+    return await response.json()
+  } catch (error) {
+    const cause =
+      error instanceof Error && error.cause instanceof Error
+        ? error.cause.message
+        : ''
+    const message = error instanceof Error ? error.message : String(error)
+    throw new Error(cause ? `${message}: ${cause}` : message)
   }
-
-  return response.json()
 }
 
 function asHeroList(data: unknown): Hero[] {

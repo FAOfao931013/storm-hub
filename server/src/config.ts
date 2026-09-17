@@ -1,6 +1,9 @@
 import { config } from 'dotenv'
+import { setDefaultResultOrder } from 'node:dns'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+
+setDefaultResultOrder('ipv4first')
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 

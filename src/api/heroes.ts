@@ -1,6 +1,8 @@
 import type { Hero, HeroDetailResponse } from '@/types/hero'
 
-const BASE_URL = 'https://api.fao13578.cn/api'
+// 备案通过、公网 https://api.fao13578.cn/api/health 能通之后，改成 false
+const USE_LOCAL_API = true
+const BASE_URL = USE_LOCAL_API ? 'http://127.0.0.1:3000/api' : 'https://api.fao13578.cn/api'
 const COS_ASSET_BASE = 'https://mini-pro-1256180448.cos.ap-shanghai.myqcloud.com/storm-hub'
 
 let heroesCache: Hero[] | null = null
@@ -60,10 +62,7 @@ export async function fetchHeroes(options?: { force?: boolean }): Promise<Hero[]
   }
 }
 
-export async function fetchHeroDetail(
-  shortName: string,
-  options?: { force?: boolean }
-): Promise<HeroDetailResponse> {
+export async function fetchHeroDetail(shortName: string, options?: { force?: boolean }): Promise<HeroDetailResponse> {
   const cacheKey = shortName.toLowerCase()
   const now = Date.now()
   const cached = detailCache.get(cacheKey)
