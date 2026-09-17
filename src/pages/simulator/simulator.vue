@@ -10,11 +10,6 @@
     </view>
 
     <view v-else-if="hero" class="simulator">
-      <!-- Build name header -->
-      <view class="build-header">
-        <text class="build-name">未命名天赋</text>
-      </view>
-
       <!-- Hero info -->
       <view class="hero-info">
         <image 
@@ -39,7 +34,7 @@
           class="tier-row"
           @tap="openTierDrawer(level)"
         >
-          <view class="level-badge">
+          <view class="level-badge" :class="{ 'has-selection': selectedTalents[level] }">
             <text class="level-text">{{ level }}</text>
           </view>
           <view class="all-talents-row">
@@ -278,18 +273,6 @@ onLoad((options: any) => {
   padding-bottom: 40rpx;
 }
 
-.build-header {
-  padding: 32rpx;
-  text-align: center;
-  border-bottom: 2rpx solid rgba(255, 255, 255, 0.1);
-}
-
-.build-name {
-  font-size: 32rpx;
-  font-weight: bold;
-  color: #fff;
-}
-
 .hero-info {
   display: flex;
   align-items: center;
@@ -361,18 +344,37 @@ onLoad((options: any) => {
 .level-badge {
   width: 80rpx;
   height: 80rpx;
-  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  background: linear-gradient(135deg, #5a9ff5 0%, #3a7bc8 50%, #2a5fa0 100%);
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  position: relative;
+  transition: all 0.3s;
+  box-shadow: 0 2rpx 8rpx rgba(74, 144, 226, 0.3), inset 0 1rpx 2rpx rgba(255, 255, 255, 0.2);
+}
+
+.level-badge::before {
+  content: '';
+  position: absolute;
+  inset: 3rpx;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  border: 1rpx solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+}
+
+.level-badge.has-selection {
+  background: linear-gradient(135deg, #00d9ff 0%, #00a3cc 50%, #007799 100%);
+  box-shadow: 0 2rpx 12rpx rgba(0, 217, 255, 0.5), 0 0 20rpx rgba(0, 217, 255, 0.2), inset 0 1rpx 2rpx rgba(255, 255, 255, 0.3);
 }
 
 .level-text {
-  font-size: 32rpx;
-  font-weight: bold;
+  font-size: 34rpx;
+  font-weight: 700;
   color: #fff;
+  text-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.4), 0 0 8rpx rgba(255, 255, 255, 0.2);
+  letter-spacing: 0rpx;
 }
 
 .all-talents-row {
