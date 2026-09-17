@@ -1,113 +1,117 @@
 {
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "英雄",
-				"navigationBarTextStyle": "white",
-				"navigationBarBackgroundColor": "#1e1432",
-				"backgroundColor": "#1e1432",
-				"enablePullDownRefresh": false
-			}
-		},
-		{
-			"path": "pages/storm/index",
-			"style": {
-				"navigationBarTitleText": "风暴聚集",
-				"navigationBarTextStyle": "white",
-				"navigationBarBackgroundColor": "#1e1432",
-				"backgroundColor": "#1e1432",
-				"enablePullDownRefresh": false,
-				"disableScroll": true
-			}
-		},
-		{
-			"path": "pages/team/index",
-			"style": {
-				"navigationBarTitleText": "组队",
-				"navigationBarTextStyle": "white",
-				"navigationBarBackgroundColor": "#1e1432",
-				"backgroundColor": "#1e1432",
-				"enablePullDownRefresh": false
-			}
-		},
-		{
-			"path": "pages/mine/index",
-			"style": {
-				"navigationBarTitleText": "我的",
-				"navigationBarTextStyle": "white",
-				"navigationBarBackgroundColor": "#1e1432",
-				"backgroundColor": "#1e1432",
-				"enablePullDownRefresh": false
-			}
-		},
-		{
-			"path": "pages/favorites/index",
-			"style": {
-				"navigationBarTitleText": "我的收藏",
-				"navigationBarTextStyle": "white",
-				"navigationBarBackgroundColor": "#1e1432",
-				"backgroundColor": "#1e1432",
-				"enablePullDownRefresh": false
-			}
-		},
-		{
-			"path": "pages/about/index",
-			"style": {
-				"navigationBarTitleText": "声明",
-				"navigationBarTextStyle": "white",
-				"navigationBarBackgroundColor": "#1e1432",
-				"backgroundColor": "#1e1432",
-				"enablePullDownRefresh": false
-			}
-		},
-		{
-			"path": "pages/detail/detail",
-			"style": {
-				"navigationBarTitleText": "英雄详情",
-				"navigationBarTextStyle": "white",
-				"navigationBarBackgroundColor": "#1e1432",
-				"backgroundColor": "#1e1432",
-				"enablePullDownRefresh": true
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "风暴枢纽",
-		"navigationBarBackgroundColor": "#1e1432",
-		"backgroundColor": "#1e1432"
-	},
-	"tabBar": {
-		"color": "#8e8398",
-		"selectedColor": "#9682ff",
-		"backgroundColor": "#1e1432",
-		"borderStyle": "black",
-		"list": [
-			{
-				"pagePath": "pages/index/index",
-				"text": "英雄",
-				"iconPath": "static/tab/hero.png",
-				"selectedIconPath": "static/tab/hero-active.png"
-			},
-			{
-				"pagePath": "pages/storm/index",
-				"text": "风暴聚集",
-				"iconPath": "static/tab/storm.png",
-				"selectedIconPath": "static/tab/storm-active.png"
-			},
-			{
-				"pagePath": "pages/team/index",
-				"text": "组队",
-				"iconPath": "static/tab/team.png",
-				"selectedIconPath": "static/tab/team-active.png"
-			},
-			{
-				"pagePath": "pages/mine/index",
-				"text": "我的",
-				"iconPath": "static/tab/mine.png",
-				"selectedIconPath": "static/tab/mine-active.png"
-			}
-		]
-	}
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "英雄",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#1e1432",
+        "backgroundColor": "#1e1432",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/storm/index",
+      "style": {
+        "navigationBarTitleText": "风暴聚集",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#1e1432",
+        "backgroundColor": "#1e1432",
+        "enablePullDownRefresh": false,
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/team/index",
+      "style": {
+        "navigationBarTitleText": "组队",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#1e1432",
+        "backgroundColor": "#1e1432",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#1e1432",
+        "backgroundColor": "#1e1432",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/favorites/index",
+      "style": {
+        "navigationBarTitleText": "我的收藏",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#1e1432",
+        "backgroundColor": "#1e1432",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/about/index",
+      "style": {
+        "navigationBarTitleText": "声明",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#1e1432",
+        "backgroundColor": "#1e1432",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/detail/detail",
+      "style": {
+        "navigationBarTitleText": "英雄详情",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/simulator/simulator",
+      "style": {
+        "navigationBarTitleText": "天赋模拟器",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "风暴枢纽",
+    "navigationBarBackgroundColor": "#1e1432",
+    "backgroundColor": "#1e1432"
+  },
+  "tabBar": {
+    "color": "#8e8398",
+    "selectedColor": "#9682ff",
+    "backgroundColor": "#1e1432",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "英雄",
+        "iconPath": "static/tab/hero.png",
+        "selectedIconPath": "static/tab/hero-active.png"
+      },
+      {
+        "pagePath": "pages/storm/index",
+        "text": "风暴聚集",
+        "iconPath": "static/tab/storm.png",
+        "selectedIconPath": "static/tab/storm-active.png"
+      },
+      {
+        "pagePath": "pages/team/index",
+        "text": "组队",
+        "iconPath": "static/tab/team.png",
+        "selectedIconPath": "static/tab/team-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/tab/mine.png",
+        "selectedIconPath": "static/tab/mine-active.png"
+      }
+    ]
+  }
 }

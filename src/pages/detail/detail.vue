@@ -38,6 +38,14 @@
           </view>
         </view>
 
+        <!-- Talent Simulator button -->
+        <view class="simulator-section">
+          <button class="simulator-btn" @tap="onOpenSimulator">
+            <text class="simulator-icon">⚡</text>
+            <text class="simulator-text">天赋模拟器</text>
+          </button>
+        </view>
+
         <!-- Abilities section -->
         <view v-if="abilities.length > 0" class="section">
           <view class="section-title">技能</view>
@@ -251,6 +259,14 @@ const onImageError = () => {
   imageError.value = true
 }
 
+const onOpenSimulator = () => {
+  if (!hero.value) return
+  
+  uni.navigateTo({
+    url: `/pages/simulator/simulator?hero=${hero.value.short_name}`
+  })
+}
+
 onLoad((options: any) => {
   const heroShortName = options.hero
   if (heroShortName) {
@@ -355,6 +371,42 @@ onLoad((options: any) => {
 .star {
   color: #FFD700;
   font-size: 40rpx;
+}
+
+.simulator-section {
+  background: #fff;
+  padding: 24rpx 32rpx;
+  margin-top: 20rpx;
+}
+
+.simulator-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rpx;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  padding: 24rpx;
+  border-radius: 12rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  box-shadow: 0 4rpx 12rpx rgba(102, 126, 234, 0.3);
+}
+
+.simulator-btn::after {
+  border: none;
+}
+
+.simulator-icon {
+  font-size: 32rpx;
+}
+
+.simulator-text {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
 }
 
 .section {
