@@ -4,8 +4,9 @@
  */
 
 const NAME_CN_USE_LAST_TRANSLATION = new Set<number>([
-  2,  // Alarak: 亞拉瑞克 -> 阿拉纳克
-  4,  // Artanis: 亞坦尼斯 -> 阿塔尼斯
+  2, // Alarak: 亞拉瑞克 -> 阿拉纳克
+  4, // Artanis: 亞坦尼斯 -> 阿塔尼斯
+  8, // Brightwing: 亮翼 -> 光明之翼
   10, // Chen: 老陳 -> 陈
   11, // Cho: 丘 -> 古
   18, // Gall: 加利 -> 加尔
