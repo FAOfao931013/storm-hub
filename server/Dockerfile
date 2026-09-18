@@ -6,6 +6,16 @@ FROM node:20-slim AS builder
 
 WORKDIR /build
 
+# Use Tencent Cloud mirrors for faster apt operations in China
+RUN if [ -f /etc/apt/sources.list.d/debian.sources ]; then \
+      sed -i 's|deb.debian.org|mirrors.cloud.tencent.com|g' /etc/apt/sources.list.d/debian.sources && \
+      sed -i 's|security.debian.org|mirrors.cloud.tencent.com|g' /etc/apt/sources.list.d/debian.sources; \
+    fi && \
+    if [ -f /etc/apt/sources.list ]; then \
+      sed -i 's|deb.debian.org|mirrors.cloud.tencent.com|g' /etc/apt/sources.list && \
+      sed -i 's|security.debian.org|mirrors.cloud.tencent.com|g' /etc/apt/sources.list; \
+    fi
+
 # Install build tools for better-sqlite3 native compilation
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -31,6 +41,16 @@ COPY src/data/franchise.json /workspace/src/data/franchise.json
 FROM node:20-slim
 
 WORKDIR /app
+
+# Use Tencent Cloud mirrors for faster apt operations in China
+RUN if [ -f /etc/apt/sources.list.d/debian.sources ]; then \
+      sed -i 's|deb.debian.org|mirrors.cloud.tencent.com|g' /etc/apt/sources.list.d/debian.sources && \
+      sed -i 's|security.debian.org|mirrors.cloud.tencent.com|g' /etc/apt/sources.list.d/debian.sources; \
+    fi && \
+    if [ -f /etc/apt/sources.list ]; then \
+      sed -i 's|deb.debian.org|mirrors.cloud.tencent.com|g' /etc/apt/sources.list && \
+      sed -i 's|security.debian.org|mirrors.cloud.tencent.com|g' /etc/apt/sources.list; \
+    fi
 
 # Install runtime dependencies for better-sqlite3
 RUN apt-get update && \
