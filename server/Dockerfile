@@ -68,13 +68,15 @@ COPY --from=builder /build/package*.json ./
 COPY --from=builder /build/src ./src
 COPY --from=builder /build/tsconfig.json ./tsconfig.json
 
-# Copy required data directories to match expected paths
-COPY --from=builder /workspace/data /workspace/data
-COPY --from=builder /workspace/src /workspace/src
+# Copy required data directories to match config.ts expected paths
+# config.ts sets REPO_ROOT = parent of SERVER_ROOT (/app) = /
+# Therefore ZHCN_DIR = /data/zhcn/heroes, FRANCHISE_PATH = /src/data/franchise.json
+COPY --from=builder /workspace/data /data
+COPY --from=builder /workspace/src /src
 
 # Create data directory for SQLite database
 RUN mkdir -p data && \
-    chown -R node:node /app /workspace
+    chown -R node:node /app /data /src
 
 # Switch to non-root user
 USER node
