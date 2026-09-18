@@ -26,6 +26,26 @@
         </view>
       </view>
 
+      <!-- Build management toolbar -->
+      <view class="build-toolbar">
+        <view class="build-current" @tap="openRenameDialog">
+          <text class="build-label">当前方案:</text>
+          <text class="build-name">{{ currentBuild?.name || '未保存' }}</text>
+          <text class="build-edit-hint">✎</text>
+        </view>
+        <view class="build-actions">
+          <view class="build-btn build-btn-switch" @tap="openBuildSelector">
+            <text class="build-btn-text">切换</text>
+          </view>
+          <view class="build-btn build-btn-save" @tap="saveCurrentBuild">
+            <text class="build-btn-text">保存</text>
+          </view>
+          <view class="build-btn build-btn-saveas" @tap="saveAsNewBuild">
+            <text class="build-btn-text">另存为</text>
+          </view>
+        </view>
+      </view>
+
       <!-- Talent tiers -->
       <view class="talent-tiers">
         <view 
@@ -89,6 +109,84 @@
         </scroll-view>
       </view>
     </view>
+
+    <!-- Build selector drawer -->
+    <view 
+      v-if="buildSelectorVisible" 
+      class="drawer-mask"
+      @tap="closeBuildSelector"
+    >
+      <view class="drawer-content" @tap.stop>
+        <view class="drawer-header">
+          <text class="drawer-title">方案管理</text>
+          <view class="drawer-close" @tap="closeBuildSelector">
+            <text>✕</text>
+          </view>
+        </view>
+        <scroll-view class="drawer-body" scroll-y>
+          <view class="build-item build-item-new" @tap="createNewBuild">
+            <view class="build-item-icon">+</view>
+            <view class="build-item-info">
+              <text class="build-item-name">新建方案</text>
+              <text class="build-item-hint">创建空白天赋方案</text>
+            </view>
+          </view>
+          
+          <view 
+            v-for="build in savedBuilds" 
+            :key="build.id"
+            class="build-item"
+            :class="{ 'build-item-current': currentBuild?.id === build.id }"
+          >
+            <view class="build-item-main" @tap="applyBuild(build)">
+              <view class="build-item-info">
+                <text class="build-item-name">{{ build.name }}</text>
+                <text class="build-item-hint">
+                  {{ new Date(build.updatedAt).toLocaleString('zh-CN', { 
+                    month: 'numeric', 
+                    day: 'numeric', 
+                    hour: '2-digit', 
+                    minute: '2-digit' 
+                  }) }}
+                </text>
+              </view>
+            </view>
+            <view class="build-item-delete" @tap="deleteBuild(build)">
+              <text>🗑</text>
+            </view>
+          </view>
+          
+          <view v-if="savedBuilds.length === 0" class="build-empty">
+            <text class="build-empty-text">暂无已保存方案</text>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+
+    <!-- Rename dialog -->
+    <view v-if="renameDialogVisible" class="dialog-mask" @tap="closeRenameDialog">
+      <view class="dialog-content" @tap.stop>
+        <view class="dialog-header">
+          <text class="dialog-title">重命名方案</text>
+        </view>
+        <view class="dialog-body">
+          <input 
+            class="dialog-input" 
+            v-model="tempBuildName" 
+            placeholder="请输入方案名称"
+            :maxlength="20"
+          />
+        </view>
+        <view class="dialog-footer">
+          <view class="dialog-btn dialog-btn-cancel" @tap="closeRenameDialog">
+            <text>取消</text>
+          </view>
+          <view class="dialog-btn dialog-btn-confirm" @tap="confirmRename">
+            <text>确定</text>
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
 </template>
 
@@ -102,6 +200,15 @@ import {
   getTalentIconUrl,
   getHeroDisplayName
 } from '@/api/heroes'
+import {
+  getHeroTalentBuilds,
+  saveTalentBuild,
+  deleteTalentBuild,
+  renameTalentBuild,
+  convertSelectedTalentsToBuildSelection,
+  getDefaultBuildName,
+  type TalentBuild
+} from '@/utils/talentBuilds'
 
 const hero = ref<Hero | null>(null)
 const talents = ref<Talent[]>([])
@@ -111,6 +218,13 @@ const error = ref('')
 const currentHeroShortName = ref('')
 const drawerVisible = ref(false)
 const currentLevel = ref<number>(1)
+
+// Build management state
+const currentBuild = ref<TalentBuild | null>(null)
+const savedBuilds = ref<TalentBuild[]>([])
+const buildSelectorVisible = ref(false)
+const renameDialogVisible = ref(false)
+const tempBuildName = ref('')
 
 const talentLevels = [1, 4, 7, 10, 13, 16, 20]
 
@@ -189,6 +303,9 @@ const loadHeroData = async (heroShortName: string) => {
     const detail = await fetchHeroDetail(heroShortName)
     hero.value = detail.hero
     talents.value = detail.talents
+    
+    // Load saved builds
+    loadSavedBuilds()
   } catch (err: any) {
     error.value = err.message || '加载失败'
     uni.showToast({
@@ -198,6 +315,180 @@ const loadHeroData = async (heroShortName: string) => {
   } finally {
     loading.value = false
   }
+}
+
+const loadSavedBuilds = () => {
+  savedBuilds.value = getHeroTalentBuilds(currentHeroShortName.value)
+}
+
+const applyBuild = (build: TalentBuild) => {
+  // Clear current selections
+  selectedTalents.value = {}
+  
+  // Apply build selections
+  for (const levelStr in build.selections) {
+    const level = Number(levelStr)
+    const talentName = build.selections[level]
+    const talent = talents.value.find(t => t.level === level && t.name === talentName)
+    if (talent) {
+      selectedTalents.value[level] = talent
+    }
+  }
+  
+  currentBuild.value = build
+  buildSelectorVisible.value = false
+}
+
+const saveCurrentBuild = () => {
+  const selections = convertSelectedTalentsToBuildSelection(selectedTalents.value)
+  
+  // Check if we have any selections
+  if (Object.keys(selections).length === 0) {
+    uni.showToast({
+      title: '请先选择天赋',
+      icon: 'none'
+    })
+    return
+  }
+  
+  if (currentBuild.value) {
+    // Update existing build
+    const result = saveTalentBuild(
+      currentHeroShortName.value,
+      currentBuild.value.name,
+      selections,
+      currentBuild.value.id
+    )
+    
+    if (result.success) {
+      currentBuild.value = result.build!
+      loadSavedBuilds()
+      uni.showToast({
+        title: '已保存',
+        icon: 'success',
+        duration: 1500
+      })
+    }
+  } else {
+    // Save as new build
+    saveAsNewBuild()
+  }
+}
+
+const saveAsNewBuild = () => {
+  const selections = convertSelectedTalentsToBuildSelection(selectedTalents.value)
+  
+  if (Object.keys(selections).length === 0) {
+    uni.showToast({
+      title: '请先选择天赋',
+      icon: 'none'
+    })
+    return
+  }
+  
+  const defaultName = getDefaultBuildName(currentHeroShortName.value)
+  const result = saveTalentBuild(
+    currentHeroShortName.value,
+    defaultName,
+    selections
+  )
+  
+  if (result.success) {
+    currentBuild.value = result.build!
+    loadSavedBuilds()
+    uni.showToast({
+      title: '已保存新方案',
+      icon: 'success',
+      duration: 1500
+    })
+  } else {
+    uni.showToast({
+      title: result.error || '保存失败',
+      icon: 'none',
+      duration: 2000
+    })
+  }
+}
+
+const openBuildSelector = () => {
+  loadSavedBuilds()
+  buildSelectorVisible.value = true
+}
+
+const closeBuildSelector = () => {
+  buildSelectorVisible.value = false
+}
+
+const openRenameDialog = () => {
+  if (!currentBuild.value) return
+  tempBuildName.value = currentBuild.value.name
+  renameDialogVisible.value = true
+}
+
+const closeRenameDialog = () => {
+  renameDialogVisible.value = false
+  tempBuildName.value = ''
+}
+
+const confirmRename = () => {
+  if (!currentBuild.value || !tempBuildName.value.trim()) {
+    uni.showToast({
+      title: '请输入方案名称',
+      icon: 'none'
+    })
+    return
+  }
+  
+  const success = renameTalentBuild(
+    currentHeroShortName.value,
+    currentBuild.value.id,
+    tempBuildName.value.trim()
+  )
+  
+  if (success) {
+    currentBuild.value.name = tempBuildName.value.trim()
+    loadSavedBuilds()
+    closeRenameDialog()
+    uni.showToast({
+      title: '已重命名',
+      icon: 'success',
+      duration: 1500
+    })
+  }
+}
+
+const deleteBuild = (build: TalentBuild) => {
+  uni.showModal({
+    title: '删除方案',
+    content: `确定删除「${build.name}」吗？`,
+    success: (res) => {
+      if (res.confirm) {
+        const success = deleteTalentBuild(currentHeroShortName.value, build.id)
+        if (success) {
+          if (currentBuild.value?.id === build.id) {
+            currentBuild.value = null
+          }
+          loadSavedBuilds()
+          uni.showToast({
+            title: '已删除',
+            icon: 'success',
+            duration: 1500
+          })
+        }
+      }
+    }
+  })
+}
+
+const createNewBuild = () => {
+  currentBuild.value = null
+  selectedTalents.value = {}
+  buildSelectorVisible.value = false
+  uni.showToast({
+    title: '已切换到新方案',
+    icon: 'none',
+    duration: 1500
+  })
 }
 
 const retryLoad = () => {
@@ -295,6 +586,82 @@ onLoad((options: any) => {
   font-size: 24rpx;
   color: #4a90e2;
   font-family: monospace;
+  font-weight: bold;
+}
+
+/* Build toolbar */
+.build-toolbar {
+  margin: 24rpx 32rpx;
+  padding: 20rpx;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12rpx;
+  border: 2rpx solid rgba(255, 255, 255, 0.1);
+}
+
+.build-current {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  margin-bottom: 16rpx;
+  padding: 12rpx;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8rpx;
+}
+
+.build-label {
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.build-name {
+  flex: 1;
+  font-size: 26rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.build-edit-hint {
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.build-actions {
+  display: flex;
+  gap: 12rpx;
+}
+
+.build-btn {
+  flex: 1;
+  padding: 16rpx;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.build-btn:active {
+  transform: scale(0.95);
+}
+
+.build-btn-switch {
+  background: rgba(100, 120, 150, 0.3);
+  border: 2rpx solid rgba(140, 160, 190, 0.5);
+}
+
+.build-btn-save {
+  background: rgba(74, 144, 226, 0.3);
+  border: 2rpx solid rgba(74, 144, 226, 0.6);
+}
+
+.build-btn-saveas {
+  background: rgba(80, 180, 140, 0.3);
+  border: 2rpx solid rgba(80, 180, 140, 0.6);
+}
+
+.build-btn-text {
+  font-size: 26rpx;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -562,5 +929,175 @@ onLoad((options: any) => {
   font-size: 22rpx;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
+}
+
+/* Build selector styles */
+.build-item {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  padding: 20rpx;
+  margin-bottom: 16rpx;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12rpx;
+  border: 2rpx solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.build-item-new {
+  border-color: rgba(80, 180, 140, 0.4);
+  background: rgba(80, 180, 140, 0.1);
+}
+
+.build-item-new:active {
+  background: rgba(80, 180, 140, 0.2);
+}
+
+.build-item-current {
+  background: rgba(74, 144, 226, 0.15);
+  border-color: rgba(74, 144, 226, 0.6);
+}
+
+.build-item-icon {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  background: rgba(80, 180, 140, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.build-item-main {
+  flex: 1;
+  display: flex;
+}
+
+.build-item-main:active {
+  opacity: 0.7;
+}
+
+.build-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+
+.build-item-name {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
+}
+
+.build-item-hint {
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.build-item-delete {
+  width: 56rpx;
+  height: 56rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  transition: all 0.3s;
+}
+
+.build-item-delete:active {
+  background: rgba(244, 67, 54, 0.2);
+}
+
+.build-empty {
+  padding: 100rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.build-empty-text {
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Rename dialog styles */
+.dialog-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-content {
+  width: 560rpx;
+  background: #1a1a2e;
+  border-radius: 16rpx;
+  overflow: hidden;
+  border: 2rpx solid rgba(255, 255, 255, 0.1);
+}
+
+.dialog-header {
+  padding: 32rpx;
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.1);
+}
+
+.dialog-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;
+}
+
+.dialog-body {
+  padding: 32rpx;
+}
+
+.dialog-input {
+  width: 100%;
+  padding: 20rpx;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2rpx solid rgba(255, 255, 255, 0.2);
+  border-radius: 8rpx;
+  color: #fff;
+  font-size: 28rpx;
+}
+
+.dialog-footer {
+  display: flex;
+  border-top: 2rpx solid rgba(255, 255, 255, 0.1);
+}
+
+.dialog-btn {
+  flex: 1;
+  padding: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  transition: all 0.3s;
+}
+
+.dialog-btn:active {
+  opacity: 0.7;
+}
+
+.dialog-btn-cancel {
+  color: rgba(255, 255, 255, 0.6);
+  border-right: 2rpx solid rgba(255, 255, 255, 0.1);
+}
+
+.dialog-btn-confirm {
+  color: #4a90e2;
+  font-weight: bold;
 }
 </style>
