@@ -28,7 +28,9 @@ RUN apt-get update && \
 COPY server/package*.json ./
 
 # Install dependencies (including devDependencies for tsx)
-RUN npm ci
+# Build better-sqlite3 from source to match container glibc version
+# (prebuilt binaries may target newer glibc than node:20-slim bookworm)
+RUN npm ci --build-from-source
 
 # Copy application source
 COPY server/ ./
