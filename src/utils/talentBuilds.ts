@@ -8,28 +8,23 @@ export interface TalentBuildSelection {
 }
 
 export interface TalentBuild {
-  id: string
   name: string
   selections: TalentBuildSelection
-  createdAt: number
   updatedAt: number
 }
 
-export interface TalentBuildsData {
-  [heroShortName: string]: TalentBuild[]
+export interface HeroBuildsData {
+  [slotIndex: number]: TalentBuild // Fixed 5 slots (0-4)
 }
 
-/**
- * Generate a unique ID for a build
- */
-function generateBuildId(): string {
-  return `build_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+export interface TalentBuildsData {
+  [heroShortName: string]: HeroBuildsData
 }
 
 /**
  * Get all talent builds from local storage
  */
-export function getAllTalentBuilds(): TalentBuildsData {
+function getAllTalentBuilds(): TalentBuildsData {
   try {
     const data = uni.getStorageSync(TALENT_BUILDS_KEY)
     if (data && typeof data === 'object') {
@@ -43,14 +38,6 @@ export function getAllTalentBuilds(): TalentBuildsData {
 }
 
 /**
- * Get talent builds for a specific hero
- */
-export function getHeroTalentBuilds(heroShortName: string): TalentBuild[] {
-  const allBuilds = getAllTalentBuilds()
-  return allBuilds[heroShortName] || []
-}
-
-/**
  * Save all talent builds to local storage
  */
 function saveTalentBuilds(data: TalentBuildsData): void {
@@ -60,6 +47,29 @@ function saveTalentBuilds(data: TalentBuildsData): void {
     console.error('Failed to save talent builds:', error)
     throw error
   }
+}
+
+/**
+ * Get talent builds for a specific hero (returns all 5 slots)
+ */
+export function getHeroTalentBuilds(heroShortName: string): HeroBuildsData {
+  const allBuilds = getAllTalentBuilds()
+  return allBuilds[heroShortName] || {}
+}
+
+/**
+ * Get a specific slot build for a hero
+ */
+export function getSlotBuild(heroShortName: string, slotIndex: number): TalentBuild | null {
+  const heroBuilds = getHeroTalentBuilds(heroShortName)
+  return heroBuilds[slotIndex] || null
+}
+
+/**
+ * Get default slot name
+ */
+export function getDefaultSlotName(slotIndex: number): string {
+  return `方案 ${slotIndex + 1}`
 }
 
 /**
@@ -76,108 +86,50 @@ export function convertSelectedTalentsToBuildSelection(
 }
 
 /**
- * Save a new talent build (or update existing if id matches)
+ * Save talent build to a specific slot
  */
-export function saveTalentBuild(
+export function saveToSlot(
   heroShortName: string,
+  slotIndex: number,
   buildName: string,
-  selections: TalentBuildSelection,
-  buildId?: string
-): { success: boolean; build?: TalentBuild; error?: string } {
+  selections: TalentBuildSelection
+): void {
+  if (slotIndex < 0 || slotIndex >= MAX_BUILDS_PER_HERO) {
+    throw new Error('Invalid slot index')
+  }
+
   const allBuilds = getAllTalentBuilds()
-  const heroBuilds = allBuilds[heroShortName] || []
+  const heroBuilds = allBuilds[heroShortName] || {}
 
-  const now = Date.now()
-
-  if (buildId) {
-    // Update existing build
-    const existingIndex = heroBuilds.findIndex(b => b.id === buildId)
-    if (existingIndex >= 0) {
-      heroBuilds[existingIndex] = {
-        ...heroBuilds[existingIndex],
-        name: buildName,
-        selections,
-        updatedAt: now
-      }
-      allBuilds[heroShortName] = heroBuilds
-      saveTalentBuilds(allBuilds)
-      return { success: true, build: heroBuilds[existingIndex] }
-    }
-  }
-
-  // Create new build
-  if (heroBuilds.length >= MAX_BUILDS_PER_HERO) {
-    return {
-      success: false,
-      error: `每个英雄最多保存 ${MAX_BUILDS_PER_HERO} 套方案`
-    }
-  }
-
-  const newBuild: TalentBuild = {
-    id: generateBuildId(),
+  heroBuilds[slotIndex] = {
     name: buildName,
     selections,
-    createdAt: now,
-    updatedAt: now
+    updatedAt: Date.now()
   }
 
-  heroBuilds.push(newBuild)
   allBuilds[heroShortName] = heroBuilds
   saveTalentBuilds(allBuilds)
-
-  return { success: true, build: newBuild }
 }
 
 /**
- * Delete a talent build
+ * Rename a slot
  */
-export function deleteTalentBuild(
+export function renameSlot(
   heroShortName: string,
-  buildId: string
-): boolean {
-  const allBuilds = getAllTalentBuilds()
-  const heroBuilds = allBuilds[heroShortName] || []
-
-  const filteredBuilds = heroBuilds.filter(b => b.id !== buildId)
-  
-  if (filteredBuilds.length === heroBuilds.length) {
-    return false // Build not found
-  }
-
-  allBuilds[heroShortName] = filteredBuilds
-  saveTalentBuilds(allBuilds)
-  return true
-}
-
-/**
- * Rename a talent build
- */
-export function renameTalentBuild(
-  heroShortName: string,
-  buildId: string,
+  slotIndex: number,
   newName: string
-): boolean {
-  const allBuilds = getAllTalentBuilds()
-  const heroBuilds = allBuilds[heroShortName] || []
-
-  const build = heroBuilds.find(b => b.id === buildId)
-  if (!build) {
-    return false
+): void {
+  if (slotIndex < 0 || slotIndex >= MAX_BUILDS_PER_HERO) {
+    throw new Error('Invalid slot index')
   }
 
-  build.name = newName
-  build.updatedAt = Date.now()
-  
-  allBuilds[heroShortName] = heroBuilds
-  saveTalentBuilds(allBuilds)
-  return true
-}
+  const allBuilds = getAllTalentBuilds()
+  const heroBuilds = allBuilds[heroShortName] || {}
 
-/**
- * Get default build name based on existing builds count
- */
-export function getDefaultBuildName(heroShortName: string): string {
-  const heroBuilds = getHeroTalentBuilds(heroShortName)
-  const count = heroBuilds.length + 1
-  return `方案 ${count}`
+  if (heroBuilds[slotIndex]) {
+    heroBuilds[slotIndex].name = newName
+    heroBuilds[slotIndex].updatedAt = Date.now()
+    allBuilds[heroShortName] = heroBuilds
+    saveTalentBuilds(allBuilds)
+  }
 }
