@@ -1,0 +1,40 @@
+# Dependencies (will be installed in container)
+node_modules
+npm-debug.log*
+package-lock.json
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# SQLite databases
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+data/*.db
+data/*.db-*
+
+# Build artifacts
+dist
+dist-ssr
+
+# Development
+*.local
+
+# Editor
+.vscode
+.idea
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
