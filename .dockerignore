@@ -1,0 +1,48 @@
+# Docker build context: repository root
+# This file controls what gets sent to Docker daemon and what COPY includes
+
+# Dependencies (built inside container)
+**/node_modules/
+**/npm-debug.log*
+**/package-lock.json
+
+# Environment and secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# SQLite databases
+**/*.db
+**/*.db-*
+**/*.sqlite
+**/*.sqlite3
+**/data/*.db
+
+# Build artifacts
+**/dist/
+**/dist-ssr/
+**/unpackage/
+
+# Development
+**/*.local
+
+# Editor
+**/.vscode/
+**/.idea/
+**/*.sw?
+
+# OS
+**/.DS_Store
+**/Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# CI/CD
+.github/
+
+# Documentation (not needed in container)
+**/*.md
+!server/package.json
+!server/package-lock.json

@@ -32,8 +32,10 @@ COPY server/package*.json ./
 # (prebuilt binaries may target newer glibc than node:20-slim bookworm)
 RUN npm ci --build-from-source
 
-# Copy application source
-COPY server/ ./
+# Copy application source AFTER npm ci to avoid overwriting container-built node_modules
+# Do NOT copy server/ wholesale - it would include host node_modules built with different glibc
+COPY server/src ./src
+COPY server/tsconfig.json ./tsconfig.json
 
 # Copy required data from repo root
 COPY data/zhcn /workspace/data/zhcn
