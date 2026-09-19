@@ -12,8 +12,8 @@
     <view v-else-if="hero" class="simulator">
       <!-- Fixed 5 scheme tabs -->
       <view class="scheme-tabs">
-        <view 
-          v-for="slotIndex in slots" 
+        <view
+          v-for="slotIndex in slots"
           :key="slotIndex"
           class="scheme-tab"
           :class="{ 'scheme-tab-active': currentSlot === slotIndex }"
@@ -25,9 +25,9 @@
 
       <!-- Rename input -->
       <view class="rename-section">
-        <input 
-          class="rename-input" 
-          v-model="currentSlotName" 
+        <input
+          class="rename-input"
+          v-model="currentSlotName"
           @blur="updateCurrentSlotName"
           placeholder="方案名称"
           :maxlength="20"
@@ -36,11 +36,7 @@
 
       <!-- Hero info -->
       <view class="hero-info">
-        <image 
-          class="hero-portrait" 
-          :src="heroIcon" 
-          mode="aspectFill"
-        />
+        <image class="hero-portrait" :src="heroIcon" mode="aspectFill" />
         <view class="hero-text">
           <text class="hero-name-cn">{{ displayName }}</text>
           <text class="hero-name-en">{{ hero.name }}</text>
@@ -52,27 +48,18 @@
 
       <!-- Talent tiers -->
       <view class="talent-tiers">
-        <view 
-          v-for="level in talentLevels" 
-          :key="level"
-          class="tier-row"
-          @tap="openTierDrawer(level)"
-        >
+        <view v-for="level in talentLevels" :key="level" class="tier-row" @tap="openTierDrawer(level)">
           <view class="level-badge" :class="{ 'has-selection': selectedTalents[level] }">
             <text class="level-text">{{ level }}</text>
           </view>
           <view class="all-talents-row">
-            <view 
-              v-for="talent in getTalentsByLevel(level)" 
+            <view
+              v-for="talent in getTalentsByLevel(level)"
               :key="talent.name"
               class="talent-icon-wrapper"
               :class="{ 'talent-selected': isTalentSelectedAtLevel(talent, level) }"
             >
-              <image 
-                class="talent-icon-main"
-                :src="getTalentIcon(talent.icon)"
-                mode="aspectFill"
-              />
+              <image class="talent-icon-main" :src="getTalentIcon(talent.icon)" mode="aspectFill" />
             </view>
           </view>
         </view>
@@ -80,11 +67,7 @@
     </view>
 
     <!-- Right drawer for talent selection -->
-    <view 
-      v-if="drawerVisible" 
-      class="drawer-mask"
-      @tap="closeDrawer"
-    >
+    <view v-if="drawerVisible" class="drawer-mask" @tap="closeDrawer">
       <view class="drawer-content" @tap.stop>
         <view class="drawer-header">
           <text class="drawer-title">等级 {{ currentLevel }} 天赋</text>
@@ -93,18 +76,14 @@
           </view>
         </view>
         <scroll-view class="drawer-body" scroll-y>
-          <view 
-            v-for="talent in currentLevelTalents" 
+          <view
+            v-for="talent in currentLevelTalents"
             :key="talent.name"
             class="drawer-talent-item"
-            :class="{ 'selected': isSelected(talent) }"
+            :class="{ selected: isSelected(talent) }"
             @tap="selectTalent(talent)"
           >
-            <image 
-              class="drawer-talent-icon"
-              :src="getTalentIcon(talent.icon)"
-              mode="aspectFill"
-            />
+            <image class="drawer-talent-icon" :src="getTalentIcon(talent.icon)" mode="aspectFill" />
             <view class="drawer-talent-info">
               <text class="drawer-talent-name">{{ talent.title }}</text>
               <text class="drawer-talent-desc">{{ talent.description }}</text>
@@ -115,11 +94,7 @@
     </view>
 
     <!-- Right drawer for talent selection -->
-    <view 
-      v-if="drawerVisible" 
-      class="drawer-mask"
-      @tap="closeDrawer"
-    >
+    <view v-if="drawerVisible" class="drawer-mask" @tap="closeDrawer">
       <view class="drawer-content" @tap.stop>
         <view class="drawer-header">
           <text class="drawer-title">等级 {{ currentLevel }} 天赋</text>
@@ -128,18 +103,14 @@
           </view>
         </view>
         <scroll-view class="drawer-body" scroll-y>
-          <view 
-            v-for="talent in currentLevelTalents" 
+          <view
+            v-for="talent in currentLevelTalents"
             :key="talent.name"
             class="drawer-talent-item"
-            :class="{ 'selected': isSelected(talent) }"
+            :class="{ selected: isSelected(talent) }"
             @tap="selectTalent(talent)"
           >
-            <image 
-              class="drawer-talent-icon"
-              :src="getTalentIcon(talent.icon)"
-              mode="aspectFill"
-            />
+            <image class="drawer-talent-icon" :src="getTalentIcon(talent.icon)" mode="aspectFill" />
             <view class="drawer-talent-info">
               <text class="drawer-talent-name">{{ talent.title }}</text>
               <text class="drawer-talent-desc">{{ talent.description }}</text>
@@ -160,12 +131,7 @@
 import { ref, computed } from 'vue'
 import { onLoad } from '@dcloudio/uni-app'
 import type { Hero, Talent } from '@/types/hero'
-import {
-  fetchHeroDetail,
-  getHeroIconUrl,
-  getTalentIconUrl,
-  getHeroDisplayName
-} from '@/api/heroes'
+import { fetchHeroDetail, getHeroIconUrl, getTalentIconUrl, getHeroDisplayName } from '@/api/heroes'
 import {
   getHeroTalentBuilds,
   getSlotBuild,
@@ -173,7 +139,7 @@ import {
   renameSlot,
   convertSelectedTalentsToBuildSelection,
   getDefaultSlotName,
-  type TalentBuild
+  type TalentBuild,
 } from '@/utils/talentBuilds'
 
 const hero = ref<Hero | null>(null)
@@ -208,18 +174,18 @@ const heroIcon = computed(() => {
 // Generate talent shorthand like "4-4-1-2-3-1-3"
 const talentShorthand = computed(() => {
   const parts: string[] = []
-  
+
   for (const level of talentLevels) {
     const selected = selectedTalents.value[level]
     if (selected) {
       const levelTalents = getTalentsByLevel(level)
-      const index = levelTalents.findIndex(t => t.name === selected.name)
+      const index = levelTalents.findIndex((t) => t.name === selected.name)
       parts.push(String(index + 1)) // 1-based index
     } else {
       parts.push('-')
     }
   }
-  
+
   return parts.join('-')
 })
 
@@ -228,9 +194,7 @@ const currentLevelTalents = computed(() => {
 })
 
 const getTalentsByLevel = (level: number) => {
-  return talents.value
-    .filter(t => t.level === level)
-    .sort((a, b) => a.sort - b.sort)
+  return talents.value.filter((t) => t.level === level).sort((a, b) => a.sort - b.sort)
 }
 
 const getTalentIcon = (icon: string) => {
@@ -270,17 +234,17 @@ const loadHeroData = async (heroShortName: string) => {
     const detail = await fetchHeroDetail(heroShortName)
     hero.value = detail.hero
     talents.value = detail.talents
-    
+
     // Load all slot builds
     loadSlotBuilds()
-    
+
     // Initialize to slot 0
     switchToSlot(0)
   } catch (err: any) {
     error.value = err.message || '加载失败'
     uni.showToast({
       title: error.value,
-      icon: 'none'
+      icon: 'none',
     })
   } finally {
     loading.value = false
@@ -307,14 +271,14 @@ const getSlotDisplayName = (slotIndex: number): string => {
 const switchToSlot = (slotIndex: number) => {
   currentSlot.value = slotIndex
   const build = slotBuilds.value[slotIndex]
-  
+
   if (build) {
     // Apply slot's talent selections
     selectedTalents.value = {}
     for (const levelStr in build.selections) {
       const level = Number(levelStr)
       const talentName = build.selections[level]
-      const talent = talents.value.find(t => t.level === level && t.name === talentName)
+      const talent = talents.value.find((t) => t.level === level && t.name === talentName)
       if (talent) {
         selectedTalents.value[level] = talent
       }
@@ -329,27 +293,22 @@ const switchToSlot = (slotIndex: number) => {
 
 const saveCurrentSlot = () => {
   const selections = convertSelectedTalentsToBuildSelection(selectedTalents.value)
-  
+
   try {
-    saveToSlot(
-      currentHeroShortName.value,
-      currentSlot.value,
-      currentSlotName.value,
-      selections
-    )
-    
+    saveToSlot(currentHeroShortName.value, currentSlot.value, currentSlotName.value, selections)
+
     // Reload slots
     loadSlotBuilds()
-    
+
     uni.showToast({
       title: '已保存',
       icon: 'success',
-      duration: 1500
+      duration: 1500,
     })
   } catch (error: any) {
     uni.showToast({
       title: error.message || '保存失败',
-      icon: 'none'
+      icon: 'none',
     })
   }
 }
@@ -360,17 +319,12 @@ const updateCurrentSlotName = () => {
     currentSlotName.value = getDefaultSlotName(currentSlot.value)
     return
   }
-  
+
   // If slot has a saved build, rename it
   if (slotBuilds.value[currentSlot.value]) {
     try {
       renameSlot(currentHeroShortName.value, currentSlot.value, trimmedName)
       loadSlotBuilds()
-      uni.showToast({
-        title: '已重命名',
-        icon: 'success',
-        duration: 1500
-      })
     } catch (error) {
       console.error('Failed to rename slot:', error)
     }
@@ -425,7 +379,7 @@ onLoad((options: any) => {
 }
 
 .simulator {
-  padding-bottom: 120rpx; /* Space for floating button */
+  padding-bottom: 150rpx; /* Space for floating button */
 }
 
 /* Scheme tabs */
@@ -474,7 +428,6 @@ onLoad((options: any) => {
 }
 
 .rename-input {
-  width: 100%;
   padding: 16rpx 20rpx;
   background: rgba(255, 255, 255, 0.1);
   border: 2rpx solid rgba(255, 255, 255, 0.2);
@@ -594,10 +547,7 @@ onLoad((options: any) => {
   position: relative;
   transition: all 0.3s;
   /* Multi-layer depth shadows */
-  box-shadow: 
-    0 4rpx 12rpx rgba(0, 0, 0, 0.6),
-    0 2rpx 6rpx rgba(0, 0, 0, 0.4),
-    inset 0 -2rpx 4rpx rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.6), 0 2rpx 6rpx rgba(0, 0, 0, 0.4), inset 0 -2rpx 4rpx rgba(0, 0, 0, 0.5);
 }
 
 /* Inner bevel/highlight ring + core gradient */
@@ -607,19 +557,17 @@ onLoad((options: any) => {
   inset: 3rpx;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   /* Core diagonal gradient: purple-blue with top-to-bottom shading */
-  background: 
-    linear-gradient(135deg, 
-      #6b5fb5 0%,
-      #5a4ea0 15%,
-      #4a3d8b 30%,
-      #3a5f9e 50%,
-      #2a4d82 70%,
-      #1a3a66 85%,
-      #0f2847 100%
-    );
-  box-shadow: 
-    inset 0 2rpx 4rpx rgba(255, 255, 255, 0.15),
-    inset 0 -2rpx 6rpx rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    135deg,
+    #6b5fb5 0%,
+    #5a4ea0 15%,
+    #4a3d8b 30%,
+    #3a5f9e 50%,
+    #2a4d82 70%,
+    #1a3a66 85%,
+    #0f2847 100%
+  );
+  box-shadow: inset 0 2rpx 4rpx rgba(255, 255, 255, 0.15), inset 0 -2rpx 6rpx rgba(0, 0, 0, 0.4);
   pointer-events: none;
 }
 
@@ -632,7 +580,8 @@ onLoad((options: any) => {
   right: 28rpx;
   height: 24rpx;
   clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
-  background: linear-gradient(135deg, 
+  background: linear-gradient(
+    135deg,
     rgba(255, 255, 255, 0.35) 0%,
     rgba(255, 255, 255, 0.15) 50%,
     rgba(255, 255, 255, 0.05) 100%
@@ -644,32 +593,28 @@ onLoad((options: any) => {
 /* Selected state: subtle cool accent, still layered */
 .level-badge.has-selection {
   background: linear-gradient(135deg, #2a3a4a 0%, #3a4a5a 100%);
-  box-shadow: 
-    0 4rpx 12rpx rgba(100, 140, 180, 0.3),
-    0 2rpx 6rpx rgba(80, 120, 160, 0.2),
-    0 0 16rpx rgba(120, 160, 200, 0.15),
-    inset 0 -2rpx 4rpx rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4rpx 12rpx rgba(100, 140, 180, 0.3), 0 2rpx 6rpx rgba(80, 120, 160, 0.2),
+    0 0 16rpx rgba(120, 160, 200, 0.15), inset 0 -2rpx 4rpx rgba(0, 0, 0, 0.4);
 }
 
 .level-badge.has-selection::before {
-  background: 
-    linear-gradient(135deg, 
-      #7a8fb5 0%,
-      #6a7fa5 15%,
-      #5a6f95 30%,
-      #4a5f85 50%,
-      #3a4f75 70%,
-      #2a3f65 85%,
-      #1a2f55 100%
-    );
-  box-shadow: 
-    inset 0 2rpx 4rpx rgba(180, 200, 220, 0.2),
-    inset 0 -2rpx 6rpx rgba(0, 0, 0, 0.3),
+  background: linear-gradient(
+    135deg,
+    #7a8fb5 0%,
+    #6a7fa5 15%,
+    #5a6f95 30%,
+    #4a5f85 50%,
+    #3a4f75 70%,
+    #2a3f65 85%,
+    #1a2f55 100%
+  );
+  box-shadow: inset 0 2rpx 4rpx rgba(180, 200, 220, 0.2), inset 0 -2rpx 6rpx rgba(0, 0, 0, 0.3),
     inset 0 0 0 1rpx rgba(140, 180, 220, 0.3);
 }
 
 .level-badge.has-selection::after {
-  background: linear-gradient(135deg, 
+  background: linear-gradient(
+    135deg,
     rgba(220, 235, 255, 0.4) 0%,
     rgba(180, 210, 240, 0.25) 50%,
     rgba(140, 185, 220, 0.1) 100%
@@ -680,10 +625,7 @@ onLoad((options: any) => {
   font-size: 34rpx;
   font-weight: 700;
   color: #fff;
-  text-shadow: 
-    0 2rpx 4rpx rgba(0, 0, 0, 0.6),
-    0 1rpx 2rpx rgba(0, 0, 0, 0.8),
-    0 0 8rpx rgba(255, 255, 255, 0.15);
+  text-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.6), 0 1rpx 2rpx rgba(0, 0, 0, 0.8), 0 0 8rpx rgba(255, 255, 255, 0.15);
   letter-spacing: 0rpx;
   position: relative;
   z-index: 1;
@@ -713,9 +655,7 @@ onLoad((options: any) => {
 .talent-icon-wrapper.talent-selected .talent-icon-main {
   opacity: 1;
   border: 2rpx solid rgba(160, 180, 210, 0.7);
-  box-shadow: 
-    0 0 8rpx rgba(140, 160, 200, 0.25),
-    0 0 16rpx rgba(120, 150, 190, 0.15),
+  box-shadow: 0 0 8rpx rgba(140, 160, 200, 0.25), 0 0 16rpx rgba(120, 150, 190, 0.15),
     inset 0 1rpx 2rpx rgba(180, 200, 230, 0.2);
 }
 
