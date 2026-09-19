@@ -1,13 +1,30 @@
 # Storm Hub API
 
-第 1 期后端：把英雄 / 技能 / 天赋 / 中文文本同步进 SQLite，小程序只读这里。
+风暴枢纽后端服务：提供英雄数据查询、微信登录、组队功能和邮件通知。
+
+## 功能特性
+
+### 第 1 期：英雄数据同步
+- 把英雄 / 技能 / 天赋 / 中文文本同步进 SQLite
+- 小程序直接读取本地数据
+
+### Phase 1：微信登录 + 组队 + 邮件通知
+- **微信登录**：通过 `jscode2session` 获取用户 openid，签发 JWT 会话令牌
+- **组队系统 (LFG)**：创建、浏览、加入组队帖，支持快速匹配、排位赛等模式
+- **邮件通知**：当有人加入组队时，通过 SMTP 向队长发送邮件通知
+- **隐私保护**：邮箱地址不会在 API 中公开显示
 
 ## 本地运行
 
 ```bash
 cd server
 cp .env.example .env
-# 把 ADMIN_KEY 改成一段长随机串，不要提交 .env
+# 配置必要的环境变量：
+# - ADMIN_KEY：改成一段长随机串
+# - WECHAT_APPID 和 WECHAT_SECRET：微信小程序凭证
+# - JWT_SECRET：JWT密钥，用于生成用户会话令牌
+# - SMTP_*：邮件服务配置（可选，用于组队通知）
+# 不要提交 .env 文件！
 npm install
 npm run sync
 npm start
@@ -19,6 +36,7 @@ npm start
 curl -s http://127.0.0.1:3000/api/health
 curl -s http://127.0.0.1:3000/api/heroes | head
 curl -s http://127.0.0.1:3000/api/heroes/abathur | head
+curl -s http://127.0.0.1:3000/api/lfg | head
 ```
 
 手动同步（需要 `.env` 里的 `ADMIN_KEY`）：
@@ -29,6 +47,31 @@ curl -X POST http://127.0.0.1:3000/api/admin/sync \
 ```
 
 也可以不走 HTTP：`npm run sync`
+
+## API 端点
+
+### 英雄数据
+- `GET /api/health` - 健康检查
+- `GET /api/heroes` - 获取所有英雄列表
+- `GET /api/heroes/:shortName` - 获取英雄详情
+
+### 微信登录
+- `POST /api/auth/wechat` - 微信登录，传入 `{ code }` 返回 JWT token
+- `GET /api/auth/me` - 获取当前用户信息（需要 Authorization 头）
+- `POST /api/auth/nickname` - 修改昵称，传入 `{ nickname }`（需要登录）
+
+### 组队 (LFG)
+- `GET /api/lfg` - 获取组队列表（公开，不显示邮箱）
+- `GET /api/lfg/:id` - 获取组队详情（公开，不显示邮箱）
+- `POST /api/lfg` - 创建组队帖（需要登录），传入 `{ mode, party_size, note, battlenet_id, email? }`
+- `POST /api/lfg/:id/join` - 加入组队（需要登录），传入 `{ battlenet_id, email? }`
+- `POST /api/lfg/:id/close` - 关闭组队帖（仅队长，需要登录）
+
+### 认证方式
+需要登录的接口请在 HTTP 头中携带：
+```
+Authorization: Bearer <token>
+```
 
 ## 服务器部署
 

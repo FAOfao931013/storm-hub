@@ -16,6 +16,16 @@ export const PORT = Number(process.env.PORT || 3000)
 export const HOST = process.env.HOST || '127.0.0.1'
 export const ADMIN_KEY = process.env.ADMIN_KEY || ''
 
+export const WECHAT_APPID = process.env.WECHAT_APPID || ''
+export const WECHAT_SECRET = process.env.WECHAT_SECRET || ''
+export const JWT_SECRET = process.env.JWT_SECRET || ''
+
+export const SMTP_HOST = process.env.SMTP_HOST || 'smtp.gmail.com'
+export const SMTP_PORT = Number(process.env.SMTP_PORT || 587)
+export const SMTP_SECURE = process.env.SMTP_SECURE === 'true'
+export const SMTP_USER = process.env.SMTP_USER || ''
+export const SMTP_PASS = process.env.SMTP_PASS || ''
+
 export const HEROES_PROFILE_BASE = (
   process.env.HEROES_PROFILE_BASE || 'https://api.heroesprofile.com/openApi'
 ).replace(/\/$/, '')
