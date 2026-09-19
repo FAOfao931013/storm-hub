@@ -39,6 +39,51 @@ db.exec(`
     key TEXT PRIMARY KEY,
     value TEXT NOT NULL
   );
+
+  CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    openid TEXT UNIQUE NOT NULL,
+    session_key TEXT,
+    nickname TEXT,
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+  );
+
+  CREATE TABLE IF NOT EXISTS lfg_posts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    owner_openid TEXT NOT NULL,
+    mode TEXT NOT NULL,
+    party_size INTEGER NOT NULL,
+    note TEXT,
+    owner_battlenet_id TEXT NOT NULL,
+    owner_email TEXT,
+    status TEXT NOT NULL DEFAULT 'open',
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    FOREIGN KEY (owner_openid) REFERENCES users(openid)
+  );
+
+  CREATE TABLE IF NOT EXISTS lfg_participants (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    lfg_post_id INTEGER NOT NULL,
+    openid TEXT NOT NULL,
+    battlenet_id TEXT NOT NULL,
+    email TEXT,
+    joined_at TEXT NOT NULL,
+    FOREIGN KEY (lfg_post_id) REFERENCES lfg_posts(id),
+    UNIQUE(lfg_post_id, openid)
+  );
+
+  CREATE TABLE IF NOT EXISTS lfg_rate_limit (
+    openid TEXT PRIMARY KEY,
+    action_type TEXT NOT NULL,
+    count INTEGER NOT NULL DEFAULT 1,
+    window_start TEXT NOT NULL
+  );
+
+  CREATE INDEX IF NOT EXISTS idx_lfg_posts_status ON lfg_posts(status);
+  CREATE INDEX IF NOT EXISTS idx_lfg_posts_created ON lfg_posts(created_at DESC);
+  CREATE INDEX IF NOT EXISTS idx_lfg_participants_post ON lfg_participants(lfg_post_id);
 `)
 
 type HeroRow = {
@@ -230,4 +275,195 @@ export function replaceAllHeroes(
   })
 
   tx()
+}
+
+export function upsertUser(openid: string, sessionKey: string, nickname?: string) {
+  const now = new Date().toISOString()
+  const stmt = db.prepare(`
+    INSERT INTO users (openid, session_key, nickname, created_at, updated_at)
+    VALUES (?, ?, ?, ?, ?)
+    ON CONFLICT(openid) DO UPDATE SET
+      session_key = excluded.session_key,
+      nickname = COALESCE(excluded.nickname, nickname),
+      updated_at = excluded.updated_at
+  `)
+  stmt.run(openid, sessionKey, nickname || null, now, now)
+}
+
+export function getUser(openid: string) {
+  return db.prepare('SELECT * FROM users WHERE openid = ?').get(openid) as {
+    id: number
+    openid: string
+    session_key: string | null
+    nickname: string | null
+    created_at: string
+    updated_at: string
+  } | undefined
+}
+
+export function updateUserNickname(openid: string, nickname: string) {
+  const now = new Date().toISOString()
+  db.prepare('UPDATE users SET nickname = ?, updated_at = ? WHERE openid = ?').run(
+    nickname,
+    now,
+    openid
+  )
+}
+
+export function createLfgPost(data: {
+  ownerOpenid: string
+  mode: string
+  partySize: number
+  note: string
+  ownerBattlenetId: string
+  ownerEmail?: string
+}) {
+  const now = new Date().toISOString()
+  const result = db
+    .prepare(
+      `INSERT INTO lfg_posts 
+      (owner_openid, mode, party_size, note, owner_battlenet_id, owner_email, status, created_at, updated_at)
+      VALUES (?, ?, ?, ?, ?, ?, 'open', ?, ?)`
+    )
+    .run(
+      data.ownerOpenid,
+      data.mode,
+      data.partySize,
+      data.note,
+      data.ownerBattlenetId,
+      data.ownerEmail || null,
+      now,
+      now
+    )
+  return result.lastInsertRowid as number
+}
+
+export function getLfgPost(id: number) {
+  return db.prepare('SELECT * FROM lfg_posts WHERE id = ?').get(id) as
+    | {
+        id: number
+        owner_openid: string
+        mode: string
+        party_size: number
+        note: string | null
+        owner_battlenet_id: string
+        owner_email: string | null
+        status: string
+        created_at: string
+        updated_at: string
+      }
+    | undefined
+}
+
+export function listLfgPosts(status = 'open', limit = 50, offset = 0) {
+  return db
+    .prepare(
+      `SELECT 
+        l.*,
+        (SELECT COUNT(*) FROM lfg_participants WHERE lfg_post_id = l.id) as participant_count,
+        u.nickname as owner_nickname
+      FROM lfg_posts l
+      LEFT JOIN users u ON l.owner_openid = u.openid
+      WHERE l.status = ?
+      ORDER BY l.created_at DESC
+      LIMIT ? OFFSET ?`
+    )
+    .all(status, limit, offset) as Array<{
+    id: number
+    owner_openid: string
+    mode: string
+    party_size: number
+    note: string | null
+    owner_battlenet_id: string
+    owner_email: string | null
+    status: string
+    created_at: string
+    updated_at: string
+    participant_count: number
+    owner_nickname: string | null
+  }>
+}
+
+export function getLfgPostWithParticipants(id: number) {
+  const post = getLfgPost(id)
+  if (!post) return null
+
+  const participants = db
+    .prepare(
+      `SELECT 
+        p.id, p.battlenet_id, p.joined_at,
+        u.nickname
+      FROM lfg_participants p
+      LEFT JOIN users u ON p.openid = u.openid
+      WHERE p.lfg_post_id = ?
+      ORDER BY p.joined_at ASC`
+    )
+    .all(id) as Array<{
+    id: number
+    battlenet_id: string
+    joined_at: string
+    nickname: string | null
+  }>
+
+  return { post, participants }
+}
+
+export function joinLfgPost(lfgPostId: number, openid: string, battlenetId: string, email?: string) {
+  const now = new Date().toISOString()
+  db.prepare(
+    `INSERT INTO lfg_participants (lfg_post_id, openid, battlenet_id, email, joined_at)
+    VALUES (?, ?, ?, ?, ?)`
+  ).run(lfgPostId, openid, battlenetId, email || null, now)
+}
+
+export function closeLfgPost(id: number, ownerOpenid: string) {
+  const now = new Date().toISOString()
+  const result = db
+    .prepare(
+      `UPDATE lfg_posts SET status = 'closed', updated_at = ?
+      WHERE id = ? AND owner_openid = ? AND status = 'open'`
+    )
+    .run(now, id, ownerOpenid)
+  return result.changes > 0
+}
+
+export function checkRateLimit(openid: string, actionType: string, maxPerHour: number): boolean {
+  const now = new Date()
+  const oneHourAgo = new Date(now.getTime() - 60 * 60 * 1000).toISOString()
+
+  const existing = db
+    .prepare(
+      'SELECT count, window_start FROM lfg_rate_limit WHERE openid = ? AND action_type = ?'
+    )
+    .get(openid, actionType) as { count: number; window_start: string } | undefined
+
+  if (!existing) {
+    db.prepare(
+      'INSERT INTO lfg_rate_limit (openid, action_type, count, window_start) VALUES (?, ?, 1, ?)'
+    ).run(openid, actionType, now.toISOString())
+    return true
+  }
+
+  if (existing.window_start < oneHourAgo) {
+    db.prepare(
+      'UPDATE lfg_rate_limit SET count = 1, window_start = ? WHERE openid = ? AND action_type = ?'
+    ).run(now.toISOString(), openid, actionType)
+    return true
+  }
+
+  if (existing.count >= maxPerHour) {
+    return false
+  }
+
+  db.prepare(
+    'UPDATE lfg_rate_limit SET count = count + 1 WHERE openid = ? AND action_type = ?'
+  ).run(openid, actionType)
+  return true
+}
+
+export function isUserParticipant(lfgPostId: number, openid: string): boolean {
+  const result = db
+    .prepare('SELECT 1 FROM lfg_participants WHERE lfg_post_id = ? AND openid = ?')
+    .get(lfgPostId, openid)
+  return !!result
 }

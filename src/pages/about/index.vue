@@ -10,6 +10,7 @@
       <view class="section">
         <view class="section-title">应用介绍</view>
         <text class="section-text">风暴枢纽是一款风暴英雄(Heroes of the Storm)英雄查询工具,提供英雄资料、技能、天赋等详细信息。</text>
+        <text class="section-text">现在还支持组队功能,帮助玩家快速找到队友一起开黑！</text>
       </view>
 
       <view class="section">
@@ -30,8 +31,17 @@
       </view>
 
       <view class="section">
+        <view class="section-title">组队功能说明</view>
+        <text class="section-text">使用组队功能需要登录微信账号。发布或加入组队时,您可以选择提供战网ID和电子邮箱。</text>
+        <text class="section-text">• 战网ID将显示给其他队员,用于游戏内添加好友</text>
+        <text class="section-text">• 电子邮箱仅用于接收有人加入组队的通知,不会公开显示</text>
+        <text class="section-text">• 您的联系信息仅用于组队目的,我们不会将其用于其他用途或分享给第三方</text>
+      </view>
+
+      <view class="section">
         <view class="section-title">免责声明</view>
         <text class="section-text">本应用为粉丝自制工具,不隶属于暴雪娱乐。风暴英雄及相关内容的版权归暴雪娱乐所有。</text>
+        <text class="section-text">组队功能仅提供玩家间交流平台,请注意网络安全和个人信息保护。</text>
       </view>
 
       <view class="section">
